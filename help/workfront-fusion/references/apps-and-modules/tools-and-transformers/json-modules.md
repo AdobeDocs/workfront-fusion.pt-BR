@@ -81,10 +81,9 @@ Se o campo de cadeia de caracteres JSON contiver uma coleção `{ ... }`, a saí
 >
 >```
 >{
->       "name" : "Peter",
+>    "name" : "Peter",
 >
->    
-   "ID" : 1
+>    "ID" : 1
 >}
 >```
 >
@@ -98,16 +97,15 @@ Se o campo de cadeia de caracteres JSON contiver uma matriz `[ ... ]`, a saída 
 >
 >```
 >[
->   {
->       "name" : "Peter",
->       "ID" : 1
->   },
+>  {
+>    "name" : "Peter",
+>    "ID" : 1
+>  },
 >
->  
- {
->       "name" : "Mike",
->       "ID" : 2
->   }
+>  {
+>    "name" : "Mike",
+>    "ID" : 2
+>  }
 >]
 >```
 >
@@ -238,48 +236,49 @@ Esse módulo de ação transforma um objeto em uma sequência de caracteres json
 >
 >1. Coloque o módulo [!DNL Google Sheets] > [!UICONTROL Select rows] no seu cenário para buscar os dados. Configure o módulo para recuperar linhas da planilha [!DNL Google]. Defina o&#x200B;**[!UICONTROL Maximum number of returned rows]** como um número pequeno, mas maior que um para fins de teste (Exemplo, três). Execute o módulo [!DNL Google Sheets] clicando com o botão direito do mouse nele e escolhendo &quot;**[!UICONTROL Run this module only]**&quot;. Verifique a saída do módulo.
 >
-1. Conecte o módulo [!UICONTROL Array Aggregator] após o módulo [!DNL Google Sheets]. Na configuração do módulo, escolha o módulo [!DNL Google Sheets] no campo **[!UICONTROL Source node]**. Deixe os outros campos como estão para o momento.
+>1. Conecte o módulo [!UICONTROL Array Aggregator] após o módulo [!DNL Google Sheets]. Na configuração do módulo, escolha o módulo [!DNL Google Sheets] no campo **[!UICONTROL Source node]**. Deixe os outros campos como estão para o momento.
 >
-1. Conecte o módulo [!UICONTROL JSON] > [!UICONTROL Create JSON] após o módulo [!UICONTROL Array Aggregator]. A configuração do módulo requer uma estrutura de dados que descreva o formato JSON. Clique em **[!UICONTROL Add]** para abrir a configuração da estrutura de dados. A maneira mais fácil de criar essa estrutura de dados é gerá-la automaticamente a partir de uma amostra JSON. Clique em **[!UICONTROL Generator]** e cole sua amostra JSON no campo **[!UICONTROL Sample data]**:
+>1. Conecte o módulo [!UICONTROL JSON] > [!UICONTROL Create JSON] após o módulo [!UICONTROL Array Aggregator]. A configuração do módulo requer uma estrutura de dados que descreva o formato JSON. Clique em **[!UICONTROL Add]** para abrir a configuração da estrutura de dados. A maneira mais fácil de criar essa estrutura de dados é gerá-la automaticamente a partir de uma amostra JSON. Clique em **[!UICONTROL Generator]** e cole sua amostra JSON no campo **[!UICONTROL Sample data]**:
 >
-**Exemplo:**
+>     **Exemplo:**
 >
-```
-{
-
-"books": [
-
-{
-
-"id": "ID",
-
-"title": "Title",
-
-"author": "Author"
-
-}
-
-]
-
-}
-```
+>     ```
+>     {
+>     
+>     "books": [
+>     
+>     {
+>     
+>     "id": "ID",
+>     
+>     "title": "Title",
+>     
+>     "author": "Author"
+>     
+>     }
+>     
+>     ]
+>     
+>     }
+>     
+>     ```
 >
-1. Clique em **[!UICONTROL Save]**. O campo [!UICONTROL Specification] na estrutura de dados agora contém a estrutura gerada.
-1. Altere o nome da estrutura de Dados para algo mais específico e clique em **[!UICONTROL Save]**. Um campo correspondente ao atributo de matriz raiz aparece como um campo mapeável na configuração do módulo JSON.
+>1. Clique em **[!UICONTROL Save]**. O campo [!UICONTROL Specification] na estrutura de dados agora contém a estrutura gerada.
+>1. Altere o nome da estrutura de Dados para algo mais específico e clique em **[!UICONTROL Save]**. Um campo correspondente ao atributo de matriz raiz aparece como um campo mapeável na configuração do módulo JSON.
 >
-1. Clique no botão **[!UICONTROL Map]** ao lado do campo e mapeie o item `Array[]` da saída do agregador de matriz para ele.
+>1. Clique no botão **[!UICONTROL Map]** ao lado do campo e mapeie o item `Array[]` da saída do agregador de matriz para ele.
 >
-1. Clique em **[!UICONTROL OK]** para fechar a configuração do módulo [!UICONTROL JSON].
+>1. Clique em **[!UICONTROL OK]** para fechar a configuração do módulo [!UICONTROL JSON].
 >
-1. Abra a configuração do módulo [!UICONTROL Array Aggregator]. Altere o **[!UICONTROL Target structure]** de [!UICONTROL Custom] para o campo do módulo [!UICONTROL JSON] correspondente ao atributo de matriz raiz. Mapeie itens do módulo [!DNL Google Sheets] para os campos apropriados.
+>1. Abra a configuração do módulo [!UICONTROL Array Aggregator]. Altere o **[!UICONTROL Target structure]** de [!UICONTROL Custom] para o campo do módulo [!UICONTROL JSON] correspondente ao atributo de matriz raiz. Mapeie itens do módulo [!DNL Google Sheets] para os campos apropriados.
 >
-1. Clique em **[!UICONTROL OK]** para fechar a configuração do módulo [!UICONTROL Array Aggregator].
+>1. Clique em **[!UICONTROL OK]** para fechar a configuração do módulo [!UICONTROL Array Aggregator].
 >
-1. Execute o cenário.
+>1. Execute o cenário.
 >
-O módulo [!UICONTROL JSON] gera o formato JSON correto.
+>O módulo [!UICONTROL JSON] gera o formato JSON correto.
 >
-1. Abra a configuração do módulo [!DNL Google Sheets] e aumente o número [!UICONTROL Maximum number of returned rows] para que seja maior que o número de linhas na planilha para processar todos os dados.
+>1. Abra a configuração do módulo [!DNL Google Sheets] e aumente o número [!UICONTROL Maximum number of returned rows] para que seja maior que o número de linhas na planilha para processar todos os dados.
 
 ## Solução de problemas
 
@@ -293,6 +292,6 @@ Ao usar instruções condicionais como `if` em seu JSON, coloque as aspas fora d
 
 >[!INFO]
 >
-**Exemplo:**
+>**Exemplo:**
 >
-![](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)
+>![](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)
