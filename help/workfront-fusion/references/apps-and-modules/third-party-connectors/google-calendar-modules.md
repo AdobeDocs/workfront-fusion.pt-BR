@@ -4,9 +4,9 @@ description: Em um cenário  [!DNL Adobe Workfront Fusion] , você pode automati
 author: Becky
 feature: Workfront Fusion
 exl-id: 6e514204-cd8e-4f30-bbbb-b8fbe48fc670
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 9cf9ccb282514efc0de7a836f0433f2db2f9caf1
 workflow-type: tm+mt
-source-wordcount: '3312'
+source-wordcount: '3307'
 ht-degree: 0%
 
 ---
@@ -747,7 +747,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
 
 ### Iteradores (obsoleto)
 
-Os módulos [!UICONTROL iterate attachments] e [!UICONTROL iterate attendees] foram descontinuados. Para iterar anexos ou participantes, use o módulo [!UICONTROL Flow Control] > [!UICONTROL Iterator]. Para obter mais informações, consulte [Módulo Iterador](/help/workfront-fusion/references/modules/iterator-module.md
+Os módulos [!UICONTROL iterate attachments] e [!UICONTROL iterate attendees] foram descontinuados. Para iterar anexos ou participantes, use o módulo [!UICONTROL Flow Control] > [!UICONTROL Iterator]. Para obter mais informações, consulte [Módulo Iterador](/help/workfront-fusion/references/modules/iterator-module.md)
 
 ### Outro
 

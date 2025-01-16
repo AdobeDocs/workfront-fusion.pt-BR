@@ -3,9 +3,9 @@ description: Em um cenário  [!DNL Adobe Workfront Fusion] , você pode automati
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 81c9b141-4e40-430f-99f1-c44b7a833bcd
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 99f2e558db3d2b126adf748d7e013a4a39735bcd
 workflow-type: tm+mt
-source-wordcount: '1619'
+source-wordcount: '1617'
 ht-degree: 0%
 
 ---
@@ -456,8 +456,8 @@ Este módulo de pesquisa retorna todos os registros acessíveis do tipo selecion
        <li> <p><b>[!UICONTROL Line items]</b> </p> <p>Selecione ou mapeie a ID do Modelo que contém os [!DNL line] itens que você deseja recuperar.</p> </li> 
        <li> <p><b>[!UICONTROL Model lists]</b> </p> <p>Selecione ou mapeie a ID da Workspace e a ID do modelo que contém as listas de modelos que você deseja recuperar.</p> </li> 
        <li> <p><b>[!UICONTROL Model calendar]</b> </p> <p>Selecione ou mapeie a ID da Workspace que contém o calendário Modelo que você deseja recuperar.</p> </li> 
-       <li> <p><b>Versões do modelo</b> </p> </li> 
-       <li> <p>Selecione ou mapeie [!UICONTROL ]a ID do Modelo que contém as versões do Modelo que você deseja recuperar.</p> </li> 
+       <li> <p><b>[!UICONTROL Model versions]</b> </p> </li> 
+       <li> <p>Selecione ou mapeie a ID do Modelo que contém as versões do Modelo que você deseja recuperar.</p> </li> 
        <li> <p><b>[!UICONTROL Users]</b> </p> </li> 
        <li> <p><b>[!UICONTROL Views]</b> </p> <p>Selecione se deseja escolher a visualização por módulo ou por modelo e, em seguida, selecione ou mapeie a ID do módulo ou modelo que contém a visualização que deseja recuperar.</p> </li> 
       </ul> 

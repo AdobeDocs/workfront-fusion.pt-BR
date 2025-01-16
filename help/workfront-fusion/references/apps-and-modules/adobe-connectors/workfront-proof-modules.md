@@ -4,9 +4,9 @@ description: Em um cenário  [!DNL Adobe Workfront Fusion] , é possível automa
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: b1b206a0554832aadc9c42ce0b4f952301474086
 workflow-type: tm+mt
-source-wordcount: '2730'
+source-wordcount: '2727'
 ht-degree: 0%
 
 ---
@@ -696,8 +696,8 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Workfront Proof] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>Procurar</td> 
-   <td> <p>Defina[!UICONTROL ]o tipo de registro que deseja que o módulo procure.</p> 
+   <td>[!UICONTROL Search for]</td> 
+   <td> <p>Selecione o tipo de registro que deseja que o módulo procure.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Proof]</strong> </p> <p>Digite o nome da prova da prova que você deseja pesquisar.</p> </li> 
      <li> <p><strong>[!UICONTROL Recipient]</strong> </p> <p>Insira o endereço de email do destinatário que deseja pesquisar.</p> </li> 

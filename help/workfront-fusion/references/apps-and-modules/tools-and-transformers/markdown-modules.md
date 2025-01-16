@@ -4,9 +4,9 @@ description: Em um cenário  [!DNL Adobe Workfront Fusion] , é possível usar o
 author: Becky
 feature: Workfront Fusion
 exl-id: f1134bbf-c244-4f52-8744-f97453b2ce8a
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 1e95c93213c48aea9297a82669fb2012dbb27601
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '262'
 ht-degree: 1%
 
 ---
@@ -74,7 +74,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL GitHub Flavored Markdown] </td> 
-   <td> <p>Ative esta opção para converter o GitHub Flavored Markdown em HTML.</p> <p>Para obter mais informações, consulte a página de ajuda do Mar[!DNL ]kdown na documentação do [!DNL GitHub].</p> </td> 
+   <td> <p>Ative esta opção para converter o GitHub Flavored Markdown em HTML.</p> <p>Para obter mais informações, consulte a planilha do Markdown na documentação do [!DNL GitHub].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Sanitize]</td> 
