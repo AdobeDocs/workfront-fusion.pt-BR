@@ -4,10 +4,10 @@ description: Atualmente, há suporte para arquivos grandes nos conectores Workfr
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: c4696ad91dd0a2cf753147bffbb6e7b74bb99b02
+source-git-commit: 12620e137d2e536b90eb322de93fd39bb8374e51
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 0%
+source-wordcount: '1021'
+ht-degree: 1%
 
 ---
 
@@ -27,15 +27,26 @@ Para lidar com arquivos maiores, seus cenários devem ser atualizados.
 
 ## Conectores compatíveis com arquivos grandes
 
-Na versão inicial, os seguintes conectores são compatíveis com arquivos grandes.
+No momento, os seguintes conectores são compatíveis com arquivos grandes.
 
-* Workfront > Fazer upload de documento
-* Adobe Experience Manager Assets > Fazer upload de documento
-* Workfront Proof > Fazer upload de arquivo
-* Adobe Authenticator > Fazer uma chamada de API personalizada
-* SharePoint > Criar um arquivo e SharePoint > Obter um arquivo
-* Salesforce > Fazer upload de arquivo
-* AWS S3 > Fazer upload de arquivo e AWS S3 > Obter arquivo
+* Workfront
+   * Carregar documento
+   * Baixar Documento
+* Adobe Experience Manager Assets
+   * Fazer upload de documento
+* Prova do Workfront
+   * Carregar arquivo
+   * Baixar prova
+* Adobe Authenticator
+   * Fazer uma chamada de API personalizada
+* SharePoint
+   * Criar um arquivo
+   * Obter um arquivo
+* Salesforce
+   * Carregar arquivo
+* AWS S3
+   * Carregar arquivo
+   * Obter arquivo
 * HTTP
 
 Outros conectores serão compatíveis em versões futuras.
@@ -74,7 +85,7 @@ Não, o número de operações executadas por um módulo é o mesmo.
 
 ### Quando a interface do usuário do Fusion será atualizada para exibir dados de transferência de arquivos?
 
-Estamos trabalhando ativamente em atualizações na interface do usuário do Fusion para transferência de arquivos na página de detalhes de execução do painel e do cenário, com uma versão direcionada para o primeiro trimestre de 2025.
+Esse recurso já foi concluído e implantado na produção.
 
 ### Quais são algumas maneiras de pensar sobre os novos limites de processamento de arquivos que me ajudarão a projetar cenários?
 
