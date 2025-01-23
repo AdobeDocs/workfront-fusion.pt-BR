@@ -4,9 +4,9 @@ description: A seção  [!DNL Adobe Workfront Fusion Tools]  inclui vários mód
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 757580687ff5d1617f83432952d9870bd697925e
 workflow-type: tm+mt
-source-wordcount: '1965'
+source-wordcount: '1962'
 ht-degree: 0%
 
 ---
@@ -19,51 +19,53 @@ A seção [!DNL Adobe Workfront Fusion Tools] inclui vários módulos úteis que
 
 ## Requisitos de acesso
 
++++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
+
 Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plano*</td>
-  <td> <p>[!UICONTROL Pro] ou superior</p> </td>
+   <td role="rowheader">Pacote do Adobe Workfront</td> 
+   <td> <p>Qualquer</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licença*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licença do Adobe Workfront</td> 
+   <td> <p>Novo: Padrão</p><p>Ou</p><p>Atual: trabalho ou superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licença**</td> 
+   <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisito de licença atual: nenhum requisito de licença [!DNL Workfront Fusion].</p>
-   <p>Ou</p>
-   <p>Requisito de licença herdada: [!UICONTROL [!DNL Workfront Fusion] para Automação e Integração do Trabalho] </p>
+   <p>Nenhum requisito de licença do Workfront Fusion.</p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Requisito atual do produto: se você tiver o Plano [!UICONTROL Select] ou [!UICONTROL Prime] [!DNL Adobe Workfront], sua organização deve comprar o [!DNL Adobe Workfront Fusion] e o [!DNL Adobe Workfront] para usar a funcionalidade descrita neste artigo. [!DNL Workfront Fusion] está incluído no plano [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Novo:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
    <p>Ou</p>
-   <p>Requisito de produto herdado: sua organização deve comprar o [!DNL Adobe Workfront Fusion] e o [!DNL Adobe Workfront] para usar a funcionalidade descrita neste artigo.</p>
+   <p>Atual: sua organização deve comprar o Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para saber que plano, tipo de licença ou acesso você tem, contate o administrador do [!DNL Workfront].
+Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
++++
+
 ## [!UICONTROL Tools] e seus campos
 
-* [Triggers](#triggers)
+* [Acionadores](#triggers)
 * [Ações](#actions)
 * [Agregadores](#aggregators)
 * [Transformadores](#transformers)
 
-### Triggers
+### Acionadores
 
 #### [!UICONTROL Basic trigger]
 
