@@ -4,9 +4,9 @@ description: Este módulo de ação  [!DNL Adobe Workfront Fusion]  envia uma so
 author: Becky
 feature: Workfront Fusion
 exl-id: 362b80b5-42f4-4b82-b06c-39c7c5a1eb1a
-source-git-commit: 6398261775584e33515c546de4e7a72d5830ebe0
+source-git-commit: c7309422b44b3804a233bcf09443e24808dbffd8
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '844'
 ht-degree: 0%
 
 ---
@@ -69,6 +69,8 @@ Para obter informações sobre [!UICONTROL Adobe Workfront Fusion] licenças, co
 Ao configurar o módulo [!UICONTROL HTTP] >[!UICONTROL Make an API Key Authorization request], o [!DNL Adobe Workfront Fusion] exibe os campos listados abaixo. Um título em negrito em um módulo indica um campo obrigatório.
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro em [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+
+![Alternância de mapa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 <table style="table-layout:auto"> 
  <col> 
