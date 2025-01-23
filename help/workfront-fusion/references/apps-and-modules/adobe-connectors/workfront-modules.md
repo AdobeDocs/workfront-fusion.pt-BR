@@ -4,7 +4,7 @@ description: Você pode usar o conector do Adobe Workfront Fusion Adobe Workfron
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 3ba5d67806e0d495bd4a91589d06cfb9adb25c0c
+source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
 workflow-type: tm+mt
 source-wordcount: '6208'
 ht-degree: 3%
@@ -104,7 +104,7 @@ Você pode criar uma conexão com sua conta do Workfront diretamente de dentro d
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Insira a ID do cliente do Workfront. Isso pode ser encontrado na área Aplicativos OAuth2 da área Configuração no Workfront. Se você não tiver um Segredo do cliente para o aplicativo OAuth2 no Workfront, poderá gerar outro. Para obter instruções, consulte a documentação do Workfront.</td>
+        <td>Insira o segredo do cliente do Workfront. Isso pode ser encontrado na área Aplicativos OAuth2 da área Configuração no Workfront. Se você não tiver um Segredo do cliente para o aplicativo OAuth2 no Workfront, poderá gerar outro. Para obter instruções, consulte a documentação do Workfront.</td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Authentication URL]</td>
@@ -144,7 +144,7 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 * [Ações](#actions)
 * [Pesquisas](#searches)
 
-### Triggers
+### Acionadores
 
 <!--
 * [Watch Events](#watch-events) 
