@@ -4,9 +4,9 @@ description: Em um cenário do Adobe Workfront Fusion, é possível automatizar 
 author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 17ac09a19562839a9fdfc11bd274a6ed11f6d8f5
 workflow-type: tm+mt
-source-wordcount: '2603'
+source-wordcount: '2704'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ O conector do Salesforce usa o seguinte:
   </tr> 
   <tr> 
    <td role="rowheader">Versão da API</td> 
-   <td> v46.0 </td> 
+   <td> v62.0 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Tag da API</td> 
@@ -104,6 +104,60 @@ Ao pesquisar objetos, você pode inserir palavras de pesquisa individuais ou cri
 * Use o operador de aspas (&quot; &quot;) para encontrar uma correspondência exata de frase. Por exemplo: &quot;reunião de segunda-feira&quot;
 
 Para obter mais informações sobre as possibilidades de pesquisa, consulte a documentação do desenvolvedor do [!DNL Salesforce] sobre SOQL e SOSL.
+
+## Criar uma conexão com [!DNL Salesforce]
+
+Para criar uma conexão para seus módulos do [!DNL Salesforce]:
+
+1. Em qualquer módulo [!DNL Salesforce], clique em **[!UICONTROL Add]** ao lado da caixa Conexão.
+
+1. Preencha os seguintes campos:
+
+   <table style="table-layout:auto"> 
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+    </col>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+    </col>
+    <tbody>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td>
+          <p>Insira um nome para a nova conexão.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Environment]</td>
+        <td>
+          <p>Selecione se estão se conectando a um ambiente de produção ou não produção.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Type]</td>
+        <td>
+          <p>Selecione se você está se conectando a uma conta de serviço ou a uma conta pessoal.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td>Insira a ID do cliente do Salesforce.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td>Insira o segredo do cliente do Salesforce. </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Sandbox]</td>
+        <td>Ative essa opção se esse for um ambiente de sandbox.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL API Version]</td>
+        <td>Insira a versão da API do Salesforce que deseja usar. A versão padrão é 62.0.</td>
+      </tr>
+    </tbody>
+    </table>
+
+1. Clique em **[!UICONTROL Continue]** para salvar a conexão e retornar ao módulo.
+
 
 ## [!DNL Salesforce] módulos e seus campos
 
