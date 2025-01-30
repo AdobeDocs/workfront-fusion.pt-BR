@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: 91b65888e082d56bf510d0df522f405ff74384d8
+source-git-commit: e3ec0cf05665559790e4ae96c875e181a1ee36ff
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '415'
 ht-degree: 0%
 
 ---
@@ -98,6 +98,7 @@ O Fusion oferece conectores para muitos aplicativos de terceiros.
 * [Módulos de finanças e operações da Microsoft Dynamics](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/dynamics-finance-operations-modules.md)
 * [Módulos do Microsoft OneDrive](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-onedrive-modules.md)
 * [Módulos do Microsoft OneDrive for Business](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-onedrive-for-business-modules.md)
+* [Módulos do Microsoft SharePoint Online](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sharepoint-modules.md)
 * [Módulos do Microsoft SQL Server](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-sql-server-modules.md)
 * [Módulos do Modelo do Microsoft Word](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-word-templates-modules.md)
 * [Módulos do NetSuite](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/netsuite.md)
@@ -108,7 +109,6 @@ O Fusion oferece conectores para muitos aplicativos de terceiros.
 * [Módulos do Salesforce](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/salesforce-modules.md)
 * [Módulos de tradução gerenciados por SDL](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sdl-managed-translation-modules.md)
 * [Módulos do ServiceNow](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/servicenow-modules.md)
-* [Módulos do SharePoint](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sharepoint-modules.md)
 * [módulos Slack](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
 * [Módulos do Split.io](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/split-io-modules.md)
 * [Módulos do Trello](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)

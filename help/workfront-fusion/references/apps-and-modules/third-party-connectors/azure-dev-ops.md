@@ -4,9 +4,9 @@ description: Em um cenário  [!DNL Adobe Workfront Fusion] , é possível automa
 author: Becky
 feature: Workfront Fusion
 exl-id: c0919a9a-ce99-485c-9627-45353741f6d8
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 66378d6f937f3b3b173447bd36fdef991d9956af
 workflow-type: tm+mt
-source-wordcount: '1537'
+source-wordcount: '1546'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,8 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
 
 ## Requisitos de acesso
 
++++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
+
 Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
 
 <table style="table-layout:auto">
@@ -28,35 +30,37 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plano*</td>
-  <td> <p>[!UICONTROL Pro] ou superior</p> </td>
+   <td role="rowheader">Pacote do Adobe Workfront</td> 
+   <td> <p>Qualquer</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licença*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licença do Adobe Workfront</td> 
+   <td> <p>Novo: Padrão</p><p>Ou</p><p>Atual: trabalho ou superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licença**</td> 
+   <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisito de licença atual: nenhum requisito de licença [!DNL Workfront Fusion].</p>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion.</p>
    <p>Ou</p>
-   <p>Requisito de licença herdada: [!UICONTROL [!DNL Workfront Fusion] para Automação e Integração do Trabalho] </p>
+   <p>Herdados: Automação e integração do Workfront Fusion for Work </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Requisito atual do produto: se você tiver o Plano [!UICONTROL Select] ou [!UICONTROL Prime] [!DNL Adobe Workfront], sua organização deve comprar o [!DNL Adobe Workfront Fusion] e o [!DNL Adobe Workfront] para usar a funcionalidade descrita neste artigo. [!DNL Workfront Fusion] está incluído no plano [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Novo:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
    <p>Ou</p>
-   <p>Requisito de produto herdado: sua organização deve comprar o [!DNL Adobe Workfront Fusion] e o [!DNL Adobe Workfront] para usar a funcionalidade descrita neste artigo.</p>
+   <p>Atual: sua organização deve comprar o Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Para saber que plano, tipo de licença ou acesso você tem, contate o administrador do [!DNL Workfront].
+Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Pré-requisitos
 
@@ -104,6 +108,7 @@ O conector DevOps do Azure usa o seguinte:
         </tr>
     </table>
 
+1. Para inserir uma ID de Aplicativo DevOps do Azure ou um Segredo do Cliente, clique em <b>Mostrar configurações avançadas</b> e insira-as nos campos abertos.
 1. Clique em **[!UICONTROL Continue]** para concluir a configuração da conexão e continuar criando seu cenário.
 
 ## [!UICONTROL Azure DevOps] módulos e seus campos
@@ -134,7 +139,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td> <p>Selecione ou adicione um webhook para o módulo.</p> <!--<p>For more information on webhooks in trigger modules, see <a href="For instructions, see [Instant triggers (webhooks) in Adobe Workfront Fusion](/help/workfront-fusion/)." class="MCXref xref">Instant triggers (webhooks) in [!DNL Adobe Workfront Fusion]</a>.</p> <p>For information on how to create a webhook, see <a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md" class="MCXref xref">Webhooks</a>.--></p> </td> 
+   <td> <p>Selecione ou adicione um webhook para o módulo.</p> <p>Para obter mais informações sobre webhooks em módulos de acionador, consulte <a href="/help/workfront-fusion/references/modules/webhooks-reference.md" class="MCXref xref">Acionadores instantâneos (webhooks)</a>.</p> <p>Para obter informações sobre como criar um webhook, consulte <a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md" class="MCXref xref">Webhooks</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -148,6 +153,43 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
 * [Ler registro](#read-record)
 * [Atualizar um item de trabalho](#update-a-work-item)
 * [[!UICONTROL Upload an attachment]](#upload-an-attachment)
+
+#### [!UICONTROL Create a record]
+
+Este módulo de ação cria um novo projeto ou item de trabalho.
+
+O módulo gera a ID do objeto para o item de trabalho recém-criado ou o URL e o código de status de um projeto recém-criado.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Azure DevOps] ao [!DNL Workfront Fusion], consulte <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Azure DevOps] ao [!UICONTROL Workfront Fusion]</a> neste artigo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Record type]</td> 
+   <td> <p>Selecione se deseja criar um item de trabalho ou um projeto.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Project]</strong> </p> <p>Preencha os seguintes campos:</p> 
+      <ul> 
+       <li> <p><strong>[!UICONTROL Name]</strong>: insira ou mapeie um nome para o novo projeto.</p> </li> 
+       <li> <p><strong>[!UICONTROL Description]</strong>: insira ou mapeie uma descrição para o novo projeto. </p> </li> 
+       <li> <p><strong>[!UICONTROL Visibility]</strong>: selecione se deseja que o projeto seja público ou privado. Os usuários devem estar conectados à sua organização e ter acesso ao projeto para interagir com um projeto privado. Os projetos públicos estão visíveis para usuários que não estão conectados à sua organização.</p> </li> 
+       <li> <p><strong>[!UICONTROL Version control]</strong>: selecione se deseja que o projeto use [!DNL Git] ou [!UICONTROL Team Foundation Version Control (TFCV)] para controle de versão.</p> </li> 
+       <li> <p><strong>[!UICONTROL Work item process]</strong>: selecione o processo de trabalho que deseja usar para o projeto. As opções são [!UICONTROL Basic], [!UICONTROL Scrum], [!UICONTROL Capability Maturity Model Integration (CMMI)] e [!UICONTROL Agile].</p> <p>Para obter mais informações sobre [!DNL Azure DevOps] processos, consulte <a href="https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&amp;tabs=basic-process">Processos e modelos de processo padrão</a> na Documentação [!DNL Azure DevOps].</p> </li> 
+      </ul> </li> 
+     <li> <p><strong>[!UICONTROL Work item]</strong> </p> <p>Preencha os seguintes campos:</p> 
+      <ul> 
+       <li> <p><strong>[!UICONTROL Project]</strong>: selecione o projeto no qual deseja criar o item de trabalho.</p> </li> 
+       <li> <p><strong>[!UICONTROL Work item type]</strong>: selecione o tipo de item de trabalho que deseja criar.</p> </li> 
+       <li> <p><strong>[!UICONTROL Other fields]</strong>: nesses campos, insira o valor que você deseja que o item de trabalho tenha para uma determinada propriedade. Os campos disponíveis dependem do tipo de item de trabalho.</p> </li> 
+      </ul> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL Custom API Call]
 
@@ -169,7 +211,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Relative URL]</td> 
-   <td> <p>Insira o URL relativo ao qual você deseja se conectar para esta chamada de API.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemplo: </b></span></span><code>{organization}/_apis[/{area}]/{resource}</code> </p> </td> 
+   <td> <p>Insira o URL relativo ao qual você deseja se conectar para esta chamada de API.</p> <p><b>Exemplo: </b><code>{organization}/_apis[/{area}]/{resource}</code> </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL API Version]</td> 
@@ -193,43 +235,6 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Create a record]
-
-Este módulo de ação cria um novo projeto ou item de trabalho.
-
-O módulo gera a ID do objeto para o item de trabalho recém-criado ou o URL e o código de status de um projeto recém-criado.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Azure DevOps] ao [!DNL Workfront Fusion], consulte <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Azure DevOps] ao [!UICONTROL Workfront Fusion]</a> neste artigo.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Record type]</td> 
-   <td> <p>Selecione se deseja criar um item de trabalho ou um projeto.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Project]</strong> </p> <p>Preencha os seguintes campos:</p> 
-      <ul> 
-       <li> <p><strong>[!UICONTROL Name]</strong>:Insira ou mapeie um nome para o novo projeto.</p> </li> 
-       <li> <p><strong>[!UICONTROL Description]</strong>:Insira ou mapeie uma descrição para o novo projeto. </p> </li> 
-       <li> <p><strong>[!UICONTROL Visibility]</strong>: selecione se deseja que o projeto seja público ou privado. Os usuários devem estar conectados à sua organização e ter acesso ao projeto para interagir com um projeto privado. Os projetos públicos estão visíveis para usuários que não estão conectados à sua organização.</p> </li> 
-       <li> <p><strong>[!UICONTROL Version control]</strong>: selecione se deseja que o projeto use [!DNL Git] ou [!UICONTROL Team Foundation Version Control (TFCV)] para controle de versão.</p> </li> 
-       <li> <p><strong>[!UICONTROL Work item process]</strong>: selecione o processo de trabalho que deseja usar para o projeto. As opções são [!UICONTROL Basic], [!UICONTROL Scrum], [!UICONTROL Capability Maturity Model Integration (CMMI)] e [!UICONTROL Agile].</p> <p>Para obter mais informações sobre [!DNL Azure DevOps] processos, consulte <a href="https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&amp;tabs=basic-process">Escolher um Processo</a> na Documentação [!DNL Azure DevOps].</p> </li> 
-      </ul> </li> 
-     <li> <p><strong>[!UICONTROL Work item]</strong> </p> <p>Preencha os seguintes campos:</p> 
-      <ul> 
-       <li> <p><strong>[!UICONTROL Project]</strong>: selecione o projeto no qual deseja criar o item de trabalho.</p> </li> 
-       <li> <p><strong>[!UICONTROL Work item type]</strong>: selecione o tipo de item de trabalho que deseja criar.</p> </li> 
-       <li> <p><strong>[!UICONTROL Other fields]</strong>: nesses campos, insira o valor que você deseja que o item de trabalho tenha para uma determinada propriedade. Os campos disponíveis dependem do tipo de item de trabalho.</p> </li> 
-      </ul> </li> 
-    </ul> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -259,10 +264,6 @@ O módulo retorna o conteúdo do arquivo do anexo.
 
 Esse módulo de ação vincula dois itens de trabalho e define a relação entre eles.
 
-O módulo retorna a ID do item de trabalho principal e quaisquer campos associados, juntamente com quaisquer campos e valores personalizados que a conexão acessa. Você pode mapear essas informações em módulos subsequentes no cenário.
-
-Ao configurar esse módulo, os campos a seguir são exibidos.
-
 <table style="table-layout:auto">
  <col> 
  <col> 
@@ -281,7 +282,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Link Type]</td> 
-   <td> <p>Defina a relação entre os itens de trabalho que deseja vincular.</p> <p>Para obter mais informações, consulte <a href="https://docs.microsoft.com/en-us/azure/devops/boards/queries/link-type-reference?view=azure-devops">Referência de tipo de link</a> na Documentação [!UICONTROL Azure DevOps].</p> </td> 
+   <td> <p>Defina a relação entre os itens de trabalho que deseja vincular.</p> <p>Para obter mais informações, consulte <a href="https://docs.microsoft.com/en-us/azure/devops/boards/queries/link-type-reference?view=azure-devops">Guia de referência para tipos de link</a> na Documentação [!UICONTROL Azure DevOps].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Comment]</td> 
