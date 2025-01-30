@@ -4,7 +4,7 @@ content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: product-releases
 title: Visão geral da atividade de versão do Adobe Workfront Fusion
-description: O Adobe Workfront Fusion conecta perfeitamente seus aplicativos e serviços da Web para que você possa se concentrar em novas tarefas, em vez de repetir as mesmas tarefas repetidamente.
+description: O Adobe Workfront Fusion conecta perfeitamente aplicativos e serviços da web para que você possa se concentrar em novas tarefas, em vez de repetir as que já concluiu.
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
@@ -12,13 +12,13 @@ exl-id: c37aea95-7cc3-4939-a4d7-9a6a75557b85
 source-git-commit: 200907bb8d80f874227493b489ef1ea450198dc6
 workflow-type: tm+mt
 source-wordcount: '836'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
 # Visão geral da atividade de versão do Adobe Workfront Fusion
 
-O Adobe Workfront Fusion conecta perfeitamente seus aplicativos e serviços da Web para que você possa se concentrar em novas tarefas, em vez de repetir as mesmas tarefas repetidamente.
+O Adobe Workfront Fusion conecta perfeitamente aplicativos e serviços da web para que você possa se concentrar em novas tarefas, em vez de repetir as que já concluiu.
 
 ## Versões da fusão em 2025
 
