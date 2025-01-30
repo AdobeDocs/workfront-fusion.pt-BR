@@ -4,9 +4,9 @@ description: As seguintes funções de data e hora estão disponíveis no painel
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: 2c732659f3f3e81e13b7b12a5df5bde19c0e0928
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1773'
+source-wordcount: '1800'
 ht-degree: 1%
 
 ---
@@ -333,7 +333,7 @@ A função `formatDate` retorna uma representação de texto do valor de Data es
 
 **Exemplos:** O Cenário e o fuso horário da Web foram definidos como `Europe/Prague` nesses exemplos.
 
-![](assets/date&time-functions-examples-350x61.png)
+![Exemplo de função de data e hora](assets/date&time-functions-examples-350x61.png)
 
 * `formatDate(1. Date created;MM/DD/YYYY)`
 
@@ -463,7 +463,7 @@ Esta seção é adaptada para [!DNL Workfront Fusion] a partir da página da Web
 
 Se você precisar calcular uma data correspondente ao n-ésimo dia da semana no mês (por exemplo, primeira terça-feira, terceira sexta-feira e assim por diante), poderá usar a seguinte fórmula:
 
-![](assets/date&time-functions-calc-nth-day-350x31.png)
+![Calcular dia n](assets/date&time-functions-calc-nth-day-350x31.png)
 
 ```
 {{addDays(setDate(1.date; 1); 1.n * 7 - formatDate(addDays(setDate(1.date; 1); "-" + 1.dow); "E"))}}
@@ -510,7 +510,7 @@ Caso queira calcular apenas um caso específico, por exemplo, a cada segunda qua
 * `1.dow` = `3`
 * `1.date` = `now`
 
-![](assets/nth-day-variable-value-350x33.png)
+![Valor da variável de dia ](assets/nth-day-variable-value-350x33.png)
 
 #### Explicação:
 
@@ -521,7 +521,7 @@ Caso queira calcular apenas um caso específico, por exemplo, a cada segunda qua
 
 Uma possibilidade é empregar a seguinte expressão:
 
-![](assets/calculate-days-between-dates-350x68.png)
+![Calcular dias entre datas](assets/calculate-days-between-dates-350x68.png)
 
 ```
 {{round((2.value - 1.value) / 1000 / 60 / 60 / 24)}}
@@ -541,7 +541,7 @@ Ao especificar um intervalo de datas, por exemplo, em um módulo de pesquisa, se
 
 A fórmula abaixo mostra uma maneira de calcular o último dia do mês anterior:
 
-![](assets/last-day-prev-month.png)
+![Último dia do mês anterior](assets/last-day-prev-month.png)
 
 ```
 {{addDays(setDate(now; 1); -1)}}
@@ -553,7 +553,7 @@ Em alguns casos, é necessário calcular não apenas o último dia do mês, mas 
 
 Esta fórmula mostra uma maneira de calcular o último milissegundo do mês anterior:
 
-![](assets/last-millisecond-prev-month-350x45.png)
+![Último milissegundo do mês anterior](assets/last-millisecond-prev-month-350x45.png)
 
 ```
 {{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD"; "UTC") - 1; "x")}}
@@ -561,7 +561,7 @@ Esta fórmula mostra uma maneira de calcular o último milissegundo do mês ante
 
 Se precisar que o resultado use a configuração de fuso horário, omita o argumento UTC:
 
-![](assets/omit-utc-argument-350x45.png)
+![Omitir UTC](assets/omit-utc-argument-350x45.png)
 
 `{{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD") - 1; "x")}}`
 

@@ -4,9 +4,9 @@ description: Alguns módulos de acionamento permitem selecionar o primeiro pacot
 author: Becky
 feature: Workfront Fusion
 exl-id: 83628fa5-82e2-4f67-bfed-70a4c3c19f7f
-source-git-commit: 9ec972ef7677874965d6b4cb646e87c0b2240214
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '325'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte
 
    Clique com o botão direito do mouse no ícone do módulo de acionador e selecione **Escolher onde começar**.
 
-   ![](assets/choose-where-to-start.png)
+   ![Escolher onde começar](assets/choose-where-to-start.png)
 
 1. Selecione uma opção na caixa **[!UICONTROL Choose where to start]** que aparece.
 

@@ -4,9 +4,9 @@ description: Quando ocorrem erros durante a execução de um cenário, geralment
 author: Becky
 feature: Workfront Fusion
 exl-id: 82ddaf73-ecf9-4fd6-8f8e-909351023c77
-source-git-commit: 0668441df8405610488e3e33658635e4cc7db270
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '659'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ Para adicionar um manipulador de erros a um módulo:
 1. Clique em qualquer lugar no cenário para entrar no editor de cenários.
 1. Clique com o botão direito do mouse no módulo após o qual deseja adicionar uma rota de manipulador de erros e selecione **[!UICONTROL Add error handler]**:
 
-   ![](assets/error-handler-route.png)
+   ![Rota do manipulador de erros](assets/error-handler-route.png)
 
    Uma rota de manipulador de erros foi adicionada ao módulo. Se o módulo for o último em uma rota, o manipulador de erros seguirá diretamente o módulo. Se o módulo tiver mais módulos depois dele, uma rota de manipulador de erros separada será adicionada.
 

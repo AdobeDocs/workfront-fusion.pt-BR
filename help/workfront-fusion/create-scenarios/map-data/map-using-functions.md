@@ -4,9 +4,9 @@ description: Ao mapear itens, você pode usar funções para criar fórmulas sim
 author: Becky
 feature: Workfront Fusion
 exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
-source-git-commit: 839f6edf93df8a935b2c5d0a520bdc125fe60288
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '620'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ Para inserir uma função em um campo:
 
 Neste exemplo, a função de subsequência de caracteres limita o nome do projeto a 50 caracteres.
 
-![](assets/example-meet-length-restriction-350x184.png)
+![Exemplo de restrição de duração da reunião](assets/example-meet-length-restriction-350x184.png)
 
 >[!ENDSHADEBOX]
 
@@ -119,7 +119,7 @@ Neste exemplo, a função de subsequência de caracteres limita o nome do projet
 
 Neste exemplo, a função substring limita o nome do projeto aparado a 50 caracteres.
 
-![](assets/trimmed-name-under-50.png)
+![Nome reduzido](assets/trimmed-name-under-50.png)
 
 >[!ENDSHADEBOX]
 
@@ -150,9 +150,9 @@ Se [!DNL Workfront Fusion] não tiver uma função que você queira usar, mas si
 
       Você pode usar a saída dos módulos anteriores como de costume.
 
-      ![](assets/exploit-google-sheet-functions-350x218.png)
+      ![Usar funções do Google Sheets](assets/exploit-google-sheet-functions-350x218.png)
 
 1. Insira o módulo **[!UICONTROL Google Sheets]>[!UICONTROL Get a cell]** para obter o resultado calculado.
 1. Configure o módulo, usando a mesma ID de célula que você usou na etapa 4.
 
-   ![](assets/exploit-google-sheet-functions-2-350x187.png)
+   ![Usar funções do Google Sheets](assets/exploit-google-sheet-functions-2-350x187.png)

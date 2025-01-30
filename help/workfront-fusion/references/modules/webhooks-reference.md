@@ -4,9 +4,9 @@ description: Muitos serviços fornecem webhooks para fornecer notificações ins
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: 4c0f050e40d28f236d6086e7dccea53d49252aa8
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '848'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Muitos serviços fornecem webhooks para fornecer notificações instantâneas sempre que determinada alteração (evento) ocorrer no serviço. Para processar esses eventos, recomendamos que você use acionadores instantâneos. Os disparadores instantâneos exibem a marca `Instant` na lista de módulos de um determinado conector.
 
-![](assets/instant.png)
+![Instantâneo](assets/instant.png)
 
 >[!TIP]
 >
@@ -39,7 +39,7 @@ Para obter uma introdução em vídeo a webhooks no Workfront Fusion, consulte:
 
 Ao configurar um acionador instantâneo, você será solicitado a selecionar quando ele for executado.
 
-![](assets/schedule-setting.png)
+![Configuração de agendamento](assets/schedule-setting.png)
 
 Selecione `Immediately` para executar o cenário imediatamente quando [!DNL Workfront Fusion] receber novos eventos do serviço. Esses eventos são enviados imediatamente para uma fila e processados no cenário, um de cada vez, na mesma ordem em que os dados são recebidos.
 
@@ -62,7 +62,7 @@ Para obter mais informações sobre ciclos, consulte [Execução do cenário, ci
 
 Se você usar qualquer configuração de agendamento diferente de [!UICONTROL Immediately], o cenário será executado nos intervalos especificados. Como vários webhooks podem ser coletados na fila durante o intervalo, recomendamos definir a opção [!UICONTROL Maximum number of cycles] com um valor maior que o padrão 1 para processar mais webhooks em uma execução de cenário:
 
-1. Clique no ícone [!UICONTROL Scenario settings] ![](assets/scenario-settings-icon.png) na parte inferior do seu cenário.
+1. Clique no ícone [!UICONTROL Scenario settings] ![Ícone de configurações do cenário](assets/scenario-settings-icon.png) na parte inferior do cenário.
 1. No painel **[!UICONTROL Scenario settings]** exibido, insira um número no campo **[!UICONTROL Max number of cycles]** para indicar o número de eventos da fila que você deseja executar sempre que executar o cenário.
 
 Os eventos restantes na fila serão processados na próxima vez que o cenário for executado, até o número definido no campo Número máximo de ciclos.

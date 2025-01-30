@@ -4,9 +4,9 @@ description: Você pode mapear uma matriz ou elementos de matriz individuais par
 author: Becky
 feature: Workfront Fusion
 exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Para adicionar elementos à matriz:
 
 Os elementos da matriz são exibidos como um número entre colchetes após o nome da matriz. Você pode mapear um elemento individual de uma matriz em um campo usando esse número de índice.
 
-![](assets/map-array-1st-element.png)
+![Mapear primeiro elemento](assets/map-array-1st-element.png)
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Para mapear um elemento de matriz:
 
 1. Para mapear um elemento diferente da matriz, clique em [1] e insira o número de índice do elemento de matriz que você deseja mapear.
 
-   ![](assets/access-another-element.png)
+   ![Acessar outro elemento](assets/access-another-element.png)
 
 ### Mapear um elemento de matriz com uma determinada chave
 
@@ -138,13 +138,13 @@ Algumas matrizes contêm coleções com itens de valores-chave, como metadados, 
 
 O exemplo a seguir mostra a saída do aplicativo [!DNL Jira].
 
-![](assets/output-of-jira-app-350x100.png)
+![Saída do módulo Jira](assets/output-of-jira-app-350x100.png)
 
 Este exemplo obtém um nome de arquivo de uma matriz de anexos, para o anexo específico com uma ID 10108.
 
 Esse exemplo gera a seguinte saída:
 
-![](assets/output-from-jira-350x261.png)
+![Saída do módulo Jira](assets/output-from-jira-350x261.png)
 
 A fórmula pode ser explicada da seguinte maneira:
 
@@ -153,7 +153,7 @@ A fórmula pode ser explicada da seguinte maneira:
    1. O primeiro parâmetro da função `map()` é o item de matriz inteiro.
    1. O segundo parâmetro é o nome bruto do item de valor. Para obter o nome bruto, passe o mouse sobre o item no painel [!UICONTROL mapping]:
 
-      ![](assets/obtain-raw-name-350x124.png)
+      ![Obter nome bruto](assets/obtain-raw-name-350x124.png)
 
       >[!NOTE]
       >
@@ -161,7 +161,7 @@ A fórmula pode ser explicada da seguinte maneira:
 
    1. O terceiro parâmetro é o nome bruto do item-chave:
 
-      ![](assets/3rd-parameter-350x166.png)
+      ![Terceiro parâmetro](assets/3rd-parameter-350x166.png)
 
    1. O quarto parâmetro é o valor de chave fornecido.
 
@@ -175,7 +175,7 @@ A fórmula pode ser explicada da seguinte maneira:
 
 Esse exemplo gera a seguinte saída:
 
-![](assets/output-from-jira-350x261.png)
+![Saída do módulo Jira](assets/output-from-jira-350x261.png)
 
 >[!ENDSHADEBOX]
 
@@ -187,4 +187,4 @@ Para obter mais informações sobre a função `get()`, consulte [Funções gera
 
 Matrizes podem ser convertidas em uma série de pacotes usando o módulo [!UICONTROL Iterator]. Para obter mais informações, consulte [[!UICONTROL Iterator] módulo](/help/workfront-fusion/references/modules/iterator-module.md).
 
-![](assets/series-of-bundles.png)
+![Série de pacotes](assets/series-of-bundles.png)

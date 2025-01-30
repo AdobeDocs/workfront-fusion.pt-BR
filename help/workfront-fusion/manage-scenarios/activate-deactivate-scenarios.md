@@ -4,10 +4,10 @@ description: Este artigo descreve por que os cenários ativos ou desativados sã
 author: Becky
 feature: Workfront Fusion
 exl-id: ecfcab45-5492-4e20-af8d-63ec9d233046
-source-git-commit: d79f8ac6d678a874e05e606d7b9ff7c812d93db1
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 2%
+source-wordcount: '303'
+ht-degree: 1%
 
 ---
 
@@ -87,7 +87,7 @@ Para obter instruções sobre como criar um cenário, consulte [Fluxo de trabalh
 
 ## Ativar ou desativar um cenário:
 
-1. Clique em **[!UICONTROL Scenarios]** ![](assets/scenarios-icon.png) no painel esquerdo e, em seguida, clique no cenário para abri-lo.
+1. Clique em **[!UICONTROL Scenarios]** ![Ícone de Cenários](assets/scenarios-icon.png) no painel esquerdo e clique no cenário para abri-lo.
 1. Clique no botão Ativar/desativar no canto superior direito da página Detalhes do cenário.
 
    ![Alternância de ativação de detalhes](assets/active-toggle-details-page.png)
@@ -96,4 +96,4 @@ Para obter instruções sobre como criar um cenário, consulte [Fluxo de trabalh
 
    Clique no diagrama para entrar no Editor de cenários e clique no botão de alternância **[!UICONTROL On/Off]** no canto inferior esquerdo da janela.
 
-   ![](assets/on-off-switch.jpg)
+   ![Ligar/desligar](assets/on-off-switch.jpg)

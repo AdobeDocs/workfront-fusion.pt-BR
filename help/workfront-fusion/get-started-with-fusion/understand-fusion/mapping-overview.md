@@ -4,9 +4,9 @@ description: O mapeamento é o processo de atribuir as saídas de um módulo, es
 author: Becky
 feature: Workfront Fusion
 exl-id: 9208ce20-0757-427a-9669-ce4274d05522
-source-git-commit: 190bfe5992fb21b789a7246c4ae732a5dc7672fa
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
@@ -32,15 +32,15 @@ Ao clicar em um campo onde é possível inserir um valor emitido de um módulo a
 
 Item único
 
-![](assets/map-single.png)
+![Mapear item único](assets/map-single.png)
 
 Vários itens com texto
 
-![](assets/map-multiple-with-text.png)
+![Mapear vários itens](assets/map-multiple-with-text.png)
 
 Função com vários itens e texto
 
-![](assets/map-formula-with-text.png)
+![Mapear fórmula com texto](assets/map-formula-with-text.png)
 
 
 >[!ENDSHADEBOX]
@@ -56,11 +56,11 @@ Para obter instruções sobre mapeamento, consulte os artigos em [Dados do mapa:
 
 Ao clicar em um campo onde é possível mapear dados, o painel de mapeamento é aberto.
 
-A primeira guia ![](assets/toolbar-icon-functions-you-map-from-other-modules.png) exibe os itens que você pode mapear de outros módulos.
+A primeira guia ![Mapear de outros módulos](assets/toolbar-icon-functions-you-map-from-other-modules.png) exibe os itens que você pode mapear de outros módulos.
 
 As outras guias incluem funções, operadores e palavras-chave que podem ser usadas para criar fórmulas. Eles são classificados em guias diferentes com base no tipo de dados que manipulam.
 
-![](assets/mapping-panel-blank.png)
+![Painel de mapeamento](assets/mapping-panel-blank.png)
 
 
 Para obter mais informações sobre guias de função, consulte [Visão geral da função](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md).
@@ -73,13 +73,13 @@ Os itens podem conter vários valores de vários tipos. São itens do tipo cole�
 
 Os pacotes do tipo coleção exibem `(Collection)` ao lado do rótulo do pacote na saída do módulo.
 
-![](assets/collection.png)
+![Coleção](assets/collection.png)
 
 Na maioria dos casos, você mapeia os elementos da coleção em vez de mapear o item que representa a coleção inteira.
 
 Para localizar o elemento de uma coleção no painel de mapeamento, clique na seta ao lado da coleção.
 
-![](assets/collection-dropdown.png)
+![Lista suspensa de Coleção](assets/collection-dropdown.png)
 
 Para obter mais informações sobre coleções, consulte [Tipos de dados de item](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md).
 
@@ -93,6 +93,6 @@ Pacotes do tipo matriz exibem `(Array)` ao lado do rótulo do pacote na saída d
 
 No painel de mapeamento, as matrizes são exibidas com colchetes. Você pode identificar um item do tipo matriz pelos colchetes no final do rótulo do item. Para localizar um elemento de matriz específico no painel de mapeamento, clique na seta ao lado da matriz.
 
-![](assets/array.png)
+Matriz ![1}](assets/array.png)
 
 Para obter informações e instruções sobre como mapear matrizes e elementos de matriz, consulte [Mapear matrizes e elementos de matriz](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md).

@@ -4,9 +4,9 @@ description: Siga este fluxo de trabalho geral para criar um cenário
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: f190217891c1d583e49cacb820e2076b995f6a3d
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
@@ -34,19 +34,19 @@ Atalhos de teclado
 ## Criar e nomear o cenário
 
 1. Entre na sua conta [!DNL Workfront Fusion].
-1. Clique em **[!UICONTROL Scenarios]** ![](assets/scenarios-icon.png) no painel esquerdo.
+1. Clique no **[!UICONTROL Scenarios]** ![ícone Cenários](assets/scenarios-icon.png) no painel esquerdo.
 
    >[!NOTE]
    >
    >Se você não vir o painel de navegação esquerdo ou seus ícones, clique no ícone Menu ![Menu](assets/main-menu-icon-left-nav.png).
 
-1. (Opcional) No painel [!UICONTROL **Pastas**], clique no ícone **[!UICONTROL Add folder]** ![](assets/add-folder-icon.png) e digite um nome como &quot;Cenários de prática&quot; para sua primeira pasta.
+1. (Opcional) No painel [!UICONTROL **Pastas**], clique no ícone **[!UICONTROL Add folder]** ![Ícone Adicionar pasta](assets/add-folder-icon.png) e digite um nome como &quot;Cenários de prática&quot; para a sua primeira pasta.
 
 1. (Opcional) Abra a pasta e clique em **[!UICONTROL Create a new scenario]** no canto superior direito da página.
 
 1. Selecione o nome do espaço reservado **[!UICONTROL New scenario]** no canto superior esquerdo e digite um nome como &quot;Cenário de prática 1&quot;.
 
-   ![](assets/name-the-scenario.png)
+   ![Nomear o cenário](assets/name-the-scenario.png)
 
 1. Continue com [Conecte o primeiro módulo](#2-connect-the-first-module) abaixo.
 
@@ -106,7 +106,7 @@ Testar o cenário permite determinar se ele está funcionando como esperado. Voc
    * Para obter informações gerais sobre a leitura de informações de execução do cenário, consulte [Fluxo de execução do cenário](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md).
    * Para obter informações sobre pacotes processados, consulte [Execução do cenário, ciclos e fases em [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
 
-1. Em [!DNL Workfront Fusion], clique em **[!UICONTROL Save]** ![](assets/save-icon.png) próximo ao canto inferior esquerdo para salvar seu progresso no cenário.
+1. Em [!DNL Workfront Fusion], clique em **[!UICONTROL Save]** ![Ícone Salvar](assets/save-icon.png) próximo ao canto inferior esquerdo para salvar seu progresso no cenário.
 
    >[!IMPORTANT]
    >

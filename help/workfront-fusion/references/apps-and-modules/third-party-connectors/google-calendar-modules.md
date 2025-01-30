@@ -4,9 +4,9 @@ description: Em um cenário  [!DNL Adobe Workfront Fusion] , você pode automati
 author: Becky
 feature: Workfront Fusion
 exl-id: 6e514204-cd8e-4f30-bbbb-b8fbe48fc670
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '3306'
+source-wordcount: '3314'
 ht-degree: 0%
 
 ---
@@ -829,7 +829,7 @@ Você pode acionar um cenário em um horário especificado antes de um evento co
 
 1. Use o módulo [!UICONTROL Google Calendar] >[!UICONTROL Update an event] para adicionar um lembrete de email ao seu evento:
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/trigger-scen-before-event-350x209.png)
+   ![Acionar cenário antes do evento](/help/workfront-fusion/references/apps-and-modules/assets/trigger-scen-before-event-350x209.png)
 
 1. Crie um novo cenário começando com o módulo [!UICONTROL Webhooks] >[!UICONTROL Custom mailhook].
 
@@ -847,11 +847,11 @@ Você pode acionar um cenário em um horário especificado antes de um evento co
    1. Clique no balão acima do módulo para inspecionar a saída do módulo.
    1. Expanda o item `Text` e copie o código de Confirmação:
 
-      ![](/help/workfront-fusion/references/apps-and-modules/assets/confirmation-code-350x252.png)
+      ![Código de confirmação](/help/workfront-fusion/references/apps-and-modules/assets/confirmation-code-350x252.png)
 
    1. No Gmail, cole o código de Confirmação na caixa de edição e clique em&#x200B;**[!UICONTROL Verify]**:
 
-      ![](/help/workfront-fusion/references/apps-and-modules/assets/paste-code-350x46.png)
+      ![Colar código](/help/workfront-fusion/references/apps-and-modules/assets/paste-code-350x46.png)
 
    1. Abra a guia **[!UICONTROL Filters and Blocked Addresses]**.
    1. Clique em **[!UICONTROL Create a new filter]**.

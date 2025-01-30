@@ -4,9 +4,9 @@ description: Um armazenamento de dados, semelhante a um banco de dados ou a uma 
 author: Becky
 feature: Workfront Fusion
 exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1215'
 ht-degree: 1%
 
 ---
@@ -197,8 +197,8 @@ Você pode editar as propriedades e o conteúdo de um armazenamento de dados exi
 
 As propriedades de um armazenamento de dados incluem a estrutura de dados que o armazenamento de dados usa, bem como o tamanho do armazenamento de dados.
 
-1. Clique em **[!UICONTROL Data stores]** ![](assets/data-store-icon.png) no painel de navegação esquerdo para abrir a área [!UICONTROL Data stores].
-1. Clique em **[!UICONTROL Edit]** ![](assets/data-store-edit.png) ao lado do armazenamento de dados que você deseja editar.
+1. Clique em **[!UICONTROL Data stores]** ![Ícone de armazenamento de dados](assets/data-store-icon.png) no painel de navegação esquerdo para abrir a área [!UICONTROL Data stores].
+1. Clique em **[!UICONTROL Edit]** ![Editar armazenamento de dados](assets/data-store-edit.png) ao lado do armazenamento de dados que você deseja editar.
 1. (Opcional) Se quiser alterar a estrutura de dados usada por esse armazenamento de dados para outra estrutura de dados existente, selecione-a no menu suspenso **[!UICONTROL Data structure]**.
 
    Ou
@@ -210,7 +210,7 @@ As propriedades de um armazenamento de dados incluem a estrutura de dados que o 
 
 ### Editar o conteúdo de um armazenamento de dados
 
-1. Clique no ícone **[!UICONTROL Data Store]** ![](assets/data-store-icon.png) no painel de navegação esquerdo para abrir a área [!UICONTROL Data Store].
+1. Clique no ícone **[!UICONTROL Data Store]** ![Ícone de armazenamento de dados](assets/data-store-icon.png) no painel de navegação esquerdo para abrir a área [!UICONTROL Data Store].
 1. Clique em **[!UICONTROL Browse]** ao lado do armazenamento de dados que você deseja editar.
 1. (Opcional) Reordene as colunas arrastando-as para o local desejado.
 1. (Opcional) [!UICONTROL Edit] uma única célula, clicando no ícone **[!UICONTROL Edit]** nessa célula e digitando o valor desejado.

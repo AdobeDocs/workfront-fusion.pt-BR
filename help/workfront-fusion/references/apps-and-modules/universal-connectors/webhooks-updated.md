@@ -4,9 +4,9 @@ description: Um webhook é uma chamada HTTP acionada por um evento. Você pode u
 author: Becky
 feature: Workfront Fusion
 exl-id: 8e415378-e9c1-4b49-874b-6d38aba0c303
-source-git-commit: d5ab7dc135206a7269ad4fa0b5c02bf77b97d873
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1331'
 ht-degree: 0%
 
 ---
@@ -120,7 +120,7 @@ Ou você pode enviar os dados de exemplo pelo módulo [!UICONTROL HTTP] > [!UICO
     </tbody> 
    </table>
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/new-scenario-set-up-like-this-350x446.png)
+   ![Nova configuração de cenário](/help/workfront-fusion/references/apps-and-modules/assets/new-scenario-set-up-like-this-350x446.png)
 
 1. Abra o cenário com o módulo [!UICONTROL Webhooks] em uma guia ou janela separada do navegador.
 1. No módulo webhooks, clique em **[!UICONTROL Redetermine data structure]**.
@@ -132,7 +132,7 @@ Ou você pode enviar os dados de exemplo pelo módulo [!UICONTROL HTTP] > [!UICO
 
    Uma mensagem &quot;[!UICONTROL Successfully determined]&quot; significa que o módulo determinou com êxito a estrutura de dados.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/successfully-determined-350x175.png)
+   ![Determinado com êxito](/help/workfront-fusion/references/apps-and-modules/assets/successfully-determined-350x175.png)
 
 1. Clique em **[!UICONTROL OK]** para salvar a estrutura de dados.
 
@@ -241,7 +241,7 @@ Você pode extrair um valor de cabeçalho específico com a combinação das fun
 >
 >O exemplo abaixo mostra uma fórmula que extrai o valor do cabeçalho `authorization` da matriz `Headers[]`. A fórmula é usada em um filtro que compara o valor extraído com o texto fornecido para passar apenas webhooks se houver uma correspondência.
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/set-up-a-filter-350x169.png)
+>![Configurar um filtro](/help/workfront-fusion/references/apps-and-modules/assets/set-up-a-filter-350x169.png)
 >
 >Para obter mais informações sobre como obter um elemento de matriz com uma determinada chave, consulte [Mapear um elemento de matriz com uma determinada chave](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md#map-an-arrays-element-with-a-given-key) no artigo Mapear uma matriz.
 
@@ -311,11 +311,11 @@ O tempo limite para enviar uma resposta é de 40 segundos. Se a resposta não es
 &gt; </tbody> 
 &gt;</table>
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
+>![Cabeçalhos personalizados](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
 >Isso produzirá uma resposta HTML que é exibida em um navegador da Web:
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/html-response-350x70.png)
+>![Resposta HEML](/help/workfront-fusion/references/apps-and-modules/assets/html-response-350x70.png)
 
 ### Exemplo de redirecionamento
 
@@ -342,7 +342,7 @@ O tempo limite para enviar uma resposta é de 40 segundos. Se a resposta não es
 &gt; </tbody> 
 &gt;</table>
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
+>![Resposta do Webhook](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 
 ## Desativação do Webhook
 
@@ -360,6 +360,6 @@ Os webhooks desativados são excluídos e não registrados automaticamente se n�
 
 Se alguns itens estiverem ausentes no painel de mapeamento na configuração dos módulos após o módulo [!UICONTROL Webhooks] > [!UICONTROL Custom Webhook], clique no módulo **[!UICONTROL Webhooks]>[!UICONTROL Custom Webhook]** para abrir sua configuração e clique em **[!UICONTROL Re-determine data structure]**:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
+![Redeterminar a estrutura de dados](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
 
 Siga as etapas descritas na seção [Configurar a estrutura de dados do webhook](#configure-the-webhook-s-data-structure) neste artigo.

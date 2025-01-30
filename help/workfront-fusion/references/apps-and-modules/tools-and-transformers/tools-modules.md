@@ -4,9 +4,9 @@ description: A seção  [!DNL Adobe Workfront Fusion Tools]  inclui vários mód
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: 7d5188d1ee4e40f74c750e3ce3dcbd0e08bc6606
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1994'
+source-wordcount: '2000'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 A seção [!DNL Adobe Workfront Fusion Tools] inclui vários módulos úteis que podem aprimorar seu cenário.
 
-[!UICONTROL Tools] módulos estão disponíveis na lista de aplicativos ou no ícone ![](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png) do [!UICONTROL Tools], na parte inferior da tela.
+Os módulos [!UICONTROL Tools] estão disponíveis na lista de aplicativos ou no ícone [!UICONTROL Tools] ![Ícone de ferramentas](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png), na parte inferior da tela.
 
 ## Requisitos de acesso
 
@@ -161,14 +161,14 @@ Esse módulo pode ser usado para implementar uma atribuição &quot;rodízio&quo
 
 O cenário a seguir envia um email para o primeiro recipient após cada execução de cenário com numeração ímpar e para o segundo recipient após cada execução de cenário com numeração par.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/example-email.png)
+![Exemplo de email](/help/workfront-fusion/references/apps-and-modules/assets/example-email.png)
 
 Para criar esse cenário:
 
 1. Defina o campo **[!UICONTROL Reset a value]** do módulo como Nunca.
 1. Defina a rota para valores ímpares. Defina o filtro para esta rota usando a função matemática de módulo que é igual a `1`:
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
+   ![Números ímpares](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
 
 **Observação**: não se esqueça de alterar o operador [!UICONTROL Equal to] do operador [!UICONTROL Text] padrão para o operador [!UICONTROL Numeric].
 

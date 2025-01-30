@@ -4,9 +4,9 @@ description: Alguns módulos têm a capacidade de processar arquivos. Esses mód
 author: Becky
 feature: Workfront Fusion
 exl-id: 25c632f4-169e-4d3c-989a-f57b398bd3f0
-source-git-commit: 839f6edf93df8a935b2c5d0a520bdc125fe60288
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '419'
 ht-degree: 1%
 
 ---
@@ -92,10 +92,10 @@ Para mapear um arquivo:
 1. No módulo de destino, que é o destino para o qual você está mapeando, localize a área **arquivo do Source**.
 1. Para mapear uma saída de arquivo por um módulo anterior, selecione o módulo que produz o arquivo.
 
-   ![](assets/wf-download-document.png)
+   ![Documento de download do Workfront](assets/wf-download-document.png)
 
 1. Para mapear o nome e os dados manualmente, selecione Mapear e, em seguida, insira ou mapeie o nome e os dados do arquivo.
 
-   ![](assets/use-the-map-option.png)
+   ![Usar a opção de mapa](assets/use-the-map-option.png)
 
 1. Continue a configurar o módulo ou clique em **OK**.

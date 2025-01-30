@@ -4,9 +4,9 @@ description: A pasta [!UICONTROL Incomplete executions] armazena execuções de 
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ A guia [!UICONTROL History] mostra mais detalhes do que o disponível na página
 
    Ou
 
-   Se estiver trabalhando no cenário no Editor de cenários, clique na seta para a esquerda ![](assets/exit-editing-arrow.png) próxima ao canto superior esquerdo da janela.
+   Se você estiver trabalhando no cenário no Editor de cenários, clique na seta para a esquerda ![Sair da seta de edição](assets/exit-editing-arrow.png) próximo ao canto superior esquerdo da janela.
 
 1. Clique em **Histórico** próximo ao nome do cenário.
    ![guia Histórico](assets/history-tab.png)
@@ -115,7 +115,7 @@ A guia [!UICONTROL History] mostra mais detalhes do que o disponível na página
 
    Ou
 
-   Se estiver trabalhando no cenário no Editor de cenários, clique na seta para a esquerda ![](assets/exit-editing-arrow.png) próxima ao canto superior esquerdo da janela.
+   Se você estiver trabalhando no cenário no Editor de cenários, clique na seta para a esquerda ![Sair da seta de edição](assets/exit-editing-arrow.png) próximo ao canto superior esquerdo da janela.
 
 1. Clique na guia **[!UICONTROL History]** no painel direito.
 1. (Opcional) Para obter informações detalhadas sobre uma execução de cenário selecionada, clique na execução no painel direito.
@@ -133,7 +133,7 @@ A guia [!UICONTROL History] mostra mais detalhes do que o disponível na página
 Você pode filtrar o histórico de execução para exibir somente execuções com os valores especificados.
 
 1. Abra o histórico de página inteira para um cenário conforme descrito em [Exibir o histórico de execução de cenário na guia [!UICONTROL History]](#view-scenario-history-on-the-history-tab) deste artigo.
-1. Clique no ícone [!UICONTROL filter] ![](assets/fusion-scenario-filter-icon.png) no cabeçalho da coluna pela qual você deseja filtrar.
+1. Clique no ícone [!UICONTROL filter] ![Ícone de filtro de cenário](assets/fusion-scenario-filter-icon.png) no cabeçalho da coluna pela qual você deseja filtrar.
 1. Na caixa de diálogo [!UICONTROL filter], insira os valores pelos quais deseja filtrar.
 1. Clique em **[!UICONTROL Save]**.
 

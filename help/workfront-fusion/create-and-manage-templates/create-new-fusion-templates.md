@@ -4,9 +4,9 @@ description: Você pode criar novos modelos de cenário no  [!DNL Adobe] Workfro
 author: Becky
 feature: Workfront Fusion
 exl-id: 9cb9bd04-e9ae-4162-a1b9-d71566582b7a
-source-git-commit: 7acc27ab2ce80b964b7f9fbb302816aa75964ab5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '745'
 ht-degree: 0%
 
 ---
@@ -71,16 +71,16 @@ Você pode criar um modelo em um processo semelhante à criação de um cenário
 
 ### Criar um modelo
 
-1. Clique em **[!UICONTROL Templates]** ![](assets/templates-icon.png) no painel de navegação esquerdo.
+1. Clique no **[!UICONTROL Templates]** ![ícone Modelos](assets/templates-icon.png) no painel de navegação esquerdo.
 1. Clique em **[!UICONTROL Create a new template]** no canto superior direito.
 1. (Opcional) Renomeie o modelo substituindo o padrão **[!UICONTROL New template name]** no canto superior esquerdo.
-1. (Opcional) Para alterar o idioma do modelo, clique em **[!UICONTROL Set up a template]** ![](assets/scenario-settings-icon.png) e selecione o idioma no menu suspenso Idioma.
+1. (Opcional) Para alterar o idioma do modelo, clique em **[!UICONTROL Set up a template]** ![Ícone de configurações do cenário](assets/scenario-settings-icon.png) e selecione o idioma no menu suspenso Idioma.
 
    >[!IMPORTANT]
    >
    >A seleção Languages corresponde aos idiomas disponíveis nas configurações do sistema e aborda apenas o nome do template público e sua descrição. Não é possível alterar um idioma de modelo depois que o modelo é salvo.
 
-1. (Opcional) Para inserir uma descrição do modelo, clique em **[!UICONTROL Set up a template]** ![](assets/scenario-settings-icon.png) e insira a descrição.
+1. (Opcional) Para inserir uma descrição do modelo, clique em **[!UICONTROL Set up a template]** ![Ícone de configurações de cenário](assets/scenario-settings-icon.png) e insira a descrição.
 1. Adicionar aplicativos, módulos e ferramentas, usando os mesmos processos que adicionar módulos a um cenário.
 
    Para obter instruções, consulte os artigos em [Adicionar módulos](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md).
@@ -94,7 +94,7 @@ Você pode criar um modelo em um processo semelhante à criação de um cenário
    >Se o modelo incluir módulos que exigem a adição da conexão, das credenciais ou de outras informações confidenciais de privacidade, essas informações não serão compartilhadas com os usuários do modelo.
 
 1. (Opcional) Clique em **[!UICONTROL Run once]** para testar seu modelo.
-1. Clique no ícone **[!UICONTROL Save]** ![](assets/save-icon.png) para salvar o modelo.
+1. Clique no ícone **[!UICONTROL Save]** ![Ícone Salvar](assets/save-icon.png) para salvar o modelo.
 
 Ao salvar o modelo, ele fica visível para os membros da equipe. Se quiser que o modelo seja acessível fora da equipe, envie uma solicitação para que ele seja aprovado e publicado. A solicitação é enviada à equipe do Adobe Workfront Fusion para aprovação. Depois de aprovado, o modelo pode ser acessado por outras pessoas fora da equipe.
 
@@ -113,13 +113,13 @@ Para obter informações sobre a publicação de modelos, consulte [Publish e co
 
    O cenário é copiado em uma página Novo modelo.
 1. (Opcional) Renomeie o modelo substituindo o padrão **[!UICONTROL New template name]** no canto superior esquerdo.
-1. (Opcional) Para alterar o idioma do modelo, clique em **[!UICONTROL Set up a template]** ![](assets/scenario-settings-icon.png) e selecione o idioma no menu suspenso Idioma.
+1. (Opcional) Para alterar o idioma do modelo, clique em **[!UICONTROL Set up a template]** ![Ícone de configurações do cenário](assets/scenario-settings-icon.png) e selecione o idioma no menu suspenso Idioma.
 
    >[!IMPORTANT]
    >
    >A seleção Languages corresponde aos idiomas disponíveis nas configurações do sistema e aborda apenas o nome do template público e sua descrição. Não é possível alterar um idioma de modelo depois que o modelo é salvo.
 
-1. (Opcional) Para inserir uma descrição do modelo, clique em **[!UICONTROL Set up a template]** ![](assets/scenario-settings-icon.png) e insira a descrição.
+1. (Opcional) Para inserir uma descrição do modelo, clique em **[!UICONTROL Set up a template]** ![Ícone de configurações de cenário](assets/scenario-settings-icon.png) e insira a descrição.
 1. Edite aplicativos, módulos e ferramentas conforme desejado, usando os mesmos processos que adiciona módulos a um cenário.
 
    Para obter instruções, consulte os artigos em [Adicionar módulos](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md).
@@ -131,7 +131,7 @@ Para obter informações sobre a publicação de modelos, consulte [Publish e co
    >Se o modelo incluir módulos que exigem a adição da conexão, das credenciais ou de outras informações confidenciais de privacidade, essas informações não serão compartilhadas com os usuários do modelo.
 
 1. (Opcional) Clique em **[!UICONTROL Run once]** para testar seu modelo.
-1. Clique no ícone **[!UICONTROL Save]** ![](assets/save-icon.png).
+1. Clique no ícone **[!UICONTROL Save]** ![Ícone Salvar](assets/save-icon.png).
 
 ## Configurar a funcionalidade [!UICONTROL Wizard] {#set-up-wizard-functionality}
 

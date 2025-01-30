@@ -4,9 +4,9 @@ description: O Adobe Workfront Fusion Devtool permite compreender e solucionar p
 author: Becky
 feature: Workfront Fusion
 exl-id: 34215370-27e3-4c28-8bd1-a16268900b86
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1324'
 ht-degree: 0%
 
 ---
@@ -103,7 +103,7 @@ O Workfront Fusion Devtool está dividido em três seções principais. Você po
 
 O Live Stream exibe o que está acontecendo em segundo plano quando você clica em Executar uma vez no seu cenário.
 
-1. Clique no ícone **[!UICONTROL Live Stream]** ![](assets/live-stream-icon.png) para abrir a seção Live Stream.
+1. Clique no ícone **[!UICONTROL Live Stream]** ![Ícone de Live Stream](assets/live-stream-icon.png) para abrir a seção Live Stream.
 1. Siga um destes procedimentos:
 
    <table style="table-layout:auto"> 
@@ -153,7 +153,7 @@ O Live Stream exibe o que está acontecendo em segundo plano quando você clica 
 
 O Depurador de cenários é útil para cenários mais complexos. Ele exibe o histórico das execuções de cenário e permite pesquisar módulos pelo nome ou ID.
 
-1. Clique no ícone **[!UICONTROL Scenario Debugger]** ![](assets/scenario-debugger-icon.png) para abrir o Scenario Debugger.
+1. Clique no ícone **[!UICONTROL Scenario Debugger]** ![Ícone do Depurador](assets/scenario-debugger-icon.png) para abrir o Scenario Debugger.
 1. (Opcional) Insira o termo de pesquisa (nome ou ID do módulo) no campo de pesquisa.
 1. Clique no nome do módulo.
 1. Clique na operação para exibir os detalhes da solicitação.
@@ -162,7 +162,7 @@ O Depurador de cenários é útil para cenários mais complexos. Ele exibe o his
 
 O Devtool do [!DNL Workfront Fusion] apresenta ferramentas que facilitam a configuração do seu cenário.
 
-1. Clique no ícone **[!UICONTROL Tools]** ![](assets/console-tools-icon.png) para abrir as Ferramentas.
+1. Clique no ícone **[!UICONTROL Tools]** ![Ícone Ferramentas do console](assets/console-tools-icon.png) para abrir as Ferramentas.
 1. Selecione a ferramenta que deseja usar
 1. Configure os campos conforme detalhado abaixo.
 1. Clique em **[!UICONTROL Run]**.

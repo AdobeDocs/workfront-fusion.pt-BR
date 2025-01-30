@@ -4,9 +4,9 @@ description: Uma estrutura de dados é um documento que descreve em detalhes o f
 author: Becky
 feature: Workfront Fusion
 exl-id: 93abf8a5-a3a1-448e-834b-1cc81b88036b
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '216'
 ht-degree: 1%
 
 ---
@@ -24,4 +24,4 @@ Os tipos de dados suportados estão descritos no artigo [Tipos de dados](/help/w
 
 Nem sempre as estruturas de dados precisam ser criadas. Você pode tornar mais fácil usando um modelo do nosso gerador integrado. Ao fornecer uma amostra de dados, o gerador criará automaticamente uma estrutura de dados com base na amostra de dados inserida. A estrutura de dados criada pode ser modificada manualmente.
 
-![](assets/data-structure-generator-350x341.jpg)
+![Gerador de estrutura de dados](assets/data-structure-generator-350x341.jpg)

@@ -4,9 +4,9 @@ description: O aplicativo XML permite analisar um texto XML formatado por meio d
 author: Becky
 feature: Workfront Fusion
 exl-id: ab323361-cd04-4dcc-ab02-0fb468334fdb
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1302'
 ht-degree: 2%
 
 ---
@@ -95,7 +95,7 @@ O módulo [!UICONTROL XML] > [!UICONTROL Parse XML] analisa um texto formatado X
 >
 >   **URL**: URL do arquivo XML (por exemplo, `https://siftrss.com/f/rqLy05ayMBJ`)
 >
->   ![](/help/workfront-fusion/references/apps-and-modules/assets/url-of-xml-file-350x184.png)
+>   ![URL do exemplo de arquivo XML](/help/workfront-fusion/references/apps-and-modules/assets/url-of-xml-file-350x184.png)
 >
 >1. Clique em **[!UICONTROL OK]** &#x200B; salvar e fechar a configuração do módulo.
 1. Adicione o módulo [!UICONTROL XML] > [!UICONTROL Parse XML], conecte-o após o módulo [!UICONTROL HTTP] > [!UICONTROL Get a file] e configure-o da seguinte maneira:
@@ -143,7 +143,7 @@ Por padrão, o módulo [!UICONTROL XML] > [!UICONTROL Parse XML] coloca atributo
 
 é convertido neste pacote:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/xml-converted-to-bundle.png)
+![XML convertido em pacote](/help/workfront-fusion/references/apps-and-modules/assets/xml-converted-to-bundle.png)
 
 ## Criar XML
 
@@ -198,7 +198,7 @@ A configuração do módulo requer uma estrutura de dados que descreva a estrutu
 >
 1. Clique no botão **[!UICONTROL Generator]** e cole sua amostra XML no campo [!UICONTROL Sample data]:
 >
-![](/help/workfront-fusion/references/apps-and-modules/assets/sample-data-field-350x146.png)
+![Exemplo de campo de dados](/help/workfront-fusion/references/apps-and-modules/assets/sample-data-field-350x146.png)
 >
 1. Clique em **[!UICONTROL Save]**. O campo Specification na estrutura Data agora contém a estrutura gerada.
 1. Altere o nome da estrutura de Dados para algo mais específico e clique em **[!UICONTROL Save]**. Um campo correspondente ao atributo de matriz raiz aparece como um campo mapeável na configuração do módulo JSON.

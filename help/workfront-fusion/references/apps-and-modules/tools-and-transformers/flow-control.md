@@ -4,9 +4,9 @@ description: Ao criar ou editar um cenário, você pode definir configurações 
 author: Becky
 feature: Workfront Fusion
 exl-id: b3aed366-c399-44fa-8967-54ecb8647d96
-source-git-commit: ce2f13866fef97b5687991dfcf5d9579a5e539e4
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -62,13 +62,13 @@ Por exemplo, você pode usar um módulo [!UICONTROL Repeater] para enviar cinco 
 
 Para usar um módulo [!UICONTROL Repeater]:
 
-1. Clique no ícone [!UICONTROL Flow Control] ![](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif), na parte inferior da tela, e clique em **[!UICONTROL Repeater]**, no menu exibido.
+1. Clique no ícone [!UICONTROL Flow Control] ![Ícone de Controle de fluxo](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif), na parte inferior da tela, e clique em **[!UICONTROL Repeater]**, no menu exibido.
 1. Clique no pacote [!UICONTROL Repeater] e, em seguida, clique em **[!UICONTROL Connect automatically]** na caixa que é exibida.
 1. Na caixa [!UICONTROL Flow Control] exibida, digite o número de repetições (pacotes de saída) desejadas na caixa **[!UICONTROL Repeats]**.
 
    Em nosso exemplo de email, você digitaria 5.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/repeater-2-350x207.png)
+   ![Repetidor](/help/workfront-fusion/references/apps-and-modules/assets/repeater-2-350x207.png)
 
    O valor do item aumenta em cada repetição por este valor especificado no campo **[!UICONTROL Step]**, que pode ser visualizado ao selecionar **[!UICONTROL Show advanced settings]**. Esse número é 1 por padrão.
 
@@ -79,7 +79,7 @@ Para usar um módulo [!UICONTROL Repeater]:
 
    No nosso exemplo de email, você digitaria Olá na caixa [!UICONTROL Subject] e mapearia `i` do módulo do repetidor.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/repeater-3-350x207.png)
+   ![Repetidor](/help/workfront-fusion/references/apps-and-modules/assets/repeater-3-350x207.png)
 
 | Item | Descrição |
 |---|---|

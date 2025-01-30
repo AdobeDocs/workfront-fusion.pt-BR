@@ -4,9 +4,9 @@ description: Os módulos do Adobe Workfront Fusion [!DNL Google Docs] permitem m
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: cd44250d-c2cd-46b2-8773-15b30472a8d8
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '3215'
+source-wordcount: '3221'
 ht-degree: 0%
 
 ---
@@ -609,11 +609,11 @@ Esse módulo de ação permite executar uma chamada de API personalizada.
 
 [!UICONTROL GET]
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/api-call-example.png)
+![Exemplo de chamada de API](/help/workfront-fusion/references/apps-and-modules/assets/api-call-example.png)
 
 Detalhes do documento recuperado podem ser encontrados na Saída do módulo em [!UICONTROL Bundle] > [!UICONTROL Body].
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/api-output.png)
+![Saída de chamada de API](/help/workfront-fusion/references/apps-and-modules/assets/api-output.png)
 
 #### [!UICONTROL Make All Links in a Document Clickable]
 

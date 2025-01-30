@@ -4,9 +4,9 @@ description: O recurso Adobe Workfront FusionTemplates permite criar e usar mode
 author: Becky
 feature: Workfront Fusion
 exl-id: 560c20b7-155c-40db-9018-5a51b40d6fb0
-source-git-commit: 7acc27ab2ce80b964b7f9fbb302816aa75964ab5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '338'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,7 @@ Você deve criar um template antes de usá-lo.
 
 ## Criar um cenário a partir de um modelo
 
-1. Clique no ícone **[!UICONTROL Templates]** ![](assets/templates-icon.png) no painel de navegação esquerdo.
+1. Clique no **[!UICONTROL Templates]** ícone ![ícone Modelos](assets/templates-icon.png) no painel de navegação esquerdo.
 1. Clique na guia que contém o modelo que você deseja usar (Modelos públicos ou Modelos de equipe).
 1. Clique no template que deseja usar para começar a criar um cenário. Você pode usar a caixa de pesquisa no canto superior direito para localizar o modelo pelo seu nome ou pelo nome do aplicativo incluído nele.
 1. (Condicional) Se você for membro de mais de uma organização ou equipe, selecione para qual organização ou equipe deseja criar seu cenário e clique em **[!UICONTROL Continue]**.
@@ -78,4 +78,4 @@ Você deve criar um template antes de usá-lo.
 
    Para obter informações sobre como criar um cenário, consulte [Fluxo de trabalho para criar um cenário](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md).
 
-1. Clique no ícone **[!UICONTROL Save]** ![](assets/save-icon.png) para salvar seu cenário. O cenário é salvo na área Cenário do Workfront Fusion.
+1. Clique no ícone **[!UICONTROL Save]** ![Ícone Salvar](assets/save-icon.png) para salvar seu cenário. O cenário é salvo na área Cenário do Workfront Fusion.

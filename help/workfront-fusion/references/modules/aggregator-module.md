@@ -4,9 +4,9 @@ description: Um módulo agregador é um tipo de módulo projetado para unir vár
 author: Becky
 feature: Workfront Fusion
 exl-id: 93cde0d0-4013-463a-b19c-d58180632739
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '717'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Quando um módulo [!UICONTROL Aggregator] é executado, ele faz o seguinte:
 
 A imagem a seguir mostra uma configuração típica do módulo [!UICONTROL Aggregator]:
 
-![](assets/array-aggregator.png)
+![Agregador de matriz](assets/array-aggregator.png)
 
 <table style="table-layout:auto">
  <col> 
@@ -113,7 +113,7 @@ A imagem a seguir mostra uma configuração típica do módulo [!UICONTROL Aggre
 
 Este exemplo de cenário mostra como compactar todos os anexos de email e fazer upload do ZIP para [!DNL Dropbox].
 
-![](assets/dropbox-archive.png)
+![exemplo de arquivo Dropbox](assets/dropbox-archive.png)
 
 O cenário abaixo mostra como:
 
@@ -129,4 +129,4 @@ O cenário abaixo mostra como:
 
 Abaixo está uma configuração de exemplo do agregador [!UICONTROL Archive] > [!UICONTROL Create an archive]:
 
-![](assets/archive-create-an-archive.png)
+![Criar um arquivo morto](assets/archive-create-an-archive.png)

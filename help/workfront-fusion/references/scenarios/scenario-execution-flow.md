@@ -5,9 +5,9 @@ description: Este artigo explica como um cenário é executado e como os dados f
 author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
-source-git-commit: fe503c27bc4e3beb5645f0efa7c2097297f19190
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ O primeiro passo do cenário, executado pelo primeiro módulo, é observar as so
 
 Se o primeiro módulo retornar um pacote, ele passará pelo restante do cenário. Neste exemplo, o pacote iria para o segundo módulo, que converte a solicitação em um projeto.
 
-![](assets/example-execution-flow-wf-only.png)
+![Fluxo de execução do cenário do Workfront](assets/example-execution-flow-wf-only.png)
 
 >[!ENDSHADEBOX]
 
@@ -50,7 +50,7 @@ O primeiro passo do cenário, realizado pelo primeiro módulo, é observar docum
 
 Se um pacote for retornado, ele passará pelo restante do cenário. Neste exemplo, o restante do cenário consiste no segundo módulo, que carrega o pacote para a pasta [!DNL Dropbox].
 
-![](assets/example-execution-flow-wf-dropbox.png)
+![Fluxo de execução do cenário de integração](assets/example-execution-flow-wf-dropbox.png)
 
 Se o primeiro módulo retornar vários pacotes, o primeiro pacote será carregado para [!DNL Dropbox] antes que o segundo pacote seja carregado. O segundo pacote é carregado, o terceiro e assim por diante.
 
@@ -71,7 +71,7 @@ Para cada módulo, o pacote passa por um processo de quatro etapas antes de pass
 
 Após a conclusão de uma execução de cenário, cada módulo exibe um ícone mostrando o número de operações realizadas. Você pode clicar nesse ícone para exibir as informações detalhadas sobre os pacotes processados para cada etapa do processo. Você pode ver quais configurações de módulo foram usadas e quais pacotes foram retornados por cada módulo.
 
-![](assets/Info-processed-bundles.png)
+![Pacotes processados](assets/Info-processed-bundles.png)
 
 Neste exemplo, o módulo recebeu informações de entrada como:
 

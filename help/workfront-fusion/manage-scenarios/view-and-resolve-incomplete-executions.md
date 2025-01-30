@@ -4,9 +4,9 @@ description: A pasta [!UICONTROL Incomplete executions] armazena execuções de 
 author: Becky
 feature: Workfront Fusion
 exl-id: 8891b4d7-a39a-4f14-8521-8c2ca186ca6e
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '602'
 ht-degree: 6%
 
 ---
@@ -79,7 +79,7 @@ Se um módulo encontrar um erro durante sua operação, uma nova execução inco
 
 <!--
 
-![](assets/incomplete-executions-tab-350x102.png)
+![Incomplete executions tab](assets/incomplete-executions-tab-350x102.png)
 
 -->
 
@@ -113,7 +113,7 @@ Se quiser ver o log de todas as operações do módulo antes de tentar resolver 
 1. Abra o registro do módulo em que todas as operações do módulo são exibidas.
 1. Localize a operação com falha e clique em **[!UICONTROL Resolve]**:
 
-   ![](assets/resolve-btn-350x188.png)
+   ![Botão Resolver](assets/resolve-btn-350x188.png)
 
 ## Opções relacionadas a execuções incompletas
 

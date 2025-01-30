@@ -5,9 +5,9 @@ description: Recomendamos a prática opcional, mas útil, de adicionar observaç
 author: Becky
 feature: Workfront Fusion
 exl-id: 754601fa-b572-42c2-96a3-3c36a8ed2c56
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '92'
+source-wordcount: '100'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,6 @@ Recomendamos a prática opcional, mas útil, de adicionar observações sobre ca
 
 1. Feche a área **[!UICONTROL Notes]**.
 
-   Depois de adicionar uma observação a um cenário, um ponto laranja é exibido no ícone **[!UICONTROL Notes]** ![](assets/notes-icon-w-dot.png), na parte inferior do editor de cenários.
+   Depois de adicionar uma observação a um cenário, um ponto laranja é exibido no ícone **[!UICONTROL Notes]** ![Ícone Notas com ponto](assets/notes-icon-w-dot.png) na parte inferior do editor de cenários.
 
-1. Clique no ícone **[!UICONTROL Notes]** ![](assets/notes-icon-w-dot.png) para exibir suas anotações.
+1. Clique no ícone **[!UICONTROL Notes]** ![Ícone Notas com ponto](assets/notes-icon-w-dot.png) para exibir suas notas.

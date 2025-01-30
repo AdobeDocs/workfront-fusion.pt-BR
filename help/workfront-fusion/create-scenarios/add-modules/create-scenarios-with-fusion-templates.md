@@ -4,9 +4,9 @@ description: O recurso Modelos do Adobe Workfront Fusion permite criar e usar mo
 author: Becky
 feature: Workfront Fusion
 exl-id: 9bc5f195-c406-45e9-9a1e-5c8a2a0e0ded
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '433'
 ht-degree: 1%
 
 ---
@@ -66,7 +66,7 @@ Os modelos públicos estão disponíveis sem pré-requisitos.
 
 ## Criar um cenário a partir de um modelo
 
-1. Clique na guia ![](assets/templates-icon.png) de **Modelos**, no painel de navegação esquerdo.
+1. Clique na guia **Modelos** ![ícone Modelos](assets/templates-icon.png) no painel de navegação esquerdo.
 1. Clique na guia que contém o modelo que você deseja usar (**Modelos públicos** ou **Modelos de equipe**).
 1. Procure um template específico usando a barra de pesquisa próxima ao canto superior esquerdo da tela. Você pode pesquisar por nome de modelo ou aplicativos incluídos.
 1. Clique no template que deseja usar para criar um cenário.
@@ -84,6 +84,6 @@ Os modelos públicos estão disponíveis sem pré-requisitos.
 
 1. Ao definir todas as configurações necessárias para o modelo, você recebe uma notificação de que o modelo está pronto para ser usado e as opções de cenário padrão são exibidas na parte inferior da tela. Agora você pode continuar criando seu cenário.
 
-1. Clique no ícone **Salvar** ![](assets/save-icon.png) próximo à parte inferior da tela para salvar seu cenário.
+1. Clique no ícone **Salvar** ![Salvar ícone](assets/save-icon.png) próximo à parte inferior da tela para salvar seu cenário.
 
    O cenário é salvo na área Cenários do Workfront Fusion.

@@ -4,9 +4,9 @@ description: O aplicativo HTTP [!DNL Adobe Workfront Fusion] fornece vários mó
 author: Becky
 feature: Workfront Fusion
 exl-id: 7db97e6e-262d-4be2-823b-423f56a7d886
-source-git-commit: 6398261775584e33515c546de4e7a72d5830ebe0
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '394'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ Esse módulo retorna cada cabeçalho (nome e valor) do módulo HTTP especificado
 
 Cabeçalho
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/jwt-header-350x19.png)
+![Cabeçalho JWT](/help/workfront-fusion/references/apps-and-modules/assets/jwt-header-350x19.png)
 
 Código para copiar e colar:
 
@@ -115,7 +115,7 @@ Código para copiar e colar:
 
 Carga:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/jwt-payload-350x17.png)
+![carga JWT](/help/workfront-fusion/references/apps-and-modules/assets/jwt-payload-350x17.png)
 
 Código para copiar e colar:
 
@@ -125,7 +125,7 @@ Código para copiar e colar:
 
 Token:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/jwt-token-350x15.png)
+![Token JWT](/help/workfront-fusion/references/apps-and-modules/assets/jwt-token-350x15.png)
 
 Código para copiar e colar:
 

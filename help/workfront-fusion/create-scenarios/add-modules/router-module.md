@@ -4,9 +4,9 @@ description: O módulo de Roteador permite ramificar seu fluxo em várias rotas 
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: 839f6edf93df8a935b2c5d0a520bdc125fe60288
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '829'
 ht-degree: 0%
 
 ---
@@ -71,13 +71,13 @@ Você deve adicionar um módulo de roteador antes de configurar rotas.
 1. No editor de cenários, clique na alça direita do módulo após o qual deseja adicionar o roteador.
 1. Selecione **[!UICONTROL Flow Control]** > **Roteador** na lista de módulos a serem exibidos.
 
-   ![](assets/connect-the-router-350x108.png)
+   ![Conectar a rota](assets/connect-the-router-350x108.png)
 
    Ou
 
    Para inserir o módulo Roteador entre dois módulos, clique no ícone de chave inglesa abaixo da rota que conecta os dois módulos e selecione **[!UICONTROL Add a router]** no menu.
 
-   ![](assets/insert-router-350x191.png)
+   ![Inserir roteador](assets/insert-router-350x191.png)
 1. Adicione a primeira rota ao roteador clicando na alça direita do roteador e adicionando um módulo, semelhante à adição de qualquer módulo.
 1. Para adicionar outra rota, clique no módulo do roteador. Uma rota é exibida. Adicione módulos a essa rota conforme desejado.
 
@@ -125,13 +125,13 @@ Você pode ativar uma rota de fallback no painel de filtro.
 1. No campo de rótulo do painel que é exibido, adicione um rótulo. Esse rótulo é exibido no cenário.
 1. Ative a caixa de seleção de rota de fallback.
 
-   ![](assets/fallback-route-350x260.png)
+   ![Rota de fallback](assets/fallback-route-350x260.png)
 
 1. Clique em **[!UICONTROL OK]** para salvar a configuração do filtro.
 
 A rota de Fallback está marcada com uma seta diferente no módulo do Roteador:
 
-![](assets/arrow-sign-in-router-module-350x361.png)
+![Seta de entrada no roteador](assets/arrow-sign-in-router-module-350x361.png)
 
 ## Exemplo: caso de uso `if/else`
 
@@ -141,10 +141,10 @@ Um caso de uso típico da rota de fallback é continuar o fluxo com uma rota se 
 
 Neste exemplo, a primeira rota é configurada com um filtro. Isso representa o componente `if`.
 
-![](assets/set-up-a-filter-2-350x242.png)
+![Configurar um filtro no roteiro](assets/set-up-a-filter-2-350x242.png)
 
 A segunda rota é configurada como uma rota de fallback. Isso representa o componente `else`.
 
-![](assets/enable-fallback-route-option-350x238.png)
+![Habilitar opção de fallback](assets/enable-fallback-route-option-350x238.png)
 
 >[!ENDSHADEBOX]

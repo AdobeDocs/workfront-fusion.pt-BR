@@ -4,7 +4,7 @@ description: Você pode usar o módulo SOAP para se conectar a APIs SOAP no Adob
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: bf9af473f08463c00578a1a8b07c800239225f09
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 1%
@@ -119,7 +119,7 @@ Se o módulo [!UICONTROL SOAP] se recusar a processar o arquivo WSDL ou lançar 
     </tbody> 
    </table>
 
-   <!--![](/help/workfront-fusion/references/apps-and-modules/assets/workaround-350x443.png)-->
+   <!--![Workaround](/help/workfront-fusion/references/apps-and-modules/assets/workaround-350x443.png)-->
 
 1. Abra uma nova janela ou guia do navegador da Web.
 1. Cole o URL WSDL na barra de endereços do navegador da Web e busque o arquivo XML.
@@ -129,7 +129,7 @@ Se o módulo [!UICONTROL SOAP] se recusar a processar o arquivo WSDL ou lançar 
 1. Se o arquivo WSDL não for exibido diretamente no navegador da Web, abra o arquivo baixado em um editor de texto.
 1. Pesquisar a marca `<service>` ou `<wsdl:service>`:
 
-   <!--![](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
+   <!--![Service](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
 
 1. Depois de localizado, copie a URL do atributo `location`.
 1. Em [!DNL Workfront Fusion], cole a URL no campo de URL do módulo HTTP.
@@ -141,7 +141,7 @@ Se o módulo [!UICONTROL SOAP] se recusar a processar o arquivo WSDL ou lançar 
 1. Em [!UICONTROL Workfront Fusion], cole o conteúdo copiado no campo de URL do módulo.
 1. Forneça valores para os parâmetros selecionados substituindo os pontos de interrogação pelos valores reais:
 
-   <!--![](/help/workfront-fusion/references/apps-and-modules/assets/request-xml-350x172.png)-->
+   <!--![Request](/help/workfront-fusion/references/apps-and-modules/assets/request-xml-350x172.png)-->
 
 1. Feche a configuração do módulo clicando em **[!UICONTROL OK]**.
 1. Execute o cenário ou módulo.

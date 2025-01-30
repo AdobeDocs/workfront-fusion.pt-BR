@@ -4,9 +4,9 @@ description: Um módulo Iterador é um tipo especial de módulo que converte uma
 author: Becky
 feature: Workfront Fusion
 exl-id: 43d39955-3dd7-453d-8eb0-3253a768e114
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '570'
 ht-degree: 1%
 
 ---
@@ -63,11 +63,11 @@ Para obter informações sobre as licenças do Adobe Workfront Fusion, consulte 
 
 O módulo Iterador geral tem um único campo, O campo [!UICONTROL Array]. Este campo contém a matriz a ser convertida ou dividida em pacotes separados.
 
-![](assets/set-up-iterator.jpg)
+![Configurar iterador](assets/set-up-iterator.jpg)
 
 Outros conectores podem incluir módulos do iterador específicos a esse iterador. Eles contêm um campo do módulo Source, que permite selecionar o módulo que gera a matriz que você deseja iterar.
 
-![](assets/specialized-iterators.jpg)
+![Iteradores especializados](assets/specialized-iterators.jpg)
 
 Para obter mais informações, consulte [Configurar um módulo](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md).
 
@@ -79,7 +79,7 @@ Para obter mais informações, consulte [Configurar um módulo](/help/workfront-
 
   Os e-mails podem conter uma matriz de anexos. O módulo [!UICONTROL Iterator] após o primeiro módulo permite que o cenário trate cada anexo separadamente. O módulo [!UICONTROL Iterator] divide a matriz de anexos em conjuntos únicos. Cada pacote, com um anexo, é salvo um de cada vez em uma pasta [!DNL Dropbox] selecionada. O campo [!UICONTROL Array] no módulo Iterador deve conter a matriz `Attachments`.
 
-  ![](assets/attachments-array.jpg)
+  ![Matriz de anexos](assets/attachments-array.jpg)
 
 >[!ENDSHADEBOX]
 
@@ -90,7 +90,7 @@ Para obter mais informações, consulte [Configurar um módulo](/help/workfront-
 
 Quando um módulo [!UICONTROL Iterator] não tem informações sobre a estrutura dos itens da matriz, o painel de mapeamento nos módulos após o módulo [!UICONTROL Iterator] exibe apenas dois itens sob o módulo [!UICONTROL Iterator]: `Total number of bundles` e `Bundle order position`.
 
-![](assets/mapping-panel-doesnt-display.png)
+![O painel de mapeamento não é exibido](assets/mapping-panel-doesnt-display.png)
 
 Isso ocorre porque cada módulo é responsável por fornecer informações sobre os itens gerados, para que esses itens possam ser exibidos corretamente no painel de mapeamento nos módulos subsequentes. No entanto, em alguns casos, vários módulos podem não ser capazes de fornecer essas informações. Por exemplo, módulos [!UICONTROL JSON] > [!UICONTROL Parse JSON] ou [!UICONTROL Webhooks] > [!UICONTROL Custom Webhook] com estrutura de dados ausente não forneceriam as informações.
 
@@ -100,11 +100,11 @@ A solução é executar o cenário manualmente. Isso força o módulo a criar a 
 
 Por exemplo, um cenário inclui um módulo [!UICONTROL JSON] > [!UICONTROL Parse JSON] sem uma estrutura de dados.
 
-![](assets/json-parse-json.png)
+![Analisar JSON](assets/json-parse-json.png)
 
 Um módulo [!UICONTROL Iterator] conectado a este módulo JSON não pode mapear a saída do módulo para o campo Matriz no painel de configuração do módulo [!UICONTROL Iterator].
 
-![](assets/connect-iterator-module.png)
+![Conectar módulo iterador](assets/connect-iterator-module.png)
 
 Para resolver isso:
 
@@ -120,8 +120,8 @@ Iniciar o cenário manualmente no editor de cenários.
 
 Depois que o [!UICONTROL JSON] > [!UICONTROL Parse JSON] for executado, ele poderá fornecer informações sobre suas saídas para todos os módulos subsequentes, incluindo o módulo Iterador. O painel de mapeamento na configuração do Iterador exibe os itens:
 
-![](assets/mapping-panel-displays-items.png)
+![O painel de mapeamento exibe itens](assets/mapping-panel-displays-items.png)
 
 além disso, o painel de mapeamento nos módulos conectados após o módulo [!UICONTROL Iterator] exibe os itens contidos na matriz:
 
-![](assets/items-contained-in-array.png)
+![Itens contidos na matriz](assets/items-contained-in-array.png)

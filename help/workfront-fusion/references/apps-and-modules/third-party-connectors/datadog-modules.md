@@ -4,9 +4,9 @@ description: Em um cenário  [!DNL Adobe Workfront Fusion] , você pode automati
 author: Becky
 feature: Workfront Fusion
 exl-id: c8c5f2e3-5af1-4957-bb6f-6c19c35102c5
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '795'
 ht-degree: 1%
 
 ---
@@ -213,10 +213,10 @@ URL: `/v1/dashboard`
 
 Método: `GET`
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-example.png)
+![Exemplo de chamada à API Datadog](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-example.png)
 
 O resultado pode ser encontrado na Saída do módulo em Pacote > Corpo > painéis.
 
 No nosso exemplo, 3 painéis foram retornados:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-response-example.png)
+![Resposta da API Datadog](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-response-example.png)

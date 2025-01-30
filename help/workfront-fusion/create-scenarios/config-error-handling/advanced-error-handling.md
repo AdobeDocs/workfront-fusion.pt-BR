@@ -4,9 +4,9 @@ description: É possível adicionar técnicas avançadas de tratamento de erros 
 author: Becky
 feature: Workfront Fusion
 exl-id: 745bfdc4-1327-4a28-a863-c217f15a7fc5
-source-git-commit: 0668441df8405610488e3e33658635e4cc7db270
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [li
 
 +++
 
-## Filtros
+## Filtragem
 
 Há dois tipos de filtragem que podem ocorrer em uma rota de manipulador de erros.
 
@@ -89,11 +89,11 @@ Este exemplo de cenário mostra como esses filtros funcionam para a manipulaçã
 
 Se você usar o módulo Dropbox > Criar uma pasta e uma pasta com o mesmo nome já existir, o módulo lançará um DataError:
 
-![](assets/dropbox.png)
+![Erro no Dropbox](assets/dropbox.png)
 
 O cenário completo funciona da seguinte maneira:
 
-![](assets/dropbox-scenario.png)
+![cenário de Dropbox](assets/dropbox-scenario.png)
 
 1. O módulo Ferramentas > Definir variável contém o nome da pasta
 1. O módulo HTTP > Obter um arquivo busca o arquivo que precisa ser carregado na pasta
@@ -111,19 +111,19 @@ Veja abaixo uma explicação detalhada da rota DataError.
 
 Para usar a pasta existente em seus módulos subsequentes, como Fazer upload de um arquivo, você deve adicionar uma rota de manipulador de erros ao módulo e buscar o caminho da pasta a ser mapeado no módulo de diretiva Retomar que se segue:
 
-![](assets/add-error-handler-route.png)
+![Adicionar rota de manipulador de erros](assets/add-error-handler-route.png)
 
 O filtro na primeira rota é definido para lidar apenas com o erro específico (DataError) que aparece quando uma pasta com o mesmo nome já existe:
 
-![](assets/condition.png)
+![Condição](assets/condition.png)
 
 O módulo Dropbox > Listar todos os arquivos em uma pasta é configurado para retornar todas as pastas na pasta de destino. O filtro a seguir passa apenas aquele que estávamos tentando criar originalmente. (O nome da pasta é armazenado no 33. Nome da pasta (item.)
 
-![](assets/condition2.png)
+![Condição](assets/condition2.png)
 
 A diretiva Retomar fornece o caminho da pasta como saída para o módulo com falha. Observe que a ID da pasta foi deixada em branco, pois não é necessária para o módulo Fazer upload de um arquivo.
 
-![](assets/flow-control.png)
+![Controle de fluxo](assets/flow-control.png)
 
 >[!ENDSHADEBOX]
 
@@ -137,7 +137,7 @@ Exemplo:
 
 Uma rota de manipulador de erros aninhada com filtros:
 
-![](assets/nested-error-handling-route.png)
+![Rota de tratamento de erros aninhada](assets/nested-error-handling-route.png)
 
 Nesse cenário, a segunda rota do manipulador de erros é aninhada na primeira rota do manipulador de erros.
 

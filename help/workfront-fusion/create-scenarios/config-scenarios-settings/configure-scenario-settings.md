@@ -5,9 +5,9 @@ description: Você pode definir configurações específicas para cenários no p
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 3afa631a44c6dae8b1e6def6f842a9ced9de741e
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1198'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte
 1. Clique em qualquer lugar no cenário para entrar no editor de cenários.
 1. Clique no ícone de engrenagem próximo ao canto inferior esquerdo da página.
 
-   ![](assets/scenario-settings-350x221.png)
+   ![Configurações de cenário](assets/scenario-settings-350x221.png)
 
    No painel [!UICONTROL Scenario settings] que é exibido, você pode definir várias configurações avançadas para o cenário.
 1. Ative ou desative as configurações de Cenário conforme necessário. Consulte [Opções de configurações do cenário](#scenario-settings-options) abaixo.
@@ -162,13 +162,13 @@ Definir mais ciclos pode ser útil quando você deseja impedir a interrupção d
 
 **Exemplos:** [!DNL Workfront] > [!UICONTROL Watch record] procura por novos problemas que entram, e [!DNL Workfront] >[!UICONTROL Convert object] converte a nova solicitação em um projeto e atribui a ela o modelo apropriado.
 
-![](assets/scenario-settings-ex-1-350x157.png)
+![Configurações de cenário](assets/scenario-settings-ex-1-350x157.png)
 
 Uma configuração [!UICONTROL more cycles] é aplicada somente quando você agenda a execução do cenário. Ao usar o botão [!UICONTROL Run once], as configurações de ciclo são consideradas.
 
 #### O número máximo de ciclos é definido como 1 (padrão)
 
-![](assets/max-number-cycles-1-350x201.png)
+![Número máximo de ciclos](assets/max-number-cycles-1-350x201.png)
 
 O número máximo de ciclos no módulo Workfront > Registros de observação está definido como `10`.
 Se 100 solicitações forem enviadas para [!DNL Workfront], e o campo Número máximo de ciclos for definido como 10, 90 arquivos serão deixados sem processamento após a execução de um cenário. Os próximos 10 arquivos são processados na próxima execução de cenário agendada.
@@ -183,7 +183,7 @@ Todos os arquivos são processados em 1 execução de cenário.
 
 Você pode ver os ciclos já executados nos detalhes do Cenário:
 
-![](assets/scenario-detail-350x207.png)
+![Detalhes do cenário](assets/scenario-detail-350x207.png)
 
 Para obter mais informações sobre esta página, consulte [Detalhes do cenário](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md).
 

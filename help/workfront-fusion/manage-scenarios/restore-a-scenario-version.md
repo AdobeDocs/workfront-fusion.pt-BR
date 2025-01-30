@@ -4,9 +4,9 @@ description: É possível restaurar uma versão anterior de um cenário. Isso pe
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '199'
 ht-degree: 2%
 
 ---
@@ -68,7 +68,7 @@ Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte
 ## Restaurar uma versão de cenário
 
 1. Abra seu cenário.
-1. Clique no ícone [!UICONTROL More] ![](assets/more-icon.png) na parte inferior da tela e em **[!UICONTROL Previous Versions]**.
+1. Clique no ícone [!UICONTROL More] ![Mais ícone](assets/more-icon.png) na parte inferior da tela e clique em **[!UICONTROL Previous Versions]**.
 
 1. Clique em **[!UICONTROL Pick the version]** e depois clique na versão que deseja restaurar.
 1. Clique em **[!UICONTROL OK]**.

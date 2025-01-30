@@ -7,9 +7,9 @@ description: Gerenciar cenários bloqueados em  [!DNL Adobe Workfront Fusion]
 author: Becky
 feature: Workfront Fusion
 exl-id: b5e92bdc-cc1d-4b22-8c5f-42cc279d5590
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '324'
 ht-degree: 1%
 
 ---
@@ -92,4 +92,4 @@ Para desbloquear manualmente um cenário bloqueado:
 1. Clique em **[!UICONTROL Options]** no canto superior direito da tela.
 1. Selecione **[!UICONTROL Unlock execution]**.
 1. Clique em **[!UICONTROL Unlock]**.
-   ![](assets/unlock-scenario.png)
+   ![Desbloquear cenário](assets/unlock-scenario.png)

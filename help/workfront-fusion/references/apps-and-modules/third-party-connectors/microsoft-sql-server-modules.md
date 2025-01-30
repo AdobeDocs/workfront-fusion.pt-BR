@@ -4,9 +4,9 @@ description: Você pode usar o  [!DNL Adobe Workfront Fusion] para se conectar a
 author: Becky
 feature: Workfront Fusion
 exl-id: 8f3293f7-8b45-4e42-8ad8-f9d4969b63fd
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
@@ -92,6 +92,6 @@ Se outro módulo tentar acessar os mesmos dados, ele precisará aguardar até qu
 
 Ative a Confirmação automática. A confirmação automática conclui (confirma) cada transação imediatamente após a execução do módulo ser concluída.
 
-1. Clique no ícone [!UICONTROL Scenario settings] ![](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png)na parte inferior da tela.
+1. Clique no ícone [!UICONTROL Scenario settings] ![ícone Configurações de cenário](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png)na parte inferior da tela.
 1. Clique na caixa de seleção **[!UICONTROL Auto commit]**.
 1. Clique em **[!UICONTROL OK]** para salvar as configurações do cenário.

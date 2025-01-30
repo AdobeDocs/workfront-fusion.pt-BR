@@ -4,9 +4,9 @@ description: Os  [!DNL Adobe Workfront Fusion Google Forms] módulos permitem mo
 author: Becky
 feature: Workfront Fusion
 exl-id: dc017957-c0f8-4206-916f-21ccda346fb9
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1185'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ Para trabalhar com as respostas do formulário, a planilha de suas respostas dev
 
 1. Abra o formulário.
 1. Vá para a guia **[!UICONTROL Responses]**.
-1. Clique no ícone **[!UICONTROL Create Spreadsheet]** ![](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png).
+1. Clique no ícone **[!UICONTROL Create Spreadsheet]** ![Ícone de Planilha](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png).
 
 1. Selecione se deseja criar uma nova planilha ou uma planilha existente
 1. Clique em **[!UICONTROL Create]**.
@@ -98,11 +98,11 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 
 ![Alternância de mapa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [Triggers](#triggers)
+* [Acionadores](#triggers)
 * [Ações](#actions)
 * [Pesquisas](#searches)
 
-### Triggers
+### Acionadores
 
 #### [!UICONTROL Watch Responses]
 

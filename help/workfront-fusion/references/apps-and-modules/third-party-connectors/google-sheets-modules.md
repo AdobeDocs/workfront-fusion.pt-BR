@@ -4,9 +4,9 @@ description: Para usar [!DNL Google Sheets] com [!DNL Adobe Workfront Fusion],yo
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 80965570-2937-4ac8-97c0-54f7a813ec50
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '3366'
+source-wordcount: '3372'
 ht-degree: 0%
 
 ---
@@ -726,7 +726,7 @@ Use o módulo [!UICONTROL Search Rows (Advanced)] e use esta fórmula para obter
 1. Execute o cenário.
 1. No Google Sheets, escolha **[!UICONTROL Insert]** > **[!UICONTROL Drawing]**... na barra de menu principal.
 
-1. Na janela [!UICONTROL Drawing], clique no ícone ![](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) de **[!UICONTROL Text box]** próximo à parte superior da janela.
+1. Na janela [!UICONTROL Drawing], clique no ícone **[!UICONTROL Text box]** ![Caixa de texto](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) próximo à parte superior da janela.
 1. Crie um botão e clique no botão **[!UICONTROL Save and Close]** no canto superior direito:
 1. O botão será colocado em sua planilha. Clique nos três pontos verticais no canto superior direito do botão:
 1. Escolha **[!UICONTROL Assign script..].** no menu.
@@ -750,7 +750,7 @@ Use o módulo [!UICONTROL Search Rows (Advanced)] e use esta fórmula para obter
 
 Se você armazenar um valor Date em uma planilha sem qualquer formatação, ele será exibido na planilha como texto no formato ISO 8601. No entanto, [!DNL Google Sheets] fórmulas ou funções que funcionam com datas que não compreendem este texto (Exemplo: fórmula `=A1+10`) exibirão o seguinte erro:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/mceclip6-350x87.png)
+![Erro](/help/workfront-fusion/references/apps-and-modules/assets/mceclip6-350x87.png)
 
 Para ajudar a permitir que [!DNL Google Sheets] entenda a data, formate-a com a função [[!UICONTROL formatDate] (date; format; [timezone])](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md#formatda). O formato correto passado para a função como o segundo argumento depende das configurações de localidade da planilha.
 
@@ -764,7 +764,7 @@ Para determinar o formato correto:
 
 **Exemplo:** O uso do formato `MM/DD/YYYY HH:mm:ss` para a localidade dos Estados Unidos:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/locale-time-350x83.png)
+![Fórmula de hora local](/help/workfront-fusion/references/apps-and-modules/assets/locale-time-350x83.png)
 
 ## Explorando funções [!DNL Google Sheets]
 

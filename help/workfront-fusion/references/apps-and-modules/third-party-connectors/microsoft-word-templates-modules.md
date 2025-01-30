@@ -4,9 +4,9 @@ description: Em um cenário do Adobe Workfront Fusion, é possível automatizar 
 author: Becky
 feature: Workfront Fusion
 exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
-source-git-commit: 9e560995ff9f58a76bbecc521f7d2eef9d47fa48
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1245'
 ht-degree: 0%
 
 ---
@@ -84,11 +84,11 @@ Você pode usar um módulo [!DNL Microsoft Word Template] para mesclar dados de 
 
 Por exemplo, você poderia usar este modelo [!DNL Microsoft Word]:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-before-filled-350x62.png)
+![Modelo do Word anterior](/help/workfront-fusion/references/apps-and-modules/assets/word-template-before-filled-350x62.png)
 
 Para criar este documento:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-exampled-filled-350x85.png)
+![Modelo do Word preenchido](/help/workfront-fusion/references/apps-and-modules/assets/word-template-exampled-filled-350x85.png)
 
 ## Sobre tags de valor
 
@@ -110,7 +110,7 @@ Uma tag de valor simples é simplesmente substituída por um valor correspondent
 
 Para fazer isso, você configuraria o módulo da seguinte maneira:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-simple-value-350x286.png)
+![Valor simples de modelo do Word](/help/workfront-fusion/references/apps-and-modules/assets/word-template-simple-value-350x286.png)
 
 ### Tag de condição {#condition-tag}
 
@@ -125,7 +125,7 @@ Você pode usar uma tag de condição para quebrar o texto que deve ser renderiz
 
 Para fazer isso, você configuraria o módulo da seguinte maneira:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-conditional-350x501.png)
+![Modelo condicional do Word](/help/workfront-fusion/references/apps-and-modules/assets/word-template-conditional-350x501.png)
 
 No documento, o número de telefone seria exibido da seguinte maneira:
 
@@ -148,7 +148,7 @@ Você pode usar uma tag de loop, também conhecida como tag de seção, para rep
 Para fazer isso, você configuraria o módulo da seguinte maneira:
 
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-fill-out-a-document-350x732.png)
+![Preencher um documento](/help/workfront-fusion/references/apps-and-modules/assets/word-template-fill-out-a-document-350x732.png)
 
 O módulo criaria o seguinte documento:
 

@@ -4,9 +4,9 @@ description: Você pode usar a ferramenta Analisador de texto para analisar o te
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 4fa892b7875af2fcabaf26b375925af7a8cad2a0
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1156'
 ht-degree: 0%
 
 ---
@@ -267,21 +267,21 @@ Normalmente, essa expressão regular resultaria em uma correspondência completa
 
 No entanto, a implementação dessa expressão no analisador de texto não resulta em uma correspondência:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-you-dont-get-a-match-350x365.png)
+![Sem correspondência](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-you-dont-get-a-match-350x365.png)
 
 O motivo para isso é que o &quot;i&quot; mostra apenas o número de correspondências por correspondência, portanto, neste caso, temos 2 correspondências, portanto, depois do &quot;i&quot;, há um valor numérico 1 e 2. O caso de uso para isso é que, se você precisar corresponder ou transmitir dados por um filtro somente o segundo valor correspondente, poderá especificar qual valor é representado pelo valor numérico.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-matches-350x355.png)
+![Correspondência](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-matches-350x355.png)
 
 Para obter os valores de correspondência necessários para adicionar colchetes à parte que deseja analisar (por exemplo, para extrair somente de &quot;filename.docx&quot; - &quot;docx&quot;), de acordo com a expressão regex que estamos usando para esse cenário de caso, os colchetes devem ser aplicados em \.(.+)
 
 Isso captura o DOCX, coloca-o em um grupo e deixa o &quot;.&quot; fora dele.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-get-matches-350x592.png)
+![Obter correspondências](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-get-matches-350x592.png)
 
 Na saída mostrada na figura abaixo, o grupo de captura corresponderá a qualquer caractere (exceto para terminadores de linha).
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-output-350x389.png)
+![Saída](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-output-350x389.png)
 
 Outra solução alternativa que também incorpora o regex é usar a função de substituição
 

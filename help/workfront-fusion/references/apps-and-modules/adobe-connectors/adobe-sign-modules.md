@@ -4,9 +4,9 @@ description: Com os  [!DNL Adobe Acrobat Sign] módulos, você pode iniciar um [
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '5488'
+source-wordcount: '5501'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ Os novos usuários do [!DNL Adobe Sign] devem estar muito atentos a algumas rest
 
 [!DNL Adobe Sign] contratos precisam de um campo para funcionar. Há algumas opções para fazer isso, mas a mais fácil e comum é carregar um documento transitório e mapeá-lo para o seu contrato.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/adobe-sign-recommendations-350x168.png)
+![recomendações do Adobe Sign](/help/workfront-fusion/references/apps-and-modules/assets/adobe-sign-recommendations-350x168.png)
 
 ## [!DNL Adobe Acrobat Sign] módulos e seus campos
 
@@ -941,11 +941,11 @@ Carregue um documento transitório. Um documento transitório fica disponível p
 
 **Exemplo:** neste fluxo de trabalho, o documento a ser assinado (baixado anteriormente do Workfront) é carregado como um documento transitório.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/sign-example-1-350x308.png)
+(/help/workfront-fusion/references/apps-and-modules/assets/sign-example-1-350x308.png)
 
 O módulo [!UICONTROL Upload document] fornece ao documento uma ID [!DNL Adobe Acrobat Sign] que pode ser referenciada em módulos posteriores. Quando o contrato é criado, a ID do documento carregado é incluída no campo [!UICONTROL Files to send].
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/sign-example-2-350x356.png)
+![Exemplo de assinatura](/help/workfront-fusion/references/apps-and-modules/assets/sign-example-2-350x356.png)
 
 +++
 
