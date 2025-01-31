@@ -4,9 +4,9 @@ description: Em um cenário  [!DNL Adobe Workfront Fusion] , você pode automati
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 059bc82b-f1bc-4b92-a44b-51c1daf14f08
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 2ef98aa858c1459f214b12be3bf52f4f731012a2
 workflow-type: tm+mt
-source-wordcount: '2180'
+source-wordcount: '2260'
 ht-degree: 0%
 
 ---
@@ -21,42 +21,46 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
 
 ## Requisitos de acesso
 
++++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
+
 Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plano*</td>
-  <td> <p>[!UICONTROL Pro] ou superior</p> </td>
+   <td role="rowheader">Pacote do Adobe Workfront</td> 
+   <td> <p>Qualquer</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licença*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licença do Adobe Workfront</td> 
+   <td> <p>Novo: Padrão</p><p>Ou</p><p>Atual: trabalho ou superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licença**</td> 
+   <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisito de licença atual: nenhum requisito de licença [!DNL Workfront Fusion].</p>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion.</p>
    <p>Ou</p>
-   <p>Requisito de licença herdada: [!UICONTROL [!DNL Workfront Fusion] para Automação e Integração do Trabalho] </p>
-   </td>  
+   <p>Herdados: Automação e integração do Workfront Fusion for Work </p>
+   </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Requisito atual do produto: se você tiver o Plano [!UICONTROL Select] ou [!UICONTROL Prime] [!DNL Adobe Workfront], sua organização deve comprar o [!DNL Adobe Workfront Fusion] e o [!DNL Adobe Workfront] para usar a funcionalidade descrita neste artigo. [!DNL Workfront Fusion] está incluído no plano [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Novo:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
    <p>Ou</p>
-   <p>Requisito de produto herdado: sua organização deve comprar o [!DNL Adobe Workfront Fusion] e o [!DNL Adobe Workfront] para usar a funcionalidade descrita neste artigo.</p>
+   <p>Atual: sua organização deve comprar o Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Para saber que plano, tipo de licença ou acesso você tem, contate o administrador do [!DNL Workfront].
+Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Pré-requisitos
 
@@ -112,9 +116,59 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 
 ### Pasta de trabalho
 
-* [Assistir Pastas de Trabalho](#watch-workbooks)
-* [Pesquisar pastas de trabalho](#search-workbooks)
 * [Baixar uma Pasta de Trabalho](#download-a-workbook)
+* [Pesquisar pastas de trabalho](#search-workbooks)
+* [Assistir Pastas de Trabalho](#watch-workbooks)
+
+#### [!UICONTROL Download a Workbook]
+
+Este módulo de ação baixa o conteúdo da pasta de trabalho do Excel especificada.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Download a workbook]</td> 
+   <td> <p>Selecione como deseja identificar a pasta de trabalho para o módulo a ser baixado.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL By entering an ID manually]</strong> </p> <p>No campo [!UICONTROL Workbook ID], insira ou mapeie a ID da pasta de trabalho específica que você deseja que o módulo baixe.</p> </li> 
+     <li> <p><strong>[!UICONTROL By selecting from the path]</strong> </p> <p>No campo [!UICONTROL Workbook], selecione a pasta de trabalho que deseja que o módulo baixe, incluindo seu caminho se ele não estiver na pasta raiz.</p> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody>
+
+#### [!UICONTROL Search Workbooks]
+
+Este módulo de ação pesquisa por [!DNL Excel] pastas de trabalho.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td> <p>Selecione a pasta na qual deseja pesquisar pastas de trabalho.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Filter]</p> </td> 
+   <td> <p>É possível definir um filtro para pesquisar apenas pastas de trabalho que atendam aos critérios selecionados.</p> <p>Para cada filtro, insira o campo que deseja que o filtro avalie, o operador e o valor que deseja que o filtro permita. É possível usar mais de um filtro adicionando regras AND ou OR.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td> <p>Insira ou mapeie o número máximo de planilhas que você deseja que o módulo retorne durante cada ciclo de execução do cenário.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+</table>
 
 #### [!UICONTROL Watch Workbooks]
 
@@ -143,73 +197,46 @@ Esse módulo de acionador inicia um cenário quando uma pasta de trabalho é cri
  </tbody> 
 </table>
 
-#### [!UICONTROL Search Workbooks]
-
-Este módulo de ação pesquisa por [!DNL Excel] pastas de trabalho.
-
-<table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Folder]</td> 
-   <td> <p>Selecione a pasta na qual deseja pesquisar pastas de trabalho.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Filter]</p> </td> 
-   <td> <p>É possível definir um filtro para pesquisar apenas pastas de trabalho que atendam aos critérios selecionados.</p> <p>Para cada filtro, insira o campo que deseja que o filtro avalie, o operador e o valor que deseja que o filtro permita. É possível usar mais de um filtro adicionando regras AND ou OR.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td> <p>Insira ou mapeie o número máximo de planilhas que você deseja que o módulo retorne durante cada ciclo de execução do cenário.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Download a Workbook]
-
-Este módulo de ação baixa o conteúdo da pasta de trabalho do Excel especificada.
-
-<table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Download a workbook]</td> 
-   <td> <p>Selecione como deseja identificar a pasta de trabalho para o módulo a ser baixado.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL By entering an ID manually]</strong> </p> <p>No campo [!UICONTROL Workbook ID], insira ou mapeie a ID da pasta de trabalho específica que você deseja que o módulo baixe.</p> </li> 
-     <li> <p><strong>[!UICONTROL By selecting from the path]</strong> </p> <p>No campo [!UICONTROL Workbook], selecione a pasta de trabalho que você deseja que o módulo baixe.</p> </li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
-
 ### Planilha
 
-* [[!UICONTROL Watch Worksheet Rows]](#watch-worksheet-rows)
-* [[!UICONTROL List Worksheets]](#list-worksheets)
-* [[!UICONTROL List Worksheet Rows]](#list-worksheet-rows)
 * [[!UICONTROL Add a Worksheet]](#add-a-worksheet)
 * [[!UICONTROL Add a Worksheet Row]](#add-a-worksheet-row)
-* [[!UICONTROL Update a Worksheet Row]](#update-a-worksheet-row)
 * [[!UICONTROL Delete a Worksheet Row]](#delete-a-worksheet-row)
+* [[!UICONTROL List Worksheet Rows]](#list-worksheet-rows)
+* [[!UICONTROL List Worksheets]](#list-worksheets)
+* [[!UICONTROL Update a Worksheet Row]](#update-a-worksheet-row)
+* [[!UICONTROL Watch Worksheet Rows]](#watch-worksheet-rows)
 
-#### [!UICONTROL Watch Worksheet Rows]
+#### [!UICONTROL Add a Worksheet]
 
-Esse módulo de acionamento inicia um cenário quando uma nova linha é adicionada à planilha.
+Esse módulo de ação cria uma nova planilha na pasta de trabalho selecionada.
 
 <table style="table-layout:auto"> 
- <col> 
- <col> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
+  </tr> 
+  <tr>
+    <td role="rowheader" >[!UICONTROL Workbook] </td>
+   <td> <p>Selecione a pasta de trabalho à qual deseja adicionar uma planilha, incluindo o caminho se a pasta de trabalho não estiver no diretório raiz.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Name] </td>
+   <td> <p>Insira ou mapeie um nome para a nova planilha.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Add a Worksheet Row]
+
+Este módulo de ação adiciona uma nova linha à planilha selecionada.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
@@ -217,11 +244,74 @@ Esse módulo de acionamento inicia um cenário quando uma nova linha é adiciona
   </tr> 
   <tr> 
     <td role="rowheader" >[!UICONTROL Workbook] </td>
-   <td> <p>Selecione a pasta de trabalho que contém a planilha que você deseja observar para novas linhas.</p> </td> 
+   <td> <p>Selecione a pasta de trabalho que contém a planilha à qual deseja adicionar uma linha, incluindo o caminho se a pasta de trabalho não estiver no diretório raiz.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Worksheet] </td>
+   <td> <p>Selecione a planilha à qual deseja adicionar uma linha.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Type of values being entered]</p> </td> 
+   <td> <p>Selecione o tipo de valor a ser inserido na planilha. </p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Formulas]</strong> </p> <p> O Excel tenta avaliar a expressão especificada. Os nomes das funções em uma fórmula estão em inglês. Exemplo: <code>[!DNL =SUM(A1:A10)]</code></p> </li> 
+     <li> <p><strong>[!UICONTROL Formulas local]</strong> </p> <p>O Excel tenta avaliar a expressão especificada. Os nomes das funções estão no idioma do aplicativo do Excel. Exemplo: <code>=SUM(A1, 1.5)</code> vs <code>=SUMME(A1; 1,5)</code></p> </li> 
+     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>O Excel não avalia o valor. </p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Row]</td>
+    <td>Para cada coluna, insira o valor que deseja que a coluna tenha na nova linha.</td>
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Delete a Worksheet Row]
+
+Este módulo de ação exclui uma linha de uma planilha.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Workbook] </td>
+   <td> <p>Selecione a pasta de trabalho que contém a planilha que inclui a linha que você deseja excluir.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Worksheet]</td>
+   <td> <p> Selecione a planilha que contém a linha que deseja deletar.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Row ID]</td>
+   <td>Informe ou mapeie a ID da linha que deseja deletar.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL List Worksheet Rows]
+
+Este módulo de ação recupera uma lista de linhas na planilha especificada.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr>
+    <td role="rowheader" >[!UICONTROL Workbook] </td>
+   <td> <p>Selecione a pasta de trabalho que contém a planilha que inclui as linhas que você deseja listar, incluindo o caminho se a pasta de trabalho não estiver no diretório raiz.</p> </td> 
+  </tr> 
+  <tr> 
     <td role="rowheader" >[!UICONTROL Worksheet] </td>
-   <td> <p>Selecione a planilha do Excel que deseja observar para novas linhas.</p> </td> 
+   <td> <p>Selecione a planilha que contém as linhas que deseja listar.</p> </td> 
   </tr> 
   <tr> 
     <td role="rowheader" >[!UICONTROL Limit]</td>
@@ -249,92 +339,6 @@ Este módulo de ação recupera uma lista de planilhas na pasta de trabalho espe
   <tr> 
     <td role="rowheader" >[!UICONTROL Limit]</td>
    <td> <p>Insira ou mapeie o número máximo de planilhas que você deseja que o módulo retorne durante cada ciclo de execução do cenário.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL List Worksheet Rows]
-
-Este módulo de ação recupera uma lista de linhas na planilha especificada.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
-  </tr> 
-  <tr>
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
-   <td> <p>Selecione a pasta de trabalho que contém a planilha que inclui as linhas que você deseja listar.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet] </td>
-   <td> <p>Selecione a planilha que contém as linhas que deseja listar.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Limit]</td>
-   <td> <p>Insira ou mapeie o número máximo de linhas da planilha que você deseja que o módulo retorne durante cada ciclo de execução do cenário.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Add a Worksheet]
-
-Esse módulo de ação cria uma nova planilha na pasta de trabalho selecionada.
-
-<table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
-  </tr> 
-  <tr>
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
-   <td> <p>Selecione a pasta de trabalho à qual deseja adicionar uma planilha.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Name] </td>
-   <td> <p>Insira ou mapeie um nome para a nova planilha.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Add a Worksheet Row]
-
-Este módulo de ação adiciona uma nova linha à planilha selecionada.
-
-<table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
-   <td> <p>Selecione a pasta de trabalho que contém a planilha à qual deseja adicionar uma linha.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet] </td>
-   <td> <p>Selecione a planilha à qual deseja adicionar uma linha.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Type of values being entered]</p> </td> 
-   <td> <p>Selecione o tipo de valor a ser inserido na planilha. </p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Formulas]</strong> </p> <p> O Excel tenta avaliar a expressão especificada. Os nomes das funções em uma fórmula estão em inglês. Exemplo: <code>[!DNL =SUM(A1:A10)]</code></p> </li> 
-     <li> <p><strong>[!UICONTROL Formulas local]</strong> </p> <p>O Excel tenta avaliar a expressão especificada. Os nomes das funções estão no idioma do aplicativo do Excel. Exemplo: <code>=SUM(A1, 1.5)</code> vs <code>=SUMME(A1; 1,5)</code></p> </li> 
-     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>O Excel não avalia o valor. </p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Row]</td>
-    <td>Para cada coluna, insira o valor que deseja que a coluna tenha na nova linha.</td>
   </tr> 
  </tbody> 
 </table>
@@ -375,18 +379,17 @@ Este módulo de ação atualiza uma linha de planilha existente.
   <tr> 
     <td role="rowheader" >[!UICONTROL Row]</td>
     <td>Para cada coluna, insira o valor que deseja que a coluna tenha na nova linha.</td>
-   --&gt; 
-  </tr> 
+    </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Worksheet Row]
+#### [!UICONTROL Watch Worksheet Rows]
 
-Este módulo de ação exclui uma linha de uma planilha.
+Esse módulo de acionamento inicia um cenário quando uma nova linha é adicionada à planilha.
 
 <table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
+ <col> 
+ <col> 
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
@@ -394,151 +397,33 @@ Este módulo de ação exclui uma linha de uma planilha.
   </tr> 
   <tr> 
     <td role="rowheader" >[!UICONTROL Workbook] </td>
-   <td> <p>Selecione a pasta de trabalho que contém a planilha que inclui a linha que você deseja excluir.</p> </td> 
+   <td> <p>Selecione a pasta de trabalho que contém a planilha que você deseja observar para novas linhas.</p> </td> 
+  </tr> 
+  <tr>
+    <td role="rowheader" >[!UICONTROL Worksheet] </td>
+   <td> <p>Selecione a planilha do Excel que deseja observar para novas linhas.</p> </td> 
+  </tr> 
+  <tr>
+    <td role="rowheader" >[!UICONTROL Skip Empty Rows] </td>
+   <td> <p>Habilite esta opção para não retornar pacotes para linhas vazias na planilha.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet]</td>
-   <td> <p> Selecione a planilha que contém a linha que deseja deletar.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Row ID]</td>
-   <td>Informe ou mapeie a ID da linha que deseja deletar.</td> 
+    <td role="rowheader" >[!UICONTROL Limit]</td>
+   <td> <p>Insira ou mapeie o número máximo de linhas da planilha que você deseja que o módulo retorne durante cada ciclo de execução do cenário.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Tabela
 
-* [[!UICONTROL Watch table rows]](#watch-table-rows)
-* [[!UICONTROL List tables]](#list-tables)
-* [[!UICONTROL List table rows]](#list-table-rows)
-* [[!UICONTROL Get a Table]](#get-a-table)
 * [[!UICONTROL Add a table]](#add-a-table)
 * [[!UICONTROL Add a table row]](#add-a-table-row)
-* [[!UICONTROL Update a table]](#update-a-table)
 * [[!UICONTROL Delete a table]](#delete-a-table)
-
-#### [!UICONTROL Watch table rows]
-
-Esse acionador inicia um cenário quando uma nova linha é adicionada a uma tabela.
-
->[!NOTE]
->
->A tabela aqui se refere ao elemento de tabela incorporado na Pasta de trabalho. Não a tabela inteira (pasta/planilha).
-
-![Tabela inserida](/help/workfront-fusion/references/apps-and-modules/assets/embedded-table-350x420.png)
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Workbook]</p> </td> 
-   <td> <p>Selecione a pasta de trabalho que contém a tabela que você deseja observar.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet] </td>
-   <td> <p> Selecione a planilha que contém a tabela que você deseja observar.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Table]</p> </td> 
-   <td> <p>Selecione a tabela que deseja observar.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Limit]</td>
-   <td> <p>Insira ou mapeie o número máximo de linhas que você deseja que o módulo retorne durante cada ciclo de execução do cenário.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL List tables]
-
-Este módulo de pesquisa recupera uma lista de todos os objetos de tabela.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
-  </tr> 
-  <tr>
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
-   <td> <p>Selecione a pasta de trabalho que contém as tabelas que você deseja listar.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet] </td>
-   <td> <p>Selecione a planilha que contém as tabelas que deseja listar</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Limit]</td>
-   <td> <p>Insira ou mapeie o número máximo de tabelas que você deseja que o módulo retorne durante cada ciclo de execução de cenário.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL List table rows]
-
-Este módulo de pesquisa recupera uma lista de todas as linhas de tabela em uma pasta de trabalho.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
-   <td> <p>Selecione a pasta de trabalho que contém a tabela que inclui as linhas que você deseja listar.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet] </td>
-   <td> <p>Selecione a planilha que contém a tabela que inclui as linhas que você deseja listar</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Table] </td>
-   <td> <p>Selecione a tabela que contém as linhas que você deseja listar.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Limit]</td>
-   <td> <p>Insira ou mapeie o número máximo de linhas de tabela que você deseja que o módulo retorne durante cada ciclo de execução do cenário.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Get a Table]
-
-Este módulo de ação recupera metadados para a tabela especificada.
-
-<table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> 
-     <p >[!UICONTROL Connection]</p>
-   </td> 
-   <td> 
-     <p>Para obter instruções sobre como conectar sua conta do Office 365 ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p>
-    --&gt; </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Get a table]</td> 
-   <td> <p>Selecione como você deseja identificar a tabela que você deseja recuperar.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>No campo [!UICONTROL Workbook ID], insira ou mapeie a ID da pasta de trabalho que contém a tabela que você deseja recuperar.</p> <p>No campo [!UICONTROL Table Name], insira ou mapeie o nome da tabela que deseja recuperar.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Selecione a pasta de trabalho e a planilha que contêm a tabela que você deseja recuperar e selecione a tabela.</p> </li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
+* [[!UICONTROL Get a Table]](#get-a-table)
+* [[!UICONTROL List table rows]](#list-table-rows)
+* [[!UICONTROL List tables]](#list-tables)
+* [[!UICONTROL Update a table]](#update-a-table)
+* [[!UICONTROL Watch table rows]](#watch-table-rows)
 
 #### [!UICONTROL Add a table]
 
@@ -606,6 +491,114 @@ Este módulo de ação modifica uma tabela existente.
  </tbody> 
 </table>
 
+#### [!UICONTROL Delete a table]
+
+Este módulo de ação exclui a tabela especificada de uma planilha [!DNL Excel].
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Delete a table]</td> 
+   <td> <p>Selecione como você deseja identificar a tabela que deseja deletar.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Insira ou mapeie a ID da pasta de trabalho que contém a tabela que você deseja excluir e, em seguida, insira ou mapeie a ID da planilha que contém a tabela.</p> <p>No campo [!UICONTROL Table Name], insira ou mapeie o nome da tabela que deseja excluir.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Selecione a pasta de trabalho e a planilha que contêm a tabela que você deseja excluir e selecione a tabela.</p> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Get a Table]
+
+Este módulo de ação recupera metadados para a tabela especificada.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> 
+     <p >[!UICONTROL Connection]</p>
+   </td> 
+   <td> 
+     <p>Para obter instruções sobre como conectar sua conta do Office 365 ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p>
+    --&gt; </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Get a table]</td> 
+   <td> <p>Selecione como você deseja identificar a tabela que você deseja recuperar.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Insira ou mapeie a ID da pasta de trabalho que contém a tabela que você deseja recuperar e, em seguida, insira ou mapeie a ID da planilha que contém a tabela.</p> <p>No campo [!UICONTROL Table Name], insira ou mapeie o nome da tabela que deseja recuperar.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Selecione a pasta de trabalho e a planilha que contêm a tabela que você deseja recuperar e selecione a tabela.</p> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL List table rows]
+
+Este módulo de pesquisa recupera uma lista de todas as linhas de tabela em uma pasta de trabalho.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Workbook] </td>
+   <td> <p>Selecione a pasta de trabalho que contém a tabela que inclui as linhas que você deseja listar.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Worksheet] </td>
+   <td> <p>Selecione a planilha que contém a tabela que inclui as linhas que você deseja listar</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Table] </td>
+   <td> <p>Selecione a tabela que contém as linhas que você deseja listar.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Limit]</td>
+   <td> <p>Insira ou mapeie o número máximo de linhas de tabela que você deseja que o módulo retorne durante cada ciclo de execução do cenário.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL List tables]
+
+Este módulo de pesquisa recupera uma lista de todos os objetos de tabela.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
+  </tr> 
+  <tr>
+    <td role="rowheader" >[!UICONTROL Workbook] </td>
+   <td> <p>Selecione a pasta de trabalho que contém as tabelas que você deseja listar.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Worksheet] </td>
+   <td> <p>Selecione a planilha que contém as tabelas que deseja listar</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Limit]</td>
+   <td> <p>Insira ou mapeie o número máximo de tabelas que você deseja que o módulo retorne durante cada ciclo de execução de cenário.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 #### [!UICONTROL Update a table]
 
 Este módulo de ação atualiza uma tabela existente.
@@ -627,10 +620,6 @@ Este módulo de ação atualiza uma tabela existente.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Table] </td> 
-   <td> <p>Selecione a tabela que deseja atualizar.</p> </td> 
-  </tr> 
-  <tr> 
    <td role="rowheader">[!UICONTROL Name]</td> 
    <td> <p>Se quiser renomear a tabela, insira ou mapeie um novo nome para ela.</p> </td> 
   </tr> 
@@ -649,9 +638,15 @@ Este módulo de ação atualiza uma tabela existente.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a table]
+#### [!UICONTROL Watch table rows]
 
-Este módulo de ação exclui a tabela especificada de uma planilha [!DNL Excel].
+Esse acionador inicia um cenário quando uma nova linha é adicionada a uma tabela.
+
+>[!NOTE]
+>
+>A tabela aqui se refere ao elemento de tabela incorporado na Pasta de trabalho. Não a tabela inteira (pasta/planilha).
+
+![Tabela inserida](/help/workfront-fusion/references/apps-and-modules/assets/embedded-table-350x420.png)
 
 <table style="table-layout:auto"> 
  <col> 
@@ -662,47 +657,28 @@ Este módulo de ação exclui a tabela especificada de uma planilha [!DNL Excel]
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Get a table]</td> 
-   <td> <p>Selecione como você deseja identificar a tabela que deseja deletar.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>No campo [!UICONTROL Workbook ID], insira ou mapeie a ID da pasta de trabalho que contém a tabela que deseja excluir.</p> <p>No campo [!UICONTROL Table Name], insira ou mapeie o nome da tabela que deseja excluir.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Selecione a pasta de trabalho e a planilha que contêm a tabela que você deseja excluir e selecione a tabela.</p> </li> 
-    </ul> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Workbook]</p> </td> 
+   <td> <p>Selecione a pasta de trabalho que contém a tabela que você deseja observar.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Worksheet] </td>
+   <td> <p> Selecione a planilha que contém a tabela que você deseja observar.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Table]</p> </td> 
+   <td> <p>Selecione a tabela que deseja observar.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Limit]</td>
+   <td> <p>Insira ou mapeie o número máximo de linhas que você deseja que o módulo retorne durante cada ciclo de execução do cenário.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Outro
 
-* [[!UICONTROL Retrieve data]](#retrieve-data)
 * [[!UICONTROL Make an API Call]](#make-an-api-call)
-
-#### [!UICONTROL Retrieve data]
-
-Esta ação recupera dados do intervalo de planilhas definido e retorna um conjunto para cada linha.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Workbook] </td> 
-   <td> <p>Selecione a pasta de trabalho que contém os dados que você deseja recuperar.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Worksheet] </td> 
-   <td> <p>Selecione a planilha que contém os dados que você deseja recuperar.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Range] </td> 
-   <td> <p>Especifique a área da planilha da qual deseja recuperar dados indicando as células superior esquerda e inferior direita. Exemplo: <code>A1:D10</code></p> </td> 
-  </tr> 
- </tbody> 
-</table>
+* [[!UICONTROL Retrieve data]](#retrieve-data)
 
 #### [!UICONTROL Make an API Call]
 
@@ -738,6 +714,33 @@ Esse módulo de ação permite fazer uma chamada de API personalizada.
      <div class="example" data-mc-autonum="<b>Example: </b>">  
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Retrieve data]
+
+Esta ação recupera dados do intervalo de planilhas definido e retorna um conjunto para cada linha.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Workbook] </td> 
+   <td> <p>Selecione a pasta de trabalho que contém os dados que você deseja recuperar.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Worksheet] </td> 
+   <td> <p>Selecione a planilha que contém os dados que você deseja recuperar.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Range] </td> 
+   <td> <p>Especifique a área da planilha da qual deseja recuperar dados indicando as células superior esquerda e inferior direita. Exemplo: <code>A1:D10</code></p> </td> 
   </tr> 
  </tbody> 
 </table>
