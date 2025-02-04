@@ -4,14 +4,18 @@ description: O especialista em pontuação de cenários pode ajudá-lo a garanti
 author: Becky
 feature: Workfront Fusion
 exl-id: b668e7f6-dac5-4ac9-b3f3-109f70eaa2c4
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 1ac1c4358901ef81bb7375c24fcdf1a44119af13
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '349'
 ht-degree: 1%
 
 ---
 
 # Execute o especialista de pontuação de cenários
+
+>[!IMPORTANT]
+>
+>O Especialista em Pontuação de Cenários foi desabilitado temporariamente.
 
 O especialista em pontuação de cenários pode ajudá-lo a garantir que seu cenário seja configurado de uma maneira que siga as práticas recomendadas. Ele verifica o cenário e fornece recomendações para sua estrutura e organização.
 
