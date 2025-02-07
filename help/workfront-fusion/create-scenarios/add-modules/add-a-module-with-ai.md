@@ -4,9 +4,9 @@ description: Você pode usar a IA para inserir um prompt de texto que descreve o
 author: Becky
 feature: Workfront Fusion
 exl-id: d231e33a-6033-4e3c-b1d4-7034797c45a5
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 9d29abc82a3bb09affc4d17d7ea214d7bb850294
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '600'
 ht-degree: 1%
 
 ---
@@ -68,6 +68,15 @@ Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte
 
 +++
 
+## Pré-requisitos
+
+Sua organização deve atender aos seguintes pré-requisitos para usar essa funcionalidade:
+
+* Sua organização deve ter participado do programa Workfront AI Assistant Beta.
+* O Adobe deve ter um contrato de geração de IA de Adobe assinado no arquivo para sua organização.
+
+  Para obter mais informações sobre como assinar o contrato, consulte [Assinar o contrato do Adobe Gen AI](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) no artigo Visão geral do Assistente de IA na documentação da Workfront.
+
 ## Aplicativos do módulo de IA compatíveis no momento
 
 A Fusion AI pode atualmente gerar módulos que se conectam aos seguintes aplicativos:
@@ -95,15 +104,8 @@ A Fusion AI pode atualmente gerar módulos que se conectam aos seguintes aplicat
 1. Clique na guia **[!UICONTROL Scenarios]** no painel esquerdo.
 1. Selecione o cenário em que deseja adicionar um módulo.
 1. Clique em qualquer lugar no cenário para entrar no editor de cenários.
-1. Clique no ícone Gerar com IA ![Gerar com IA](assets/generate-with-ai-icon-beta.png) próximo à parte inferior da página do editor de cenários.
-
-   Ou
-
-   Comece a adicionar um módulo e selecione **Gerar com IA** na lista de aplicativos. Essa opção não aparece ao adicionar o primeiro módulo (acionador) a um cenário.
-
-   O painel Assistente de IA é aberto.
-1. (Condicional) Se esta for a primeira vez que você está usando a IA para adicionar um segmento de cenário, leia o Contrato exibido e clique em **Concordar**.
-1. Digite um prompt de texto na caixa.
+1. Clique no ícone do **Assistente de IA** ![ícone do Assistente de IA](assets/ai-assistant-icon.png) próximo ao canto superior direito da tela.
+1. Insira um prompt de texto no painel Assistente do AI.
 
    Para obter dicas sobre solicitações, consulte [Dicas para criar solicitações para segmentos de cenário](#tips-for-creating-prompts-for-scenario-segments) neste artigo.
 
