@@ -4,9 +4,9 @@ description: Um armazenamento de dados  [!DNL Adobe Workfront Fusion] , semelhan
 author: Becky
 feature: Workfront Fusion
 exl-id: 0338b822-b345-429e-850d-3978b692231d
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 7404dafc0b368a8f1785be7b6a65fe45c0f12172
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1028'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,8 @@ Para obter uma introdução em vídeo aos armazenamentos de dados no Workfront F
 
 ## Requisitos de acesso
 
++++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
+
 Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
 
 <table style="table-layout:auto">
@@ -32,60 +34,61 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plano*</td>
-  <td> <p>[!UICONTROL Pro] ou superior</p> </td>
+   <td role="rowheader">Pacote do Adobe Workfront</td> 
+   <td> <p>Qualquer</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licença*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licença do Adobe Workfront</td> 
+   <td> <p>Novo: Padrão</p><p>Ou</p><p>Atual: trabalho ou superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licença**</td> 
+   <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisito de licença atual: nenhum requisito de licença [!DNL Workfront Fusion].</p>
-   <p>Ou</p>
-   <p>Requisito de licença herdada: [!UICONTROL [!DNL Workfront Fusion] para Automação e Integração do Trabalho, [!UICONTROL [!DNL Workfront Fusion] para Automação do Trabalho</p>
+   <p>Nenhum requisito de licença do Workfront Fusion.</p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Requisito atual do produto: se você tiver o Plano [!UICONTROL Select] ou [!UICONTROL Prime] [!DNL Adobe Workfront], sua organização deve comprar o [!DNL Adobe Workfront Fusion] e o [!DNL Adobe Workfront] para usar a funcionalidade descrita neste artigo. [!DNL Workfront Fusion] está incluído no plano [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Novo:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
    <p>Ou</p>
-   <p>Requisito de produto herdado: sua organização deve comprar o [!DNL Adobe Workfront Fusion] e o [!DNL Adobe Workfront] para usar a funcionalidade descrita neste artigo.</p>
+   <p>Atual: sua organização deve comprar o Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Para saber que plano, tipo de licença ou acesso você tem, contate o administrador do [!DNL Workfront].
+Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Pré-requisitos
 
 Para usar módulos do [!UICONTROL Data Store], primeiro você deve criar um armazenamento de dados.
 
-<!--For information on creating data stores, see [Data Stores in [!UICONTROL Adobe Workfront Fusion]]()-->
+Para obter informações sobre como criar armazenamentos de dados, consulte [Criar e gerenciar armazenamentos de dados](/help/workfront-fusion/create-scenarios/map-data/data-stores.md).
 
-## [!UICONTROL Data Store] módulos e seus campos
+## [!UICONTROL Data store] módulos e seus campos
 
 Ao configurar módulos de Armazenamento de Dados, o [!DNL Workfront Fusion] exibe os campos listados abaixo. Junto com esses, campos adicionais do Data Store podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
+
+Não é necessário criar uma conexão para usar armazenamentos de dados.
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Alternância de mapa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-Todos os [!UICONTROL Data Store] módulos são do tipo Ação.
 
 * [Adicionar/Substituir um Registro](#addreplace-a-record)
-* [Atualizar um Registro](#update-a-record)
-* [Obter um Registro](#get-a-record)
 * [Verificar a existência de um registro](#check-the-existence-of-a-record)
+* [Contar Registros](#count-records)
 * [Excluir um Registro](#delete-a-record)
 * [Excluir todos os registros](#delete-all-records)
+* [Obter um Registro](#get-a-record)
 * [Pesquisar Registros](#search-records)
-* [Contar Registros](#count-records)
+* [Atualizar um Registro](#update-a-record)
 
 ### [!UICONTROL Add/Replace a Record]
 
@@ -97,7 +100,7 @@ O módulo retorna a ID do registro e quaisquer campos associados, juntamente com
 
 >[!NOTE]
 >
->O módulo emite um erro quando você tenta adicionar o registro que já está no armazenamento de dados com o mesmo nome e a opção [!UICONTROL Overwrite an existing record] está desabilitada.
+>O módulo emite um erro quando você tenta adicionar um registro que já está no armazenamento de dados com o mesmo nome e a opção [!UICONTROL Overwrite an existing record] está desabilitada.
 
 Ao configurar esse módulo, os campos a seguir são exibidos.
 
@@ -124,62 +127,6 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  </tbody> 
 </table>
 
-### [!UICONTROL Update a Record]
-
-Este módulo de ação atualiza um registro.
-
-Especifique o armazenamento de dados e a chave do registro.
-
-O módulo retorna a ID do registro e quaisquer campos associados, juntamente com quaisquer campos e valores personalizados que a conexão acessa. Você pode mapear essas informações em módulos subsequentes no cenário.
-
-Ao configurar esse módulo, os campos a seguir são exibidos.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Data store]</td> 
-   <td> <p> Selecione ou adicione o armazenamento de dados em que deseja criar um registro. </p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Key] </td> 
-   <td> <p>Insira a chave exclusiva do registro que você deseja que o módulo atualize.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Insert missing record] </td> 
-   <td> <p>Ative esta opção para criar um novo registro se o registro com a chave especificada ainda não existir.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Record]</td> 
-   <td> <p> Informe os valores desejados nos campos do registro que deseja atualizar.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Get a Record]
-
-Este módulo de ação recupera um registro.
-
-Especifique o armazenamento de dados e a chave do registro.
-
-O módulo retorna a ID do registro e quaisquer campos associados, juntamente com quaisquer campos e valores personalizados que a conexão acessa. Você pode mapear essas informações em módulos subsequentes no cenário.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Data store]</td> 
-   <td> <p> Selecione o armazenamento de dados do qual deseja recuperar um registro</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Key] </td> 
-   <td> <p>Insira a chave exclusiva do registro que você deseja que o módulo recupere.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
 ### [!UICONTROL Check the Existence of a Record]
 
 Este módulo de ação especifica se um determinado registro existe.
@@ -197,6 +144,25 @@ Especifique o armazenamento de dados e a chave do registro.
   <tr> 
    <td>[!UICONTROL Key] </td> 
    <td> <p>Insira a chave exclusiva do registro que você deseja que o módulo verifique quanto à existência.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### [!UICONTROL Count Records]
+
+Esse módulo de ação numera os registros em um armazenamento de dados.
+
+Você especifica o armazenamento de dados.
+
+Ao configurar esse módulo, os campos a seguir são exibidos.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Data store] </td> 
+   <td> <p>Selecione o armazenamento de dados que contém os registros que você deseja contar.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -241,6 +207,29 @@ Você especifica o armazenamento de dados.
  </tbody> 
 </table>
 
+### [!UICONTROL Get a Record]
+
+Este módulo de ação recupera um registro.
+
+Especifique o armazenamento de dados e a chave do registro.
+
+O módulo retorna a ID do registro e quaisquer campos associados, juntamente com quaisquer campos e valores personalizados que a conexão acessa. Você pode mapear essas informações em módulos subsequentes no cenário.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Data store]</td> 
+   <td> <p> Selecione o armazenamento de dados do qual deseja recuperar um registro</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Key] </td> 
+   <td> <p>Insira a chave exclusiva do registro que você deseja que o módulo recupere.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 ### [!UICONTROL Search Records]
 
 Esse módulo de pesquisa procura registros em um objeto no Armazenamento de dados que correspondam à consulta de pesquisa especificada.
@@ -276,21 +265,35 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  </tbody> 
 </table>
 
-### [!UICONTROL Count Records]
+### [!UICONTROL Update a Record]
 
-Esse módulo de ação numera os registros em um armazenamento de dados.
+Este módulo de ação atualiza um registro.
 
-Você especifica o armazenamento de dados.
+Especifique o armazenamento de dados e a chave do registro.
+
+O módulo retorna a ID do registro e quaisquer campos associados, juntamente com quaisquer campos e valores personalizados que a conexão acessa. Você pode mapear essas informações em módulos subsequentes no cenário.
 
 Ao configurar esse módulo, os campos a seguir são exibidos.
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Data store] </td> 
-   <td> <p>Selecione o armazenamento de dados que contém os registros que você deseja contar.</p> </td> 
+   <td>[!UICONTROL Data store]</td> 
+   <td> <p> Selecione ou adicione o armazenamento de dados em que deseja criar um registro. </p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Key] </td> 
+   <td> <p>Insira a chave exclusiva do registro que você deseja que o módulo atualize.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Insert missing record] </td> 
+   <td> <p>Ative esta opção para criar um novo registro se o registro com a chave especificada ainda não existir.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Record]</td> 
+   <td> <p> Informe os valores desejados nos campos do registro que deseja atualizar.</p> </td> 
   </tr> 
  </tbody> 
 </table>
