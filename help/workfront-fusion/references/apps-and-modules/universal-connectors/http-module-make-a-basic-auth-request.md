@@ -1,12 +1,12 @@
 ---
-title: HTTP &gt; Criar um módulo básico de solicitação de autorização
+title: HTTP > Criar um módulo básico de solicitação de autorização
 description: O Adobe Workfront Fusion exige uma licença do Adobe Workfront Fusion, além de uma licença do Adobe Workfront.
 author: Becky
 feature: Workfront Fusion
 exl-id: e544768e-7023-473f-8d51-631b04183743
-source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '771'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Este módulo [!DNL Adobe Workfront Fusion] permite que você configure uma solic
 
 >[!NOTE]
 >
->Se você estiver se conectando a um produto Adobe que não tem um conector dedicado no momento, recomendamos o uso do módulo Adobe Authenticator.
+>Se você estiver se conectando a um produto Adobe que não tem um conector dedicado no momento, recomendamos usar o módulo Adobe Authenticator.
 >
 >Para obter mais informações, consulte [módulo Adobe Authenticator](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md).
 
@@ -60,9 +60,9 @@ Para saber que plano, tipo de licença ou acesso você tem, contate o administra
 
 Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
 
-## Configuração do módulo [!UICONTROL HTTP] >[!UICONTROL Make a Basic Authorization request]
+## [!UICONTROL HTTP] > [!UICONTROL Make a Basic Authorization request] configuração de módulo
 
-Ao configurar o módulo [!UICONTROL HTTP] >[!UICONTROL Make a Basic Authorization request], o [!DNL Adobe Workfront Fusion] exibe os campos listados abaixo. Um título em negrito em um módulo indica um campo obrigatório.
+Ao configurar o módulo [!UICONTROL HTTP] > [!UICONTROL Make a Basic Authorization request], o [!DNL Adobe Workfront Fusion] exibe os campos listados abaixo. Um título em negrito em um módulo indica um campo obrigatório.
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro em [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 

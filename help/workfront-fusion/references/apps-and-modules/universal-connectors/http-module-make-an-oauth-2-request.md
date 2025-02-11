@@ -1,12 +1,12 @@
 ---
-title: HTTP &gt; Criar um módulo de solicitação OAuth 2.0
+title: HTTP > Criar um módulo de solicitação OAuth 2.0
 description: Para fazer uma solicitação  [!DNL Adobe Workfront Fusion] HTTP(S) para servidores que exigem uma autorização OAuth 2.0, primeiro é necessário criar uma conexão OAuth. [!DNL Adobe Workfront Fusion] garante que todas as chamadas feitas com esta conexão tenham os cabeçalhos de autorização apropriados e atualizem automaticamente os tokens associados quando necessário.
 author: Becky
 feature: Workfront Fusion
 exl-id: a302a1d4-fddf-4a71-adda-6b87ff7dba4b
-source-git-commit: 1a42567e93b4fae67c92720b7642186919e4c93d
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '1980'
+source-wordcount: '1978'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Para obter mais informações sobre a autenticação OAuth 2.0, consulte [A Estr
 
 >[!NOTE]
 >
->Se você estiver se conectando a um produto Adobe que não tem um conector dedicado no momento, recomendamos o uso do módulo Adobe Authenticator.
+>Se você estiver se conectando a um produto Adobe que não tem um conector dedicado no momento, recomendamos usar o módulo Adobe Authenticator.
 >
 >Para obter mais informações, consulte [módulo Adobe Authenticator](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md).
 
@@ -227,7 +227,7 @@ Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte
 1. Clique em **[!UICONTROL Continue]** para salvar a conexão e retornar ao módulo.
 1. Continue em [Configurar o módulo Criar uma solicitação OAuth 2.0](#configure-the-make-an-oauth-20-request-module).
 
-### Instruções para criar uma conexão com [!DNL Google] em [!UICONTROL HTTP] >[!UICONTROL Make an OAuth 2.0 request module]
+### Instruções para criar uma conexão com [!DNL Google] em [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request module]
 
 O exemplo a seguir mostra como usar o módulo de solicitação [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0] para se conectar a [!DNL Google].
 
@@ -333,7 +333,7 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
    <td> <p>O Corpo HTTP são os bytes de dados transmitidos em uma mensagem de transação HTTP imediatamente após os cabeçalhos, se houver algum a ser usado.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p>O tipo de corpo bruto geralmente é adequado para a maioria das solicitações de corpo HTTP, mesmo em situações em que a documentação do desenvolvedor não especifica os dados a serem enviados.</p> <p>Especifique um formulário de análise de dados no campo [!UICONTROL Content type].</p> <p>Apesar do tipo de conteúdo selecionado, os dados são inseridos em qualquer formato estipulado ou exigido pela documentação do desenvolvedor.</p> </li> 
-     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>Este tipo de corpo é para dados POST usando <code>[!UICONTROL application/x-www-form-urlencoded]</code>.</p> <p>Para <code>[!UICONTROL application/x-www-form-urlencoded]</code>, o corpo da mensagem HTTP enviada ao servidor é essencialmente uma cadeia de caracteres de consulta. As chaves e os valores são codificados em pares de valores chave separados por <code>&amp;</code> e por um <code>=</code> entre a chave e o valor. </p> <p>Para dados binários, <code>use [!UICONTROL multipart/form-data]</code> em vez disso.</p> 
+     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>Este tipo de corpo é para POSTAR dados usando <code>[!UICONTROL application/x-www-form-urlencoded]</code>.</p> <p>Para <code>[!UICONTROL application/x-www-form-urlencoded]</code>, o corpo da mensagem HTTP enviada ao servidor é essencialmente uma cadeia de caracteres de consulta. As chaves e os valores são codificados em pares de valores chave separados por <code>&amp;</code> e por um <code>=</code> entre a chave e o valor. </p> <p>Para dados binários, <code>use [!UICONTROL multipart/form-data]</code> em vez disso.</p> 
       <div class="example" data-mc-autonum="<b>Example: </b>">
        <span class="autonumber"><span><b>Exemplo: </b></span></span> 
        <p>Exemplo do formato de solicitação HTTP resultante:</p> 
@@ -342,7 +342,7 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>O [!UICONTROL Multipart/form-data] é uma solicitação HTTP de várias partes usada para enviar arquivos e dados. Normalmente, é usado para carregar arquivos no servidor.</p> <p>Adicione campos a serem enviados na solicitação. Cada campo deve conter um par de valores chave.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>Informe a chave e o valor a serem enviados dentro do corpo da solicitação.</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Informe a chave e especifique o arquivo de origem que deseja enviar no corpo da solicitação.</p> <p>Mapeie o arquivo que você deseja carregar do módulo anterior (como [!UICONTROL HTTP] &gt;[!UICONTROL Get a File]) ou insira o nome do arquivo e os dados do arquivo manualmente.</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Informe a chave e especifique o arquivo de origem que deseja enviar no corpo da solicitação.</p> <p>Mapeie o arquivo que você deseja carregar do módulo anterior (como [!UICONTROL HTTP] &gt; [!UICONTROL Get a File]) ou insira o nome do arquivo e os dados do arquivo manualmente.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 

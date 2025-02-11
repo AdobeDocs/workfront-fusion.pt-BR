@@ -1,12 +1,12 @@
 ---
-title: HTTP &gt; Criar um módulo de solicitação de autorização de certificado do cliente
+title: HTTP > Criar um módulo de solicitação de autorização de certificado do cliente
 description: Este módulo  [!DNL Adobe Workfront Fusion]  permite configurar uma solicitação HTTP com autorização de certificado de cliente HTTP e enviá-la a um servidor. A resposta HTTP recebida é então contida no pacote de saída.
 author: Becky
 feature: Workfront Fusion
 exl-id: cc33530c-3010-4955-8819-5eb8373a0e10
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '804'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Este módulo [!DNL Adobe Workfront Fusion] permite configurar uma solicitação 
 
 >[!NOTE]
 >
->Se você estiver se conectando a um produto Adobe que não tem um conector dedicado no momento, recomendamos o uso do módulo Adobe Authenticator.
+>Se você estiver se conectando a um produto Adobe que não tem um conector dedicado no momento, recomendamos usar o módulo Adobe Authenticator.
 >
 >Para obter mais informações, consulte [módulo Adobe Authenticator](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md).
 
@@ -64,9 +64,9 @@ Para saber que plano, tipo de licença ou acesso você tem, contate o administra
 
 Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
 
-## Configuração do módulo [!UICONTROL HTTP] >[!UICONTROL Make a Client Certificate Authorization request]
+## [!UICONTROL HTTP] > [!UICONTROL Make a Client Certificate Authorization request] configuração de módulo
 
-Ao configurar o módulo [!UICONTROL HTTP] >[!UICONTROL Make a Client Certificate Authorization request], o [!DNL Adobe Workfront Fusion] exibe os campos listados abaixo. Um título em negrito em um módulo indica um campo obrigatório.
+Ao configurar o módulo [!UICONTROL HTTP] > [!UICONTROL Make a Client Certificate Authorization request], o [!DNL Adobe Workfront Fusion] exibe os campos listados abaixo. Um título em negrito em um módulo indica um campo obrigatório.
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro em [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -114,7 +114,7 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>O [!UICONTROL Multipart/form-data] é uma solicitação HTTP de várias partes usada para enviar arquivos e dados. Normalmente, é usado para carregar arquivos no servidor.</p> <p>Adicione campos a serem enviados na solicitação. Cada campo deve conter um par de valor-chave.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>Informe a chave e o valor a serem enviados dentro do corpo da solicitação.</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Informe a chave e especifique o arquivo de origem que deseja enviar no corpo da solicitação.</p> <p>Mapeie o arquivo que você deseja carregar do módulo anterior (como [!UICONTROL HTTP] &gt;[!UICONTROL Get a File] ou [!UICONTROL Google Drive] &gt;[!UICONTROL Download a File)] ou insira o nome do arquivo e os dados do arquivo manualmente.</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Informe a chave e especifique o arquivo de origem que deseja enviar no corpo da solicitação.</p> <p>Mapeie o arquivo que você deseja carregar do módulo anterior (como [!UICONTROL HTTP] &gt; [!UICONTROL Get a File] ou [!UICONTROL Google Drive] &gt;[!UICONTROL Download a File)], ou insira o nome do arquivo e os dados do arquivo manualmente.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 

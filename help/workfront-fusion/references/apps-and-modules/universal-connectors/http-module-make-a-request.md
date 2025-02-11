@@ -1,12 +1,12 @@
 ---
-title: HTTP &gt; Criar um módulo de solicitação
-description: O Adobe Workfront Fusion HTTP &gt; Make a request module é um módulo universal que permite configurar uma solicitação HTTP e enviá-la a um servidor. A resposta HTTP recebida é então contida no pacote de saída.
+title: HTTP > Fazer um módulo de solicitação
+description: O módulo Adobe Workfront Fusion HTTP > Criar uma solicitação é um módulo universal que permite configurar uma solicitação HTTP e enviá-la a um servidor. A resposta HTTP recebida é então contida no pacote de saída.
 author: Becky
 feature: Workfront Fusion
 exl-id: 42f6176e-86e0-489e-868b-66823a932daf
-source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '815'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ O [!DNL Adobe Workfront Fusion] [!UICONTROL HTTP] > [!UICONTROL Make a request m
 
 >[!NOTE]
 >
->Se você estiver se conectando a um produto Adobe que não tem um conector dedicado no momento, recomendamos o uso do módulo Adobe Authenticator.
+>Se você estiver se conectando a um produto Adobe que não tem um conector dedicado no momento, recomendamos usar o módulo Adobe Authenticator.
 >
 >Para obter mais informações, consulte [módulo Adobe Authenticator](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md).
 
@@ -104,7 +104,7 @@ Ao configurar o módulo [!UICONTROL HTTP] > [!UICONTROL Make a request], o [!DNL
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL  Multipart/form-data] é uma solicitação HTTP multipart usada para enviar arquivos e dados. Normalmente, é usado para carregar arquivos no servidor.</p> <p>Adicione campos a serem enviados na solicitação. Cada campo deve conter um par de valor-chave.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>Informe a chave e o valor a serem enviados dentro do corpo da solicitação.</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Informe a chave e especifique o arquivo de origem que deseja enviar no corpo da solicitação.</p> <p>Mapeie o arquivo que você deseja carregar do módulo anterior (como [!UICONTROL HTTP] &gt;[!UICONTROL Get a File] ou [!UICONTROL Google Drive] &gt; Baixar um Arquivo) ou insira o nome do arquivo e os dados do arquivo manualmente.</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Informe a chave e especifique o arquivo de origem que deseja enviar no corpo da solicitação.</p> <p>Mapeie o arquivo que você deseja carregar do módulo anterior (como [!UICONTROL HTTP] &gt; [!UICONTROL Get a File] ou [!UICONTROL Google Drive] &gt; Baixar um Arquivo) ou insira o nome do arquivo e os dados do arquivo manualmente.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 

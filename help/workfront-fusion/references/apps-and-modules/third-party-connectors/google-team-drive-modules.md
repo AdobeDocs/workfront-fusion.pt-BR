@@ -4,7 +4,7 @@ description: Os  [!DNL Adobe Workfront Fusion Google Team Drive] módulos permit
 author: Becky
 feature: Workfront Fusion
 exl-id: 95dd9d23-1df9-40da-8fd0-646cc697bfc8
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: cca7aa6e15df0fd313e9d4ca391994a8ef4c974a
 workflow-type: tm+mt
 source-wordcount: '1059'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 
 ![Alternância de mapa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-### Triggers
+### Acionadores
 
 #### [!UICONTROL Watch Files]
 
@@ -162,7 +162,7 @@ Faz upload de um arquivo para a unidade compartilhada especificada.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Source File]</p> </td> 
-   <td> <p>Especifique o arquivo que deseja fazer upload na unidade compartilhada.</p> <p>Mapeie o arquivo que você deseja carregar do módulo anterior (por exemplo, [!UICONTROL HTTP] &gt;[!UICONTROL Get a File] ou [!UICONTROL Dropbox] &gt;[!UICONTROL Get a file)], ou insira o nome do arquivo e os dados do arquivo manualmente.</p> </td> 
+   <td> <p>Especifique o arquivo que deseja fazer upload na unidade compartilhada.</p> <p>Mapeie o arquivo que você deseja carregar do módulo anterior (por exemplo, [!UICONTROL HTTP] &gt; [!UICONTROL Get a File] ou [!UICONTROL Dropbox] &gt;[!UICONTROL Get a file)], ou insira o nome do arquivo e os dados do arquivo manualmente.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Title]</td> 

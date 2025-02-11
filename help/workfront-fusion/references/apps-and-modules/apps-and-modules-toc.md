@@ -6,7 +6,7 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: 1a42567e93b4fae67c92720b7642186919e4c93d
+source-git-commit: cca7aa6e15df0fd313e9d4ca391994a8ef4c974a
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%
@@ -24,10 +24,10 @@ ht-degree: 0%
 Esses conectores permitem que você se conecte a qualquer aplicativo ou serviço da Web que tenha uma API pública.
 
 * [módulo http > [!UICONTROL Make a request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
-* [Módulo [!UICONTROL HTTP] >[!UICONTROL Make a Basic Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
+* [Módulo [!UICONTROL HTTP] > [!UICONTROL Make a Basic Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
 * [Módulo [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
-* [Módulo [!UICONTROL HTTP] >[!UICONTROL Make a Client Certificate Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
-* [[!UICONTROL HTTP] >[!UICONTROL Make an API Key Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
+* [Módulo [!UICONTROL HTTP] > [!UICONTROL Make a Client Certificate Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Make an API Key Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
 * [[!UICONTROL HTTP] > Outros módulos](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-modules.md)
 * [Módulo SOAP](/help/workfront-fusion/references/apps-and-modules/universal-connectors/soap-module.md)
 * [Módulos FTP](/help/workfront-fusion/references/apps-and-modules/universal-connectors/ftp-modules.md)
@@ -44,9 +44,9 @@ O Fusion oferece conectores para muitos dos produtos e serviços da Adobe.
 * [Módulos de bibliotecas do Adobe Creative Cloud](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
 * [Módulos do Adobe Experience Manager Assets](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
 * [Módulos do Adobe Experience Manager Forms](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
-* [módulos Adobe Firefly](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
-* [Módulos Frame.io do Adobe](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
-* [Módulos de eventos do Adobe I/O](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
+* [Módulos do Adobe Firefly](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
+* [Módulos do Adobe Frame.io](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
+* [Módulos do Adobe I/O Events](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
 * [Módulos do Adobe Journey Optimizer](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-journey-optimizer-modules.md)
 * [Módulos do Adobe Lightroom](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-lightroom-modules.md)
 * [Módulos do Adobe Marketo](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-modules.md)
@@ -75,7 +75,7 @@ O Fusion oferece conectores para muitos aplicativos de terceiros.
 * [Módulos de evento](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/cvent-modules.md)
 * [Módulos do Datadog](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/datadog-modules.md)
 * [Módulos do DocuSign](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/docusign-modules.md)
-* [módulos Dropbox](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/dropbox-modules.md)
+* [Módulos do Dropbox](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/dropbox-modules.md)
 * [Módulos de email](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/email-modules.md)
 * [Módulos do Figma](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/figma-modules.md)
 * [Módulos do Github](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/github.md)
@@ -109,7 +109,7 @@ O Fusion oferece conectores para muitos aplicativos de terceiros.
 * [Módulos do Salesforce](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/salesforce-modules.md)
 * [Módulos de tradução gerenciados por SDL](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sdl-managed-translation-modules.md)
 * [Módulos do ServiceNow](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/servicenow-modules.md)
-* [módulos Slack](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
+* [Módulos do Slack](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
 * [Módulos do Split.io](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/split-io-modules.md)
 * [Módulos do Trello](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)
 * [Ampliar módulos](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/widen-modules.md)
