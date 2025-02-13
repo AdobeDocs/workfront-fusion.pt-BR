@@ -2,9 +2,9 @@
 user-guide-title: Documentação do Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Use os documentos, tutoriais e recursos adicionais para saber como implementar e usar efetivamente o Adobe Workfront Fusion em sua organização.
-source-git-commit: 1a42567e93b4fae67c92720b7642186919e4c93d
+source-git-commit: da0c82d66bcd90a9e676f54c93252218f9b1de99
 workflow-type: tm+mt
-source-wordcount: '1641'
+source-wordcount: '1648'
 ht-degree: 3%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 3%
 * Atividade de lançamento do Fusion {#fusion-release-activity}
    * [Atividade de lançamento do Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Versões do Fusion - 2025 {#fusion-releases-2025}
+      * [Atividade de lançamento do Workfront Fusion: semana de 10 de fevereiro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-2-10.md)
       * [Atividade de lançamento do Workfront Fusion: semana de 20 de janeiro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-20.md)
       * [Atividade de lançamento do Workfront Fusion: semana de 13 de janeiro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-13.md)
       * [Atividade de lançamento do Workfront Fusion: semana de 6 de janeiro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-6.md)
@@ -229,7 +230,7 @@ ht-degree: 3%
    * [Criar novos modelos](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md)
    * [Criar cenários com modelos](/help/workfront-fusion/create-and-manage-templates/create-scenarios-with-fusion-templates.md)
    * [Exibir, editar e excluir modelos](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)
-   * [Publish e modelos de compartilhamento](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)
+   * [Publicar e compartilhar modelos](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)
    * [Modelos do Adobe Workfront Fusion disponíveis no momento](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md)
    * [Perguntas frequentes sobre modelos de [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-and-manage-templates/fusion-templates-faqs.md)
 * Referências {#references}
@@ -289,16 +290,16 @@ ht-degree: 3%
          * [Módulos SFTP](/help/workfront-fusion/references/apps-and-modules/universal-connectors/sftp.md)
          * [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md)
          * [Usar TLS mútuo em módulos HTTP em  [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)
-      * Conectores de Adobe {#adobe-connectors}
+      * Conectores do Adobe {#adobe-connectors}
          * [Módulos do Adobe Acrobat Sign](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-sign-modules.md)
          * [Módulo Adobe Authenticator](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md)
          * [Módulos do Adobe Campaign](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-campaign-classic-connector.md)
          * [Módulos de bibliotecas do Adobe Creative Cloud](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
          * [Módulos do Adobe Experience Manager Assets](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
          * [Módulos do Adobe Experience Manager Forms](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
-         * [módulos Adobe Firefly](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
-         * [Módulos Frame.io do Adobe](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
-         * [Módulos de eventos do Adobe I/O](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
+         * [Módulos do Adobe Firefly](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
+         * [Módulos do Adobe Frame.io](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
+         * [Módulos do Adobe I/O Events](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
          * [Módulos do Adobe Journey Optimizer](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-journey-optimizer-modules.md)
          * [Módulos do Adobe Lightroom](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-lightroom-modules.md)
          * [Módulos do Adobe Marketo](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-modules.md)
@@ -323,7 +324,7 @@ ht-degree: 3%
          * [Módulos de evento](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/cvent-modules.md)
          * [Módulos do Datadog](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/datadog-modules.md)
          * [Módulos do DocuSign](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/docusign-modules.md)
-         * [módulos Dropbox](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/dropbox-modules.md)
+         * [Módulos do Dropbox](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/dropbox-modules.md)
          * [Módulos de email](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/email-modules.md)
          * [Módulos do Figma](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/figma-modules.md)
          * [Módulos do Github](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/github.md)
@@ -357,7 +358,7 @@ ht-degree: 3%
          * [Módulos do Salesforce](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/salesforce-modules.md)
          * [Módulos de tradução gerenciados por SDL](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sdl-managed-translation-modules.md)
          * [Módulos do ServiceNow](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/servicenow-modules.md)
-         * [módulos Slack](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
+         * [Módulos do Slack](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
          * [Módulos do Split.io](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/split-io-modules.md)
          * [Módulos do Trello](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)
          * [Ampliar módulos](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/widen-modules.md)
