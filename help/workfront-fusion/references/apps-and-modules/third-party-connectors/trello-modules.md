@@ -4,9 +4,9 @@ description: Em um cenário  [!DNL Adobe Workfront Fusion] , você pode automati
 author: Becky
 feature: Workfront Fusion
 exl-id: 5df5cd2b-ad4c-4a02-9d0c-7cee35232f93
-source-git-commit: a0a53d5c5af0956635f5026bbf8f8ee681946d86
+source-git-commit: 46bb455ecc0820dc68468f9f810bd51074c224fa
 workflow-type: tm+mt
-source-wordcount: '4320'
+source-wordcount: '4370'
 ht-degree: 0%
 
 ---
@@ -872,7 +872,7 @@ Este módulo de ação retorna cartões que correspondem à consulta de pesquisa
 
 +++ **[!UICONTROL Watch cards]**
 
-Esse módulo acionador é ativado quando um novo cartão é adicionado.
+Esse módulo de acionamento inicia um cenário quando uma nova placa é adicionada.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -893,7 +893,7 @@ Esse módulo acionador é ativado quando um novo cartão é adicionado.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>O número máximo de cartões [!DNL Workfront Fusion] retornará durante um ciclo de execução.</p> </td> 
+   <td> <p>Insira ou mapeie o número máximo de registros que deseja que o módulo retorne durante cada ciclo de execução de cenário.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -947,7 +947,7 @@ Este módulo de ação recupera informações sobre [!UICONTROL Trello] membros.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query] </td> 
-   <td> <p>Insira o nome completo ou o nome de usuário do usuário que deseja localizar.</p> </td> 
+   <td> <p>Informe o nome ou o nome de usuário do usuário que deseja localizar.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Partial] </td> 
@@ -955,7 +955,7 @@ Este módulo de ação recupera informações sobre [!UICONTROL Trello] membros.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned members]</td> 
-   <td> <p> O número máximo de membros [!DNL Workfront Fusion] retornará durante um ciclo de execução.</p> </td> 
+   <td> <p>Insira ou mapeie o número máximo de registros que deseja que o módulo retorne durante cada ciclo de execução de cenário.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -996,11 +996,11 @@ Esse módulo de ação cria uma lista de verificação no cartão selecionado.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Position] </td> 
-   <td> <p>Selecione se deseja adicionar a lista de verificação à parte superior ou a lista de verificação [!UICONTROL append the] à parte inferior do cartão.</p> </td> 
+   <td> <p>Selecione se deseja adicionar a lista de verificação à parte superior ou anexar a lista de verificação à parte inferior do cartão.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Enter checklist ID]</p> </td> 
-   <td> <p>Insira ou mapeie a ID de uma lista de verificação de origem que você deseja copiar para a nova.</p> </td> 
+   <td> <p>Se você estiver criando a lista de verificação copiando uma lista de verificação existente, informe ou mapeie o ID de uma lista de verificação de origem que você deseja copiar para a nova.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1021,7 +1021,7 @@ Este módulo de ação adiciona um item a uma lista de verificação específica
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter checklist ID]</td> 
-   <td> <p> Selecione como você deseja inserir a ID da lista de verificação à qual deseja adicionar um item.</p> 
+   <td> <p> Se você estiver criando uma nova lista de verificação copiando uma lista de verificação existente, selecione como deseja informar o ID da lista de verificação à qual deseja adicionar um item.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>No campo <strong>[!UICONTROL Checklist ID]</strong>, insira ou mapeie a ID do cartão ao qual deseja adicionar uma lista de verificação.<br></p> </li> 
      <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Selecione o quadro que contém o cartão ao qual deseja adicionar uma lista de verificação e selecione a lista que contém o cartão, em seguida, selecione o cartão e selecione a lista de verificação.</p> </li> 
@@ -1136,7 +1136,7 @@ Esse módulo de ação adiciona um comentário a um cartão selecionado.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Comment] </td> 
-   <td> <p>Insira o comentário que deseja adicionar ao cartão selecionado.</p> </td> 
+   <td> <p>Insira ou mapeie o comentário que deseja adicionar ao cartão selecionado.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1180,7 +1180,7 @@ Esse módulo de ação adiciona um comentário a um cartão selecionado.
 
 +++ **[!UICONTROL Watch Comments]**
 
-Recupera detalhes do comentário quando há um novo comentário em um local especificado.
+Esse módulo de acionador inicia um cenário quando um comentário é adicionado.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1203,7 +1203,7 @@ Recupera detalhes do comentário quando há um novo comentário em um local espe
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>O número máximo de comentários [!DNL Workfront Fusion] retornados durante um ciclo de execução.</p> </td> 
+   <td> <p>Insira ou mapeie o número máximo de comentários que você deseja que o módulo retorne durante cada ciclo de execução de cenário.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1223,4 +1223,4 @@ Se quiser editar um cartão ou criar um novo comentário, é necessário saber a
 
 ### Como encontrar IDs de outros objetos em [!DNL Trello]
 
-As IDs de quadro, lista e comentário só podem ser obtidas usando acionadores. O site do [!DNL trello.com] não mostra essas IDs.
+As IDs de quadro, lista e comentário só podem ser obtidas usando acionadores. O site do [!DNL `trello.com`] não mostra essas IDs.
