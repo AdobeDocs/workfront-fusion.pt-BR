@@ -4,10 +4,10 @@ description: Este módulo  [!DNL Adobe Workfront Fusion]  permite configurar uma
 author: Becky
 feature: Workfront Fusion
 exl-id: cc33530c-3010-4955-8819-5eb8373a0e10
-source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
+source-git-commit: c2680972c616a90b55fdaf2c907920e435f23469
 workflow-type: tm+mt
-source-wordcount: '804'
-ht-degree: 0%
+source-wordcount: '847'
+ht-degree: 1%
 
 ---
 
@@ -105,7 +105,7 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
    <td> <p>O Corpo HTTP são os bytes de dados transmitidos em uma mensagem de transação HTTP imediatamente após os cabeçalhos, se houver algum a ser usado.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p>O tipo de corpo bruto geralmente é adequado para a maioria das solicitações de corpo HTTP, mesmo em situações em que a documentação do desenvolvedor não especifica os dados a serem enviados.</p> <p>Especifique um formulário de análise de dados no campo [!UICONTROL Content type].</p> <p>Apesar do tipo de conteúdo selecionado, o módulo insere dados em qualquer formato estipulado ou exigido pela documentação do desenvolvedor.</p> </li> 
-     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>Este tipo de corpo é para dados [!UICONTROL POST] usando <code>application/x-www-form-urlencoded</code>.</p> <p>Para <code>[!UICONTROL application/x-www-form-urlencoded]</code>, o corpo da mensagem HTTP enviada ao servidor é essencialmente uma cadeia de caracteres de consulta. As chaves e os valores são codificados em pares de valores chave separados por <code>&amp;</code> e por um <code>=</code> entre a chave e o valor. </p> <p>Para dados binários, use <code>[!UICONTROL multipart/form-data]</code>.</p> 
+     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>Este tipo de corpo é para dados [!UICONTROL POST] usando <code>application/x-www-form-urlencoded</code>.</p> <p>Para <code>[!UICONTROL application/x-www-form-urlencoded]</code>, o corpo da mensagem HTTP enviada ao servidor é essencialmente uma cadeia de caracteres de consulta. As chaves e os valores são codificados em pares de valores chave separados por <code>&amp;</code> e por um <code>=</code> entre a chave e o valor. </p> <p>Para dados binários, use <code>[!UICONTROL multipart/form-data]</code>.</p> <p>Para cada par de valor-chave que você deseja adicionar, no campo Campos, clique em <b>Adicionar item</b> e insira a chave e o valor.</p>
       <div class="example" data-mc-autonum="<b>Example: </b>">
        <span class="autonumber"><span><b>Exemplo: </b></span></span> 
        <p>Exemplo do formato de solicitação HTTP resultante:</p> 
@@ -114,7 +114,7 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>O [!UICONTROL Multipart/form-data] é uma solicitação HTTP de várias partes usada para enviar arquivos e dados. Normalmente, é usado para carregar arquivos no servidor.</p> <p>Adicione campos a serem enviados na solicitação. Cada campo deve conter um par de valor-chave.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>Informe a chave e o valor a serem enviados dentro do corpo da solicitação.</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Informe a chave e especifique o arquivo de origem que deseja enviar no corpo da solicitação.</p> <p>Mapeie o arquivo que você deseja carregar do módulo anterior (como [!UICONTROL HTTP] &gt; [!UICONTROL Get a File] ou [!UICONTROL Google Drive] &gt;[!UICONTROL Download a File)], ou insira o nome do arquivo e os dados do arquivo manualmente.</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Informe a chave e especifique o arquivo de origem que deseja enviar no corpo da solicitação. Selecione um arquivo de origem de um módulo anterior ou mapeie o nome e os dados do arquivo.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
@@ -132,7 +132,25 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Self-signed certificate]</td> 
-   <td> <p> Faça upload do seu certificado se quiser usar o TLS usando seu certificado autoassinado.</p> </td> 
+   <td> <p>Para adicionar um certificado autoassinado:</p>
+          <ol>
+            <li value="1">
+              <p>Clique em <b>[!UICONTROL Extract]</b>.</p>
+            </li>
+            <li value="2">
+              <p>Selecione o tipo de arquivo que você está extraindo.</p>
+            </li>
+            <li value="3">
+              <p>Selecione o arquivo que contém o certificado ou.</p>
+            </li>
+            <li value="4">
+              <p>Digite a senha do arquivo.</p>
+            </li>
+            <li value="5">
+              <p>Clique em <b>[!UICONTROL Save]</b> para extrair o arquivo e retornar à configuração do módulo.</p>
+            </li>
+          </ol>
+</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reject connections that are using unverified (self-signed) certificates] </td> 
@@ -156,7 +174,7 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Use Mutual TLS]</td> 
-   <td> <p>Habilite esta opção para usar o TLS mútuo na solicitação HTTP.</p> <p>Para obter mais informações sobre TLS Mútuo, consulte <a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md" class="MCXref xref">Usar TLS Mútuo em módulos HTTP em [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Habilite esta opção para usar o TLS mútuo na solicitação HTTP.</p> <p>Para obter mais informações sobre TLS Mútuo, consulte <a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md" class="MCXref xref">Usar TLS Mútuo em módulos HTTP</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
