@@ -1,13 +1,13 @@
 ---
 title: Módulo SOAP
-description: Você pode usar o módulo SOAP para se conectar a APIs SOAP no Adobe Workfront Fusion.
+description: Você pode usar o módulo SOAP para se conectar às APIs do SOAP no Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 3a27a51e10438e6cf8862bf28b1d58273bbaff36
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 1%
+source-wordcount: '608'
+ht-degree: 0%
 
 ---
 
@@ -15,44 +15,95 @@ ht-degree: 1%
 
 Você pode usar o módulo [!UICONTROL SOAP] para se conectar a [!UICONTROL SOAP] APIs em [!UICONTROL Adobe Workfront Fusion].
 
+## Módulo SOAP e seus campos
+
+O conector do SOAP inclui apenas um módulo, a ação Executar SOAP
+
+### Executar ação do SOAP
+
+Esse módulo de ação executa a ação do SOAP especificada.
+
+
+
 ## Requisitos de acesso
+
++++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
 
 Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plano*</td>
-  <td> <p>[!UICONTROL Pro] ou superior</p> </td>
+   <td role="rowheader">Pacote do Adobe Workfront</td> 
+   <td> <p>Qualquer</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licença*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licença do Adobe Workfront</td> 
+   <td> <p>Novo: Padrão</p><p>Ou</p><p>Atual: trabalho ou superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licença**</td> 
+   <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisito de licença atual: nenhum requisito de licença [!DNL Workfront Fusion].</p>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion.</p>
    <p>Ou</p>
-   <p>Requisito de licença herdada: [!UICONTROL [!DNL Workfront Fusion] para Automação e Integração do Trabalho] </p>
+   <p>Herdados: Automação e integração do Workfront Fusion for Work </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Requisito atual do produto: se você tiver o Plano [!UICONTROL Select] ou [!UICONTROL Prime] [!DNL Adobe Workfront], sua organização deve comprar o [!DNL Adobe Workfront Fusion] e o [!DNL Adobe Workfront] para usar a funcionalidade descrita neste artigo. [!DNL Workfront Fusion] está incluído no plano [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Novo:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
    <p>Ou</p>
-   <p>Requisito de produto herdado: sua organização deve comprar o [!DNL Adobe Workfront Fusion] e o [!DNL Adobe Workfront] para usar a funcionalidade descrita neste artigo.</p>
+   <p>Atual: sua organização deve comprar o Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Para saber que plano, tipo de licença ou acesso você tem, contate o administrador do [!DNL Workfront].
+Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
+
+## Módulo SOAP e seus campos
+
+Ao configurar módulos do SOAP, o [!DNL Workfront Fusion] exibe os campos listados abaixo.  Um título em negrito em um módulo indica um campo obrigatório.
+
+Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+
+![Alternância de mapa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+
+### Executar ação do SOAP
+
+Este módulo de ação executa uma ação SOAP, baseada no WSDL especificado por você.
+
+<table style="table-layout:auto">
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL WSDL]</td> 
+   <td> Selecione o WSDL que você deseja que o módulo use. Para criar um WSDL, clique em <b>Adicionar</b> ao lado do campo e preencha os campos. </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL HTTP headers]</td> 
+   <td> Para cada cabeçalho HTTP que você deseja adicionar, clique em <b>Adicionar item</b> e insira o nome e o valor do cabeçalho.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL SOAP headers]</td> 
+   <td> Para cada cabeçalho do SOAP que você deseja adicionar, clique em <b>Adicionar item</b> e insira o nome, valor, namespace e XMLNS do cabeçalho.</td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!UICONTROL Force SOAP headers]</td> 
+   <td> Habilite essa opção para configurar cabeçalhos para o SOAP 1.2. </td> 
+  </tr> 
+  </tbody> 
+</table>
 
 ## Limitações do módulo [!UICONTROL SOAP]
 
@@ -67,26 +118,28 @@ O módulo [!UICONTROL SOAP] está atualmente na versão beta e não oferece supo
 * Restrições de dígitos totais
 * Restrições de espaço em branco
 * Várias partes nas mensagens de entrada e saída. Somente mensagens de parte única são suportadas
-* Elementos de Esquema XML personalizados definidos com a ajuda de [[!UICONTROL SOAP] Esquemas e elementos ](https://schemas.xmlsoap.org) de codificação.
+* Elementos personalizados do esquema XML definidos com a ajuda de esquemas e elementos de codificação do SOAP.
 
->[!INFO]
->
->**Exemplo:**
->  
->O seguinte não seria reconhecido corretamente por [!UICONTROL Workfront Fusion]:
->
->```
-><complexType name="ArrayOfFloat">
->     <complexContent>
->           <restriction base="soapenc:Array">
->                 <attribute ref="soapenc:arrayType"
->                       wsdl:arrayType="xsd:integer[]"/>
->           </restriction>
->     </complexContent>
-></complexType>
->```
->
->Este exemplo inclui as referências `soapenc:Array`, `soapenc:arrayType` e `wsdl:arrayType`, que ainda não têm suporte em [!UICONTROL Workfront Fusion].
+>[!BEGINSHADEBOX]
+
+**Exemplo:**
+
+O seguinte não seria reconhecido corretamente por [!UICONTROL Workfront Fusion]:
+
+```
+<complexType name="ArrayOfFloat">
+   <complexContent>
+      <restriction base="soapenc:Array">
+         <attribute ref="soapenc:arrayType"
+            wsdl:arrayType="xsd:integer[]"/>
+      </restriction>
+   </complexContent>
+</complexType>
+```
+
+Este exemplo inclui as referências `soapenc:Array`, `soapenc:arrayType` e `wsdl:arrayType`, que ainda não têm suporte em [!UICONTROL Workfront Fusion].
+
+>[!ENDSHADEBOX]
 
 ## Solução alternativa
 
