@@ -9,9 +9,9 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: c37aea95-7cc3-4939-a4d7-9a6a75557b85
-source-git-commit: 3f630b4cdc2cd39e8f0cd09716794cd62ad8a656
+source-git-commit: a3494479614a4930427842fa68e6b586edca0833
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '861'
 ht-degree: 6%
 
 ---
@@ -24,6 +24,7 @@ O Adobe Workfront Fusion conecta perfeitamente aplicativos e serviços da web pa
 
 ### Fevereiro de 2025
 
+* [Atividade de lançamento do Workfront Fusion: semana de 24 de fevereiro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-2-24.md)
 * [Atividade de lançamento do Workfront Fusion: semana de 17 de fevereiro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-2-17.md)
 * [Atividade de lançamento do Workfront Fusion: semana de 10 de fevereiro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-2-10.md)
 
