@@ -7,10 +7,12 @@ title: Módulos de armazenamento da Adobe
 description: Em um cenário  [!DNL Adobe Workfront Fusion] , é possível criar e gerenciar projetos na Adobe Admin Console.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: e027c93b77d825337b7fb2582c3de2a93c5c71f6
+hide: true
+hidefromtoc: true
+source-git-commit: 70a2d06da6be6c892df12faa3a168e66daef118e
 workflow-type: tm+mt
-source-wordcount: '1328'
-ht-degree: 3%
+source-wordcount: '1351'
+ht-degree: 2%
 
 ---
 
@@ -116,30 +118,25 @@ Para criar uma conexão para seus módulos do [!DNL Adobe Storage]:
       </col>
       <tbody>
         <tr>
+        <td role="rowheader">[!UICONTROL Connection type]</td>
+        <td>Selecione <code>Server to server</code>.</td>
+        </tr>
+        <tr>
         <td role="rowheader">[!UICONTROL Connection name]</td>
         <td>
           <p>Insira um nome para esta conexão.</p>
         </td>
         </tr>
-        <tr>
-        <td role="rowheader">[!UICONTROL Environment]</td>
-        <td>Selecione se você está se conectando a um ambiente de produção ou não produção.</td>
-        </tr>
-        <tr>
-        <td role="rowheader">[!UICONTROL Type]</td>
-        <td>Selecione se você está se conectando a uma conta de serviço ou a uma conta pessoal.</td>
-        </tr>
-        <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Insira seu [!UICONTROL Adobe] [!UICONTROL Client ID]. Isso pode ser encontrado na seção [!UICONTROL Credential details] do projeto no [!DNL Adobe Developer Console]</td>
+        <td>Insira seu [!UICONTROL Adobe] [!UICONTROL Client ID]. Isso pode ser encontrado na seção [!UICONTROL Credential details] do projeto no [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Insira seu [!DNL Adobe] [!UICONTROL Client Secret]. Isso pode ser encontrado na seção [!UICONTROL Credential details] do projeto no [!DNL Adobe Developer Console]</td>
+        <td>Insira seu [!DNL Adobe] [!UICONTROL Client Secret]. Isso pode ser encontrado na seção [!UICONTROL Credential details] do projeto no [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Authentication URL]</td>
-        <td>Insira um URL de autenticação. O padrão é <code>https://ims-na1.adobelogin.com</code>. </td>
+        <td role="rowheader">[!UICONTROL IMS Organization ID]</td>
+        <td>Insira ou mapeie sua ID da organização do Adobe IMS. Esta é uma cadeia de caracteres com o formato <code> 123abc@AdobeOrg</code>, em que a seção antes de @ é um número hexadecimal. Você pode encontrar esse valor como parte do caminho de URL da sua organização no Adobe Admin Console ou no console Adobe.IO da sua integração de gerenciamento de usuários.</td>
         </tr>
       </tbody>
     </table>
