@@ -4,11 +4,11 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: apps-and-their-modules
 title: Módulos de gerenciamento de usuários do Adobe
-description: Em um cenário  [!DNL Adobe Workfront Fusion] , você pode automatizar fluxos de trabalho que gerenciam usuários em sua conta Adobe.
+description: Em um cenário  [!DNL Adobe Workfront Fusion] , você pode automatizar fluxos de trabalho que gerenciam usuários em sua conta do Adobe.
 author: Becky
 feature: Workfront Fusion
 exl-id: e8fe8ec4-4b00-4c9a-81a5-acb2039b153b
-source-git-commit: 640fec2de63ad59ba89fae5373f85b8147d8dac0
+source-git-commit: 234a6a537718328e92eec13672a73bc43add17c1
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # Módulos de gerenciamento de usuários do Adobe
 
-Em um cenário [!DNL Adobe Workfront Fusion], você pode automatizar fluxos de trabalho que gerenciam usuários em sua conta Adobe.
+Em um cenário do [!DNL Adobe Workfront Fusion], você pode automatizar fluxos de trabalho que gerenciam usuários em sua conta do Adobe.
 
 Se você precisar de instruções sobre como criar um cenário, consulte os artigos em [Criar um cenário: índice do artigo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -104,7 +104,7 @@ Para criar uma conexão para seus módulos do [!DNL Adobe User Management]:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL IMS Organization ID]</td>
-        <td>Insira suas credenciais do IMS do [!DNL Adobe]. O identificador exclusivo de uma organização. Esta é uma cadeia de caracteres no formato A495E53@AdobeOrg em que o prefixo antes de @ é um número hexadecimal. Você pode encontrar esse valor como parte do caminho de URL da organização no Admin Console ou no console adobe.io para a integração do Gerenciamento de usuários.</td>
+        <td>Insira suas credenciais do IMS do [!DNL Adobe]. O identificador exclusivo de uma organização. Esta é uma cadeia de caracteres no formato A495E53@AdobeOrg em que o prefixo antes de @ é um número hexadecimal. Você pode encontrar esse valor como parte do caminho de URL da organização na Admin Console ou no console adobe.io para a sua integração com o Gerenciamento de usuários.</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Additional scopes]</td>
@@ -117,9 +117,9 @@ Para criar uma conexão para seus módulos do [!DNL Adobe User Management]:
 
 
 
-## Módulos de Gerenciamento de Usuários do Adobe e seus campos
+## Módulos de gerenciamento de usuários do Adobe e seus campos
 
-Quando você configura os módulos de Gerenciamento de Usuário do Adobe, o Workfront Fusion exibe os campos listados abaixo. Junto com esses, campos adicionais de Gerenciamento de usuários do Adobe podem ser exibidos, dependendo de fatores como nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
+Ao configurar os módulos de Gerenciamento de Usuários do Adobe, o Workfront Fusion exibe os campos listados abaixo. Junto com esses, campos adicionais do Gerenciamento de usuários da Adobe podem ser exibidos, dependendo de fatores como nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -283,11 +283,11 @@ Esse módulo de ação cria um novo usuário na organização.
   </tr> 
   <tr> 
    <td role="rowheader">Tipo de ID</td> 
-   <td>Selecione se deseja criar um usuário com um Adobe ID, um Enterprise ID ou um Federated ID. </td> 
+   <td>Selecione se deseja criar um usuário com uma Adobe ID, Enterprise ID ou Federated ID. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Logon</td> 
-   <td>Se você estiver criando um usuário com um Federated ID, selecione o tipo de logon.</td> 
+   <td>Se você estiver criando um usuário com uma Federated ID, selecione o tipo de logon.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Email</td> 
@@ -295,11 +295,11 @@ Esse módulo de ação cria um novo usuário na organização.
   </tr> 
   <tr> 
    <td role="rowheader">Domínio</td> 
-   <td>Se você estiver criando um usuário com um Federated ID com um logon baseado em domínio, insira ou mapeie o domínio.</td> 
+   <td>Se você estiver criando um usuário com uma Federated ID com um logon baseado em domínio, insira ou mapeie o domínio.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Usuário</td> 
-   <td>Se você estiver criando um usuário com um Federated ID com um logon baseado em domínio, insira ou mapeie o usuário que este novo usuário representará.</td> 
+   <td>Se você estiver criando um usuário com uma Federated ID com um logon baseado em domínio, insira ou mapeie o usuário que este novo usuário representará.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Nome</td> 
@@ -375,7 +375,7 @@ Este módulo de ação atualiza um usuário existente.
   </tr> 
   <tr> 
    <td role="rowheader">Domínio</td> 
-   <td>Se você estiver atualizando um usuário com um Federated ID que não é um endereço de email, insira ou mapeie o domínio ao qual o usuário pertence para identificá-lo.</td> 
+   <td>Se estiver atualizando um usuário com uma Federated ID que não seja um endereço de email, insira ou mapeie o domínio ao qual o usuário pertence para identificá-lo.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Email</td> 
@@ -528,13 +528,15 @@ Este módulo de ação atualiza um grupo de usuários existente.
    <td role="rowheader">Nome do grupo original</td> 
    <td>Insira ou mapeie a descrição atualizada do grupo.</td> 
   </tr> 
- </tbody>
+ </tbody> 
+ </table>
 
 ### Outro
 
-Esse módulo de ação faz uma chamada personalizada para a API de gerenciamento de usuários do Adobe.
 
 #### Fazer uma chamada de API personalizada
+
+Esse módulo de ação faz uma chamada personalizada para a API de gerenciamento de usuários do Adobe.
 
 <table style="table-layout:auto"> 
   <col/>

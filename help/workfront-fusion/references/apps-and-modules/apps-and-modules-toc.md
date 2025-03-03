@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: cca7aa6e15df0fd313e9d4ca391994a8ef4c974a
+source-git-commit: 234a6a537718328e92eec13672a73bc43add17c1
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,7 @@ O Fusion oferece conectores para muitos dos produtos e serviços da Adobe.
 * [Módulos do Adobe Marketo](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-modules.md)
 * [Módulos do Adobe PDF Services](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/pdf-modules.md)
 * [Módulos do Adobe Photoshop](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-photoshop-modules.md)
+* [Módulos de armazenamento da Adobe](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-storage-modules.md)
 * [Módulos do Adobe Target](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
 * [Módulos de gerenciamento de usuários do Adobe](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
 * [Módulos do Adobe Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
