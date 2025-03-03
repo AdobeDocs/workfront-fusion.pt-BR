@@ -4,9 +4,9 @@ description: Com os módulos do Adobe Lightroom, é possível iniciar um cenári
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
 workflow-type: tm+mt
-source-wordcount: '2025'
+source-wordcount: '2019'
 ht-degree: 0%
 
 ---
@@ -190,10 +190,10 @@ Este módulo de ação recupera uma ID de versão do servidor do Lightroom, prov
 
 * [Criar um arquivo original de ativo](#create-an-asset-external-xmp-develop-setting-file)
 * [Criar um ativo](#create-an-asset)
-* [Criar um arquivo externo de configuração de desenvolvimento de XMP do ativo](#create-an-asset-external-xmp-develop-setting-file)
+* [Criar um arquivo de configuração de desenvolvimento externo do XMP de ativos](#create-an-asset-external-xmp-develop-setting-file)
 * [Gerar representações para um arquivo original](#generate-renditions-for-an-original-file)
 * [Obter um ativo de catálogo](#get-a-catalog-asset)
-* [Obter a configuração mais recente de desenvolvimento de XMP externo de ativos](#get-the-latest-asset-external-xmp-develop-setting-file)
+* [Obter a configuração mais recente de desenvolvimento de ativos XMP externos](#get-the-latest-asset-external-xmp-develop-setting-file)
 * [Obter a representação de ativo mais recente](#get-the-latest-asset-rendition)
 * [Recuperar ativos](#retrieve-assets)
 
@@ -295,9 +295,9 @@ Esse módulo de ação cria um novo ativo com metadados iniciais e informações
   </tbody>
 </table>
 
-#### Criar um arquivo externo de configuração de desenvolvimento de XMP do ativo
+#### Criar um arquivo de configuração de desenvolvimento externo do XMP de ativos
 
-Esse módulo de ação suporta dois workflows. O primeiro fluxo de trabalho é carregar o arquivo externo de configurações de desenvolvimento de XMP para o ativo. O segundo fluxo de trabalho é criar um arquivo externo de configurações de desenvolvimento de XMP copiando do arquivo externo de configuração de desenvolvimento xmp de outro ativo.
+Esse módulo de ação suporta dois workflows. O primeiro fluxo de trabalho é fazer upload do arquivo externo de configurações de desenvolvimento do XMP para o ativo. O segundo fluxo de trabalho é criar um arquivo externo de configurações de desenvolvimento do XMP copiando do arquivo externo de configuração de desenvolvimento xmp de outro ativo.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -407,9 +407,9 @@ Este módulo de ação recupera informações sobre um único ativo em um catál
 </table>
 
 
-#### Obter o arquivo de configuração de desenvolvimento de XMP externo de ativo mais recente
+#### Obter o arquivo de configuração de desenvolvimento de XMP externo de ativos mais recente
 
-Esse módulo de ação recupera o arquivo de configuração XMP externo do ativo mais recente.
+Este módulo de ação recupera o arquivo de configuração XMP externo de ativo mais recente.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -500,7 +500,7 @@ Este módulo de ação recupera ativos de propriedade do usuário cujas credenci
     <tr>
       <td role="rowheader">[!UICONTROL Maximum number of returned assets]</td>
       <td>
-        <p>Defina o número máximo de ativos que [!DNL Workfront Fusion] retornará durante um ciclo de execução. Este número deve ser menor ou igual a 100.</p>
+        <p>Insira o número máximo de registros que você deseja que o módulo retorne durante cada ciclo de execução de cenário.</p>
       </td>
     </tr>
     <tr>

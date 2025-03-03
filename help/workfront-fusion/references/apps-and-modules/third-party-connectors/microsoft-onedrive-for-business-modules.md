@@ -4,9 +4,9 @@ description: Em um cenário  [!DNL Adobe Workfront Fusion] , é possível automa
 author: Becky
 feature: Workfront Fusion
 exl-id: 657bea46-064e-4333-8e86-81678bb1c3bd
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -21,50 +21,50 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
 
 ## Requisitos de acesso
 
++++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
+
 Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plano*</td>
-  <td> <p>[!UICONTROL Pro] ou superior</p> </td>
+   <td role="rowheader">Pacote do Adobe Workfront</td> 
+   <td> <p>Qualquer</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licença*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licença do Adobe Workfront</td> 
+   <td> <p>Novo: Padrão</p><p>Ou</p><p>Atual: trabalho ou superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licença**</td> 
+   <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisito de licença atual: nenhum requisito de licença [!DNL Workfront Fusion].</p>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion.</p>
    <p>Ou</p>
-   <p>Requisito de licença herdada: [!UICONTROL [!DNL Workfront Fusion] para Automação e Integração do Trabalho] </p>
+   <p>Herdados: Automação e integração do Workfront Fusion for Work </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Requisito atual do produto: se você tiver o Plano [!UICONTROL Select] ou [!UICONTROL Prime] [!DNL Adobe Workfront], sua organização deve comprar o [!DNL Adobe Workfront Fusion] e o [!DNL Adobe Workfront] para usar a funcionalidade descrita neste artigo. [!DNL Workfront Fusion] está incluído no plano [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Novo:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
    <p>Ou</p>
-   <p>Requisito de produto herdado: sua organização deve comprar o [!DNL Adobe Workfront Fusion] e o [!DNL Adobe Workfront] para usar a funcionalidade descrita neste artigo.</p>
+   <p>Atual: sua organização deve comprar o Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Para saber que plano, tipo de licença ou acesso você tem, contate o administrador do [!DNL Workfront].
+Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Pré-requisitos
 
 Para usar [!DNL Microsoft OneDrive for Business] com [!DNL Adobe Workfront Fusion], você precisará de uma conta [!DNL Microsoft].
-
-Para obter instruções sobre como conectar sua conta do [!DNL OneDrive for Business] ao [!DNL Workfront Fusion], consulte [Criar uma conexão com o Adobe [!DNL Workfront Fusion] - Instruções básicas](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
-
-
 
 ## Conectando o serviço [!DNL Microsoft OneDrive for Business] a [!DNL Workfront Fusion]
 
@@ -84,10 +84,10 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 
 ![Alternância de mapa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [Triggers](#triggers)
+* [Acionadores](#triggers)
 * [Ações](#actions)
 
-### Triggers
+### Acionadores
 
 * [[!UICONTROL Watch files]](#watch-files)
 * [[!UICONTROL Watch folders]](#watch-folders)
@@ -110,7 +110,7 @@ Esse módulo acionador é ativado quando um novo arquivo é adicionado ou atuali
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Folder]</td> 
-   <td> <p> Selecione a pasta que deseja observar. Em um cenário, só é possível monitorar uma pasta.</p> <p>Dica: para rastrear várias pastas, crie um cenário independente para cada uma delas.</p> </td> 
+   <td> <p> Selecione a pasta que deseja observar. Em um cenário, só é possível monitorar uma pasta.</p> <p>Dica: para observar várias pastas, crie um cenário independente para cada uma delas.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL I want to watch]</p> </td> 
@@ -118,7 +118,7 @@ Esse módulo acionador é ativado quando um novo arquivo é adicionado ou atuali
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned rows]</td> 
-   <td> <p> Defina o número máximo de resultados com os quais [!DNL Workfront Fusion] trabalhará durante um ciclo.</p> </td> 
+   <td> <p> Defina o número máximo de resultados que você deseja que o módulo retorne durante um ciclo.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -149,23 +149,23 @@ Esse módulo acionador é ativado quando uma nova pasta é adicionada à pasta q
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned rows]</td> 
-   <td> <p> Defina o número máximo de resultados com os quais [!DNL Workfront Fusion] trabalhará durante um ciclo.</p> </td> 
+   <td> <p> Defina o número máximo de resultados que você deseja que o módulo retorne durante um ciclo.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Ações
 
-* [[!UICONTROL Upload a file]](#upload-a-file)
-* [[!UICONTROL Delete a file]](#delete-a-file)
-* [[!UICONTROL Get a file]](#get-a-file)
 * [[!UICONTROL Create a folder]](#create-a-folder)
+* [[!UICONTROL Delete a file]](#delete-a-file)
 * [[!UICONTROL Delete a folder]](#delete-a-folder)
+* [[!UICONTROL Get a file]](#get-a-file)
 * [[!UICONTROL Get a sharing link]](#get-a-sharing-link)
+* [[!UICONTROL Upload a file]](#upload-a-file)
 
-#### [!UICONTROL Upload a file]
+#### [!UICONTROL Create a folder]
 
-Este módulo de ação faz upload de um arquivo binário ou de texto para uma pasta especificada
+Cria uma pasta dentro da pasta pai especificada.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -173,34 +173,20 @@ Este módulo de ação faz upload de um arquivo binário ou de texto para uma pa
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td><strong>[!UICONTROL Connection]</strong> </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
-   <td> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Drive ID]</td> 
-   <td> <p>Selecione a unidade na qual deseja fazer upload de um arquivo.</p> </td> 
-   <td> </td> 
+   <td><strong>[!UICONTROL Drive ID]</strong> </td> 
+   <td> <p>Selecione a unidade na qual deseja criar uma nova pasta.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder] </td> 
-   <td> <p>Selecione a pasta na unidade.</p> </td> 
-   <td> </td> 
+   <td><strong>[!UICONTROL Folder]</strong> </td> 
+   <td> <p>Selecione a pasta na qual deseja criar uma nova pasta.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Source File]</p> </td> 
-   <td> <p>Selecione um arquivo de origem de um módulo anterior ou mapeie o nome e os dados do arquivo de origem.</p> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL If the file with the same name exists]</td> 
-   <td> <p> Selecione o que deseja fazer se um arquivo com o mesmo nome do arquivo do qual você está tentando fazer upload já existir.</p> 
-    <ul> 
-     <li>[!UICONTROL Replace the existing file]</li> 
-     <li>[!UICONTROL Rename the new file]</li> 
-     <li>[!UICONTROL End with an error]</li> 
-    </ul> </td> 
-   <td> </td> 
+   <td><strong>[!UICONTROL Folder name]</strong> </td> 
+   <td>Insira ou mapeie um nome para a nova pasta.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -217,17 +203,36 @@ Este módulo de ação move o arquivo especificado para a lixeira.
   <tr> 
    <td>[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
-   <td> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Drive ID]</td> 
    <td> <p>Selecione a unidade da qual deseja excluir um arquivo.</p> </td> 
-   <td> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL File ID]</td> 
    <td> <p>Informe a ID do arquivo que deseja deletar. </p> </td> 
-   <td> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Delete a folder]
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection] </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Drive ID]</td> 
+   <td> <p>Selecione a unidade da qual deseja excluir um arquivo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Folder ID]</td> 
+   <td> <p>Insira ou mapeie a ID da pasta que deseja excluir. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -244,74 +249,14 @@ Este módulo de ação recupera o arquivo com a ID fornecida.
   <tr> 
    <td>[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
-   <td> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Drive ID]</td> 
    <td> <p>Selecione a unidade da qual deseja recuperar um arquivo.</p> </td> 
-   <td> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL File ID]</td> 
    <td> <p>Insira a ID do arquivo que você deseja recuperar. </p> </td> 
-   <td> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Create a folder]
-
-Cria uma pasta dentro da pasta pai especificada.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td><strong>[!UICONTROL Connection]</strong> </td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>[!UICONTROL Drive ID]</strong> </td> 
-   <td> <p>Selecione a unidade na qual deseja criar uma nova pasta.</p> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>[!UICONTROL Folder]</strong> </td> 
-   <td> <p>Selecione a pasta na qual deseja criar uma nova pasta.</p> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>[!UICONTROL Folder name]</strong> </td> 
-   <td>Insira ou mapeie um nome para a nova pasta.</td> 
-   <td> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Delete a folder]
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Drive ID]</td> 
-   <td> <p>Selecione a unidade da qual deseja excluir um arquivo.</p> </td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Folder ID]</td> 
-   <td> <p>Insira ou mapeie a ID da pasta que deseja excluir. </p> </td> 
-   <td> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -328,27 +273,59 @@ Este módulo recupera um link que você pode compartilhar para dar acesso ao arq
   <tr> 
    <td>[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
-   <td> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Drive ID]</td> 
    <td> <p>Selecione a unidade na qual deseja fazer upload de um arquivo.</p> </td> 
-   <td> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Enter]</td> 
    <td> <p>Selecione se deseja escolher um arquivo usando a ID do arquivo ou o caminho do Arquivo. Insira a ID do arquivo ou o caminho no campo exibido.</p> </td> 
-   <td> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Permission type]</p> </td> 
    <td> <p>Selecione se você deseja que as pessoas que recebem o link tenham permissões de leitura/gravação ou somente leitura.</p> </td> 
-   <td> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Scope]</td> 
    <td> <p> Selecione se você deseja que o arquivo seja acessível por qualquer pessoa que tenha o link ou acessível somente aos membros da organização.</p> </td> 
-   <td> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Upload a file]
+
+Este módulo de ação faz upload de um arquivo binário ou de texto para uma pasta especificada
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection] </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Drive ID]</td> 
+   <td> <p>Selecione a unidade na qual deseja fazer upload de um arquivo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Folder] </td> 
+   <td> <p>Selecione a pasta na unidade.</p> </td> 
+  </tr> 
+  <tr> 
+   <td> <p>[!UICONTROL Source File]</p> </td> 
+   <td> <p>Selecione um arquivo de origem de um módulo anterior ou mapeie o nome e os dados do arquivo de origem.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL If the file with the same name exists]</td> 
+   <td> <p> Selecione o que deseja fazer se um arquivo com o mesmo nome do arquivo do qual você está tentando fazer upload já existir.</p> 
+    <ul> 
+     <li>[!UICONTROL Replace the existing file]</li> 
+     <li>[!UICONTROL Rename the new file]</li> 
+     <li>[!UICONTROL End with an error]</li> 
+    </ul> </td> 
   </tr> 
  </tbody> 
 </table>
