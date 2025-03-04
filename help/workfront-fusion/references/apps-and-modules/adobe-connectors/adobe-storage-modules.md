@@ -7,9 +7,8 @@ title: Módulos de armazenamento da Adobe
 description: Em um cenário  [!DNL Adobe Workfront Fusion] , é possível criar e gerenciar projetos na Adobe Admin Console.
 author: Becky
 feature: Workfront Fusion
-hide: true
-hidefromtoc: true
-source-git-commit: 70a2d06da6be6c892df12faa3a168e66daef118e
+exl-id: 78ee905f-4713-44a4-bffb-c64cdb3665c2
+source-git-commit: 284e5bda7fef82bac02f3200efe1662fd55586bf
 workflow-type: tm+mt
 source-wordcount: '1351'
 ht-degree: 2%
@@ -361,6 +360,3 @@ Esse módulo de ação faz uma solicitação HTTP personalizada para a API de ar
      </div> </p> </td>     </tr>
   </tbody>
 </table>
-
-
-
