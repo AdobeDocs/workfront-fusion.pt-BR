@@ -8,9 +8,9 @@ description: Em um cenário  [!DNL Adobe Workfront Fusion] , você pode automati
 author: Becky
 feature: Workfront Fusion
 exl-id: e8fe8ec4-4b00-4c9a-81a5-acb2039b153b
-source-git-commit: 234a6a537718328e92eec13672a73bc43add17c1
+source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
 workflow-type: tm+mt
-source-wordcount: '2323'
+source-wordcount: '2374'
 ht-degree: 2%
 
 ---
@@ -39,20 +39,20 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] licença*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td> <p>[!UICONTROL Plano], [!UICONTROL Trabalho]</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] licença**</td> 
    <td>
    <p>Requisito de licença atual: nenhum requisito de licença [!DNL Workfront Fusion].</p>
    <p>Ou</p>
-   <p>Requisito de licença herdada: [!UICONTROL [!DNL Workfront Fusion] para Automação e Integração do Trabalho, [!UICONTROL [!DNL Workfront Fusion] para Automação do Trabalho</p>
+   <p>Requisito de licença herdada: [!UICONTROL [!DNL Workfront Fusion] para Automação e Integração do Trabalho], [!UICONTROL [!DNL Workfront Fusion] para Automação do Trabalho]</p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Requisito atual do produto: se você tiver o plano [!UICONTROL Select] ou [!UICONTROL Prime] [!DNL Adobe Workfront], sua organização deve comprar o [!DNL Adobe Workfront Fusion] e o [!DNL Adobe Workfront] para usar a funcionalidade descrita neste artigo. [!DNL Workfront Fusion] está incluído no plano [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Requisito atual do produto: se você tiver o plano [!UICONTROL Select] ou [!UICONTROL Prime] [!DNL Adobe Workfront], sua organização deve comprar [!DNL Adobe Workfront Fusion] e [!DNL Adobe Workfront] para usar a funcionalidade descrita neste artigo. [!DNL Workfront Fusion] está incluído no plano [!DNL Workfront] da [!UICONTROL Ultimate].</p>
    <p>Ou</p>
    <p>Requisito de produto herdado: sua organização deve comprar o [!DNL Adobe Workfront Fusion] e o [!DNL Adobe Workfront] para usar a funcionalidade descrita neste artigo.</p>
    </td> 
@@ -70,7 +70,7 @@ Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte
 
 Para criar uma conexão para seus módulos do [!DNL Adobe User Management]:
 
-1. Clique em **[!UICONTROL Add]** ao lado da caixa Conexão.
+1. Em qualquer módulo, clique em **[!UICONTROL Adicionar]** ao lado da caixa Conexão.
 
 1. Preencha os seguintes campos:
 
@@ -81,39 +81,39 @@ Para criar uma conexão para seus módulos do [!DNL Adobe User Management]:
       </col>
       <tbody>
         <tr>
-        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td role="rowheader">[!UICONTROL Nome da Conexão]</td>
         <td>
           <p>Insira um nome para esta conexão.</p>
         </td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Environment]</td>
+        <td role="rowheader">[!UICONTROL Ambiente]</td>
         <td>Selecione se você está se conectando a um ambiente de produção ou não produção.</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Type]</td>
+        <td role="rowheader">[!UICONTROL Tipo]</td>
         <td>Selecione se você está se conectando a uma conta de serviço ou a uma conta pessoal.</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Insira seu [!UICONTROL Adobe] [!UICONTROL Client ID]. Isso pode ser encontrado na seção de detalhes [!UICONTROL Credentials] do [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[!UICONTROL ID do Cliente]</td>
+        <td>Insira sua [!UICONTROL Adobe] [!UICONTROL ID do cliente]. Isso pode ser encontrado na seção de detalhes [!UICONTROL Credentials] do [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Insira seu [!DNL Adobe] [!UICONTROL Client Secret]. Isso pode ser encontrado na seção de detalhes [!UICONTROL Credentials] do [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[!UICONTROL Segredo do Cliente]</td>
+        <td>Insira seu [!DNL Adobe] [!UICONTROL Segredo do Cliente]. Isso pode ser encontrado na seção de detalhes [!UICONTROL Credentials] do [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL IMS Organization ID]</td>
         <td>Insira suas credenciais do IMS do [!DNL Adobe]. O identificador exclusivo de uma organização. Esta é uma cadeia de caracteres no formato A495E53@AdobeOrg em que o prefixo antes de @ é um número hexadecimal. Você pode encontrar esse valor como parte do caminho de URL da organização na Admin Console ou no console adobe.io para a sua integração com o Gerenciamento de usuários.</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Additional scopes]</td>
+        <td role="rowheader">[!UICONTROL Escopos adicionais]</td>
         <td>Para cada escopo adicional que você deseja adicionar, clique em <b>Adicionar item</b> e insira o escopo.</td>
         </tr>
       </tbody>
     </table>
 
-1. Clique em **[!UICONTROL Continue]** para salvar a conexão e retornar ao módulo.
+1. Clique em **[!UICONTROL Continuar]** para salvar a conexão e retornar ao módulo.
 
 
 
