@@ -4,9 +4,9 @@ description: Em um cenário  [!DNL Adobe Workfront Fusion] , você pode automati
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: d4187aff574ceaf4d27112fc2ce8880421e77d0d
 workflow-type: tm+mt
-source-wordcount: '1883'
+source-wordcount: '2208'
 ht-degree: 1%
 
 ---
@@ -110,7 +110,7 @@ O método de conexão é baseado no uso do [!DNL Jira Cloud] ou do [!DNL Jira Se
 
 Conectar [!DNL Jira Cloud] a [!DNL Workfront Fusion]
 
-Para conectar [!DNL Jira Software] a [!DNL Workfront Fusion], você deve criar um token de API e inseri-lo junto com sua URL de Serviço e Nome de Usuário no campo [!UICONTROL Create a connection] em [!DNL Workfront Fusion].
+Para conectar [!DNL Jira Software] a [!DNL Workfront Fusion], você deve criar um token de API e inseri-lo junto com a URL de Serviço e o Nome de Usuário no campo [!UICONTROL Criar uma conexão] em [!DNL Workfront Fusion].
 
 #### Criar um token de API em [!DNL Jira]
 
@@ -127,16 +127,16 @@ Para conectar [!DNL Jira Software] a [!DNL Workfront Fusion], você deve criar u
 
 #### Configurar o token de API [!DNL Jira] em [!DNL Workfront Fusion]
 
-1. Em qualquer módulo [!DNL Jira Cloud] em [!DNL Workfront Fusion], clique em **[!UICONTROL Add]** ao lado do campo [!UICONTROL connection].
+1. Em qualquer módulo [!DNL Jira Cloud] em [!DNL Workfront Fusion], clique em **[!UICONTROL Adicionar]** ao lado do campo [!UICONTROL conexão].
 1. Especifique as seguintes informações:
 
    * **Ambiente**
    * **Tipo**
-   * **[!UICONTROL Service URL]:** Esta é a URL base que você usa para acessar sua conta Jira. Exemplo: `yourorganization.atlassian.net`
-   * **[!UICONTROL Username]**
-   * **[!UICONTROL API token]:** Este é o token de API criado na seção [Criar um token de API [!DNL Jira]](#create-an-api-token-in-jira) deste artigo.
+   * **[!UICONTROL URL do Serviço]:** Esta é a URL base que você usa para acessar sua conta Jira. Exemplo: `yourorganization.atlassian.net`
+   * **[!UICONTROL Nome de usuário]**
+   * **[!UICONTROL Token de API]:** Este é o token de API criado na seção [Criar um token de API [!DNL Jira]](#create-an-api-token-in-jira) deste artigo.
 
-1. Clique em [!UICONTROL Continue] para criar a conexão e retornar ao módulo.
+1. Clique em [!UICONTROL Continuar] para criar a conexão e retornar ao módulo.
 
 ### Conectar [!DNL Jira Server] a [!DNL Workfront Fusion]
 
@@ -148,7 +148,7 @@ Para autorizar uma conexão entre [!DNL Workfront Fusion] e [!DNL Jira Server], 
 
 #### Gerar chaves públicas e privadas para sua conexão [!DNL Jira]
 
-Para adquirir uma chave privada para sua conexão [!DNL Workfront Fusion Jira], você precisa gerar chaves públicas e privadas.
+Para adquirir uma chave privada para sua conexão [!DNL Workfront Fusion Jira], você precisa gerar chaves públicas e privadas. Isso é feito no terminal do computador. Você pode localizar seu terminal procurando o terminal no menu Iniciar ou na barra de pesquisa do computador (não na barra de pesquisa do navegador).
 
 1. No terminal, execute os seguintes comandos `openssl`.
 
@@ -186,19 +186,19 @@ Para adquirir uma chave privada para sua conexão [!DNL Workfront Fusion Jira], 
 #### Configure o aplicativo cliente como um consumidor no [!DNL Jira]
 
 1. Faça logon na instância do [!DNL Jira].
-1. No painel de navegação esquerdo, clique no **[!UICONTROL [!DNL Jira] Settings]** ![ícone de configurações do Jira](/help/workfront-fusion/references/apps-and-modules/assets/jira-settings-icon.png) > **[!UICONTROL Applications]**> **[!UICONTROL Application links]**.
-1. No campo **[!UICONTROL Enter the URL of the application you want to link]**, digite
+1. No painel de navegação esquerdo, clique em **[!UICONTROL [!DNL Jira]Configurações]** ![Ícone de configurações Jira](/help/workfront-fusion/references/apps-and-modules/assets/jira-settings-icon.png) > **[!UICONTROL Aplicativos]**> **[!UICONTROL Links de aplicativos]**.
+1. No campo **[!UICONTROL Insira a URL do aplicativo que deseja vincular]**, digite
 
    ```
    https://app.workfrontfusion.com/oauth/cb/workfront-jiraserver-oauth1
    ```
 
-1. Clique em **[!UICONTROL Create new link]**. Ignore a mensagem de erro &quot;Nenhuma resposta foi recebida do URL inserido&quot;.
-1. Na janela **[!UICONTROL Link applications]**, insira valores nos campos **[!UICONTROL Consumer key]** e **[!UICONTROL Shared secret]**.
+1. Clique em **[!UICONTROL Criar novo link]**. Ignore a mensagem de erro &quot;Nenhuma resposta foi recebida do URL inserido&quot;.
+1. Na janela **[!UICONTROL Vincular aplicativos]**, insira valores nos campos **[!UICONTROL Chave do consumidor]** e **[!UICONTROL Segredo compartilhado]**.
 
    Você pode escolher os valores desses campos.
 
-1. Copie os valores dos campos **[!UICONTROL Consumer key]** e **[!UICONTROL Shared secret]** para um local seguro.
+1. Copie os valores dos campos **[!UICONTROL Chave do consumidor]** e **[!UICONTROL Segredo compartilhado]** para um local seguro.
 
    Esses valores serão necessários posteriormente no processo de configuração.
 
@@ -206,34 +206,34 @@ Para adquirir uma chave privada para sua conexão [!DNL Workfront Fusion Jira], 
 
    | Campo | Descrição |
    |---|---|
-   | [!UICONTROL Request Token URL] | `<Jira base url>/plugins/servlet/oauth/request-token` |
-   | [!UICONTROL Authorization URL] | `<Jira base url>/plugins/servlet/oauth/authorize` |
-   | [!UICONTROL Access Token URL] | `<Jira base url>/plugins/servlet/oauth/access-token` |
+   | [!UICONTROL URL do token de solicitação] | `<Jira base url>/plugins/servlet/oauth/request-token` |
+   | [!UICONTROL URL de autorização] | `<Jira base url>/plugins/servlet/oauth/authorize` |
+   | [!UICONTROL URL do token de acesso] | `<Jira base url>/plugins/servlet/oauth/access-token` |
 
-1. Marque a caixa de seleção **[!UICONTROL Create incoming link]**.
-1. Clique em **[!UICONTROL Continue]**.
-1. Na janela **[!UICONTROL Link applications]**, preencha os seguintes campos:
+1. Marque a caixa de seleção **[!UICONTROL Criar link de entrada]**.
+1. Clique em **[!UICONTROL Continuar]**.
+1. Na janela **[!UICONTROL Vincular aplicativos]**, preencha os seguintes campos:
 
    <table style="table-layout:auto"> 
     <col data-mc-conditions=""> 
     <col data-mc-conditions=""> 
     <tbody> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Consumer Key]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL Chave do Consumidor]</p> </td> 
       <td> Cole a chave do consumidor que você copiou para um local seguro.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Consumer name]</td> 
+      <td role="rowheader">[!UICONTROL Nome do consumidor]</td> 
       <td>Insira um nome de sua escolha. Este nome é para sua própria referência.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Public key]</td> 
+      <td role="rowheader">[!UICONTROL Chave pública]</td> 
       <td>Cole a chave pública do arquivo <code>[!DNL jira_publickey.pem]</code>.</td> 
      </tr> 
     </tbody> 
    </table>
 
-1. Clique em **[!UICONTROL Continue]**.
+1. Clique em **[!UICONTROL Continuar]**.
 1. Continue para [Criar uma conexão com [!DNL Jira Server] ou [!DNL Jira Data Center] em [!DNL Workfront Fusion]](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)
 
 #### Criar uma conexão com [!DNL Jira Server] ou [!DNL Jira Data Center] em [!DNL Workfront Fusion]
@@ -242,27 +242,27 @@ Para adquirir uma chave privada para sua conexão [!DNL Workfront Fusion Jira], 
 >
 >Use o aplicativo [!DNL Jira Server] para se conectar a [!DNL Jira Server] ou [!DNL Jira Data Center].
 
-1. Em qualquer módulo [!DNL Jira Server] em [!DNL Workfront Fusion], clique em **[!UICONTROL Add]** ao lado do campo [!UICONTROL connection].
-1. No painel [!UICONTROL Create a connection], preencha os seguintes campos:
+1. Em qualquer módulo [!DNL Jira Server] em [!DNL Workfront Fusion], clique em **[!UICONTROL Adicionar]** ao lado do campo [!UICONTROL conexão].
+1. No painel [!UICONTROL Criar uma conexão], preencha os seguintes campos:
 
    <table style="table-layout:auto"> 
     <col> 
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL Nome da Conexão]</p> </td> 
       <td> <p>Insira um nome para a conexão</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Environment]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL Ambiente]</p> </td> 
       <td> <p>Selecione se você está usando um ambiente de produção ou não produção.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Type]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL Tipo]</p> </td> 
       <td> <p>Selecione se você está usando uma conta de serviço ou uma conta pessoal.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Consumer Key]</td> 
+      <td role="rowheader">[!UICONTROL Chave do Consumidor]</td> 
       <td>Cole a chave do consumidor que você copiou em um local seguro no <a href="#configure-the-client-app-as-a-consumer-in-jira" class="MCXref xref">Configure o aplicativo cliente como um consumidor no [!DNL Jira]</a></td> 
      </tr> 
      <tr> 
@@ -276,7 +276,7 @@ Para adquirir uma chave privada para sua conexão [!DNL Workfront Fusion Jira], 
     </tbody> 
    </table>
 
-1. Clique em **[!UICONTROL Continue]** para criar a conexão e voltar para o módulo.
+1. Clique em **[!UICONTROL Continuar]** para criar a conexão e voltar para o módulo.
 
 ## [!DNL Jira Software] módulos e seus campos
 
@@ -292,7 +292,7 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 
 ### Acionadores
 
-#### [!UICONTROL Watch for records]
+#### [!UICONTROL Observar registros]
 
 Este módulo de acionamento inicia um cenário quando um registro é adicionado, atualizado ou excluído.
 
@@ -304,14 +304,14 @@ Este módulo de acionamento inicia um cenário quando um registro é adicionado,
    <td role="rowheader">[!UICONTROL Webhook]</td> 
    <td> <p>Selecione o webhook que deseja usar para observar registros. </p> <p>Para adicionar um novo webhook:</p> 
     <ol> 
-     <li value="1">Clique em <strong>[!UICONTROL Add]</strong></li> 
+     <li value="1">Clique em <strong>[!UICONTROL Adicionar]</strong></li> 
      <li value="2">Insira um nome para o webhook.</li> 
      <li value="3"> <p>Selecione a conexão que deseja usar com seu webhook. </p> <p>Para obter instruções sobre como conectar sua conta do [!DNL Jira Software] ao [!DNL Workfront Fusion], consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] ao [!DNL Workfront Fusion]</a> neste artigo.</p> </li> 
      <li value="4"> <p>Selecione o tipo de registro que você deseja que o software assista:</p> 
       <ul> 
-       <li>[!UICONTROL Comment] </li> 
-       <li>[!UICONTROL Issue]</li> 
-       <li>[!UICONTROL Project] </li> 
+       <li>[!UICONTROL Comentário] </li> 
+       <li>[!UICONTROL Problema]</li> 
+       <li>[!UICONTROL Projeto] </li> 
        <li>[!UICONTROL Sprint]</li> 
       </ul> </li> 
     </ol> </td> 
@@ -321,15 +321,15 @@ Este módulo de acionamento inicia um cenário quando um registro é adicionado,
 
 ### Ações
 
-* [[!UICONTROL Add issue to sprint]](#add-issue-to-sprint)
-* [[!UICONTROL Create a Record]](#create-a-record)
-* [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Delete a record]](#delete-a-record)
-* [[!UICONTROL Download an attachment]](#download-an-attachment)
-* [[!UICONTROL Read a record]](#read-a-record)
-* [[!UICONTROL Update a record]](#update-a-record)
+* [[!UICONTROL Adicionar problema ao sprint]](#add-issue-to-sprint)
+* [[!UICONTROL Criar um Registro]](#create-a-record)
+* [[!UICONTROL Chamada de API personalizada]](#custom-api-call)
+* [[!UICONTROL Excluir um registro]](#delete-a-record)
+* [[!UICONTROL Baixar um anexo]](#download-an-attachment)
+* [[!UICONTROL Ler um registro]](#read-a-record)
+* [[!UICONTROL Atualizar um registro]](#update-a-record)
 
-#### [!UICONTROL Add issue to sprint]
+#### [!UICONTROL Adicionar problema ao sprint]
 
 Este módulo de ação adiciona um ou mais problemas a um sprint.
 
@@ -340,21 +340,21 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Jira Software] ao [!DNL Workfront Fusion], consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] ao [!DNL Workfront Fusion]</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Sprint ID]</td> 
+   <td role="rowheader">[!UICONTROL ID Sprint]</td> 
    <td>Insira ou mapeie a ID de velocidade da velocidade à qual você deseja adicionar um problema.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Issue ID or Keys]</td> 
-   <td>Para cada problema ou chave que você deseja ver a experiência, clique em <b>[!UICONTROL Add item]</b> e insira a ID ou chave do problema. Você pode inserir até 50 em um módulo.</td> 
+   <td role="rowheader">[!UICONTROL Identificação de Problema ou Chaves]</td> 
+   <td>Para cada problema ou chave que você deseja ver a experiência, clique em <b>[!UICONTROL Adicionar item]</b> e insira a ID ou chave do problema. Você pode inserir até 50 em um módulo.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Create a Record]
+#### [!UICONTROL Criar um Registro]
 
 Este módulo de ação cria um novo registro no Jira.
 
@@ -367,25 +367,25 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Jira Software] ao [!DNL Workfront Fusion], consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] ao [!DNL Workfront Fusion]</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record Type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo de Registro]</td> 
    <td> <p>Selecione o tipo de registro que deseja que o módulo crie e preencha os outros campos específicos desse tipo de registro que aparecem no módulo.</p> 
     <ul> 
-     <li>[!UICONTROL Attachment]</li> 
-     <li>[!UICONTROL Comment]</li> 
-     <li>[!UICONTROL Issue]</li> 
-     <li>[!UICONTROL Project]</li> 
+     <li>[!UICONTROL Anexo]</li> 
+     <li>[!UICONTROL Comentário]</li> 
+     <li>[!UICONTROL Problema]</li> 
+     <li>[!UICONTROL Projeto]</li> 
      <li>[!UICONTROL Sprint] </li> 
-     <li>[!UICONTROL Worklog]</li> 
+     <li>[!UICONTROL Log de Trabalho]</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Custom API Call]
+#### [!UICONTROL Chamada de API personalizada]
 
 Este módulo de ação permite fazer uma chamada autenticada personalizada para a API [!DNL Jira Software]. Use este módulo para criar uma automação de fluxo de dados que não pode ser realizada pelos outros módulos [!DNL Jira Software].
 
@@ -396,7 +396,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Jira Software] ao [!DNL Workfront Fusion], consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] ao [!DNL Workfront Fusion]</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -404,26 +404,26 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
    <td>Insira um caminho relativo a<code>&lt;Instance URL>/rest/api/2/ </code></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td role="rowheader">[!UICONTROL Método]</td> 
    td&gt; <p>Selecione o método de solicitação HTTP necessário para configurar a chamada de API. Para obter mais informações, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitação HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td role="rowheader">[!UICONTROL Cabeçalhos]</td> 
    <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p> <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] O adiciona os cabeçalhos de autorização para você.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td role="rowheader">[!UICONTROL Cadeia de Consulta]</td> 
    <td> <p>Adicione a consulta da chamada à API na forma de um objeto JSON padrão.</p> <p>Por exemplo: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td role="rowheader">[!UICONTROL Corpo]</td> 
    <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Nota:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png">  </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a record]
+#### [!UICONTROL Excluir um registro]
 
 Este módulo de ação exclui o registro especificado.
 
@@ -438,28 +438,28 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Jira Software] ao [!DNL Workfront Fusion], consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] ao [!DNL Workfront Fusion]</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record Type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo de Registro]</td> 
    <td> <p>Selecione o tipo de registro que deseja que o módulo exclua. </p> 
     <ul> 
-     <li>[!UICONTROL Attachment]</li> 
-     <li>[!UICONTROL Comment]</li> 
-     <li>[!UICONTROL Issue]</li> 
-     <li>[!UICONTROL Project]</li> 
+     <li>[!UICONTROL Anexo]</li> 
+     <li>[!UICONTROL Comentário]</li> 
+     <li>[!UICONTROL Problema]</li> 
+     <li>[!UICONTROL Projeto]</li> 
      <li>[!UICONTROL Sprint] </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ID or Key]</td> 
+   <td role="rowheader">[!UICONTROL ID ou Chave]</td> 
    <td>Insira ou mapeie a ID ou a Chave do registro que deseja excluir.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Download an attachment]
+#### [!UICONTROL Baixar um anexo]
 
 Este módulo de ação baixa um anexo específico.
 
@@ -470,7 +470,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Jira Software] ao [!DNL Workfront Fusion], consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] ao [!DNL Workfront Fusion]</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -480,7 +480,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  </tbody> 
 </table>
 
-#### [!UICONTROL Read a record]
+#### [!UICONTROL Ler um registro]
 
 Este módulo de ação lê dados de um único registro em [!DNL Jira Software].
 
@@ -495,23 +495,23 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Jira Software] ao [!DNL Workfront Fusion], consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] ao [!DNL Workfront Fusion]</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record Type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo de Registro]</td> 
    <td> <p>Selecione o tipo de registro [!DNL Jira] que deseja que o módulo leia.</p> 
     <ul> 
-     <li>[!UICONTROL Attachment]</li> 
-     <li>[!UICONTROL Issue]</li> 
-     <li>[!UICONTROL Project]</li> 
+     <li>[!UICONTROL Anexo]</li> 
+     <li>[!UICONTROL Problema]</li> 
+     <li>[!UICONTROL Projeto]</li> 
      <li>[!UICONTROL Sprint] </li> 
-     <li>[!UICONTROL User]</li> 
+     <li>[!UICONTROL Usuário]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
-   <td>Selecione as saídas que deseja receber. As opções de saída estão disponíveis com base no tipo de registro selecionado no campo "[!UICONTROL Record Type]".</td> 
+   <td role="rowheader">[!UICONTROL Saídas]</td> 
+   <td>Selecione as saídas que deseja receber. As opções de saída estão disponíveis com base no tipo de registro selecionado no campo "[!UICONTROL Tipo de registro]".</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
@@ -520,7 +520,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a record]
+#### [!UICONTROL Atualizar um registro]
 
 Esse módulo de ação atualiza um registro existente, como um problema ou projeto,.
 
@@ -535,22 +535,22 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Jira Software] ao [!DNL Workfront Fusion], consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] ao [!DNL Workfront Fusion]</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record Type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo de Registro]</td> 
    <td> <p>Selecione o tipo de registro que deseja que o módulo atualize. Quando você seleciona um tipo de registro, outros campos específicos desse tipo de registro aparecem no módulo.</p> 
     <ul> 
-     <li>[!UICONTROL Comment]</li> 
-     <li>[!UICONTROL Issue]</li> 
-     <li>[!UICONTROL Project]</li> 
+     <li>[!UICONTROL Comentário]</li> 
+     <li>[!UICONTROL Problema]</li> 
+     <li>[!UICONTROL Projeto]</li> 
      <li>[!UICONTROL Sprint] </li> 
-     <li>[!UICONTROL Transition issue]</li> 
+     <li>[!UICONTROL Problema de transição]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ID or Key]</td> 
+   <td role="rowheader">[!UICONTROL ID ou Chave]</td> 
    <td>Insira ou mapeie a ID ou a Chave do registro que deseja atualizar e, em seguida, preencha os outros campos específicos desse tipo de registro que aparecem no módulo.</td> 
   </tr> 
  </tbody> 
@@ -558,10 +558,10 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
 
 ### Pesquisas
 
-* [[!UICONTROL List records]](#list-records)
-* [[!UICONTROL Search for records]](#search-for-records)
+* [[!UICONTROL Listar registros]](#list-records)
+* [[!UICONTROL Pesquisar registros]](#search-for-records)
 
-#### [!UICONTROL List records]
+#### [!UICONTROL Listar registros]
 
 Este módulo de pesquisa recupera todos os itens de um tipo específico que correspondam à sua consulta de pesquisa
 
@@ -574,22 +574,22 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Jira Software] ao [!DNL Workfront Fusion], consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] ao [!DNL Workfront Fusion]</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record Type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo de Registro]</td> 
    <td> <p>Selecione o tipo de registro que deseja que o módulo liste. Quando você seleciona um tipo de registro, outros campos específicos desse tipo de registro aparecem no módulo.</p> 
     <ul> 
-     <li>[!UICONTROL Comment]</li> 
-     <li>[!UICONTROL Issue]</li> 
-     <li>[!UICONTROL Project]</li> 
-     <li>[!UICONTROL Sprint issue]</li> 
-     <li>[!UICONTROL Worklog]</li> 
+     <li>[!UICONTROL Comentário]</li> 
+     <li>[!UICONTROL Problema]</li> 
+     <li>[!UICONTROL Projeto]</li> 
+     <li>[!UICONTROL Problema de Sprint]</li> 
+     <li>[!UICONTROL Log de Trabalho]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Max Results]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Máximo de Resultados]</p> </td> 
    <td> <p>Insira ou mapeie o número máximo de registros que você deseja que o módulo recupere durante cada ciclo de execução de cenário.</p> </td> 
   </tr> <!--
    <tr> 
@@ -600,7 +600,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  </tbody> 
 </table>
 
-#### [!UICONTROL Search for records]
+#### [!UICONTROL Pesquisar registros]
 
 Este módulo de pesquisa procura registros em um objeto em [!DNL Jira Software] que correspondam à consulta de pesquisa especificada.
 
@@ -613,18 +613,18 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Jira Software] ao [!DNL Workfront Fusion], consulte <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar [!DNL Jira Software] ao [!DNL Workfront Fusion]</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record Type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo de Registro]</td> 
    <td> <p>Selecione o tipo de registro que deseja que o módulo procure. Quando você seleciona um tipo de registro, outros campos específicos desse tipo de registro aparecem no módulo.</p> 
     <ul> 
-     <li>[!UICONTROL Issues]</li> 
-     <li> <p>[!UICONTROL Issues by JQL (Jira Query Lanuguage)] </p> <p>Para obter mais informações sobre JQL, consulte <a href="https://www.atlassian.com/blog/jira-software/jql-the-most-flexible-way-to-search-jira-14#:~:text=JQLstandsforJiraQuery,projectmanagers%2Candbusinessusers.">JQL</a> no site de ajuda da Atlassian. </p> </li> 
-     <li>[!UICONTROL Project]</li> 
-     <li>[!UICONTROL Project by issue]</li> 
-     <li>[!UICONTROL User]</li> 
+     <li>[!UICONTROL Problemas]</li> 
+     <li> <p>[!UICONTROL Problemas por JQL (Jira Query Language)] </p> <p>Para obter mais informações sobre JQL, consulte <a href="https://www.atlassian.com/blog/jira-software/jql-the-most-flexible-way-to-search-jira-14#:~:text=JQLstandsforJiraQuery,projectmanagers%2Candbusinessusers.">JQL</a> no site de ajuda da Atlassian. </p> </li> 
+     <li>[!UICONTROL Projeto]</li> 
+     <li>[!UICONTROL Projeto por problema]</li> 
+     <li>[!UICONTROL Usuário]</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
