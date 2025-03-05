@@ -4,9 +4,9 @@ description: Em um cenário do Adobe Workfront Fusion, é possível automatizar 
 author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
-source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
+source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
 workflow-type: tm+mt
-source-wordcount: '2717'
+source-wordcount: '3042'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ Para obter mais informações sobre as possibilidades de pesquisa, consulte a do
 
 Para criar uma conexão para seus módulos do [!DNL Salesforce]:
 
-1. Em qualquer módulo [!DNL Salesforce], clique em **[!UICONTROL Add]** ao lado da caixa Conexão.
+1. Em qualquer módulo [!DNL Salesforce], clique em **[!UICONTROL Adicionar]** ao lado da caixa Conexão.
 
 1. Preencha os seguintes campos:
 
@@ -124,29 +124,29 @@ Para criar uma conexão para seus módulos do [!DNL Salesforce]:
     </col>
     <tbody>
       <tr>
-        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td role="rowheader">[!UICONTROL Nome da Conexão]</td>
         <td>
           <p>Insira um nome para a nova conexão.</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Environment]</td>
+        <td role="rowheader">[!UICONTROL Ambiente]</td>
         <td>
           <p>Selecione se estão se conectando a um ambiente de produção ou não produção.</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Type]</td>
+        <td role="rowheader">[!UICONTROL Tipo]</td>
         <td>
           <p>Selecione se você está se conectando a uma conta de serviço ou a uma conta pessoal.</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td role="rowheader">[!UICONTROL ID do Cliente]</td>
         <td>Insira a ID do cliente do Salesforce.</td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td role="rowheader">[!UICONTROL Segredo do Cliente]</td>
         <td>Insira o segredo do cliente do Salesforce. </td>
       </tr>
       <tr>
@@ -154,13 +154,13 @@ Para criar uma conexão para seus módulos do [!DNL Salesforce]:
         <td>Ative essa opção se esse for um ambiente de sandbox.</td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL API Version]</td>
+        <td role="rowheader">[!UICONTROL Versão da API]</td>
         <td>Insira a versão da API do Salesforce que deseja usar. A versão padrão é 62.0.</td>
       </tr>
     </tbody>
     </table>
 
-1. Clique em **[!UICONTROL Continue]** para salvar a conexão e retornar ao módulo.
+1. Clique em **[!UICONTROL Continuar]** para salvar a conexão e retornar ao módulo.
 
 
 ## [!DNL Salesforce] módulos e seus campos
@@ -171,11 +171,11 @@ Para criar uma conexão para seus módulos do [!DNL Salesforce]:
 
 ### Acionadores
 
-* [[!UICONTROL Watch a field]](#watch-a-field)
-* [[!UICONTROL Watch for Records]](#watch-for-records)
-* [[!UICONTROL Watch Outbound Messages]](#watch-outbound-messages)
+* [[!UICONTROL Assistir a um campo]](#watch-a-field)
+* [[!UICONTROL Observar por Registros]](#watch-for-records)
+* [[!UICONTROL Observar Mensagens de Saída]](#watch-outbound-messages)
 
-#### [!UICONTROL Watch a field]
+#### [!UICONTROL Assistir a um campo]
 
 Este módulo de acionador inicia um cenário quando um campo é atualizado em [!DNL Salesforce].
 
@@ -184,25 +184,25 @@ Este módulo de acionador inicia um cenário quando um campo é atualizado em [!
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Conexão]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Record Type] </td> 
-   <td> <p>Selecione o tipo de registro que contém o campo que o módulo deve observar. Você deve escolher um tipo de registro que tenha [!UICONTROL Field History] ativado na configuração de [!DNL Salesforce]. Para obter mais informações, consulte <a href="https://help.salesforce.com/articleView?id=tracking_field_history.htm&amp;type=5">Rastreamento do histórico do campo</a> na documentação [!DNL Salesforce]. </p> </td> 
+   <td>[!UICONTROL Tipo de Registro] </td> 
+   <td> <p>Selecione o tipo de registro que contém o campo que o módulo deve observar. Você deve escolher um tipo de registro que tenha o [!UICONTROL Field History] ativado na configuração [!DNL Salesforce]. Para obter mais informações, consulte <a href="https://help.salesforce.com/articleView?id=tracking_field_history.htm&amp;type=5">Rastreamento do histórico do campo</a> na documentação [!DNL Salesforce]. </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Field]</td> 
+   <td>[!UICONTROL Campo]</td> 
    <td> <p>Selecione os campos que você deseja que o módulo observe para alterações.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Limit]</td> 
+   <td>[!UICONTROL Limite]</td> 
    <td> <p>Insira ou mapeie o número máximo de campos que você deseja que o módulo retorne durante cada ciclo de execução de cenário.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch for Records]
+#### [!UICONTROL Observar por Registros]
 
 Esse módulo de acionamento executa um cenário quando um registro em um objeto é criado ou atualizado. O módulo retorna todos os campos padrão associados ao registro ou aos registros, juntamente com quaisquer campos e valores personalizados que a conexão acesse. Você pode mapear essas informações em módulos subsequentes no cenário.
 
@@ -213,29 +213,29 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Conexão]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Type] </td> 
+   <td>[!UICONTROL Tipo] </td> 
    <td> <p>Selecione o tipo de registro [!DNL Salesforce] que você deseja que o módulo assista.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Record Fields]</td> 
+   <td>[!UICONTROL Campos de Registro]</td> 
    <td>Selecione os campos que você deseja que o módulo assista. Os campos disponíveis dependem do tipo de registro.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximal count of records]</td> 
+   <td>[!UICONTROL Contagem máxima de registros]</td> 
    <td> <p>Insira ou mapeie o número máximo de registros que deseja que o módulo retorne durante cada ciclo de execução de cenário.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Watch]</td> 
+   <td>[!UICONTROL Observar]</td> 
    <td> <p>Determine se deseja que o cenário observe somente os novos registros do tipo selecionado ou os novos registros do tipo selecionado e todas as outras alterações nos registros desse tipo.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Outbound Messages]
+#### [!UICONTROL Observar Mensagens de Saída]
 
 Esse módulo de acionamento executa um cenário quando alguém envia uma mensagem. O módulo retorna todos os campos padrão associados ao registro ou aos registros, juntamente com quaisquer campos e valores personalizados que a conexão acesse. Você pode mapear essas informações em módulos subsequentes no cenário.
 
@@ -243,25 +243,25 @@ Este módulo requer algumas configurações adicionais:
 
 1. Vá para a página de configuração [!DNL Salesforce].
 
-   Para acessar a página de configuração, localize e clique no botão rotulado &quot;[!UICONTROL Setup]&quot; no canto superior direito da conta [!DNL Salesforce]. Na página de configuração [!DNL Salesforce], localize a barra &quot;[!UICONTROL Quick Find / Search]&quot; no lado esquerdo. Pesquisar por &quot;[!UICONTROL Workflow Rules]&quot;.
+   Para acessar a página de configuração, localize e clique no botão chamado &quot;[!UICONTROL Configuração]&quot; no canto superior direito da conta [!DNL Salesforce]. Na página de configuração [!DNL Salesforce], localize a barra &quot;[!UICONTROL Localização Rápida/Pesquisa]&quot; no lado esquerdo. Procure por &quot;[!UICONTROL Regras de Fluxo de Trabalho].&quot;
 
-1. Clique em **[!UICONTROL Workflow Rules]**.
-1. Na página [!UICONTROL Workflow Rules] exibida, clique em **[!UICONTROL New Rule]** e selecione o tipo de objeto ao qual a regra será aplicada (como &quot;[!UICONTROL Opportunity]&quot;, se você estiver monitorando atualizações para registros de Oportunidade).
-1. Clique em **[!UICONTROL Next]**.
-1. Defina um nome de regra, critérios de avaliação e critérios de regra, em seguida, clique em **[!UICONTROL Save]** e **[!UICONTROL Next]**.
+1. Clique em **[!UICONTROL Regras de fluxo de trabalho]**.
+1. Na página [!UICONTROL Regras de Fluxo de Trabalho] exibida, clique em **[!UICONTROL Nova Regra]** e selecione o tipo de objeto ao qual a regra será aplicada (como &quot;[!UICONTROL Oportunidade]&quot; se você estiver monitorando atualizações para registros de Oportunidade).
+1. Clique em **[!UICONTROL Avançar]**.
+1. Defina um nome de regra, critérios de avaliação e critérios de regra, em seguida, clique em **[!UICONTROL Salvar]** e **[!UICONTROL Avançar]**.
 
-1. Clique em **[!UICONTROL Done]**.
-1. Na regra de Fluxo de Trabalho recém-criada, clique em **[!UICONTROL Edit]**.
-1. Na lista suspensa **[!UICONTROL Add Workflow Action]**, selecione **[!UICONTROL New Outbound Message]**.
+1. Clique em **[!UICONTROL Concluído]**.
+1. Na regra de Fluxo de Trabalho recém-criada, clique em **[!UICONTROL Editar]**.
+1. Na lista suspensa **[!UICONTROL Adicionar Ação de Fluxo de Trabalho]**, selecione **[!UICONTROL Nova Mensagem de Saída]**.
 
-1. Especifique o nome, a descrição, a URL do Ponto de Extremidade e os campos que deseja incluir na nova mensagem de saída e clique em **[!UICONTROL Save]**.
+1. Especifique o nome, a descrição, a URL do ponto de extremidade e os campos que deseja incluir na nova mensagem de saída e clique em **[!UICONTROL Salvar]**.
 
-   O campo **[!UICONTROL Endpoint URL]** contém a URL fornecida em [!DNL Salesforce] [!UICONTROL Outbound Message] em [!DNL Workfront Fusion].
+   O campo **[!UICONTROL URL do Ponto de Extremidade]** contém a URL fornecida na [!DNL Salesforce] [!UICONTROL Mensagem de Saída] em [!DNL Workfront Fusion].
 
-1. Configure um cenário que comece com o evento [!UICONTROL Outbound Message].
+1. Configure um cenário que comece com o evento [!UICONTROL Mensagem de Saída].
 
 1. Clique no ícone **&lt;/>** na parte inferior direita e copie a URL fornecida.
-1. Retorne à página **[!UICONTROL Workflow Rules]**, localize a regra recém-criada e clique em **[!UICONTROL Activate]**.
+1. Retorne à página **[!UICONTROL Regras de Fluxo de Trabalho]**, localize a regra recém-criada e clique em **[!UICONTROL Ativar]**.
 
 Ao configurar esse módulo, os campos a seguir são exibidos.
 
@@ -271,14 +271,14 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Webhook]</td> 
-   <td> <p>Selecione o webhook que deseja usar para assistir mensagens de saída. Para adicionar um webhook, clique em <strong>[!UICONTROL Add]</strong> e insira o nome e a conexão do webhook.</p> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!UICONTROL Adobe Workfront Fusion] - Instruções básicas</a></p> </td> 
+   <td> <p>Selecione o webhook que deseja usar para assistir mensagens de saída. Para adicionar um webhook, clique em <strong>[!UICONTROL Adicionar]</strong> e insira o nome e a conexão do webhook.</p> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!UICONTROL Adobe Workfront Fusion] - Instruções básicas</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Record Type] </td> 
+   <td>[!UICONTROL Tipo de Registro] </td> 
    <td> <p>Selecione o tipo de registro [!DNL Salesforce] que você deseja que o módulo veja para mensagens de saída.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Fields]</td> 
+   <td>[!UICONTROL Campos]</td> 
    <td> <p>Selecione os campos que você deseja que o módulo observe para mensagens de saída. Os campos disponíveis dependem do tipo de registro.</p> </td> 
   </tr> 
  </tbody> 
@@ -286,15 +286,15 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
 
 ### Ações
 
-* [[!UICONTROL Create a Record]](#create-a-record)
-* [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Delete a Record]](#delete-a-record)
-* [[!UICONTROL Download Attachment/Document]](#download-attachmentdocument)
-* [[!UICONTROL Read a Record]](#read-a-record)
-* [[!UICONTROL Upload Attachment/Document]](#upload-attachmentdocument)
+* [[!UICONTROL Criar um Registro]](#create-a-record)
+* [[!UICONTROL Chamada de API personalizada]](#custom-api-call)
+* [[!UICONTROL Excluir um Registro]](#delete-a-record)
+* [[!UICONTROL Baixar Anexo/Documento]](#download-attachmentdocument)
+* [[!UICONTROL Ler um Registro]](#read-a-record)
+* [[!UICONTROL Carregar Anexo/Documento]](#upload-attachmentdocument)
 * [Carregar arquivo](#upload-file)
 
-#### [!UICONTROL Create a Record]
+#### [!UICONTROL Criar um Registro]
 
 Este módulo de ação cria um novo registro em um objeto.
 
@@ -309,32 +309,32 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Conexão]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Record Type] </p> </td> 
+   <td> <p>[!UICONTROL Tipo de Registro] </p> </td> 
    <td> <p>Selecione o tipo de registro [!DNL Salesforce] que você deseja que o módulo crie. Os campos ficam disponíveis com base no tipo de registro selecionado no campo [!UICONTROL Record Type]. Esses campos são baseados na API [!DNL Salesforce].</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Select fields to map]</td> 
+   <td>[!UICONTROL Selecionar campos a serem mapeados]</td> 
    <td> <p>Selecione os campos que você deseja que o módulo configure ao criar o novo registro. Os campos obrigatórios estão no topo da lista. </p> <p>Os campos selecionados são abertos abaixo deste campo. Agora é possível inserir valores nesses campos.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Custom API Call]
+#### [!UICONTROL Chamada de API personalizada]
 
 Este módulo de ação permite fazer uma chamada autenticada personalizada para a API [!DNL Salesforce]. Dessa forma, você pode criar uma automação de fluxo de dados que não pode ser realizada pelos outros módulos do [!DNL Salesforce].
 
 O módulo retorna o seguinte:
 
-* **[!UICONTROL Status Code]** (número): isso indica o sucesso ou a falha de sua solicitação HTTP. Esses são códigos padrão que você pode pesquisar na Internet.
-* **[!UICONTROL Headers]** (objeto): um contexto mais detalhado para o código de resposta/status que não está relacionado ao corpo de saída. Nem todos os cabeçalhos que aparecem em um cabeçalho de resposta são cabeçalhos de resposta, portanto, alguns podem não ser úteis para você.
+* **[!UICONTROL Código de Status]** (número): indica o sucesso ou a falha da sua solicitação HTTP. Esses são códigos padrão que você pode pesquisar na Internet.
+* **[!UICONTROL Cabeçalhos]** (objeto): um contexto mais detalhado para o código de resposta/status que não está relacionado ao corpo de saída. Nem todos os cabeçalhos que aparecem em um cabeçalho de resposta são cabeçalhos de resposta, portanto, alguns podem não ser úteis para você.
 
   Os cabeçalhos de resposta dependem da solicitação HTTP escolhida ao configurar o módulo.
 
-* **[!UICONTROL Body]** (objeto): dependendo da solicitação HTTP escolhida ao configurar o módulo, talvez você receba alguns dados de volta. Estes dados, como os dados de uma solicitação [!UICONTROL GET], estão contidos neste objeto.
+* **[!UICONTROL Corpo]** (objeto): dependendo da solicitação HTTP escolhida ao configurar o módulo, você poderá receber alguns dados de volta. Estes dados, como os dados de uma solicitação [!UICONTROL GET], estão contidos neste objeto.
 
 Ao configurar esse módulo, os campos a seguir são exibidos.
 
@@ -343,7 +343,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -351,19 +351,19 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
    <td> <p>Insira um caminho relativo a <code> &lt;Instance URL&gt;/services/data/v46.0/</code>.</p> <p>Para obter a lista de pontos de extremidade disponíveis, consulte o <a href="https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm">Guia do Desenvolvedor da API REST do Salesforce</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Método]</p> </td> 
    td&gt; <p>Selecione o método de solicitação HTTP necessário para configurar a chamada de API. Para obter mais informações, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitação HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td role="rowheader">[!UICONTROL Cabeçalhos]</td> 
    <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão. Por exemplo, <code>{"Content-type":"application/json"}</code>. O Workfront Fusion adiciona os cabeçalhos de autorização para você.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td role="rowheader">[!UICONTROL Cadeia de Consulta]</td> 
    <td> <p>Adicione a consulta da chamada à API na forma de um objeto JSON padrão. Por exemplo: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td role="rowheader">[!UICONTROL Corpo]</td> 
    <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Nota:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
@@ -372,7 +372,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Record]
+#### [!UICONTROL Excluir um Registro]
 
 Este módulo de ação exclui um registro existente em um objeto.
 
@@ -387,11 +387,11 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Conexão]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Record Type] </td> 
+   <td>[!UICONTROL Tipo de Registro] </td> 
    <td> <p>Selecione o tipo de registro [!DNL Salesforce] que você deseja que o módulo exclua.</p> </td> 
   </tr> 
   <tr> 
@@ -401,7 +401,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  </tbody> 
 </table>
 
-#### [!UICONTROL Download Attachment/Document]
+#### [!UICONTROL Baixar Anexo/Documento]
 
 Este módulo de ação baixa um documento ou anexo de um registro.
 
@@ -416,26 +416,26 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr>
-    <td>[!UICONTROL Connection]</td>
+    <td>[!UICONTROL Conexão]</td>
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr>
-    <td>[!UICONTROL Type of Download]</td>
+    <td>[!UICONTROL Tipo de Download]</td>
     <td> <p>Especifique o tipo de arquivo que deseja baixar da Salesforce.</p> 
      <ul> 
-      <li>[!UICONTROL Attachment]</li> 
-      <li>[!UICONTROL Document]</li> 
+      <li>[!UICONTROL Anexo]</li> 
+      <li>[!UICONTROL Documento]</li> 
       <li>[!UICONTROL ContentDocument] (Este é um documento que foi carregado para uma biblioteca em [!DNL Saleforce CRM Content] ou [!DNL Salesforce Files].)</li> 
      </ul> </td>
   </tr> 
   <tr>
-    <td> <p>[!UICONTROL ID] / </p> <p>[!UICONTROL Attachment ID] / </p> <p>[!UICONTROL ContentDocument ID]</p> </td>
+    <td> <p>[!UICONTROL ID] / </p> <p>[!UICONTROL ID de Anexo] / </p> <p>[!UICONTROL ID do Documento de Conteúdo]</p> </td>
     <td> <p>Insira ou mapeie a ID [!DNL Salesforce] exclusiva do registro que você deseja que o módulo baixe.</p> <p>Para obter a ID, abra o objeto [!DNL Salesforce] no navegador e copie o texto no final da URL após a última barra (/). Por exemplo: <code>https://eu5.salesforce.com/&lt;object ID&gt;</code></p> </td>
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Read a Record]
+#### [!UICONTROL Ler um Registro]
 
 Este módulo de ação lê dados de um único objeto em [!DNL Salesforce].
 
@@ -450,15 +450,15 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr>
-    <td>[!UICONTROL Connection]</td>
+    <td>[!UICONTROL Conexão]</td>
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr>
-    <td>[!UICONTROL Record Type]</td>
-    <td>Selecione o tipo de registro [!DNL Salesforce] que você deseja que o módulo execute [action].read.</td>
+    <td>[!UICONTROL Tipo de Registro]</td>
+    <td>Selecione o tipo de registro [!DNL Salesforce] que você deseja que o módulo leia.</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL Record Fields]</td>
+    <td>[!UICONTROL Campos de Registro]</td>
     <td>Selecione os campos que você deseja que o módulo leia. Você deve selecionar pelo menos um campo.</td>
   </tr> 
   <tr>
@@ -482,14 +482,14 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
 >
 >* **Valor**: `SELECT Id, Name, CreatedDate, LastModifiedDate FROM User LIMIT 10`
 >
->Correspondências da pesquisa podem ser encontradas na Saída do módulo em **[!UICONTROL Bundle]> [!UICONTROL Body] >[!UICONTROL records]**.
+>Correspondências da pesquisa podem ser encontradas na Saída do módulo em **[!UICONTROL Pacote] > [!UICONTROL Corpo] > [!UICONTROL registros]**.
 >
 >No nosso exemplo, 6 usuários foram retornados:
 >
 >![Correspondências para a pesquisa](/help/workfront-fusion/references/apps-and-modules/assets/matches-of-the-search-350x573.png)
 
 
-#### [!UICONTROL Update a Record]
+#### [!UICONTROL Atualizar um Registro]
 
 Este módulo de ação edita um registro em um objeto.
 
@@ -504,7 +504,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Conexão]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -512,18 +512,18 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
    <td>Insira ou mapeie a ID do registro que você deseja atualizar.</td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Record Type] </p> </td> 
+   <td> <p>[!UICONTROL Tipo de Registro] </p> </td> 
    <td> <p>Selecione o tipo de registro [!DNL Salesforce] que você deseja que o módulo atualize. Os campos ficam disponíveis com base no tipo de registro selecionado no campo Tipo de registro. Esses campos são baseados na API [!DNL Salesforce].</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Select fields to map]</td> 
+   <td>[!UICONTROL Selecionar campos a serem mapeados]</td> 
    <td> <p>Selecione os campos que você deseja que o módulo configure ao criar o novo registro. Os campos obrigatórios estão no topo da lista. </p> <p>Os campos selecionados são abertos abaixo deste campo. Agora é possível inserir valores nesses campos.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 
-#### [!UICONTROL Upload Attachment/Document]
+#### [!UICONTROL Carregar Anexo/Documento]
 
 Esse módulo de ação faz upload de um arquivo e o anexa a um registro especificado por você ou faz upload de um documento.
 
@@ -536,11 +536,11 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Conexão]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Type of Upload]</td> 
+   <td>[!UICONTROL Tipo de Carregamento]</td> 
    <td>Selecione se você deseja que o módulo carregue um anexo ou um documento.</td> 
   </tr> 
   <tr> 
@@ -548,11 +548,11 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
    <td>Insira ou mapeie a ID do objeto para o qual você deseja fazer upload de um anexo.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder]</td> 
+   <td>[!UICONTROL Pasta]</td> 
    <td>Selecione a pasta que contém o arquivo a ser carregado pelo módulo. </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source File]</td> 
+   <td>[!UICONTROL Arquivo Source]</td> 
    <td>Selecione um arquivo de origem de um módulo anterior ou mapeie o nome e os dados do arquivo de origem.</td> 
   </tr> 
  </tbody> 
@@ -569,15 +569,15 @@ Esse módulo de ação faz upload de um único arquivo para o Salesforce.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
    <td>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o[!DNL  Adobe Workfront Fusion] - Instruções básicas</a></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td role="rowheader">[!UICONTROL arquivo Source]</td> 
    <td> <p>Selecione um arquivo de origem de um módulo anterior ou mapeie o nome e os dados do arquivo de origem.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Document linking]</td> 
+   <td role="rowheader">[!UICONTROL Vinculação de documentos]</td> 
    <td>Selecione se deseja aplicar um link de documento de conteúdo.</td> 
   </tr> 
   <tr> 
@@ -589,13 +589,13 @@ Esse módulo de ação faz upload de um único arquivo para o Salesforce.
    <td>Se estiver usando a vinculação de documentos, selecione permissões para o arquivo.<ul><li><b>Permissão do visualizador</b><p>O usuário pode visualizar o arquivo.</p></li><li><b>Permissão do colaborador</b><p>O usuário pode visualizar e editar o arquivo.</p></li><li><b>Permissões inferidas</b><p>As permissões se baseiam nas permissões do usuário para o registro relacionado, como uma biblioteca.</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Visibility]</td> 
+   <td role="rowheader">[!UICONTROL Visibilidade]</td> 
    <td>Se estiver usando a vinculação de documentos, insira ou mapeie a visibilidade do documento.<ul><li><b>AllUsers</b><p>Disponível para todos os usuários com permissões</p></li><li><b>UsuáriosInternos</b><p>Disponível para usuários internos com permissões.</p></li><li><b>UsuáriosCompartilhados</b><p>Disponível para usuários que podem ver o feed no qual o arquivo é postado.</p></li></ul></td> 
   </tr>
 
 ### Pesquisas
 
-#### [!UICONTROL Search with Query]
+#### [!UICONTROL Pesquisar com a consulta]
 
 Este módulo de pesquisa procura registros em um objeto em [!DNL Salesforce] que correspondam à consulta de pesquisa especificada. Você pode mapear essas informações em módulos subsequentes no cenário.
 
@@ -606,34 +606,34 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Conexão]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Search Type]</td> 
+   <td>[!UICONTROL Tipo de Pesquisa]</td> 
    <td> <p>Selecione o tipo de pesquisa que deseja que o módulo execute:</p> 
     <ul> 
-     <li> <p>[!UICONTROL Simple]</p> </li> 
-     <li> <p>[!UICONTROL Using SOSL (Salesforce Object Search Language)]</p> </li> 
-     <li> <p>[!UICONTROL Using SOQL (Salesforce Object Query Language)]</p> </li> 
+     <li> <p>[!UICONTROL Simples]</p> </li> 
+     <li> <p>[!UICONTROL Usando SOSL (Salesforce Object Search Language)]</p> </li> 
+     <li> <p>[!UICONTROL Usando SOQL (Salesforce Object Query Language)]</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Type] </p> </td> 
+   <td> <p>[!UICONTROL Tipo] </p> </td> 
    <td> <p>Se você selecionou o tipo de pesquisa Simples, escolha o tipo de registro [!DNL Salesforce] que deseja que o módulo procure.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Query] / [!UICONTROL SOSL Query] / [!UICONTROL SOQL Query]</td> 
-   <td> <p>Informe a consulta pela qual deseja pesquisar.</p> <p>Para obter mais informações sobre SOSL, consulte <a href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_sosl.htm">Salesforce Object Search Language (SOSL)</a> na documentação de [!DNL Salesforce].</p> <p>Para obter mais informações sobre SOQL, consulte <a href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm">Salesforce Object Query Language (SOQL)</a> na documentação de [!DNL Salesforce].</p> <p>Observação: observe que o valor do parâmetro <code>RETURNING </code> influencia a saída do módulo. Se você usar <code>LIMIT</code>, [!DNL Fusion] ignorará as configurações no campo [!UICONTROL Maximal count of records]. Se você não definir um limite, o Fusion inserirá o valor [!UICONTROL LIMIT = Maximal count of records].</p> </td> 
+   <td>[!UICONTROL Consulta] / [!UICONTROL Consulta SOSL] / [!UICONTROL Consulta SOQL]</td> 
+   <td> <p>Informe a consulta pela qual deseja pesquisar.</p> <p>Para obter mais informações sobre SOSL, consulte <a href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_sosl.htm">Salesforce Object Search Language (SOSL)</a> na documentação de [!DNL Salesforce].</p> <p>Para obter mais informações sobre SOQL, consulte <a href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm">Salesforce Object Query Language (SOQL)</a> na documentação de [!DNL Salesforce].</p> <p>Observação: observe que o valor do parâmetro <code>RETURNING </code> influencia a saída do módulo. Se você usar <code>LIMIT</code>, [!DNL Fusion] ignorará as configurações no campo [!UICONTROL Contagem máxima de registros]. Se você não definir um limite, o Fusion inserirá o valor [!UICONTROL LIMIT = Contagem máxima de registros].</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximal count of records]</td> 
+   <td>[!UICONTROL Contagem máxima de registros]</td> 
    <td> <p>Insira ou mapeie o número máximo de registros que deseja que o módulo retorne durante cada ciclo de execução de cenário.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Search]
+#### [!UICONTROL Pesquisa]
 
 Este módulo de ação recupera todos os registros que atendem a um determinado critério.
 
@@ -642,27 +642,27 @@ Este módulo de ação recupera todos os registros que atendem a um determinado 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
    <td>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o[!DNL  Adobe Workfront Fusion] - Instruções básicas</a></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo]</td> 
    <td> <p>Selecione o tipo de objeto que deseja pesquisar.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Search criteria]</td> 
+   <td role="rowheader">[!UICONTROL Pesquisar critérios]</td> 
    <td>Selecione o campo pelo qual deseja pesquisar, o operador que deseja usar na consulta e o valor que está procurando no campo. Você pode conectar consultas usando AND ou OR.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
+   <td role="rowheader">[!UICONTROL Saídas]</td> 
    <td>Selecione os campos que deseja incluir na saída do módulo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Result set]</td> 
+   <td role="rowheader">[!UICONTROL Conjunto de resultados]</td> 
    <td>Selecione se você deseja que o módulo retorne Todos os registros correspondentes ou somente o Primeiro registro correspondente.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximal]</td> 
+   <td role="rowheader">[!UICONTROL Máximo]</td> 
    <td>Insira ou mapeie o número máximo de registros que você deseja que o módulo recupere durante cada ciclo de execução de cenário.</td> 
   </tr> 
  </tbody> 
