@@ -4,18 +4,14 @@ description: Você pode usar o TLS mútuo nos módulos HTTP do Adobe Workfront F
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 1fa1ef68267d971a2769400a031b333de2f684ce
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
 
 # Usar TLS mútuo em módulos HTTP em [!DNL Adobe Workfront Fusion]
-
->[!NOTE]
->
->O Adobe Workfront Fusion requer uma licença [!DNL Adobe Workfront Fusion], além de uma licença da Adobe Workfront.
 
 ## Visão geral do TLS mútuo
 
@@ -35,45 +31,48 @@ O TLS mútuo permite que essa confirmação de identidade siga ambos os caminhos
 
 ## Requisitos de acesso
 
++++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
+
 Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plano*</td> 
-   <td> <p>[!UICONTROL Pro] ou superior</p> </td> 
+   <td role="rowheader">Pacote do Adobe Workfront</td> 
+   <td> <p>Qualquer</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licença*</td> 
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licença do Adobe Workfront</td> 
+   <td> <p>Novo: Padrão</p><p>Ou</p><p>Atual: trabalho ou superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licença**</td> 
+   <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisito de licença atual: nenhum requisito de licença [!DNL Workfront Fusion].</p>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion.</p>
    <p>Ou</p>
-   <p>Requisito de licença herdada: [!UICONTROL [!DNL Workfront Fusion] para Automação e Integração do Trabalho] </p>
+   <p>Herdados: Automação e integração do Workfront Fusion for Work </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Requisito atual do produto: se você tiver o Plano [!UICONTROL Select] ou [!UICONTROL Prime] [!DNL Adobe Workfront], sua organização deve comprar o [!DNL Adobe Workfront Fusion] e o [!DNL Adobe Workfront] para usar a funcionalidade descrita neste artigo. [!DNL Workfront Fusion] está incluído no plano [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Novo:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
    <p>Ou</p>
-   <p>Requisito de produto herdado: sua organização deve comprar o [!DNL Adobe Workfront Fusion] e o [!DNL Adobe Workfront] para usar a funcionalidade descrita neste artigo.</p>
+   <p>Atual: sua organização deve comprar o Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-&#42;Para saber qual plano, tipo de licença ou acesso você tem, contate o administrador do [!DNL Workfront].
+Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-&#42;&#42;Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
+Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Fornecendo seu certificado público [!DNL Workfront Fusion]
-
 
 Quando você se conecta a um serviço Web com uma solicitação HTTP, o serviço Web geralmente requer um certificado público [!DNL Workfront Fusion] para verificação. Isso permite que o serviço da Web compare o certificado apresentado na solicitação HTTP com o do arquivo, como uma maneira de garantir que o certificado esteja na inclui na lista de permissões do serviço da Web.
 
@@ -85,7 +84,7 @@ Para obter instruções sobre como carregar o certificado público [!DNL Adobe W
 
 Você pode usar os seguintes links para baixar os certificados públicos do Workfront Fusion:
 
-### Certificados para 23 de abril de 2023 a 7 de maio de 2024
+### Certificados para 23 de abril de 2024 a 7 de maio de 2025
 
 >[!IMPORTANT]
 >
@@ -101,21 +100,6 @@ Você pode usar os seguintes links para baixar os certificados públicos do Work
 
   Para utilização na UE
 
-<!--
-
-### Certificates for November 14, 2022 - July 15, 2023
-
->[!IMPORTANT]
->
->* These [!DNL Workfront Fusion] public certificates expire on July 15, 2023.
->* These are wildcard mTLS certificates.
-
-* [Download [!DNL Workfront Fusion] Certificate 2023](https://cdn.experience.workfront.com/Documentation/Workfront+Fusion+2.0+public+certificates/app_workfrontfusion_com-jul-15-2023+updated.cer)
-* [Download [!DNL Workfront Fusion] EU Certificate 2023](https://cdn.experience.workfront.com/Documentation/Workfront+Fusion/app-eu_workfrontfusion_com-jul-15-2023.cer)
-
-   For use in the EU 
-
-   -->
 
 ## Habilitando o TLS mútuo em módulos HTTP [!DNL Workfront Fusion]
 
@@ -126,7 +110,7 @@ Para habilitar o TLS Mútuo em um módulo de solicitação [!UICONTROL HTTP]:
 1. Adicione um módulo de solicitação [!UICONTROL HTTP] ao seu cenário.
 1. Comece a configurar o módulo.
 
-   <!--For instructions on configuring an [!UICONTROL HTTP] request module, see the appropriate article under [[!UICONTROL Universal connectors] modules](/help/workfront-fusion/references/apps-and-modules/universal-connectors/).-->
+   Para obter instruções sobre como configurar um módulo de solicitação [!UICONTROL HTTP], consulte o artigo apropriado em [Conectores universais](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors).
 
-1. Habilite **[!UICONTROL Show advanced settings]** próximo à parte inferior do módulo.
-1. Habilitar **[!UICONTROL Use Mutual TLS]**.
+1. Habilitar **[!UICONTROL Mostrar configurações avançadas]** próximo à parte inferior do módulo.
+1. Habilitar **[!UICONTROL Usar TLS Mútuo]**.
