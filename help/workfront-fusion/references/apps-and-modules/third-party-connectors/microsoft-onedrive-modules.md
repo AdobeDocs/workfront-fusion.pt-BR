@@ -4,9 +4,9 @@ description: Em um cenário  [!DNL Adobe Workfront Fusion] , você pode automati
 author: Becky
 feature: Workfront Fusion
 exl-id: d21eafad-9c67-4f42-b718-0aa4223846e6
-source-git-commit: 632128bdcb6f8b8361f5a28e4a5fb527eb274d54
+source-git-commit: 337a6918dc20f2e7523438dea752393a1b3f50ee
 workflow-type: tm+mt
-source-wordcount: '4087'
+source-wordcount: '4088'
 ht-degree: 0%
 
 ---
@@ -207,8 +207,6 @@ Este módulo de ação copia um arquivo em um novo local de pasta
  </tbody> 
 </table>
 
-<!-- Start audit here-->
-
 #### [!UICONTROL Criar uma Pasta]
 
 Este módulo de ação cria uma nova pasta na unidade especificada.
@@ -255,7 +253,7 @@ Este módulo de ação cria uma nova pasta na unidade especificada.
 
 #### [!UICONTROL Excluir um Arquivo/Pasta]
 
-Este módulo de ação exclui o arquivo selecionado.
+Este módulo de ação exclui o arquivo ou pasta selecionada.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -730,7 +728,7 @@ Este módulo executa uma chamada de API personalizada.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Método]</td> 
-   td&gt; <p>Selecione o método de solicitação HTTP necessário para configurar a chamada de API. Para obter mais informações, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitação HTTP</a>.</p> </td> 
+   <td> <p>Selecione o método de solicitação HTTP necessário para configurar a chamada de API. Para obter mais informações, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitação HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Cabeçalhos]</td> 
