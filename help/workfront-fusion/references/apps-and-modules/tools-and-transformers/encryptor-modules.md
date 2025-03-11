@@ -4,83 +4,309 @@ description: Os módulos do Adobe Workfront Fusion Encryptor permitem criptograf
 author: Becky
 feature: Workfront Fusion
 exl-id: 4b119efe-6762-445e-bbc7-c59437fd5060
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 0689cfee7cf546a6c1f5f72c79a1e7be9df85a8c
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 1%
+source-wordcount: '867'
+ht-degree: 0%
 
 ---
 
 # Criptografador
 
-[!DNL Adobe Workfront Fusion] módulos do [!UICONTROL Encryptor] permitem que você criptografe dados de texto. Atualmente, eles oferecem suporte à criptografia de mensagens via AES256 e PGP ([!UICONTROL OpenPGP]).
+Os módulos [!DNL Adobe Workfront Fusion] [!UICONTROL Criptografador] permitem criptografar quaisquer dados de texto. Atualmente, eles oferecem suporte à criptografia de mensagens via AES256 e PGP ([!UICONTROL OpenPGP]).
+
+Esses módulos exigem alguma familiaridade com processos de criptografia.
 
 ## Requisitos de acesso
 
++++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
+
 Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plano*</td>
-  <td> <p>[!UICONTROL Pro] ou superior</p> </td>
+   <td role="rowheader">Pacote do Adobe Workfront</td> 
+   <td> <p>Qualquer</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licença*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licença do Adobe Workfront</td> 
+   <td> <p>Novo: Padrão</p><p>Ou</p><p>Atual: trabalho ou superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licença**</td> 
+   <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisito de licença atual: nenhum requisito de licença [!DNL Workfront Fusion].</p>
-   <p>Ou</p>
-   <p>Requisito de licença herdada: [!UICONTROL [!DNL Workfront Fusion] para Automação e Integração do Trabalho, [!UICONTROL [!DNL Workfront Fusion] para Automação do Trabalho</p>
+   <p>Nenhum requisito de licença do Workfront Fusion.</p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Requisito atual do produto: se você tiver o Plano [!UICONTROL Select] ou [!UICONTROL Prime] [!DNL Adobe Workfront], sua organização deve comprar o [!DNL Adobe Workfront Fusion] e o [!DNL Adobe Workfront] para usar a funcionalidade descrita neste artigo. [!DNL Workfront Fusion] está incluído no plano [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Novo:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
    <p>Ou</p>
-   <p>Requisito de produto herdado: sua organização deve comprar o [!DNL Adobe Workfront Fusion] e o [!DNL Adobe Workfront] para usar a funcionalidade descrita neste artigo.</p>
+   <p>Atual: sua organização deve comprar o Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Para saber que plano, tipo de licença ou acesso você tem, contate o administrador do [!DNL Workfront].
+Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Criptografia e descriptografia de mensagens usando PGP
 
 Ao criptografar e descriptografar via PGP, é necessário usar um chaveiro e criar uma chave privada ou pública (ou ambas).
 
-Para obter mais informações sobre chaves públicas e privadas, consulte o [glossário do Adobe Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md). <!--For more information on keychains, see [Keys in [!DNL Adobe Workfront Fusion]]().-->
+Para obter mais informações sobre chaves públicas e privadas, consulte o [glossário do Adobe Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md).
 
-## [!UICONTROL Encryptor] módulos e seus campos
+Para obter mais informações sobre chaves, consulte [Chaves](/help/workfront-fusion/references/modules/keys.md).
 
-Ao configurar módulos do [!UICONTROL Encryptor], os campos a seguir são exibidos. Um título em negrito em um módulo indica um campo obrigatório.
+## [!UICONTROL Módulos {Encryptor] e seus campos
 
-### Criptografar uma mensagem PGP
+Ao configurar os módulos do [!UICONTROL Encryptor], os campos a seguir são exibidos. Um título em negrito em um módulo indica um campo obrigatório.
 
-Esse módulo permite criptografar uma mensagem usando chaves públicas e privadas.
+### Descriptografia AES (avançada)
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL Private key]</td>
-        <td>Insira a chave privada do remetente. Isso pode autenticar a identidade do remetente.</td>
+        <td>[!UICONTROL Chave]</td>
+        <td>Selecione a chave que deseja que o módulo use. Para criar uma chave, clique em <b>Adicionar</b> e insira o nome, a chave e o tipo de codificação da chave.</td>
     </tr>
     <tr>
-        <td>[!UICONTROL Public key]</td>
-        <td>Insira a chave pública do recipient.</td>
+        <td>Bits</td>
+        <td>Selecione se deseja que o módulo use criptografia de 128 ou 256 bits.</td>
     </tr>
     <tr>
-        <td>[!UICONTROL Message]</td>
-        <td>Informe a mensagem que deseja criptografar.</td>
+        <td>Codificação de entrada</td>
+        <td>Selecione o tipo de codificação de entrada que deseja usar:
+        <ul>
+        <li>Binário</li>
+        <li>Base 64</li>
+        <li>Hexadecimal</li>
+        </ul>
+        </td>
     </tr>
+    <tr>
+        <td>Dados</td>
+        <td>Insira ou mapeie os dados que deseja descriptografar.</td>
+    </tr>
+    <tr>
+        <td>Codificação de saída</td>
+        <td>Selecione o tipo de codificação de saída que deseja usar:
+        <ul>
+        <li>ASCII</li>
+        <li>Binário</li>
+        <li>UTF-8</li>
+        </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Algoritmo de codificação</td>
+        <td>Selecione o algoritmo de criptografia que deseja usar:
+        <ul>
+        <li>CBC</li>
+        <li>GCM</li>
+        </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Codificação de vetor de inicialização</td>
+        <td>Selecione a codificação de vetor de inicialização que deseja usar:
+        <ul>
+        <li>UTF-8</li>
+        <li>Binário</li>
+        <li>Base 64</li>
+        <li>Hexadecimal</li>
+        </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Codificação de tag de autenticação</td>
+        <td>Selecione a codificação de tag de autenticação que deseja usar:
+        <ul>
+        <li>UTF-8</li>
+        <li>Binário</li>
+        <li>Base 64</li>
+        <li>Hexadecimal</li>
+        </ul>
+        </td>
+    </tr>
+</table>
+
+### Descriptografia AES (simples)
+
+<table style="table-layout:auto">
+    <tr>
+        <td>[!UICONTROL Chave]</td>
+        <td>Selecione a chave que deseja que o módulo use. Para criar uma chave, clique em <b>Adicionar</b> e insira o nome, a chave e o tipo de codificação da chave.</td>
+    </tr>
+   <tr>
+        <td>Codificação de entrada</td>
+        <td>Selecione o tipo de codificação de entrada que deseja usar:
+        <ul>
+        <li>Binário</li>
+        <li>Base 64</li>
+        <li>Hexadecimal</li>
+        </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Dados</td>
+        <td>Insira ou mapeie os dados que deseja descriptografar.</td>
+    </tr>
+    <tr>
+        <td>Codificação de saída</td>
+        <td>Selecione o tipo de codificação de saída que deseja usar:
+        <ul>
+        <li>ASCII</li>
+        <li>Binário</li>
+        <li>UTF-8</li>
+        </ul>
+        </td>
+     </tr>
+    <tr>
+        <td>Chave secreta</td>
+        <td>Insira ou mapeie a chave secreta que deseja usar.</td>
+    </tr>
+</table>
+
+### Criptografia AES (avançada)
+
+<table style="table-layout:auto">
+    <tr>
+        <td>[!UICONTROL Chave]</td>
+        <td>Selecione a chave que deseja que o módulo use. Para criar uma chave, clique em <b>Adicionar</b> e insira o nome, a chave e o tipo de codificação da chave.</td>
+    </tr>
+    <tr>
+        <td>Bits</td>
+        <td>Selecione se deseja que o módulo use criptografia de 128 ou 256 bits.</td>
+    </tr>
+    <tr>
+        <td>Codificação de entrada</td>
+        <td>Selecione o tipo de codificação de entrada que deseja usar:
+        <ul>
+        <li>Binário</li>
+        <li>ASCII</li>
+        <li>Hexadecimal</li>
+        </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Dados</td>
+        <td>Insira ou mapeie os dados que deseja criptografar.</td>
+    </tr>
+    <tr>
+        <td>Codificação de saída</td>
+        <td>Selecione o tipo de codificação de saída que deseja usar:
+        <ul>
+        <li>ASCII</li>
+        <li>Binário</li>
+        <li>UTF-8</li>
+        </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Algoritmo de codificação</td>
+        <td>Selecione o algoritmo de criptografia que deseja usar:
+        <ul>
+        <li>CBC</li>
+        <li>GCM</li>
+        </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Codificação de vetor de inicialização</td>
+        <td>Selecione a codificação de tag de autenticação que deseja usar:
+        <ul>
+        <li>UTF-8</li>
+        <li>Binário</li>
+        <li>Base 64</li>
+        <li>Hexadecimal</li>
+        </ul>
+        </td>
+    </tr>
+</table>
+
+### Criptografia AES (simples)
+
+<table style="table-layout:auto">
+    <tr>
+        <td>[!UICONTROL Chave]</td>
+        <td>Selecione a chave que deseja que o módulo use. Para criar uma chave, clique em <b>Adicionar</b> e insira o nome, a chave e o tipo de codificação da chave.</td>
+    </tr>
+   <tr>
+        <td>Codificação de entrada</td>
+        <td>Selecione o tipo de codificação de entrada que deseja usar:
+        <ul>
+        <li>Binário</li>
+        <li>ASCII</li>
+        <li>UTF-8</li>
+        </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Dados</td>
+        <td>Insira ou mapeie os dados que deseja criptografar.</td>
+    </tr>
+    <tr>
+        <td>Codificação de saída</td>
+        <td>Selecione o tipo de codificação de saída que deseja usar:
+        <ul>
+        <li>Base 64</li>
+        <li>Binário</li>
+        <li>Hexadecimal</li>
+        </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Chave secreta</td>
+        <td>Insira ou mapeie a chave secreta que deseja usar.</td>
+    </tr>
+</table>
+
+
+### Criar assinatura digital
+
+Este módulo permite descriptografar uma mensagem usando chaves públicas e privadas.
+
+<table style="table-layout:auto">
+    <tr>
+        <td>[!UICONTROL Chave privada]</td>
+        <td>Selecione a chave privada a ser usada para esta assinatura. Para adicionar uma chave privada, clique em <b>Adicionar</b> e insira o nome da chave, o texto da chave e a senha.</td>
+    </tr>
+    <tr>
+        <td>Algoritmo </td>
+        <td>Selecione se deseja usar RSA-SHA1 ou RSA-SHA256. </td>
+    </tr>
+   <tr>
+        <td>Codificação de entrada</td>
+        <td>Selecione o tipo de codificação de entrada que deseja usar:
+        <ul>
+        <li>ASCII</li>
+        <li>Binário</li>
+        <li>UTF-8</li>
+        </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Codificação de saída</td>
+        <td>Selecione o tipo de codificação de saída que deseja usar:
+        <ul>
+        <li>Base 64</li>
+        <li>Hexadecimal</li>
+        </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Dados</td>
+        <td>Insira ou mapeie os dados a partir dos quais deseja criar a assinatura.</td>
+    </tr>
+</table>
 
 ### Descriptografar uma mensagem PGP
 
@@ -88,15 +314,34 @@ Este módulo permite descriptografar uma mensagem usando chaves públicas e priv
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL Private key]</td>
-        <td>Insira a chave privada do recipient.</td>
+        <td>[!UICONTROL Chave privada]</td>
+        <td>Selecione a chave privada do destinatário para usar nesta mensagem. Para adicionar uma chave privada, clique em <b>Adicionar</b> e insira o nome da chave, o texto da chave e a senha.</td>
     </tr>
     <tr>
-        <td>[!UICONTROL Public key]</td>
-        <td>Insira a chave pública do recipient. Isso pode autenticar a identidade do remetente.</td>
+        <td>[!UICONTROL Chave pública]</td>
+        <td>Insira a chave pública do remetente. Isso pode autenticar a identidade do remetente.</td>
     </tr>
     <tr>
-        <td>[!UICONTROL Message]</td>
+        <td>[!UICONTROL Mensagem]</td>
         <td>Mapeie a mensagem que deseja descriptografar.</td>
     </tr>
 </table>
+
+### Criptografar uma mensagem PGP
+
+Esse módulo permite criptografar uma mensagem usando chaves públicas e privadas.
+
+<table style="table-layout:auto">
+    <tr>
+        <td>[!UICONTROL Chave privada]</td>
+        <td>Insira a chave privada do remetente. Isso pode autenticar a identidade do remetente.</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Chave pública]</td>
+        <td>Insira a chave pública do recipient.</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Mensagem]</td>
+        <td>Informe a mensagem que deseja criptografar.</td>
+    </tr>
+    </table>

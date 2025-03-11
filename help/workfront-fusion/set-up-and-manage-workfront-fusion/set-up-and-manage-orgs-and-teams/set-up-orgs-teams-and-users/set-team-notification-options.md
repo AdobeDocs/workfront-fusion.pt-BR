@@ -4,16 +4,18 @@ description: As opções de notificação por email são definidas no nível da 
 author: Becky
 feature: Workfront Fusion
 exl-id: 570a09fc-01a9-4952-8a2b-8bfdd86d0bd8
-source-git-commit: 410676b7def1e36de12fee9d6df79feba566d741
+source-git-commit: 0689cfee7cf546a6c1f5f72c79a1e7be9df85a8c
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '300'
 ht-degree: 1%
 
 ---
 
 # Definir opções de notificação da equipe
 
-Quando estiver no Workfront Fusion, você receberá notificações por meio da área Notificações de Adobe. Você pode escolher as notificações que uma equipe recebe. As notificações são definidas no nível da equipe.
+Na sua organização do que usa o Unified Shell da Adobe, você recebe notificações por meio da área Notificações da Adobe.
+
+Se sua organização não tiver sido migrada para o Adobe Unified Shell, você poderá escolher as notificações que uma equipe receberá. As notificações são definidas no nível da equipe.
 
 ## Requisitos de acesso
 
@@ -31,7 +33,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] licença</td> 
-   <td> <p>Novo: [!UICONTROL Standard]</p><p>Ou</p><p>Atual: [!UICONTROL Work] ou superior</p> </td> 
+   <td> <p>Novo: [!UICONTROL Padrão]</p><p>Ou</p><p>Atual: [!UICONTROL Trabalho] ou superior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] licença**</td> 
@@ -44,7 +46,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Novo:</p> <ul><li>[!UICONTROL Select] ou plano do [!UICONTROL Prime] [!DNL Workfront]: sua organização deve comprar o [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plano: [!DNL Workfront Fusion] está incluído.</li></ul>
+   <p>Novo:</p> <ul><li>Plano [!DNL Workfront] da [!UICONTROL Select] ou da [!UICONTROL Prime]: sua organização deve comprar [!DNL Adobe Workfront Fusion].</li><li>Plano [!DNL Workfront] da [!UICONTROL Ultimate] [!DNL Workfront Fusion] incluído.</li></ul>
    <p>Ou</p>
    <p>Atual: sua organização deve comprar o [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -69,10 +71,12 @@ Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte
 
 ## Definir opções de notificação
 
+Se sua organização não estiver no Unified Shell do Adobe, será possível definir as configurações de notificação diretamente no Fusion.
+
 As opções de notificação por email são definidas no nível da equipe.
 
-1. No painel de navegação esquerdo, clique em **[!UICONTROL Team]**
-1. Selecione a guia **[!UICONTROL Notification Options]**.
+1. No painel de navegação esquerdo, clique em **[!UICONTROL Equipe]**
+1. Selecione a guia **[!UICONTROL Opções de Notificação]**.
 1. Ative as notificações que você deseja que a equipe receba.
 
    <table style="table-layout:auto"> 
@@ -80,15 +84,15 @@ As opções de notificação por email são definidas no nível da equipe.
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">'[!UICONTROL Warning in scenario run]'</td> 
+      <td role="rowheader">'[!UICONTROL Aviso na execução do cenário]'</td> 
       <td> <p>Receber um email quando houver um aviso em uma execução de cenário</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Errors in scenario run]</td> 
+      <td role="rowheader">[!UICONTROL Erros na execução do cenário]</td> 
       <td>Receba um email quando houver um erro em uma execução de cenário.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Scenario deactivation]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL Desativação de cenário]</p> </td> 
       <td><p>Receba um email quando um cenário for desativado.</p><p>Em alguns casos, um cenário pode ser desativado pela equipe de engenharia [!DNL Workfront Fusion] porque está causando desempenho ou outros problemas. Nesses casos, você não recebe notificações em [!DNL Workfront Fusion]. </p></td>
 
 </tr>
