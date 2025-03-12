@@ -4,9 +4,9 @@ description: Os seguintes modelos públicos estão disponíveis no Adobe Workfro
 author: Becky
 feature: Workfront Fusion
 exl-id: b14bed4d-3503-42cf-a8c3-618d3b2448b4
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 47f1e2b6a812f4ac44e2daf08cb1937f1ef02981
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1351'
 ht-degree: 0%
 
 ---
@@ -25,17 +25,21 @@ Esses modelos automatizam processos e fluxos de trabalho do Workfront.
 
 ### [!BADGE Novo!]{type=Informative}
 
+<!--New March 12, 2025-->
+
+Deletar Cartões Arquivados de uma coluna designada em um quadro designado sob demanda.
+
+### Workfront Boards > Criar uma lista de verificação padrão com base na coluna Quadros
+
 Este Modelo do Fusion cria uma lista de verificação padrão para todos os cartões que informam uma coluna específica em um determinado quadro de acordo com o tempo.
 
-### [!BADGE Novo!]{type=Informative}
-
-<!--new Aug 1. 2024-->
+### Workfront > Workfront Boards - Criar uma placa a partir de uma configuração personalizada
 
 Este cenário é acionado por um novo projeto que está sendo criado. Com esse cenário, é possível criar um quadro com o nome do projeto, renomear ou criar colunas com base nas suas necessidades, criar tags personalizadas e associar um filtro de coluna de entrada ao projeto de origem.  Milhares de alterações adicionais podem ser feitas, mas a partir daqui você verá as possibilidades de criar um ponto de partida para a padronização do conselho da sua organização.
 
 ### Workfront - Criação de projeto a partir do CSV
 
-Essa automação cria novos projetos no Workfront com base no nome, Portfolio, status, data de início planejada e detalhes do modelo especificados em um CSV.
+Essa automação cria novos projetos no Workfront com base nos detalhes de Nome, Portfolio, Status, Data de início planejada e Modelo especificados em um CSV.
 
 ### Workfront - Solicitações de limpeza sem novas observações nos últimos 30 dias
 
@@ -57,7 +61,7 @@ Use este modelo para copiar observações e respostas de um problema ou solicita
 
 Essa automação observa novos projetos em programas com formulários personalizados. Em seguida, adiciona esses formulários e campos personalizados do programa aos novos projetos.
 
-### Workfront - Copiar dados de campo e Forms personalizados do Portfolio para novos projetos associados
+### Workfront - Copiar dados personalizados do Forms e do campo do Portfolio para novos projetos associados
 
 Essa automação observa novos projetos em portfólios com formulários personalizados. Em seguida, ele adiciona esses formulários e campos personalizados do portfólio aos novos projetos.
 
@@ -97,6 +101,12 @@ Uma vez por mês, revise os modelos de projeto usando sua própria política com
 
 Esses modelos automatizam fluxos de trabalho que combinam o Workfront com o Workfront Proof.
 
+### [!BADGE Novo!]{type=Informative}
+
+<!--New March 12, 2025-->
+
+Este modelo procura projetos que estejam atualizados com status que são rejeitados, concluídos ou inativos. Em seguida, altera todos os usuários com decisões de Prova pendente para Somente leitura. Por fim, ele bloqueia as Provas e envia uma atualização para os documentos.
+
 ### Workfront Proof > Workfront - atualização do projeto na decisão da prova
 
 Quando uma decisão é tomada em uma Prova que é adicionada diretamente a um projeto, essa automação reúne informações sobre a Decisão da prova, como quem tomou a decisão, e reflete esse progresso no projeto do Workfront correspondente como uma atualização.
@@ -129,15 +139,15 @@ Esses modelos oferecem suporte à integração Workfront-Marketo.
 >
 > Você deve ter uma licença do Workfront Fusion for Work Automation and Integration para usar modelos nesta seção.
 
-### Aprovar o rascunho de email do Marketo Engage com os fluxos de trabalho de aprovação do Workfront
+### Aprovar o rascunho de email do Marketo Engage com fluxos de trabalho de aprovação do Workfront
 
-Isso faz parte da integração Revisar e aprovar entre o Workfront e o Marketo Engage. Esse modelo detecta se uma Prova de email no Workfront foi aprovada e atualiza o email correspondente no Marketo Engage como aprovado.
+Isso faz parte da integração Revisar e aprovar entre o Workfront e a Marketo Engage. Esse modelo detecta se uma Prova de email no Workfront foi aprovada e atualiza o email correspondente no Marketo Engage como aprovado.
 
 ### Receber solicitações de campanha de marketing no Workfront e automatizar a criação de campanhas no Marketo Engage
 
-Esse cenário fornece uma maneira programática de criar campanhas de email e webinário no Marketo Engage a partir de uma solicitação feita no Workfront. Usando a automação para criar, organizar e configurar campanhas, as equipes podem melhorar a eficiência.
+Esse cenário fornece uma maneira programática de criar campanhas de email e webinários no Marketo Engage a partir de uma solicitação feita no Workfront. Usando a automação para criar, organizar e configurar campanhas, as equipes podem melhorar a eficiência.
 
-### Revise uma prova de email do seu rascunho de email do Marketo Engage no Workfront
+### Revisar uma prova de email do rascunho de email do Marketo Engage no Workfront
 
 Esse modelo detecta se uma tarefa do Workfront foi definida como um status pronto para revisão e, em seguida, exporta o rascunho de email do Marketo Engage para salvá-lo como uma Prova no Workfront.
 
