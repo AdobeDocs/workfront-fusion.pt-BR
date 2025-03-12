@@ -2,9 +2,9 @@
 user-guide-title: Documentação do Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Use os documentos, tutoriais e recursos adicionais para saber como implementar e usar efetivamente o Adobe Workfront Fusion em sua organização.
-source-git-commit: af7ab967e789311f72c67cc12b93334146218449
+source-git-commit: d69c9f3661a9aee1f7f818a5bd729aea387ad85b
 workflow-type: tm+mt
-source-wordcount: '1672'
+source-wordcount: '1709'
 ht-degree: 2%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 2%
 * Atividade de lançamento do Fusion {#fusion-release-activity}
    * [Atividade de lançamento do Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Versões do Fusion - 2025 {#fusion-releases-2025}
+      * [Atividade de lançamento do Workfront Fusion: semana de 10 de março de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-10.md)
       * [Atividade de lançamento do Workfront Fusion: semana de 3 de março de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-3.md)
       * [Atividade de lançamento do Workfront Fusion: semana de 24 de fevereiro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-2-24.md)
       * [Atividade de lançamento do Workfront Fusion: semana de 17 de fevereiro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-2-17.md)
@@ -282,11 +283,11 @@ ht-degree: 2%
    * Aplicativos e seus módulos {#apps-and-their-modules}
       * [Aplicativos e seus módulos](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)
       * Conectores universais {#universal-connectors}
-         * [HTTP > módulo [!UICONTROL Make a request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
-         * [Módulo [!UICONTROL HTTP] > [!UICONTROL Make a Basic Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
-         * [Módulo [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
-         * [Módulo [!UICONTROL HTTP] > [!UICONTROL Make a Client Certificate Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
-         * [[!UICONTROL HTTP] > [!UICONTROL Make an API Key Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
+         * [HTTP > [!UICONTROL Fazer uma solicitação] módulo](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+         * [[!UICONTROL HTTP] > [!UICONTROL Criar um módulo de solicitação de Autorização Básica]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
+         * [[!UICONTROL HTTP] > [!UICONTROL Fazer uma solicitação OAuth 2.0] para o módulo](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
+         * [[!UICONTROL HTTP] > [!UICONTROL Fazer uma solicitação de Autorização de Certificado de Cliente] módulo](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
+         * [[!UICONTROL HTTP] > [!UICONTROL Fazer uma solicitação de autorização de Chave de API]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
          * [[!UICONTROL HTTP] > Outros módulos](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-modules.md)
          * [Módulo SOAP](/help/workfront-fusion/references/apps-and-modules/universal-connectors/soap-module.md)
          * [Módulos FTP](/help/workfront-fusion/references/apps-and-modules/universal-connectors/ftp-modules.md)
