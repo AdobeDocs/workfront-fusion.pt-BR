@@ -4,9 +4,9 @@ description: A automação de trabalho requer processamento rápido, portanto, o
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: fe503c27bc4e3beb5645f0efa7c2097297f19190
+source-git-commit: 2af808aaf8136253c623ee65641d0e57d4f6cf10
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -55,8 +55,8 @@ Para obter mais informações, consulte [Trabalhando com arquivos grandes](/help
 ## Webhooks
 
 * O tamanho máximo padrão de uma carga é **5 MB**.
-* Os webhooks estão limitados a **100 solicitações por segundo**. Quando esse limite é atingido, o Workfront Fusion envia um status 429 ([!UICONTROL Too Many Requests]).
-* O [!DNL Workfront Fusion] armazena cargas de webhook por 30 dias. Acessar uma carga de webhook mais de 30 dias após ter sido recebida resulta no erro &quot;[!UICONTROL Failed to read file from storage.]&quot;
+* Os webhooks estão limitados a **100 solicitações por segundo**. Quando esse limite é atingido, o Workfront Fusion envia um status 429 ([!UICONTROL Muitas solicitações]).
+* O [!DNL Workfront Fusion] armazena cargas de webhook por 30 dias. O acesso a uma carga de webhook por mais de 30 dias após seu recebimento resulta no erro &quot;[!UICONTROL Falha ao ler o arquivo do armazenamento.]&quot;
 * Os webhooks são desativados automaticamente se qualquer uma das seguintes situações se aplicar:
 
    * O webhook não foi conectado a nenhum cenário por mais de 5 dias
@@ -76,3 +76,17 @@ Para obter mais informações, consulte [Trabalhando com arquivos grandes](/help
 ## Tentativas
 
 * Ao usar o módulo Break e especificar a diretiva Retry, se um cenário falhar consecutivamente 10 vezes em um período de 2 minutos, o cenário será desativado automaticamente.
+
+## Recursão
+
+A recursão ocorre quando um cenário aciona uma nova execução de si mesmo, que aciona uma nova execução e assim por diante em um loop infinito.
+
+Por exemplo, um cenário é acionado quando uma tarefa é criada e esse cenário cria uma tarefa. A tarefa recém-criada aciona o cenário novamente, o que cria outra tarefa. Toda vez que uma tarefa é criada, o cenário é acionado e toda vez que o cenário é executado, uma tarefa é criada.
+
+A recursão pode causar problemas de desempenho para a organização proprietária do cenário recursivo e para outras organizações.
+
+Considere o seguinte em relação à recursão:
+
+* **Quando um cenário está causando recursão, ele é desativado pela equipe de engenharia do Fusion para evitar mais problemas de desempenho.**
+* Como a recursão é um resultado do design do cenário, você deve projetar seus cenários de forma a garantir que o cenário não inclua ações que acionem o cenário.
+

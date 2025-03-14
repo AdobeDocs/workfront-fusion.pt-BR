@@ -4,9 +4,9 @@ description: Os módulos do Adobe Workfront Fusion [!DNL Google Docs] permitem m
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: cd44250d-c2cd-46b2-8773-15b30472a8d8
-source-git-commit: eac874d588e026cab3a01017d32e291d5c8b7b74
+source-git-commit: 2af808aaf8136253c623ee65641d0e57d4f6cf10
 workflow-type: tm+mt
-source-wordcount: '3999'
+source-wordcount: '4045'
 ht-degree: 0%
 
 ---
@@ -498,8 +498,12 @@ Este módulo de ação substitui o texto em um documento.
     </ul> </td> 
   </tr> 
   <tr> 
+   <td role="rowheader">[!UICONTROL ID de Documento]</td> 
+   <td> <p>Mapeie ou selecione o documento no qual deseja substituir o texto.</p> </td> 
+  </tr> 
+  <tr> 
    <td role="rowheader"> <p>[!UICONTROL Substituir um Texto]</p> </td> 
-   <td> <p>Adicione cada texto que deseja substituir.</p> 
+   <td> <p>Para cada parte do texto que você deseja substituir, clique em <b>Adicionar item</b> e insira o seguinte:</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Texto antigo a ser substituído]</strong> </p> <p>Insira o texto que deseja substituir.</p> </li> 
      <li> <p><strong>[!UICONTROL Novo texto a ser inserido]</strong> </p> <p>Insira o novo texto.</p> </li> 
@@ -538,8 +542,12 @@ Esse módulo de ação substitui uma imagem existente. A proporção da imagem o
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL URL da imagem]</p> </td> 
-   <td> <p>Insira ou mapeie o URL da nova imagem que substituirá a imagem existente.</p> <p>As imagens são listadas na ordem em que aparecem no documento. Por exemplo, <code>Body: Image No. 1</code> é a primeira imagem no documento.</p> </td> 
+   <td role="rowheader">[!UICONTROL ID de Documento]</td> 
+   <td> <p>Mapeie ou selecione o documento no qual deseja substituir uma imagem.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Substituição de imagens]</p> </td> 
+   <td> Para cada imagem que você deseja substituir, clique em <b>Adicionar item</b>, insira a ID de imagem existente e, em seguida, insira ou mapeie a URL da nova imagem que substituirá a imagem existente. <p>As imagens são listadas na ordem em que aparecem no documento. Por exemplo, <code>Body: Image No. 1</code> é a primeira imagem no documento.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -579,8 +587,48 @@ Esse módulo de acionamento retorna detalhes do documento quando um novo documen
 
 ### Outro
 
-* [[!UICONTROL Fazer uma chamada de API]](#make-an-api-call)
 * [[!UICONTROL Tornar todos os links em um documento clicáveis]](#make-all-links-in-a-document-clickable)
+* [[!UICONTROL Fazer uma chamada de API]](#make-an-api-call)
+
+#### [!UICONTROL Tornar todos os links em um documento clicáveis]
+
+Este módulo de ação encontra todos os links no documento e os torna clicáveis.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Criar Todos os Links em um Documento]</p> </td> 
+   <td> 
+    <ul> 
+     <li><strong>[!UICONTROL Por Mapeamento]</strong> <br>Selecione esta opção para mapear o modelo de documento.</li> 
+     <li><strong>[!UICONTROL Por Lista Suspensa]</strong> <br> Selecione esta opção para escolher o documento no menu suspenso.</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Escolher uma Unidade]</td> 
+   <td> <p>Selecione o tipo de unidade em que o documento no qual você deseja tornar os links clicáveis está localizado. Esta opção estará disponível se você tiver selecionado [!UICONTROL Por Lista Suspensa] no campo anterior.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Minha Unidade]</strong> </p> <p>Selecione a pasta onde está localizado o documento no qual você deseja tornar os links clicáveis.</p> </li> 
+     <li> <p><strong>[!UICONTROL Compartilhado Comigo]</strong> </p> <p>Selecione a pasta onde está localizado o documento no qual você deseja tornar os links clicáveis.</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Unidade Compartilhada]</strong> (disponível somente para [!DNL Google Workspace] usuários)</p> <p>Selecione se você deseja [!UICONTROL Usar Acesso de Administrador de Domínio]. Selecionar [!UICONTROL Sim] emite a solicitação como administrador de domínio, e todas as unidades compartilhadas nas quais o solicitante é um administrador são retornadas.</p> <p>Selecione a unidade compartilhada onde está localizado o documento no qual você deseja tornar os links clicáveis e selecione o documento.</p> <p>Observação: se você tiver selecionado a opção [!DNL Google Docs] neste campo e não for um usuário [!DNL Google Workspace], o erro <code>[400] Invalid Value</code> será retornado.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Unidade Compartilhada]</td> 
+   <td> <p>Selecione a unidade que contém o documento no qual você deseja atualizar os links e selecione um documento. Esta opção estará disponível se você tiver selecionado [!DNL My Drive] no campo [!UICONTROL Escolher uma Unidade].</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de Documento]</td> 
+   <td> <p> Selecione ou mapeie o documento no qual deseja atualizar os links.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL Fazer uma chamada de API]
 
@@ -620,6 +668,8 @@ Esse módulo de ação permite executar uma chamada de API personalizada.
  </tbody> 
 </table>
 
+>[!BEGINSHADEBOX]
+
 **Exemplo:** a chamada de API a seguir recupera os detalhes do documento especificado em sua Google Docs:
 
 **URL:**
@@ -636,42 +686,4 @@ Detalhes do documento recuperado podem ser encontrados na Saída do módulo em [
 
 ![Saída de chamada de API](/help/workfront-fusion/references/apps-and-modules/assets/api-output.png)
 
-#### [!UICONTROL Tornar todos os links em um documento clicáveis]
-
-Este módulo de ação encontra todos os links no documento e os torna clicáveis.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Criar Todos os Links em um Documento]</p> </td> 
-   <td> 
-    <ul> 
-     <li><strong>[!UICONTROL Por Mapeamento]</strong> <br>Selecione esta opção para mapear o modelo de documento.</li> 
-     <li><strong>[!UICONTROL Por Lista Suspensa]</strong> <br> Selecione esta opção para escolher o documento no menu suspenso.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Escolher uma Unidade]</td> 
-   <td> <p>Selecione o tipo de unidade em que o documento no qual você deseja tornar os links clicáveis está localizado. Esta opção estará disponível se você tiver selecionado [!UICONTROL Por Lista Suspensa] no campo anterior.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Minha Unidade]</strong> </p> <p>Selecione a pasta onde está localizado o documento no qual você deseja tornar os links clicáveis e selecione o documento.</p> </li> 
-     <li> <p><strong>[!UICONTROL Compartilhado Comigo]</strong> </p> <p>Selecione a pasta onde está localizado o documento no qual você deseja tornar os links clicáveis e selecione o documento.</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Unidade Compartilhada]</strong> (disponível somente para [!DNL Google Workspace] usuários)</p> <p>Selecione se você deseja [!UICONTROL Usar Acesso de Administrador de Domínio]. Selecionar [!UICONTROL Sim] emite a solicitação como administrador de domínio, e todas as unidades compartilhadas nas quais o solicitante é um administrador são retornadas.</p> <p>Selecione a unidade compartilhada onde está localizado o documento no qual você deseja tornar os links clicáveis e selecione o documento.</p> <p>Observação: se você tiver selecionado a opção [!DNL Google Docs] neste campo e não for um usuário [!DNL Google Workspace], o erro <code>[400] Invalid Value</code> será retornado.</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Unidade Compartilhada]</td> 
-   <td> <p>Selecione a unidade que contém o documento no qual você deseja atualizar os links e selecione um documento. Esta opção estará disponível se você tiver selecionado [!DNL My Drive] no campo [!UICONTROL Escolher uma Unidade].</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL ID de Documento]</td> 
-   <td> <p> Selecione ou mapeie o documento no qual deseja atualizar os links.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+>[!ENDSHADEBOX]
