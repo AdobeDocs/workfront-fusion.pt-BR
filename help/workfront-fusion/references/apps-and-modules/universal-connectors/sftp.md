@@ -4,7 +4,7 @@ description: Os  [!DNL Adobe Workfront Fusion SFTP] módulos permitem monitorar 
 author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
-source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '2077'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Atual: nenhum requisito de licença do Workfront Fusion.</p>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion</p>
    <p>Ou</p>
    <p>Herdados: Automação e integração do Workfront Fusion for Work </p>
    </td> 

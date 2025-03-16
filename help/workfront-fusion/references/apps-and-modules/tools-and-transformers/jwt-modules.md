@@ -1,12 +1,12 @@
 ---
 title: Módulos JWT
-description: O aplicativo  [!DNL Adobe Workfront Fusion] [!UICONTROL JWT] fornece um módulo que cria tokens JWT com base no algoritmo fornecido.
+description: O aplicativo [!DNL Adobe Workfront Fusion] [!UICONTROL JWT] fornece um módulo que cria tokens JWT com base no algoritmo fornecido.
 author: Becky
 feature: Workfront Fusion
 exl-id: 380f60db-b2ec-411a-86ee-0d5699f19b41
-source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Nenhum requisito de licença do Workfront Fusion.</p>
+   <p>Nenhum requisito de licença do Workfront Fusion</p>
    </td> 
   </tr> 
   <tr> 
@@ -82,7 +82,7 @@ Esse módulo gera um JWT com base no algoritmo selecionado.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Algorithm]</td> 
+   <td role="rowheader">[!UICONTROL Algoritmo]</td> 
    <td> <p>Selecione o algoritmo com o qual deseja gerar o JWT.</p> <ul>
    <li><b>HS256</b>: HMAC usando algoritmo de hash SHA-256</li>
    <li><b>HS384</b>: HMAC usando algoritmo de hash SHA-384</li>
@@ -99,11 +99,11 @@ Esse módulo gera um JWT com base no algoritmo selecionado.
    </ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Payload] </td> 
+   <td role="rowheader">[!UICONTROL Carga] </td> 
    <td> <p>Para cada item de carga que você deseja adicionar, clique em <b>Adicionar item</b> e insira a chave e o valor do item.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Options] </td> 
+   <td role="rowheader">[!UICONTROL Opções] </td> 
    <td> <p>Para cada item de opção que você deseja adicionar, clique em <b>Adicionar item</b> e insira a chave e o valor do item.</p> <p>As seguintes chaves estão disponíveis:
    <ul>
    <li><b>algoritmo</b>: (padrão: RS256)</li>

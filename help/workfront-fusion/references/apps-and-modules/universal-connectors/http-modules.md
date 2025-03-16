@@ -4,9 +4,9 @@ description: O aplicativo HTTP [!DNL Adobe Workfront Fusion] fornece vários mó
 author: Becky
 feature: Workfront Fusion
 exl-id: 7db97e6e-262d-4be2-823b-423f56a7d886
-source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Atual: nenhum requisito de licença do Workfront Fusion.</p>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion</p>
    <p>Ou</p>
    <p>Herdados: Automação e integração do Workfront Fusion for Work </p>
    </td> 
@@ -76,18 +76,18 @@ Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte
 
 Consulte os seguintes artigos para obter instruções específicas do módulo de solicitação:
 
-* [Módulo [!UICONTROL HTTP] > [!UICONTROL Make a request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
-* [Módulo [!UICONTROL HTTP] > [!UICONTROL Make a Basic Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
-* [Módulo [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
-* [Módulo [!UICONTROL HTTP] > [!UICONTROL Make a Client Certificate Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make an API Key Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Fazer uma solicitação] para o módulo](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Criar um módulo de solicitação de Autorização Básica]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Fazer uma solicitação OAuth 2.0] para o módulo](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Fazer uma solicitação de Autorização de Certificado de Cliente] módulo](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Fazer uma solicitação de autorização de Chave de API]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
 
 ## Outros módulos de ação
 
-* [[!UICONTROL Get a File]](#get-a-file)
-* [[!UICONTROL Resolve a target URL]](#resolve-a-target-url)
+* [[!UICONTROL Obter um Arquivo]](#get-a-file)
+* [[!UICONTROL Resolver uma URL de destino]](#resolve-a-target-url)
 
-### [!UICONTROL Get a File]
+### [!UICONTROL Obter um Arquivo]
 
 Este módulo de ação baixa um arquivo do URL especificado. Depois que o arquivo for baixado, você poderá processar ainda mais o arquivo (mapear os dados do arquivo) usando outros módulos no cenário.
 
@@ -96,7 +96,7 @@ Este módulo de ação baixa um arquivo do URL especificado. Depois que o arquiv
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Evaluate all states as errors (except for 2xx and 3xx )] </td> 
+   <td role="rowheader">[!UICONTROL Avaliar todos os estados como erros (exceto para 2xx e 3xx )] </td> 
    <td> <p>Use esta opção para configurar o tratamento de erros.</p> <p>Para obter mais informações, consulte <a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">Tratamento de erros em [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -104,13 +104,13 @@ Este módulo de ação baixa um arquivo do URL especificado. Depois que o arquiv
    <td> <p>Insira ou mapeie o URL do arquivo que deseja baixar. </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Share cookies with other HTTP modules] </td> 
+   <td role="rowheader">[!UICONTROL Compartilhar cookies com outros módulos HTTP] </td> 
    <td> <p>Ative esta opção se quiser que os cookies deste site estejam disponíveis para outros módulos. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Resolve a target URL]
+### [!UICONTROL Resolver uma URL de destino]
 
 Este módulo de ação resolve uma cadeia de redirecionamentos HTTP e retorna um URL de destino.
 
@@ -123,7 +123,7 @@ Este módulo de ação resolve uma cadeia de redirecionamentos HTTP e retorna um
    <td> <p>Insira ou mapeie a URL que você deseja resolver, como uma URL [!DNL bit.ly].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Method] </td> 
+   <td role="rowheader">[!UICONTROL Método] </td> 
    <td> <p>Selecione se você deseja usar o método [!UICONTROL HEAD] ou o método [!UICONTROL GET].</p> </td> 
   </tr> 
  </tbody> 
@@ -131,7 +131,7 @@ Este módulo de ação resolve uma cadeia de redirecionamentos HTTP e retorna um
 
 ## Módulos iteradores
 
-### [!UICONTROL Retrieve headers]
+### [!UICONTROL Recuperar cabeçalhos]
 
 Esse módulo retorna cada cabeçalho (nome e valor) do módulo HTTP especificado em um pacote separado.
 
@@ -140,7 +140,7 @@ Esse módulo retorna cada cabeçalho (nome e valor) do módulo HTTP especificado
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source Module]</td> 
+   <td role="rowheader">[!UICONTROL Módulo Source]</td> 
    <td> <p> Selecione o módulo do qual deseja recuperar cabeçalhos.</p> </td> 
   </tr> 
  </tbody> 

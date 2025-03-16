@@ -4,7 +4,7 @@ description: O Adobe Workfront Fusion exige uma licença do Adobe Workfront Fusi
 author: Becky
 feature: Workfront Fusion
 exl-id: 73eb70e1-3f3d-419d-9cde-3ec3cda224f8
-source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '2494'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Atual: nenhum requisito de licença do Workfront Fusion.</p>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion</p>
    <p>Ou</p>
    <p>Herdados: Automação e integração do Workfront Fusion for Work </p>
    </td> 

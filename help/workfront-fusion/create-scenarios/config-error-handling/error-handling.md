@@ -4,9 +4,9 @@ description: Quando ocorrem erros durante a execução de um cenário, geralment
 author: Becky
 feature: Workfront Fusion
 exl-id: 82ddaf73-ecf9-4fd6-8f8e-909351023c77
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Atual: nenhum requisito de licença do Workfront Fusion.</p>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion</p>
    <p>Ou</p>
    <p>Herdados: Qualquer um </p>
    </td> 
@@ -77,10 +77,10 @@ Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [li
 
 Para adicionar um manipulador de erros a um módulo:
 
-1. Clique na guia **[!UICONTROL Scenarios]** no painel esquerdo.
+1. Clique na guia **[!UICONTROL Cenários]** no painel esquerdo.
 1. Selecione o cenário em que deseja adicionar uma rota de tratamento de erros.
 1. Clique em qualquer lugar no cenário para entrar no editor de cenários.
-1. Clique com o botão direito do mouse no módulo após o qual deseja adicionar uma rota de manipulador de erros e selecione **[!UICONTROL Add error handler]**:
+1. Clique com o botão direito do mouse no módulo após o qual deseja adicionar uma rota de manipulador de erros e selecione **[!UICONTROL Adicionar manipulador de erros]**:
 
    ![Rota do manipulador de erros](assets/error-handler-route.png)
 
@@ -114,16 +114,16 @@ Há cinco diretivas, que podem ser agrupadas nas seguintes categorias com base n
 
 As diretivas a seguir garantem que uma execução de cenário continue:
 
-* **[!UICONTROL Resume]**: Permite especificar uma saída substituta para o módulo com o erro. O status de execução do cenário é marcado como sucesso.
-* **[!UICONTROL Ignore]**: ignora o erro. O status de execução do cenário é marcado como sucesso.
-* **[!UICONTROL Break]**: armazena a entrada na fila de execuções incompletas. O status de execução do cenário está marcado como aviso.
+* **[!UICONTROL Retomar]**: permite especificar uma saída substituta para o módulo com o erro. O status de execução do cenário é marcado como sucesso.
+* **[!UICONTROL Ignorar]**: ignora o erro. O status de execução do cenário é marcado como sucesso.
+* **[!UICONTROL Intervalo]**: armazena a entrada na fila de execuções incompletas. O status de execução do cenário está marcado como aviso.
 
   Para obter mais informações, consulte [Exibir e resolver execuções incompletas](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
 Se uma execução de cenário precisar parar quando ocorrer um erro, use uma das seguintes diretivas:
 
-* **[!UICONTROL Rollback]**: Para a execução do cenário imediatamente e marca seu status como erro.
-* **[!UICONTROL Commit]**: Para a execução do cenário imediatamente e marca seu status como sucesso.
+* **[!UICONTROL Reversão]**: interrompe a execução do cenário imediatamente e marca seu status como erro.
+* **[!UICONTROL Confirmar]**: interrompe a execução do cenário imediatamente e marca seu status como êxito.
 
 ## Recursos
 

@@ -4,9 +4,9 @@ description: Com o  [!DNL Adobe Experience Manager Assets] conector para  [!DNL 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1488'
+source-wordcount: '1727'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Atual: nenhum requisito de licença do Workfront Fusion.</p>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion</p>
    <p>Ou</p>
    <p>Herdados: Workfront Fusion para Automação e Integração </p>
    </td> 
@@ -65,9 +65,9 @@ Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte
 ## Pré-requisitos
 
 * Você deve ter uma conta [!DNL Adobe Experience Manager Assets] para usar esses módulos.
-* Você deve configurar o fluxo de [!UICONTROL Server-to-server] no [!DNL Adobe Developer console].
+* Você deve configurar o fluxo de [!UICONTROL servidor para servidor] no [!DNL Adobe Developer console].
 
-  Para obter instruções sobre como configurar o fluxo do [!UICONTROL Server-to-server] no [!DNL Adobe Developer console], consulte [Gerando tokens de acesso para APIs do lado do servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
+  Para obter instruções sobre como configurar o fluxo de [!UICONTROL servidor para servidor] no [!DNL Adobe Developer console], consulte [Gerando tokens de acesso para APIs do lado do servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
 * Sua conta técnica do Adobe Experience Manager deve ter permissões de gravação.
 
   Para obter instruções sobre como adicionar permissões de gravação à sua conta técnica da Adobe Experience Manager, consulte [Credenciais de serviço](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) na documentação da Adobe Experience Manager.
@@ -91,7 +91,7 @@ O conector do Adobe Experience Manager Assets usa o seguinte:
 
 Para criar uma conexão para seus módulos do [!DNL Adobe Experience Manager Assets]:
 
-1. Clique em [!UICONTROL Add] ao lado da caixa [!UICONTROL Connection].
+1. Clique em [!UICONTROL Adicionar] ao lado da caixa [!UICONTROL Conexão].
 
 2. Selecione o tipo de conexão que você está criando:
 
@@ -107,18 +107,18 @@ Para criar uma conexão para seus módulos do [!DNL Adobe Experience Manager Ass
 
    Para [!DNL AEM Assets as a Cloud Service], consulte [Configurar a conexão para [!DNL AEM Assets as a Cloud Service]](#configure-the-connection-for-aem-assets-as-a-cloud-service).
 
-   Para [!UICONTROL AEM Assets Basic] ([!DNL Adobe Managed Services]), consulte [Configurar a conexão para [!UICONTROL AEM Assets Basic]](#configure-the-connection-for-aemassets-basic-adobe-managed-services).
+   Para o [!UICONTROL AEM Assets Basic] ([!DNL Adobe Managed Services]), consulte [Configurar a conexão para o [!UICONTROL AEM Assets Basic]](#configure-the-connection-for-aemassets-basic-adobe-managed-services).
 
-4. Clique em **[!UICONTROL Continue]** para salvar a conexão e retornar ao módulo.
+4. Clique em **[!UICONTROL Continuar]** para salvar a conexão e retornar ao módulo.
 
 
 ### Configurar a conexão para [!DNL AEM Assets as a Cloud Service]
 
 >[!NOTE]
 >
->* As informações desses campos são geradas como parte da configuração do fluxo do [!UICONTROL Server-to-server] no [!DNL Adobe Developer Console]. Você pode encontrar esses valores no arquivo JSON de credenciais de serviço gerado como parte dessa configuração.
+>* As informações destes campos são geradas como parte da configuração do fluxo [!UICONTROL servidor para servidor] no [!DNL Adobe Developer Console]. Você pode encontrar esses valores no arquivo JSON de credenciais de serviço gerado como parte dessa configuração.
 >
->   Para obter instruções sobre como configurar o fluxo do [!UICONTROL Server-to-server] no [!UICONTROL Adobe Developer Console], consulte [Gerando tokens de acesso para APIs do lado do servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
+>   Para obter instruções sobre como configurar o fluxo de [!UICONTROL servidor para servidor] no [!UICONTROL Adobe Developer Console], consulte [Gerar tokens de acesso para APIs do lado do servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
 >
 >* Sua conta técnica do Adobe Experience Manager deve ter permissões de gravação.
 >
@@ -130,49 +130,49 @@ Para criar uma conexão para seus módulos do [!DNL Adobe Experience Manager Ass
           <col/>
           <tbody>
               <tr>
-                  <td role="rowheader">[!UICONTROL Connection name]</td>
+                  <td role="rowheader">[!UICONTROL Nome da Conexão]</td>
                   <td>
                       <p>Digite um nome para esta conexão</p>
                   </td>
               </tr>
               <tr>
-                  <td role="rowheader">[!UICONTROL Instance URL without a trailing slash]</td>
+                  <td role="rowheader">[!UICONTROL URL da instância sem barra à direita]</td>
                   <td>Insira a URL da instância [!DNL Adobe Experience Manager]. Não inclua uma barra <code>/</code> ao final da URL.</td>
               </tr>
               <tr>
-                  <td role="rowheader">[!UICONTROL Account details fill options]</td>
+                  <td role="rowheader">[!UICONTROL Opções de preenchimento de detalhes da conta]</td>
                   <td>Selecione se deseja fornecer JSON descrevendo os detalhes da conta ou se deseja inserir os detalhes manualmente.</td>
               </tr>
               <tr>
-                  <td role="rowheader">[!UICONTROL Technical account details in JSON format]</td>
+                  <td role="rowheader">[!UICONTROL Detalhes da conta técnica em formato JSON]</td>
                   <td>Se estiver fornecendo JSON, insira ou cole o JSON que descreve os detalhes da sua conta.</td>
               </tr>
               <tr>
-                  <td role="rowheader">[!UICONTROL Client ID]</td>
-                  <td>Se estiver inserindo detalhes manualmente, insira a ID do Cliente gerada na configuração do [!UICONTROL Server-to-server].</td>
+                  <td role="rowheader">[!UICONTROL ID do Cliente]</td>
+                  <td>Se você inserir detalhes manualmente, insira a ID do cliente gerada na configuração de [!UICONTROL Servidor para servidor].</td>
               </tr>
               <tr>
-                  <td role="rowheader">[!UICONTROL Client Secret]</td>
-                  <td>Se estiver inserindo detalhes manualmente, insira o Segredo do Cliente gerado na configuração do [!UICONTROL Server-to-server].</td>
+                  <td role="rowheader">[!UICONTROL Segredo do Cliente]</td>
+                  <td>Se estiver inserindo detalhes manualmente, insira o Segredo do Cliente gerado na configuração [!UICONTROL Servidor para servidor].</td>
               </tr>
               <tr>
-                  <td role="rowheader">[!UICONTROL Technical account ID]</td>
+                  <td role="rowheader">[!UICONTROL ID da conta técnica]</td>
                   <td>Se inserir detalhes manualmente, insira a ID da conta técnica. Este é o campo "[!UICONTROL id]" no arquivo JSON de credenciais do cliente.</td>
               </tr>
               <tr>
-                  <td role="rowheader">[!UICONTROL Org ID]</td>
+                  <td role="rowheader">[!UICONTROL ID da Organização]</td>
                   <td class="">Se você inserir detalhes manualmente, insira a ID da organização. Este é o campo "[!UICONTROL org]" no arquivo JSON de credenciais do cliente.</td>
               </tr>
               <tr>
-                  <td role="rowheader">[!UICONTROL Meta Scopes]</td>
-                  <td>Insira os Metaescopos gerados na configuração do [!UICONTROL Server-to-server].</td>
+                  <td role="rowheader">[!UICONTROL Metaescopos]</td>
+                  <td>Insira os Metaescopos gerados na configuração do [!UICONTROL Servidor para servidor].</td>
               </tr>
               <tr>
-                  <td role="rowheader">[!UICONTROL Private key]</td>
-                  <td>Insira a chave privada gerada na configuração de [!UICONTROL Server-to-server]. Para extrair a chave privada, clique em [!UICONTROL Extract] e, em seguida, insira o arquivo a ser extraído e a senha do arquivo.</td>
+                  <td role="rowheader">[!UICONTROL Chave privada]</td>
+                  <td>Insira a chave privada gerada na configuração do [!UICONTROL Server-to-server]. Para extrair a chave privada, clique em [!UICONTROL Extract] e insira o arquivo a ser extraído e a senha do arquivo.</td>
               </tr>
               <tr>
-                  <td role="rowheader">[!UICONTROL Authentication URL]</td>
+                  <td role="rowheader">[!UICONTROL URL de Autenticação]</td>
                   <td>Digite a URL de autenticação desta conta.</td>
               </tr>
           </tbody>
@@ -186,21 +186,21 @@ Para criar uma conexão para seus módulos do [!DNL Adobe Experience Manager Ass
         <col />
         <tbody>
             <tr>
-                <td role="rowheader">[!UICONTROL Connection name]</td>
+                <td role="rowheader">[!UICONTROL Nome da Conexão]</td>
                 <td>
                     <p>Digite um nome para esta conexão</p>
                 </td>
             </tr>
             <tr>
-                <td role="rowheader">[!UICONTROL Instance URL without a trailing slash]</td>
+                <td role="rowheader">[!UICONTROL URL da instância sem barra à direita]</td>
                 <td>Insira a URL da instância [!DNL Adobe Experience Manager]. Não inclua uma barra <code>/</code> ao final da URL.</td>
             </tr>
             <tr>
-                <td role="rowheader">[!UICONTROL Username]</td>
+                <td role="rowheader">[!UICONTROL Nome de Usuário]</td>
                 <td>Insira o nome de usuário para a conta [!DNL AEM Assets] que esta conexão usa.</td>
             </tr>
             <tr>
-                <td role="rowheader">[!UICONTROL Password]</td>
+                <td role="rowheader">[!UICONTROL Senha]</td>
                 <td>Digite a senha da conta [!DNL AEM Assets] que esta conexão usa.</td>
             </tr>
         </tbody>
@@ -224,7 +224,7 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 * [Atualizar um registro](#update-a-record)
 * [Fazer upload de um ativo](#upload-an-asset)
 
-### [!UICONTROL Copy a folder or asset]
+### [!UICONTROL Copiar uma pasta ou um ativo]
 
 Este módulo de ação copia uma pasta ou um ativo para outro local em sua conta da Adobe Experience Manager Assets.
 
@@ -233,37 +233,37 @@ Este módulo de ação copia uma pasta ou um ativo para outro local em sua conta
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Experience Manager Assets] ao [!DNL Workfront Fusion], consulte <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Adobe Experience Manager Assets] ao [!DNL Workfront Fusion]</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo de registro]</td> 
    <td> <p>Selecione se deseja copiar uma pasta ou um ativo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder] / [!UICONTROL Asset]</td> 
+   <td role="rowheader">[!UICONTROL Pasta] / [!UICONTROL Ativo]</td> 
    <td>Selecione ou mapeie a pasta ou o ativo que deseja copiar.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Destination path]</td> 
+   <td role="rowheader">[!UICONTROL Caminho de destino]</td> 
    <td>Selecione ou mapeie o caminho para o local da nova pasta ou ativo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Name of copied folder] / [!UICONTROL asset]</td> 
+   <td role="rowheader">[!UICONTROL Nome da pasta copiada] / [!UICONTROL ativo]</td> 
    <td>Insira um nome para a nova pasta ou ativo. O nome da pasta que é exibido em [!DNL Adobe Experience Manager Assets] é igual ao nome original. O nome inserido aqui aparece no URL da nova pasta ou ativo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Copy children]</td> 
+   <td role="rowheader">[!UICONTROL Copiar filhos]</td> 
    <td>Se estiver copiando uma pasta, ative essa opção para copiar quaisquer subpastas ou ativos dentro da pasta.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Overwrite]</td> 
+   <td role="rowheader">[!UICONTROL Substituir]</td> 
    <td>Habilite essa opção para substituir qualquer pasta ou ativo no local de destino que tenha o mesmo nome da pasta ou do ativo que está sendo copiado.</td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Create a record]
+### [!UICONTROL Criar um registro]
 
 Esse módulo de ação cria uma pasta ou um comentário de ativo.
 
@@ -272,29 +272,29 @@ Esse módulo de ação cria uma pasta ou um comentário de ativo.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Experience Manager Assets] ao [!DNL Workfront Fusion], consulte <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Adobe Experience Manager Assets] ao [!DNL Workfront Fusion]</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Object type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo de objeto]</td> 
    <td> <p>Selecione se deseja criar uma pasta ou um comentário em um ativo.</p> 
     <ul> 
-     <li> <p>[!UICONTROL Folder]</p> <p>Preencha os seguintes campos:</p> 
+     <li> <p>[!UICONTROL Pasta]</p> <p>Preencha os seguintes campos:</p> 
       <ul> 
-       <li> <p>[!UICONTROL Name]</p> <p>Insira um nome para a pasta. Esse nome aparecerá no caminho do arquivo, portanto, não deve incluir espaços ou outros caracteres. </p> </li> 
-       <li> <p>[!UICONTROL Title]</p> <p>Insira um título para a pasta, que pode ser exibido em vez do nome.</p> </li> 
+       <li> <p>[!UICONTROL Nome]</p> <p>Insira um nome para a pasta. Esse nome aparecerá no caminho do arquivo, portanto, não deve incluir espaços ou outros caracteres. </p> </li> 
+       <li> <p>[!UICONTROL Título]</p> <p>Insira um título para a pasta, que pode ser exibido em vez do nome.</p> </li> 
       </ul> </li> 
-     <li> <p>[!UICONTROL Asset comment]</p> <p>Preencha os seguintes campos:</p> 
+     <li> <p>[!UICONTROL Comentário do ativo]</p> <p>Preencha os seguintes campos:</p> 
       <ul> 
-       <li> <p>[!UICONTROL Asset selection]</p> <p>Selecione ou mapeie a ID do ativo ao qual deseja adicionar um comentário.</p> </li> 
-       <li> <p>[!UICONTROL Comment]</p> <p>Insira o texto do comentário.</p> </li> 
+       <li> <p>[!UICONTROL Seleção de ativo]</p> <p>Selecione ou mapeie a ID do ativo ao qual deseja adicionar um comentário.</p> </li> 
+       <li> <p>[!UICONTROL Comentário]</p> <p>Insira o texto do comentário.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Delete a folder, asset, or rendition]
+### [!UICONTROL Excluir uma pasta, ativo ou representação]
 
 Este módulo de ação exclui uma pasta, ativo ou representação.
 
@@ -303,22 +303,22 @@ Este módulo de ação exclui uma pasta, ativo ou representação.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Experience Manager Assets] ao [!DNL Workfront Fusion], consulte <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Adobe Experience Manager Assets] ao [!DNL Workfront Fusion]</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo de registro]</td> 
    <td> <p>Selecione se deseja excluir uma pasta, ativo ou representação.</p> 
     <ul> 
-     <li> <p>[!UICONTROL Folder]</p> <p>Selecione a pasta a ser excluída selecionando as pastas em seu caminho.</p> </li> 
-     <li> <p>[!UICONTROL Asset] </p> <p>Selecione o ativo, selecionando as pastas em seu caminho e, em seguida, o ativo que deseja excluir.</p> </li> 
-     <li> <p>[!UICONTROL Rendition]</p> <p>Selecione a representação selecionando as pastas em seu caminho.</p> <p>Insira ou mapeie o nome da representação.</p> </li> 
+     <li> <p>[!UICONTROL Pasta]</p> <p>Selecione a pasta a ser excluída selecionando as pastas em seu caminho.</p> </li> 
+     <li> <p>[!UICONTROL Ativo] </p> <p>Selecione o ativo, selecionando as pastas em seu caminho e, em seguida, o ativo que deseja excluir.</p> </li> 
+     <li> <p>[!UICONTROL Representação]</p> <p>Selecione a representação selecionando as pastas em seu caminho.</p> <p>Insira ou mapeie o nome da representação.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Get a folder listing]
+### [!UICONTROL Obter uma lista de pastas]
 
 Este módulo de ação recupera uma representação de uma pasta existente e de suas entidades filhas (pastas ou ativos).
 
@@ -327,17 +327,17 @@ Este módulo de ação recupera uma representação de uma pasta existente e de 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Experience Manager Assets] ao [!DNL Workfront Fusion], consulte <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Adobe Experience Manager Assets] ao [!DNL Workfront Fusion]</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td role="rowheader">[!UICONTROL Pasta]</td> 
    <td>Selecione ou mapeie a pasta que deseja recuperar. Para adicionar subpastas ao caminho, clique no ícone de adição e selecione a subpasta.</td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Make a custom API call]
+### [!UICONTROL Fazer uma chamada de API personalizada]
 
 Este módulo de ação faz uma chamada de API personalizada para a API [!DNL Adobe Experience Manager Assets].
 
@@ -346,7 +346,7 @@ Este módulo de ação faz uma chamada de API personalizada para a API [!DNL Ado
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Experience Manager Assets] ao [!DNL Workfront Fusion], consulte <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Adobe Experience Manager Assets] ao [!DNL Workfront Fusion]</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -354,19 +354,19 @@ Este módulo de ação faz uma chamada de API personalizada para a API [!DNL Ado
    <td> <p>Insira um caminho relativo para sua URL de base [!DNL Adobe Experience Manager].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Método]</p> </td> 
    <td> <p>Selecione o método de solicitação HTTP necessário para configurar a chamada de API. Para obter mais informações, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Métodos de solicitação HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td role="rowheader">[!UICONTROL Cabeçalhos]</td> 
    <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p> <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] O adiciona cabeçalhos de autorização automaticamente.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String] </td> 
-   <td> <p>Insira a string de consulta da solicitação. Para Cada par Chave/Valor, clique em <b>[!UICONTROL Add item]</b> e insira o [!UICONTROL Key] e [!UICONTROL Value].</p> </td> 
+   <td role="rowheader">[!UICONTROL Cadeia de Consulta] </td> 
+   <td> <p>Insira a string de consulta da solicitação. Para cada par Chave/Valor, clique em <b>[!UICONTROL Adicionar item]</b> e insira a [!UICONTROL Chave] e o [!UICONTROL Valor].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td role="rowheader">[!UICONTROL Corpo]</td> 
    <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Nota:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
@@ -375,7 +375,7 @@ Este módulo de ação faz uma chamada de API personalizada para a API [!DNL Ado
  </tbody> 
 </table>
 
-### [!UICONTROL Move a folder or asset]
+### [!UICONTROL Mover uma pasta ou um ativo]
 
 Este módulo de ação move o ativo ou pasta no caminho fornecido para um novo local.
 
@@ -384,33 +384,33 @@ Este módulo de ação move o ativo ou pasta no caminho fornecido para um novo l
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Experience Manager Assets] ao [!DNL Workfront Fusion], consulte <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Adobe Experience Manager Assets] ao [!DNL Workfront Fusion]</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo de registro]</td> 
    <td> <p>Selecione se deseja mover uma pasta ou um ativo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder] / [!UICONTROL Asset]</td> 
+   <td role="rowheader">[!UICONTROL Pasta] / [!UICONTROL Ativo]</td> 
    <td>Selecione ou mapeie a pasta ou o ativo que deseja mover.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Destination path]</td> 
+   <td role="rowheader">[!UICONTROL Caminho de destino]</td> 
    <td>Selecione ou mapeie o caminho para o local para o qual deseja mover a pasta ou ativo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Name of moved folder] / [!UICONTROL asset]</td> 
+   <td role="rowheader">[!UICONTROL Nome da pasta movida] / [!UICONTROL ativo]</td> 
    <td>Insira um novo nome para a pasta ou o ativo movido. O nome da pasta que é exibido em [!DNL Adobe Experience Manager Assets] é igual ao nome original. O nome inserido aqui aparece no URL da pasta ou do ativo movido.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Overwrite]</td> 
+   <td role="rowheader">[!UICONTROL Substituir]</td> 
    <td>Habilite essa opção para substituir qualquer pasta ou ativo no local de destino que tenha o mesmo nome da pasta ou do ativo que está sendo movido.</td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Update a record]
+### [!UICONTROL Atualizar um registro]
 
 Este módulo de ação atualiza um registro existente.
 
@@ -419,19 +419,19 @@ Este módulo de ação atualiza um registro existente.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Experience Manager Assets] ao [!DNL Workfront Fusion], consulte <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Adobe Experience Manager Assets] ao [!DNL Workfront Fusion]</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo de registro]</td> 
    <td> <p>Selecione se deseja excluir metadados de ativos ou uma representação de ativos.</p> 
     <ul> 
-     <li> <p>[!UICONTROL Asset metadata]</p> 
+     <li> <p>[!UICONTROL Metadados de ativos]</p> 
       <ul> 
        <li> <p>Selecione o ativo para o qual deseja atualizar metadados.</p> </li> 
        <li> <p>Insira o novo título do ativo.</p> </li> 
       </ul> </li> 
-     <li> <p>[!UICONTROL Asset rendition]</p> 
+     <li> <p>[!UICONTROL Representação de ativo]</p> 
       <ul> 
        <li> <p>Selecione o ativo para o qual deseja atualizar a representação.</p> </li> 
        <li> <p>Selecione um arquivo de origem de um módulo anterior ou mapeie o nome e os dados do arquivo de origem.</p> </li> 
@@ -441,7 +441,7 @@ Este módulo de ação atualiza um registro existente.
  </tbody> 
 </table>
 
-### [!UICONTROL Upload an asset]
+### [!UICONTROL Carregar um ativo]
 
 Este módulo de ação carrega um ativo para sua conta do [!DNL Adobe Experience Manager Assets].
 
@@ -450,15 +450,15 @@ Este módulo de ação carrega um ativo para sua conta do [!DNL Adobe Experience
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Experience Manager Assets] ao [!DNL Workfront Fusion], consulte <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Adobe Experience Manager Assets] ao [!DNL Workfront Fusion]</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Destination]</td> 
+   <td role="rowheader">[!UICONTROL Destino]</td> 
    <td> <p>Selecione a pasta na qual deseja fazer upload de um ativo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td role="rowheader">[!UICONTROL arquivo Source]</td> 
    <td>Insira ou mapeie o nome e os dados do arquivo de origem.</td> 
   </tr> 
  </tbody> 

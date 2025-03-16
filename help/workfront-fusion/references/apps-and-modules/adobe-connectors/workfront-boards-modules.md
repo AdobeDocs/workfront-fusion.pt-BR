@@ -4,9 +4,9 @@ description: Você pode usar o conector de placas Adobe Workfront para automatiz
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
-source-git-commit: 7895e65dd040f28e6028c24928abe2829b58d9db
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2659'
+source-wordcount: '2869'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Atual: nenhum requisito de licença do Workfront Fusion.</p>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion</p>
    <p>Ou</p>
    <p>Herdados: Automação e integração do Workfront Fusion for Work </p>
    </td> 
@@ -93,7 +93,7 @@ O conector das placas Adobe Workfront usa o seguinte:
 
 Para criar uma conexão com Workfront Boards:
 
-1. Em qualquer módulo [!DNL Adobe Workfront Boards], clique em **[!UICONTROL Add]** ao lado da caixa Conexão.
+1. Em qualquer módulo [!DNL Adobe Workfront Boards], clique em **[!UICONTROL Adicionar]** ao lado da caixa Conexão.
 
 1. Preencha os seguintes campos:
 
@@ -104,38 +104,38 @@ Para criar uma conexão com Workfront Boards:
       </col>
       <tbody>
         <tr>
-          <td role="rowheader">[!UICONTROL Connection name]</td>
+          <td role="rowheader">[!UICONTROL Nome da Conexão]</td>
           <td>
             <p>Insira um nome para esta conexão.</p>
           </td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Environment]</td>
+          <td role="rowheader">[!UICONTROL Ambiente]</td>
           <td>Selecione se você está se conectando a um ambiente de produção ou não produção.</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Type]</td>
+          <td role="rowheader">[!UICONTROL Tipo]</td>
           <td>Selecione se você deseja se conectar a uma conta de serviço ou a uma conta pessoal.</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Client ID]<p>(Opcional)</p></td>
-          <td>Insira seu [!DNL Adobe] [!UICONTROL Client ID]. Isso pode ser encontrado na seção [!UICONTROL Credentials details] de [!DNL Adobe Developer Console].</td>
+          <td role="rowheader">[!UICONTROL ID do Cliente]<p>(Opcional)</p></td>
+          <td>Insira sua [!DNL Adobe] [!UICONTROL ID do Cliente]. Isso pode ser encontrado na seção [!UICONTROL Credentials details] do [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Client Secret]<p>(Opcional)</p></td>
-          <td>Insira seu [!DNL Adobe] [!UICONTROL Client Secret]. Isso pode ser encontrado na seção [!UICONTROL Credentials details] de [!DNL Adobe Developer Console].
+          <td role="rowheader">[!UICONTROL Segredo do Cliente]<p>(Opcional)</p></td>
+          <td>Insira seu [!DNL Adobe] [!UICONTROL Segredo do Cliente]. Isso pode ser encontrado na seção [!UICONTROL Credentials details] do [!DNL Adobe Developer Console].
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Authentication URL]<p>(Opcional)</p></td>
+          <td role="rowheader">[!UICONTROL URL de Autenticação]<p>(Opcional)</p></td>
           <td>Insira o URL que sua instância do Workfront usará para autenticar essa conexão. <p>O valor padrão é <code>https://oauth.my.workfront.com/integrations/oauth2</code>.</p>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Host prefix]</td>
+          <td role="rowheader">[!UICONTROL Prefixo de host]</td>
           <td>Insira seu prefixo de host.<p>O valor padrão é <code>origin-</code>.</p>
         </tr>
       </tbody>
     </table>
-1. Clique em **[!UICONTROL Continue]** para salvar a conexão e retornar ao módulo.
+1. Clique em **[!UICONTROL Continuar]** para salvar a conexão e retornar ao módulo.
 
 ## Módulos de placas Adobe Workfront e seus campos
 
@@ -170,15 +170,15 @@ Esse módulo de ação adiciona um item de lista de verificação ao cartão esp
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Conexão]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo [!DNL Workfront] ao [!DNL Workfront Fusion], consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Card ID]</td> 
+   <td>[!UICONTROL ID do Cartão]</td> 
    <td>Insira ou mapeie a ID do cartão ao qual deseja adicionar um item da lista de verificação.<p>Você pode encontrar a ID do cartão no URL ao visualizá-lo no Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Checklist items]</td> 
+   <td>[!UICONTROL Itens da lista de verificação]</td> 
    <td>Para cada item da lista de verificação que você deseja adicionar, clique em Adicionar item, digite o nome do item da lista de verificação e selecione se o item foi concluído.</p></td> 
   </tr> 
  </tbody> 
@@ -193,19 +193,19 @@ Este módulo de ação adiciona uma subtarefa a um cartão em Quadros. A placa d
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Conexão]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo [!DNL Workfront] ao [!DNL Workfront Fusion], consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Parent card ID]</td> 
+   <td>[!UICONTROL ID de cartão pai]</td> 
    <td>Insira ou mapeie a ID do cartão ao qual deseja adicionar uma subtarefa.<p>Você pode encontrar a ID do cartão no URL ao visualizá-lo no Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Board ID]</td> 
+   <td>[!UICONTROL ID do Quadro]</td> 
    <td>Insira ou mapeie a ID do quadro que contém o cartão ao qual você deseja adicionar uma subtarefa.<p>Você pode encontrar a ID da placa no URL ao visualizar a placa no Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Name]</td> 
+   <td>[!UICONTROL Nome]</td> 
    <td>Insira ou mapeie um nome para a nova subtarefa.</p></td> 
   </tr> 
  </tbody> 
@@ -220,19 +220,19 @@ Este módulo de ação cria um novo cartão em um quadro Workfront.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Conexão]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo [!DNL Workfront] ao [!DNL Workfront Fusion], consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Board ID]</td> 
+   <td>[!UICONTROL ID do Quadro]</td> 
    <td>Insira ou mapeie a ID do quadro ao qual você deseja adicionar um cartão.<p>Você pode encontrar a ID da placa no URL ao visualizar a placa no Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Column ID]</td> 
+   <td>[!UICONTROL Identificação de Coluna]</td> 
    <td>Insira ou mapeie a ID da coluna à qual deseja adicionar uma subtarefa.<p>Você pode encontrar a ID da coluna nas informações retornadas do módulo Leia uma placa.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Name]</td> 
+   <td>[!UICONTROL Nome]</td> 
    <td>Insira ou mapeie um nome para o novo cartão.</p></td> 
   </tr> 
  </tbody> 
@@ -247,23 +247,23 @@ Este módulo de ação move um cartão para uma coluna diferente no mesmo quadro
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Conexão]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo [!DNL Workfront] ao [!DNL Workfront Fusion], consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Card ID]</td> 
+   <td>[!UICONTROL ID do Cartão]</td> 
    <td>Insira ou mapeie a ID do cartão que você deseja mover.<p>Você pode encontrar a ID do cartão no URL ao visualizá-lo no Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Board ID]</td> 
+   <td>[!UICONTROL ID do Quadro]</td> 
    <td>Insira ou mapeie a ID do quadro que contém o cartão que você deseja mover.<p>Você pode encontrar a ID da placa no URL ao visualizar a placa no Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Destination column ID]</td> 
+   <td>[!UICONTROL ID da coluna de destino]</td> 
    <td>Insira ou mapeie a ID da coluna para a qual deseja mover o cartão.<p>Você pode encontrar a ID da coluna nas informações retornadas do módulo Leia uma placa.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL To index]</td> 
+   <td>[!UICONTROL Para índice]</td> 
    <td>Insira ou mapeie a posição que deseja que o cartão tenha na nova coluna.<p>A posição superior na coluna no índice 0.</p></td> 
   </tr> 
  </tbody> 
@@ -278,15 +278,15 @@ Este módulo de ação recupera informações sobre um cartão específico.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Conexão]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo [!DNL Workfront] ao [!DNL Workfront Fusion], consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Card ID]</td> 
+   <td>[!UICONTROL ID do Cartão]</td> 
    <td>Insira ou mapeie a ID do cartão que deseja ler.<p>Você pode encontrar a ID do cartão no URL ao visualizá-lo no Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Card ID]</td> 
+   <td>[!UICONTROL ID do Cartão]</td> 
    <td>Insira ou mapeie a ID do quadro que contém o cartão que você deseja ler.<p>Você pode encontrar a ID da placa no URL ao visualizar a placa no Workfront.</p></td> 
   </tr> 
  </tbody> 
@@ -301,31 +301,31 @@ Esse módulo de ação atualiza as informações de um cartão especificado.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Conexão]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo [!DNL Workfront] ao [!DNL Workfront Fusion], consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Card ID]</td> 
+   <td>[!UICONTROL ID do Cartão]</td> 
    <td>Insira ou mapeie a ID do cartão que deseja atualizar.<p>Você pode encontrar a ID do cartão no URL ao visualizá-lo no Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Board ID]</td> 
+   <td>[!UICONTROL ID do Quadro]</td> 
    <td>Insira ou mapeie a ID do quadro que contém o cartão que você deseja atualizar.<p>Você pode encontrar a ID da placa no URL ao visualizar a placa no Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Name]</td> 
+   <td>[!UICONTROL Nome]</td> 
    <td>Insira ou mapeie um novo nome para o cartão.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Description]</td> 
+   <td>[!UICONTROL Descrição]</td> 
    <td>Insira ou mapeie uma nova descrição para o cartão.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Estimation]</td> 
+   <td>[!UICONTROL Estimativa]</td> 
    <td>Insira ou mapeie uma estimativa do tempo necessário para concluir este cartão.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Due date]</td> 
+   <td>[!UICONTROL Data de vencimento]</td> 
    <td>Insira ou mapeie a data de vencimento deste cartão.</p>
    <p>Para obter uma lista de formatos de data e hora com suporte, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerção de tipo em [!DNL Adobe Workfront Fusion]</a>.</p>
    </td> 
@@ -351,7 +351,7 @@ Este módulo de ação cria um quadro no Workfront. Você pode especificar o tip
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Conexão]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo [!DNL Workfront] ao [!DNL Workfront Fusion], consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -359,7 +359,7 @@ Este módulo de ação cria um quadro no Workfront. Você pode especificar o tip
    <td>Informe ou mapeie um nome para o novo quadro.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Template]</td> 
+   <td>[!UICONTROL Modelo]</td> 
    <td>Selecione o modelo para o tipo de quadro que deseja criar.</td> 
   </tr> 
  </tbody> 
@@ -374,11 +374,11 @@ Esse módulo de ação retorna informações sobre um único quadro, como cartõ
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Conexão]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo [!DNL Workfront] ao [!DNL Workfront Fusion], consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Board ID]</td> 
+   <td>[!UICONTROL ID do Quadro]</td> 
    <td>Informe ou mapeie o ID do quadro para o qual deseja recuperar informações.<p>Você pode encontrar a ID da placa no URL ao visualizar a placa no Workfront.</p></td> 
   </tr> 
  </tbody> 
@@ -399,19 +399,19 @@ Esse módulo de ação cria uma nova coluna no quadro especificado.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Conexão]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo [!DNL Workfront] ao [!DNL Workfront Fusion], consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Board ID]</td> 
+   <td>[!UICONTROL ID do Quadro]</td> 
    <td>Informe ou mapeie a ID do quadro ao qual deseja adicionar uma coluna.<p>Você pode encontrar a ID da placa no URL ao visualizar a placa no Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Column ID]</td> 
+   <td>[!UICONTROL Identificação de Coluna]</td> 
    <td>Insira ou mapeie a ID da coluna que você deseja atualizar.<p>Você pode encontrar a ID da coluna nas informações retornadas do módulo Leia uma placa.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Column name]</td> 
+   <td>[!UICONTROL Nome da coluna]</td> 
    <td>Insira ou mapeie um novo nome para a coluna.</td> 
   </tr> 
  </tbody> 
@@ -426,15 +426,15 @@ Este módulo de pesquisa retorna informações sobre a coluna com o nome especif
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Conexão]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo [!DNL Workfront] ao [!DNL Workfront Fusion], consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Board ID]</td> 
+   <td>[!UICONTROL ID do Quadro]</td> 
    <td>Informe ou mapeie a ID do quadro que contém a coluna que você deseja recuperar.<p>Você pode encontrar a ID da placa no URL ao visualizar a placa no Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Column Name]</td> 
+   <td>[!UICONTROL Nome da Coluna]</td> 
    <td>Insira ou mapeie o nome da coluna que deseja recuperar.</td> 
   </tr> 
  </tbody> 
@@ -449,19 +449,19 @@ Esse módulo de ação atualiza o nome ou o limite WIP da coluna especificada.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Conexão]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo [!DNL Workfront] ao [!DNL Workfront Fusion], consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Board ID]</td> 
+   <td>[!UICONTROL ID do Quadro]</td> 
    <td>Informe ou mapeie a ID do quadro que contém a coluna que você deseja recuperar.<p>Você pode encontrar a ID da placa no URL ao visualizar a placa no Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Column Name]</td> 
+   <td>[!UICONTROL Nome da Coluna]</td> 
    <td>Insira ou mapeie o nome da coluna que deseja recuperar.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL WIP Limit]</td> 
+   <td>[!UICONTROL Limite de WIP]</td> 
    <td>Informe ou mapeie um novo limite WIP para a coluna.</td> 
   </tr> 
  </tbody> 
@@ -481,19 +481,19 @@ Esse módulo de ação adiciona uma tag a um cartão.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Conexão]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo [!DNL Workfront] ao [!DNL Workfront Fusion], consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Card ID]</td> 
+   <td>[!UICONTROL ID do Cartão]</td> 
    <td>Insira ou mapeie a ID do cartão ao qual deseja adicionar uma tag.<p>Você pode encontrar a ID do cartão no URL ao visualizá-lo no Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Board ID]</td> 
+   <td>[!UICONTROL ID do Quadro]</td> 
    <td>Insira ou mapeie a ID do quadro que contém o cartão ao qual deseja adicionar uma tag.<p>Você pode encontrar a ID da placa no URL ao visualizar a placa no Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Tag ID]</td> 
+   <td>[!UICONTROL ID de Marca]</td> 
    <td>Insira ou mapeie a ID da tag que deseja adicionar.<p>Você pode encontrar a ID da tag nas informações retornadas do módulo Leia uma placa.</p></td> 
   </tr> 
  </tbody> 
@@ -508,19 +508,19 @@ Esse módulo de ação cria uma nova tag e a atribui a uma cor.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Conexão]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo [!DNL Workfront] ao [!DNL Workfront Fusion], consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Board ID]</td> 
+   <td>[!UICONTROL ID do Quadro]</td> 
    <td>Insira ou mapeie a ID do quadro para o qual você deseja criar uma tag.<p>Você pode encontrar a ID da placa no URL ao visualizar a placa no Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Tag name]</td> 
+   <td>[!UICONTROL Marca nome]</td> 
    <td>Insira ou mapeie um nome para a nova tag.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Tag Color]</td> 
+   <td>[!UICONTROL Cor da Marca]</td> 
    <td>Selecione a cor para esta tag.</td> 
   </tr> 
  </tbody> 
@@ -540,15 +540,15 @@ Esse módulo de ação criou um comentário no cartão especificado.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Conexão]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo [!DNL Workfront] ao [!DNL Workfront Fusion], consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Card ID]</td> 
+   <td>[!UICONTROL ID do Cartão]</td> 
    <td>Insira ou mapeie a ID do cartão ao qual deseja adicionar um comentário.<p>Você pode encontrar a ID do cartão no URL ao visualizá-lo no Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Comment]</td> 
+   <td>[!UICONTROL Comentário]</td> 
    <td>Insira ou mapeie o texto do comentário que deseja adicionar.</p></td> 
   </tr> 
  </tbody> 
@@ -563,15 +563,15 @@ Esse módulo de ação recupera os comentários do cartão especificado.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Conexão]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo [!DNL Workfront] ao [!DNL Workfront Fusion], consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Card ID]</td> 
+   <td>[!UICONTROL ID do Cartão]</td> 
    <td>Insira ou mapeie a ID do cartão para o qual deseja recuperar os comentários.<p>Você pode encontrar a ID do cartão no URL ao visualizá-lo no Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Limit]</td> 
+   <td>[!UICONTROL Limite]</td> 
    <td>Insira o número máximo de comentários que você deseja que o módulo retorne em um ciclo de execução.</p></td> 
   </tr> 
  </tbody> 
@@ -588,7 +588,7 @@ Esse módulo de ação faz uma chamada personalizada para a API de placas do Wor
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo [!DNL Workfront] ao [!DNL Workfront Fusion], consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -596,19 +596,19 @@ Esse módulo de ação faz uma chamada personalizada para a API de placas do Wor
    <td> <p>Insira um caminho relativo a <code> https://&lt;WORKFRONT_DOMAIN&gt;/boards-service/graphql?</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td role="rowheader">[!UICONTROL Método]</td> 
    <td> <p>Selecione o método de solicitação HTTP necessário para configurar a chamada de API. Para obter mais informações, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitação HTTP</a>.</p><p>Para a maioria das chamadas de quadros, o método é POST. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td role="rowheader">[!UICONTROL Cabeçalhos]</td> 
    <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão. Isso determina o tipo de conteúdo da solicitação.</p> <p>Por exemplo,<code> { "Content-type":"application/json-stringify()"}</code></p>  </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td role="rowheader">[!UICONTROL Cadeia de Consulta]</td> 
    <td> <p>Adicione a consulta da chamada à API na forma de um objeto JSON padrão.</p> <p>Para Workfront Boards, essa seção geralmente fica vazia.</p>  </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td role="rowheader">[!UICONTROL Corpo]</td> 
    <td> <p>Adicione o conteúdo do corpo para a chamada de API na forma de um Graphql incorporado JSON </p> <p>Exemplo:</p><p>Este exemplo atualiza um nome de coluna. Você pode incluir o <code>boardId</code> e <code>columnId</code> como GUIDs codificados ou mapeados de um módulo anterior.<p><pre>{<br> "query": "mutation { updateColumn(boardId: \"\", columnId: \"\", updateColumnInput: { name: \"\" }) { id name }}"<br>}</pre><p>Nota:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
@@ -627,31 +627,31 @@ Esse módulo de ação faz uma solicitação GraphQL personalizada para a API de
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo [!DNL Workfront] ao [!DNL Workfront Fusion], consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
    <tr> 
-   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td role="rowheader">[!UICONTROL Método]</td> 
    <td> <p>Selecione o método para esta chamada. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query]</td> 
+   <td role="rowheader">[!UICONTROL Consulta]</td> 
    <td> <p>Adicione a consulta da chamada à API na forma de um objeto JSON padrão.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Operation name]</td> 
+   <td role="rowheader">[!UICONTROL Nome da operação]</td> 
    <td> <p>Insira um nome para esta operação. Isso pode facilitar o rastreamento e a depuração da chamada.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Variables data source]</td> 
+   <td role="rowheader">[!UICONTROL Fonte de dados de variáveis]</td> 
    <td> <p>Selecione se as variáveis serão de um formulário ou de uma coleção.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Variables]</td> 
+   <td role="rowheader">[!UICONTROL Variáveis]</td> 
    <td> <p>Para cada variável que você deseja adicionar, clique em <b>Adicionar item</b> e insira a chave e o valor da variável.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL Limite]</td> 
    <td>Insira ou mapeie o número máximo de registros que deseja que o módulo retorne durante cada ciclo de execução de cenário.</td> 
    </tr> 
  </tbody> 

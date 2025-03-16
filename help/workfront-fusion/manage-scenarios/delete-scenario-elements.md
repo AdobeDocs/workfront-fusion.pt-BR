@@ -4,9 +4,9 @@ description: Você pode visualizar e gerenciar as conexões de equipes na área 
 author: Becky
 feature: Workfront Fusion
 exl-id: 7bedf002-061b-40fc-a0f8-c12d2930bcf9
-source-git-commit: 945fd574afef0cfdd8b36ba5a24f5262e772ed8b
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '224'
 ht-degree: 1%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 1%
 
 Você pode armazenar e excluir elementos do cenário nas seguintes áreas na conta do [!DNL Adobe Workfront Fusion]:
 
-* [!UICONTROL Scenario]
-* [!UICONTROL Connections]
+* [!UICONTROL Cenário]
+* [!UICONTROL Conexões]
 * [!UICONTROL Webhooks]
-* [!UICONTROL Keys]
-* [!UICONTROL Devices]
-* [!UICONTROL Data stores]
-* [!UICONTROL User profiles]
+* [!UICONTROL Chaves]
+* [!UICONTROL Dispositivos]
+* [!UICONTROL Repositórios de dados]
+* [!UICONTROL Perfis de usuário]
 
 
 ## Requisitos de acesso
@@ -45,7 +45,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Atual: nenhum requisito de licença do Workfront Fusion.</p>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion</p>
    <p>Ou</p>
    <p>Herdados: Qualquer um </p>
    </td> 
@@ -82,7 +82,7 @@ Para excluir elementos do cenário:
 
 1. Clique na área no painel esquerdo.
 
-   Por exemplo, se você deseja excluir um cenário, clique em **[!UICONTROL Scenario]** no painel esquerdo.
+   Por exemplo, se você deseja excluir um cenário, clique em **[!UICONTROL Cenário]** no painel esquerdo.
 
-1. Clique na seta para baixo à direita do item que você deseja excluir e clique em **[!UICONTROL Delete]**.
-1. Clique em **[!UICONTROL Really]** para confirmar.
+1. Clique na seta para baixo à direita do item que você deseja excluir e clique em **[!UICONTROL Excluir]**.
+1. Clique em **[!UICONTROL Realmente]** para confirmar.

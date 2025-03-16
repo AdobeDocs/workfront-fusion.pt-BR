@@ -4,9 +4,9 @@ description: Com os módulos do Adobe I/O Events, é possível iniciar um cenár
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: 9cea5de748873720247db39161cea12c7e9c7186
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '957'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Atual: nenhum requisito de licença do Workfront Fusion.</p>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion</p>
    <p>Ou</p>
    <p>Herdados: Automação e integração do Workfront Fusion for Work </p>
    </td> 
@@ -175,16 +175,16 @@ Para criar um webhook:
      <col/>
      <tbody>
        <tr>
-         <td role="rowheader">[!UICONTROL Webhook name]</td>
+         <td role="rowheader">[!UICONTROL Nome do Webhook]</td>
         <td>Insira um nome para este webhook.</td>
        </tr>
        <tr>
-         <td role="rowheader">[!UICONTROL Connection]</td>
+         <td role="rowheader">[!UICONTROL Conexão]</td>
         <td>Para obter instruções sobre como criar uma conexão com [!DNL Adobe I/O Events], consulte <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Criar uma conexão com [!DNL Adobe I/O Events]</a> neste artigo.</td>
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Webhook description]
+           [!UICONTROL Descrição do Webhook]
          </td>
          <td>
            Insira uma descrição para este webhook.
@@ -192,7 +192,7 @@ Para criar um webhook:
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Event provider]
+           [!UICONTROL Provedor de eventos]
          </td>
          <td>
            Selecione o produto ou a conta da qual deseja criar eventos.
@@ -200,7 +200,7 @@ Para criar um webhook:
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Event type]
+           [!UICONTROL Tipo de evento]
          </td>
          <td>
            Selecione os eventos que você deseja que o webhook assista. O cenário será acionado quando esses eventos ocorrerem.
@@ -222,12 +222,12 @@ Este módulo de pesquisa recupera todos os eventos de um registro de um journal.
      <col/>
      <tbody>
        <tr>
-         <td role="rowheader">[!UICONTROL Connection]</td>
+         <td role="rowheader">[!UICONTROL Conexão]</td>
         <td>Para obter instruções sobre como criar uma conexão com [!DNL Adobe I/O Events], consulte <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Criar uma conexão com [!DNL Adobe I/O Events]</a> neste artigo.</td>
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Registration ID]
+           [!UICONTROL ID de Registro]
          </td>
          <td>
            Selecione o registro para o qual deseja recuperar eventos.
@@ -235,7 +235,7 @@ Este módulo de pesquisa recupera todos os eventos de um registro de um journal.
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Maximum number of returned records]
+           [!UICONTROL Número máximo de registros retornados]
          </td>
          <td>
               Insira ou mapeie o número máximo de registros que deseja que o módulo retorne durante cada ciclo de execução de cenário. 
@@ -243,21 +243,21 @@ Este módulo de pesquisa recupera todos os eventos de um registro de um journal.
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Return events that occur after]
+           [!UICONTROL Retornar eventos que ocorrem após]
          </td>
          <td>
          </td>
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Seek]
+           [!UICONTROL Buscar]
          </td>
          <td>
          </td>
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Latest]
+           [!UICONTROL Mais Recente]
          </td>
          <td>
          Habilite esta opção para retornar o evento mais recente.
@@ -275,12 +275,12 @@ Este módulo de ação faz uma chamada de API personalizada para a API [!DNL Ado
   <col/>
   <tbody>
     <tr>
-     <td role="rowheader">[!UICONTROL Connection]</td>
+     <td role="rowheader">[!UICONTROL Conexão]</td>
         <td>Para obter instruções sobre como criar uma conexão com [!DNL Adobe I/O Events], consulte <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Criar uma conexão com [!DNL Adobe I/O Events]</a> neste artigo.</td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Path]</p>
+        <p>[!UICONTROL Caminho]</p>
       </td>
       <td>
         <p>Insira um caminho relativo a <code>https://api.adobe.io/events</code></p>
@@ -288,14 +288,14 @@ Este módulo de ação faz uma chamada de API personalizada para a API [!DNL Ado
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Method]</p>
+        <p>[!UICONTROL Método]</p>
       </td>
       <td>
   <p>Selecione o método de solicitação HTTP necessário para configurar a chamada de API. Para obter mais informações, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitação HTTP</a>.</p>  
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Headers]</td>
+      <td role="rowheader">[!UICONTROL Cabeçalhos]</td>
       <td>
         <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p>
         <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p>
@@ -303,13 +303,13 @@ Este módulo de ação faz uma chamada de API personalizada para a API [!DNL Ado
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Query String]  </td>
+      <td role="rowheader">[!UICONTROL Cadeia de Consulta]  </td>
       <td>
         <p>Insira a string de consulta da solicitação.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Body]</td>
+      <td role="rowheader">[!UICONTROL Corpo]</td>
    <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Nota:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
@@ -328,12 +328,12 @@ Esse módulo de pesquisa obtém as Adobe I/O Events IDs para o provedor e os eve
      <col/>
      <tbody>
        <tr>
-         <td role="rowheader">[!UICONTROL Connection]</td>
+         <td role="rowheader">[!UICONTROL Conexão]</td>
         <td>Para obter instruções sobre como criar uma conexão com [!DNL Adobe I/O Events], consulte <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Criar uma conexão com [!DNL Adobe I/O Events]</a> neste artigo.</td>
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Event provider]
+           [!UICONTROL Provedor de eventos]
          </td>
          <td>
            Selecione o provedor para o qual deseja recuperar a ID.
@@ -341,7 +341,7 @@ Esse módulo de pesquisa obtém as Adobe I/O Events IDs para o provedor e os eve
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Event type]
+           [!UICONTROL Tipo de evento]
          </td>
          <td>
               Selecione os eventos para os quais você deseja fornecer IDs. Eventos estão disponíveis com base no provedor de eventos. 

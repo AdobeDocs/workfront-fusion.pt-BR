@@ -4,16 +4,16 @@ description: Você pode usar o módulo SOAP para se conectar às APIs do SOAP no
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: 3a27a51e10438e6cf8862bf28b1d58273bbaff36
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '669'
 ht-degree: 0%
 
 ---
 
 # Módulo [!UICONTROL SOAP]
 
-Você pode usar o módulo [!UICONTROL SOAP] para se conectar a [!UICONTROL SOAP] APIs em [!UICONTROL Adobe Workfront Fusion].
+Você pode usar o módulo [!UICONTROL SOAP] para se conectar às APIs do [!UICONTROL SOAP] no [!UICONTROL Adobe Workfront Fusion].
 
 ## Módulo SOAP e seus campos
 
@@ -46,7 +46,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Atual: nenhum requisito de licença do Workfront Fusion.</p>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion</p>
    <p>Ou</p>
    <p>Herdados: Automação e integração do Workfront Fusion for Work </p>
    </td> 
@@ -91,15 +91,15 @@ Este módulo de ação executa uma ação SOAP, baseada no WSDL especificado por
    <td> Selecione o WSDL que você deseja que o módulo use. Para criar um WSDL, clique em <b>Adicionar</b> ao lado do campo e preencha os campos. </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL HTTP headers]</td> 
+   <td>[!UICONTROL cabeçalhos HTTP]</td> 
    <td> Para cada cabeçalho HTTP que você deseja adicionar, clique em <b>Adicionar item</b> e insira o nome e o valor do cabeçalho.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL SOAP headers]</td> 
+   <td>[!UICONTROL cabeçalhos SOAP]</td> 
    <td> Para cada cabeçalho do SOAP que você deseja adicionar, clique em <b>Adicionar item</b> e insira o nome, valor, namespace e XMLNS do cabeçalho.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Force SOAP headers]</td> 
+   <td>[!UICONTROL Forçar cabeçalhos SOAP]</td> 
    <td> Habilite essa opção para configurar cabeçalhos para o SOAP 1.2. </td> 
   </tr> 
   </tbody> 
@@ -124,7 +124,7 @@ O módulo [!UICONTROL SOAP] está atualmente na versão beta e não oferece supo
 
 **Exemplo:**
 
-O seguinte não seria reconhecido corretamente por [!UICONTROL Workfront Fusion]:
+O seguinte não seria reconhecido corretamente pelo [!UICONTROL Workfront Fusion]:
 
 ```
 <complexType name="ArrayOfFloat">
@@ -137,16 +137,16 @@ O seguinte não seria reconhecido corretamente por [!UICONTROL Workfront Fusion]
 </complexType>
 ```
 
-Este exemplo inclui as referências `soapenc:Array`, `soapenc:arrayType` e `wsdl:arrayType`, que ainda não têm suporte em [!UICONTROL Workfront Fusion].
+Este exemplo inclui as referências `soapenc:Array`, `soapenc:arrayType` e `wsdl:arrayType`, que ainda não têm suporte no [!UICONTROL Workfront Fusion].
 
 >[!ENDSHADEBOX]
 
 ## Solução alternativa
 
-Se o módulo [!UICONTROL SOAP] se recusar a processar o arquivo WSDL ou lançar vários erros na configuração do módulo, você poderá tentar usar o módulo **[!UICONTROL HTTP]>[!UICONTROL Make a request]** universal:
+Se o módulo [!UICONTROL SOAP] se recusar a processar o arquivo WSDL ou lançar vários erros na configuração do módulo, você poderá tentar usar o módulo universal **[!UICONTROL HTTP] > [!UICONTROL Fazer uma solicitação]**:
 
 1. Em [!DNL Workfront Fusion], crie um novo cenário.
-1. Insira o módulo **[!UICONTROL HTTP]>[!UICONTROL Make a request]** no cenário.
+1. Insira o módulo **[!UICONTROL HTTP] > [!UICONTROL Fazer uma solicitação]** no cenário.
 1. Abra a configuração do módulo e preencha os seguintes campos:
 
    <table style="table-layout:auto"> 
@@ -154,20 +154,20 @@ Se o módulo [!UICONTROL SOAP] se recusar a processar o arquivo WSDL ou lançar 
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Method]</td> 
+      <td role="rowheader">[!UICONTROL Método]</td> 
       <td> <p>[!UICONTROL POST]</p> </td> 
      </tr> 
      <tr data-mc-conditions=""> 
-      <td role="rowheader">[!UICONTROL Body type]</td> 
-      <td> <p>[!UICONTROL Raw]</p> </td>
+      <td role="rowheader">[!UICONTROL Tipo de corpo]</td> 
+      <td> <p>[!UICONTROL Bruto]</p> </td>
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Content type]</td> 
+      <td role="rowheader">[!UICONTROL Tipo de conteúdo]</td> 
       <td> <p>[!UICONTROL XML (application/xml)]</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Parse response]</td> 
-      <td>[!UICONTROL Enabled]</td> 
+      <td role="rowheader">[!UICONTROL Analisar resposta]</td> 
+      <td>[!UICONTROL Habilitado]</td> 
      </tr> 
     </tbody> 
    </table>
@@ -186,12 +186,12 @@ Se o módulo [!UICONTROL SOAP] se recusar a processar o arquivo WSDL ou lançar 
 
 1. Depois de localizado, copie a URL do atributo `location`.
 1. Em [!DNL Workfront Fusion], cole a URL no campo de URL do módulo HTTP.
-1. Abra o [Cliente [!UICONTROL SOAP] Online](https://wsdlbrowser.com/) em uma nova janela/guia do navegador da Web.
+1. Abra o [Cliente [!UICONTROL SOAP] do {Online](https://wsdlbrowser.com/) em uma nova janela/guia do navegador da Web.
 1. Cole o URL do WSDL no campo URL do WSDL.
-1. Clique em **[!UICONTROL Browse]**.
+1. Clique em **[!UICONTROL Procurar]**.
 1. Escolha na lista de funções à esquerda, por exemplo `getLanguages`.
-1. Copie o conteúdo da área de texto [!UICONTROL Request XML].
-1. Em [!UICONTROL Workfront Fusion], cole o conteúdo copiado no campo de URL do módulo.
+1. Copie o conteúdo da área de texto [!UICONTROL Solicitar XML].
+1. No [!UICONTROL Workfront Fusion], cole o conteúdo copiado no campo de URL do módulo.
 1. Forneça valores para os parâmetros selecionados substituindo os pontos de interrogação pelos valores reais:
 
    <!--![Request](/help/workfront-fusion/references/apps-and-modules/assets/request-xml-350x172.png)-->

@@ -4,18 +4,18 @@ description: A seção  [!DNL Adobe Workfront Fusion Tools]  inclui vários mód
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2000'
+source-wordcount: '2286'
 ht-degree: 0%
 
 ---
 
-# [!UICONTROL Tools]
+# [!UICONTROL Ferramentas]
 
 A seção [!DNL Adobe Workfront Fusion Tools] inclui vários módulos úteis que podem aprimorar seu cenário.
 
-Os módulos [!UICONTROL Tools] estão disponíveis na lista de aplicativos ou no ícone [!UICONTROL Tools] ![Ícone de ferramentas](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png), na parte inferior da tela.
+Os módulos [!UICONTROL Ferramentas] estão disponíveis na lista de aplicativos ou no ícone [!UICONTROL Ferramentas] ![Ferramentas](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png), na parte inferior da tela.
 
 ## Requisitos de acesso
 
@@ -38,7 +38,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Nenhum requisito de licença do Workfront Fusion.</p>
+   <p>Nenhum requisito de licença do Workfront Fusion</p>
    </td> 
   </tr> 
   <tr> 
@@ -58,7 +58,7 @@ Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte
 
 +++
 
-## [!UICONTROL Tools] e seus campos
+## [!UICONTROL Ferramentas] e seus campos
 
 * [Acionadores](#triggers)
 * [Ações](#actions)
@@ -67,18 +67,18 @@ Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte
 
 ### Acionadores
 
-#### [!UICONTROL Basic trigger]
+#### [!UICONTROL Gatilho básico]
 
 Esse módulo permite criar um acionador personalizado e definir seus pacotes de entrada.
 
-Você pode usar este módulo, por exemplo, para contatos ou qualquer outra lista agendada para ser enviada a um endereço de email especificado (como os módulos [!UICONTROL Email] >[!UICONTROL Send an Email] ou [!DNL Gmail] >[!UICONTROL Send an Email]), ou como um lembrete simples a ser acionado sempre que desejar.
+Você pode usar este módulo, por exemplo, para contatos ou qualquer outra lista agendada para ser enviada para um endereço de email especificado (como os módulos [!UICONTROL Email] >[!UICONTROL Enviar um Email] ou [!DNL Gmail] >[!UICONTROL Enviar um Email]), ou como um simples lembrete a ser acionado sempre que desejar.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Bundle]</td> 
+   <td role="rowheader">[!UICONTROL Pacote]</td> 
    <td> <p>Crie pacotes personalizados adicionando itens de matriz. Para cada item que você deseja adicionar ao pacote, clique em <b>Adicionar item</b> e insira o nome e o valor do item.</p> </td> 
   </tr> 
  </tbody> 
@@ -86,54 +86,54 @@ Você pode usar este módulo, por exemplo, para contatos ou qualquer outra lista
 
 ### Ações
 
-* [[!UICONTROL Get Multiple Variables]](#get-multiple-variables)
-* [[!UICONTROL Get Variable]](#get-variable)
-* [[!UICONTROL Increment function]](#increment-function)
-* [[!UICONTROL Set Multiple Variables]](#set-multiple-variables)
-* [[!UICONTROL Set Variable]](#set-variable)
-* [[!UICONTROL Sleep]](#sleep)
+* [[!UICONTROL Obter Várias Variáveis]](#get-multiple-variables)
+* [[!UICONTROL Obter Variável]](#get-variable)
+* [[!UICONTROL Função de incremento]](#increment-function)
+* [[!UICONTROL Definir Várias Variáveis]](#set-multiple-variables)
+* [[!UICONTROL Definir Variável]](#set-variable)
+* [[!UICONTROL Suspender]](#sleep)
 
-#### [!UICONTROL Get Multiple Variables]
+#### [!UICONTROL Obter Várias Variáveis]
 
 Este módulo recupera valores que foram criados anteriormente pelo módulo [!UICONTROL Set Variable] ou [!UICONTROL Set Multiple Variables].
 
-Este módulo pode ler variáveis que foram definidas em qualquer lugar do cenário, mesmo que a variável tenha sido definida em uma rota diferente daquela onde o módulo [!UICONTROL Get Multiple Variables] está localizado. O único requisito é que o módulo [!UICONTROL Tools] > [!UICONTROL Set Variable] ou [!UICONTROL Tools] > [!UICONTROL Set Multiple Variable] seja executado antes do módulo [!UICONTROL Tools] > [!UICONTROL Get Multiple Variables]. Para obter mais informações sobre a ordem em que os módulos são executados, consulte [Adicionar um módulo de roteador e configurar rotas](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
+Este módulo pode ler variáveis que foram definidas em qualquer lugar do cenário, mesmo que a variável tenha sido definida em uma rota diferente daquela em que o módulo [!UICONTROL Obter Várias Variáveis] está localizado. O único requisito é que o módulo [!UICONTROL Ferramentas] > [!UICONTROL Definir Variável] ou [!UICONTROL Ferramentas] > [!UICONTROL Definir Várias Variáveis] seja executado antes do módulo [!UICONTROL Ferramentas] > [!UICONTROL Obter Várias Variáveis]. Para obter mais informações sobre a ordem em que os módulos são executados, consulte [Adicionar um módulo de roteador e configurar rotas](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL Variables]</td>
+        <td>[!UICONTROL Variáveis]</td>
         <td>Para cada variável que você deseja que o módulo obtenha, clique em <b>Adicionar item</b> e insira o nome da variável.</td>
     </tr>
 </table>
 
 >[!BEGINSHADEBOX]
 
-**Exemplos:** Estes são os usos possíveis dos módulos [!UICONTROL Set]/[!UICONTROL Get (multiple) variable(s)]:
+**Exemplos:** Estes são os usos possíveis dos módulos [!UICONTROL Set]/[!UICONTROL Get (multiple) variável(is)]:
 
 * Armazenar um valor calculado para uso posterior, mesmo em uma rota diferente. Isso é útil nos casos em que o valor é usado em vários módulos e a fórmula para calcular o valor é muito complexa.
-* Para depurar uma fórmula. Se uma fórmula usada em um módulo aparentemente não fornecer um resultado correto, copie a fórmula e cole-a em um módulo [!UICONTROL Set Variable] que você insere antes do módulo relevante. Desconecte o(s) módulo(s) após o módulo [!UICONTROL Set Variable] e execute o cenário. Verifique a saída do módulo [!UICONTROL Set Variable], ajuste ou simplifique a fórmula, execute o cenário novamente e continue a fazê-lo até que o problema seja resolvido.
+* Para depurar uma fórmula. Se uma fórmula usada em um módulo aparentemente não fornecer um resultado correto, copie a fórmula e cole-a em um módulo [!UICONTROL Definir variável] que você insere antes do módulo relevante. Desconecte o(s) módulo(s) após o módulo [!UICONTROL Set Variable] e execute o cenário. Verifique a saída do módulo [!UICONTROL Set Variable], ajuste ou simplifique a fórmula, execute o cenário novamente e continue a fazê-lo até que o problema seja resolvido.
 
 >[!ENDSHADEBOX]
 
 
-#### [!UICONTROL Get Variable]
+#### [!UICONTROL Obter Variável]
 
 Este módulo recupera um valor criado anteriormente pelo módulo [!UICONTROL Set Variable] ou [!UICONTROL Set Multiple Variables].
 
-Este módulo pode ler variáveis que foram definidas em qualquer lugar do cenário, mesmo que a variável tenha sido definida em uma rota diferente daquela onde o módulo [!UICONTROL Get Variable] está localizado. O único requisito é que o módulo [!UICONTROL Tools] > [!UICONTROL Set Variable] ou [!UICONTROL Tools] > [!UICONTROL Set Multiple Variables] seja executado antes do módulo [!UICONTROL Tools] > [!UICONTROL Get Variable]. Para obter mais informações sobre a ordem em que os módulos são executados, consulte [Adicionar um módulo de roteador e configurar rotas](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
+Este módulo pode ler variáveis que foram definidas em qualquer lugar do cenário, mesmo que a variável tenha sido definida em uma rota diferente daquela em que o módulo [!UICONTROL Obter Variável] está localizado. O único requisito é que o módulo [!UICONTROL Ferramentas] > [!UICONTROL Definir Variável] ou [!UICONTROL Ferramentas] > [!UICONTROL Definir Várias Variáveis] seja executado antes do módulo [!UICONTROL Ferramentas] > [!UICONTROL Obter Variável]. Para obter mais informações sobre a ordem em que os módulos são executados, consulte [Adicionar um módulo de roteador e configurar rotas](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Variable name]</td> 
+   <td role="rowheader">[!UICONTROL Nome da variável]</td> 
    <td> <p>Mapeie o nome da variável que você deseja que o módulo obtenha.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Increment function]
+#### [!UICONTROL Função de incremento]
 
 Este módulo retorna um valor incrementado em 1 após cada ciclo ou execução de cenário.
 
@@ -142,12 +142,12 @@ Este módulo retorna um valor incrementado em 1 após cada ciclo ou execução d
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Reset a value]</td> 
+   <td role="rowheader">[!UICONTROL Redefinir um valor]</td> 
    <td> <p>Selecione quando deseja que o módulo redefina o valor. É quando você deseja que o valor recomece no primeiro valor.</p> 
     <ul> 
-     <li>[!UICONTROL After one cycle]</li> 
-     <li>[!UICONTROL After one scenario run]</li> 
-     <li>[!UICONTROL Never]</li> 
+     <li>[!UICONTROL Após um ciclo]</li> 
+     <li>[!UICONTROL Após a execução de um cenário]</li> 
+     <li>[!UICONTROL Nunca]</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -165,12 +165,12 @@ O cenário a seguir envia um email para o primeiro recipient após cada execuç�
 
 Para criar esse cenário:
 
-1. Defina o campo **[!UICONTROL Reset a value]** do módulo como Nunca.
+1. Defina o campo **[!UICONTROL Redefinir valor]** do módulo como Nunca.
 1. Defina a rota para valores ímpares. Defina o filtro para esta rota usando a função matemática de módulo que é igual a `1`:
 
    ![Números ímpares](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
 
-**Observação**: não se esqueça de alterar o operador [!UICONTROL Equal to] do operador [!UICONTROL Text] padrão para o operador [!UICONTROL Numeric].
+**Observação**: não se esqueça de alterar o operador [!UICONTROL Igual a] do operador [!UICONTROL Texto] padrão para o operador [!UICONTROL Numérico].
 
 1. Defina a rota para valores pares usando a função matemática de módulo que é igual a `0`:
 
@@ -178,57 +178,57 @@ A função de incremento adiciona uma cada vez que o cenário é executado. Os f
 
 >[!ENDSHADEBOX]
 
-#### [!UICONTROL Set Multiple Variables]
+#### [!UICONTROL Definir Várias Variáveis]
 
-Este módulo cria variáveis que podem ser mapeadas por outros módulos na rota. A variável também pode ser mapeada para os módulos [!UICONTROL Get Variable] ou [!UICONTROL Get Multiple Variables] para qualquer rota no cenário.
+Este módulo cria variáveis que podem ser mapeadas por outros módulos na rota. A variável também pode ser mapeada para os módulos [!UICONTROL Obter Variável] ou [!UICONTROL Obter Várias Variáveis] para qualquer rota no cenário.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Variables]</td> 
+   <td>[!UICONTROL Variáveis]</td> 
    <td>Para cada variável que você deseja adicionar, clique em <b>Adicionar item</b> e insira o nome e o valor da variável.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Variable lifetime] </td> 
+   <td>[!UICONTROL Tempo de vida da variável] </td> 
    <td> <p>Selecione por quanto tempo você deseja que as variáveis permaneçam válidas (mantenha o mesmo valor).</p> 
     <ul> 
-     <li><strong>[!UICONTROL One cycle]</strong>: A variável é válida por um ciclo. Isso é útil quando vários webhooks em uma execução de cenário são recebidos, pois mais webhooks criam mais ciclos. </li> 
-     <li><strong>[!UICONTROL One execution]</strong>: A variável é válida para uma execução de cenário. Uma execução pode conter um ou mais ciclos.</li> 
+     <li><strong>[!UICONTROL Um ciclo]</strong>: A variável é válida para um ciclo. Isso é útil quando vários webhooks em uma execução de cenário são recebidos, pois mais webhooks criam mais ciclos. </li> 
+     <li><strong>[!UICONTROL One execution]</strong>: a variável é válida para uma execução de cenário. Uma execução pode conter um ou mais ciclos.</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Set Variable]
+#### [!UICONTROL Definir Variável]
 
-Este módulo cria uma variável que pode ser mapeada por outros módulos na rota. A variável também pode ser mapeada para os módulos [!UICONTROL Get Variable] ou [!UICONTROL Get Multiple Variables] para qualquer rota no cenário.
+Este módulo cria uma variável que pode ser mapeada por outros módulos na rota. A variável também pode ser mapeada para os módulos [!UICONTROL Obter Variável] ou [!UICONTROL Obter Várias Variáveis] para qualquer rota no cenário.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Variable name] </td> 
+   <td>[!UICONTROL Nome da variável] </td> 
    <td>Insira o nome da variável. Esse nome será exibido ao mapear a variável em outros módulos. </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Variable lifetime] </td> 
+   <td>[!UICONTROL Tempo de vida da variável] </td> 
    <td> <p>Selecione por quanto tempo você deseja que as variáveis permaneçam válidas (mantenha o mesmo valor).</p> 
     <ul> 
-     <li><strong>[!UICONTROL One cycle]</strong>: A variável é válida por um ciclo. Útil quando vários webhooks em uma execução de cenário são recebidos (mais webhooks = mais ciclos). </li> 
-     <li><strong>[!UICONTROL One execution]</strong>: A variável é válida para uma execução de cenário. Uma execução pode conter um ou mais ciclos.</li> 
+     <li><strong>[!UICONTROL Um ciclo]</strong>: A variável é válida para um ciclo. Útil quando vários webhooks em uma execução de cenário são recebidos (mais webhooks = mais ciclos). </li> 
+     <li><strong>[!UICONTROL One execution]</strong>: a variável é válida para uma execução de cenário. Uma execução pode conter um ou mais ciclos.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Variable value] </td> 
+   <td>[!UICONTROL Valor de variável] </td> 
    <td>Insira ou mapeie o valor da variável. </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Sleep]
+#### [!UICONTROL Suspender]
 
 Esse módulo permite atrasar o fluxo do cenário por até 300 segundos (5 minutos).
 
@@ -239,7 +239,7 @@ Essa função pode ser útil, por exemplo, para reduzir a carga do servidor de s
  <col> 
  <tbody> 
   <tr> 
-   <td> <p>[!UICONTROL Delay]</p> </td> 
+   <td> <p>[!UICONTROL Atraso]</p> </td> 
    <td> <p>Insira o número de segundos durante os quais o cenário será pausado.</p> </td> 
   </tr> 
  </tbody> 
@@ -256,15 +256,15 @@ Essa função pode ser útil, por exemplo, para reduzir a carga do servidor de s
 >
 ><!--For more information on data stores, see [Data Stores in [!DNL Adobe Workfront Fusion]]().-->
 >
->Para obter mais informações sobre módulos de armazenamento de dados específicos, consulte [[!UICONTROL Data store] módulos](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md).
+>Para obter mais informações sobre módulos de repositório de dados específicos, consulte [[!UICONTROL Repositório de dados] módulos](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md).
 
 ### Agregadores
 
-* [[!UICONTROL Numeric aggregator]](#numeric-aggregator)
-* [[!UICONTROL Table aggregator]](#table-aggregator)
-* [[!UICONTROL Text aggregator]](#text-aggregator)
+* [[!UICONTROL Agregador numérico]](#numeric-aggregator)
+* [[!UICONTROL Agregador de tabela]](#table-aggregator)
+* [[!UICONTROL Agregador de texto]](#text-aggregator)
 
-#### [!UICONTROL Numeric aggregator]
+#### [!UICONTROL Agregador numérico]
 
 Esse módulo permite recuperar valores numéricos, aplicar uma das funções selecionadas (SUM, AVG, COUNT, MAX, MIN) e retornar o resultado em um pacote.
 
@@ -273,29 +273,29 @@ Esse módulo permite recuperar valores numéricos, aplicar uma das funções sel
  <col> 
  <tbody> 
   <tr> 
-   <td> <p>[!UICONTROL Source module]</p> </td> 
+   <td> <p>[!UICONTROL módulo Source]</p> </td> 
    <td> <p>Selecione o módulo do qual deseja agregar campos.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Aggregate function]</p> </td> 
+   <td> <p>[!UICONTROL Função de agregação]</p> </td> 
    <td> <p>Selecione a função que deseja usar para agregar os valores.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Group by]</p> </td> 
+   <td> <p>[!UICONTROL Agrupar por]</p> </td> 
    <td> <p>Defina uma expressão pela qual você deseja agrupar a saída agregada. Esta expressão pode conter um ou mais itens mapeados. Os dados agregados são, então, separados em grupos usando o valor dessa expressão. Cada grupo gera um pacote separado com uma chave (a expressão avaliada) e um valor (o valor agregado). Você pode usar a chave como um filtro nos módulos subsequentes.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Stop processing after an empty aggregation]</td> 
+   <td>[!UICONTROL Parar processamento após uma agregação vazia]</td> 
    <td>Habilite essa opção para interromper o cenário quando não houver resultados.</td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Value]</p> </td> 
+   <td> <p>[!UICONTROL Valor]</p> </td> 
    <td> <p>Insira ou mapeie o valor que deseja agregar.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Table aggregator]
+#### [!UICONTROL Agregador de tabela]
 
 Este módulo mescla valores dos campos selecionados de pacotes recebidos em um único pacote usando uma coluna especificada e um separador de linha (que permite criar uma tabela).
 
@@ -304,33 +304,33 @@ Este módulo mescla valores dos campos selecionados de pacotes recebidos em um �
  <col> 
  <tbody> 
   <tr> 
-   <td> <p>[!UICONTROL Source module]</p> </td> 
+   <td> <p>[!UICONTROL módulo Source]</p> </td> 
    <td> <p>Selecione o módulo do qual deseja agregar campos.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Aggregated fields]</td> 
+   <td>[!UICONTROL Campos Agregados]</td> 
    <td> <p> Selecione os campos do módulo selecionado acima que contêm valores que você deseja agregar em um pacote.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Column separator]</p> </td> 
-   <td> <p>Selecione ou insira o tipo de separador que separará as colunas de valor de campo no pacote resultante. Se você selecionar [!UICONTROL Other], insira o caractere que deseja usar para separar valores no campo separador.</p> </td> 
+   <td> <p>[!UICONTROL Separador de coluna]</p> </td> 
+   <td> <p>Selecione ou insira o tipo de separador que separará as colunas de valor de campo no pacote resultante. Se você selecionar [!UICONTROL Outro], insira o caractere que deseja usar para separar valores no campo separador.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Row separator]</p> </td> 
-   <td> <p>Selecione ou insira o tipo de separador que separará as linhas de valor de campo no pacote resultante. Se você selecionar [!UICONTROL Other], insira o caractere que deseja usar para separar valores no campo separador.</p> </td> 
+   <td> <p>[!UICONTROL Separador de linha]</p> </td> 
+   <td> <p>Selecione ou insira o tipo de separador que separará as linhas de valor de campo no pacote resultante. Se você selecionar [!UICONTROL Outro], insira o caractere que deseja usar para separar valores no campo separador.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Group by]</p> </td> 
+   <td> <p>[!UICONTROL Agrupar por]</p> </td> 
    <td> <p>Defina uma expressão pela qual você deseja agrupar a saída agregada. Esta expressão pode conter um ou mais itens mapeados. Os dados agregados serão, então, separados em grupos usando o valor dessa expressão. Cada grupo gera um pacote separado com uma chave (a expressão avaliada) e um valor (o valor agregado). Você pode usar a chave como um filtro nos módulos subsequentes.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Stop processing after an empty aggregation]</td> 
+   <td>[!UICONTROL Parar processamento após uma agregação vazia]</td> 
    <td>Selecione esta opção para interromper o cenário quando não houver resultados.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Text aggregator]
+#### [!UICONTROL Agregador de texto]
 
 Este módulo mescla os valores dos campos selecionados de pacotes recebidos em um único pacote.
 
@@ -339,23 +339,23 @@ Este módulo mescla os valores dos campos selecionados de pacotes recebidos em u
  <col> 
  <tbody> 
   <tr> 
-   <td> <p>[!UICONTROL Source module]</p> </td> 
+   <td> <p>[!UICONTROL módulo Source]</p> </td> 
    <td> <p>Selecione o módulo do qual deseja agregar campos.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Row separator]</p> </td> 
-   <td> <p>Selecione ou insira o tipo de separador que separará as linhas de valor de campo no pacote resultante. Se você selecionar [!UICONTROL Other], insira o caractere que deseja usar para separar valores no campo separador.</p> </td> 
+   <td> <p>[!UICONTROL Separador de linha]</p> </td> 
+   <td> <p>Selecione ou insira o tipo de separador que separará as linhas de valor de campo no pacote resultante. Se você selecionar [!UICONTROL Outro], insira o caractere que deseja usar para separar valores no campo separador.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Group by]</p> </td> 
+   <td> <p>[!UICONTROL Agrupar por]</p> </td> 
    <td> <p>Defina uma expressão contendo um ou mais itens mapeados. Os dados agregados são separados em Grupos com o mesmo valor de expressão. Cada Grupo gera um pacote separado contendo uma Chave com a expressão avaliada e o texto agregado. Ao fazer isso, você pode usar a chave como um filtro nos módulos subsequentes.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Stop processing after an empty aggregation]</td> 
+   <td>[!UICONTROL Parar processamento após uma agregação vazia]</td> 
    <td>Selecione esta opção para interromper o cenário quando não houver resultados.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Text]</td> 
+   <td>[!UICONTROL Texto]</td> 
    <td> <p> Insira ou mapeie o texto que você deseja que o módulo agregue.</p> </td> 
   </tr> 
  </tbody> 
@@ -369,11 +369,11 @@ Este módulo mescla os valores dos campos selecionados de pacotes recebidos em u
 
 ### Transformadores
 
-* [[!UICONTROL Compose a string]](#compose-a-string)
-* [[!UICONTROL Convert the encoding of the text]](#convert-the-encoding-of-the-text)
-* [[!UICONTROL Switch]](#switch)
+* [[!UICONTROL Compor uma cadeia de caracteres]](#compose-a-string)
+* [[!UICONTROL Converter a codificação do texto]](#convert-the-encoding-of-the-text)
+* [[!UICONTROL Alternar]](#switch)
 
-#### [!UICONTROL Compose a string]
+#### [!UICONTROL Compor uma cadeia de caracteres]
 
 Converte qualquer valor em um tipo de dados de string (texto). Isso facilita o mapeamento, por exemplo, de dados binários.
 
@@ -382,13 +382,13 @@ Converte qualquer valor em um tipo de dados de string (texto). Isso facilita o m
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Text]</td> 
+   <td role="rowheader">[!UICONTROL Texto]</td> 
    <td> <p>Insira ou mapeie os dados que deseja converter em texto.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Convert the encoding of the text]
+#### [!UICONTROL Converter a codificação do texto]
 
 Converte o texto de entrada inserido (ou dados binários) na codificação selecionada.
 
@@ -397,21 +397,21 @@ Converte o texto de entrada inserido (ou dados binários) na codificação selec
  <col> 
  <tbody> 
   <tr> 
-   <td> <p>[!UICONTROL Input data]</p> </td> 
+   <td> <p>[!UICONTROL Dados de entrada]</p> </td> 
    <td> <p>Insira ou mapeie o conteúdo que deseja converter.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Input data codepage]</td> 
+   <td>[!UICONTROL Página de código de dados de entrada]</td> 
    <td> <p>Selecione o tipo de codificação dos dados de entrada. </p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Output data codepage]</p> </td> 
+   <td> <p>[!UICONTROL Página de código de dados de saída]</p> </td> 
    <td> <p>Selecione o tipo de codificação dos dados de destino (saída).</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Switch]
+#### [!UICONTROL Alternar]
 
 Verifica o valor de entrada para obter uma correspondência com a lista de valores fornecida. Retorna a saída com base no resultado.
 
@@ -420,11 +420,11 @@ Verifica o valor de entrada para obter uma correspondência com a lista de valor
  <col> 
  <tbody> 
   <tr> 
-   <td> <p>[!UICONTROL Input]</p> </td> 
+   <td> <p>[!UICONTROL Entrada]</p> </td> 
    <td> <p>Insira a expressão que você deseja avaliar.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Use regular expressions to match]</td> 
+   <td>[!UICONTROL Usar expressões regulares para corresponder]</td> 
    <td> <p>Ative esta opção para usar expressões regulares. O módulo determina os casos com base na expressão regular, em vez de uma correspondência exata.</p> 
     <div> 
      <p>Uma expressão regular é uma sequência de caracteres na qual cada caractere é um metacaractere, com um significado especial, ou um caractere regular que tem um significado literal. Esses caracteres e metacaracteres identificam um padrão que pode ser usado para pesquisar texto. Por exemplo, se você deseja pesquisar nomes, é possível configurar uma expressão regular para pesquisar um padrão que consiste em duas palavras consecutivas que começam com letras maiúsculas. As expressões regulares são uma ferramenta poderosa para pesquisar e manipular texto.</p> 
@@ -437,8 +437,8 @@ Verifica o valor de entrada para obter uma correspondência com a lista de valor
     </div> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Cases] </td> 
-   <td> Para cada caso que você deseja adicionar, clique em <b>Adicionar item</b> e insira o padrão e a saída do item. <p>Se a entrada contiver um valor inserido para o campo [!UICONTROL Pattern], o valor inserido para o campo [!UICONTROL Output] será retornado.</p> <p>Se a entrada não corresponder a nenhum dos valores definidos em um campo [!UICONTROL Pattern], uma das situações a seguir ocorrerá:</p> 
+   <td>[!UICONTROL Casos] </td> 
+   <td> Para cada caso que você deseja adicionar, clique em <b>Adicionar item</b> e insira o padrão e a saída do item. <p>Se a entrada contiver um valor inserido no campo [!UICONTROL Padrão], o valor inserido no campo [!UICONTROL Saída] será retornado.</p> <p>Se a entrada não corresponder a nenhum dos valores definidos em um campo [!UICONTROL Padrão], uma das situações a seguir ocorrerá:</p> 
     <ul> 
      <li>O valor do campo [!UICONTROL Else] é retornado</li> 
      <li>Se não houver valor no campo [!UICONTROL Else], nenhuma saída será retornada.</li> 

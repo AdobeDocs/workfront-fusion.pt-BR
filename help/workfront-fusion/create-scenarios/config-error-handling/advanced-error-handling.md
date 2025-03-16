@@ -4,9 +4,9 @@ description: É possível adicionar técnicas avançadas de tratamento de erros 
 author: Becky
 feature: Workfront Fusion
 exl-id: 745bfdc4-1327-4a28-a863-c217f15a7fc5
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '905'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Atual: nenhum requisito de licença do Workfront Fusion.</p>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion</p>
    <p>Ou</p>
    <p>Herdados: Qualquer um </p>
    </td> 
@@ -87,13 +87,13 @@ Para obter informações sobre como o Fusion avalia e processa vários tipos de 
 
 Este exemplo de cenário mostra como esses filtros funcionam para a manipulação de erros.
 
-Se você usar o módulo Dropbox > Criar uma pasta e uma pasta com o mesmo nome já existir, o módulo lançará um DataError:
+Se você usar o módulo Dropbox > Criar uma pasta e uma pasta com o mesmo nome já existir, o módulo emitirá um DataError:
 
 ![Erro no Dropbox](assets/dropbox.png)
 
 O cenário completo funciona da seguinte maneira:
 
-![cenário de Dropbox](assets/dropbox-scenario.png)
+![Cenário do Dropbox](assets/dropbox-scenario.png)
 
 1. O módulo Ferramentas > Definir variável contém o nome da pasta
 1. O módulo HTTP > Obter um arquivo busca o arquivo que precisa ser carregado na pasta
@@ -101,7 +101,7 @@ O cenário completo funciona da seguinte maneira:
 1. A rota do manipulador de erros (bolhas transparentes) contém um roteador para filtrar os erros
 A primeira rota é para um tipo de erro especificado chamado `DataError`.
 
-   1. Se ocorrer um `DataError` e os detalhes do erro passarem pelo filtro, o Dropbox > Listar todos os arquivos/subpastas em um módulo de pasta listará todas as pastas no Dropbox.
+   1. Se um `DataError` ocorrer e os detalhes do erro passarem pelo filtro, o Dropbox > Listar todos os arquivos/subpastas em um módulo de pasta listará todas as pastas no Dropbox.
    1. O filtro subsequente corresponde aos nomes da pasta.
    1. A diretiva **Resume** especifica a ID da pasta e o caminho da pasta existente, e a execução do cenário é retomada a partir do módulo Dropbox > Criar uma pasta. No entanto, em vez de criar uma nova pasta, o Fusion usa os valores da diretiva Retomar para mover para o próximo módulo e fazer upload do arquivo na pasta existente.
 
@@ -141,8 +141,8 @@ Uma rota de manipulador de erros aninhada com filtros:
 
 Nesse cenário, a segunda rota do manipulador de erros é aninhada na primeira rota do manipulador de erros.
 
-Se o Dropbox > Criar um módulo de pasta encontrar um erro, a execução se move para a primeira rota. Se o filtro `DataError Takes Place` for passado, o próximo módulo será executado, seguido pelo módulo de diretiva Retomar se um erro não ocorrer em Dropbox > Listar todos os arquivos/subpastas em um módulo de pasta.
+Se o módulo Dropbox > Criar uma pasta encontrar um erro, a execução será movida para a primeira rota. Se o filtro `DataError Takes Place` for passado, o próximo módulo será executado, seguido pelo módulo de diretiva Retomar se um erro não ocorrer em Dropbox > Listar todos os arquivos/subpastas em um módulo de pasta.
 
-No entanto, se ocorrer um erro em Dropbox > List all files/subfolders em um módulo de pasta, a execução será movida para a Rota 2 do Manipulador de Erros e terminará com a diretiva [!UICONTROL Ignore]. O módulo [!UICONTROL Resume directive] não é executado nesse caso.
+No entanto, se ocorrer um erro em Dropbox > Listar todos os arquivos/subpastas em um módulo de pasta, a execução será movida para a Rota 2 do Manipulador de Erros e terminará com a diretiva [!UICONTROL Ignore]. O módulo de diretiva [!UICONTROL Resume] não é executado neste caso.
 
 >[!ENDSHADEBOX]

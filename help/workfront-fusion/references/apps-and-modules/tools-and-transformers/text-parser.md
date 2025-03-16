@@ -4,16 +4,16 @@ description: Você pode usar a ferramenta Analisador de texto para analisar o te
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1290'
 ht-degree: 0%
 
 ---
 
-# [!UICONTROL Text parser]
+# [!UICONTROL Analisador de texto]
 
-Você pode usar o [!UICONTROL Text parser tool] para analisar o texto a ser usado em outros módulos de cenário do [!DNL Adobe Workfront Fusion]. O [!UICONTROL Text parser] não requer uma conexão.
+Você pode usar a [!UICONTROL Ferramenta de análise de texto] para analisar o texto a ser usado em outros módulos de cenário [!DNL Adobe Workfront Fusion]. O [!UICONTROL analisador de texto] não requer uma conexão.
 
 ## Requisitos de acesso
 
@@ -36,7 +36,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Nenhum requisito de licença do Workfront Fusion.</p>
+   <p>Nenhum requisito de licença do Workfront Fusion</p>
    </td> 
   </tr> 
   <tr> 
@@ -71,9 +71,9 @@ O conector do analisador de texto usa o seguinte:
  </tbody> 
  </table>
 
-## [!UICONTROL Text parser] módulos e seus campos
+## Módulos [!UICONTROL Analisador de texto] e seus campos
 
-Ao configurar módulos do [!UICONTROL Text parser], o [!DNL Adobe Workfront Fusion] exibe os campos listados abaixo. Um título em negrito em um módulo indica um campo obrigatório.
+Ao configurar módulos do [!UICONTROL Analisador de texto], o [!DNL Adobe Workfront Fusion] exibe os campos listados abaixo. Um título em negrito em um módulo indica um campo obrigatório.
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -81,13 +81,13 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 
 ### Transformadores
 
-* [[!UICONTROL Get Elements from HTML]](#get-elements-from-html)
-* [[!UICONTROL Get Elements from text]](#get-elements-from-text)
-* [[!UICONTROL HTML to Text]](#html-to-text)
-* [[!UICONTROL Match Pattern]](#match-pattern)
-* [[!UICONTROL Replace]](#replace)
+* [[!UICONTROL Obter Elementos do HTML]](#get-elements-from-html)
+* [[!UICONTROL Obter Elementos do texto]](#get-elements-from-text)
+* [[!UICONTROL HTML para texto]](#html-to-text)
+* [[!UICONTROL Corresponder Padrão]](#match-pattern)
+* [[!UICONTROL Substituir]](#replace)
 
-#### [!UICONTROL Get Elements from HTML]
+#### [!UICONTROL Obter Elementos do HTML]
 
 Recupera os elementos desejados do código HTML.
 
@@ -96,26 +96,26 @@ Recupera os elementos desejados do código HTML.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Continue the execution of the route even if the module finds no matches]</td> 
+   <td>[!UICONTROL Continuar a execução da rota mesmo se o módulo não encontrar correspondências]</td> 
    <td> <p>Ative essa opção para garantir que o módulo não interrompa o cenário se não retornar resultados.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Element type]</td> 
+   <td>[!UICONTROL Tipo de elemento]</td> 
    <td> <p> Selecione o tipo de elemento que deseja recuperar do código HTML. </p> 
     <ul> 
-     <li>[!UICONTROL Image]</li> 
+     <li>[!UICONTROL Imagem]</li> 
      <li>[!UICONTROL Link]</li> 
-     <li>[!UICONTROL iFrame element(s)]</li> 
+     <li>[!UICONTROL elemento(s) iFrame]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL HTML] </td> 
-   <td> <p>Insira ou mapeie o código de HTML do qual você deseja recuperar os tipos de elemento especificados.</p> </td> 
+   <td> <p>Insira ou mapeie o código HTML do qual deseja recuperar os tipos de elemento especificados.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get Elements from text]
+#### [!UICONTROL Obter Elementos do texto]
 
 Analisa os elementos do texto com base no padrão fornecido.
 
@@ -124,21 +124,21 @@ Analisa os elementos do texto com base no padrão fornecido.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Input text]</td> 
+   <td>[!UICONTROL Texto de entrada]</td> 
    <td> <p>Insira ou mapeie o texto que deseja analisar.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Pattern]</td> 
+   <td>[!UICONTROL Padrão]</td> 
    <td> <p>Selecione o padrão que reflete os elementos que você deseja analisar do texto.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Ignore Duplicate Occurrences]</td> 
+   <td>[!UICONTROL Ignorar Ocorrências Duplicadas]</td> 
    <td> <p>Marque essa caixa para ignorar ocorrências duplicadas de um elemento de texto.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL HTML to Text]
+#### [!UICONTROL HTML para texto]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -146,22 +146,22 @@ Analisa os elementos do texto com base no padrão fornecido.
  <tbody> 
   <tr> 
    <td>[!UICONTROL HTML] </td> 
-   <td> <p>Insira o código de HTML que deseja converter em texto sem formatação.</p> </td> 
+   <td> <p>Insira o código HTML que deseja converter em texto sem formatação.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Line break] </td> 
+   <td>[!UICONTROL Quebra de linha] </td> 
    <td> <p>Selecione o tipo de nova linha (quebra de linha).</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Uppercase headings]</p> </td> 
+   <td> <p>[!UICONTROL Cabeçalhos em maiúsculas]</p> </td> 
    <td> <p>Habilite esta opção para converter o texto delimitado nas marcas de cabeçalho (como &lt;h2&gt; &lt;/h2&gt;) em texto em maiúsculas.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Match Pattern]
+#### [!UICONTROL Corresponder Padrão]
 
-O módulo [!UICONTROL Match pattern] permite localizar e extrair elementos de cadeia de caracteres correspondentes a um padrão de pesquisa de um determinado texto. Esse módulo usa expressões regulares (também conhecidas como regex ou regexp).
+O módulo [!UICONTROL Padrão de correspondência] permite localizar e extrair elementos de cadeia de caracteres correspondentes a um padrão de pesquisa de um determinado texto. Esse módulo usa expressões regulares (também conhecidas como regex ou regexp).
 
 Uma expressão regular é uma sequência de caracteres na qual cada caractere é um metacaractere, com um significado especial, ou um caractere regular que tem um significado literal. Esses caracteres e metacaracteres identificam um padrão que pode ser usado para pesquisar texto. Por exemplo, se você deseja pesquisar nomes, é possível configurar uma expressão regular para pesquisar um padrão que consiste em duas palavras consecutivas que começam com letras maiúsculas. As expressões regulares são uma ferramenta poderosa para pesquisar e manipular texto.
 
@@ -176,37 +176,37 @@ Uma discussão de expressões regulares está fora do escopo deste artigo. Recom
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Pattern] </td> 
+   <td>[!UICONTROL Padrão] </td> 
    <td> <p>Insira o padrão de expressão regular. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemplo: </b></span></span> <code>[+-]?(\d+(\.\d+)?|\.\d+)([eE][+-]?\d+)?</code> extrai todos os numerais no texto fornecido.</p> <p>Nota:  <p>O padrão deve conter pelo menos um grupo de captura entre parênteses <code>()</code>. Se o padrão não contiver nenhum grupo de captura, o pacote de saída estará vazio.</p> </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Global match]</td> 
+   <td>[!UICONTROL Correspondência global]</td> 
    <td> <p>Habilite esta opção para recuperar todas as correspondências no texto. Cada correspondência é gerada em um pacote separado. Se essa opção estiver desativada, o módulo recuperará somente a primeira entrada.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Case sensitive]</td> 
+   <td>[!UICONTROL Diferencia maiúsculas de minúsculas]</td> 
    <td> <p> Habilite esta opção para que este módulo trate o texto como sensível a maiúsculas e minúsculas.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Multiline] </td> 
+   <td>[!UICONTROL Várias Linhas] </td> 
    <td> <p>Habilite esta opção para garantir que os metacaracteres de início e término (<code>^</code> e <code>$</code>) correspondam ao início ou ao fim de cada linha, não apenas ao início ou ao fim de toda a cadeia de caracteres de entrada.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Singleline]</td> 
+   <td>[!UICONTROL Linha Simples]</td> 
    <td>Habilite esta opção para garantir que o ponto (.) corresponda aos caracteres de nova linha (<code>\n</code>).</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Continue the execution of the route even if the module returns no results]</td> 
+   <td>[!UICONTROL Continuar a execução da rota mesmo se o módulo não retornar resultados]</td> 
    <td> <p>Ative essa opção para garantir que o módulo não interrompa o cenário se não retornar resultados.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Text] </td> 
+   <td>[!UICONTROL Texto] </td> 
    <td> <p>Insira ou mapeie o texto que deseja corresponder ao padrão.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Replace]
+#### [!UICONTROL Substituir]
 
 Pesquisa no texto inserido um valor especificado ou uma expressão regular e substitui o resultado pelo novo valor.
 
@@ -215,31 +215,31 @@ Pesquisa no texto inserido um valor especificado ou uma expressão regular e sub
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Pattern] </td> 
-   <td> <p>Insira o termo de pesquisa. Você também pode usar uma expressão regular. Para obter mais detalhes sobre a expressão regular, consulte o módulo <a href="#match-pattern" class="MCXref xref">[!UICONTROL Match Pattern]</a>.</p> </td> 
+   <td>[!UICONTROL Padrão] </td> 
+   <td> <p>Insira o termo de pesquisa. Você também pode usar uma expressão regular. Para obter mais detalhes sobre a expressão regular, consulte o módulo <a href="#match-pattern" class="MCXref xref">[!UICONTROL Padrão de Correspondência]</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL New value]</td> 
+   <td>[!UICONTROL Novo valor]</td> 
    <td> <p> Insira o valor que você deseja substituir o termo de pesquisa.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Global match]</td> 
+   <td>[!UICONTROL Correspondência global]</td> 
    <td> <p>Habilite esta opção para recuperar todas as correspondências no texto. Cada correspondência é gerada em um pacote separado. Se essa opção estiver desativada, o módulo recuperará somente a primeira entrada.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Case sensitive]</td> 
+   <td>[!UICONTROL Diferencia maiúsculas de minúsculas]</td> 
    <td> <p> Habilite esta opção para que este módulo trate o texto como sensível a maiúsculas e minúsculas.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Multiline] </td> 
+   <td>[!UICONTROL Várias Linhas] </td> 
    <td> <p>Habilite esta opção para garantir que os metacaracteres de início e término (<code>^</code> e <code>$</code>) correspondam ao início ou ao fim de cada linha, não apenas ao início ou ao fim de toda a cadeia de caracteres de entrada.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Singleline]</td> 
+   <td>[!UICONTROL Linha Simples]</td> 
    <td>Habilite esta opção para garantir que o ponto (.) corresponda aos caracteres de nova linha (<code>\n</code>).</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Text] </td> 
+   <td>[!UICONTROL Texto] </td> 
    <td> <p>Insira o texto a ser pesquisado.</p> </td> 
   </tr> 
  </tbody> 
@@ -249,7 +249,7 @@ Pesquisa no texto inserido um valor especificado ou uma expressão regular e sub
 
 O raspamento de dados, às vezes chamado de raspagem da Web, extração de dados ou coleta da Web, é o processo de coletar dados de sites e armazená-los no banco de dados ou planilhas locais. Se quiser extrair dados de um site e não estiver familiarizado com expressões regulares, você poderá usar uma ferramenta de raspagem de dados.
 
-Se a ferramenta de raspagem de dados fornecer uma API REST, você poderá se conectar a ela por meio de nossos módulos [[!UICONTROL HTTP] universais](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors) e [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md).
+Se a ferramenta de raspagem de dados fornecer uma REST API, você poderá se conectar a ela por meio de nossos módulos universais [[!UICONTROL HTTP]](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors) e [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md).
 
 ## Solução de problemas do analisador de texto
 

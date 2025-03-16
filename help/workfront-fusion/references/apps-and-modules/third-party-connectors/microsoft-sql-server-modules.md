@@ -4,9 +4,9 @@ description: Você pode usar o  [!DNL Adobe Workfront Fusion] para se conectar a
 author: Becky
 feature: Workfront Fusion
 exl-id: 8f3293f7-8b45-4e42-8ad8-f9d4969b63fd
-source-git-commit: ef1a96d9ef4c2c82eaf376c84188e3ed6ea7b2cf
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Atual: nenhum requisito de licença do Workfront Fusion.</p>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion</p>
    <p>Ou</p>
    <p>Herdados: Automação e integração do Workfront Fusion for Work </p>
    </td> 
@@ -82,7 +82,7 @@ Para saber mais sobre como criar um procedimento armazenado, consulte a document
 >
 >[!DNL Workfront Fusion] não dá suporte a vários conjuntos de registros. Somente o primeiro é processado.
 
-## Solução de problemas de erro [!UICONTROL ER_LOCK_WAIT_TIMEOUT: Lock wait timeout exceeded; try restarting transaction]
+## Solução de problemas de erro [!UICONTROL ER_LOCK_WAIT_TIMEOUT: Tempo limite de espera de bloqueio excedido; tente reiniciar a transação]
 
 Esse erro ocorre quando você modifica os mesmos dados usando vários módulos. É causado por transações SQL.
 
@@ -94,6 +94,6 @@ Se outro módulo tentar acessar os mesmos dados, ele precisará aguardar até qu
 
 Ative a Confirmação automática. A confirmação automática conclui (confirma) cada transação imediatamente após a execução do módulo ser concluída.
 
-1. Clique no ícone [!UICONTROL Scenario settings] ![ícone Configurações de cenário](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png)na parte inferior da tela.
-1. Clique na caixa de seleção **[!UICONTROL Auto commit]**.
+1. Clique no ícone [!UICONTROL Configurações de cenário] ![Ícone de configurações de cenário](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png)na parte inferior da tela.
+1. Clique na caixa de seleção **[!UICONTROL Confirmação automática]**.
 1. Clique em **[!UICONTROL OK]** para salvar as configurações do cenário.

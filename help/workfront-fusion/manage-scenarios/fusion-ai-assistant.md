@@ -4,7 +4,7 @@ description: Assistente de IA no Workfront Fusion
 author: Becky
 feature: Workfront Fusion
 exl-id: 22f24c0e-4eb3-4ef7-b012-374ee5e8a844
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Assistente de IA no Workfront Fusion
 
-O AI Assistant pode localizar informações da documentação do Workfront, eliminando a necessidade de visitar o Adobe Experience League para obter a ajuda necessária.
+O Assistente de IA pode localizar informações da documentação do Workfront, eliminando a necessidade de visitar a Adobe Experience League para obter a ajuda necessária.
 
 ## Requisitos de acesso
 
@@ -36,7 +36,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Atual: nenhum requisito de licença do Workfront Fusion.</p>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion</p>
    <p>Ou</p>
    <p>Herdados: Qualquer um </p>
    </td> 
@@ -68,9 +68,9 @@ Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [li
 
 ## Pré-requisitos
 
-O Adobe deve ter um contrato de geração de IA de Adobe assinado no arquivo.
+A Adobe deve ter um contrato de API Gen da Adobe assinado no arquivo.
 
-Para obter mais informações sobre como assinar o contrato, consulte [Assinar o contrato do Adobe Gen AI](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) no artigo Visão geral do Assistente de IA na documentação da Workfront.
+Para obter mais informações sobre como assinar o contrato, consulte [Assinar o contrato da Adobe Gen AI](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) no artigo Visão geral do Assistente de IA na documentação da Workfront.
 
 ## Obter informações do Assistente de IA
 
@@ -83,4 +83,4 @@ Para obter informações ou instruções da documentação do Workfront Fusion u
 
 1. Visualize a resposta no painel Assistente de IA.
 1. (Opcional) Se a resposta não contiver as informações necessárias, refine sua resposta e tente novamente.
-1. (Opcional e condicional) Se a resposta incluir um link para um artigo do Adobe Experience League, clique no link para abrir o artigo em uma nova janela.
+1. (Opcional e condicional) Se a resposta incluir um link para um artigo da Adobe Experience League, clique no link para abrir o artigo em uma nova janela.

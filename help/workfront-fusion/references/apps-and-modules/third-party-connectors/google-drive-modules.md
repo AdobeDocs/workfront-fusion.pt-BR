@@ -4,9 +4,9 @@ description: Os  [!DNL Adobe Workfront Fusion Google Drive] módulos permitem qu
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 788f4e1b-d774-45ad-a8be-b16922c1d5dc
-source-git-commit: 5971b2210eaac8f8a75fd7a4aac5a9f7954d27ef
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1617'
+source-wordcount: '2041'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Atual: nenhum requisito de licença do Workfront Fusion.</p>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion</p>
    <p>Ou</p>
    <p>Herdados: Automação e integração do Workfront Fusion for Work </p>
    </td> 
@@ -91,9 +91,9 @@ O conector da unidade Google usa o seguinte:
 
 ## Conectando [!DNL Google Drive] a [!DNL Workfront Fusion]
 
-Se você usa [!DNL @gmail.com] ou [!DNL @googlemail.com] usuário, é necessário criar um cliente OAuth no [!DNL Google Cloud Platform] para obter o [!UICONTROL Client ID] e o [!UICONTROL Client Secret].
+Se você usa [!DNL @gmail.com] ou [!DNL @googlemail.com] usuário, deve criar um cliente OAuth no [!DNL Google Cloud Platform] para obter sua [!UICONTROL ID do Cliente] e [!UICONTROL Segredo do Cliente].
 
-Para obter instruções passo a passo sobre como criar o cliente OAuth (e obter [!UICONTROL Client ID] e [!UICONTROL Client Secret]), consulte [Conectar [!DNL Adobe Workfront Fusion] a [!DNL Google Services] usando um cliente OAuth personalizado](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
+Para obter instruções passo a passo sobre como criar o cliente OAuth (e obter a [!UICONTROL ID do Cliente] e o [!UICONTROL Segredo do Cliente]), consulte [Conectar [!DNL Adobe Workfront Fusion] a [!DNL Google Services] usando um cliente OAuth personalizado](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
 
 Para obter instruções sobre como conectar sua conta do [!DNL Google Drive] ao [!UICONTROL Workfront Fusion], consulte [Criar uma conexão com o [!UICONTROL Adobe Workfront Fusion] - Instruções básicas](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
@@ -112,12 +112,12 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 
 ### Acionadores
 
-* [[!UICONTROL Watch all files]](#watch-all-files)
-* [[!UICONTROL Watch comments]](#watch-comments)
-* [[!UICONTROL Watch files in folder]](#watch-files-in-folder)
-* [[!UICONTROL Watch shared files]](#watch-shared-files)
+* [[!UICONTROL Assistir a todos os arquivos]](#watch-all-files)
+* [[!UICONTROL Assistir comentários]](#watch-comments)
+* [[!UICONTROL Observar arquivos na pasta]](#watch-files-in-folder)
+* [[!UICONTROL Observar arquivos compartilhados]](#watch-shared-files)
 
-#### [!UICONTROL Watch all files]
+#### [!UICONTROL Assistir a todos os arquivos]
 
 Este módulo de acionador inicia um cenário quando um arquivo em seu [!DNL Google Drive] é adicionado ou modificado.
 
@@ -126,14 +126,14 @@ Este módulo de acionador inicia um cenário quando um arquivo em seu [!DNL Goog
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Conexão] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google Drive] ao [!DNL Workfront Fusion], consulte <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Conectando o [!DNL Google Drive] ao [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL What files to watch]</td> 
+   <td>[!UICONTROL Quais arquivos observar]</td> 
    <td> <p>Selecione o tipo de arquivo que deseja observar.</p> 
     <ul> 
-     <li>[!UICONTROL All]</li> 
+     <li>[!UICONTROL Tudo]</li> 
      <li>[!DNL Google Documents]</li> 
      <li>[!DNL Google Spreadsheets]</li> 
      <li>[!DNL Google Slides]</li> 
@@ -141,33 +141,33 @@ Este módulo de acionador inicia um cenário quando um arquivo em seu [!DNL Goog
     </ul> </td> 
   </tr> 
   <tr> 
-    <td >[!UICONTROL Convert [!DNL Google Documents] arquivos a serem formatados]</td>
+    <td >[!UICONTROL Converter [!DNL Google Documents] arquivos no formato]</td>
     <td>Selecione o formato de arquivo para o qual você deseja converter [!DNL Google Documents].</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL Convert [!DNL Google Spreadsheets] arquivos a serem formatados]</td>
+    <td>[!UICONTROL Converter [!DNL Google Spreadsheets] arquivos no formato]</td>
     <td>Selecione o formato de arquivo para o qual você deseja converter [!DNL Google Spreadsheets].</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL Convert [!DNL Google Slides] arquivos a serem formatados]</td>
+    <td>[!UICONTROL Converter [!DNL Google Slides] arquivos no formato]</td>
     <td>Selecione o formato de arquivo para o qual você deseja converter [!DNL Google Slides].</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL Convert [!DNL Google Drawings] arquivos a serem formatados]</td>
+    <td>[!UICONTROL Converter [!DNL Google Drawings] arquivos no formato]</td>
     <td>Selecione o formato de arquivo para o qual você deseja converter [!DNL Google Drawings].</td>
   </tr>  
   <tr> 
-   <td>[!UICONTROL Watch]</td> 
+   <td>[!UICONTROL Observar]</td> 
    <td>Selecione se deseja observar novos arquivos e todas as alterações ou somente novos arquivos.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of downloaded files]</td> 
+   <td>[!UICONTROL Número máximo de arquivos baixados]</td> 
    <td>Defina o número máximo de resultados que [!DNL Workfront Fusion] baixará durante um ciclo (o número de repetições por execução de cenário).</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Comments]
+#### [!UICONTROL Assistir Comentários]
 
 Esse módulo de acionamento inicia um cenário quando um comentário é adicionado ou modificado no arquivo selecionado.
 
@@ -176,25 +176,25 @@ Esse módulo de acionamento inicia um cenário quando um comentário é adiciona
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Conexão] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google Drive] ao [!DNL Workfront Fusion], consulte <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Conectando o [!DNL Google Drive] ao [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File]</td> 
+   <td>[!UICONTROL Arquivo]</td> 
    <td>Selecione o arquivo que deseja observar para comentários.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Watch]</td> 
+   <td>[!UICONTROL Observar]</td> 
    <td>Selecione se você deseja observar todas as alterações ou somente os novos comentários</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of returned comments]</td> 
+   <td>[!UICONTROL Número máximo de comentários retornados]</td> 
    <td>Defina o número máximo de comentários que [!DNL Workfront Fusion] retornará durante um ciclo (o número de repetições por execução de cenário).</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch files in folder]
+#### [!UICONTROL Observar arquivos na pasta]
 
 Este módulo de acionamento inicia um cenário quando um arquivo é adicionado ou modificado na pasta especificada.
 
@@ -203,18 +203,18 @@ Este módulo de acionamento inicia um cenário quando um arquivo é adicionado o
  <col> 
  <tbody> 
   <tr> 
-    <td>[!UICONTROL Connection] </td>
+    <td>[!UICONTROL Conexão] </td>
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google Drive] ao [!DNL Workfront Fusion], consulte <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Conectando o [!DNL Google Drive] ao [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr>
-    <td>[!UICONTROL Select the folder to be watched]</td>
+    <td>[!UICONTROL Selecionar a pasta a ser observada]</td>
     <td >Selecione a pasta na unidade em que deseja observar os arquivos.</td>
   </tr> 
   <tr> 
-    <td>[!UICONTROL What files to watch]</td>
+    <td>[!UICONTROL Quais arquivos observar]</td>
    <td> <p>Selecione o tipo de arquivo que deseja observar.</p> 
     <ul> 
-     <li>[!UICONTROL All]</li> 
+     <li>[!UICONTROL Tudo]</li> 
      <li>[!DNL Google Documents]</li> 
      <li>[!DNL Google Spreadsheets]</li> 
      <li>[!DNL Google Slides]</li> 
@@ -222,33 +222,33 @@ Este módulo de acionamento inicia um cenário quando um arquivo é adicionado o
     </ul> </td> 
   </tr> 
   <tr> 
-    <td >[!UICONTROL Convert [!DNL Google Documents] arquivos a serem formatados]</td>
+    <td >[!UICONTROL Converter [!DNL Google Documents] arquivos no formato]</td>
     <td>Selecione o formato de arquivo para o qual você deseja converter [!DNL Google Documents].</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL Convert [!DNL Google Spreadsheets] arquivos a serem formatados]</td>
+    <td>[!UICONTROL Converter [!DNL Google Spreadsheets] arquivos no formato]</td>
     <td>Selecione o formato de arquivo para o qual você deseja converter [!DNL Google Spreadsheets].</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL Convert [!DNL Google Slides] arquivos a serem formatados]</td>
+    <td>[!UICONTROL Converter [!DNL Google Slides] arquivos no formato]</td>
     <td>Selecione o formato de arquivo para o qual você deseja converter [!DNL Google Slides].</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL Convert [!DNL Google Drawings] arquivos a serem formatados]</td>
+    <td>[!UICONTROL Converter [!DNL Google Drawings] arquivos no formato]</td>
     <td>Selecione o formato de arquivo para o qual você deseja converter [!DNL Google Drawings].</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL Watch]</td>
+    <td>[!UICONTROL Observar]</td>
     <td>Selecione se deseja observar novos arquivos e todas as alterações ou somente novos arquivos.</td>
   </tr> 
   <tr> 
-    <td>[!UICONTROL Maximum number of downloaded files]</td>
+    <td>[!UICONTROL Número máximo de arquivos baixados]</td>
     <td>Defina o número máximo de resultados que [!DNL Workfront Fusion] baixará durante um ciclo (o número de repetições por execução de cenário).</td>
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch shared files]
+#### [!UICONTROL Observar arquivos compartilhados]
 
 Dispara quando um novo arquivo é compartilhado com você ou um arquivo compartilhado existente é atualizado.
 
@@ -257,18 +257,18 @@ Dispara quando um novo arquivo é compartilhado com você ou um arquivo comparti
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Conexão] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google Drive] ao [!DNL Workfront Fusion], consulte <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Conectando o [!DNL Google Drive] ao [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Select the folder to be watched]</td> 
+   <td>[!UICONTROL Selecionar a pasta a ser observada]</td> 
    <td>Selecione a pasta compartilhada na qual você deseja observar os arquivos.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL What files to watch]</td> 
+   <td>[!UICONTROL Quais arquivos observar]</td> 
    <td> <p>Selecione o tipo de arquivo que deseja observar.</p> 
     <ul> 
-     <li>[!UICONTROL All]</li> 
+     <li>[!UICONTROL Tudo]</li> 
      <li>[!DNL Google Documents]</li> 
      <li>[!DNL Google Spreadsheets]</li> 
      <li>[!DNL Google Slides]</li> 
@@ -276,27 +276,27 @@ Dispara quando um novo arquivo é compartilhado com você ou um arquivo comparti
     </ul> </td> 
   </tr> 
   <tr> 
-    <td >[!UICONTROL Convert [!DNL Google Documents] arquivos a serem formatados]</td>
+    <td >[!UICONTROL Converter [!DNL Google Documents] arquivos no formato]</td>
     <td>Selecione o formato de arquivo para o qual você deseja converter [!DNL Google Documents].</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL Convert [!DNL Google Spreadsheets] arquivos a serem formatados]</td>
+    <td>[!UICONTROL Converter [!DNL Google Spreadsheets] arquivos no formato]</td>
     <td>Selecione o formato de arquivo para o qual você deseja converter [!DNL Google Spreadsheets].</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL Convert [!DNL Google Slides] arquivos a serem formatados]</td>
+    <td>[!UICONTROL Converter [!DNL Google Slides] arquivos no formato]</td>
     <td>Selecione o formato de arquivo para o qual você deseja converter [!DNL Google Slides].</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL Convert [!DNL Google Drawings] arquivos a serem formatados]</td>
+    <td>[!UICONTROL Converter [!DNL Google Drawings] arquivos no formato]</td>
     <td>Selecione o formato de arquivo para o qual você deseja converter [!DNL Google Drawings].</td>
   </tr> 
   <tr> 
-   <td>[!UICONTROL Watch]</td> 
+   <td>[!UICONTROL Observar]</td> 
    <td>Selecione se deseja observar novos arquivos e todas as alterações ou somente novos arquivos.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of downloaded files]</td> 
+   <td>[!UICONTROL Número máximo de arquivos baixados]</td> 
    <td>Defina o número máximo de resultados que [!DNL Workfront Fusion] baixará durante um ciclo (o número de repetições por execução de cenário).</td> 
   </tr> 
  </tbody> 
@@ -304,17 +304,17 @@ Dispara quando um novo arquivo é compartilhado com você ou um arquivo comparti
 
 ### Ações
 
-* [[!UICONTROL Copy a file]](#copy-a-file)
-* [[!UICONTROL Create a fFolder]](#create-a-folder)
-* [[!UICONTROL Delete a file]](#delete-a-file)
-* [[!UICONTROL Get a file]](#get-a-file)
-* [[!UICONTROL Get a share link]](#get-a-share-link)
-* [[!UICONTROL Move a file to trash]](#move-a-filefolder-to-trash)
-* [[!UICONTROL Search for Files/Folders]](#search-for-filesfolders)
-* [[!UICONTROL Update a File]](#update-a-file)
-* [[!UICONTROL Upload a File]](#upload-a-file)
+* [[!UICONTROL Copiar um arquivo]](#copy-a-file)
+* [[!UICONTROL Criar uma fFolder]](#create-a-folder)
+* [[!UICONTROL Excluir um arquivo]](#delete-a-file)
+* [[!UICONTROL Obter um arquivo]](#get-a-file)
+* [[!UICONTROL Obter um link de compartilhamento]](#get-a-share-link)
+* [[!UICONTROL Mover um arquivo para a lixeira]](#move-a-filefolder-to-trash)
+* [[!UICONTROL Procurar Arquivos/Pastas]](#search-for-filesfolders)
+* [[!UICONTROL Atualizar um Arquivo]](#update-a-file)
+* [[!UICONTROL Carregar um arquivo]](#upload-a-file)
 
-#### [!UICONTROL Copy a file]
+#### [!UICONTROL Copiar um arquivo]
 
 Este módulo de ação copia um arquivo para o novo local.
 
@@ -323,33 +323,33 @@ Este módulo de ação copia um arquivo para o novo local.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Conexão] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google Drive] ao [!DNL Workfront Fusion], consulte <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Conectando o [!DNL Google Drive] ao [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Destination]</td> 
+   <td>[!UICONTROL Destino]</td> 
    <td> <p>Selecione o destino para o qual deseja copiar um arquivo.</p> 
     <ul> 
-     <li>[!UICONTROL My Drive]</li> 
-     <li>[!UICONTROL Shared with Me]</li> 
+     <li>[!UICONTROL Minha Unidade]</li> 
+     <li>[!UICONTROL Compartilhado comigo]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Target folder]</td> 
+   <td>[!UICONTROL Pasta de Destino]</td> 
    <td>Selecione a pasta que contém o arquivo a ser copiado.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File ID]</td> 
+   <td>[!UICONTROL ID de Arquivo]</td> 
    <td>Mapeie a ID do arquivo que você deseja copiar.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL The name of the copy]</td> 
+   <td>[!UICONTROL O nome da cópia]</td> 
    <td>Insira um título para o novo arquivo. Deixe esse campo em branco se não quiser alterar o nome do arquivo original.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Create a folder]
+#### [!UICONTROL Criar uma pasta]
 
 Este módulo de ação cria uma pasta no local especificado.
 
@@ -358,33 +358,33 @@ Este módulo de ação cria uma pasta no local especificado.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Conexão] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google Drive] ao [!DNL Workfront Fusion], consulte <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Conectando o [!DNL Google Drive] ao [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Destination]</td> 
+   <td>[!UICONTROL Destino]</td> 
    <td> <p>Selecione o destino no qual deseja criar uma pasta.</p> 
     <ul> 
-     <li>[!UICONTROL My Drive]</li> 
-     <li>[!UICONTROL Shared with Me]</li> 
+     <li>[!UICONTROL Minha Unidade]</li> 
+     <li>[!UICONTROL Compartilhado comigo]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL New folder location]</td> 
+   <td>[!UICONTROL Novo local de pasta]</td> 
    <td>Navegue até o local onde deseja criar uma nova pasta.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL The name of the new folder]</td> 
+   <td>[!UICONTROL O nome da nova pasta]</td> 
    <td>Insira um nome para a pasta que está sendo criada.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Share folder]</td> 
-   <td>Selecione esta opção se quiser compartilhar a pasta com qualquer pessoa com o link [!UICONTROL Share]. Caso contrário, o link de compartilhamento será somente para o proprietário.</td> 
+   <td>[!UICONTROL Compartilhar pasta]</td> 
+   <td>Selecione esta opção se desejar compartilhar a pasta com qualquer pessoa com o link [!UICONTROL Compartilhar]. Caso contrário, o link de compartilhamento será somente para o proprietário.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a file]
+#### [!UICONTROL Excluir um arquivo]
 
 Este módulo de ação exclui permanentemente um arquivo ou pasta.
 
@@ -393,17 +393,17 @@ Este módulo de ação exclui permanentemente um arquivo ou pasta.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Conexão] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google Drive] ao [!DNL Workfront Fusion], consulte <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Conectando o [!DNL Google Drive] ao [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File ID]</td> 
+   <td>[!UICONTROL ID de Arquivo]</td> 
    <td>Mapeie a ID do arquivo que deseja excluir.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a file]
+#### [!UICONTROL Obter um arquivo]
 
 Este módulo de ação recupera o arquivo com a ID especificada.
 
@@ -412,33 +412,33 @@ Este módulo de ação recupera o arquivo com a ID especificada.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Conexão] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google Drive] ao [!DNL Workfront Fusion], consulte <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Conectando o [!DNL Google Drive] ao [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Convert [!DNL Google Documents] arquivos a serem formatados]</td> 
+   <td>[!UICONTROL Converter [!DNL Google Documents] arquivos no formato]</td> 
    <td>Selecione o formato de arquivo para o qual você deseja converter [!DNL Google Documents].</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Convert [!DNL Google Spreadsheets] arquivos a serem formatados]</td> 
+   <td>[!UICONTROL Converter [!DNL Google Spreadsheets] arquivos no formato]</td> 
    <td>Selecione o formato de arquivo para o qual você deseja converter [!DNL Google Spreadsheets].</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Convert [!DNL Google Slides] arquivos a serem formatados]</td> 
+   <td>[!UICONTROL Converter [!DNL Google Slides] arquivos no formato]</td> 
    <td>Selecione o formato de arquivo para o qual você deseja converter [!DNL Google Slides].</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Convert [!DNL Google Drawings] arquivos a serem formatados]</td> 
+   <td>[!UICONTROL Converter [!DNL Google Drawings] arquivos no formato]</td> 
    <td>Selecione o formato de arquivo para o qual você deseja converter [!DNL Google Drawings].</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File ID]</td> 
+   <td>[!UICONTROL ID de Arquivo]</td> 
    <td>Mapeie a ID do arquivo que você deseja recuperar.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a share link]
+#### [!UICONTROL Obter um link de compartilhamento]
 
 Este módulo de ação recupera o link de compartilhamento de um arquivo no Google Drive.
 
@@ -447,17 +447,17 @@ Este módulo de ação recupera o link de compartilhamento de um arquivo no Goog
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Conexão] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google Drive] ao [!DNL Workfront Fusion], consulte <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Conectando o [!DNL Google Drive] ao [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File ID]</td> 
+   <td>[!UICONTROL ID de Arquivo]</td> 
    <td>Mapeie a ID do arquivo para o qual você deseja obter o link de compartilhamento.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Move a file to trash]
+#### [!UICONTROL Mover um arquivo para a lixeira]
 
 Este módulo de ação move um arquivo ou pasta para o lixo.
 
@@ -466,17 +466,17 @@ Este módulo de ação move um arquivo ou pasta para o lixo.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Conexão] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google Drive] ao [!DNL Workfront Fusion], consulte <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Conectando o [!DNL Google Drive] ao [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File ID]</td> 
+   <td>[!UICONTROL ID de Arquivo]</td> 
    <td>Mapeie a ID do arquivo que você deseja mover para a lixeira.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Search for Files/Folders]
+#### [!UICONTROL Procurar Arquivos/Pastas]
 
 Este módulo de pesquisa procura por arquivos ou pastas com base nos critérios de pesquisa.
 
@@ -485,57 +485,57 @@ Este módulo de pesquisa procura por arquivos ou pastas com base nos critérios 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Conexão] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google Drive] ao [!DNL Workfront Fusion], consulte <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Conectando o [!DNL Google Drive] ao [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Destination]</td> 
+   <td>[!UICONTROL Destino]</td> 
    <td> <p>Selecione a unidade de destino que deseja pesquisar.</p> 
     <ul> 
-     <li>[!UICONTROL My Drive]</li> 
-     <li>[!UICONTROL Shared with Me]</li> 
+     <li>[!UICONTROL Minha Unidade]</li> 
+     <li>[!UICONTROL Compartilhado comigo]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL List a folder]</td> 
+   <td>[!UICONTROL Listar uma pasta]</td> 
    <td>Navegue até a pasta na qual deseja pesquisar os arquivos ou pastas.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Retrieve]</td> 
+   <td>[!UICONTROL Recuperar]</td> 
    <td> <p> Selecione se deseja pesquisar arquivos, pastas ou ambos.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Search]</p> </td> 
+   <td> <p>[!UICONTROL Pesquisar]</p> </td> 
    <td> <p>Selecione o tipo de pesquisa que deseja realizar.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Search within file/folder names]</strong> </p> 
+     <li> <p><strong>[!UICONTROL Pesquisar em nomes de arquivo/pasta]</strong> </p> 
       <ul> 
-       <li> <p><strong>[!UICONTROL Query]</strong> </p> <p>Insira uma parte do nome do arquivo ou o nome completo do arquivo (incluindo o sufixo) que deseja pesquisar.</p> </li> 
-       <li> <p><strong>[!UICONTROL Search Options]</strong> </p> <p>Selecione se deseja pesquisar o termo exato ou se deseja pesquisar nomes contendo o termo de pesquisa.</p> </li> 
+       <li> <p><strong>[!UICONTROL Consulta]</strong> </p> <p>Insira uma parte do nome do arquivo ou o nome completo do arquivo (incluindo o sufixo) que deseja pesquisar.</p> </li> 
+       <li> <p><strong>[!UICONTROL Opções de Pesquisa]</strong> </p> <p>Selecione se deseja pesquisar o termo exato ou se deseja pesquisar nomes contendo o termo de pesquisa.</p> </li> 
       </ul> </li> 
-     <li> <p><strong>[!UICONTROL Fulltext] pesquisa</strong> </p> 
+     <li> <p><strong>[!UICONTROL Texto Completo] pesquisa</strong> </p> 
       <ul> 
-       <li> <p><strong>[!UICONTROL Query]</strong> </p> <p>Digite qualquer termo de pesquisa que você deseja pesquisar em seu [!DNL Google Drive].</p> </li> 
+       <li> <p><strong>[!UICONTROL Consulta]</strong> </p> <p>Digite qualquer termo de pesquisa que você deseja pesquisar em seu [!DNL Google Drive].</p> </li> 
       </ul> </li> 
      <li> <p><strong>Inserir consulta de pesquisa personalizada</strong> </p> 
       <ul> 
-       <li> <p><strong>[!UICONTROL Query]</strong> </p> <p>Insira a consulta de pesquisa personalizada. Para obter mais detalhes, consulte a seção [!UICONTROL Search for Files] deste artigo.</p> </li> 
+       <li> <p><strong>[!UICONTROL Consulta]</strong> </p> <p>Insira a consulta de pesquisa personalizada. Para obter mais detalhes, consulte a seção [!UICONTROL Pesquisar Arquivos] deste artigo.</p> </li> 
        <li> <p><strong>Adicionar a pasta selecionada acima à consulta</strong> </p> <p>Pesquisa a pasta na coleção pai. Isso encontrará todos os arquivos e pastas localizados diretamente na pasta selecionada acima.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of returned results]</td> 
+   <td>[!UICONTROL Número máximo de resultados retornados]</td> 
    <td>Defina o número máximo de arquivos ou pastas que [!DNL Workfront Fusion] retornará durante um ciclo de execução.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Continue the execution of the route even if the module returns no results]</td> 
+   <td>[!UICONTROL Continuar a execução da rota mesmo se o módulo não retornar resultados]</td> 
    <td>Ative essa opção para garantir que o cenário não seja interrompido se o módulo não retornar resultados.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a File]
+#### [!UICONTROL Atualizar um Arquivo]
 
 Esse módulo de ação atualiza os metadados ou o conteúdo de um arquivo.
 
@@ -544,45 +544,45 @@ Esse módulo de ação atualiza os metadados ou o conteúdo de um arquivo.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Conexão] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google Drive] ao [!DNL Workfront Fusion], consulte <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Conectando o [!DNL Google Drive] ao [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Destination]</td> 
+   <td>[!UICONTROL Destino]</td> 
    <td> <p>Selecione o destino que contém o arquivo que você deseja atualizar.</p> 
     <ul> 
-     <li>[!UICONTROL My Drive]</li> 
-     <li>[!UICONTROL Shared with Me]</li> 
+     <li>[!UICONTROL Minha Unidade]</li> 
+     <li>[!UICONTROL Compartilhado comigo]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Move to a folder]</td> 
+   <td>[!UICONTROL Mover para uma pasta]</td> 
    <td>Se desejar mover o arquivo para uma pasta específica, selecione a pasta para onde deseja mover o arquivo.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File ID]</td> 
+   <td>[!UICONTROL ID de Arquivo]</td> 
    <td>Mapeie a ID do arquivo que você deseja atualizar.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Title]</td> 
+   <td>[!UICONTROL Título]</td> 
    <td>Insira um título para o arquivo atualizado.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Change a file content]</td> 
+   <td>[!UICONTROL Alterar um conteúdo de arquivo]</td> 
    <td>Selecione se deseja substituir o conteúdo do arquivo.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source file]</td> 
+   <td>[!UICONTROL arquivo Source]</td> 
    <td>Se você estiver substituindo o conteúdo, selecione um arquivo de origem de um módulo anterior ou mapeie o nome e os dados do arquivo de origem.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Conver a file]</td> 
+   <td>[!UICONTROL Converter um arquivo]</td> 
    <td>Habilite esta opção para converter o arquivo para o formato de arquivo Google correspondente.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload a File]
+#### [!UICONTROL Carregar um arquivo]
 
 Carrega um arquivo no [!DNL Google Drive].
 
@@ -591,7 +591,7 @@ Carrega um arquivo no [!DNL Google Drive].
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Conexão] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google Drive] ao [!DNL Workfront Fusion], consulte <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Conectando o [!DNL Google Drive] ao [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
@@ -603,19 +603,19 @@ Carrega um arquivo no [!DNL Google Drive].
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Target folder]</td> 
+   <td>[!UICONTROL Pasta de Destino]</td> 
    <td>Selecione a pasta na qual deseja fazer upload de um arquivo. </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source file]</td> 
+   <td>[!UICONTROL arquivo Source]</td> 
    <td>Selecione um arquivo de origem de um módulo anterior ou mapeie o nome e os dados do arquivo de origem.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Title]</td> 
+   <td>[!UICONTROL Título]</td> 
    <td>Insira um título para o novo arquivo.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Convert a file]</td> 
+   <td>[!UICONTROL Converter um arquivo]</td> 
    <td>Habilitar essa opção permite que o módulo converta arquivos no formato [!DNL Google] correspondente.</td> 
   </tr> 
  </tbody> 

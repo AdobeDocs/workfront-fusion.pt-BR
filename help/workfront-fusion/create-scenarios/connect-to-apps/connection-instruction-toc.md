@@ -4,7 +4,7 @@ description: Uma conexão deve atender aos requisitos definidos pela API do apli
 author: Becky
 feature: Workfront Fusion
 exl-id: 281403a6-6f88-4976-8a10-1d0848ef9b35
-source-git-commit: 362952ec85b0df2306ba117ba530e95201330cca
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Atual: nenhum requisito de licença do Workfront Fusion.</p>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion</p>
    <p>Ou</p>
    <p>Herdados: Qualquer um </p>
    </td> 
@@ -64,11 +64,11 @@ Na maioria dos casos, você pode usar o módulo para criar uma conexão com pouc
 
 Para obter instruções sobre como criar uma conexão sem considerações especiais, consulte [Criar uma conexão - Instruções básicas](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md).
 
-## Conectar-se a um aplicativo ou serviço Adobe
+## Conectar-se a um aplicativo ou serviço do Adobe
 
-Para se conectar a um aplicativo ou serviço Adobe, talvez você precise de informações da Adobe Admin Console, como a ID da organização ou a ID de conta técnica.
+Para se conectar a um aplicativo ou serviço da Adobe, talvez você precise de informações da Adobe Admin Console, como a ID da organização ou a ID de conta técnica.
 
-Você também pode usar o módulo Adobe Authenticator para se conectar a qualquer API de Adobe, usando uma única conexão. Isso permite que você se conecte mais facilmente a produtos Adobe que ainda não têm um conector Fusion dedicado.
+Você também pode usar o módulo Adobe Authenticator para se conectar a qualquer API do Adobe, usando uma única conexão. Isso permite que você se conecte mais facilmente a produtos da Adobe que ainda não têm um conector Fusion dedicado.
 
 Para obter instruções específicas, consulte [o artigo sobre o conector](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#connectors-for-adobe-products).
 

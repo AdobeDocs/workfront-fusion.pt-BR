@@ -4,9 +4,9 @@ description: Em um cenário  [!DNL Adobe Workfront Fusion] , é possível automa
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2668'
+source-wordcount: '3050'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Atual: nenhum requisito de licença do Workfront Fusion.</p>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion</p>
    <p>Ou</p>
    <p>Herdados: Automação e integração do Workfront Fusion for Work </p>
    </td> 
@@ -89,7 +89,7 @@ O conector do Workfront Proof usa o seguinte:
 
 Você pode criar uma conexão com sua conta do [!DNL Workfront Proof] diretamente de dentro de um módulo do [!DNL Workfront Fusion].
 
-1. Em qualquer módulo [!DNL Workfront Fusion], clique em [!UICONTROL **Adicionar**] ao lado do campo [!UICONTROL Connection]
+1. Em qualquer módulo [!DNL Workfront Fusion], clique em [!UICONTROL **Adicionar**] ao lado do campo [!UICONTROL Conexão]
 
 2. Preencha os seguintes campos:
 
@@ -99,36 +99,36 @@ Você pode criar uma conexão com sua conta do [!DNL Workfront Proof] diretament
         <tbody>
             <tr>
                 <td role="rowheader">
-                    <p role="rowheader">[!UICONTROL Connection name]</p>
+                    <p role="rowheader">[!UICONTROL Nome da Conexão]</p>
                 </td>
                 <td>Insira um nome para a conexão</td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL Environment]</td>
+                <td  role="rowheader">[!UICONTROL Ambiente]</td>
                 <td>Selecione se é um ambiente de Produção ou um ambiente de não produção, como Pré-visualização ou Sandbox.</td>
             </tr>
             <tr>
-                <td role="rowheader">[!UICONTROL Type]</td>
+                <td role="rowheader">[!UICONTROL Tipo]</td>
                 <td>Selecione se é uma Conta de serviço ou uma Conta pessoal.</td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL Email / Username]</td>
+                <td  role="rowheader">[!UICONTROL Email / Nome de Usuário]</td>
                 <td>Digite o nome de usuário para sua conta [!DNL Workfront Proof].</td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL Password]</td>
+                <td  role="rowheader">[!UICONTROL Senha]</td>
                 <td>Digite a senha da sua conta [!DNL Workfront Proof].</td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL Tenant ID]</td>
+                <td  role="rowheader">[!UICONTROL ID de Locatário]</td>
                 <td><strong>Observação</strong>: os clientes que não usam BYOK devem deixar este campo em branco. <p>Insira a ID do locatário para esta conta. Se precisar de ajuda para encontrar sua ID de locatário, entre em contato com o Suporte ao cliente da Workfront.</p></td>
             </tr>
             <tr>
-                <td role="rowheader">[!UICONTROL Domain Extension]</td>
+                <td role="rowheader">[!UICONTROL Extensão de Domínio]</td>
                 <td>Insira a extensão do URL que você usa para acessar sua conta. <p>Exemplo: <code>com</code> ou <code>eu</code></p></td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL Production, Preview, or Custom Environment]</td>
+                <td  role="rowheader">[!UICONTROL Produção, Visualização ou Ambiente Personalizado]</td>
                 <td>O ambiente de produção, pré-visualização ou personalizado ao qual você deseja se conectar.</td>
             </tr>
         </tbody>
@@ -151,17 +151,17 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 
 ### Acionadores
 
-* [Aguarde o resumo do PDF](#watch-for-pdf-summary)
-* [[!UICONTROL Watch Proof Activity]](#watch-proof-activity)
+* [Fique atento ao resumo do PDF](#watch-for-pdf-summary)
+* [[!UICONTROL Atividade Assistir Prova]](#watch-proof-activity)
 * [Assistir provas](#watch-proofs)
 
-#### [!UICONTROL Watch for PDF Summary]
+#### [!UICONTROL Atenção ao Resumo do PDF]
 
-Esse módulo de acionador instantâneo executa um cenário quando alguém cria um resumo de PDF para uma prova.
+Esse módulo de acionador instantâneo executa um cenário quando alguém cria um resumo do PDF para uma prova.
 
 Um webhook é necessário neste módulo.
 
-O módulo retorna todos os campos padrão associados à prova, juntamente com quaisquer campos e valores personalizados que a conexão acessa. Ele também cria uma nova assinatura de evento para resumos de PDF e gera o conteúdo do atributo `pdf_url` enviado na carga. Você pode mapear essas informações em módulos subsequentes no cenário.
+O módulo retorna todos os campos padrão associados à prova, juntamente com quaisquer campos e valores personalizados que a conexão acessa. Ele também cria uma nova assinatura de evento para resumos do PDF e gera o conteúdo do atributo `pdf_url` enviado na carga. Você pode mapear essas informações em módulos subsequentes no cenário.
 
 Ao configurar esse módulo, os campos a seguir são exibidos.
 
@@ -170,7 +170,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Webhook name]</td> 
+   <td>[!UICONTROL Nome do Webhook]</td> 
    <td>Insira ou mapeie um nome para o novo webhook</td> 
   </tr> 
   <tr> 
@@ -180,11 +180,11 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Proof Activity]
+#### [!UICONTROL Atividade Assistir Prova]
 
 Esse módulo de acionamento executa um cenário quando uma atividade especificada ocorre em uma prova de prova.
 
-O módulo retorna todos os campos padrão associados à prova, juntamente com quaisquer campos e valores personalizados que a conexão acessa. Ele também cria uma nova assinatura de evento para resumos de PDF e gera o conteúdo do atributo `pdf_url` enviado na carga. Você pode mapear essas informações em módulos subsequentes no cenário.
+O módulo retorna todos os campos padrão associados à prova, juntamente com quaisquer campos e valores personalizados que a conexão acessa. Ele também cria uma nova assinatura de evento para resumos do PDF e gera o conteúdo do atributo `pdf_url` enviado na carga. Você pode mapear essas informações em módulos subsequentes no cenário.
 
 Ao configurar esse módulo, os campos a seguir são exibidos.
 
@@ -197,17 +197,17 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Workfront Proof] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Activity type]</td> 
+   <td>[!UICONTROL Tipo de atividade]</td> 
    <td>Selecione se você deseja observar qualquer nova decisão (incluindo alterações do status da prova) ou somente alterações do status da prova geral.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Limit]</td> 
+   <td>[!UICONTROL Limite]</td> 
    <td>Insira ou mapeie o número máximo de registros que deseja que o módulo retorne durante cada ciclo de execução de cenário.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Proofs]
+#### [!UICONTROL Assistir Provas]
 
 Esse módulo de acionador agendado executa um cenário quando alguém cria ou toma uma decisão sobre uma prova.
 
@@ -224,7 +224,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Workfront Proof] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -244,15 +244,15 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
 
 ### Ações
 
-* [[!UICONTROL Create Proof]](#create-proof)
-* [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Download Proof]](#download-proof)
-* [[!UICONTROL Read a Record]](#read-a-record)
-* [[!UICONTROL Request PDF Summary]](#request-pdf-summary)
-* [[!UICONTROL Update Proof]](#update-proof)
-* [[!UICONTROL Upload File]](#upload-file)
+* [[!UICONTROL Criar prova]](#create-proof)
+* [[!UICONTROL Chamada de API personalizada]](#custom-api-call)
+* [[!UICONTROL Baixar Prova]](#download-proof)
+* [[!UICONTROL Ler um Registro]](#read-a-record)
+* [[!UICONTROL Solicitar Resumo do PDF]](#request-pdf-summary)
+* [[!UICONTROL Atualizar Prova]](#update-proof)
+* [[!UICONTROL Carregar arquivo]](#upload-file)
 
-#### [!UICONTROL Create Proof]
+#### [!UICONTROL Criar prova]
 
 <!--Cannot test Jan 2025-->
 
@@ -273,35 +273,35 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Workfront Proof] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Proof Type]</td> 
-   <td> <p>Especifique se a prova criada deve ter um fluxo de trabalho básico ou um [!UICONTROL Automated Workflow].</p> <p>Em seguida, preencha os campos exibidos para o tipo de prova escolhido. Por exemplo, se você escolher [!UICONTROL Automated Workflow], preencha o campo <strong>[!UICONTROL Workflow Stages]</strong> para configurar os estágios.</p></td> 
+   <td>[!UICONTROL Tipo de Prova]</td> 
+   <td> <p>Especifique se deseja que a prova criada tenha um fluxo de trabalho básico ou um [!UICONTROL Fluxo de trabalho automatizado].</p> <p>Em seguida, preencha os campos exibidos para o tipo de prova escolhido. Por exemplo, se você escolher [!UICONTROL Fluxo de Trabalho Automatizado], preencha o campo <strong>[!UICONTROL Fases de Fluxo de Trabalho]</strong> para configurar as etapas.</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Allow original file to be downloaded]</td> 
+   <td>[!UICONTROL Permitir o download do arquivo original]</td> 
    <td>Selecione se deseja permitir que o arquivo original, do qual a prova foi criada, seja baixado.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Classic Proof Viewer]</td> 
+   <td>[!UICONTROL Visualizador Clássico de Prova]</td> 
    <td>Selecione se você está usando o Visualizador de prova clássico.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Combine all files into single proof]</td> 
+   <td>[!UICONTROL Combinar todos os arquivos em uma única prova]</td> 
    <td>Habilite essa opção para combinar todos os arquivos em uma única prova de várias páginas.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Create a new proof version]</td> 
-   <td>Selecione esta opção se desejar que o módulo crie uma nova versão de uma prova existente. Em seguida, no campo <strong>[!UICONTROL Existing Proof ID]</strong> que é exibido, mapeie ou insira o identificador exclusivo da prova.</td> 
+   <td>[!UICONTROL Criar uma nova versão de prova]</td> 
+   <td>Selecione esta opção se desejar que o módulo crie uma nova versão de uma prova existente. Em seguida, no campo <strong>[!UICONTROL ID de Prova Existente]</strong> que é exibido, mapeie ou insira o ID exclusivo da prova.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Custom Link Label]</td> 
+   <td>[!UICONTROL Rótulo de Link Personalizado]</td> 
    <td>Insira ou mapeie um rótulo para o link de prova personalizado.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Custom Link URL]</td> 
+   <td>[!UICONTROL URL de Link Personalizado]</td> 
    <td>Insira ou mapeie o URL do link personalizado.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Default email notifications for subscribers]</td> 
+   <td>[!UICONTROL Notificações de email padrão para assinantes]</td> 
    <td>Digite um dos números a seguir para indicar qual das seguintes configurações de notificação por email padrão você deseja usar para a prova que foi criada.
     <ul>
      <li><strong>1</strong> - Todos os novos comentários e respostas</li>
@@ -313,79 +313,79 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
     </ul></td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Disable Excel Summary]</td> 
+   <td>[!UICONTROL Desabilitar Resumo do Excel]</td> 
    <td>Selecione se você deseja desativar a capacidade de baixar comentários de prova para um arquivo do Excel.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Disable PDF Summary]</td> 
-   <td>Selecione se deseja desativar a capacidade de baixar comentários de prova para um arquivo PDF.</td> 
+   <td>[!UICONTROL Desabilitar Resumo do PDF]</td> 
+   <td>Selecione se você deseja desativar a capacidade de baixar comentários de prova em um arquivo do PDF.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Disable Subscription Email]</td> 
+   <td>[!UICONTROL Desabilitar Email de Assinatura]</td> 
    <td>Selecione se deseja desabilitar o email de assinatura para esta prova.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Enable Embed Player]</td> 
+   <td>[!UICONTROL Habilitar Reprodutor Incorporado]</td> 
    <td>Selecione se deseja ativar o reprodutor incorporado para esta prova.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Enable Subscriptions]</td> 
+   <td>[!UICONTROL Habilitar Assinaturas]</td> 
    <td>Selecione se as pessoas que não são participantes têm permissão para assinar a prova.<br>Se você selecionar esta opção, também poderá selecionar a Função Padrão para assinantes, conforme descrito nesta tabela.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Enable Subscriptions Validation]</td> 
+   <td>[!UICONTROL Habilitar Validação de Assinaturas]</td> 
    <td>Selecione se deseja habilitar a validação de email de assinatura. Se isso estiver ativado, o assinante deve clicar em um link em um email para acessar uma prova.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Enable Team URL]</td> 
+   <td>[!UICONTROL Habilitar URL da Equipe]</td> 
    <td>Selecione se deseja que a prova criada oculte ou mostre o URL da equipe.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL File Hash] <span style="font-weight: normal;">ou</span> [!UICONTROL File Hashes]</td> 
+   <td>[!UICONTROL Hash do Arquivo] <span style="font-weight: normal;">ou</span> [!UICONTROL Hashes do Arquivo]</td> 
    <td>Adicione a ID do arquivo ou arquivos a partir dos quais deseja criar uma prova ou provas.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL File Names]</td> 
+   <td>[!UICONTROL Nomes de Arquivos]</td> 
    <td>Adicione o nome do arquivo ou nomes para a prova criada. Este campo é obrigatório.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Lock proof when all required decisions are made]</td> 
+   <td>[!UICONTROL Bloquear prova quando todas as decisões necessárias forem tomadas]</td> 
    <td>Especifique se deseja que a prova criada seja bloqueada depois que todas as decisões necessárias forem tomadas.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Notify recipients about this proof]</td> 
+   <td>[!UICONTROL Notificar recipients sobre esta prova]</td> 
    <td>Selecione uma opção para indicar se deseja que os recipients sejam notificados quando a prova for criada.&gt;</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Proof name]</td> 
+   <td>[!UICONTROL Nome da prova]</td> 
    <td>Digite um nome para a prova criada. Este campo é obrigatório. Use um símbolo de barra vertical (|) para separar nomes para várias provas.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Proof owner ID]</td> 
+   <td>[!UICONTROL ID do proprietário da prova]</td> 
    <td>Insira ou mapeie a ID do proprietário da prova. Se esse campo ficar em branco, o proprietário da prova será definido como o usuário atual.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Reference ID]</td> 
+   <td>[!UICONTROL ID de Referência]</td> 
    <td>Insira a ID de referência da prova.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Require electronic signature]</td> 
+   <td>[!UICONTROL Requer assinatura eletrônica]</td> 
    <td>Selecione se você deseja que uma pessoa que toma uma decisão sobre uma prova envie uma assinatura eletrônica.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Require login]</td> 
+   <td>[!UICONTROL Exigir logon]</td> 
    <td> <p>Especifique se deseja que a prova criada exija um logon. </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Resolution ID]</td> 
+   <td>[!UICONTROL ID de Resolução]</td> 
    <td>Insira a ID da resolução que deseja usar para a prova. Para obter uma lista de IDs de resolução, consulte a [!DNL Workfront Proof] <a href="https://api.proofhq.com/home/objects/soapworkflowproofobject.html">documentação da API</a>.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL SWF]</td> 
-   <td>Insira o tipo de prova de SWF.</td> 
+   <td>Insira o tipo de prova do SWF.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Show] [item]</td> 
+   <td>[!UICONTROL Mostrar] [item]</td> 
    <td>Para cada item, selecione se deseja mostrá-lo na prova.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -393,11 +393,11 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
    <td>Digite a ID do espaço de trabalho no qual deseja criar a prova. </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Recipients]</td> 
+   <td>[!UICONTROL Destinatários]</td> 
    <td>Adicione os endereços de email dos destinatários que deseja para a prova criada.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Deadline]</td> 
+   <td>[!UICONTROL Prazo]</td> 
    <td> <p>Especifique o prazo desejado para a prova criada. Use o seguinte formato de data:</p> <p><code>YYYY-MM-DD hh:mm</code></p> </td> 
   </tr> 
  </tbody> 
@@ -405,7 +405,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
 
 
 
-#### [!UICONTROL Custom API Call]
+#### [!UICONTROL Chamada de API personalizada]
 
 Este módulo de ação permite fazer uma chamada autenticada personalizada para a API [!DNL Workfront Proof]. Dessa forma, você pode criar uma automação de fluxo de dados que não pode ser realizada pelos outros módulos do [!DNL Workfront Proof].
 
@@ -422,11 +422,11 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Workfront Proof] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Method]</td> 
+   <td>[!UICONTROL Método]</td> 
    <td>Defina a ação para a chamada de API. Para ver as ações disponíveis, consulte a <a href="https://api.proofhq.com/">documentação da API de prova</a>.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Body (XML)]</td> 
+   <td>[!UICONTROL Corpo (XML)]</td> 
    <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Nota:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
@@ -441,7 +441,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
 >
 >![Exemplo de módulo de API de prova](/help/workfront-fusion/references/apps-and-modules/assets/wfp-api-module-example-350x586.png)
 
-#### [!UICONTROL Download Proof]
+#### [!UICONTROL Baixar Prova]
 
 Esse módulo de ação baixa o arquivo de origem de uma prova específica que você identifica usando sua ID.
 
@@ -462,13 +462,13 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Workfront Proof] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>Digite o identificador exclusivo da prova, encontrado na página [!UICONTROL Proof Details].  </td> 
+   <td>[!UICONTROL ID da Prova]</td> 
+   <td> <p>Digite o identificador exclusivo da prova, encontrado na página [!UICONTROL Detalhes da Prova].  </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Read a Record]
+#### [!UICONTROL Ler um Registro]
 
 Este módulo de ação lê os dados de uma única prova no [!DNL Workfront Proof].
 
@@ -489,11 +489,11 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Workfront Proof] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Record Type]</td> 
+   <td>[!UICONTROL Tipo de Registro]</td> 
    <td>Selecione se deseja ler uma prova, comentários de prova ou revisores de prova.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Outputs]</td> 
+   <td>[!UICONTROL Saídas]</td> 
    <td> <p>Selecione as informações que deseja incluir no pacote de saída deste módulo.</p> </td> 
   </tr> 
   <tr> 
@@ -503,9 +503,9 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  </tbody> 
 </table>
 
-#### [!UICONTROL Request PDF Summary]
+#### [!UICONTROL Solicitar Resumo do PDF]
 
-Este módulo de ação solicita o resumo de PDF para uma prova específica em [!DNL Workfront Proof].
+Este módulo de ação solicita o resumo do PDF para uma prova específica em [!DNL Workfront Proof].
 
 Especifique a ID da prova.
 
@@ -524,11 +524,11 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Workfront Proof] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>Digite o identificador exclusivo [!DNL Workfront Proof] da prova para a qual você deseja solicitar um resumo de PDF.</p> </td> 
+   <td>[!UICONTROL ID da Prova]</td> 
+   <td> <p>Insira a ID [!DNL Workfront Proof] exclusiva da prova para a qual você deseja solicitar um resumo do PDF.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Callback URL]</td> 
+   <td>[!UICONTROL URL de retorno]</td> 
    <td>Insira ou mapeie o URL para onde deseja que o resumo do PDF seja enviado.</td> 
   </tr> 
  </tbody> 
@@ -536,10 +536,10 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
 
 ##### Possível erro
 
-* **Erro**: &quot;[!UICONTROL You do not have privilege to perform this request. The stage must contain at least one recipient.]&quot;
+* **Erro**: &quot;[!UICONTROL Você não tem privilégio para executar esta solicitação. O estágio deve conter pelo menos um destinatário.]&quot;
 * **Solução**: verifique se você não é o único atribuído aos estágios do fluxo de trabalho. Deve haver outro usuário atribuído aos estágios do fluxo de trabalho.
 
-#### [!UICONTROL Update Proof]
+#### [!UICONTROL Atualizar Prova]
 
 Este módulo de ação atualiza uma prova existente no [!DNL Workfront Proof].
 
@@ -560,79 +560,79 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Workfront Proof] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>Digite o identificador exclusivo da prova, encontrado na página [!UICONTROL Proof Details]. </td> 
+   <td>[!UICONTROL ID da Prova]</td> 
+   <td> <p>Digite o identificador exclusivo da prova, encontrado na página [!UICONTROL Detalhes da Prova]. </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Deadline]</td> 
+   <td>[!UICONTROL Prazo]</td> 
    <td> <p>Especifique o prazo desejado para a prova criada. Use o formato de data <code>YYYY-MM-DD hh:mm</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Default email notifications for subscribers]</td> 
+   <td>[!UICONTROL Notificações de email padrão para assinantes]</td> 
    <td>Selecione qual das seguintes configurações de notificação por email padrão você deseja usar para a prova criada.
     <ul>
-     <li> [!UICONTROL All new comments and replies]</li>
-     <li>[!UICONTROL Replies to my comments]</li>
-     <li>[!UICONTROL Daily summary]</li>
-     <li> [!UICONTROL Hourly summary]</li>
-     <li> [!UICONTROL Decisions only]</li>
-     <li> [!UICONTROL Disabled]</li>
+     <li> [!UICONTROL Todos os novos comentários e respostas]</li>
+     <li>[!UICONTROL Respostas aos meus comentários]</li>
+     <li>[!UICONTROL Resumo diário]</li>
+     <li> [!UICONTROL Resumo por hora]</li>
+     <li> [!UICONTROL Somente Decisões]</li>
+     <li> [!UICONTROL Desabilitado]</li>
     </ul></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Default Role]</td> 
+   <td>[!UICONTROL Função Padrão]</td> 
    <td>Selecione a função padrão para a prova.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Disable Subscription Email]</td> 
+   <td>[!UICONTROL Desabilitar Email de Assinatura]</td> 
    <td>Selecione se deseja desabilitar o email de assinatura para esta prova.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Enable Subscriptions]</td> 
-   <td>Selecione se as pessoas que não são participantes têm permissão para assinar a prova.<br>Se você selecionar esta opção, também poderá selecionar uma opção no campo [!UICONTROL Default Role].</td> 
+   <td>[!UICONTROL Habilitar Assinaturas]</td> 
+   <td>Selecione se as pessoas que não são participantes têm permissão para assinar a prova.<br>Se você selecionar esta opção, também poderá selecionar uma opção no campo [!UICONTROL Função Padrão].</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Enable Subscriptions Validation]</td> 
+   <td>[!UICONTROL Habilitar Validação de Assinaturas]</td> 
    <td>Selecione se deseja habilitar a validação de email de assinatura. Se isso estiver ativado, o assinante deve clicar em um link em um email para acessar uma prova.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Enable Team URL]</td> 
+   <td>[!UICONTROL Habilitar URL da Equipe]</td> 
    <td>Selecione se deseja que a prova criada oculte ou mostre o URL da equipe.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Lock proof when all required decisions are made]</td> 
+   <td>[!UICONTROL Bloquear prova quando todas as decisões necessárias forem tomadas]</td> 
    <td>Especifique se deseja que a prova criada seja bloqueada depois que todas as decisões necessárias forem tomadas.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Message]</td> 
+   <td>[!UICONTROL Mensagem]</td> 
    <td>Insira ou mapeie uma mensagem que você deseja acompanhar a prova.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Proof ID] </td> 
+   <td>[!UICONTROL ID da Prova] </td> 
    <td>Insira ou mapeie a ID da prova que deseja atualizar.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Proof Name]</td> 
+   <td>[!UICONTROL Nome da Prova]</td> 
    <td>Insira ou mapeie o nome da prova que deseja atualizar.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Require login]</td> 
+   <td>[!UICONTROL Exigir logon]</td> 
    <td> <p>Especifique se deseja que a prova criada exija um logon. </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Show Versions Like]</td> 
+   <td>[!UICONTROL Mostrar Versões Como]</td> 
    <td>Selecione se deseja mostrar um link para outras versões desta prova.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Subject]</td> 
+   <td>[!UICONTROL Assunto]</td> 
    <td>Insira ou mapeie o assunto da prova</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload File]
+#### [!UICONTROL Carregar arquivo]
 
-Este módulo de ação carrega um arquivo para ser usado com o módulo [!UICONTROL Create Proof] em [!DNL Workfront Proof].
+Este módulo de ação carrega um arquivo para usar com o módulo [!UICONTROL Criar Prova] em [!DNL Workfront Proof].
 
 O módulo retorna uma ID de hash para o arquivo carregado. Você pode mapear essas informações em módulos subsequentes no cenário.
 
@@ -647,7 +647,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Workfront Proof] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source file]</td> 
+   <td>[!UICONTROL arquivo Source]</td> 
    <td> <p>Selecione um arquivo de origem de um módulo anterior ou mapeie o nome e os dados do arquivo de origem.</p> </td> 
   </tr> 
  </tbody> 
@@ -655,10 +655,10 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
 
 ### Pesquisas
 
-* [[!UICONTROL List Workflow Templates]](#list-workflow-templates)
-* [[!UICONTROL Search]](#search)
+* [[!UICONTROL Listar Modelos de Fluxo de Trabalho]](#list-workflow-templates)
+* [[!UICONTROL Pesquisa]](#search)
 
-#### [!UICONTROL List Workflow Templates]
+#### [!UICONTROL Listar Modelos de Fluxo de Trabalho]
 
 Este módulo de pesquisa lista todos os templates de workflow disponíveis.
 
@@ -671,17 +671,17 @@ Este módulo de pesquisa lista todos os templates de workflow disponíveis.
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Workfront Proof] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Outputs]</td> 
+   <td>[!UICONTROL Saídas]</td> 
    <td> <p>Selecione as informações que deseja incluir no pacote de saída deste módulo.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Limit]</td> 
+   <td>[!UICONTROL Limite]</td> 
    <td> <p>Insira ou mapeie o número máximo de modelos que você deseja que o módulo retorne durante cada ciclo de execução de cenário.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Search]
+#### [!UICONTROL Pesquisa]
 
 Este módulo de pesquisa procura registros em um objeto em [!DNL Workfront Proof] que correspondam à consulta de pesquisa especificada.
 
@@ -700,23 +700,23 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Workfront Proof] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Search for]</td> 
+   <td>[!UICONTROL Pesquisar por]</td> 
    <td> <p>Selecione o tipo de registro que deseja que o módulo procure.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Proof]</strong> </p> <p>Digite o nome da prova da prova que você deseja pesquisar.</p> </li> 
-     <li> <p><strong>[!UICONTROL Recipient]</strong> </p> <p>Insira o endereço de email do destinatário que deseja pesquisar.</p> </li> 
+     <li> <p><strong>[!UICONTROL Prova]</strong> </p> <p>Digite o nome da prova da prova que você deseja pesquisar.</p> </li> 
+     <li> <p><strong>[!UICONTROL Destinatário]</strong> </p> <p>Insira o endereço de email do destinatário que deseja pesquisar.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Result Set]</td> 
-   <td>Indique se o módulo pesquisará por <strong>[!UICONTROL All Matching Records]</strong> ou somente <strong>[!UICONTROL First Matching Record]</strong>.</td> 
+   <td>[!UICONTROL Conjunto de Resultados]</td> 
+   <td>Indique se o módulo pesquisará por <strong>[!UICONTROL Todos os Registros Correspondentes]</strong> ou somente por <strong>[!UICONTROL Primeiro Registro Correspondente]</strong>.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Sort By]</td> 
+   <td>[!UICONTROL Classificar por]</td> 
    <td>Selecione o campo pelo qual deseja classificar os resultados.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Sorting Direction]</td> 
+   <td>[!UICONTROL Direção de Classificação]</td> 
    <td> <p>Selecione se deseja classificar os resultados em ordem crescente ou decrescente.</p> </td> 
   </tr> 
  </tbody> 

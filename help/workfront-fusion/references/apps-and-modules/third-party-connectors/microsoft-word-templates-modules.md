@@ -4,9 +4,9 @@ description: Em um cenário do Adobe Workfront Fusion, é possível automatizar 
 author: Becky
 feature: Workfront Fusion
 exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Atual: nenhum requisito de licença do Workfront Fusion.</p>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion</p>
    <p>Ou</p>
    <p>Herdados: Automação e integração do Workfront Fusion for Work </p>
    </td> 
@@ -100,7 +100,7 @@ Um modelo [!DNL Microsoft Word] é um documento [!DNL Microsoft Word] comum (arq
 
 ### Marca de valor simples {#simple-value-tag}
 
-Uma tag de valor simples é simplesmente substituída por um valor correspondente. O nome da marca corresponde ao valor do campo [!UICONTROL Key], que é colocado dentro de chaves duplas; por exemplo, `{{name}}`.
+Uma tag de valor simples é simplesmente substituída por um valor correspondente. O nome da marca corresponde ao valor do campo [!UICONTROL Chave], que é colocado dentro de chaves duplas; por exemplo, `{{name}}`.
 
 **Exemplo:** Para criar um documento que diga &quot;Olá, Petr!&quot;, você pode usar um módulo [!DNL Microsoft Word Template] para criar o seguinte modelo:
 
@@ -164,7 +164,7 @@ Esses módulos não exigem uma conexão.
 * [Preencher um documento](#fill-out-a-document)
 * [Preencher um documento com um lote de dados](#fill-a-document-with-a-batch-of-data)
 
-### [!UICONTROL Fill out a document] {#fill-out-a-document}
+### [!UICONTROL Preencher um documento] {#fill-out-a-document}
 
 Esse módulo de transformador permite preencher um documento com os dados especificados. Ele pode ser usado com tags de valores simples, tags condicionais ou tags de loop.
 
@@ -173,27 +173,27 @@ Esse módulo de transformador permite preencher um documento com os dados especi
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Start delimiter of the text being replaced]</td> 
+   <td role="rowheader">[!UICONTROL Delimitador de início do texto que está sendo substituído]</td> 
    <td> <p>Insira o(s) caractere(s) que deseja marcar o início do texto que será substituído. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemplo: </b></span></span>Insira <code>&#91;&#91;</code> para substituir <code>[[replace_me]]</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL End delimiter of the text being replaced]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Delimitador de fim do texto que está sendo substituído]</p> </td> 
    <td> <p>Insira o(s) caractere(s) que deseja marcar o final do texto que será substituído. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemplo: </b></span></span>Digite <code>&#93;&#93;</code> para substituir <code>[[replace_me]]</code></p>. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td role="rowheader">[!UICONTROL arquivo Source]</td> 
    <td> <p> Selecione um arquivo de origem de um módulo anterior ou mapeie os dados do arquivo de origem.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Name of filled out file]</td> 
+   <td role="rowheader">[!UICONTROL Nome do arquivo preenchido]</td> 
    <td>Insira um nome de arquivo (incluindo a extensão) para o arquivo de saída de destino.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Data source]</td> 
+   <td role="rowheader">[!UICONTROL Fonte de Dados]</td> 
    <td> <p>Selecione uma opção para indicar se os dados que você está usando são de um formulário ou de uma coleção de dados brutos (dados não processados do computador).</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Values]</td> 
+   <td role="rowheader">[!UICONTROL Valores]</td> 
    <td> <p>Deve ser uma matriz de coleções, em que:</p> 
     <ul> 
      <li>Cada coleção corresponde a uma entrada de dados e contém um item <code>entry</code></li> 
@@ -203,7 +203,7 @@ Esse módulo de transformador permite preencher um documento com os dados especi
     </ul> 
     <p>Para adicionar uma entrada:</p>
     <ol> 
-     <li> Clique em <b>[!UICONTROL Add Item]</b>. </li> 
+     <li> Clique em <b>[!UICONTROL Adicionar Item]</b>. </li> 
      <li>Selecione o tipo de valor da entrada.</li> 
      <li>Adicione o nome e o valor. Para obter mais informações, consulte o exemplo do tipo de valor escolhido neste artigo. 
       <ul> 
@@ -216,7 +216,7 @@ Esse módulo de transformador permite preencher um documento com os dados especi
  </tbody> 
 </table>
 
-### [!UICONTROL Fill a document with a batch of data] {#fill-a-document-with-a-batch-of-data}
+### [!UICONTROL Preencher um documento com um lote de dados] {#fill-a-document-with-a-batch-of-data}
 
 Esse módulo agregador é útil se suas entradas de dados vêm como pacotes separados. Com esse módulo, você pode configurar facilmente a estrutura necessária para o campo Valor e mapear itens para cada item de valor. Ao contrário do módulo Preencher um documento, o campo Valores do módulo Preencher um documento com um lote de dados permite apenas uma única entrada contendo variáveis.
 
@@ -231,35 +231,35 @@ Esse módulo agregador é especialmente útil para criar listas ou relatórios.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source Module]</td> 
+   <td role="rowheader">[!UICONTROL Módulo Source]</td> 
    <td>Selecione o módulo que é a fonte do seu texto.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Start delimiter of the text being replaced]</td> 
+   <td role="rowheader">[!UICONTROL Delimitador de início do texto que está sendo substituído]</td> 
    <td> <p>Insira o(s) caractere(s) que deseja marcar o início do texto que será substituído. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemplo: </b></span></span>Insira <code>&#91;&#91;</code> para substituir <code>[[replace_me]]</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL End delimiter of the text being replaced]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Delimitador de fim do texto que está sendo substituído]</p> </td> 
    <td> <p>Insira o(s) caractere(s) que deseja marcar o final do texto que será substituído. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemplo: </b></span></span>Insira <code>&#93;&#93;</code> para substituir <code>[[replace_me]]</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Group by]</td> 
+   <td role="rowheader">[!UICONTROL Agrupar por]</td> 
    <td> Defina uma expressão contendo um ou mais itens mapeados. Os dados agregados são separados em Grupos com o mesmo valor de expressão. Cada Grupo gera um pacote separado contendo uma Chave com a expressão avaliada e o texto agregado. Ao fazer isso, você pode usar a chave como um filtro nos módulos subsequentes.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Stop processing after an empty aggregation]</td> 
+   <td role="rowheader">[!UICONTROL Parar processamento após uma agregação vazia]</td> 
    <td>Habilite esta opção para parar o processamento quando uma agregação não contiver pacotes.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td role="rowheader">[!UICONTROL arquivo Source]</td> 
    <td> <p> Selecione um arquivo de origem de um módulo anterior ou mapeie os dados do arquivo de origem.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Name of filled out file]</td> 
+   <td role="rowheader">[!UICONTROL Nome do arquivo preenchido]</td> 
    <td>Insira um nome de arquivo (incluindo a extensão) para o arquivo de saída de destino.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Values]</td> 
+   <td role="rowheader">[!UICONTROL Valores]</td> 
    <td> <p>Deve ser uma matriz de coleções, em que:</p> 
     <ul> 
      <li>Cada coleção corresponde a uma entrada de dados e contém um item <code>entry</code></li> 
@@ -269,7 +269,7 @@ Esse módulo agregador é especialmente útil para criar listas ou relatórios.
     </ul> 
     <p>Para adicionar uma entrada:</p>
     <ol> 
-     <li> Clique em <b>[!UICONTROL Add Item]</b>. </li> 
+     <li> Clique em <b>[!UICONTROL Adicionar Item]</b>. </li> 
      <li>Selecione o tipo de valor da entrada.</li> 
      <li>Adicione o nome e o valor. Para obter mais informações, consulte o exemplo do tipo de valor escolhido neste artigo. 
       <ul> 

@@ -4,9 +4,9 @@ description: Se um serviço Web não tiver um conector dedicado no Workfront Fus
 author: Becky
 feature: Workfront Fusion
 exl-id: 51ef13fb-2978-4927-8d5f-7d83995f11e0
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '373'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Atual: nenhum requisito de licença do Workfront Fusion.</p>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion</p>
    <p>Ou</p>
    <p>Herdados: Qualquer um </p>
    </td> 
@@ -60,7 +60,7 @@ Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [li
 
 ## Receber um webhook
 
-1. Clique na guia **[!UICONTROL Scenarios]** no painel esquerdo.
+1. Clique na guia **[!UICONTROL Cenários]** no painel esquerdo.
 1. Selecione o cenário em que deseja adicionar um webhook.
 1. Clique em qualquer lugar no cenário para entrar no editor de cenários.
 1. Adicione o módulo **Webhooks > Webhook personalizado** para iniciar o cenário.

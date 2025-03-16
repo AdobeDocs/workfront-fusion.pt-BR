@@ -4,10 +4,10 @@ description: Em um cenário  [!DNL Adobe Workfront Fusion] , você pode automati
 author: Becky
 feature: Workfront Fusion
 exl-id: 16ae173b-10ce-481d-8f6c-1df0e65f7c0e
-source-git-commit: c377a24c2daeb25effffb28d9912d8c27ad0a08d
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1623'
-ht-degree: 1%
+source-wordcount: '1810'
+ht-degree: 0%
 
 ---
 
@@ -46,7 +46,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Atual: nenhum requisito de licença do Workfront Fusion.</p>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion</p>
    <p>Ou</p>
    <p>Herdados: Automação e integração do Workfront Fusion for Work </p>
    </td> 
@@ -82,7 +82,7 @@ Você pode criar uma conexão com sua conta do [!DNL Microsoft Dynamics 365] dir
 >
 >Por exemplo, se um usuário tiver permissões de &quot;Tabela de leitura&quot; concedidas por meio do conector do Excel e criar uma conexão no conector do Outlook para ler emails, a tela de consentimento de permissões mostrará a permissão &quot;Tabela de leitura&quot; já concedida e a permissão &quot;Gravar email&quot; recém-necessária.
 
-1. Em qualquer módulo [!DNL Microsoft Dynamics 365], clique em **[!UICONTROL Add]** ao lado do campo [!UICONTROL Connection].
+1. Em qualquer módulo [!DNL Microsoft Dynamics 365], clique em **[!UICONTROL Adicionar]** ao lado do campo [!UICONTROL Conexão].
 
 
 1. Preencha os seguintes campos:
@@ -94,38 +94,38 @@ Você pode criar uma conexão com sua conta do [!DNL Microsoft Dynamics 365] dir
       </col>
       <tbody>
         <tr>
-          <td role="rowheader">[!UICONTROL Connection name]</td>
+          <td role="rowheader">[!UICONTROL Nome da Conexão]</td>
           <td>
             <p>Insira um nome para esta conexão.</p>
           </td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Environment]</td>
+          <td role="rowheader">[!UICONTROL Ambiente]</td>
           <td>Selecione se você está se conectando a um ambiente de produção ou não produção.</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Type]</td>
+          <td role="rowheader">[!UICONTROL Tipo]</td>
           <td>Selecione se você deseja se conectar a uma conta de serviço ou a uma conta pessoal.</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Client ID]<p>(Opcional)</p></td>
-          <td>Insira seu [!DNL Microsoft Dynamics] [!UICONTROL Client ID].</td>
+          <td role="rowheader">[!UICONTROL ID do Cliente]<p>(Opcional)</p></td>
+          <td>Insira sua [!DNL Microsoft Dynamics] [!UICONTROL ID do Cliente].</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Client Secret]<p>(Opcional)</p></td>
-          <td>Insira seu [!DNL Microsoft Dynamics] [!UICONTROL Client Secret].
+          <td role="rowheader">[!UICONTROL Segredo do Cliente]<p>(Opcional)</p></td>
+          <td>Insira seu [!DNL Microsoft Dynamics] [!UICONTROL Segredo do Cliente].
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Authentication URL]</td>
+          <td role="rowheader">[!UICONTROL URL de Autenticação]</td>
           <td>Insira o URL que sua instância do Workfront usará para autenticar essa conexão. <p>O valor padrão é <code>https://oauth.my.workfront.com/integrations/oauth2</code>.</p>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Resource]</td>
+          <td role="rowheader">[!UICONTROL Recurso]</td>
           <td>digite o endereço da sua conta [!DNL Dynamics 365], sem <code>>https://</code>.</p>
         </tr>
       </tbody>
     </table>
-1. Clique em **[!UICONTROL Continue]** para criar a conexão e voltar para o módulo.
+1. Clique em **[!UICONTROL Continuar]** para criar a conexão e voltar para o módulo.
 
 >[!NOTE]
 >
@@ -148,10 +148,10 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 
 ### Acionadores
 
-* [[!UICONTROL Watch Records (Real Time)]](#watch-records-real-time)
-* [[!UICONTROL Watch Records (Scheduled)]](#watch-records-scheduled)
+* [[!UICONTROL Registros de Inspeção (Tempo Real)]](#watch-records-real-time)
+* [[!UICONTROL Registros de Inspeção (Agendados)]](#watch-records-scheduled)
 
-#### [!UICONTROL Watch Records (Real Time)]
+#### [!UICONTROL Registros de Inspeção (Tempo Real)]
 
 Esse módulo de acionador instantâneo executa um cenário quando um registro (objeto) especificado é criado ou atualizado em [!DNL Dynamics 365].
 
@@ -165,16 +165,16 @@ Um webhook é necessário neste módulo.
    <td role="rowheader">[!UICONTROL Webhook]</td> 
    <td> <p>Selecione o webhook que deseja usar para este módulo. </p> <p>Para adicionar um novo webhook:</p> 
     <ol> 
-     <li value="1"> <p>Clique em <strong>[!UICONTROL Add]</strong> à direita do campo Webhook</p> </li> 
+     <li value="1"> <p>Clique em <strong>[!UICONTROL Adicionar]</strong> à direita do campo Webhook</p> </li> 
      <li value="2"> <p>No campo de nome <strong>[!UICONTROL Webhook]</strong>, digite um nome descritivo para o webhook.</p> </li> 
-     <li value="3"> <p>No campo <strong>[!UICONTROL Connection]</strong>, selecione a Conexão que deseja usar selecionada</p> <p>Para obter instruções sobre como conectar sua conta do [!DNL Microsoft Dynamics 365] ao [!DNL Workfront Fusion], consulte <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Microsoft Dynamics 365] ao [!DNL Workfront Fusion]</a> neste artigo. </p> </li> 
-     <li value="4"> <p>Clique em <strong>[!UICONTROL Save]</strong> para salvar seu webhook e retornar ao módulo.</p> </li> 
+     <li value="3"> <p>No campo <strong>[!UICONTROL Conexão]</strong>, selecione a Conexão que deseja usar selecionada</p> <p>Para obter instruções sobre como conectar sua conta do [!DNL Microsoft Dynamics 365] ao [!DNL Workfront Fusion], consulte <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Microsoft Dynamics 365] ao [!DNL Workfront Fusion]</a> neste artigo. </p> </li> 
+     <li value="4"> <p>Clique em <strong>[!UICONTROL Salvar]</strong> para salvar seu webhook e retornar ao módulo.</p> </li> 
     </ol> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Records (Scheduled)]
+#### [!UICONTROL Registros de Inspeção (Agendados)]
 
 Esse módulo de acionador agendado executa um cenário quando um registro no objeto especificado é criado ou atualizado após a última execução agendada desse cenário.
 
@@ -189,23 +189,23 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> "
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Microsoft Dynamics 365] ao [!DNL Workfront Fusion], consulte <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Microsoft Dynamics 365] ao [!DNL Workfront Fusion]</a> neste artigo. </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Include]</td> 
-   <td>Selecione se deseja que o módulo assista <strong>[!UICONTROL New Records Only]</strong>, <strong>[!UICONTROL Updated Records Only]</strong> ou <strong>[!UICONTROL New and Updated Records]</strong>.</td> 
+   <td role="rowheader">[!UICONTROL Incluir]</td> 
+   <td>Selecione se deseja que o módulo assista <strong>[!UICONTROL Somente Novos Registros]</strong>, <strong>[!UICONTROL Somente Registros Atualizados]</strong> ou <strong>[!UICONTROL Registros Novos e Atualizados]</strong>.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Entity Type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo de Entidade]</td> 
    <td>Escolha o tipo de registro [!UICONTROL Microsoft Dynamics 365] que você deseja que o cenário assista.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
+   <td role="rowheader">[!UICONTROL Saídas]</td> 
    <td> <p>Selecione as informações que deseja incluir no pacote de saída deste módulo. Os campos estão disponíveis com base no tipo de entidade selecionado.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Max Records]</td> 
+   <td role="rowheader">[!UICONTROL Máximo de Registros]</td> 
    <td> <p>Insira ou mapeie o número máximo de registros que deseja que o módulo retorne durante cada ciclo de execução de cenário.</p> </td> 
   </tr> 
  </tbody> 
@@ -213,14 +213,14 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
 
 ### Ações
 
-* [[!UICONTROL Create Record]](#create-record)
-* [[!UICONTROL Make an API Call]](#make-an-api-call)
-* [[!UICONTROL Delete Record]](#delete-record)
-* [[!UICONTROL Read Records]](#read-records)
-* [[!UICONTROL Update Record]](#update-record)
+* [[!UICONTROL Criar Registro]](#create-record)
+* [[!UICONTROL Fazer uma chamada de API]](#make-an-api-call)
+* [[!UICONTROL Excluir Registro]](#delete-record)
+* [[!UICONTROL Ler Registros]](#read-records)
+* [[!UICONTROL Atualizar Registro]](#update-record)
 
 
-#### [!UICONTROL Create Record]
+#### [!UICONTROL Criar Registro]
 
 Este módulo de ação cria uma entidade, como um compromisso ou tarefa.
 
@@ -235,25 +235,25 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Microsoft Dynamics 365] ao [!DNL Workfront Fusion], consulte <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Microsoft Dynamics 365] ao [!DNL Workfront Fusion]</a> neste artigo. </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Entity Type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo de Entidade]</td> 
    <td>Selecione o tipo de entidade que você deseja que o módulo crie.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select Fields to Map]</td> 
+   <td role="rowheader">[!UICONTROL Selecionar campos para mapear]</td> 
    <td>Selecione os campos para os quais deseja incluir valores quando o registro for criado. Os campos disponíveis dependem do tipo de entidade.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Property fields]</td> 
+   <td role="rowheader">[!UICONTROL Campos de propriedade]</td> 
    <td> Esses são os campos selecionados. Insira o valor que você deseja que o registro tenha para uma determinada propriedade. </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete Record]
+#### [!UICONTROL Excluir Registro]
 
 Este módulo de ação exclui uma entidade.
 
@@ -268,11 +268,11 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Microsoft Dynamics 365] ao [!DNL Workfront Fusion], consulte <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Microsoft Dynamics 365] ao [!DNL Workfront Fusion]</a> neste artigo. </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Entity Type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo de Entidade]</td> 
    <td> <p>Selecione o tipo de entidade que você deseja que o módulo exclua.</p> </td> 
   </tr> 
   <tr> 
@@ -282,7 +282,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  </tbody> 
 </table>
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL Fazer uma chamada de API]
 
 Este módulo de ação permite fazer uma chamada autenticada personalizada para a API [!DNL Microsoft Dynamics 365]. Dessa forma, você pode criar uma automação de fluxo de dados que não pode ser realizada pelos outros módulos do [!DNL Microsoft Dynamics 365].
 
@@ -297,7 +297,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Microsoft Dynamics 365] ao [!DNL Workfront Fusion], consulte <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Microsoft Dynamics 365] ao [!DNL Workfront Fusion]</a> neste artigo. </p> </td> 
   </tr> 
   <tr> 
@@ -305,19 +305,19 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
    <td> <p>Insira um caminho relativo para <code>&lt;Instance URL>/api/data/v9.1/</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td role="rowheader">[!UICONTROL Método]</td> 
    <td> <p>Selecione o método de solicitação HTTP necessário para configurar a chamada de API. Para obter mais informações, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitação HTTP</a>.</p> <p>Para obter mais informações em</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td role="rowheader">[!UICONTROL Cabeçalhos]</td> 
    <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p> <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] O adiciona os cabeçalhos de autorização para você.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td role="rowheader">[!UICONTROL Cadeia de Consulta]</td> 
    <td> <p>Adicione a consulta da chamada à API na forma de um objeto JSON padrão.</p> <p>Por exemplo: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td role="rowheader">[!UICONTROL Corpo]</td> 
    <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Nota:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
@@ -326,7 +326,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  </tbody> 
 </table>
 
-#### [!UICONTROL Read Records]
+#### [!UICONTROL Ler Registros]
 
 Este módulo de ação lê os dados de uma única entidade em [!DNL Microsoft Dynamics 365].
 
@@ -341,15 +341,15 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Microsoft Dynamics 365] ao [!DNL Workfront Fusion], consulte <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Microsoft Dynamics 365] ao [!DNL Workfront Fusion]</a> neste artigo. </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Entity Type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo de Entidade]</td> 
    <td>Selecione o tipo de entidade que você deseja que o módulo leia.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
+   <td role="rowheader">[!UICONTROL Saídas]</td> 
    <td> <p>Selecione as informações que deseja incluir no pacote de saída deste módulo.</p> </td> 
   </tr> 
   <tr> 
@@ -359,7 +359,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  </tbody> 
 </table>
 
-#### [!UICONTROL Update Record]
+#### [!UICONTROL Atualizar Registro]
 
 Este módulo de ação atualiza uma entidade.
 
@@ -374,19 +374,19 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Microsoft Dynamics 365] ao [!DNL Workfront Fusion], consulte <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Microsoft Dynamics 365] ao [!DNL Workfront Fusion]</a> neste artigo. </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Entity Type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo de Entidade]</td> 
    <td>Selecione o tipo de entidade que você deseja que o módulo atualize.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select Fields to Map]</td> 
+   <td role="rowheader">[!UICONTROL Selecionar campos para mapear]</td> 
    <td>Selecione os campos para os quais deseja incluir valores quando o registro for criado. Os campos disponíveis dependem do tipo de entidade.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Property fields]</td> 
+   <td role="rowheader">[!UICONTROL Campos de propriedade]</td> 
    <td>Esses são os campos que você selecionou. Insira o valor que você deseja que o registro tenha para uma determinada propriedade.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -398,7 +398,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
 
 ### Pesquisas
 
-#### [!UICONTROL Search Records]
+#### [!UICONTROL Pesquisar Registros]
 
 Este módulo de pesquisa procura registros em um objeto em [!DNL Microsoft Dynamics 365] que correspondam à consulta de pesquisa especificada. Você pode mapear essas informações em módulos subsequentes no cenário.
 
@@ -409,35 +409,35 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Microsoft Dynamics 365] ao [!DNL Workfront Fusion], consulte <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Microsoft Dynamics 365] ao [!DNL Workfront Fusion]</a> neste artigo. </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Entity Type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo de Entidade]</td> 
    <td>Selecione o tipo de entidade que você deseja que o módulo atualize.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Filters]</td> 
+   <td role="rowheader">[!UICONTROL Filtros]</td> 
    <td> <p>Selecione o filtro que deseja usar para esta pesquisa.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Standard Filters]</strong> </p> <p>Configure o filtro selecionando um campo e operador e inserindo ou mapeando o valor que deseja pesquisar. Você pode usar as regras AND ou OR para filtrar.</p> </li> 
-     <li> <p><strong>[!UICONTROL Query Functions]</strong> </p> <p>Insira a função de consulta da API da Web [!DNL Dynamics 365] que você deseja usar para pesquisar. </p> <p>Para obter mais informações sobre funções de consulta, consulte a <a href="https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/queryfunctions?view=dynamics-ce-odata-9">Referência da Função de Consulta da API da Web</a> na documentação [!DNL Microsoft].</p> </li> 
+     <li> <p><strong>[!UICONTROL Filtros Padrão]</strong> </p> <p>Configure o filtro selecionando um campo e operador e inserindo ou mapeando o valor que deseja pesquisar. Você pode usar as regras AND ou OR para filtrar.</p> </li> 
+     <li> <p><strong>[!UICONTROL Consultar Funções]</strong> </p> <p>Insira a função de consulta da API da Web [!DNL Dynamics 365] que você deseja usar para pesquisar. </p> <p>Para obter mais informações sobre funções de consulta, consulte a <a href="https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/queryfunctions?view=dynamics-ce-odata-9">Referência da Função de Consulta da API da Web</a> na documentação [!DNL Microsoft].</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Sort]</td> 
+   <td role="rowheader">[!UICONTROL Classificar]</td> 
    <td> <p>Especificar a ordem de devolução dos itens. É possível adicionar várias classificações.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Field]</strong> </p> <p>Especifique o campo pelo qual deseja classificar os resultados.</p> </li> 
-     <li> <p><strong>[!UICONTROL Direction]</strong> </p> <p>Especifique a direção da classificação (crescente ou decrescente).</p> </li> 
+     <li> <p><strong>[!UICONTROL Campo]</strong> </p> <p>Especifique o campo pelo qual deseja classificar os resultados.</p> </li> 
+     <li> <p><strong>[!UICONTROL Direção]</strong> </p> <p>Especifique a direção da classificação (crescente ou decrescente).</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Max Records]</td> 
+   <td role="rowheader">[!UICONTROL Máximo de Registros]</td> 
    <td> <p>Insira ou mapeie o número máximo de registros que deseja que o módulo retorne durante cada ciclo de execução de cenário.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
+   <td role="rowheader">[!UICONTROL Saídas]</td> 
    <td> <p>Selecione as informações que deseja incluir no pacote de saída deste módulo.</p> </td> 
   </tr> 
  </tbody> 

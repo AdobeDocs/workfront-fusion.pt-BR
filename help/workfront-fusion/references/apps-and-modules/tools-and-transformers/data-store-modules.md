@@ -4,14 +4,14 @@ description: Um armazenamento de dados  [!DNL Adobe Workfront Fusion] , semelhan
 author: Becky
 feature: Workfront Fusion
 exl-id: 0338b822-b345-429e-850d-3978b692231d
-source-git-commit: 7404dafc0b368a8f1785be7b6a65fe45c0f12172
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1135'
 ht-degree: 0%
 
 ---
 
-# [!UICONTROL Data store] módulos
+# [!UICONTROL Módulos de armazenamento de dados]
 
 Um armazenamento de dados [!DNL Adobe Workfront Fusion], semelhante a um banco de dados ou uma tabela simples, pode armazenar dados de cenários, possibilitando a transferência de dados entre cenários individuais ou execuções de cenário. Você pode usar um armazenamento de dados para armazenar novos dados de vários sistemas durante a sincronização.
 
@@ -44,7 +44,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Nenhum requisito de licença do Workfront Fusion.</p>
+   <p>Nenhum requisito de licença do Workfront Fusion</p>
    </td> 
   </tr> 
   <tr> 
@@ -66,11 +66,11 @@ Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte
 
 ## Pré-requisitos
 
-Para usar módulos do [!UICONTROL Data Store], primeiro você deve criar um armazenamento de dados.
+Para usar os módulos do [!UICONTROL Repositório de Dados], primeiro crie um repositório de dados.
 
 Para obter informações sobre como criar armazenamentos de dados, consulte [Criar e gerenciar armazenamentos de dados](/help/workfront-fusion/create-scenarios/map-data/data-stores.md).
 
-## [!UICONTROL Data store] módulos e seus campos
+## [!UICONTROL Módulos de armazenamento de dados] e seus campos
 
 Ao configurar módulos de Armazenamento de Dados, o [!DNL Workfront Fusion] exibe os campos listados abaixo. Junto com esses, campos adicionais do Data Store podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
 
@@ -90,7 +90,7 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 * [Pesquisar Registros](#search-records)
 * [Atualizar um Registro](#update-a-record)
 
-### [!UICONTROL Add/Replace a Record]
+### [!UICONTROL Adicionar/Substituir um Registro]
 
 Este módulo de ação adiciona ou substitui um registro.
 
@@ -100,7 +100,7 @@ O módulo retorna a ID do registro e quaisquer campos associados, juntamente com
 
 >[!NOTE]
 >
->O módulo emite um erro quando você tenta adicionar um registro que já está no armazenamento de dados com o mesmo nome e a opção [!UICONTROL Overwrite an existing record] está desabilitada.
+>O módulo lança um erro quando você tenta adicionar um registro que já está no armazenamento de dados com o mesmo nome, e a opção [!UICONTROL Substituir um registro existente] está desabilitada.
 
 Ao configurar esse módulo, os campos a seguir são exibidos.
 
@@ -109,25 +109,25 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Data store]</td> 
+   <td>[!UICONTROL Armazenamento de dados]</td> 
    <td> <p> Selecione ou adicione o armazenamento de dados em que deseja criar um registro. </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Key] </td> 
+   <td>[!UICONTROL Chave] </td> 
    <td> <p>Insira a chave exclusiva do registro que você deseja que o módulo adicione ou substitua. A chave pode ser usada posteriormente para recuperar o registro. Se você deixar esse campo em branco, uma chave será gerada automaticamente.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Overwrite an existing record] </td> 
+   <td>[!UICONTROL Substituir um registro existente] </td> 
    <td> <p>Habilite esta opção para substituir o registro. O registro que você deseja substituir deve ser especificado no campo Chave acima.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Record] </td> 
+   <td>[!UICONTROL Registro] </td> 
    <td> <p>Insira os valores desejados nos campos do registro.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Check the Existence of a Record]
+### [!UICONTROL Verificar a Existência de um Registro]
 
 Este módulo de ação especifica se um determinado registro existe.
 
@@ -138,17 +138,17 @@ Especifique o armazenamento de dados e a chave do registro.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Data store] </td> 
+   <td>[!UICONTROL Armazenamento de dados] </td> 
    <td> <p>Selecione o armazenamento de dados que deseja verificar a existência do registro.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Key] </td> 
+   <td>[!UICONTROL Chave] </td> 
    <td> <p>Insira a chave exclusiva do registro que você deseja que o módulo verifique quanto à existência.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Count Records]
+### [!UICONTROL Contar Registros]
 
 Esse módulo de ação numera os registros em um armazenamento de dados.
 
@@ -161,13 +161,13 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Data store] </td> 
+   <td>[!UICONTROL Armazenamento de dados] </td> 
    <td> <p>Selecione o armazenamento de dados que contém os registros que você deseja contar.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Delete a Record]
+### [!UICONTROL Excluir um Registro]
 
 Este módulo de ação exclui um registro.
 
@@ -180,17 +180,17 @@ O módulo retorna a ID do registro e quaisquer campos associados, juntamente com
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Data store] </td> 
+   <td>[!UICONTROL Armazenamento de dados] </td> 
    <td> <p>Selecione o armazenamento de dados que deseja verificar a existência do registro.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Key] </td> 
+   <td>[!UICONTROL Chave] </td> 
    <td> <p>Insira a chave exclusiva do registro que você deseja que o módulo exclua.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Delete All Records]
+### [!UICONTROL Excluir todos os registros]
 
 Esse módulo de ação exclui todos os registros de um determinado armazenamento de dados.
 
@@ -201,13 +201,13 @@ Você especifica o armazenamento de dados.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Data store] </td> 
+   <td>[!UICONTROL Armazenamento de dados] </td> 
    <td> <p>Selecione o armazenamento de dados do qual deseja excluir todos os registros.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Get a Record]
+### [!UICONTROL Obter um Registro]
 
 Este módulo de ação recupera um registro.
 
@@ -220,17 +220,17 @@ O módulo retorna a ID do registro e quaisquer campos associados, juntamente com
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Data store]</td> 
+   <td>[!UICONTROL Armazenamento de dados]</td> 
    <td> <p> Selecione o armazenamento de dados do qual deseja recuperar um registro</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Key] </td> 
+   <td>[!UICONTROL Chave] </td> 
    <td> <p>Insira a chave exclusiva do registro que você deseja que o módulo recupere.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Search Records]
+### [!UICONTROL Pesquisar Registros]
 
 Esse módulo de pesquisa procura registros em um objeto no Armazenamento de dados que correspondam à consulta de pesquisa especificada.
 
@@ -243,29 +243,29 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Data store]</td> 
+   <td>[!UICONTROL Armazenamento de dados]</td> 
    <td> <p> Selecione o armazenamento de dados que deseja pesquisar.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Filter]</p> </td> 
+   <td> <p>[!UICONTROL Filtro]</p> </td> 
    <td> <p>Defina o filtro da pesquisa.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Sort]</p> </td> 
-   <td> <p style="font-weight: normal;">Para cada campo pelo qual você deseja classificar, preencha os seguintes campos:</p> <p style="font-weight: bold;">[!UICONTROL Key]</p> <p>Selecione o nome da coluna pela qual deseja classificar os resultados.</p> <p style="font-weight: bold;">[!UICONTROL Order]</p> <p>Selecione se deseja classificar os resultados na ordem crescente ou decrescente.</p> </td> 
+   <td> <p>[!UICONTROL Classificar]</p> </td> 
+   <td> <p style="font-weight: normal;">Para cada campo pelo qual você deseja classificar, preencha os seguintes campos:</p> <p style="font-weight: bold;">[!UICONTROL Chave]</p> <p>Selecione o nome da coluna pela qual deseja classificar os resultados.</p> <p style="font-weight: bold;">[!UICONTROL Ordem]</p> <p>Selecione se deseja classificar os resultados na ordem crescente ou decrescente.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Limit]</td> 
+   <td>[!UICONTROL Limite]</td> 
    <td> <p> Defina o número máximo de resultados de pesquisa [!DNL Workfront Fusion] retornos durante um ciclo de execução.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Continue the execution of the route even if the module returns no results]</td> 
+   <td>[!UICONTROL Continuar a execução da rota mesmo se o módulo não retornar resultados]</td> 
    <td> <p> Se ativado, a rota da qual este módulo faz parte continua sendo processada mesmo que este módulo não retorne resultados.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Update a Record]
+### [!UICONTROL Atualizar um Registro]
 
 Este módulo de ação atualiza um registro.
 
@@ -280,19 +280,19 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Data store]</td> 
+   <td>[!UICONTROL Armazenamento de dados]</td> 
    <td> <p> Selecione ou adicione o armazenamento de dados em que deseja criar um registro. </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Key] </td> 
+   <td>[!UICONTROL Chave] </td> 
    <td> <p>Insira a chave exclusiva do registro que você deseja que o módulo atualize.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Insert missing record] </td> 
+   <td>[!UICONTROL Inserir registro ausente] </td> 
    <td> <p>Ative esta opção para criar um novo registro se o registro com a chave especificada ainda não existir.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Record]</td> 
+   <td>[!UICONTROL Registro]</td> 
    <td> <p> Informe os valores desejados nos campos do registro que deseja atualizar.</p> </td> 
   </tr> 
  </tbody> 
