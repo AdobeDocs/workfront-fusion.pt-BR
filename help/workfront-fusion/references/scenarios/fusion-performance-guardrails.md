@@ -4,9 +4,9 @@ description: A automação de trabalho requer processamento rápido, portanto, o
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 2af808aaf8136253c623ee65641d0e57d4f6cf10
+source-git-commit: 1253470a23a2a9124824d5ab1ff2b5013d773517
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '880'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ Para obter mais informações, consulte [Trabalhando com arquivos grandes](/help
 
 A recursão ocorre quando um cenário aciona uma nova execução de si mesmo, que aciona uma nova execução e assim por diante em um loop infinito.
 
-Por exemplo, um cenário é acionado quando uma tarefa é criada e esse cenário cria uma tarefa. A tarefa recém-criada aciona o cenário novamente, o que cria outra tarefa. Toda vez que uma tarefa é criada, o cenário é acionado e toda vez que o cenário é executado, uma tarefa é criada.
+Por exemplo, um cenário é acionado quando uma tarefa é criada e esse cenário cria duas tarefas. As tarefas recém-criadas acionam o cenário novamente, o que cria quatro novas tarefas. Toda vez que uma tarefa é criada, o cenário é acionado e toda vez que o cenário é executado, o número de tarefas dobra. O número de tarefas aumenta exponencialmente.
 
 A recursão pode causar problemas de desempenho para a organização proprietária do cenário recursivo e para outras organizações.
 
