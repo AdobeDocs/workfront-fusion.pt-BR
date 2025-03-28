@@ -4,9 +4,9 @@ description: Com os módulos do Adobe Photoshop, você pode iniciar um cenário 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: ad5701c5484da802dea8668c9c4aad58a6dba3eb
+source-git-commit: db1d6f5bf29063b069681395c6ff6d3554c67dc3
 workflow-type: tm+mt
-source-wordcount: '4352'
+source-wordcount: '4359'
 ht-degree: 0%
 
 ---
@@ -68,6 +68,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
 Antes de usar o conector [!DNL Adobe Photoshop], verifique se os seguintes pré-requisitos foram atendidos:
 
 * Você deve ter uma conta [!DNL Adobe Photoshop] ativa.
+* Você deve ter uma licença dos Serviços da Firefly.
 * Você deve ter uma ID de cliente e um Segredo do cliente. Você pode adquiri-los na Adobe Developer Console.
 
 ## Informações da API do Adobe Photoshop
