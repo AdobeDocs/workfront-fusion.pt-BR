@@ -4,7 +4,7 @@ description: Você pode usar o conector do Adobe Workfront Fusion Adobe Workfron
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 76272b2e9f084f670075d9b975ffa26c0be07fe5
+source-git-commit: 5ba6e0ba687eb290c7d8882c6a615de8b3692617
 workflow-type: tm+mt
 source-wordcount: '7796'
 ht-degree: 2%
@@ -940,11 +940,6 @@ Para obter mais informações sobre a nova versão de assinatura de eventos, con
 
 +++ **Atualizar um registro**
 
->[!IMPORTANT]
->
->Este módulo foi substituído pelo módulo Atualizar um registro. Recomendamos o uso desse módulo em novos cenários.
->Os cenários existentes que usam esse módulo continuarão a funcionar conforme esperado. Este módulo será removido do seletor de módulos em maio de 2025.
-
 
 Esse módulo de ação atualiza um objeto, como um projeto, tarefa ou problema. O módulo permite selecionar quais dos campos do objeto estão disponíveis no módulo.
 
@@ -993,6 +988,11 @@ Veja uma lista dos tipos de objetos do Workfront para os quais você pode usar e
 +++
 
 +++ **[!UICONTROL Atualizar Registro (Herdado)]**
+
+>[!IMPORTANT]
+>
+>Este módulo foi substituído pelo módulo Atualizar um registro. Recomendamos o uso desse módulo em novos cenários.
+>Os cenários existentes que usam esse módulo continuarão a funcionar conforme esperado. Este módulo será removido do seletor de módulos em maio de 2025.
 
 Esse módulo de ação atualiza um objeto, como um projeto, tarefa ou problema. O módulo permite selecionar quais dos campos do objeto estão disponíveis no módulo.
 
