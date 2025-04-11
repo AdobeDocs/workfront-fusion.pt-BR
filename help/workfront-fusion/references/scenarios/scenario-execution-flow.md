@@ -5,9 +5,9 @@ description: Este artigo explica como um cenário é executado e como os dados f
 author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 0ef6dde9566ca3b97c1c52d6055f0ce44f575cee
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 0%
 # Fluxo de execução de cenário
 
 Este artigo explica como um cenário é executado, como os dados fluem por ele e como visualizar os dados processados por cada módulo.
+
+Para exibir como os dados estão fluindo em um cenário ativo, consulte [Exibir fluxo de dados em um cenário em execução](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md).
 
 ## Fluxo de execução de cenário
 
@@ -26,7 +28,7 @@ Se o módulo de acionamento retornar algum pacote de dados, esses pacotes passar
 
 Se os pacotes forem processados corretamente por todos os módulos, o cenário será marcado como bem-sucedido na página de detalhes do cenário.
 
-### Exemplo: [!UICONTROL [!DNL Workfront Fusion] for Work Automation]
+### Exemplo: [!UICONTROL [!DNL Workfront Fusion] para Automação de Trabalho]
 
 >[!BEGINSHADEBOX]
 
@@ -40,7 +42,7 @@ Se o primeiro módulo retornar um pacote, ele passará pelo restante do cenário
 
 >[!ENDSHADEBOX]
 
-### Exemplo: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration]
+### Exemplo: [!UICONTROL [!DNL Workfront Fusion] para Automação e Integração de Trabalho]
 
 >[!BEGINSHADEBOX]
 
