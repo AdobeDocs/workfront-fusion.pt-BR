@@ -4,16 +4,23 @@ description: As seguintes funções gerais estão disponíveis no painel Mapeame
 author: Becky
 feature: Workfront Fusion
 exl-id: 6d4b8801-aa7e-47d4-80b3-aceac10c073f
-source-git-commit: 2c732659f3f3e81e13b7b12a5df5bde19c0e0928
+source-git-commit: 295004ab7536b85124bc366d6832c08365338d08
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
 
 # Funções gerais
 
-## [!UICONTROL get (object or array; path)]
+## Variáveis
+
+Há duas variáveis gerais que podem ser usadas para identificar detalhes sobre uma execução:
+
+* `executionID`: a ID de execução deste cenário
+* `triggerTimestamp`: a hora em que essa execução foi disparada
+
+## [!UICONTROL obter (objeto ou matriz; caminho)]
 
 Retorna o caminho do valor de um objeto ou matriz. Para acessar objetos aninhados, use a notação de pontos. O primeiro item em uma matriz é o índice 1.
 
@@ -28,7 +35,7 @@ Retorna o caminho do valor de um objeto ou matriz. Para acessar objetos aninhado
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL if (expression; value1; value2)]
+## [!UICONTROL if (expressão; valor1; valor2)]
 
 Retorna `value1` se a expressão for avaliada como verdadeira; caso contrário, retorna `value2`.
 
@@ -78,7 +85,7 @@ Retorna `value1` se este valor não estiver vazio; caso contrário, retorna `val
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL switch (expression; value1; result1; [value2; result2; ...]; [else])]
+## [!UICONTROL opção (expressão; valor1; resultado1; [valor2; resultado2; ...]; [outra])]
 
 Avalia um valor (chamado de expressão) em relação a uma lista de valores; retorna o resultado correspondente ao primeiro valor correspondente. Para incluir um valor `else`, adicione-o depois da expressão ou valor final.
 
