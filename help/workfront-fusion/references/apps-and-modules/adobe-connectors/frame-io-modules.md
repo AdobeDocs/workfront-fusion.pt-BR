@@ -4,16 +4,31 @@ description: A conta  [!DNL Adobe Workfront Fusion Frame].io modules enable you 
 author: Becky
 feature: Workfront Fusion
 exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 31487c8b5b6efad1e6d7817dfe7dda67eea88e43
 workflow-type: tm+mt
-source-wordcount: '2510'
+source-wordcount: '2586'
 ht-degree: 0%
 
 ---
 
-# [!DNL Frame.io] módulos
+# [!DNL Frame.io] módulos herdados
+
+>[!IMPORTANT]
+>
+>Este artigo descreve a versão herdada do conector Frame.io. Esse conector é usado para conectar ao Frame.io versão 3.
+>
+>Para obter instruções sobre a nova versão (beta) do conector Frame.io, consulte [Frame.io Beta connector](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md).
 
 Os módulos do [!DNL Adobe Workfront Fusion] [!DNL Frame.io] permitem monitorar, criar, atualizar, recuperar ou excluir ativos e comentários em sua conta do [!DNL Frame.io].
+
+O Workfront oferece dois conectores Frame.io, com base na versão do Frame.io à qual você está se conectando.
+
+| Conector | Versão do Frame.io |
+|---|---|
+| Frame.io (Beta) | V4 |
+| Frame.io (Herdado) | V3 |
+
+Para obter instruções sobre a nova versão (beta) do conector Frame.io, consulte [Frame.io Beta connector](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md).
 
 Para obter uma introdução ao vídeo sobre o conector Frame.io, consulte:
 
@@ -626,7 +641,7 @@ Este módulo de ação edita um comentário existente.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID de Projeto] </td> 
-   <td> <p>Selecione o projeto \ que contém o ativo no qual você deseja atualizar um comentário.</p> </td> 
+   <td> <p>Selecione o projeto que contém o ativo no qual você deseja atualizar um comentário.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID da Pasta] </td> 
