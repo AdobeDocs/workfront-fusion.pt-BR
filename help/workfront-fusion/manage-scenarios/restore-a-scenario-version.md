@@ -4,14 +4,16 @@ description: É possível restaurar uma versão anterior de um cenário. Isso pe
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 18bbd77630eafac0cb293c3a6f658a74b622bdae
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 2%
+source-wordcount: '287'
+ht-degree: 1%
 
 ---
 
-# Restaurar uma versão de cenário
+# Exibir e gerenciar versões de cenário
+
+É possível exibir, restaurar ou renomear versões anteriores de um cenário.
 
 ## Requisitos de acesso
 
@@ -29,7 +31,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] licença</td> 
-   <td> <p>Novo: [!UICONTROL Standard]</p><p>Ou</p><p>Atual: [!UICONTROL Work] ou superior</p> </td> 
+   <td> <p>Novo: [!UICONTROL Padrão]</p><p>Ou</p><p>Atual: [!UICONTROL Trabalho] ou superior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] licença**</td> 
@@ -42,7 +44,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Novo:</p> <ul><li>[!UICONTROL Select] ou plano do [!UICONTROL Prime] [!DNL Workfront]: sua organização deve comprar o [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plano: [!DNL Workfront Fusion] está incluído.</li></ul>
+   <p>Novo:</p> <ul><li>Plano [!DNL Workfront] da [!UICONTROL Select] ou da [!UICONTROL Prime]: sua organização deve comprar [!DNL Adobe Workfront Fusion].</li><li>Plano [!DNL Workfront] da [!UICONTROL Ultimate] [!DNL Workfront Fusion] incluído.</li></ul>
    <p>Ou</p>
    <p>Atual: sua organização deve comprar o [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -65,16 +67,20 @@ Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte
 
 +++
 
-## Restaurar uma versão de cenário
+<!--procedure - open, optional add comment, optional restore version-->
 
-1. Abra seu cenário.
-1. Clique no ícone [!UICONTROL More] ![Mais ícone](assets/more-icon.png) na parte inferior da tela e clique em **[!UICONTROL Previous Versions]**.
+## Exibir e gerenciar o histórico de versões de um cenário
 
-1. Clique em **[!UICONTROL Pick the version]** e depois clique na versão que deseja restaurar.
-1. Clique em **[!UICONTROL OK]**.
+1. Clique em **[!UICONTROL Cenários]** ![Ícone de cenários](assets/scenarios-icon.png) no painel esquerdo e clique no cenário para abri-lo.
+1. Clique no ícone [!UICONTROL Mais] ![Mais ícone](assets/more-icon.png) na parte inferior da tela e em **[!UICONTROL Versões Anteriores]**.
 
-   A versão do cenário selecionado é restaurada.
+   Uma lista de versões anteriores é exibida.
+1. (Opcional) Para renomear a versão, clique no menu Mais ![Mais menu](assets/more-icon-vertical.png) na linha dessa versão, selecione **Editar** e insira um nome no campo. Clique em **Salvar** para salvar o novo nome.
 
->[!NOTE]
->
->A versão restaurada do cenário não é salva automaticamente. Para salvar a versão restaurada do cenário, salve-a manualmente.
+   Recomendamos dar um nome que descreva as alterações feitas nesta versão.
+1. (Opcional) Para restaurar a versão, clique em restaurar ![Mais menu](assets/more-icon-vertical.png) na linha dessa versão
+
+
+   >[!NOTE]
+   >
+   >A versão restaurada do cenário não é salva automaticamente. Para salvar a versão restaurada do cenário, salve-a manualmente.
