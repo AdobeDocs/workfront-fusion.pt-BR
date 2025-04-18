@@ -4,9 +4,9 @@ description: Em um cenário  [!DNL Adobe Workfront Fusion] , você pode automati
 author: Becky
 feature: Workfront Fusion
 exl-id: c8c5f2e3-5af1-4957-bb6f-6c19c35102c5
-source-git-commit: 7edfe4a7b19597ea6e56bb2ca3969d742dbaf999
+source-git-commit: 8a4e54a4c1783e4bc679778c6fcf21dcb4d3d537
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '920'
 ht-degree: 1%
 
 ---
@@ -108,24 +108,28 @@ Você pode criar uma conexão com sua conta [!DNL Datadog] diretamente de dentro
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Tipo de Conexão]</td> 
-      <td> <p> Selecione a opção [!UICONTROL [!DNL Datadog] Aplicativo] para obter acesso total à API [!DNL Datadog].</p> </td> 
-     </tr> 
-     <tr> 
       <td role="rowheader">[!UICONTROL Nome da Conexão]</td> 
       <td> <p> Insira um nome para a conexão.</p> </td> 
      </tr> 
+        <tr>
+        <td role="rowheader">[!UICONTROL Ambiente]</td>
+        <td>Selecione se essa conexão é para um ambiente de produção ou não produção.</td>
+        </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL Tipo]</td>
+        <td>Selecione se você está se conectando a uma conta de serviço ou a uma conta pessoal.</td>
+        </tr>
      <tr> 
       <td role="rowheader">[!UICONTROL Domínio] </td> 
       <td> <p>Selecione o domínio ao qual deseja se conectar (EUA ou UE).</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Chave de API]</td> 
-      <td> <p> Insira sua chave de API [!DNL Datadog]. </p> <p>Para obter instruções sobre como recuperar a chave de API, consulte <a href="#retrieve-your-api-key-and-application-key" class="MCXref xref">Recuperar a chave de API e a chave do aplicativo</a> neste artigo.</p> </td> 
+      <td role="rowheader">[!UICONTROL Localização da Chave de API] </td> 
+      <td> <p>Selecione se deseja incluir a chave de API no cabeçalho ou na sequência de consulta.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Chave do Aplicativo]</td> 
-      <td> <p> Insira sua chave do aplicativo [!DNL Datadog]. </p> <p>Para obter instruções sobre como recuperar a chave do aplicativo, consulte <a href="#retrieve-your-api-key-and-application-key" class="MCXref xref">Recuperar a chave da API e a chave do aplicativo</a> neste artigo.</p> </td> 
+      <td role="rowheader">[!UICONTROL Chave de API]</td> 
+      <td> <p> Insira sua chave de API [!DNL Datadog]. </p> <p>Para obter instruções sobre como recuperar a chave de API, consulte <a href="#retrieve-your-api-key-and-application-key" class="MCXref xref">Recuperar a chave de API e a chave do aplicativo</a> neste artigo.</p> </td> 
      </tr> 
     </tbody> 
    </table>
@@ -217,18 +221,28 @@ O limite para payloads compactados é de 3,2 megabytes (3200000) e 62 megabytes 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Tipo]</td> 
-   <td> Selecione o tipo de métrica que deseja usar. </td> 
+   <td> Selecione o tipo de métrica que deseja usar. 
+   <ul>
+   <li>Medidor</li>
+   <li>Taxa</li>
+   <li>Contagem</li>
+   </ul>
+   </td> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Intervalo]</td> 
+   <td> Se o tipo da métrica for taxa ou contagem, defina o intervalo correspondente.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Série]</td> 
-   <td> <p>Adicione as séries de tempo que você deseja enviar para [!DNL Datadog].</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Metric]</strong> </p> <p>Insira o nome da série temporal.</p> </li> 
-     <li> <p><strong>[!UICONTROL Tipo]</strong> </p> <p>Selecione o tipo de métrica.</p> </li> 
-     <li> <p><strong>[!UICONTROL intervalo]</strong> </p> <p> Se o tipo da métrica for taxa ou contagem, defina o intervalo correspondente.</p> </li> 
-     <li> <p><strong>[!UICONTROL Pontos]</strong> </p> <p>Adicionar pontos relacionados a uma métrica.</p> <p>Esta é uma matriz de pontos JSON. Cada ponto tem o formato: <code>[[POSIX_timestamp, numeric_value], ...] </code></p> <p>Nota:  <p>O carimbo de data/hora deve estar em segundos.</p> <p>O carimbo de data/hora deve ser atual. O valor atual é definido como não mais de 10 minutos no futuro ou mais de 1 hora no passado.</p> <p> O formato do valor numérico deve ser um valor flutuante.</p> </p> <p>Este campo deve conter pelo menos 1 item.</p> </li> 
-     <li> <p><strong>[!UICONTROL Host]</strong> </p> <p>Informe o nome do host que produziu a métrica.</p> </li> 
-    </ul> </td> 
+   <td role="rowheader">[!UICONTROL Pontos]</td> 
+   <td><p>Adicionar pontos relacionados a uma métrica.</p> <p>Esta é uma matriz de pontos JSON. Cada ponto tem o formato: <code>[[POSIX_timestamp, numeric_value], ...] </code></p> <p>Nota:  <p>O carimbo de data/hora deve estar em segundos.</p> <p>O carimbo de data/hora deve ser atual. O valor atual é definido como não mais de 10 minutos no futuro ou mais de 1 hora no passado.</p> <p> O formato do valor numérico deve ser um valor flutuante.</p> </p> <p>Este campo deve conter pelo menos 1 item.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Host]</td> 
+   <td>Informe o nome do host que produziu a métrica. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Marcas]</td> 
+   <td> Para cada marca que você deseja adicionar à métrica, clique em <b>Adicionar item</b> e insira o valor da marca.</td> 
   </tr> 
  </tbody> 
 </table>
