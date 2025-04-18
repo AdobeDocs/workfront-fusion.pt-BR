@@ -4,79 +4,66 @@ description: Você pode usar tipos MIME no Adobe Workfront Fusion. Os tipos MIME
 author: Becky
 feature: Workfront Fusion
 exl-id: 9259356b-5b42-4b6d-9854-fce9718d14e3
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e14f49dbb7b57a7247a62a27205df1b6da11a259
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 0%
+source-wordcount: '377'
+ht-degree: 1%
 
 ---
 
-# [!UICONTROL MIME] módulos
+# Módulos [!UICONTROL MIME]
 
 Você pode usar tipos MIME no Adobe Workfront Fusion. Os tipos MIME (Multipurpose Internet Mail Extension) são rótulos que permitem que o software identifique diferentes tipos de dados compartilhados na Internet. Servidores da Web e navegadores usam o tipo MIME para determinar o que deve ser feito com um arquivo. Por exemplo, um arquivo com o tipo MIME `text/html` será processado em um navegador de forma diferente de um arquivo com o tipo MIME `image/jpeg`. Os tipos MIME funcionam independentemente do sistema operacional e do hardware.
 
 ## Requisitos de acesso
 
++++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
+
 Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plano*</td>
-  <td> <p>[!UICONTROL Pro] ou superior</p> </td>
+   <td role="rowheader">Pacote do Adobe Workfront</td> 
+   <td> <p>Qualquer</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licença*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licença do Adobe Workfront</td> 
+   <td> <p>Novo: Padrão</p><p>Ou</p><p>Atual: trabalho ou superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licença**</td> 
+   <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisito de licença atual: nenhum requisito de licença [!DNL Workfront Fusion].</p>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion</p>
    <p>Ou</p>
-   <p>Requisito de licença herdada: [!UICONTROL [!DNL Workfront Fusion] para Automação e Integração do Trabalho, [!UICONTROL [!DNL Workfront Fusion] para Automação do Trabalho</p>
+   <p>Herdados: Automação e integração do Workfront Fusion for Work </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Requisito atual do produto: se você tiver o Plano [!UICONTROL Select] ou [!UICONTROL Prime] [!DNL Adobe Workfront], sua organização deve comprar o [!DNL Adobe Workfront Fusion] e o [!DNL Adobe Workfront] para usar a funcionalidade descrita neste artigo. [!DNL Workfront Fusion] está incluído no plano [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Novo:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
    <p>Ou</p>
-   <p>Requisito de produto herdado: sua organização deve comprar o [!DNL Adobe Workfront Fusion] e o [!DNL Adobe Workfront] para usar a funcionalidade descrita neste artigo.</p>
+   <p>Atual: sua organização deve comprar o Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Para saber que plano, tipo de licença ou acesso você tem, contate o administrador do [!DNL Workfront].
+Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
-## [!UICONTROL MIME] módulos e seus campos
++++
 
-### [!UICONTROL Get a MIME type]
+## Módulos [!UICONTROL MIME] e seus campos
 
-Esse módulo de transformador retorna o tipo MIME associado a um determinado nome, caminho ou extensão.
+* [Obter uma extensão de arquivo](#get-a-file-extension)
+* [Obter um tipo MIME](#get-a-mime-type)
 
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL File]</td> 
-   <td> <p>Insira ou mapeie o arquivo para o qual você deseja determinar o tipo de MIME. </p> <p>Você pode inserir o arquivo usando:</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL File path]</strong> </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemplo: </b></span></span>/file/image.jpeg</p> </li> 
-     <li><strong>[!UICONTROL File name]</strong>  <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemplo: </b></span></span>image.jpeg</p> </li> 
-     <li><strong>[!UICONTROL File extension]</strong>  <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemplo: </b></span></span>jpeg</p> </li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Get a file extension]
+### [!UICONTROL Obter uma extensão de arquivo]
 
 Este módulo de transformador retorna a extensão de arquivo original para um determinado tipo de MIME.
 
@@ -85,8 +72,28 @@ Este módulo de transformador retorna a extensão de arquivo original para um de
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL MIME type]</td> 
+   <td role="rowheader">[!UICONTROL tipo MIME]</td> 
    <td> <p>Insira ou mapeie o tipo MIME para o qual você deseja determinar a extensão de arquivo. </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### [!UICONTROL Obter um tipo MIME]
+
+Esse módulo de transformador retorna o tipo MIME associado a um determinado nome de arquivo, caminho ou extensão.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Arquivo]</td> 
+   <td> <p>Insira ou mapeie o arquivo para o qual você deseja determinar o tipo de MIME. </p> <p>Você pode inserir o arquivo usando:</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Caminho do Arquivo]</strong> </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemplo: </b></span></span>/file/image.jpeg</p> </li> 
+     <li><strong>[!UICONTROL Nome do Arquivo]</strong>  <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemplo: </b></span></span>image.jpeg</p> </li> 
+     <li><strong>[!UICONTROL Extensão de Arquivo]</strong>  <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemplo: </b></span></span>jpeg</p> </li> 
+    </ul> </td> 
   </tr> 
  </tbody> 
 </table>
