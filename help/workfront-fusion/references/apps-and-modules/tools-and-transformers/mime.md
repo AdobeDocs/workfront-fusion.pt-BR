@@ -4,10 +4,10 @@ description: Você pode usar tipos MIME no Adobe Workfront Fusion. Os tipos MIME
 author: Becky
 feature: Workfront Fusion
 exl-id: 9259356b-5b42-4b6d-9854-fce9718d14e3
-source-git-commit: e14f49dbb7b57a7247a62a27205df1b6da11a259
+source-git-commit: 7edfe4a7b19597ea6e56bb2ca3969d742dbaf999
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 1%
+source-wordcount: '367'
+ht-degree: 0%
 
 ---
 
@@ -36,9 +36,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Atual: nenhum requisito de licença do Workfront Fusion</p>
-   <p>Ou</p>
-   <p>Herdados: Automação e integração do Workfront Fusion for Work </p>
+   <p>Nenhum requisito de licença do Workfront Fusion</p>
    </td> 
   </tr> 
   <tr> 
