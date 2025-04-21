@@ -4,9 +4,9 @@ description: As seguintes funções de data e hora estão disponíveis no painel
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 9249223c6fbe0360b11d41988fe8b9c35e45dbb8
 workflow-type: tm+mt
-source-wordcount: '1800'
+source-wordcount: '1876'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Obtém a hora atual como um carimbo de data/hora Unix.
 
 ## Funções
 
-### [!UICONTROL addSeconds (date; number)]
+### [!UICONTROL addSeconds (data; número)]
 
 Retorna uma nova data como resultado da adição de um determinado número de segundos a uma data. Para subtrair segundos, informe um número negativo.
 
@@ -43,7 +43,7 @@ Retorna uma nova data como resultado da adição de um determinado número de se
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addMinutes (date; number)] {#addminutes-date-number}
+### [!UICONTROL addMinutes (data; número)] {#addminutes-date-number}
 
 Retorna uma nova data como resultado da adição de um determinado número de minutos a uma data. Para subtrair minutos, informe um número negativo.
 
@@ -61,7 +61,7 @@ Retorna uma nova data como resultado da adição de um determinado número de mi
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addHours (date; number)] {#addhours-date-number}
+### [!UICONTROL addHours (data; número)] {#addhours-date-number}
 
 Retorna uma nova data como resultado da adição de um determinado número de horas a uma data. Para subtrair horas, informe um número negativo.
 
@@ -79,7 +79,7 @@ Retorna uma nova data como resultado da adição de um determinado número de ho
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addDays (date; number)] {#adddays-date-number}
+### [!UICONTROL addDays (data; número)] {#adddays-date-number}
 
 Retorna uma nova data como resultado da adição de um determinado número de dias a uma data. Para subtrair dias, informe um número negativo.
 
@@ -97,7 +97,7 @@ Retorna uma nova data como resultado da adição de um determinado número de di
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addMonths (date; number)]
+### [!UICONTROL addMonths (data; número)]
 
 Retorna uma nova data como resultado da adição de um determinado número de meses a uma data. Para subtrair meses, informe um número negativo.
 
@@ -115,7 +115,7 @@ Retorna uma nova data como resultado da adição de um determinado número de me
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addYears (date; number)]
+### [!UICONTROL addYears (data; número)]
 
 Retorna uma nova data como resultado da adição de um determinado número de anos a uma data. Para subtrair anos, informe um número negativo.
 
@@ -133,13 +133,13 @@ Retorna uma nova data como resultado da adição de um determinado número de an
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setSecond (date; number)]
+### [!UICONTROL setSecond (data; número)]
 
 Esta função retorna uma nova data com os segundos especificados em parâmetros.
 
 Especifique um número de 0 a 59. Se o número estiver fora desse intervalo, a função retornará um segundo do minuto anterior (para um número negativo) ou do minuto subsequente (para um número positivo).
 
-Se você precisar especificar um número fora do intervalo, recomendamos que use[!UICONTROL  addSeconds], conforme descrito acima na seção [addSeconds (date; number)](#addseconds-date-number).
+Se você precisar especificar um número fora do intervalo, recomendamos usar [!UICONTROL  addSeconds], conforme descrito acima na seção [addSeconds (date; number)](#addseconds-date-number).
 
 >[!BEGINSHADEBOX]
 
@@ -149,13 +149,13 @@ Se você precisar especificar um número fora do intervalo, recomendamos que use
 
   Retorna 2015-10-07T11:36:10.138Z
 
-* `setSecond(2015-10-07T11:36:39.138Z; 6)`
+* `setSecond(2015-10-07T11:36:39.138Z; 61)`
 
   Retorna 2015-10-07T11:37:01.138Z
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setMinute (date; number)]
+### [!UICONTROL setMinute (data; número)]
 
 Esta função retorna uma nova data com os minutos especificados em parâmetros.
 
@@ -177,7 +177,7 @@ Se você precisar especificar um número fora do intervalo, recomendamos usar ad
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setHour (date; number)]
+### [!UICONTROL setHour (data; número)]
 
 Esta função retorna uma nova data com a hora especificada nos parâmetros.
 
@@ -199,7 +199,7 @@ Se você precisar especificar um número fora do intervalo, recomendamos usar ad
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setDay (date; number/name of the day in English)]
+### [!UICONTROL setDay (data; número/nome do dia em inglês)]
 
 Esta função retorna uma nova data com o dia especificado nos parâmetros.
 
@@ -225,7 +225,7 @@ Se você precisar especificar um número fora do intervalo, recomendamos usar ad
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setDate (date; number)]
+### [!UICONTROL setDate (data; número)]
 
 Esta função retorna uma nova data com o dia do mês especificado em parâmetros.
 
@@ -245,7 +245,7 @@ Especifique um número de 1 a 31. Se o número estiver fora desse intervalo, a f
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setMonth (date; number/name of the month in English)]
+### [!UICONTROL setMonth (data; número/nome do mês em inglês)]
 
 Esta função retorna uma nova data com o mês especificado em parâmetros.
 
@@ -269,7 +269,7 @@ Especifique um número de 1 a 12. Se o número estiver fora desse intervalo, a f
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setYear (date; number)]
+### [!UICONTROL setYear (data; número)]
 
 Retorna uma nova data com o ano especificado em parâmetros.
 
@@ -283,7 +283,7 @@ Retorna uma nova data com o ano especificado em parâmetros.
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL formatDate (date; format; [timezone])]
+### [!UICONTROL formatDate (data; formato; [fuso horário])]
 
 Use esta função quando tiver um valor Date, como `12-10-2021 20:30`, que você deseja formatar como um valor Text, como `Dec 10, 2021 8:30 PM`.
 
@@ -306,17 +306,17 @@ Para obter mais informações, consulte Data e Texto no artigo [Tipos de dados d
  </thead> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL date] </td> 
+   <td>[!UICONTROL data] </td> 
    <td>Data </td> 
    <td> <p>Converte um valor Date em um valor Text. </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL format] </td> 
+   <td>[!UICONTROL formato] </td> 
    <td>Texto </td> 
    <td> <p>Permite especificar um formato usando tokens de formatação de data/hora. Para obter mais informações, consulte <a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">Tokens para formatação de data e hora</a>.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemplo: </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL timezone] </td> 
+   <td>[!UICONTROL fuso horário] </td> 
    <td>Texto </td> 
    <td> <p>(Opcional) Permite especificar o fuso horário usado para a conversão. </p> <p>Para obter a lista de fusos horários reconhecidos, consulte a coluna "TZ database name" na Wikipédia <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">List of tz database time zones</a>. Somente os valores listados nesta coluna são reconhecidos pela função como um fuso horário válido. Qualquer outro valor é ignorado e o fuso horário de Cenários especificado em seu Perfil é usado. </p> <p>Se você omitir esse parâmetro, o fuso horário de Cenários especificado nas configurações de Perfil será aplicado. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemplo: </b></span></span><code>Europe/Prague</code>, <code>UTC</code></p> </td> 
   </tr> 
@@ -353,7 +353,7 @@ A função `formatDate` retorna uma representação de texto do valor de Data es
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL parseDate (text; format; [timezone])]
+### [!UICONTROL parseDate (texto; formato; [fuso horário])]
 
 Use esta função quando tiver um valor de Texto representando uma data (como `12-10-2019 20:30` ou `Aug 18, 2019 10:00 AM`) e quiser convertê-lo (analisar) em um valor de Data (uma representação binária legível por máquina). Para obter mais informações, consulte Data e Texto no artigo [Tipos de dados do item](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md).
 
@@ -374,17 +374,17 @@ A segunda coluna indica o tipo esperado. Se um tipo diferente for fornecido, a c
  </thead> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL text] </td> 
+   <td>[!UICONTROL texto] </td> 
    <td>Texto </td> 
    <td> <p>Converte um valor Date em um valor Text. </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL format] </td> 
+   <td>[!UICONTROL formato] </td> 
    <td>Texto </td> 
    <td> <p>Permite especificar um formato usando tokens de formatação de data/hora. Para obter mais informações, consulte <a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">Tokens para formatação de data e hora</a>.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemplo: </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL timezone] </td> 
+   <td>[!UICONTROL fuso horário] </td> 
    <td>Texto </td> 
    <td> <p>(Opcional) Permite especificar o fuso horário usado para a conversão. </p> <p>Para obter a lista de fusos horários reconhecidos, consulte a coluna "TZ database name" na Wikipédia <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">List of tz database time zones</a>. Somente os valores listados nesta coluna são reconhecidos pela função como um fuso horário válido. Qualquer outro valor é ignorado e o fuso horário de Cenários especificado em seu Perfil é usado. </p> <p>Se você omitir esse parâmetro, o fuso horário de Cenários especificado nas configurações de Perfil será aplicado.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemplo: </b></span></span><code>Europe/Prague</code>, <code>UTC</code></p> </td> 
   </tr> 
@@ -419,7 +419,7 @@ Essa função converte uma sequência de caracteres de texto em uma data, de aco
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL dateDifference (Date1; Date2; Unit)]
+### [!UICONTROL diferençaData (Data1; Data2; Unidade)]
 
 Retorna um número que representa a diferença nas duas datas, expressas na unidade especificada.
 
