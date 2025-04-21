@@ -4,48 +4,48 @@ description: As seguintes funções de matriz estão disponíveis no painel de m
 author: Becky
 feature: Workfront Fusion
 exl-id: 16c3915c-add1-4aab-a0e1-75fc590c42a6
-source-git-commit: 2c732659f3f3e81e13b7b12a5df5bde19c0e0928
+source-git-commit: d141738a7e013ed817cb657b883fc5e1061e2165
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
 
 # Funções de matriz
 
-## [!UICONTROL join (array; separator)]
+## [!UICONTROL junção (matriz; separador)]
 
 Concatena todos os itens de uma matriz em uma cadeia de caracteres, usando o separador especificado entre cada item.
 
-## [!UICONTROL length (array)]
+## [!UICONTROL comprimento (matriz)]
 
 Retorna o número de itens em uma matriz.
 
-## [!UICONTROL keys (object)]
+## [!UICONTROL chaves (objeto)]
 
 Retorna uma matriz das propriedades de um determinado objeto ou matriz.
 
-## [!UICONTROL slice (array; start; [end])]
+## [!UICONTROL fatia (matriz; início; [fim])]
 
 Retorna uma nova matriz contendo apenas itens selecionados.
 
-## [!UICONTROL merge (array1; array2; ...)]
+## [!UICONTROL mesclar (matriz1; matriz2; ...)]
 
 Mescla uma ou mais matrizes em uma matriz.
 
-## [!UICONTROL contains (array; value)]
+## [!UICONTROL contém (matriz; valor)]
 
 Verifica se uma matriz contém o valor.
 
-## [!UICONTROL remove (array; value1; value2; ...)]
+## [!UICONTROL remover (matriz; valor1; valor2; ...)]
 
 Remove valores especificados nos parâmetros de uma matriz. Esta função só é eficaz em matrizes primitivas de texto ou números.
 
-## [!UICONTROL add (array; value1; value2; ...)]
+## [!UICONTROL adicionar (matriz; valor1; valor2; ...)]
 
 Adiciona valores especificados em parâmetros a uma matriz e retorna essa matriz.
 
-## [!UICONTROL map (complex array; key;[key for filtering];[possible values for filtering])]
+## [!UICONTROL mapa (matriz complexa; chave;[chave para filtragem];[valores possíveis para filtragem])]
 
 Retorna uma matriz primitiva contendo valores de uma matriz complexa. Esta função permite filtrar valores. Use nomes de variáveis brutos para chaves.
 
@@ -67,7 +67,7 @@ Para obter mais informações, consulte [Mapear uma matriz ou elemento de matriz
 
 ## ordem aleatória
 
-## [!UICONTROL sort (array; [order]; [key])]
+## [!UICONTROL classificar (matriz; [ordem]; [chave])]
 
 Classifica os valores de uma matriz. Os valores válidos do parâmetro `order` são:
 
@@ -117,15 +117,15 @@ O primeiro item em uma matriz é o índice 1.
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL reverse (array)]
+## [!UICONTROL inverter (matriz)]
 
 O primeiro elemento da matriz se torna o último elemento, o segundo se torna o próximo ao último e assim por diante.
 
-## [!UICONTROL flatten (array)]
+## [!UICONTROL nivelar (matriz)]
 
 Cria uma nova matriz com todos os elementos de submatriz concatenados nela, recursivamente, até a profundidade especificada.
 
-## [!UICONTROL distinct (array; [key])]
+## [!UICONTROL distinct (matriz; [chave])]
 
 Remove duplicatas dentro de uma matriz. Use o argumento &quot;[!UICONTROL key]&quot; para acessar propriedades dentro de objetos complexos. Para acessar propriedades aninhadas, use a notação de pontos. O primeiro item em uma matriz é o índice 1.
 
@@ -138,6 +138,39 @@ Remove duplicatas dentro de uma matriz de contatos comparando a propriedade &quo
 >[!ENDSHADEBOX]
 
 ## toCollection
+
+* Esta função pega uma matriz que contém pares de valores chave e a converte em uma coleção. Há 3 argumentos para a função:
+
+* (matriz) contendo pares de valores chave
+* (string) o nome do campo a ser usado como chave
+* (string) o nome do campo a ser usado como valor
+
+>[!BEGINSHADEBOX]
+
+Exemplo:
+
+Dada uma matriz:
+
+```
+[{"name":"Bob", "age":22}, {"name":"Tim", "age":23}]
+```
+
+e argumentos
+
+```
+{{toCollection(6.array; "name"; "age")}}
+```
+
+a função retorna
+
+```
+{
+    "Bob": 22,
+    "Tim": 23
+}
+```
+
+>[!ENDSHADEBOX]
 
 ## toArray
 
@@ -161,7 +194,7 @@ Retorna a matriz de pares de valores chave
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL arrayDifference [array1, array2, mode]]
+## [!UICONTROL arrayDifference [array1, array2, modo]]
 
 Retorna a diferença entre duas matrizes.
 
