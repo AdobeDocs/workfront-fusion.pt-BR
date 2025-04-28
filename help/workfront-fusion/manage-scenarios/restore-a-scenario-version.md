@@ -4,9 +4,9 @@ description: É possível restaurar uma versão anterior de um cenário. Isso pe
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 18bbd77630eafac0cb293c3a6f658a74b622bdae
+source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '309'
 ht-degree: 1%
 
 ---
@@ -78,7 +78,8 @@ Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte
 1. (Opcional) Para renomear a versão, clique no menu Mais ![Mais menu](assets/more-icon-vertical.png) na linha dessa versão, selecione **Editar** e insira um nome no campo. Clique em **Salvar** para salvar o novo nome.
 
    Recomendamos dar um nome que descreva as alterações feitas nesta versão.
-1. (Opcional) Para restaurar a versão, clique em restaurar ![Mais menu](assets/more-icon-vertical.png) na linha dessa versão
+1. (Opcional) Para baixar o blueprint de uma versão anterior, clique no menu Mais ![Mais menu](assets/more-icon-vertical.png) na linha dessa versão e selecione **Baixar**.
+1. (Opcional) Para restaurar a versão, clique em **Restaurar** na linha dessa versão
 
 
    >[!NOTE]

@@ -4,9 +4,9 @@ description: Este artigo descreve o processo básico de adicionar um módulo a u
 author: Becky
 feature: Workfront Fusion
 exl-id: f3757468-3e11-4862-a83e-ed447805545b
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '628'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] licença</td> 
-   <td> <p>Novo: [!UICONTROL Standard]</p><p>Ou</p><p>Atual: [!UICONTROL Work] ou superior</p> </td> 
+   <td> <p>Novo: [!UICONTROL Padrão]</p><p>Ou</p><p>Atual: [!UICONTROL Trabalho] ou superior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] licença**</td> 
@@ -46,7 +46,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Novo:</p> <ul><li>[!UICONTROL Select] ou plano do [!UICONTROL Prime] [!DNL Workfront]: sua organização deve comprar o [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plano: [!DNL Workfront Fusion] está incluído.</li></ul>
+   <p>Novo:</p> <ul><li>Plano [!DNL Workfront] da [!UICONTROL Select] ou da [!UICONTROL Prime]: sua organização deve comprar [!DNL Adobe Workfront Fusion].</li><li>Plano [!DNL Workfront] da [!UICONTROL Ultimate] [!DNL Workfront Fusion] incluído.</li></ul>
    <p>Ou</p>
    <p>Atual: sua organização deve comprar o [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -66,7 +66,7 @@ O primeiro módulo de um cenário geralmente é um módulo acionador.
 
 Para obter mais informações sobre módulos de acionador, consulte [Módulos de acionador](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#trigger-modules) no artigo Visão geral do módulo.
 
-1. Clique na guia **[!UICONTROL Scenarios]** no painel esquerdo.
+1. Clique na guia **[!UICONTROL Cenários]** no painel esquerdo.
 1. Comece a criar um cenário clicando em **Criar um novo cenário** no canto superior direito da tela.
 
    O editor de cenários é aberto, com um módulo de espaço reservado (ponto de interrogação) e a lista de conectores disponíveis.
@@ -84,8 +84,7 @@ Para obter mais informações sobre módulos de acionador, consulte [Módulos de
 
 ## Adicionar outro módulo a um cenário
 
-1. Se você não estiver no editor de cenários do cenário ao qual deseja adicionar um módulo, clique na guia **[!UICONTROL Scenarios]** no painel esquerdo.
-1. Selecione o cenário em que deseja exportar um blueprint.
+1. Se você não estiver no editor de cenários do cenário ao qual deseja adicionar um módulo, clique na guia **[!UICONTROL Cenários]** no painel esquerdo.
 1. Clique em qualquer lugar no cenário para entrar no editor de cenários.
 1. Para adicionar um módulo a outro módulo, passe o mouse sobre a alça direita do módulo após a qual deseja adicionar um módulo, em seguida, clique em **Adicionar outro módulo** quando ele aparecer.
 
@@ -98,8 +97,7 @@ Para obter mais informações sobre módulos de acionador, consulte [Módulos de
 
 ## Inserir um módulo entre módulos existentes em um cenário
 
-1. Se você não estiver no editor de cenários do cenário ao qual deseja adicionar um módulo, clique na guia **[!UICONTROL Scenarios]** no painel esquerdo.
-1. Selecione o cenário em que deseja exportar um blueprint.
+1. Se você não estiver no editor de cenários do cenário ao qual deseja adicionar um módulo, clique na guia **[!UICONTROL Cenários]** no painel esquerdo.
 1. Clique em qualquer lugar no cenário para entrar no editor de cenários.
 1. Clique no caminho pontilhado entre os módulos em que deseja inserir um módulo.
 1. No menu exibido, selecione **Adicionar um módulo**.
