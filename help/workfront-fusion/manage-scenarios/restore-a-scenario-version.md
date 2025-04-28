@@ -1,19 +1,19 @@
 ---
-title: Restaurar uma versão de cenário
-description: É possível restaurar uma versão anterior de um cenário. Isso permite fazer alterações em um cenário e, em seguida, revertê-las facilmente, se preferir a funcionalidade anterior.
+title: Exibir e gerenciar versões de cenário
+description: Você pode exibir, restaurar, renomear ou baixar blueprints de versões anteriores de um cenário.
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
+source-git-commit: 2270b386bbf62cfc3b82bd4f9c293b36d3b7a35a
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '298'
 ht-degree: 1%
 
 ---
 
 # Exibir e gerenciar versões de cenário
 
-É possível exibir, restaurar ou renomear versões anteriores de um cenário.
+Você pode exibir, restaurar, renomear ou baixar blueprints de versões anteriores de um cenário.
 
 ## Requisitos de acesso
 
