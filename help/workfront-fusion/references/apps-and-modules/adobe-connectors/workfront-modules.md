@@ -4,9 +4,9 @@ description: Você pode usar o conector do Adobe Workfront Fusion Adobe Workfron
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 7287e0460318cf5328e703af7ecc948b1ce62257
+source-git-commit: 6fa7ab493112351d9480b21b23b3b6b7b14f2230
 workflow-type: tm+mt
-source-wordcount: '7795'
+source-wordcount: '7823'
 ht-degree: 2%
 
 ---
@@ -973,7 +973,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!DNL Attach Custom Form]</td> 
-   <td>Selecione os formulários personalizados que deseja anexar ao novo registro. Após selecionar o formulário, insira os dados dos campos nele contidos.</td> 
+   <td>Selecione os formulários personalizados que deseja fornecer valores de campo para o novo registro. Após selecionar o formulário, insira os dados dos campos nele contidos.<p> Para fornecer valores de campo para um formulário que você está anexando neste módulo, inclua a ID de formulário personalizada na seção campos a mapear.</td> 
   </tr> 
  </tbody> 
 </table>
