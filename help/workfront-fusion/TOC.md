@@ -2,10 +2,10 @@
 user-guide-title: Documentação do Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Use os documentos, tutoriais e recursos adicionais para saber como implementar e usar efetivamente o Adobe Workfront Fusion em sua organização.
-source-git-commit: a23517da30b4e51ef55bcc13241a03cd1d6153a0
+source-git-commit: 6ebfd07e24f77bd8c162d53554ddf1fcaefafeb8
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 2%
+source-wordcount: '1744'
+ht-degree: 3%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 2%
 * Atividade de lançamento do Fusion {#fusion-release-activity}
    * [Atividade de lançamento do Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Versões do Fusion - 2025 {#fusion-releases-2025}
+      * [Atividade de lançamento do Workfront Fusion: semana de 21 de abril de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-21.md)
       * [Atividade de lançamento do Workfront Fusion: semana de 14 de abril de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-14.md)
       * [Atividade de lançamento do Workfront Fusion: semana de 31 de março de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-31.md)
       * [Atividade de lançamento do Workfront Fusion: semana de 10 de março de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-10.md)
@@ -159,7 +160,7 @@ ht-degree: 2%
          * [Exibir ou editar detalhes do usuário](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-details.md)
          * [Exibir ou editar funções de usuário](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-roles.md)
          * [Excluir usuários na Adobe Admin Console](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/delete-users-admin-console.md)
-   * Gerenciar Modelos {#manage-templates-admin}
+   * Gerenciar modelos {#manage-templates-admin}
       * [Gerenciar modelos](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/manage-templates-toc.md)
       * [Aprovar ou desaprovar modelos](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/approve-templates.md)
       * [Editar modelos](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/edit-templates.md)
@@ -189,7 +190,7 @@ ht-degree: 2%
       * [Mapear matrizes e elementos de matriz](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)
       * [Mapear um arquivo entre módulos](/help/workfront-fusion/create-scenarios/map-data/map-files.md)
       * [Armazenamentos de dados](/help/workfront-fusion/create-scenarios/map-data/data-stores.md)
-   * Conectar a aplicativos {#connect-to-applications}
+   * Conectar-se a aplicativos {#connect-to-applications}
       * [Conectar-se a aplicativos](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-apps-toc.md)
       * [Criar conexões](/help/workfront-fusion/create-scenarios/connect-to-apps/connection-instruction-toc.md)
       * [Criar uma conexão - Instruções básicas](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
