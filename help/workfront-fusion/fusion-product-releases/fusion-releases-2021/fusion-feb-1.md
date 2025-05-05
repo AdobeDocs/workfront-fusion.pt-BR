@@ -23,7 +23,7 @@ Esta página descreve todas as melhorias feitas no Adobe Workfront Fusion na sem
 
 Para obter uma lista de todas as alterações recentes, consulte [atividade de versão do Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-Para obter uma lista de correções de erros recentes no Workfront Fusion, consulte a página [Atualizações de Manutenção do Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html) e verifique se há atualizações rotuladas como Atualização de Manutenção do Workfront Fusion.
+Para obter uma lista de correções de erros recentes no Workfront Fusion, consulte a página [Atualizações de Manutenção do Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=pt-BR) e verifique se há atualizações rotuladas como Atualização de Manutenção do Workfront Fusion.
 
 
 ## Conector e módulos MariaDB agora disponíveis

@@ -70,7 +70,7 @@ Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [li
 
 A Adobe deve ter um contrato de API Gen da Adobe assinado no arquivo.
 
-Para obter mais informações sobre como assinar o contrato, consulte [Assinar o contrato da Adobe Gen AI](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) no artigo Visão geral do Assistente de IA na documentação da Workfront.
+Para obter mais informações sobre como assinar o contrato, consulte [Assinar o contrato da Adobe Gen AI](https://experienceleague.adobe.com/pt-br/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) no artigo Visão geral do Assistente de IA na documentação da Workfront.
 
 ## Obter informações do Assistente de IA
 
