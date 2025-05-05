@@ -4,10 +4,10 @@ description: Em um cenário  [!DNL Adobe Workfront Fusion] , você pode automati
 author: Becky
 feature: Workfront Fusion
 exl-id: 96455ae4-ef68-46b5-a172-429cf9f982fb
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 719112fa82132b6294560fc9f9dff8355181e8df
 workflow-type: tm+mt
-source-wordcount: '47'
-ht-degree: 0%
+source-wordcount: '1050'
+ht-degree: 1%
 
 ---
 
@@ -15,272 +15,274 @@ ht-degree: 0%
 
 Em um cenário [!DNL Adobe Workfront Fusion], você pode automatizar fluxos de trabalho que usam [!DNL Azure Active Directory], bem como conectá-los a vários aplicativos e serviços de terceiros.
 
-<!--
+Para obter instruções sobre como criar um cenário, consulte os artigos em [Criar cenários: índice do artigo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-If you need instructions on creating a scenario, see [Create a scenario in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/create-a-scenario.md). For information about modules, see [Modules in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/modules/modules.md).
+Para obter informações sobre módulos, consulte os artigos em [Módulos: índice do artigo](/help/workfront-fusion/references/modules/modules-toc.md).
 
-## Access requirements
+## Requisitos de acesso
 
-You must have the following access to use the functionality in this article:
++++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
+
+Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] or higher</p> </td>
+   <td role="rowheader">Pacote do Adobe Workfront</td> 
+   <td> <p>Qualquer</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licença do Adobe Workfront</td> 
+   <td> <p>Novo: Padrão</p><p>Ou</p><p>Atual: trabalho ou superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
-   <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion</p>
+   <p>Ou</p>
+   <p>Herdados: Automação e integração do Workfront Fusion for Work </p>
    </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Product</td> 
+   <td role="rowheader">Produto</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
-   <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Novo:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
+   <p>Ou</p>
+   <p>Atual: sua organização deve comprar o Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).
+Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
-## Prerequisites
++++
 
-To use [!DNL Azure Active Directory] modules, you must have an [!DNL Azure Active Directory] account.
+## Pré-requisitos
 
-## [!DNL Azure Active Directory] API information
+Para usar módulos [!DNL Azure Active Directory], você deve ter uma conta [!DNL Azure Active Directory].
 
-The Azure Active Directory connector uses the following:
+## Informações da API [!DNL Azure Active Directory]
+
+O conector do Azure Ative Diretory usa o seguinte:
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">API version</td> 
+   <td role="rowheader">Versão da API</td> 
    <td> v1.0 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">API tag</td> 
+   <td role="rowheader">Tag da API</td> 
    <td>v1.4.5</td> 
   </tr>
  </tbody> 
 </table>
 
-## [!DNL Azure Active Directory] modules and their fields
+## [!DNL Azure Active Directory] módulos e seus campos
 
-When you configure [!DNL Azure Active Directory] modules, [!DNL Workfront Fusion] displays the fields listed below. Along with these, additional [!DNL Azure Active Directory] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
+Ao configurar módulos do [!DNL Azure Active Directory], o [!DNL Workfront Fusion] exibe os campos listados abaixo. Junto com esses, campos [!DNL Azure Active Directory] adicionais podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
 
-If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/mapping/map-information-between-modules.md).
+Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro em [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Map toggle](assets/map-toggle-350x74.png)
+![Alternância de mapa](../assets/map-toggle-350x74.png)
 
-* [Triggers](#triggers)
-* [Actions](#actions)
-* [Searches](#searches)
+* [Acionadores](#triggers)
+* [Ações](#actions)
+* [Pesquisas](#searches)
 
-### Triggers 
+### Acionadores
 
-#### [!UICONTROL Watch records] (scheduled)
+#### [!UICONTROL Observar registros] (agendado)
 
-This polling (scheduled) trigger module executes a scenario when a record in a selected object has been created since the last scheduled run in [!DNL Azure Active Directory]. It also returns all standard fields associated with the record or records, along with any custom fields and values that the connection accesses.You can map this information in subsequent modules in the scenario.
+Este módulo de gatilho de sondagem (agendado) executa um cenário quando um registro em um objeto selecionado é criado desde a última execução agendada em [!DNL Azure Active Directory]. Também retorna todos os campos padrão associados ao registro ou aos registros, juntamente com quaisquer campos e valores personalizados que a conexão acesse. Você pode mapear essas informações em módulos subsequentes no cenário.
 
-When you are configuring this module, the following fields display.
+Ao configurar esse módulo, os campos a seguir são exibidos.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Azure Active Directory] account to [!DNL Workfront Fusion], see <a href="../../workfront-fusion/connections/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Azure Active Directory] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Type]</td> 
-   <td>Select whether you want to watch User records or Group records.</td> 
+   <td role="rowheader">[!UICONTROL Tipo]</td> 
+   <td>Selecione se deseja monitorar registros de Usuário ou registros de Grupo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximum Number of Records]</td> 
-   <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
+   <td role="rowheader">[!UICONTROL Número Máximo de Registros]</td> 
+   <td>Insira ou mapeie o número máximo de registros que deseja que o módulo retorne durante cada ciclo de execução de cenário.</td> 
   </tr> 
  </tbody> 
 </table>
 
-### Actions 
+### Ações
 
-* [[!UICONTROL Read Record]](#read-record)
-* [[!UICONTROL Create Record]](#create-record)
-* [[!UICONTROL Custom API Call]](#custom-api-call)
+* [[!UICONTROL Ler Registro]](#read-record)
+* [[!UICONTROL Criar Registro]](#create-record)
+* [[!UICONTROL Chamada de API personalizada]](#custom-api-call)
 
-#### [!UICONTROL Read Record] 
+#### [!UICONTROL Ler Registro]
 
-This action module reads data from a single record in [!DNL Azure Active Directory].
+Este módulo de ação lê dados de um único registro em [!DNL Azure Active Directory].
 
-You specify the ID of the record.
+Especifique a ID do registro.
 
-The module returns the ID of the record and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
+O módulo retorna a ID do registro e quaisquer campos associados, juntamente com quaisquer campos e valores personalizados que a conexão acessa. Você pode mapear essas informações em módulos subsequentes no cenário.
 
-You must have sufficient permissions to access the record in [!DNL Azure Active Directory] in order to retrieve this information.
+Você deve ter permissões suficientes para acessar o registro em [!DNL Azure Active Directory] para recuperar essas informações.
 
-When you are configuring this module, the following fields display.
+Ao configurar esse módulo, os campos a seguir são exibidos.
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Azure Active Directory] account to [!DNL Workfront Fusion], see <a href="../../workfront-fusion/connections/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Azure Active Directory] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record Type]</td> 
-   <td>Select whether you want to read a [!UICONTROL User] record or a [!UICONTROL Group] record.</td> 
+   <td role="rowheader">[!UICONTROL Tipo de Registro]</td> 
+   <td>Selecione se você deseja ler um registro [!UICONTROL Usuário] ou um registro [!UICONTROL Grupo].</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
-   <td>Select the information you want included in the output bundle for this module.</td> 
+   <td role="rowheader">[!UICONTROL Saídas]</td> 
+   <td>Selecione as informações que deseja incluir no pacote de saída deste módulo.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
-   <td>Enter or map the unique [!DNL Azure Active Directory] ID of the record that you want the module to read.</td> 
+   <td>Insira ou mapeie a ID [!DNL Azure Active Directory] exclusiva do registro que você deseja que o módulo leia.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Create Record] 
+#### [!UICONTROL Criar Registro]
 
-This action module creates a new user or group record.
+Este módulo de ação cria um novo registro de usuário ou grupo.
 
-You specify the type of the record you want.
+Especifique o tipo do registro desejado.
 
-The module returns the ID of the  record and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
+O módulo retorna a ID do registro e quaisquer campos associados, juntamente com quaisquer campos e valores personalizados que a conexão acessa. Você pode mapear essas informações em módulos subsequentes no cenário.
 
-When you are configuring this module, the following fields display.
+Ao configurar esse módulo, os campos a seguir são exibidos.
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Azure Active Directory] account to [!DNL Workfront Fusion], see <a href="../../workfront-fusion/connections/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Azure Active Directory] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record Type]</td> 
-   <td>Select whether you want to read a [!UICONTROL User] record or a [!UICONTROL Group] record.</td> 
+   <td role="rowheader">[!UICONTROL Tipo de Registro]</td> 
+   <td>Selecione se você deseja ler um registro [!UICONTROL Usuário] ou um registro [!UICONTROL Grupo].</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Other Fields]</td> 
-   <td>Fill in these fields to set the values for the new record.</td> 
+   <td role="rowheader">[!UICONTROL Outros Campos]</td> 
+   <td>Preencha esses campos para definir os valores do novo registro.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Custom API Call] 
+#### [!UICONTROL Chamada de API personalizada]
 
-This action module lets you make a custom authenticated call to the [!DNL Azure Active Directory] API. This way, you can create a data flow automation that can't be accomplished by the other [!DNL Azure Active Directory] modules.
+Este módulo de ação permite fazer uma chamada autenticada personalizada para a API [!DNL Azure Active Directory]. Dessa forma, você pode criar uma automação de fluxo de dados que não pode ser realizada pelos outros módulos do [!DNL Azure Active Directory].
 
-When you are configuring this module, the following fields display.
+Ao configurar esse módulo, os campos a seguir são exibidos.
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Azure Active Directory] account to [!DNL Workfront Fusion], see <a href="../../workfront-fusion/connections/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Azure Active Directory] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
-   <td>Enter or map a path relative to <code>https://graph.microsoft.com/{version}/{resource}?{query-parameters}</code></td> 
+   <td>Insira ou mapeie um caminho relativo a <code>https://graph.microsoft.com/{version}/{resource}?{query-parameters}</code></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="../../workfront-fusion/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP request methods</a>.</p> </td> 
+   <td role="rowheader">[!UICONTROL Método]</td> 
+   <td> <p>Selecione o método de solicitação HTTP necessário para configurar a chamada de API. Para obter mais informações, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitação HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>Add the headers of the request in the form of a standard JSON object.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> </td> 
+   <td role="rowheader">[!UICONTROL Cabeçalhos]</td> 
+   <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p> <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
-   <td> <p>Add the query for the API call in the form of a standard JSON object.</p> <p>For example: <code>{"name":"something-urgent"}</code></p> </td> 
+   <td role="rowheader">[!UICONTROL Cadeia de Consulta]</td> 
+   <td> <p>Adicione a consulta da chamada à API na forma de um objeto JSON padrão.</p> <p>Por exemplo: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Add the body content for the API call in the form of a standard JSON object.</p> <p>Note:  <p>When using conditional statements such as <code>if</code> in your JSON, put the quotation marks outside of the conditional statement.</p> 
+   <td role="rowheader">[!UICONTROL Corpo]</td> 
+   <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Nota:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
-      <p> <img src="assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+      <p> <img src="../assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### Searches 
+### Pesquisas
 
-* [Search Users](#search-users)
-* [Search Users/Groups Delta](#search-usersgroups-delta)
+* [Procurar Usuários](#search-users)
+* [Pesquisar Delta de Usuários/Grupos](#search-usersgroups-delta)
 
-#### [!UICONTROL Search Users] 
+#### [!UICONTROL Pesquisar Usuários]
 
-This search module looks for records in an object in [!DNL Azure Active Directory] that match the search query you specify. You can map this information in subsequent modules in the scenario.
+Este módulo de pesquisa procura registros em um objeto em [!DNL Azure Active Directory] que correspondam à consulta de pesquisa especificada. Você pode mapear essas informações em módulos subsequentes no cenário.
 
-When you are configuring this module, the following fields display.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Azure Active Directory] account to [!DNL Workfront Fusion], see <a href="../../workfront-fusion/connections/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Search Criteria]</td> 
-   <td> <p>Enter the criteria that you want to use in your search.</p> <p>For information about the parameters to use, such as "[!UICONTROL $filter]", see <a href="https://docs.microsoft.com/en-us/graph/query-parameters">Use query parameters to customize responses</a> in the [!DNL Microsoft] API documentation.</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
-   <td>Select the information you want included in the output bundle for this module.</td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Maximal count of records]</td> 
-   <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Search Users/Groups Delta]  
-
-This search module looks for records in [!DNL Azure AD] that have been created, updated, or deleted. You can map this information in subsequent modules in the scenario.
+Ao configurar esse módulo, os campos a seguir são exibidos.
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Azure Active Directory] account to [!DNL Workfront Fusion], see <a href="../../workfront-fusion/connections/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Azure Active Directory] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
+   <td role="rowheader">[!UICONTROL Critérios de Pesquisa]</td> 
+   <td> <p>Informe os critérios que deseja utilizar na pesquisa.</p> <p>Para obter informações sobre os parâmetros a serem usados, como "[!UICONTROL $filter]", consulte <a href="https://docs.microsoft.com/en-us/graph/query-parameters">Usar parâmetros de consulta para personalizar respostas</a> na documentação da API [!DNL Microsoft].</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">[!UICONTROL Saídas]</td> 
+   <td>Selecione as informações que deseja incluir no pacote de saída deste módulo.</td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">[!UICONTROL Contagem máxima de registros]</td> 
+   <td>Insira ou mapeie o número máximo de registros que deseja que o módulo retorne durante cada ciclo de execução de cenário.</td> 
   </tr> 
  </tbody> 
 </table>
 
--->
+#### [!UICONTROL Intervalo de Usuários/Grupos de Pesquisa]
+
+Este módulo de pesquisa procura registros em [!DNL Azure AD] que foram criados, atualizados ou excluídos. Você pode mapear essas informações em módulos subsequentes no cenário.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Azure Active Directory] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">[!UICONTROL Limite]</td> 
+   <td>Insira ou mapeie o número máximo de registros que deseja que o módulo retorne durante cada ciclo de execução de cenário.</td> 
+  </tr> 
+ </tbody> 
+</table>
