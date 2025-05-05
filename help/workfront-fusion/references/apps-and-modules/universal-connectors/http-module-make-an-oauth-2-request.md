@@ -127,7 +127,7 @@ Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte
       <td role="rowheader"> <p>[!UICONTROL Tipo de fluxo]</p> </td> 
       <td> <p>Selecione o fluxo para obter tokens.</p> 
        <ul> 
-        <li><strong>[!Código de Autorização UICONTROL]</strong>: Insira o <code>[!UICONTROL Authorize URI]</code> e <code>[!UICONTROL Token URI]</code> da documentação de API do serviço.</li> 
+        <li><strong>[!UICONTROL Código de Autorização]</strong>: Insira o <code>[!UICONTROL Authorize URI]</code> e <code>[!UICONTROL Token URI]</code> da documentação de API do serviço.</li> 
         <li><strong>[!UICONTROL Implícito]</strong>: Insira o <code>[!UICONTROL Authorize URI]</code> da documentação da API do serviço.</li> 
        </ul> </td> 
      </tr> 
@@ -151,7 +151,7 @@ Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte
       <td role="rowheader"> <p>[!UICONTROL Autorizar parâmetros]</p> </td> 
       <td> <p>Adicione os parâmetros que deseja incluir na chamada de autorização. Os seguintes parâmetros padrão são sempre incluídos automaticamente e não precisam ser adicionados.</p> <p>Parâmetros padrão:</p> 
        <ul> 
-        <li> <p><strong>[!UICONTROL tipo_resposta]</strong> </p> <p> <code>code </code>para o fluxo de Código de Autorização [!UICONTROL] e <code>token </code>para o fluxo Implícito [!UICONTROL]</p> </li> 
+        <li> <p><strong>[!UICONTROL tipo_resposta]</strong> </p> <p> <code>code </code>para o fluxo de Código de Autorização  e <code>token </code>para o fluxo Implícito </p> </li> 
         <li> <p><strong>[!UICONTROL redirect_uri]</strong> </p> 
          <table style="table-layout:auto">  
           <col> 

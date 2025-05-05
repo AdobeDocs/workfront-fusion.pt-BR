@@ -747,7 +747,7 @@ Aqui, &quot;E&quot; é a coluna e &quot;é nulo&quot; é a condição. Você pod
 1. Execute o cenário.
 1. No Google Sheets, escolha **[!UICONTROL Inserir]** > **[!UICONTROL Desenho]**... na barra de menu principal.
 
-1. Na janela [!UICONTROL Desenho], clique no ícone ![Caixa de texto ]****[!UICONTROL  Caixa de texto](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) próximo à parte superior da janela.
+1. Na janela [!UICONTROL Desenho], clique no ícone [Caixa de texto ]&#x200B;**&#x200B;**![[!UICONTROL &#x200B; Caixa de texto]](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) próximo à parte superior da janela.
 1. Crie um botão e clique no botão **[!UICONTROL Salvar e Fechar]** no canto superior direito:
 1. O botão é colocado em sua planilha. Clique nos três pontos verticais no canto superior direito do botão:
 1. Escolha **[!UICONTROL Atribuir script..].** no menu.

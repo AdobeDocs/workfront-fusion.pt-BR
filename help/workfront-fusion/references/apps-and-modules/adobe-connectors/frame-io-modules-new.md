@@ -136,8 +136,8 @@ O processo de conexão é diferente se você estiver usando o conector Legacy Fr
           <td>Insira sua [!DNL Adobe] [!UICONTROL ID do Cliente]. Isso pode ser encontrado na seção [!UICONTROL Credentials details] do [!DNL Adobe Developer Console].<p>Para obter instruções sobre como localizar credenciais, consulte <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >Credenciais</a> na documentação do desenvolvedor do Adobe.</p></td>
         </tr>
         <tr>
-          <td role="rowheader">[! UICONTROL Client Secret]</td>
-          <td>Insira seu [!DNL Adobe] [! UICONTROL Client Secret]. Isso pode ser encontrado no [! Detalhes das credenciais UICONTROL] da seção .[!DNL Adobe Developer Console]<p>Para obter instruções sobre credenciais de localização, consulte <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >Credenciais</a> na documentação Adobe Systems do desenvolvedor.</p>
+          <td role="rowheader">[!UICONTROL Client Secret]</td>
+          <td>Insira seu [!DNL Adobe] [!UICONTROL Client Secret]. Isso pode ser encontrado no [!UICONTROL Detalhes das credenciais] da seção .[!DNL Adobe Developer Console]<p>Para obter instruções sobre credenciais de localização, consulte <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >Credenciais</a> na documentação Adobe Systems do desenvolvedor.</p>
         </tr>
        </tbody>
     </table>
@@ -176,7 +176,7 @@ Essa ação módulo cria um novo ativo.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[! Conexão UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL Conexão] </td> 
    <td>Para obter instruções sobre como criar uma conexão com [!DNL Frame.io], consulte <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Conectar [!DNL Frame.io] a [!DNL Adobe Workfront Fusion]</a> neste artigo.</td> 
   </tr> 
   <tr> 
@@ -192,11 +192,11 @@ Essa ação módulo cria um novo ativo.
    <td> <p>Selecione o projeto ou mapeie a ID do projeto para o qual deseja criar um ativo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! Caminho UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL Caminho] </td> 
    <td> <p>Selecione o caminho onde deseja criar um ativo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! Nome de Arquivo UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL Nome de Arquivo] </td> 
    <td> <p>Insira o nome do arquivo que deseja usar para esse ativo.</p> </td> 
   </tr>
     <tr> 
@@ -271,15 +271,15 @@ Essa pesquisa módulo recupera todas as ativos da pasta do projeto especificada.
  </col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[! Conexão UICONTROL] </td> 
+    <td role="rowheader">[!UICONTROL Conexão] </td> 
    <td>Para obter instruções sobre como criar uma conexão [!DNL Frame.io], consulte <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Conectar-se [!DNL Frame.io] [!DNL Adobe Workfront Fusion]</a> neste artigo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! ID de conta UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL ID de conta] </td> 
    <td> <p>Selecione o conta ou mapeie a ID do conta que contém os ativos que você deseja lista.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! UICONTROL Número máximo de ativos retornados] </td> 
+   <td role="rowheader">[!UICONTROL Número máximo de ativos retornados] </td> 
    <td> <p>Insira ou mapeie o número máximo de ativos deseja que a módulo retorne durante cada ciclo de execução de cenário.</p> </td> 
   </tr> 
  </tbody> 
@@ -306,11 +306,11 @@ Esse módulo de ação adiciona um novo comentário ou resposta ao ativo.
    <td>Para obter instruções sobre como criar uma conexão [!DNL Frame.io], consulte <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Conectar-se [!DNL Frame.io] [!DNL Adobe Workfront Fusion]</a> neste artigo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! ID de conta UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL ID de conta] </td> 
    <td> <p>Selecione o conta ou mapeie a ID do conta que contém o ativo ao qual deseja adicionar um comentário.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! ID de Área de trabalho UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL ID de Área de trabalho] </td> 
    <td> <p>Selecione o conta ou mapeie a ID do espaço de trabalho que contém a ativo ao qual deseja adicionar um comentário.</p> </td> 
   </tr> 
   <tr> 
@@ -318,11 +318,11 @@ Esse módulo de ação adiciona um novo comentário ou resposta ao ativo.
    <td> <p>Selecione o projeto ou mapeie a ID do projeto que contém o ativo ao qual você deseja adicionar um comentário.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! Caminho UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL Caminho] </td> 
    <td> <p>Selecione o caminho para o ativo ao qual deseja adicionar um comentário.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! Texto UICONTROL]</td> 
+   <td role="rowheader">[!UICONTROL Texto]</td> 
    <td> <p> Insira a conteúdo de texto do comentário ou da resposta.</p> </td> 
   </tr> 
   <tr> 
@@ -426,19 +426,19 @@ Essa ação módulo edita um comentário existente.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[! Conexão UICONTROL] </td> 
+    <td role="rowheader">[!UICONTROL Conexão] </td> 
    <td>Para obter instruções sobre como criar uma conexão [!DNL Frame.io], consulte <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Conectar-se [!DNL Frame.io] [!DNL Adobe Workfront Fusion]</a> neste artigo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! ID de conta UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL ID de conta] </td> 
    <td> <p>Selecione ou mapeie as conta que contém o projeto que contém o ativo em que deseja atualizar um comentário.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! ID de Comentário UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL ID de Comentário] </td> 
    <td> <p>Selecione o comentário que deseja atualizar.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! Texto UICONTROL]</td> 
+   <td role="rowheader">[!UICONTROL Texto]</td> 
    <td> <p> Insira a conteúdo de texto do comentário.</p> </td> 
   </tr> 
   <tr> 
@@ -567,15 +567,15 @@ Esses módulos de ação adicionam um ativo a um link de compartilhamento no Fra
    <td>Para obter instruções sobre como criar uma conexão com [!DNL Frame.io], consulte <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Conectar [!DNL Frame.io] a [!DNL Adobe Workfront Fusion]</a> neste artigo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! ID de conta UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL ID de conta] </td> 
    <td> <p>Selecione ou mapeie as conta que contém o link de compartilhamento ao qual deseja adicionar um ativo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! Compartilhar link ID UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL Compartilhar link ID] </td> 
    <td> <p>Selecione ou mapeie os link de compartilhamento aos quais deseja adicionar uma ativo.</p> </td> 
   </tr> 
    <tr> 
-   <td role="rowheader">[! ID de ativo UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL ID de ativo] </td> 
    <td> <p>Insira ou mapeie a ID das ativo que deseja adicionar à link de compartilhamento.</p> </td> 
   </tr> 
  </tbody> 
@@ -590,19 +590,19 @@ Essa ação módulo cria uma nova link de compartilhamento no Frame.io.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[! Conexão UICONTROL] </td> 
+    <td role="rowheader">[!UICONTROL Conexão] </td> 
    <td>Para obter instruções sobre como criar uma conexão [!DNL Frame.io], consulte <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Conectar-se [!DNL Frame.io] [!DNL Adobe Workfront Fusion]</a> neste artigo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! ID de conta UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL ID de conta] </td> 
    <td> <p>Selecione ou mapeie a conta onde deseja criar um link de compartilhamento.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! ID de Área de trabalho UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL ID de Área de trabalho] </td> 
    <td> <p>Selecione ou mapeie a espaço de trabalho em que deseja criar um link de compartilhamento.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! ID de projeto UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL ID de projeto] </td> 
    <td> <p>Selecione ou mapeie o projeto no qual deseja criar um link de compartilhamento.</p> </td> 
   </tr> 
    <tr> 

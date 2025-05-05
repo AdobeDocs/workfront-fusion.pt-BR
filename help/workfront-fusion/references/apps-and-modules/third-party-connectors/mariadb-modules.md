@@ -99,7 +99,7 @@ Você pode criar uma conexão com sua conta do [!DNL MariaDB] diretamente de den
       <td>A porta padrão é 3306. Se você estiver usando uma porta não padrão, defina esse número para sua porta. </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Banco de Dados ]</td> 
+      <td role="rowheader">[!UICONTROL Banco de Dados &#x200B;]</td> 
       <td>Insira o nome do banco de dados com o qual você deseja interagir.</td> 
      </tr> 
      <tr> 

@@ -132,7 +132,7 @@ Este módulo de ação cria uma nova mensagem.
    <td> <p>Insira o conteúdo do texto da mensagem que deseja criar.</p> <p>Observação: para obter informações detalhadas sobre formatação de texto, consulte <a href="https://api.slack.com/reference/surfaces/formatting">Formatação de texto para visualização</a> do aplicativo na [!DNL Slack] documentação.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! UICONTROL Como usuário]</td> 
+   <td role="rowheader">[!UICONTROL Como usuário]</td> 
    <td>Ative essa opção para postagem a mensagem como a usuário de propriedade das credenciais usadas pela conexão para esse módulo.</td> 
   </tr> 
   <tr> 
@@ -164,7 +164,7 @@ Este módulo de ação cria uma nova mensagem.
    <td> <p>Habilite esta opção para permitir que nomes e canais usem o formato <code>@username</code> ou <code>#channel</code>. </p> <p>Para obter mais informações, consulte <a href="https://api.slack.com/docs/formatting">Formatação de texto para superfícies</a> do aplicativo na [!DNL Slack] documentação.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[! Texto da mensagem de análise UICONTROL]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Texto da mensagem de análise]</p> </td> 
    <td> <p>Ative essa opção para permitir a análise automática. </p> <p>Para obter mais informações, consulte <a href="https://api.slack.com/docs/formatting">Formatação de texto para superfícies do aplicativo</a> na documentação de [!DNL Slack].</p> <p>Observação: se você usou as opções [!UICONTROL Link names] ou [!UICONTROL Parse message text] na mensagem original, deverá especificá-las ao executar o módulo [!UICONTROL Update a Message] também.</p> </td> 
   </tr> 
   <tr> 
@@ -176,11 +176,11 @@ Este módulo de ação cria uma nova mensagem.
    <td> <p>Ative essa opção para permitir o cancelamento de conteúdo baseados em texto principalmente. </p> <p>Para obter mais informações sobre a desenrolação [!DNL Slack], consulte <a href="https://api.slack.com/reference/messaging/link-unfurling">Cancelar links em mensagens</a> na [!DNL Slack] documentação.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[! Desfazer a mídia conteúdo UICONTROL]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Desfazer a mídia conteúdo]</p> </td> 
    <td> <p>Ative essa opção para permitir o cancelamento de conteúdo de mídia. </p> <p>Para obter mais informações sobre a desenrolação [!DNL Slack], consulte <a href="https://api.slack.com/reference/messaging/link-unfurling">Cancelar links em mensagens</a> na [!DNL Slack] documentação.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! Nome de usuário UICONTROL]</td> 
+   <td role="rowheader">[!UICONTROL Nome de usuário]</td> 
    <td>Especifique o usuário nome usado para postagem a mensagem. Se não usuário nome for especificado, o nome "Bot" será usado.</td> 
   </tr> 
  </tbody> 
@@ -246,7 +246,7 @@ Essa ação módulo retorna uma mensagem com uma determinada ID de uma canal pú
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[! Conexão UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL Conexão] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Slack] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -286,10 +286,10 @@ Este módulo de ação permite editar uma mensagem existente.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL ID da Mensagem (Carimbo de data/hora)]</p> </td> 
-   <td> <p> Insira ou mapeie o carimbo de data e hora da mensagem sobre a qual deseja recuperar informações.</p> <p>Observação: o carimbo de data e hora pode ser recuperado usando outra módulo, como o [! UICONTROL Assista a mensagens de canal público] módulo.</p> </td> 
+   <td> <p> Insira ou mapeie o carimbo de data e hora da mensagem sobre a qual deseja recuperar informações.</p> <p>Observação: o carimbo de data e hora pode ser recuperado usando outra módulo, como o [!UICONTROL Assista a mensagens de canal público] módulo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[! Texto UICONTROL]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Texto]</p> </td> 
    <td> <p>Insira o novo texto conteúdo da mensagem que deseja atualizar.</p> <p>Para obter mais informações, consulte <a href="https://api.slack.com/docs/formatting">Formatação de texto para superfícies do aplicativo</a> na documentação de [!DNL Slack].</p> </td> 
   </tr> 
   <tr> 
@@ -297,16 +297,16 @@ Este módulo de ação permite editar uma mensagem existente.
    <td>Ative essa opção para atualizar a mensagem como a usuário de propriedade das credenciais usadas pela conexão para esse módulo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! Anexos UICONTROL]</td> 
+   <td role="rowheader">[!UICONTROL Anexos]</td> 
    <td>Para cada item que você deseja anexar à mensagem, clique <b>em Adicionar item</b> e preencha os detalhes do item.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[! Nomes de links UICONTROL]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Nomes de links]</p> </td> 
    <td> <p>Ative essa opção para permitir o uso <code>@username</code> ou <code>#channel</code> o formato de nomes e canais. </p> <p>Para obter mais informações, consulte <a href="https://api.slack.com/docs/formatting">Formatação de texto para superfícies</a> do aplicativo na [!DNL Slack] documentação.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[! Texto da mensagem de análise UICONTROL]</p> </td> 
-   <td> <p>Ative essa opção para permitir a análise automática. </p> <p> Para obter mais informações, consulte <a href="https://api.slack.com/docs/formatting">Formatação de texto para superfícies</a> do aplicativo na [!DNL Slack] documentação.</p> <p>Observação: se tiver usado [! Nomes de links UICONTROL] ou [! Opções de texto da mensagem de análise UICONTROL na mensagem original, especifique-as ao executar a Enviar mensagem módulo também.</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Texto da mensagem de análise]</p> </td> 
+   <td> <p>Ative essa opção para permitir a análise automática. </p> <p> Para obter mais informações, consulte <a href="https://api.slack.com/docs/formatting">Formatação de texto para superfícies</a> do aplicativo na [!DNL Slack] documentação.</p> <p>Observação: se tiver usado [!UICONTROL Nomes de links] ou &lbrack;! Opções de texto da mensagem de análise UICONTROL na mensagem original, especifique-as ao executar a Enviar mensagem módulo também.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -379,7 +379,7 @@ Este módulo de ação retorna informações sobre um canal do espaço de trabal
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL ID de Canal]</p> </td> 
-   <td> <p>Insira ou mapeie a ID do canal com a qual deseja recuperar informações.</p> <p>Observação: a ID de canal pode ser recuperada usando o [! Canais de lista UICONTROL] módulo.</p> </td> 
+   <td> <p>Insira ou mapeie a ID do canal com a qual deseja recuperar informações.</p> <p>Observação: a ID de canal pode ser recuperada usando o [!UICONTROL Canais de lista] módulo.</p> </td> 
   </tr> 
  </tbody>
 
@@ -420,19 +420,19 @@ Essa pesquisa módulo retorna uma lista de usuários no canal selecionado.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[! Conexão UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL Conexão] </td> 
    <td> <p>Para obter instruções sobre como conectar suas [!DNL Slack] conta, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com [!DNL Adobe Workfront Fusion] instruções básicas</a>[!DNL Workfront Fusion].</p> </td> 
   </tr> 
 <tr> 
-   <td role="rowheader"> <p>[! UICONTROL Insira uma ID ou nome de canal]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Insira uma ID ou nome de canal]</p> </td> 
    <td> <p>Escolha como deseja selecionar a mensagem desejada.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Inserir manualmente]</strong> </p> <p>No campo <strong>[!UICONTROL ID de Canal ou nome]</strong>, insira ou mapeie a ID de Canal ou do canal do qual deseja listar os usuários.</p> <p>Observação: a ID de canal pode ser recuperada usando o módulo [!UICONTROL List Channels].</p> </li> 
-     <li> <p><strong>[! UICONTROL Selecione no lista]</strong> </p> <p>Selecione o tipo de canal e selecione o canal.</p> </li> 
+     <li> <p><strong>[!UICONTROL Selecione no lista]</strong> </p> <p>Selecione o tipo de canal e selecione o canal.</p> </li> 
     </ul> </td> 
   </tr>
   <tr> 
-   <td role="rowheader">[! Limite UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL Limite] </td> 
    <td> <p>Defina o número máximo de membros [!DNL Workfront Fusion] que retornarão durante um ciclo de execução.</p> </td> 
   </tr> 
  </tbody> 
@@ -450,15 +450,15 @@ Essa ação módulo permite fazer uma chamada autenticada personalizada para a [
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[! Conexão UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL Conexão] </td> 
    <td> <p>Para obter instruções sobre como conectar suas [!DNL Slack] conta, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com [!DNL Adobe Workfront Fusion] instruções básicas</a>[!DNL Workfront Fusion].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! URL UICONTROL]</td> 
+   <td role="rowheader">[!UICONTROL URL]</td> 
    <td>Insira um caminho relativo a <code>https://slack.com/api/</code>. Exemplo: <code>/users/identity</code>.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! Método UICONTROL]</td> 
+   <td role="rowheader">[!UICONTROL Método]</td> 
    td&gt; <p>Selecione o método de solicitação HTTP necessário para configurar a chamada da API. Para obter mais informações, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">solicitação HTTP métodos</a>.</p> </td> 
   </tr> 
   <tr> 

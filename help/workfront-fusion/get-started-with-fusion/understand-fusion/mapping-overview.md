@@ -93,6 +93,6 @@ Pacotes do tipo matriz exibem `(Array)` ao lado do rótulo do pacote na saída d
 
 No painel de mapeamento, as matrizes são exibidas com colchetes. Você pode identificar um item do tipo matriz pelos colchetes no final do rótulo do item. Para localizar um elemento de matriz específico no painel de mapeamento, clique na seta ao lado da matriz.
 
-Matriz ![1}](assets/array.png)
+Matriz ![1&rbrace;](assets/array.png)
 
 Para obter informações e instruções sobre como mapear matrizes e elementos de matriz, consulte [Mapear matrizes e elementos de matriz](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md).

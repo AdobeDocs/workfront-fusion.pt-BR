@@ -160,7 +160,7 @@ Você pode criar uma conexão com [!DNL Frame.io] usando o PKCE OAuth 2.0 com um
 1. Copie o `client_id` fornecido.
 1. Vá para [!DNL Workfront Fusion] e abra a caixa de diálogo **[!UICONTROL Criar uma conexão]** do módulo [!DNL Frame.io].
 1. **[!UICONTROL No campo Tipo]** de conexão, selecione **[!UICONTROL [!DNL Frame.io]OAuth 2.0 PKCE]**.
-1. Insira um nome para a nova conexão no campo Nome ]**da**[!UICONTROL  conexão.
+1. Insira um nome para a nova conexão no campo Nome **da** conexão.
 1. Clique **[!UICONTROL Exibir configurações avançadas]**.
 1. Insira o `client_id` copiado na etapa 2 para o campo **[!UICONTROL ID do cliente]**.
 1. Clique em **[!UICONTROL Continuar]** para estabelecer a conexão e retornar ao módulo.
@@ -255,7 +255,7 @@ Essa ação módulo exclui um ativo especificado.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[! Conexão UICONTROL] </td> 
+    <td role="rowheader">[!UICONTROL Conexão] </td> 
    <td>Para obter instruções sobre como criar uma conexão com [!DNL Frame.io], consulte <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Conectar [!DNL Frame.io] a [!DNL Adobe Workfront Fusion]</a> neste artigo.</td> 
   </tr> 
   <tr> 
@@ -294,7 +294,7 @@ Este módulo de ação recupera detalhes do ativo.
    <td> <p>Selecione ou mapeie a equipe proprietária do projeto que contém o ativo sobre a qual deseja recuperar detalhes.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! ID de projeto UICONTROL]</td> 
+   <td role="rowheader">[!UICONTROL ID de projeto]</td> 
    <td> <p> Selecione o projeto que contém o ativo do qual deseja recuperar detalhes.</p> </td> 
   </tr> 
   <tr> 
@@ -547,7 +547,7 @@ Este módulo de ação exclui um comentário existente.
    <td> <p>Insira ou mapeie a ID do ativo que contém o comentário que você deseja excluir.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! ID de Comentário UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL ID de Comentário] </td> 
    <td> <p>Insira ou mapeie a ID do comentário que deseja excluir.</p> </td> 
   </tr> 
  </tbody> 
@@ -562,11 +562,11 @@ Esta ação módulo recupera detalhes do comentário especificado.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[! Conexão UICONTROL] </td> 
+    <td role="rowheader">[!UICONTROL Conexão] </td> 
    <td>Para obter instruções sobre como criar uma conexão [!DNL Frame.io], consulte <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Conectar-se [!DNL Frame.io] [!DNL Adobe Workfront Fusion]</a> neste artigo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! ID da equipe UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL ID da equipe] </td> 
    <td> <p>Selecione ou mapeie a equipe proprietária do projeto que contém a pasta da qual você deseja recuperar ativos.</p> </td> 
   </tr> 
   <tr> 
@@ -679,7 +679,7 @@ Se estiver adicionando um webhook, insira as informações a seguir.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[! Nome UICONTROL Webhook] </td> 
+   <td role="rowheader">[!UICONTROL Nome Webhook] </td> 
    <td> <p>Insira o nome do webhook, por exemplo, Comentário editado.</p> </td> 
   </tr> 
   <tr> 
@@ -706,15 +706,15 @@ Se estiver adicionando um webhook, insira as seguintes informações.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[! Nome UICONTROL Webhook] </td> 
+   <td role="rowheader">[!UICONTROL Nome Webhook] </td> 
    <td> <p>Insira o nome do webhook, por exemplo, Novo Comentário.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader">[! Conexão UICONTROL] </td> 
+    <td role="rowheader">[!UICONTROL Conexão] </td> 
    <td>Para obter instruções sobre como criar uma conexão [!DNL Frame.io], consulte <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Conectar-se [!DNL Frame.io] [!DNL Adobe Workfront Fusion]</a> neste artigo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! ID da equipe UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL ID da equipe] </td> 
    <td> <p>Selecione a equipe para a qual este webhook foi criado.</p> </td> 
   </tr> 
  </tbody> 

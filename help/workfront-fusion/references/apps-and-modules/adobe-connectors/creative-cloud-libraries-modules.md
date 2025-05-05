@@ -115,7 +115,7 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 
 * [[!UICONTROL Carregar um Elemento]](#upload-an-element)
 
-* [!UICONTROL [Observar novo elemento na biblioteca]](#watch-new-element-in-library)
+* [[!UICONTROL [Observar novo elemento na biblioteca]]](#watch-new-element-in-library)
 
 * [[!UICONTROL Observar elementos atualizados]](#watch-updated-elements)
 

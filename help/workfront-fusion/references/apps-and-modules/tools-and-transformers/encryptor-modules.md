@@ -66,7 +66,7 @@ Para obter mais informações sobre chaves públicas e privadas, consulte o [glo
 
 Para obter mais informações sobre chaves, consulte [Chaves](/help/workfront-fusion/references/modules/keys.md).
 
-## [!UICONTROL Módulos {Encryptor] e seus campos
+## [!UICONTROL Módulos &lbrace;Encryptor] e seus campos
 
 Ao configurar os módulos do [!UICONTROL Encryptor], os campos a seguir são exibidos. Um título em negrito em um módulo indica um campo obrigatório.
 

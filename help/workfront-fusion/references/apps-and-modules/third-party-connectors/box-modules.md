@@ -131,7 +131,7 @@ Esse módulo de acionamento instantâneo inicia um cenário quando a ação de s
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td> <p>Selecione o webhook que deseja usar para assistir mensagens de saída ou adicione um webhook. </p><p>Para adicionar um webhook, clique <strong>em [! Adicionar UICONTROL]</strong> e inserir o nome e a conexão do webhook, a pasta que você deseja assistir e os acionadores que você deseja observar.</p> <p> Para obter instruções sobre como conectar seu [! Caixa UICONTROL] conta para [! UICONTROL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Conectar a um serviço - Instruções básicas</a>.</p> </td> 
+   <td> <p>Selecione o webhook que deseja usar para assistir mensagens de saída ou adicione um webhook. </p><p>Para adicionar um webhook, clique <strong>em [!UICONTROL Adicionar]</strong> e inserir o nome e a conexão do webhook, a pasta que você deseja assistir e os acionadores que você deseja observar.</p> <p> Para obter instruções sobre como conectar seu [!UICONTROL Caixa] conta para [!UICONTROL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Conectar a um serviço - Instruções básicas</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -286,11 +286,11 @@ Essa ação módulo cria uma nova pasta vazia dentro da pasta pai especificada.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[! Conexão UICONTROL]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
    <td> <p>Para obter instruções sobre como conectar suas [!DNL Box] conta, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com [!DNL Adobe Workfront Fusion] instruções básicas</a>[!DNL Workfront Fusion].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! Nome UICONTROL]</td> 
+   <td role="rowheader">[!UICONTROL Nome]</td> 
    <td> <p>Insira ou mapeie um nome para a nova pasta.</p> </td> 
   </tr> 
   <tr> 
@@ -321,7 +321,7 @@ Esse módulo de ação recupera detalhes de uma pasta, incluindo as primeiras 10
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Box] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! Pasta UICONTROL]</td> 
+   <td role="rowheader">[!UICONTROL Pasta]</td> 
    <td> <p>Selecione a pasta para a qual deseja recuperar detalhes.</p> </td> 
   </tr> 
  </tbody> 
@@ -336,7 +336,7 @@ Essa ação módulo recupera o metadados da pasta por ID da pasta.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[! Conexão UICONTROL]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Box] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -377,7 +377,7 @@ Esse módulo de ação faz uma chamada personalizada para a API Box.
    <td> <p>Adicione os cabeçalhos do solicitação no formulário de um objeto JSON padrão.</p> <p>Por exemplo: <code>{"Content-type":"application/json"}</code></p> <p>O Workfront Fusion adiciona os cabeçalhos de autorização para você.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! String de consulta UICONTROL]</td> 
+   <td role="rowheader">[!UICONTROL String de consulta]</td> 
    <td> <p>Adicione a consulta da chamada à API na forma de um objeto JSON padrão.</p> <p>Por exemplo: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
@@ -399,15 +399,15 @@ Essa ação módulo cria ou atualiza o metadados de uma pasta.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[! Conexão UICONTROL]</td> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
    <td> <p>Para obter instruções sobre como conectar suas [!DNL Box] conta, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com [!DNL Adobe Workfront Fusion] instruções básicas</a>[!DNL Workfront Fusion].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! Escopo UICONTROL]</td> 
+   <td role="rowheader">[!UICONTROL Escopo]</td> 
    <td> <p>Selecione as escopo que deseja usar para essa atualização metadados.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! Pasta UICONTROL]</td> 
+   <td role="rowheader">[!UICONTROL Pasta]</td> 
    <td> <p>Selecione a pasta para a qual deseja atualizar os metadados.</p> </td> 
   </tr> 
  </tbody> 
@@ -429,11 +429,11 @@ Este módulo de pesquisa procura por itens que estejam disponíveis para o usuá
    <td> <p>Para obter instruções sobre como conectar suas [!DNL Box] conta, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com [!DNL Adobe Workfront Fusion] instruções básicas</a>[!DNL Workfront Fusion].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! Consulta UICONTROL]</td> 
+   <td role="rowheader">[!UICONTROL Consulta]</td> 
    <td> <p>Insira ou mapeie a cadeia de caracteres para pesquisa. Essa query é comparada com nomes de itens, descrições, conteúdo de texto de arquivos e vários outros campos dos diferentes tipos de itens.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! Escopo UICONTROL]</td> 
+   <td role="rowheader">[!UICONTROL Escopo]</td> 
    <td> <p>Selecione se você está procurando por conteúdo associados ao usuário cujas credenciais são usadas para a conexão usada neste módulo ou procurando conteúdo associados a toda a empresa.</p> </td> 
   </tr> 
   <tr> 
@@ -441,15 +441,15 @@ Este módulo de pesquisa procura por itens que estejam disponíveis para o usuá
    <td> <p>Selecione se você está procurando arquivos, pastas ou links da Web.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! Classificação UICONTROL]</td> 
+   <td role="rowheader">[!UICONTROL Classificação]</td> 
    <td> <p>Selecione se deseja classificar por relevância ou por data modificada.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! Conteúdo de lixeira UICONTROL]</td> 
+   <td role="rowheader">[!UICONTROL Conteúdo de lixeira]</td> 
    <td> <p>Selecione se deseja pesquisa conteúdo ou conteúdo que não foram enviados para a lixeira.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! IDs de Pasta pai UICONTROL]</td> 
+   <td role="rowheader">[!UICONTROL IDs de Pasta pai]</td> 
    <td> <p>Para pesquisar em uma pasta específica, para cada pasta que você deseja pesquisar, clique em <b>Adicionar item</b> e insira a ID da pasta. </p> </td> 
   </tr> 
   <tr> 
@@ -461,15 +461,15 @@ Este módulo de pesquisa procura por itens que estejam disponíveis para o usuá
    <td> <p>Para pesquisar ativos criados em um determinado intervalo de datas, insira a última data no intervalo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! UICONTROL Atualizado de]</td> 
+   <td role="rowheader">[!UICONTROL Atualizado de]</td> 
    <td> <p>Para pesquisa para ativos atualizados em determinado intervalo de datas, insira a data mais antiga no intervalo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! UICONTROL atualizado para]</td> 
+   <td role="rowheader">[!UICONTROL atualizado para]</td> 
    <td> <p>Para pesquisa for ativos atualizados em determinada intervalo de datas, insira a data mais recente no intervalo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! Campos UICONTROL]</td> 
+   <td role="rowheader">[!UICONTROL Campos]</td> 
    <td> <p>Para cada atributo que você deseja retornar na resposta do módulo, clique em <b>Adicionar item</b> e insira o campo.</p><p>Isso pode ser usado para solicitar campos que normalmente não são retornados em uma resposta padrão. Esteja ciente de que a especificação desse parâmetro terá o efeito de que nenhum dos campos padrão será retornado na resposta, a menos que especificado explicitamente. </p></td> 
   </tr> 
   <tr> 
