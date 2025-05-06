@@ -4,9 +4,9 @@ description: Os  [!DNL Adobe Workfront Fusion SFTP] módulos permitem monitorar 
 author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 26c599a9887ad931763b787813153bb7791ce5d1
 workflow-type: tm+mt
-source-wordcount: '2077'
+source-wordcount: '2121'
 ht-degree: 0%
 
 ---
@@ -449,6 +449,10 @@ Esse módulo permite fazer upload de um arquivo para o servidor SFTP.
   <tr> 
    <td> <p>[!UICONTROL Permissões]</p> </td> 
    <td> <p>Defina as permissões desejadas para o arquivo ou pasta. Use parâmetros chmod. Por exemplo, <code>777</code> ou <code>-rwxrwxrwx</code>.</p> <p>Essas permissões devem corresponder ao padrão <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Para obter mais informações sobre chmod, consulte a <a href="https://ss64.com/bash/chmod.html">documentação de chmod</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td> <p>[!UICONTROL Tamanho do buffer (B)]</p> </td> 
+   <td> <p>Defina o tamanho (em bytes) de cada bloco ao fazer upload do arquivo. Isso é útil para arquivos grandes ou quando os limites de memória do servidor exigem uploads menores. Se esse valor não for definido, o arquivo será gravado em uma única operação.</p> </td> 
   </tr> 
  </tbody> 
 </table>
