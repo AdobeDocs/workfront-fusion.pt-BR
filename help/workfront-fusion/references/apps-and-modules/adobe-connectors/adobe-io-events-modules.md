@@ -4,9 +4,9 @@ description: Com os módulos do Adobe I/O Events, é possível iniciar um cenár
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 983ce043afbcc44ee8af2dfcd46738f170a2b257
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '969'
 ht-degree: 1%
 
 ---
@@ -104,6 +104,12 @@ Para criar uma conexão para os módulos do Adobe I/O Events:
         </td>
       </tr>
       <tr>
+        <td role="rowheader">Ambiente</td>
+        <td>
+          <p>Selecione se deseja se conectar a um ambiente de produção ou não produção.</p>
+        </td>
+      </tr>
+      <tr>
         <td role="rowheader">Tipo</td>
         <td>
           <p>Selecione se deseja se conectar a uma conta de serviço ou a uma conta pessoal.</p>
@@ -135,7 +141,7 @@ Para criar uma conexão para os módulos do Adobe I/O Events:
         <td>Insira sua ID da organização da Adobe. Isso pode ser encontrado na seção Detalhes das credenciais do Adobe Developer Console</td>
       </tr>
         <tr>
-        <td role="rowheader">ID do Projeto</td>
+        <td role="rowheader">ID do projeto</td>
         <td>Insira a ID do projeto. Isso pode ser encontrado no URL da credencial do projeto: <code>https://developer.adobe.com/console/projects/{consumer org ID}/ {project ID}/credentials/{credential ID}/details</code></td>
       </tr>
       <tr>
@@ -160,6 +166,8 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 * [Pesquisas](#searches)
 
 ### Acionadores
+
+<!--Becky start here-->
 
 #### Criar um registro de evento
 

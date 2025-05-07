@@ -4,9 +4,9 @@ description: Com o módulo Adobe Authenticator, você pode se conectar a qualque
 author: Becky
 feature: Workfront Fusion
 exl-id: af4da661-eeee-4033-a2bb-a2196e446a3d
-source-git-commit: 7652acb6654f4b1b0edc57d110478b309655a124
+source-git-commit: 983ce043afbcc44ee8af2dfcd46738f170a2b257
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1195'
 ht-degree: 1%
 
 ---
@@ -21,40 +21,46 @@ Para ver uma lista de APIs do Adobe disponíveis, consulte [APIs do Adobe](https
 
 ## Requisitos de acesso
 
-<table>
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] pacote</td>
-      <td>
-        <p>Novo: Qualquer um</p><p>Ou</p><p>Atual: [!UICONTROL Pro] ou superior</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] licença</td>
-      <td>
-        <p>Novo: Padrão</p><p>Ou</p><p>Atual: [!UICONTROL Plano], [!UICONTROL Trabalho]</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront Fusion] licença</td>
-      <td>
-   <p>Requisito de licença Fusion atual: nenhum requisito de licença [!DNL Workfront Fusion].</p>
++++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
+
+Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Pacote do Adobe Workfront</td> 
+   <td> <p>Qualquer</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Licença do Adobe Workfront</td> 
+   <td> <p>Novo: Padrão</p><p>Ou</p><p>Atual: trabalho ou superior</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
+   <td>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion</p>
    <p>Ou</p>
-   <p>Requisito de licença herdado do Fusion: [!UICONTROL [!DNL Workfront Fusion] para Automação e Integração do Trabalho] </p>
-   </td>
-    </tr>
-    <tr>
-      <td role="rowheader">Produto</td>
-      <td>
-   <p>Novo plano do Workfront: se você tiver o plano [!UICONTROL Select] ou [!UICONTROL Prime] [!DNL Adobe Workfront], sua organização deve comprar [!DNL Adobe Workfront Fusion] e [!DNL Adobe Workfront] para usar a funcionalidade descrita neste artigo. [!DNL Workfront Fusion] está incluído no plano [!DNL Workfront] da [!UICONTROL Ultimate].</p>
+   <p>Herdados: Automação e integração do Workfront Fusion for Work </p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Produto</td> 
+   <td>
+   <p>Novo:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
    <p>Ou</p>
-   <p>Plano atual do Workfront: sua organização deve comprar o [!DNL Adobe Workfront Fusion] e o [!DNL Adobe Workfront] para usar a funcionalidade descrita neste artigo.</p>
-   </td>
-    </tr>
-  </tbody>
+   <p>Atual: sua organização deve comprar o Adobe Workfront Fusion.</p>
+   </td> 
+  </tr>
+ </tbody> 
 </table>
+
+Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+
+Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Pré-requisitos
 
@@ -110,7 +116,7 @@ Para criar uma conexão:
       <tr>
         <td role="rowheader">[!UICONTROL Tipo de conexão]</td>
         <td>
-          <p>Selecione se deseja criar uma conexão de servidor para servidor OAuth ou uma conexão de conta de serviço (JWT).</p>
+          <p>Selecione se deseja criar uma conexão de servidor para servidor OAuth ou uma conexão de conta de serviço (JWT). Recomendamos criar conexões OAuth.</p>
         </td>
       </tr>
       <tr>
@@ -133,7 +139,7 @@ Para criar uma conexão:
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL ID da conta técnica]</td>
-        <td>Insira sua ID de conta técnica do [!DNL Adobe]. Isso pode ser encontrado na seção [!UICONTROL Credentials details] do [!DNL Adobe Developer Console].
+        <td>Se você selecionou uma conexão JWT, digite sua ID de conta técnica do [!DNL Adobe]. Isso pode ser encontrado na seção [!UICONTROL Credentials details] do [!DNL Adobe Developer Console].
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL ID da Organização]</td>
@@ -174,14 +180,6 @@ Para criar uma conexão:
       <tr>
         <td role="rowheader">[!UICONTROL URL de Autenticação]</td>
         <td>Deixe em branco para usar a URL de autenticação padrão do Adobe IMS de <code>https://ims-na1.adobelogin.com</code>. Se você não usar o Adobe IMS para autenticação, insira o URL a ser usado para autenticação.</td>
-      </tr>
-      <tr>
-        <td role="rowheader">[!UICONTROL Ambiente]</td>
-        <td>Selecione se você está se conectando a um ambiente de produção ou não produção.</td>
-      </tr>
-      <tr>
-        <td role="rowheader">[!UICONTROL Tipo]</td>
-        <td>Selecione se você está se conectando a uma conta de serviço ou a uma conta pessoal.</td>
       </tr>
     </tbody>
     </table>
@@ -253,18 +251,6 @@ Esse módulo foi disponibilizado em 14 de novembro de 2024. Qualquer chamada de 
       </td>
       </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Solicitar conteúdo]  </td>
-      <td>
-        <p>Insira o conteúdo da solicitação. Esta opção estará disponível se você tiver selecionado o tipo de corpo <code>Raw</code></p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Campos]  </td>
-      <td>
-        <p>Para cada arquivo que você deseja adicionar à solicitação de API, clique em <b>Adicionar item</b> e insira o texto do arquivo (para dados brutos) ou insira a chave <code>uploadedFile</code> e mapeie os dados do arquivo. Essa opção estará disponível se você tiver selecionado o tipo de corpo <code>application</code> ou <code>multipart</code>.</p>
-      </td>
-    </tr>
-    <tr>
       <td role="rowheader">[!UICONTROL Tipo de Saída]  </td>
       <td>
         <p>Selecione o tipo de dados que você deseja que o módulo produza. Se você não selecionar um tipo, o módulo selecionará um tipo automaticamente.</p>
@@ -326,11 +312,5 @@ Esse módulo de ação permite fazer uma chamada para qualquer API do Adobe.
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"></p> 
      </div> </p> </td>     </tr>
-     <tr>
-      <td role="rowheader">[!UICONTROL Limite]  </td>
-      <td>
-        <p>Insira o número máximo de resultados que você deseja que o módulo retorne em um ciclo de execução.</p>
-      </td>
-    </tr>
   </tbody>
 </table>
