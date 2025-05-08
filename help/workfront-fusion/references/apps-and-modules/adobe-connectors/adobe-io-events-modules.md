@@ -4,9 +4,9 @@ description: Com os módulos do Adobe I/O Events, é possível iniciar um cenár
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: 983ce043afbcc44ee8af2dfcd46738f170a2b257
+source-git-commit: ef55cc62a0e0de70662440bc38d3eabbfe5e3c13
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '1077'
 ht-degree: 1%
 
 ---
@@ -221,9 +221,12 @@ Para criar um webhook:
 
 ### Ações
 
-#### Obter todos os eventos de um diário
+* [Obter provedor e IDs de evento](#get-provider-and-event-ids)
+* [Fazer uma chamada de API personalizada](#make-a-custom-api-call)
 
-Este módulo de pesquisa recupera todos os eventos de um registro de um journal.
+#### Obter provedor e IDs de evento
+
+Esse módulo de pesquisa obtém as Adobe I/O Events IDs para o provedor e os eventos especificados.
 
 <table>
      <col/>
@@ -235,44 +238,23 @@ Este módulo de pesquisa recupera todos os eventos de um registro de um journal.
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL ID de Registro]
+           [!UICONTROL Provedor de eventos]
          </td>
          <td>
-           Selecione o registro para o qual deseja recuperar eventos.
+           Selecione o provedor para o qual deseja recuperar a ID.
         </td>
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Número máximo de registros retornados]
+           [!UICONTROL Tipo de evento]
          </td>
          <td>
-              Insira ou mapeie o número máximo de registros que deseja que o módulo retorne durante cada ciclo de execução de cenário. 
-         </td>
-       </tr>
-       <tr>
-         <td role="rowheader">
-           [!UICONTROL Retornar eventos que ocorrem após]
-         </td>
-         <td>
-         </td>
-       </tr>
-       <tr>
-         <td role="rowheader">
-           [!UICONTROL Buscar]
-         </td>
-         <td>
-         </td>
-       </tr>
-       <tr>
-         <td role="rowheader">
-           [!UICONTROL Mais Recente]
-         </td>
-         <td>
-         Habilite esta opção para retornar o evento mais recente.
+              Selecione os eventos para os quais você deseja fornecer IDs. Eventos estão disponíveis com base no provedor de eventos. 
          </td>
        </tr>
      </tbody>
    </table>
+
 
 #### Fazer uma chamada de API personalizada
 
@@ -327,9 +309,9 @@ Este módulo de ação faz uma chamada de API personalizada para a API [!DNL Ado
 
 ### Pesquisas
 
-#### Obter provedor e IDs de evento
+#### Obter todos os eventos de um diário
 
-Esse módulo de pesquisa obtém as Adobe I/O Events IDs para o provedor e os eventos especificados.
+Este módulo de pesquisa recupera todos os eventos de um registro de um journal.
 
 <table>
      <col/>
@@ -341,28 +323,49 @@ Esse módulo de pesquisa obtém as Adobe I/O Events IDs para o provedor e os eve
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Provedor de eventos]
+           [!UICONTROL ID de Registro]
          </td>
          <td>
-           Selecione o provedor para o qual deseja recuperar a ID.
+           Selecione o registro para o qual deseja recuperar eventos.
         </td>
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Tipo de evento]
+           [!UICONTROL Número máximo de eventos retornados]
          </td>
          <td>
-              Selecione os eventos para os quais você deseja fornecer IDs. Eventos estão disponíveis com base no provedor de eventos. 
+              Insira ou mapeie o número máximo de registros que deseja que o módulo retorne durante cada ciclo de execução de cenário. 
+         </td>
+       </tr>
+       <tr>
+         <td role="rowheader">
+           [!UICONTROL Retornar eventos que ocorrem após]
+         </td>
+         <td>Insira ou mapeie uma data. O módulo retorna eventos que ocorreram após essa data.
+         </td>
+       </tr>
+<!--       <tr>
+         <td role="rowheader">
+           [!UICONTROL Seek]
+         </td>
+         <td>
+         </td>
+       </tr>-->
+       <tr>
+         <td role="rowheader">
+           [!UICONTROL Mais Recente]
+         </td>
+         <td>
+         Habilite esta opção para retornar o evento mais recente.
          </td>
        </tr>
      </tbody>
    </table>
+&lt;!—
 
-<!--
+Assistir a eventos
 
-Watch Events
-
-This trigger module starts a scenario when an event occurs in the chosen Adobe product or service.
+Esse módulo de acionamento inicia um cenário quando ocorre um evento no produto ou serviço escolhido da Adobe.
 
 <table style="table-layout:auto"> 
    <col> 
@@ -370,7 +373,7 @@ This trigger module starts a scenario when an event occurs in the chosen Adobe p
    <tbody> 
    <tr> 
    <td role="rowheader">Webhook</td> 
-   <td><p>Select the webhook that you want to use for this trigger, or add a new webhook. </p><p>To add a new webhook, <ol><li>Click <b>Add</b> next to the webhook field.</li><li>Enter the following: <ul><li>A name for the webhook</li><li>The connection that you want to use for this webhook</li><li>The source of the events you want to watch</li></ul></li><li>Click <b>Save</b> to save the webhook and return to the module. </td> 
+   <td><p>Selecione o webhook que deseja usar para este acionador ou adicione um novo webhook. </p><p>Para adicionar um novo webhook, <ol><li>Clique em <b>Adicionar</b> ao lado do campo de webhook.</li><li>Insira o seguinte: <ul><li>Um nome para o webhook</li><li>A conexão que você deseja usar com este webhook</li><li>A origem dos eventos que você deseja assistir</li></ul></li><li>Clique em <b>Salvar</b> para salvar o webhook e retornar ao módulo. </td> 
    </tr> 
    </tbody> 
 </table>
