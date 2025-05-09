@@ -2,9 +2,9 @@
 user-guide-title: Documentação do Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Use os documentos, tutoriais e recursos adicionais para saber como implementar e usar efetivamente o Adobe Workfront Fusion em sua organização.
-source-git-commit: 26c599a9887ad931763b787813153bb7791ce5d1
+source-git-commit: f3921961b90d086c11dbad37bf277e69eb95f63f
 workflow-type: tm+mt
-source-wordcount: '1751'
+source-wordcount: '1760'
 ht-degree: 3%
 
 ---
@@ -17,6 +17,7 @@ ht-degree: 3%
    * [Atividade de lançamento do Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Versões do Fusion - 2025 {#fusion-releases-2025}
       * [Atividade de lançamento do Workfront Fusion: semana de 5 de maio de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-5-5.md)
+      * [Atividade de lançamento do Workfront Fusion: semana de 28 de abril de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-28.md)
       * [Atividade de lançamento do Workfront Fusion: semana de 21 de abril de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-21.md)
       * [Atividade de lançamento do Workfront Fusion: semana de 14 de abril de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-14.md)
       * [Atividade de lançamento do Workfront Fusion: semana de 31 de março de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-31.md)
@@ -208,7 +209,7 @@ ht-degree: 3%
       * [Configurar solução alternativa para o tratamento de erros de nova tentativa](/help/workfront-fusion/create-scenarios/config-error-handling/retry.md)
       * [Resolver erros tratados pela diretiva Break](/help/workfront-fusion/create-scenarios/config-error-handling/resolve-error-from-break-directive.md)
    * Definir configurações de cenário {#configure-scenario-settings}
-      * [Definir configurações de cenário](/help/workfront-fusion/create-scenarios/config-scenarios-settings/config-scenario-settings-toc.md)
+      * [Definir configurações do cenário: índice do artigo](/help/workfront-fusion/create-scenarios/config-scenarios-settings/config-scenario-settings-toc.md)
       * [Agendar um cenário](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)
       * [Definir configurações de cenário](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)
       * [Adicionar observações a um cenário](/help/workfront-fusion/create-scenarios/config-scenarios-settings/add-notes-to-scenario.md)
