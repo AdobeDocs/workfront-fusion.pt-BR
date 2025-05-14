@@ -4,9 +4,9 @@ description: Em um cenário  [!DNL Adobe Workfront Fusion] , você pode automati
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 2bd3a9ba84182307af9349163db284514dd12aca
 workflow-type: tm+mt
-source-wordcount: '3124'
+source-wordcount: '3393'
 ht-degree: 0%
 
 ---
@@ -93,6 +93,7 @@ O conector do SharePoint usa o seguinte:
 
 * [Conectar o Microsoft SharePoint Online ao  [!DNL Workfront Fusion] usando uma conta do  [!DNL Microsoft] ](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [Conectar o Microsoft SharePoint Online ao  [!DNL Workfront Fusion] usando configurações avançadas](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
+* [Conectar o Microsoft SharePoint Online ao  [!DNL Workfront Fusion] usando autorização de certificado](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
 
 ### Conectar o Microsoft SharePoint Online a [!DNL Workfront Fusion] usando uma conta [!DNL Microsoft]
 
@@ -100,19 +101,111 @@ Você pode usar sua conta do [!DNL Microsoft] para criar uma conexão com o Micr
 
 ### Conectar o Microsoft SharePoint Online ao [!DNL Workfront Fusion] usando configurações avançadas
 
-Para conectar o Microsoft SharePoint Online ao [!DNL Workfront Fusion] sem uma conta [!DNL Microsoft], você precisa de uma ID de Cliente, Segredo do Cliente e ID do Locatário.
+Para incluir credenciais na conexão, habilite a opção Mostrar configurações avançadas. Para esse tipo de conexão, você precisa de uma ID do cliente, um Segredo do cliente e uma ID do locatário.
 
-1. Clique em **[!UICONTROL Adicionar]** próximo à parte superior da caixa **Microsoft SharePoint Online** para abrir a caixa **[!UICONTROL Criar uma conexão]**.
-
-1. (Opcional) Altere o **[!UICONTROL Nome da conexão]** padrão.
+1. Em qualquer módulo do SharePoint, clique em **[!UICONTROL Adicionar]** próximo ao campo Conexão para abrir a caixa **[!UICONTROL Criar uma conexão]**.
 1. Clique em **[!UICONTROL Mostrar configurações avançadas]**.
-1. Insira a **[!UICONTROL ID do Cliente]** e o **[!UICONTROL Segredo do Cliente]** do Microsoft SharePoint Online.
+1. Preencha os seguintes campos:
 
-1. Clique em **[!UICONTROL Continuar]**.
-1. Na janela de logon que é exibida, digite suas credenciais para fazer logon no aplicativo, se ainda não tiver feito.
-1. (Condicional) Se um botão **[!UICONTROL Permitir]** for exibido, clique no botão para conectar o aplicativo a [!DNL Workfront Fusion].
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Tipo de conexão]</p> </td> 
+      <td>Para usar as credenciais do cliente, selecione <b>Email do Microsoft 365</b>.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Nome da Conexão]</p> </td> 
+      <td>Insira um nome para a conexão.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL ID do Cliente]</p> </td> 
+      <td>Insira a ID do cliente do aplicativo SharePoint ao qual você está se conectando. </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Segredo do cliente]</p> </td> 
+      <td>Insira o segredo do cliente para o aplicativo SharePoint ao qual você está se conectando.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL ID de Locatário]</p> </td> 
+      <td>Insira a ID do locatário do aplicativo SharePoint ao qual você está se conectando.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Instância]</p> </td> 
+      <td> <p>Digite o endereço da sua conta do [!DNL ServiceNow] sem <code>https://</code> (normalmente <code>&lt;company>.service-now.com</code>).</p> </td> 
+     </tr> 
+    </tbody> 
+   </table>
 
-## Módulos do Microsoft SharePoint Online e seus campos
+1. Clique em **Continuar** para salvar a conexão e retornar ao módulo.
+
+### Conectar o Microsoft SharePoint Online ao [!DNL Workfront Fusion] usando autorização de certificado
+
+Você pode usar a autorização de certificado para se conectar ao SharePoint.
+
+>[!IMPORTANT]
+>
+>Para usar a autorização do certificado, primeiro você deve criar um aplicativo no Microsoft Entra e carregar o certificado lá.
+>
+>Para obter instruções, consulte [Como configurar autoridades de certificação para autenticação baseada em certificado do Microsoft Entra](https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-configure-certificate-authorities) na documentação do Microsoft.
+
+1. Em qualquer módulo do SharePoint, clique em **[!UICONTROL Adicionar]** próximo ao campo Conexão para abrir a caixa **[!UICONTROL Criar uma conexão]**.
+1. Clique em **[!UICONTROL Mostrar configurações avançadas]**.
+1. Preencha os seguintes campos:
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Tipo de conexão]</p> </td> 
+      <td>Para usar autorização de certificado, selecione <b>Microsoft SharePoint Online (Autenticação do Certificado)</b>.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Nome da Conexão]</p> </td> 
+      <td>Insira um nome para a conexão.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL ID do Cliente]</p> </td> 
+      <td>Insira a ID do cliente do aplicativo SharePoint ao qual você está se conectando. </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Impressão Digital]</p> </td> 
+      <td>Insira a impressão digital do aplicativo SharePoint ao qual você está se conectando.</td> 
+     </tr> 
+      <tr>
+        <td role="rowheader">[!UICONTROL Chave privada]</td>
+        <td>
+          <p>Insira o certificado ou a chave privada que foi gerada quando suas credenciais foram criadas no Microsoft. </p>
+          <p>Para extrair sua chave privada ou certificado:</p>
+          <ol>
+            <li>
+              <p>Clique em <b>[!UICONTROL Extract]</b>.</p>
+            </li>
+            <li>
+            <p>Selecione se você está extraindo um certificado ou uma chave privada.</li>
+            <li>
+              <p>Selecione o tipo de arquivo que você está extraindo.</p>
+            </li>
+            <li>
+              <p>Selecione o arquivo que contém a chave privada ou o certificado.</p>
+            </li>
+            <li>
+              <p>Digite a senha do arquivo.</p>
+            </li>
+            <li>
+              <p>Clique em <b>[!UICONTROL Salvar]</b> para extrair o arquivo e retornar à configuração de conexão.</p>
+            </li>
+          </ol>
+        </td>
+      </tr>
+    </tbody> 
+   </table>
+
+1. Clique em **Continuar** para salvar a conexão e retornar ao módulo.
+
+## Módulos do Microsoft SharePoint e seus campos
 
 Ao configurar módulos do Microsoft SharePoint Online, o [!DNL Workfront Fusion] exibe os campos listados abaixo. Junto com esses, campos adicionais do Microsoft SharePoint Online podem ser exibidos, dependendo de fatores como nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
 
