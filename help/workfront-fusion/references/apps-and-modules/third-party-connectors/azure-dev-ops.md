@@ -4,9 +4,9 @@ description: Em um cenário  [!DNL Adobe Workfront Fusion] , é possível automa
 author: Becky
 feature: Workfront Fusion
 exl-id: c0919a9a-ce99-485c-9627-45353741f6d8
-source-git-commit: 96270cbe7a8ef0b66cde7e8d008ed0360244911c
+source-git-commit: 58bda8289db60ce915613337880297e5c8ec7097
 workflow-type: tm+mt
-source-wordcount: '1768'
+source-wordcount: '1821'
 ht-degree: 0%
 
 ---
@@ -89,65 +89,39 @@ O conector DevOps do Azure usa o seguinte:
 
 1. Adicione um módulo [!DNL Azure DevOps] ao seu cenário.
 1. Clique em **[!UICONTROL Adicionar]** ao lado do campo [!UICONTROL Conexão].
-1. No campo [!UICONTROL Tipo de Conexão], selecione **[!DNL Azure DevOps]**.
+1. No campo [!UICONTROL Tipo de Conexão], selecione o tipo de conexão que deseja usar.
 
-   >[!IMPORTANT]
+   >[!NOTE]
    >
-   >O tipo de conexão [!UICONTROL [!DNL Azure DevOps] (Solicitar Todos os Escopos)] será descontinuada em breve. Portanto, não recomendamos usá-lo.
+   >O [!UICONTROL [!DNL Azure DevOps] (EntraApp)] permite solicitar todos os escopos para a conexão.
 
 1. Preencha os seguintes campos:
 
    <table style="table-layout:auto">
-        <tr>
+      <tr>
             <td>[!UICONTROL Nome da Conexão]</td>
             <td>Insira um nome para a conexão que você está criando.</td>
-        </tr>
+      </tr>
       <tr>
             <td>[!UICONTROL Organização]</td>
             <td>Digite o nome da organização sob a qual você criou o aplicativo [!DNL Azure DevOps].</td>
-        </tr>
-    </table>
+      </tr>
+      <tr>
+            <td>[!UICONTROL ID do Aplicativo]</td>
+            <td>Insira a ID do aplicativo DevOps ao qual você está se conectando.</td>
+      </tr>
+      <tr>
+            <td>[!UICONTROL Segredo do Cliente]</td>
+            <td>Insira o segredo do cliente para os aplicativos DevOps aos quais você está se conectando.</td>
+      </tr>
+      <tr>
+            <td>[!UICONTROL Solicitar Todos os Escopos]</td>
+            <td>Se você estiver usando o tipo de conexão [!DNL Azure DevOps] (EntraApp), habilite essa opção para solicitar todos os escopos para a conexão.</td>
+      </tr>
+   </table>
 
 1. Para inserir uma ID de Aplicativo DevOps do Azure ou um Segredo do Cliente, clique em <b>Mostrar configurações avançadas</b> e insira-as nos campos abertos.
 1. Clique em **[!UICONTROL Continuar]** para concluir a configuração da conexão e continuar criando seu cenário.
-
-<!--## Connect [!DNL Azure DevOps] to [!DNL Workfront Fusion] {#connect-azure-devops-to-workfront-fusion}
-
-1. Add an [!DNL Azure DevOps] module to your scenario.
-1. Click **[!UICONTROL Add]** next to the [!UICONTROL Connection] field.
-1. In the [!UICONTROL Connection Type] field, select the type of connection that you want to use.
-
-   >[!NOTE]
-   >
-   >The [!UICONTROL [!DNL Azure DevOps] (EntraApp)] allows you to request all scopes for the connection.
-
-1. Fill out the following fields:
-
-   <table style="table-layout:auto">
-        <tr>
-            <td>[!UICONTROL Connection name]</td>
-            <td>Enter a name for the connection that you are creating.</td>
-        </tr>
-      <tr>
-            <td>[!UICONTROL Organization]</td>
-            <td>Enter the name of the organization under which you created your [!DNL Azure DevOps] application.</td>
-        </tr>
-        <tr>
-            <td>[!UICONTROL App ID]</td>
-            <td>Enter the ID of the DevOps application that you are connecting to.</td>
-        </tr>
-      <tr>
-            <td>[!UICONTROL Client Secret]</td>
-            <td>Enter the client secret for the DevOps applications that you are connecting to.</td>
-        </tr>
-      <tr>
-            <td>[!UICONTROL Request All Scopes]</td>
-            <td>If you are using the [!DNL Azure DevOps] (EntraApp) connection type, enable this option to request all scopes for the connection.</td>
-        </tr>
-  </table>
-
-1. To enter an Azure DevOps App ID or Client Secret, click <b>Show advanced settings</b> and enter them in the fields that open.
-1. Click **[!UICONTROL Continue]** to finish setting up the connection and continue creating your scenario.-->
 
 ## [!UICONTROL DevOps do Azure] módulos e seus campos
 
