@@ -4,9 +4,9 @@ description: Com os módulos do Adobe Photoshop, você pode iniciar um cenário 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: db1d6f5bf29063b069681395c6ff6d3554c67dc3
+source-git-commit: a9e7053c443c9603ab3dc84c094196b7506cc7d0
 workflow-type: tm+mt
-source-wordcount: '4359'
+source-wordcount: '4976'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
 
 &#42;Para saber qual plano, tipo de licença ou acesso você tem, contate o administrador do [!DNL Workfront].
 
-&#42;&#42;Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL [Adobe Workfront Fusion] licenses]](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+&#42;&#42;Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [!DNL [Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -68,7 +68,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
 Antes de usar o conector [!DNL Adobe Photoshop], verifique se os seguintes pré-requisitos foram atendidos:
 
 * Você deve ter uma conta [!DNL Adobe Photoshop] ativa.
-* Você deve ter uma licença dos Serviços da Firefly.
+* Você deve ter uma licença do Firefly Services.
 * Você deve ter uma ID de cliente e um Segredo do cliente. Você pode adquiri-los na Adobe Developer Console.
 
 ## Informações da API do Adobe Photoshop
@@ -169,6 +169,7 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 * [Criar uma máscara](#create-a-mask)
 * [Criar uma nova PSD](#create-a-new-psd)
 * [Editar camadas de texto](#edit-text-layers)
+* [Editar camadas de texto (herdado)](#edit-text-layers-legacy)
 * [Executar desfoque de profundidade](#execute-depth-blur)
 * [Executar ações do Photoshop](#execute-photoshop-actions)
 * [Executar ações do Photoshop (JSON)](#execute-photoshop-actions-json)
@@ -177,6 +178,7 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 * [Fazer uma chamada de API personalizada](#make-a-custom-api-call)
 * [Remover plano de fundo](#remove-background)
 * [Substituir um objeto inteligente](#replace-a-smart-object)
+* [Substituir um objeto inteligente (herdado)](#replace-a-smart-object-legacy)
 * [Redimensionar uma imagem](#resize-an-image)
 * [Marca d&#39;água em uma imagem](#watermark-an-image)
 
@@ -523,7 +525,7 @@ Para campos relacionados a este módulo, consulte [Criar uma nova PSD](https://d
 
 ### Editar camadas de texto
 
-Esse módulo de ação edita camadas de texto em um arquivo do Photoshop.
+Esse módulo de ação edita camadas de texto em um arquivo do Photoshop. É possível inserir detalhes de edição separados para várias camadas no mesmo arquivo.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -559,7 +561,7 @@ Esse módulo de ação edita camadas de texto em um arquivo do Photoshop.
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Camadas]</td>
-   <td> <p>Para obter detalhes sobre opções de camada, consulte <a href="https://developer.adobe.com/photoshop/photoshop-api-docs/api/#tag/Photoshop/operation/text">Editar camada de texto</a> na documentação do Adobe Photoshop.</p>  </td>     </tr>
+   <td> <p>Para cada camada de texto que você deseja editar, clique em <b>Adicionar item</b> e insira as opções de camada.<p>Para obter detalhes sobre opções de camada, consulte <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_editText/">Editar texto</a> na documentação do Adobe Photoshop.</p>  </td>     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Armazenamento de arquivo de saída]</td>
       <td>
@@ -593,6 +595,81 @@ Esse módulo de ação edita camadas de texto em um arquivo do Photoshop.
   </tbody>
 </table>
 
+
+
+### Editar camadas de texto (herdado)
+
+Esse módulo de ação edita uma camada de texto em um arquivo do Photoshop.
+
+Para editar várias camadas, use o módulo [Editar camadas de texto](#edit-text-layers).
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Conexão]</td>
+      <td>Para obter instruções sobre como criar uma conexão com [!DNL Adobe Photoshop], consulte <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Criar uma conexão com [!DNL Adobe Photoshop]</a> neste artigo.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Armazenamento de arquivo de entrada]</td>
+      <td>
+        <p>Selecione o serviço de arquivos no qual o arquivo que você deseja editar está armazenado.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL URL do arquivo de entrada]</p>
+      </td>
+   <td> Insira ou mapeie o URL ou o caminho do arquivo que deseja editar. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Gerenciar fontes ausentes]</td>
+      <td>
+        <p>Selecione a ação a ser tomada se houver uma ou mais fontes ausentes no documento. Se a fonte não for fornecida, o módulo usará a fonte padrão.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Fonte padrão]  </td>
+      <td>
+        <p>Digite o nome completo do postscript da fonte a ser usada como padrão global para o documento. Essa fonte será usada para qualquer camada de texto que tenha uma fonte ausente e nenhuma outra fonte tenha sido especificamente fornecida para essa camada. Se esta fonte estiver ausente, a opção especificada em Gerenciar fontes ausentes entrará em vigor.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Camadas]</td>
+   <td> <p>Para obter detalhes sobre opções de camada, consulte <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_editText/">Editar camada de texto</a> na documentação do Adobe Photoshop.</p>  </td>     </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Armazenamento de arquivo de saída]</td>
+      <td>
+        <p>Selecione o serviço de arquivos no qual você deseja que o arquivo editado seja armazenado.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL URL do arquivo de saída]</p>
+      </td>
+   <td> Insira ou mapeie o URL ou o caminho de onde o arquivo editado será armazenado. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Tipo de arquivo de saída]</p>
+      </td>
+   <td> Selecione o tipo de arquivo para o arquivo editado. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Substituir]</td>
+      <td>
+        <p>Selecione se o arquivo recém-editado substituirá qualquer arquivo de saída existente.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Compactação]</p>
+      </td>
+   <td> Selecione o nível de compactação para o arquivo de saída. </td> 
+    </tr>
+  </tbody>
+</table>
 
 
 ### Executar ações do Photoshop (JSON)
@@ -1098,6 +1175,8 @@ Este módulo de ação identifica o assunto principal da imagem e remove o plano
 
 Esse módulo de ação substitui um Objeto inteligente em uma camada do PSD e gera novas representações.
 
+Este módulo usa a API de objeto inteligente versão 2.
+
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -1122,7 +1201,80 @@ Esse módulo de ação substitui um Objeto inteligente em uma camada do PSD e ge
       <td role="rowheader">
         <p>[!UICONTROL Camadas]</p>
       </td>
-   <td>Para cada camada que você deseja adicionar ao Objeto inteligente, clique em Adicionar item e Insira o nome ou ID do objeto, o serviço de arquivos onde o Objeto inteligente está armazenado e o URL ou caminho da camada.<p>Para obter descrições das configurações dos avanços nesta área, consulte <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">Substituir um objeto inteligente</a> na documentação da API do Photoshop </td> 
+   <td>Para cada camada que você deseja adicionar ao Objeto inteligente, clique em Adicionar item e Insira o nome ou ID do objeto, o serviço de arquivos onde o Objeto inteligente está armazenado e o URL ou caminho da camada.<p>Para obter descrições das configurações avançadas nesta área, consulte <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">Substituir um objeto inteligente</a> na documentação da API do Photoshop </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Saídas]</td>
+      <td>
+        <p>Para cada nova representação que você deseja que o módulo produza, clique em Adicionar item e preencha os campos a seguir. Você pode ter no máximo 25 arquivos de saída.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Saída) Armazenamento]</td>
+      <td>
+        <p>Selecione o serviço de arquivos no qual você deseja que o novo arquivo seja armazenado.</p><p>A seleção do armazenamento interno do Fusion disponibiliza o arquivo para módulos posteriores, mas não o disponibiliza fora do cenário.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Saída) Local do Arquivo]</p>
+      </td>
+   <td> Insira ou mapeie o URL ou o caminho onde o novo arquivo será armazenado.  Isso só será necessário se você não tiver escolhido o armazenamento interno do Fusion para o armazenamento de saída.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Largura de Saída)]</p>
+      </td>
+   <td> A largura, em pixels, do arquivo de saída. O módulo preservará a proporção original. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Saída) Substituir]</td>
+      <td>
+        <p>Selecione se o arquivo recém-editado substituirá qualquer arquivo de saída existente. Isso se aplica somente a arquivos no armazenamento do Adobe.</p>
+      </td>
+    </tr>
+        <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Número máximo de resultados retornados]</p>
+      </td>
+   <td>Insira ou mapeie o número máximo de registros que deseja que o módulo retorne durante cada ciclo de execução de cenário.</td> 
+    </tr>
+    </tbody>
+</table>
+
+
+
+### Substituir um objeto inteligente (herdado)
+
+Esse módulo de ação substitui um Objeto inteligente em uma camada do PSD e gera novas representações.
+
+Este módulo usa a versão herdada dos Objetos Inteligentes.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Conexão]</td>
+      <td>Para obter instruções sobre como criar uma conexão com [!DNL Adobe Photoshop], consulte <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Criar uma conexão com [!DNL Adobe Photoshop]</a> neste artigo.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Entrada) Armazenamento]</td>
+      <td>
+        <p>Selecione o serviço de arquivos onde o Objeto Inteligente está armazenado.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Entrada) Local do Arquivo]</p>
+      </td>
+   <td> Insira ou mapeie o URL ou o caminho do Objeto inteligente. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Camadas]</p>
+      </td>
+   <td>Para cada camada que você deseja adicionar ao Objeto inteligente, clique em Adicionar item e Insira o nome ou ID do objeto, o serviço de arquivos onde o Objeto inteligente está armazenado e o URL ou caminho da camada.<p>Para obter descrições das configurações avançadas nesta área, consulte <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">Substituir um objeto inteligente</a> na documentação da API do Photoshop </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Saídas]</td>

@@ -4,9 +4,9 @@ description: Em um cenário  [!DNL Adobe Workfront Fusion] , é possível automa
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 6219cd4406c2ccf22b1e94e5d264722e640fe3e4
 workflow-type: tm+mt
-source-wordcount: '2432'
+source-wordcount: '2466'
 ht-degree: 0%
 
 ---
@@ -241,7 +241,7 @@ Esse módulo funciona com a API do Firefly V3 Async. A versão anterior deste m�
 
 Este módulo foi descontinuado e será removido em breve. Em vez disso, use o módulo Fill an image.
 
-## Gerar uma imagem
+### Gerar uma imagem
 
 Esse módulo de ação gera uma imagem e com base em um prompt fornecido. Você também pode fornecer uma imagem de referência opcional, e a imagem gerada corresponderá ao estilo da imagem de referência.
 
@@ -258,6 +258,10 @@ Esse módulo funciona com a API do Firefly V3 Async. A versão anterior deste m�
   <tr> 
    <td role="rowheader">[!UICONTROL Prompt]</td> 
    <td>Insira ou mapeie um prompt para a imagem que deseja gerar. Mais detalhes no prompt permitirão que você tenha mais controle sobre o que aparece na imagem.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Versão do modelo]</td> 
+   <td>Selecione a versão do modelo do Firefly que deseja usar para gerar a imagem.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Número de variações]</td> 
@@ -388,6 +392,10 @@ Esse módulo de ação gera imagens semelhantes à imagem de origem especificada
   <tr> 
    <td role="rowheader">[!UICONTROL Número de variações]</td> 
    <td>Insira um número entre 1-4. O módulo gerará esse número de variações de imagem.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Versão do modelo]</td> 
+   <td>Selecione a versão do modelo do Firefly que deseja usar para gerar as imagens.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Formato de imagem gerado]</td> 
