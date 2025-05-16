@@ -4,9 +4,9 @@ description: Alguns módulos de acionamento permitem selecionar o primeiro pacot
 author: Becky
 feature: Workfront Fusion
 exl-id: 83628fa5-82e2-4f67-bfed-70a4c3c19f7f
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '328'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] licença</td> 
-   <td> <p>Novo: [!UICONTROL Standard]</p><p>Ou</p><p>Atual: [!UICONTROL Work] ou superior</p> </td> 
+   <td> <p>Novo: [!UICONTROL Padrão]</p><p>Ou</p><p>Atual: [!UICONTROL Trabalho] ou superior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] licença**</td> 
@@ -48,7 +48,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Novo:</p> <ul><li>[!UICONTROL Select] ou plano do [!UICONTROL Prime] [!DNL Workfront]: sua organização deve comprar o [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plano: [!DNL Workfront Fusion] está incluído.</li></ul>
+   <p>Novo:</p> <ul><li>Plano [!DNL Workfront] da [!UICONTROL Select] ou da [!UICONTROL Prime]: sua organização deve comprar [!DNL Adobe Workfront Fusion].</li><li>Plano [!DNL Workfront] da [!UICONTROL Ultimate] [!DNL Workfront Fusion] incluído.</li></ul>
    <p>Ou</p>
    <p>Atual: sua organização deve comprar o [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -64,7 +64,7 @@ Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte
 
 ## Escolher onde um módulo de acionador é iniciado
 
-1. Clique na guia **[!UICONTROL Scenarios]** no painel esquerdo.
+1. Clique na guia **[!UICONTROL Cenários]** no painel esquerdo.
 1. Selecione o cenário em que deseja escolher o início do acionador.
 1. Clique em qualquer lugar no cenário para entrar no editor de cenários.
 1. Configure e salve um módulo de acionador.
@@ -75,7 +75,7 @@ Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte
 
    ![Escolher onde começar](assets/choose-where-to-start.png)
 
-1. Selecione uma opção na caixa **[!UICONTROL Choose where to start]** que aparece.
+1. Na caixa **[!UICONTROL Escolher onde começar]**, selecione uma opção.
 
    As opções exibidas dependem das possibilidades de um determinado serviço. Elas podem incluir o seguinte:
 
@@ -84,39 +84,20 @@ Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte
     <col> 
     <tbody>
     <tr>
-    <td>[!UICONTROL From now on] (padrão)</td>
+    <td>[!UICONTROL De agora em diante] (padrão)</td>
     <td>Recupera todos os pacotes adicionados ou atualizados (dependendo das configurações) depois que esta opção for selecionada</td>
     </tr>
      <tr>
-    <td>[!UICONTROL Since specific date]</td>
+    <td>[!UICONTROL Desde a data específica]</td>
     <td>Recupera todos os pacotes adicionados ou atualizados (dependendo das configurações) após uma data e hora especificadas</td>
       </tr>
       <tr>
-    <td>[!UICONTROL All]</td>
+    <td>[!UICONTROL Tudo]</td>
     <td>Recupera todos os pacotes disponíveis</td>
      </tr>
       <tr>
-    <td>[!UICONTROL Choose manually]</td>
+    <td>[!UICONTROL Escolher manualmente]</td>
     <td>Permite selecionar o primeiro pacote a partir do qual a recuperação de pacotes deve começar</td>
      </tr>
      </tbody>
    </table>
-
-
-
-   <table style="table-layout:auto">
-    <col> 
-    <col> 
-    <tbody> 
-     <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
-      <td>Digite um nome para a nova conexão [!DNL DocuSign]</td> 
-     </tr> 
-     <tr> 
-      <td role="rowheader">[!UICONTROL Account type]</td> 
-      <td>Selecione se a conta à qual deseja se conectar é uma conta de produção ou uma conta de demonstração.</td> 
-     </tr> 
-    </tbody> 
-   </table>
-
-

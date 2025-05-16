@@ -4,7 +4,7 @@ description: Em um cenário  [!DNL Adobe Workfront Fusion] , é possível automa
 author: Becky
 feature: Workfront Fusion
 exl-id: 7b236869-bd83-4db5-a363-d6570f6e4aff
-source-git-commit: 55418d9a25d44e107236898bb236e9daf9fe5bd1
+source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
 workflow-type: tm+mt
 source-wordcount: '1586'
 ht-degree: 1%
@@ -98,7 +98,7 @@ Para criar uma conexão para seus módulos do [!DNL ServiceNow]:
     <tbody> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Nome da Conexão]</p> </td> 
-      <td>Digite um nome para a nova conexão [!DNL ServiceNow]</td> 
+      <td>Insira um nome para a nova conexão [!DNL ServiceNow].</td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Ambiente]</p> </td> 
