@@ -4,10 +4,10 @@ description: Você pode exibir informações sobre os eventos ou execuções de 
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: 0ef6dde9566ca3b97c1c52d6055f0ce44f575cee
+source-git-commit: cc7c05614390e20d4051635c605e12dfa65493a1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '894'
+ht-degree: 1%
 
 ---
 
@@ -105,6 +105,8 @@ A guia [!UICONTROL Histórico] mostra mais detalhes do que o disponível na pág
    >O histórico de cenários exibe um selo **Processando** ao lado dos cenários que foram executados recentemente, enquanto os detalhes da execução são gravados no armazenamento. O processamento ocorre imediatamente após a execução do cenário. e não deve durar mais do que alguns minutos. Os detalhes da execução do cenário podem não estar visíveis enquanto a execução estiver sendo processada.
 
 1. Para exibir detalhes da execução de um cenário específico, clique em **Detalhes** na extremidade direita. O link [!UICONTROL details] estará visível somente se a execução tiver detalhes disponíveis.
+
+   Para obter mais informações sobre a exibição dos detalhes de execução do cenário, consulte [Exibir uma execução de cenário específica](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md).
 1. Para exibir eventos, alterne **Mostrar eventos** em.
 
 
