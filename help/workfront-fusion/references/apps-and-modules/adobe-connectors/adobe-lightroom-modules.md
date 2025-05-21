@@ -4,9 +4,9 @@ description: Com os módulos do Adobe Lightroom, é possível iniciar um cenári
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
-source-git-commit: 5d1424fe88efb56e565077bf36211795c9bc96ed
+source-git-commit: 4d31a447d0d8d91ef4f86d8fd0bc63663b0f5ad0
 workflow-type: tm+mt
-source-wordcount: '2563'
+source-wordcount: '2770'
 ht-degree: 0%
 
 ---
@@ -246,8 +246,6 @@ Este módulo de ação recupera metadados de um catálogo no Adobe Lightroom. Um
 
 Esse módulo de ação cria e faz upload de um arquivo original para um ativo.
 
-<!--BECKY START HERE-->
-
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -293,7 +291,6 @@ Esse módulo de ação cria e faz upload de um arquivo original para um ativo.
 
 Esse módulo de ação cria um novo ativo com metadados iniciais e informações de importação.
 
-
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -335,6 +332,30 @@ Esse módulo de ação cria um novo ativo com metadados iniciais e informações
     <tr>
       <td role="rowheader">[!UICONTROL Data capturada]</td>
       <td>
+        <p>Insira ou mapeie a data de captura do ativo com o formato <code>YYYY-MM-DDT00:00:00-00:00</code>. Ele será definido pelo servidor se a Data capturada estiver definida como <code>0000-00-00T00:00:00</code>. </p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Nome do arquivo]</td>
+      <td>
+        <p>Insira ou mapeie o nome do arquivo do ativo que você está importando para o Lightroom.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Nome do Dispositivo Importado em]</td>
+      <td>
+        <p>Insira ou mapeie o nome do dispositivo que importa o ativo.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL ID da Conta do Usuário que Importou]</td>
+      <td>
+        <p>Insira ou mapeie a ID do usuário que importa o ativo.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Importar Carimbo de Data/Hora]</td>
+      <td>
         <p>Insira ou mapeie uma data com o formato <code>YYYY-MM-DDT00:00:00-00:00</code>.</p>
       </td>
     </tr>
@@ -343,7 +364,7 @@ Esse módulo de ação cria um novo ativo com metadados iniciais e informações
 
 #### Criar um arquivo de configuração de desenvolvimento externo do XMP de ativos
 
-Esse módulo de ação suporta dois workflows. O primeiro fluxo de trabalho é fazer upload do arquivo externo de configurações de desenvolvimento do XMP para o ativo. O segundo fluxo de trabalho é criar um arquivo externo de configurações de desenvolvimento do XMP copiando do arquivo externo de configuração de desenvolvimento xmp de outro ativo.
+Esse módulo de ação é compatível com dois fluxos de trabalho: fazer upload do arquivo externo de configurações de desenvolvimento do XMP para o ativo ou criar um arquivo externo de configurações de desenvolvimento do XMP copiando do arquivo externo de configuração de desenvolvimento xmp de outro ativo.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -354,7 +375,7 @@ Esse módulo de ação suporta dois workflows. O primeiro fluxo de trabalho é f
       <td>Para obter instruções sobre como criar uma conexão com [!DNL Adobe Lightroom], consulte <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Criar uma conexão com [!DNL Adobe Lightroom]</a> neste artigo.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Comprimento do conteúdo em bytes]</td>
+      <td role="rowheader">[!UICONTROL Tamanho do Conteúdo em Bytes]</td>
       <td>
         <p>Insira ou mapeie o comprimento do conteúdo em bytes.</p>
       </td>
@@ -368,7 +389,7 @@ Esse módulo de ação suporta dois workflows. O primeiro fluxo de trabalho é f
     <tr>
       <td role="rowheader">[!UICONTROL ID de Catálogo]</td>
       <td>
-        <p>Insira ou mapeie a ID do catálogo que contém o ativo.</p>
+        <p>Insira ou mapeie a ID do catálogo em que deseja criar o ativo.</p>
       </td>
     </tr>
     <tr>
@@ -413,7 +434,7 @@ Esse módulo de ação gera representações de forma assíncrona para um arquiv
     <tr>
       <td role="rowheader">[!UICONTROL ID de Catálogo]</td>
       <td>
-        <p>Insira ou mapeie a ID do catálogo que contém o ativo.</p>
+        <p>Insira ou mapeie a ID do catálogo em que deseja gerar as representações.</p>
       </td>
     </tr>
     <tr>
@@ -468,7 +489,7 @@ Este módulo de ação recupera o arquivo de configuração XMP externo de ativo
     <tr>
       <td role="rowheader">[!UICONTROL ID de Catálogo]</td>
       <td>
-        <p>Insira ou mapeie a ID do catálogo que contém o ativo.</p>
+        <p>Insira ou mapeie a ID do catálogo que contém o ativo associado ao arquivo de configuração de desenvolvimento do XMP.</p>
       </td>
     </tr>
     <tr>
@@ -480,7 +501,7 @@ Este módulo de ação recupera o arquivo de configuração XMP externo de ativo
   </tbody>
 </table>
 
-#### Obter a representação de ativo mais recente
+#### Obter a última representação de ativos
 
 Este módulo de ação recupera a representação de ativo mais recente do tipo especificado.
 
@@ -495,13 +516,13 @@ Este módulo de ação recupera a representação de ativo mais recente do tipo 
     <tr>
       <td role="rowheader">[!UICONTROL ID de Catálogo]</td>
       <td>
-        <p>Insira ou mapeie a ID do catálogo que contém o ativo.</p>
+        <p>Insira ou mapeie a ID do catálogo que contém o ativo para o qual você deseja recuperar uma representação.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL ID de Ativo]</td>
       <td>
-        <p>Insira ou mapeie a ID do ativo associado ao arquivo de configuração de desenvolvimento do XMP.</p>
+        <p>Insira ou mapeie a ID do ativo para o qual você deseja recuperar uma representação.</p>
       </td>
     </tr>
     <tr>
@@ -538,9 +559,15 @@ Este módulo de ação recupera ativos de propriedade do usuário cujas credenci
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Retornar ativos capturados antes]</td>
+      <td role="rowheader">[!UICONTROL Retornar ativos capturados antes do tempo especificado]</td>
       <td>
-        <p>Insira uma data com o formato <code>YYYY-MM-DDT00:00:00</code>. O módulo retorna resultados capturados antes dessa data.</p><p> Este campo não pode ser usado com o campo <code>Return assets captured after</code>.</p>
+        <p>Insira uma data com o formato <code>YYYY-MM-DDT00:00:00</code>. O módulo retorna resultados capturados antes dessa data.</p><p> Este campo não pode ser usado com o campo <code>Return assets captured after given time</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Retornar ativos capturados após determinado tempo]</td>
+      <td>
+        <p>Insira uma data com o formato <code>YYYY-MM-DDT00:00:00</code>. O módulo retorna resultados capturados antes dessa data.</p><p> Este campo não pode ser usado com o campo <code>Return assets captured before given time</code>.</p>
       </td>
     </tr>
     <tr>
@@ -552,19 +579,19 @@ Este módulo de ação recupera ativos de propriedade do usuário cujas credenci
     <tr>
       <td role="rowheader">[!UICONTROL valor de hash SHA256 do arquivo original]</td>
       <td>
-        <p></p>
+        <p>Insira ou mapeie o valor de hash do arquivo original. O Assets com um hash correspondente é retornado.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Ocultar ativos que estão dentro de pilhas?"]</td>
       <td>
-        <p></p>
+        <p>Selecione Sim para ocultar ativos dentro de pilhas (os ativos dentro de pilhas não são retornados). Selecione Não para incluir ativos em pilhas nos resultados.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Valores de subtipo de ativo]</td>
       <td>
-        <p></p>
+        <p>Insira ou mapeie uma lista separada por ponto e vírgula de valores de subtipo a serem retornados.</p>
       </td>
     </tr>
     <tr>
@@ -581,24 +608,26 @@ Este módulo de ação recupera ativos de propriedade do usuário cujas credenci
     <tr>
       <td role="rowheader">[!UICONTROL Agrupar valores]</td>
       <td>
-        <p></p>
+        <p>Insira ou mapeie uma lista de valores de grupo separados por ponto-e-vírgula.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Nomear valores]</td>
       <td>
-        <p></p>
+        <p>Insira ou mapeie uma lista de valores de nome separados por ponto-e-vírgula.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Status Favorito]</td>
       <td>
-        <p></p>
+        <p>Insira ou mapeie o status favorito para o qual deseja retornar resultados.</p>
       </td>
     </tr>
     </tr>
   </tbody>
 </table>
+
+<!--BECKY START HERE-->
 
 ### Álbuns
 
