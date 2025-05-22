@@ -4,9 +4,9 @@ description: Com os módulos do Adobe Lightroom, é possível iniciar um cenári
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
-source-git-commit: 4d31a447d0d8d91ef4f86d8fd0bc63663b0f5ad0
+source-git-commit: 420665071db63954bce14b2011c5ecdb97403fd1
 workflow-type: tm+mt
-source-wordcount: '2770'
+source-wordcount: '3187'
 ht-degree: 0%
 
 ---
@@ -627,8 +627,6 @@ Este módulo de ação recupera ativos de propriedade do usuário cujas credenci
   </tbody>
 </table>
 
-<!--BECKY START HERE-->
-
 ### Álbuns
 
 * [Adicionar ativos a um álbum](#add-assets-to-an-album)
@@ -681,10 +679,10 @@ Este módulo de ação adiciona um ou mais ativos ao álbum especificado. Você 
     <tr>
       <td role="rowheader">[!UICONTROL Ordem]</td>
       <td>
-        <p></p>
+        <p>Especifique a ordem do ativo.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Metadados]</td>
+      <td role="rowheader">[!UICONTROL Carga do Serviço]</td>
       <td>
         <p>Insira ou mapeie quaisquer metadados que deseja incluir com o ativo. Deve ser uma única cadeia de texto com um comprimento máximo de 1 a 24 caracteres.</p>
       </td>
@@ -727,32 +725,46 @@ Este módulo de ação cria um novo álbum no Lightroom.
         <p>Selecione o subtipo do álbum.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Chave de API]</td>
+      <td role="rowheader">[!UICONTROL ID de Serviço]</td>
       <td>
         <p>Insira a chave da API do serviço que está criando o álbum.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Datetime criado pelo usuário]</td>
+      <td role="rowheader">[!UICONTROL Data de Criação pelo Usuário]</td>
       <td>
         <p>Insira ou mapeie uma data com o formato <code>YYYY-MM-DDT00:00:00-00:00Z</code>.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Data e hora atualizado pelo usuário]</td>
+      <td role="rowheader">[!UICONTROL Atualização de Usuário de Data]</td>
       <td>
         <p>Insira ou mapeie uma data com o formato <code>YYYY-MM-DDT00:00:00-00:00Z</code>.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Album name]</td>
+      <td role="rowheader">[!UICONTROL Nome do Álbum]</td>
       <td>
         <p>Insira ou mapeie um nome para o novo álbum.</p>
       </td>
+    </tr>
     <tr>
       <td role="rowheader">[!UICONTROL ID de Capa]</td>
       <td>
         <p>Insira ou mapeie a ID de um ativo para usar como capa deste álbum.</p>
       </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL ID Pai]</td>
+      <td>
+        <p>Insira ou mapeie a ID do responsável deste álbum.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Carga do Serviço]</td>
+      <td>
+        <p>Insira ou mapeie os metadados do álbum como uma sequência de caracteres.</p>
+      </td>
+    </tr>
     <tr>
       <td role="rowheader">[!UICONTROL ID Remota]</td>
       <td>
@@ -828,7 +840,7 @@ O álbum excluído deve ter sido criado pelo mesmo aplicativo cliente que o est�
 
 ### Obter um álbum
 
-Este módulo de ação recupera o álbum especificado
+Este módulo de ação recupera o álbum especificado.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -857,7 +869,100 @@ Este módulo de ação recupera o álbum especificado
 
 Este módulo de ação recupera uma lista de ativos no álbum especificado.
 
-
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Conexão]</td>
+      <td>Para obter instruções sobre como criar uma conexão com [!DNL Adobe Lightroom], consulte <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Criar uma conexão com [!DNL Adobe Lightroom]</a> neste artigo.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL ID de Catálogo]</td>
+      <td>
+        <p>Insira ou mapeie a ID do catálogo que contém o álbum.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL ID de Álbum]</td>
+      <td>
+        <p>Insira ou mapeie a ID do álbum para o qual deseja listar ativos.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Capturar Assets Antes do Tempo]</td>
+      <td>
+        <p>Insira uma data com o formato <code>YYYY-MM-DDT00:00:00</code>. O módulo retorna resultados capturados antes dessa data.</p><p> Este campo não pode ser usado com o campo <code>Return assets captured after given time</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Capturar Assets Depois do Tempo]</td>
+      <td>
+        <p>Insira uma data com o formato <code>YYYY-MM-DDT00:00:00</code>. O módulo retorna resultados capturados antes dessa data.</p><p> Este campo não pode ser usado com o campo <code>Return assets captured before given time</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Valor de Ordem de Ativo Final]</td>
+      <td>
+        <p>Insira ou mapeie o valor do pedido do ativo final.</p><p> Este campo só pode ser usado com o campo <code>Capture Assets After Time</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Iniciando Valor de Ordem de Ativo]</td>
+      <td>
+        <p>Insira ou mapeie o valor do pedido do ativo inicial.</p><p> Este campo só pode ser usado com o campo <code>Capture Assets BEfore Time</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Número de Assets a serem retornados (1-500)]</td>
+      <td>
+        <p>Insira o número máximo de registros que você deseja que o módulo retorne durante cada ciclo de execução de cenário. Esse número deve estar entre 1-500.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Ocultar ativos que estão dentro de pilhas?"]</td>
+      <td>
+        <p>Selecione Sim para ocultar ativos dentro de pilhas (os ativos dentro de pilhas não são retornados). Selecione Não para incluir ativos em pilhas nos resultados.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Valores de Subtipo (separados por ponto e vírgula)]</td>
+      <td>
+        <p>Insira ou mapeie uma lista separada por ponto e vírgula de valores de subtipo a serem retornados.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Sinalizar Valores (separados por ponto-e-vírgula)]</td>
+      <td>
+        <p>Insira ou mapeie uma lista separada por ponto e vírgula de valores de sinalizador a serem retornados.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Campos de Dados Adicionais a Serem Incluídos (separados por ponto e vírgula)]</td>
+      <td>
+        <p>Se o ativo for incluído, todos os campos serão incluídos, caso contrário, somente a id e o link self href serão retornados.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Tipos de ativos a serem excluídos]</td>
+      <td>
+        <p>Selecione se deseja excluir ativos completos ou incompletos. Para incluir todos os ativos, deixe este campo em branco.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL IDs de Ativo]</td>
+      <td>
+        <p>Insira ou mapeie até 100 IDs de ativos, separadas por vírgulas.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Filtrar ativos do álbum com base nos filtros de apresentação]</td>
+      <td>
+        <p>Quando esse campo é definido como 'true', ele filtra todos os ativos do álbum com base nos filtros de apresentação definidos no álbum. Com esse parâmetro, os ativos rejeitados sempre são filtrados independentemente das configurações nos filtros de apresentação. Os filtros de apresentação não são aplicados quando qualquer valor diferente de 'true' está definido para album_filters. O comportamento padrão é exibir todos os ativos. Este parâmetro não pode ser usado junto com o parâmetro de sinalizador. </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 #### Recuperar álbuns
 
@@ -880,7 +985,7 @@ Este módulo de ação recupera uma lista de álbuns no catálogo especificado.
     <tr>
       <td role="rowheader">[!UICONTROL Subtipos]</td>
       <td>
-        <p>Insira ou mapeie a ID do álbum que você deseja recuperar.</p>
+        <p>Insira ou mapeie uma lista separada por ponto e vírgula de valores de subtipo a serem retornados.</p>
       </td>
     </tr>
     <tr>
@@ -890,7 +995,7 @@ Este módulo de ação recupera uma lista de álbuns no catálogo especificado.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Número máximo de álbuns retornados]</td>
+      <td role="rowheader">[!UICONTROL Número de Álbuns a Serem Retornados]</td>
       <td>
         <p>Defina o número máximo de ativos que [!DNL Workfront Fusion] retornará durante um ciclo de execução. O valor padrão deste campo é 100.Este módulo pode retornar mais álbuns do que este limite se vários álbuns no limite tiverem o mesmo valor <code>name_after</code>.</p>
       </td>
