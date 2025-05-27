@@ -4,9 +4,9 @@ description: O módulo de Roteador permite ramificar seu fluxo em várias rotas 
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: c1c11c6766678263b36488909c3799299a1c510a
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] licença</td> 
-   <td> <p>Novo: [!UICONTROL Standard]</p><p>Ou</p><p>Atual: [!UICONTROL Work] ou superior</p> </td> 
+   <td> <p>Novo: [!UICONTROL Padrão]</p><p>Ou</p><p>Atual: [!UICONTROL Trabalho] ou superior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] licença**</td> 
@@ -47,7 +47,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Novo:</p> <ul><li>[!UICONTROL Select] ou plano do [!UICONTROL Prime] [!DNL Workfront]: sua organização deve comprar o [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plano: [!DNL Workfront Fusion] está incluído.</li></ul>
+   <p>Novo:</p> <ul><li>Plano [!DNL Workfront] da [!UICONTROL Select] ou da [!UICONTROL Prime]: sua organização deve comprar [!DNL Adobe Workfront Fusion].</li><li>Plano [!DNL Workfront] da [!UICONTROL Ultimate] [!DNL Workfront Fusion] incluído.</li></ul>
    <p>Ou</p>
    <p>Atual: sua organização deve comprar o [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -65,17 +65,17 @@ Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte
 
 Você deve adicionar um módulo de roteador antes de configurar rotas.
 
-1. Clique na guia **[!UICONTROL Scenarios]** no painel esquerdo.
+1. Clique na guia **[!UICONTROL Cenários]** no painel esquerdo.
 1. Selecione o cenário em que deseja adicionar um roteador.
 1. Clique em qualquer lugar no cenário para entrar no editor de cenários.
 1. No editor de cenários, clique na alça direita do módulo após o qual deseja adicionar o roteador.
-1. Selecione **[!UICONTROL Flow Control]** > **Roteador** na lista de módulos a serem exibidos.
+1. Selecione **[!UICONTROL Controle de Fluxo]** > **Roteador** na lista de módulos a serem exibidos.
 
    ![Conectar a rota](assets/connect-the-router-350x108.png)
 
    Ou
 
-   Para inserir o módulo Roteador entre dois módulos, clique no ícone de chave inglesa abaixo da rota que conecta os dois módulos e selecione **[!UICONTROL Add a router]** no menu.
+   Para inserir o módulo Roteador entre dois módulos, clique no ícone de chave inglesa abaixo da rota que conecta os dois módulos e selecione **[!UICONTROL Adicionar um roteador]** no menu.
 
    ![Inserir roteador](assets/insert-router-350x191.png)
 1. Adicione a primeira rota ao roteador clicando na alça direita do roteador e adicionando um módulo, semelhante à adição de qualquer módulo.
@@ -87,7 +87,7 @@ Você deve adicionar um módulo de roteador antes de configurar rotas.
 
    As rotas são organizadas na ordem em que são executadas. A rota superior é executada primeiro.
 
-1. (Opcional) Para alterar a ordem da rota, desvincule as rotas clicando com o botão direito do mouse no caminho do roteador e selecionando Desvincular, em seguida, arrastando-as para o módulo do roteador na ordem desejada. A primeira rota anexada será a primeira rota a ser executada (a rota superior).
+1. (Opcional) Para alterar a ordem da rota, clique com o botão direito do mouse no módulo Roteador e selecione **Ordenar rotas**. Arraste e solte as rotas na ordem em que deseja executá-las. As rotas são marcadas pelo primeiro módulo que segue o roteador (o primeiro módulo da rota).
 
 1. Continue em [Adicionar um filtro a uma rota](#add-a-filter-to-a-route).
 
@@ -97,7 +97,7 @@ Você pode colocar um filtro em uma rota após o módulo de roteador para filtra
 
 Se os dados passarem pelo filtro de mais de uma rota, os dados serão tratados por ambas as rotas. A rota superior manipula os dados primeiro.
 
-1. Clique na guia **[!UICONTROL Scenarios]** no painel esquerdo.
+1. Clique na guia **[!UICONTROL Cenários]** no painel esquerdo.
 1. Selecione o cenário ao qual deseja adicionar um filtro.
 1. Clique em qualquer lugar no cenário para entrar no editor de cenários.
 1. Clique na chave inglesa ![Wrench](assets/wrench-icon.png) no caminho em que deseja definir um filtro. Esse é o caminho entre o módulo do roteador e o primeiro módulo da rota.
@@ -117,7 +117,7 @@ A rota de fallback é a rota que é executada em qualquer conjunto que não pass
 
 Você pode ativar uma rota de fallback no painel de filtro.
 
-1. Clique na guia **[!UICONTROL Scenarios]** no painel esquerdo.
+1. Clique na guia **[!UICONTROL Cenários]** no painel esquerdo.
 1. Selecione o cenário em que deseja adicionar uma rota de fallback.
 1. Clique em qualquer lugar no cenário para entrar no editor de cenários.
 1. Clique na chave inglesa ![Wrench](assets/wrench-icon.png) no caminho em que deseja definir um filtro. Esse é o caminho entre o módulo do roteador e o primeiro módulo da rota.
