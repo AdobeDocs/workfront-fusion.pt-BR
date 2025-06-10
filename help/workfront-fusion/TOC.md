@@ -2,9 +2,9 @@
 user-guide-title: Documentação do Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Use os documentos, tutoriais e recursos adicionais para saber como implementar e usar efetivamente o Adobe Workfront Fusion em sua organização.
-source-git-commit: d03c4a68a69ea5302f6898418c3da9edaa404bad
+source-git-commit: e0058a54039f100ba82bc8a3ed8f5d3d4445ffeb
 workflow-type: tm+mt
-source-wordcount: '1791'
+source-wordcount: '1797'
 ht-degree: 3%
 
 ---
@@ -173,6 +173,7 @@ ht-degree: 3%
    * [Criar cenários](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
    * Planejar um cenário {#plan-a-scenario}
       * [Planejar um cenário: índice do artigo](/help/workfront-fusion/create-scenarios/plan-a-scenario/plan-a-scenario-toc.md)
+      * [Encadear vários cenários em conjunto](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)
       * [Perguntas frequentes sobre planejamento de cenário](/help/workfront-fusion/create-scenarios/plan-a-scenario/faq.md)
       * [Visões gerais do vídeo](/help/workfront-fusion/create-scenarios/plan-a-scenario/fusion-basics-videos.md)
       * [Fluxo de trabalho para criar um cenário](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md)
@@ -381,6 +382,7 @@ ht-degree: 3%
          * [Módulos do Workday](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/workday-modules.md)
       * Ferramentas e transformadores {#tools-and-transformers}
          * [Módulos de arquivamento](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/archive-modules.md)
+         * [Módulos de corrente](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)
          * [Módulos CSV](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/csv.md)
          * [Módulos de armazenamento de dados](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md)
          * [Módulos do Draft.js](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/draft-js-modules.md)

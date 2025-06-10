@@ -4,9 +4,9 @@ description: O módulo de Roteador permite ramificar seu fluxo em várias rotas 
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: c1c11c6766678263b36488909c3799299a1c510a
+source-git-commit: e0058a54039f100ba82bc8a3ed8f5d3d4445ffeb
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '852'
 ht-degree: 0%
 
 ---
@@ -88,6 +88,8 @@ Você deve adicionar um módulo de roteador antes de configurar rotas.
    As rotas são organizadas na ordem em que são executadas. A rota superior é executada primeiro.
 
 1. (Opcional) Para alterar a ordem da rota, clique com o botão direito do mouse no módulo Roteador e selecione **Ordenar rotas**. Arraste e solte as rotas na ordem em que deseja executá-las. As rotas são marcadas pelo primeiro módulo que segue o roteador (o primeiro módulo da rota).
+
+   ![Rota da ordem](assets/order-routes.png)
 
 1. Continue em [Adicionar um filtro a uma rota](#add-a-filter-to-a-route).
 
