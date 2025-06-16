@@ -3,87 +3,95 @@ title: Módulos do protocolo de contexto de modelo (MCP)
 description: O módulo Protocolo de Contexto de Modelo (MCP) permite processar um prompt de usuário usando MCP.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: d8ae176db714d2b9f041b74a62e8276171745c4b
+hide: true
+hidefromtoc: true
+source-git-commit: 12315eca71d8febf7f3e5bb055d94cd5ccb9361e
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 1%
+source-wordcount: '34'
+ht-degree: 0%
 
 ---
 
-# Módulos do protocolo de contexto de modelo (MCP)
+# Módulo do Protocolo de Contexto de Modelo (MCP)
 
-O protocolo de contexto de modelo (MCP) é uma maneira de conectar com segurança modelos de idioma de IA a outros aplicativos. Você configura servidores MCP, que permitem que o modelo de IA acesse o aplicativo. Em seguida, você pode enviar um prompt para o modelo de IA, que pode retornar informações do aplicativo.
+Não há módulos MCP disponíveis no momento.
 
-Por exemplo, você pode configurar um servidor MCP para conectar um modelo de IA ao Gmail. Quando você envia o prompt &quot;Me dê meus últimos 5 emails do Gmail&quot;, ele pode acessar seu Gmail e retornar os emails.
+<!--
 
-O módulo Protocolo de Contexto de Modelo (MCP) permite processar um prompt de usuário usando um modelo de idioma e servidores MCP.
+Model Context Protocol (MCP) is a way to securely connect AI language models with other applications. You configure MCP servers, which allow the AI model to access the application. You can then send a prompt to the AI model, and it can return information from the application.
 
-## Requisitos de acesso
+For example, you could configure a MCP server to connect an AI model with Gmail. When you send the prompt "Give me my last 5 emails from Gmail," it can access your Gmail and return the emails.
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
+The Model Context Protocol (MCP) module allows you to process a user prompt using a language model and MCP servers.
 
-Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
+## Access requirements
+
++++ Expand to view access requirements for the functionality in this article.
+
+You must have the following access to use the functionality in this article:
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer</p> </td> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licença do Adobe Workfront</td> 
-   <td> <p>Novo: Padrão</p><p>Ou</p><p>Atual: trabalho ou superior</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Atual: nenhum requisito de licença do Workfront Fusion</p>
-   <p>Ou</p>
-   <p>Herdados: Automação e integração do Workfront Fusion for Work </p>
+   <p>Current: No Workfront Fusion license requirement</p>
+   <p>Or</p>
+   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Produto</td> 
+   <td role="rowheader">Product</td> 
    <td>
-   <p>Novo:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
-   <p>Ou</p>
-   <p>Atual: sua organização deve comprar o Adobe Workfront Fusion.</p>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
+   <p>Or</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
-## Módulo do protocolo de contexto do modelo e seus campos
+## Model Context Protocol module and its fields
 
-Ao configurar o módulo MCP, [!DNL Adobe Workfront Fusion] exibe os campos listados abaixo. Um título em negrito em um módulo indica um campo obrigatório.
+When you configure the MCP module, [!DNL Adobe Workfront Fusion] displays the fields listed below. A bolded title in a module indicates a required field.
 
-### Processar prompt de usuário
+### Process User Prompt
 
-Esse módulo de ação processa um prompt, usando o modelo de idioma e os servidores MCP especificados.
+This action module processes a prompt, using the language model and MCP servers you specify.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Chave do modelo de linguagem grande (LLM)]</td> 
-   <td> <p>Insira ou mapeie a chave da API do modelo de idioma grande que você deseja usar para este prompt. </p> <p>Atualmente, somente a chave da API Anthropic é compatível.</p></td> 
+   <td role="rowheader">[!UICONTROL Large language model (LLM) key]</td> 
+   <td> <p>Enter or map API key for the large language model you want to use for this prompt. </p> <p>Currently, only the Anthropic API key is supported.</p></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL servidores MCP]</td> 
-   <td> <p>Para cada servidor MCP que você deseja disponibilizar para esse prompt, clique em <b>Adicionar item</b> e insira o nome e o host do servidor. </p> </td> 
+   <td role="rowheader">[!UICONTROL MCP servers]</td> 
+   <td> <p>For each MCP server that you want to make available for this prompt, click <b>Add item</b> and enter the server's name and host. </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Inserir seu prompt]</td> 
-   <td> <p>Insira ou mapeie o prompt para o modelo de idioma grande. </p> </td> 
+   <td role="rowheader">[!UICONTROL Enter your prompt]</td> 
+   <td> <p>Enter or map the prompt for the large lanugage model. </p> </td> 
   </tr> 
  </tbody> 
 </table>
+
+-->
