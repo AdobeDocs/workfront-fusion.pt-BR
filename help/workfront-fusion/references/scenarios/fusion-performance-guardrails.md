@@ -4,9 +4,9 @@ description: A automação de trabalho requer processamento rápido, portanto, o
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 391675882c9f8c4e8f66e3b63da3e878c413d031
+source-git-commit: bebb30132a2cce66037f243563d61939625ea59d
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
@@ -92,3 +92,7 @@ Considere o seguinte em relação à recursão:
 * **Quando um cenário está causando recursão, ele é desativado pela equipe de engenharia do Fusion para evitar mais problemas de desempenho.**
 * Como a recursão é um resultado do design do cenário, você deve projetar seus cenários de forma a garantir que o cenário não inclua ações que acionem o cenário.
 
+## TLS
+
+* O Fusion atualmente é compatível com a versão 1.2 do TLS por padrão.
+* As organizações podem solicitar que a versão 1.3 do TLS seja habilitada para sua instância do Fusion.
