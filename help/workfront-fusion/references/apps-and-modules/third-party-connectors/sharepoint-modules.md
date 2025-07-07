@@ -4,9 +4,9 @@ description: Em um cenário  [!DNL Adobe Workfront Fusion] , você pode automati
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: 2bd3a9ba84182307af9349163db284514dd12aca
+source-git-commit: b6997c2b160307489322fb6ede445336ef8bd85e
 workflow-type: tm+mt
-source-wordcount: '3393'
+source-wordcount: '3383'
 ht-degree: 0%
 
 ---
@@ -130,10 +130,6 @@ Para incluir credenciais na conexão, habilite a opção Mostrar configurações
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL ID de Locatário]</p> </td> 
       <td>Insira a ID do locatário do aplicativo SharePoint ao qual você está se conectando.</td> 
-     </tr> 
-     <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Instância]</p> </td> 
-      <td> <p>Digite o endereço da sua conta do [!DNL ServiceNow] sem <code>https://</code> (normalmente <code>&lt;company>.service-now.com</code>).</p> </td> 
      </tr> 
     </tbody> 
    </table>
