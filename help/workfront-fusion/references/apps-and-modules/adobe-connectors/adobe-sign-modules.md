@@ -124,7 +124,7 @@ Este módulo de acionador inicia um cenário quando um contrato é criado ou atu
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Localizar texto]</td> 
-   <td> <p>Insira os termos que você deseja pesquisar. O módulo retorna registros que incluem esses termos como valores de campo.</p> <p>Para obter mais informações sobre a pesquisa de campos no [!DNL Adobe Acrobat Sign], consulte "Como funciona a pesquisa de texto" no <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Adobe Sign Search - Como funciona</a>.</p> </td> 
+   <td> <p>Insira os termos que você deseja pesquisar. O módulo retorna registros que incluem esses termos como valores de campo.</p> <p>Para obter mais informações sobre a pesquisa de campos no [!DNL Adobe Acrobat Sign], consulte "Como funciona a pesquisa de texto" no <a href="https://helpx.adobe.com/br/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Adobe Sign Search - Como funciona</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Número máximo de contratos retornados]</td> 
@@ -973,7 +973,7 @@ Este módulo de pesquisa pesquisa procura contratos com base nos critérios forn
     <ul> 
      <li> <p><b>[!UICONTROL Localizar texto]</b> </p> <p>Insira o texto que deseja localizar nos metadados do contrato. Cada palavra é tratada como um item de texto separado. </p> </li> 
      <li> <p><b>[!UICONTROL Localizar texto em]</b> </p> <p>Selecione os campos de metadados nos quais deseja localizar texto. Se você não selecionar nada, os módulos pesquisarão todos os metadados.</p> </li> 
-    </ul> <p>O módulo retorna qualquer contrato que contenha qualquer um dos textos inseridos em qualquer um dos campos selecionados. Exemplo: inserir "campanha de primavera" e selecionar as opções Título e Nota retorna quaisquer contratos com as palavras "primavera" ou "Campanha" no Título ou Nota.</p> <p>Para obter mais informações sobre a pesquisa de campos no [!DNL Adobe Acrobat Sign], consulte "Como funciona a pesquisa de texto" no <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] Search - Como funciona</a>.</p> </td> 
+    </ul> <p>O módulo retorna qualquer contrato que contenha qualquer um dos textos inseridos em qualquer um dos campos selecionados. Exemplo: inserir "campanha de primavera" e selecionar as opções Título e Nota retorna quaisquer contratos com as palavras "primavera" ou "Campanha" no Título ou Nota.</p> <p>Para obter mais informações sobre a pesquisa de campos no [!DNL Adobe Acrobat Sign], consulte "Como funciona a pesquisa de texto" no <a href="https://helpx.adobe.com/br/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] Search - Como funciona</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Data de criação]</td> 
