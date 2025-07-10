@@ -4,9 +4,9 @@ description: A pasta [!UICONTROL Execuções incompletas] armazena execuções d
 author: Becky
 feature: Workfront Fusion
 exl-id: 8891b4d7-a39a-4f14-8521-8c2ca186ca6e
-source-git-commit: ad304117fb6e9d1320b8e50d71a162609dc6e6f4
+source-git-commit: f2ddf62d660c4709f1e7e59c4302cde5b062725f
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '662'
 ht-degree: 5%
 
 ---
@@ -87,9 +87,11 @@ Para obter mais informações, consulte [Erros que resultam em execuções incom
 
 >[!NOTE]
 >
->O limite de tamanho atual da pasta de execuções incompletas não resolvidas por organização é de 500 MB. Se sua organização exceder esse limite, você poderá ver o seguinte erro:
+>O limite de tamanho atual da pasta de execuções incompletas não resolvidas por cenário é de 10 MB. Se o cenário exceder esse limite, você poderá ver o seguinte erro:
 >
->`"There is NOT ENOUGH SPACE to add a bundle to the IEQ. The reason is: Too many incomplete executions."`
+>`DLQ limit per scenario has been exceeded`
+>
+>As equipes são limitadas a um total de 500 MB para todas as execuções incompletas não resolvidas.
 >
 >Para obter mais informações, consulte [Habilitar perda de dados](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable-data-loss) no artigo Definir configurações de cenário.
 
