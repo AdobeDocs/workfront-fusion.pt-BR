@@ -4,9 +4,9 @@ description: Você pode usar o conector de placas Adobe Workfront para automatiz
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
 workflow-type: tm+mt
-source-wordcount: '2869'
+source-wordcount: '2868'
 ht-degree: 0%
 
 ---
@@ -327,7 +327,7 @@ Esse módulo de ação atualiza as informações de um cartão especificado.
   <tr> 
    <td>[!UICONTROL Data de vencimento]</td> 
    <td>Insira ou mapeie a data de vencimento deste cartão.</p>
-   <p>Para obter uma lista de formatos de data e hora com suporte, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerção de tipo em [!DNL Adobe Workfront Fusion]</a>.</p>
+   <p>Para obter uma lista de formatos de data e hora com suporte, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerção de tipo</a>.</p>
    </td> 
   </tr> 
   <tr> 

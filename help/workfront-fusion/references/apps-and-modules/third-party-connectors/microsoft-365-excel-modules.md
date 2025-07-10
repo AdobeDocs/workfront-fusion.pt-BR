@@ -4,7 +4,7 @@ description: Em um cenário  [!DNL Adobe Workfront Fusion] , você pode automati
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 059bc82b-f1bc-4b92-a44b-51c1daf14f08
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: d967cb62018fde6a76639a8f25ee5ca23f80cd8b
 workflow-type: tm+mt
 source-wordcount: '2637'
 ht-degree: 0%
@@ -140,7 +140,8 @@ Este módulo de ação baixa o conteúdo da pasta de trabalho do Excel especific
      <li> <p><strong>[!UICONTROL Selecionando no caminho]</strong> </p> <p>No campo [!UICONTROL Workbook], selecione a pasta de trabalho para baixar o módulo, incluindo seu caminho se ele não estiver na pasta raiz.</p> </li> 
     </ul> </td> 
   </tr> 
- </tbody>
+ </tbody> 
+</table>
 
 #### [!UICONTROL Pastas de Trabalho de Pesquisa]
 

@@ -4,9 +4,9 @@ description: Os  [!DNL Adobe Workfront Fusion] módulos CRM do HubSpot permitem 
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: 0e4986d0d66b98213efabd487e6701f8385161e3
+source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
 workflow-type: tm+mt
-source-wordcount: '7003'
+source-wordcount: '7000'
 ht-degree: 0%
 
 ---
@@ -197,7 +197,7 @@ Este módulo de acionador inicia um cenário quando um objeto do CRM é criado o
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Filtrar por]</td> 
-   <td>Você pode adicionar um filtro para garantir que o cenário comece somente quando determinadas condições forem atendidas.<ul><li><b>Query</b><p>Insira a consulta pela qual deseja filtrar.</li><li><b>Propriedades</b><p>Para cada propriedade que você deseja usar para filtrar resultados, clique em <b>Adicionar item</b> e insira o nome da propriedade, o operador e o valor da propriedade.</td> 
+   <td>Você pode adicionar um filtro para garantir que o cenário comece somente quando determinadas condições forem atendidas.<ul><li><b>Consulta</b><p>Insira a consulta pela qual deseja filtrar.</li><li><b>Propriedades</b><p>Para cada propriedade que você deseja usar para filtrar resultados, clique em <b>Adicionar item</b> e insira o nome da propriedade, o operador e o valor da propriedade.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -1433,7 +1433,7 @@ Este módulo de ação cria uma nova tarefa para um calendário. A conexão usad
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Data do Evento]</td> 
-   <td>Insira ou mapeie a data para esta tarefa.<p>Para obter uma lista de formatos de data e hora com suporte, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerção de tipo em [!DNL Adobe Workfront Fusion]</a>.</p></td> 
+   <td>Insira ou mapeie a data para esta tarefa.<p>Para obter uma lista de formatos de data e hora com suporte, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerção de tipo</a>.</p></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Categoria]</td> 
@@ -1682,7 +1682,7 @@ Esse módulo de ação cria e publica imediatamente uma mensagem no canal de mí
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Acionar em]</td> 
-   <td>Insira ou mapeie a data e a hora em que deseja que a transmissão seja enviada. Se isso for deixado em branco, a transmissão será enviada imediatamente.<p>Para obter uma lista de formatos de data e hora com suporte, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerção de tipo em [!DNL Adobe Workfront Fusion]</a>.</p></td> 
+   <td>Insira ou mapeie a data e a hora em que deseja que a transmissão seja enviada. Se isso for deixado em branco, a transmissão será enviada imediatamente.<p>Para obter uma lista de formatos de data e hora com suporte, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerção de tipo</a>.</p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -1782,7 +1782,7 @@ Este módulo de ação cria uma nova publicação de blog.
   </tr> 
   <tr> 
    <td role="rowheader">Data de publicação</td> 
-   <td>Insira ou mapeie a data em que a publicação do blog deve ser publicada. <p>Para obter uma lista de formatos de data e hora com suporte, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerção de tipo em [!DNL Adobe Workfront Fusion]</a>.</p></td> 
+   <td>Insira ou mapeie a data em que a publicação do blog deve ser publicada. <p>Para obter uma lista de formatos de data e hora com suporte, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerção de tipo</a>.</p></td> 
   </tr> 
   <tr> 
    <td role="rowheader">Nome</td> 

@@ -4,9 +4,9 @@ description: Com os  [!DNL Adobe Acrobat Sign] módulos, você pode iniciar um [
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
-source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
+source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
 workflow-type: tm+mt
-source-wordcount: '6666'
+source-wordcount: '6664'
 ht-degree: 0%
 
 ---
@@ -124,7 +124,7 @@ Este módulo de acionador inicia um cenário quando um contrato é criado ou atu
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Localizar texto]</td> 
-   <td> <p>Insira os termos que você deseja pesquisar. O módulo retorna registros que incluem esses termos como valores de campo.</p> <p>Para obter mais informações sobre a pesquisa de campos no [!DNL Adobe Acrobat Sign], consulte "Como funciona a pesquisa de texto" no <a href="https://helpx.adobe.com/br/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Adobe Sign Search - Como funciona</a>.</p> </td> 
+   <td> <p>Insira os termos que você deseja pesquisar. O módulo retorna registros que incluem esses termos como valores de campo.</p> <p>Para obter mais informações sobre a pesquisa de campos no [!DNL Adobe Acrobat Sign], consulte "Como funciona a pesquisa de texto" no <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Adobe Sign Search - Como funciona</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Número máximo de contratos retornados]</td> 
@@ -256,7 +256,7 @@ Este módulo de ação cria um novo registro do tipo selecionado.
         <ul> 
          <li> <p><b>[!UICONTROL Mime-Type]</b> </p> <p>Insira o tipo MIME do arquivo original. Os tipos MIME (Multipurpose Internet Mail Extension) são rótulos que permitem que o software identifique diferentes tipos de dados compartilhados na Internet. Servidores da Web e navegadores usam o tipo MIME para determinar o que deve ser feito com um arquivo. Por exemplo, um arquivo com o tipo MIME <code>text/html</code> será processado em um navegador de forma diferente de um arquivo com o tipo MIME <code>image/jpeg</code>.</p> </li> 
          <li> <p><b>[!UICONTROL Nome]</b> </p> <p>Insira um nome para o arquivo.</p> </li> 
-         <li> <p><b></b> </p> <p>Insira o URL do arquivo que deseja enviar.</p> </li> 
+         <li> <p><b>[!UICONTROL]</b> </p> <p>Insira o URL do arquivo que deseja enviar.</p> </li> 
         </ul> </li> 
        <li> <p><b>[!UICONTROL Notarize]</b> </p> <p>Selecione se este documento precisa ser notariado.</p> </li> 
       </ul> </li> 
@@ -264,8 +264,8 @@ Este módulo de ação cria um novo registro do tipo selecionado.
      <li> <p><b>[!UICONTROL Modo de compartilhamento]</b> </p> <p>Especifique quem deve ter acesso ao documento da biblioteca.</p> </li> 
      <li> <p><b>[!UICONTROL Estado do documento da biblioteca]</b> </p> <p>Selecione se o documento está no estado de criação ou ativo.</p> </li> 
      <li> <p><b>[!UICONTROL Tipo de modelo de biblioteca]</b> </p> <p>Para cada tipo de modelo de biblioteca que você deseja usar, clique em <b>[!UICONTROL Adicionar item]</b> e selecione o tipo de modelo.</p> </li> 
-     <li> <p><b>[!UICONTROL Data do último evento]</b> </p> <p>Insira a última data em que um evento ocorreu no documento da biblioteca.</p> <p>Para obter uma lista de formatos de data e hora com suporte, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerção de tipo em [!DNL Adobe Workfront Fusion]</a>.</p> </li> 
-     <li> <p><b>[!UICONTROL Status do documento da biblioteca]</b> </p> <p>Selecione o status do documento de biblioteca.</p> </li> 
+     <li> <p><b>[!UICONTROL Data do último evento]</b> </p> <p>Insira a última data em que um evento ocorreu no documento da biblioteca.</p> <p>Para obter uma lista de formatos de data e hora com suporte, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerção de tipo</a>.</p> </li> 
+     <li> <p><b>[!Status do documento da biblioteca UICONTROL]</b> </p> <p>Selecione o status do documento de biblioteca.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -321,14 +321,14 @@ Este módulo de ação cria um novo registro do tipo selecionado.
       </ul> </li> 
      <li> <p><b>[!UICONTROL Informações de falha de autenticação]</b> </p> <p>Para fornecer uma página de erro ou falha para seus usuários, selecione <b>[!UICONTROL Sim]</b> e preencha os seguintes campos:</p> 
       <ul> 
-       <li> <p><b></b> </p> <p>Insira o URL da página de erro</p> </li> 
+       <li> <p><b>[!UICONTROL]</b> </p> <p>Insira o URL da página de erro</p> </li> 
        <li> <p><b>[!UICONTROL Desframe]</b> </p> <p>Ative esta opção se desejar que a página de erro apareça dentro do formulário web</p> </li> 
        <li> <p><b>[!UICONTROL Retardo]</b> </p> <p>Insira o atraso, em segundos, antes que o usuário seja redirecionado para a página de erro.</p> </li> 
       </ul> </li> 
      <li> <p><b>[!UICONTROL informações CC]</b> </p> <p>Para cada endereço de email no qual você deseja receber um email quando o contrato final no formulário da Web for assinado, clique em <b>[!UICONTROL Adicionar item]</b> e insira o endereço de email.</p> </li> 
      <li> <p><b>[!UICONTROL Informações de conclusão]</b> </p> <p style="font-style: normal;">Para fornecer uma página de sucesso aos seus usuários, selecione <b>[!UICONTROL Sim]</b> e preencha os seguintes campos:</p> 
       <ul> 
-       <li> <p><b></b> </p> <p>Insira o URL da página de sucesso</p> </li> 
+       <li> <p><b>[!UICONTROL]</b> </p> <p>Insira o URL da página de sucesso</p> </li> 
        <li> <p><b>[!UICONTROL Desframe]</b> </p> <p>Ative esta opção se desejar que a página de sucesso apareça dentro do formulário web</p> </li> 
        <li> <p><b>[!UICONTROL Retardo]</b> </p> <p>Insira o atraso, em segundos, antes que o usuário seja redirecionado para a página de sucesso.</p> </li> 
       </ul> </li> 
@@ -384,7 +384,7 @@ Este módulo de ação cria um contrato, o envia para assinatura e retorna a ID 
         <ul> 
          <li> <p><b>[!UICONTROL Mime-Type]</b> </p> <p>Insira o tipo MIME do arquivo original. Os tipos MIME (Multipurpose Internet Mail Extension) são rótulos que permitem que o software identifique diferentes tipos de dados compartilhados na Internet. Servidores da Web e navegadores usam o tipo MIME para determinar o que deve ser feito com um arquivo. Por exemplo, um arquivo com o tipo MIME <code>text/html</code> será processado em um navegador de forma diferente de um arquivo com o tipo MIME <code>image/jpeg</code>.</p> </li> 
          <li> <p><b>[!UICONTROL Nome]</b> </p> <p>Insira um nome para o arquivo.</p> </li> 
-         <li> <p><b></b> </p> <p>Insira o URL do arquivo que deseja enviar.</p> </li> 
+         <li> <p><b>[!UICONTROL]</b> </p> <p>Insira o URL do arquivo que deseja enviar.</p> </li> 
         </ul> </li> 
       </ul> </li> 
      <li> <p><b>[!UICONTROL RÓTULO]</b> </p> <p>Insira um rótulo para o arquivo.</p> </li> 
@@ -595,7 +595,7 @@ Esse módulo de ação cria registros vinculados a um módulo selecionado.
         <ul> 
          <li> <p><b>[!UICONTROL Email]</b> </p> <p>Insira o endereço de email da pessoa que recebe o formulário web recém-criado</p> </li> 
          <li> <p><b>[!UICONTROL Comentário]</b> </p> <p>Insira um comentário descrevendo como o chamador da API estabeleceu a identidade do signatário. Essas informações aparecem na trilha de auditoria [!DNL Adobe Acrobat Sign].</p> </li> 
-         <li> <p><b>[!UICONTROL Expiração]</b> </p> <p>Insira uma data de expiração para a personalização deste formulário web. </p> <p>Para obter uma lista de formatos de data e hora com suporte, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Coerção de tipo em [!DNL Adobe Workfront Fusion]</a>.</p> </li> 
+         <li> <p><b>[!UICONTROL Expiração]</b> </p> <p>Insira uma data de expiração para a personalização deste formulário web. </p> <p>Para obter uma lista de formatos de data e hora com suporte, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Coerção de tipo</a>.</p> </li> 
          <li> <p><b>[!UICONTROL Reutilizável]</b> </p> <p>Selecione <b>[!UICONTROL Sim]</b> se quiser que o signatário pretendido assine o formulário mais de uma vez.</p> </li> 
         </ul> </li> 
       </ul> </li> 
@@ -973,7 +973,7 @@ Este módulo de pesquisa pesquisa procura contratos com base nos critérios forn
     <ul> 
      <li> <p><b>[!UICONTROL Localizar texto]</b> </p> <p>Insira o texto que deseja localizar nos metadados do contrato. Cada palavra é tratada como um item de texto separado. </p> </li> 
      <li> <p><b>[!UICONTROL Localizar texto em]</b> </p> <p>Selecione os campos de metadados nos quais deseja localizar texto. Se você não selecionar nada, os módulos pesquisarão todos os metadados.</p> </li> 
-    </ul> <p>O módulo retorna qualquer contrato que contenha qualquer um dos textos inseridos em qualquer um dos campos selecionados. Exemplo: inserir "campanha de primavera" e selecionar as opções Título e Nota retorna quaisquer contratos com as palavras "primavera" ou "Campanha" no Título ou Nota.</p> <p>Para obter mais informações sobre a pesquisa de campos no [!DNL Adobe Acrobat Sign], consulte "Como funciona a pesquisa de texto" no <a href="https://helpx.adobe.com/br/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] Search - Como funciona</a>.</p> </td> 
+    </ul> <p>O módulo retorna qualquer contrato que contenha qualquer um dos textos inseridos em qualquer um dos campos selecionados. Exemplo: inserir "campanha de primavera" e selecionar as opções Título e Nota retorna quaisquer contratos com as palavras "primavera" ou "Campanha" no Título ou Nota.</p> <p>Para obter mais informações sobre a pesquisa de campos no [!DNL Adobe Acrobat Sign], consulte "Como funciona a pesquisa de texto" no <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] Search - Como funciona</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Data de criação]</td> 
