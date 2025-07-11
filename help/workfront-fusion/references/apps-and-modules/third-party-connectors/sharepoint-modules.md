@@ -4,9 +4,9 @@ description: Em um cenário  [!DNL Adobe Workfront Fusion] , você pode automati
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: b6997c2b160307489322fb6ede445336ef8bd85e
+source-git-commit: 5af0b7ab4646502418f188854fdec43bcacc7549
 workflow-type: tm+mt
-source-wordcount: '3383'
+source-wordcount: '3979'
 ht-degree: 0%
 
 ---
@@ -221,6 +221,8 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 * [Criar um arquivo](#create-a-file)
 * [Criar uma pasta](#create-a-folder)
 * [Obter um arquivo](#get-a-file)
+* [Obter uma pasta](#get-a-folder)
+* [Atualizar uma pasta ou um arquivo](#update-a-folder-or-a-file)
 * [Observar itens da pasta](#watch-folder-items)
 
 #### Criar um arquivo
@@ -299,6 +301,56 @@ Este módulo de ação recupera o arquivo SharePoint especificado.
 </tbody> 
 </table>
 
+#### Obter uma pasta
+
+Este módulo recuperou detalhes sobre a pasta especificada
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao [!DNL Workfront Fusion], consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao [!DNL Workfront Fusion]</a> neste artigo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Inserir Site, Unidade e Arquivo                IDs]</td> 
+   <td> <p>Selecione como você deseja identificar o local do arquivo que deseja obter.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Inserir manualmente]</strong> </p> <p>Insira ou mapeie o <strong>[!UICONTROL ID do Site]</strong>, <strong>[!UICONTROL ID da Lista]</strong> e <strong>[!UICONTROL Caminho da Pasta]</strong> para a pasta que você deseja recuperar.</p> </li> 
+     <li> <p><strong>[!UICONTROL Selecionar na lista que você segue]</strong> </p> <p>Selecione o local da pasta. </p> </li> 
+    </ul> </td> 
+  </tr> 
+</tbody> 
+</table>
+
+#### Atualizar uma pasta ou um arquivo
+
+Este módulo de ação atualiza os metadados de uma pasta ou arquivo
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao [!DNL Workfront Fusion], consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao [!DNL Workfront Fusion]</a> neste artigo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Inserir Site, Unidade e Arquivo                IDs]</td> 
+   <td> <p>Selecione como você deseja identificar o local do arquivo que deseja obter.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Inserir manualmente]</strong> </p> <p>Insira ou mapeie a <strong>[!UICONTROL ID do Site]</strong>, <strong>[!UICONTROL ID da Lista]</strong> e <strong>[!UICONTROL ID de Pasta ou item]</strong> para a pasta ou arquivo que você deseja recuperar.</p> </li> 
+     <li> <p><strong>[!UICONTROL Selecionar na lista que você segue]</strong> </p> <p>Selecione o local da pasta. </p> </li> 
+    </ul> </td> 
+  </tr> 
+  </tr> 
+   <td role="rowheader">[!UICONTROL Campos]</td> 
+   <td>Para cada campo de metadados que você deseja atualizar, clique em <b>Adicionar item</b> e insira o caminho e o valor do campo.</td> 
+  <tr>
+</tbody> 
+</table>
+
 #### Observar itens da pasta
 
 Este módulo de acionamento inicia um cenário quando um item é atualizado em uma pasta selecionada.
@@ -332,9 +384,10 @@ Este módulo de acionamento inicia um cenário quando um item é atualizado em u
 * [[!UICONTROL Criar um item]](#create-an-item)
 * [[!UICONTROL Excluir um item]](#delete-an-item)
 * [[!UICONTROL Obter um Item]](#get-an-item)
+* [Obter detalhes](#get-details)
 * [[!UICONTROL Listar itens]](#list-items)
-* [[!UICONTROL Mover Item]](#move-an-item)
-* [[!UICONTROL Atualizar um item]](#update-an-item)
+* [[!UICONTROL Mover um Item]](#move-an-item)
+* [[!UICONTROL Atualizar um Item]](#update-an-item)
 * [[!UICONTROL Itens de observação] (Agendados)](#watch-items-scheduled)
 
 
@@ -440,6 +493,25 @@ Este módulo de ação retorna os dados de um item especificado.
     </ul> </td> 
   </tr> 
  </tbody> 
+</table>
+
+#### Obter detalhes
+
+Esse módulo obtém detalhes do item do URL especificado.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao [!DNL Workfront Fusion], consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao [!DNL Workfront Fusion]</a> neste artigo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">URL da Web</td> 
+   <td> Insira ou mapeie o URL do item para o qual deseja recuperar detalhes. </td> 
+  </tr> 
+</tbody> 
 </table>
 
 #### [!UICONTROL Listar itens]
@@ -687,6 +759,11 @@ Esse módulo de acionador inicia um cenário quando uma lista é criada ou modif
 >
 >As APIs na versão `beta` em [!DNL Microsoft Graph] estão sujeitas a alterações. O uso dessas APIs em aplicativos de produção não é compatível.
 
+* [Obter uma página](#get-a-page)
+* [Listar páginas](#list-pages)
+* [Publicar uma página](#publish-a-page)
+* [Assistir páginas](#watch-pages)
+
 #### [!UICONTROL Obter uma página]
 
 Este módulo de ação retorna os dados de uma página especificada.
@@ -706,6 +783,83 @@ Este módulo de ação retorna os dados de uma página especificada.
      <li> <p><strong>[!UICONTROL Inserir manualmente]</strong> </p> <p>Insira ou mapeie a <strong>[!UICONTROL ID do Site]</strong>e <strong>[!UICONTROL ID da Página]</strong>.</p> </li> 
      <li> <p><strong>[!UICONTROL Selecionar na lista]</strong> </p> <p>Selecione o site que contém a página que você deseja recuperar e selecione a página.</p> </li> 
     </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Listar páginas
+
+Este módulo recupera uma lista de todas as páginas.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao [!DNL Workfront Fusion], consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao [!DNL Workfront Fusion]</a> neste artigo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Listar Páginas]</td> 
+   <td> <p>Selecione como você deseja identificar as páginas que deseja listar.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Inserir manualmente]</strong> </p> <p>Insira ou mapeie o <strong>[!UICONTROL ID do Site]</strong> do site que contém as páginas que você deseja listar.</p> </li> 
+     <li> <p><strong>[!UICONTROL Selecionar na lista]</strong> </p> <p>Selecione o site que contém as páginas que você deseja listar.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limite]</td> 
+   <td> <p>Insira ou mapeie o número máximo de páginas que você deseja que o módulo retorne durante cada ciclo de execução do cenário.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Publicar uma página
+
+Esse módulo de ação publica a versão mais recente da página selecionada.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao [!DNL Workfront Fusion], consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao [!DNL Workfront Fusion]</a> neste artigo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Publicar uma página]</td> 
+   <td> <p>Selecione como você deseja identificar a página que deseja publicar.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Inserir manualmente]</strong> </p> <p>Insira ou mapeie a <strong>[!UICONTROL ID do Site]</strong>e <strong>[!UICONTROL ID da Página]</strong>.</p> </li> 
+     <li> <p><strong>[!UICONTROL Selecionar na lista]</strong> </p> <p>Selecione o site que contém a página que você deseja publicar e selecione a página.</p> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Assistir páginas
+
+Esse módulo de acionador inicia um cenário quando uma página é modificada no site especificado.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao [!DNL Workfront Fusion], consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao [!DNL Workfront Fusion]</a> neste artigo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Inserir ID do Site]</td> 
+   <td> <p>Selecione como você deseja identificar as páginas que deseja listar.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Inserir manualmente]</strong> </p> <p>Insira ou mapeie o <strong>[!UICONTROL ID do Site]</strong> do site que contém as páginas que você deseja assistir.</p> </li> 
+     <li> <p><strong>[!UICONTROL Selecionar na lista que você segue]</strong> </p> <p>Selecione o site que contém as páginas que você deseja visualizar.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limite]</td> 
+   <td> <p>Insira ou mapeie o número máximo de páginas que você deseja que o módulo retorne durante cada ciclo de execução do cenário.</p> </td> 
   </tr> 
  </tbody> 
 </table>
