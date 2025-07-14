@@ -4,9 +4,9 @@ description: Atualmente, há suporte para arquivos grandes nos conectores Workfr
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: 0e69dfa23fc12cb20c3fed772d72ef348536ea24
+source-git-commit: a5a98d2e0b246d46389d4574e29f91c74f053472
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '1050'
 ht-degree: 1%
 
 ---
@@ -24,6 +24,11 @@ Para lidar com arquivos maiores, seus cenários devem ser atualizados.
 ## Conectores compatíveis com arquivos grandes
 
 No momento, os seguintes conectores são compatíveis com arquivos grandes.
+
+>[!NOTE]
+>
+>* Se um arquivo for baixado usando um módulo que suporte arquivos grandes e, em seguida, for passado para um módulo que não suporta arquivos grandes, esse módulo não processará o arquivo com êxito. Arquivos grandes devem ser manipulados exclusivamente com módulos compatíveis durante todo o fluxo de trabalho.
+>* Os módulos que não aceitam arquivos grandes podem processar arquivos de até 200 MB.
 
 * Workfront
    * Carregar documento

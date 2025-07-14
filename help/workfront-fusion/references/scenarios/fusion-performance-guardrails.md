@@ -4,9 +4,9 @@ description: A automação de trabalho requer processamento rápido, portanto, o
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: cf9e7def3ce406b693d22ff31f82571dd5eddd31
+source-git-commit: a5a98d2e0b246d46389d4574e29f91c74f053472
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1074'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,8 @@ A automação de trabalho requer processamento rápido, portanto, o [!DNL Adobe 
 
 * A capacidade total de processamento do Fusion para arquivos é de **1 GB**. O limite se baseia em um custo total de memória. Cada operação contribui para esse custo. Se um único arquivo de 400 MB for baixado e carregado, o custo total da capacidade do arquivo será de 800 MB.
 * As organizações no plano Workfront Ultimate têm acesso a um maior processamento de arquivos além de 1 GB. A plataforma Fusion pode oferecer suporte a arquivos individuais de até 15 GB para uma única ação (por exemplo, carregar arquivo), mas há outros fatores que afetam a transferência de dados. O limite de tamanho de arquivo de uma única ação depende do serviço Web ao qual o Fusion se conecta. A transferência de dados é o processamento total de uma única execução. Isso significa que várias ações em uma única execução contribuem para a transferência total de dados. O Fusion processará arquivos até que o limite de execução de 40 minutos seja atingido.
+* Se um arquivo for baixado usando um módulo que suporte arquivos grandes e, em seguida, for passado para um módulo que não suporta arquivos grandes, esse módulo não processará o arquivo com êxito. Arquivos grandes devem ser manipulados exclusivamente com módulos compatíveis durante todo o fluxo de trabalho.
+* Os módulos que não oferecem suporte a arquivos grandes podem processar arquivos de até **200 MB**.
 
 Para obter mais informações, consulte [Trabalhando com arquivos grandes](/help/workfront-fusion/references/scenarios/fusion-large-files.md).
 
