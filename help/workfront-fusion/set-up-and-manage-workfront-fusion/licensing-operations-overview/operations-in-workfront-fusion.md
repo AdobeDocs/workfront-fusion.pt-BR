@@ -4,9 +4,9 @@ description: Uma operação no Adobe Workfront Fusion é uma tarefa executada po
 author: Becky
 feature: Workfront Fusion
 exl-id: c14e2bb2-1cce-48ff-8bea-acc9829d3cf2
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3470f7a9658ac4e6214c27f94f5b41821f2f8665
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Uma operação no Adobe Workfront Fusion é uma tarefa executada por um módulo.
 * Em geral, qualquer execução bem-sucedida da etapa de ação é considerada uma operação.
 * O primeiro módulo em um cenário é executado apenas uma vez e é sempre contado como uma operação, mesmo que não retorne um pacote.
 * O número de vezes que o restante dos módulos é executado depende do número de pacotes que eles devem processar.  Uma execução de um módulo para um pacote é uma operação. Uma exceção é o módulo agregador, que é contado como uma operação por conjunto de pacotes sendo processados.
-* As operações são contadas no estágio [!UICONTROL Finalization] de uma execução de cenário.
+* As operações são contadas no estágio [!UICONTROL Finalization] de execução de um cenário.
 * Os itens a seguir são **não** contados como operações:
    * Quaisquer etapas de filtro.
    * Qualquer ação que cause erros ou seja interrompida.
@@ -32,6 +32,13 @@ Uma operação no Adobe Workfront Fusion é uma tarefa executada por um módulo.
 Sua organização pode ter um limite mensal de operações. Isso se baseia no plano [!DNL Workfront] que sua organização adquiriu. O plano [!UICONTROL Ultimate] [!DNL Workfront] oferece operações ilimitadas.
 
 Se sua organização tiver um limite mensal, você será notificado quando ela estiver perto do limite. Se sua organização ultrapassar o limite, o [!DNL Workfront] entrará em contato com sua organização para garantir que seu plano atenda às suas necessidades.
+
+O Workfront Fusion envia uma notificação quando sua organização atinge as seguintes porcentagens do limite mensal da organização:
+
+* 50%
+* 75%
+* 90%
+* 100%
 
 ## Exibir o número de operações executadas nos últimos 30 dias
 
