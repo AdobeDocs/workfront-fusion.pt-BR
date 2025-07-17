@@ -4,9 +4,9 @@ description: A automação de trabalho requer processamento rápido, portanto, o
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: a5a98d2e0b246d46389d4574e29f91c74f053472
+source-git-commit: e036784fbf241c6d528f2020b7c368249e4f2133
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1083'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,7 @@ Para obter mais informações, consulte [Trabalhando com arquivos grandes](/help
 
 * As execuções incompletas estão limitadas a um tamanho total de **10 MB** por cenário. Se o limite de 10 MB for atingido, não serão armazenadas mais execuções incompletas para esse cenário.
 * As execuções incompletas estão limitadas a um tamanho total de **500 MB** por equipe. Se o limite de 500 MB for atingido, não serão armazenadas mais execuções incompletas para essa equipe.
+* O Workfront Fusion permite até 5 falhas por minuto.
 
 ## Tentativas
 
