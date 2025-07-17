@@ -4,16 +4,16 @@ description: Os  [!DNL Adobe Workfront Fusion SFTP] módulos permitem monitorar 
 author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
-source-git-commit: 26c599a9887ad931763b787813153bb7791ce5d1
+source-git-commit: 0e187fb3c31375c4dc12d0f9a8438bcb6f9ea7e8
 workflow-type: tm+mt
-source-wordcount: '2121'
+source-wordcount: '2143'
 ht-degree: 0%
 
 ---
 
 # Módulos SFTP
 
-Os módulos SFTP do [!DNL Adobe Workfront Fusion] permitem monitorar as alterações de arquivos em uma pasta/subpasta selecionada, carregar novos arquivos na pasta desejada, modificar ou excluir arquivos existentes que já estejam em uma pasta ou alterar permissões de arquivos.
+Os módulos SF[!DNL Adobe Workfront Fusion]TP do  permitem monitorar as alterações de arquivos em uma pasta/subpasta selecionada, carregar novos arquivos na pasta desejada, modificar ou excluir arquivos existentes que já estejam em uma pasta ou alterar permissões de arquivos.
 
 ## Requisitos de acesso
 
@@ -110,6 +110,46 @@ Para conectar sua conta SFTP ao [!DNL Workfront Fusion], você precisa criar uma
 </table>
 
 Depois de inserir as informações de conexão, clique em **[!UICONTROL Continuar]** para estabelecer uma conexão.
+
+### Opções de conexão compatíveis
+
+O conector SFTP oferece suporte ao seguinte ao criar uma conexão:
+
+#### Algoritmos de troca de chaves (KEX)
+
+* `ecdh-sha2-nistp256`
+* `ecdh-sha2-nistp384`
+* `ecdh-sha2-nistp521`
+* `diffie-hellman-group-exchange-sha256`
+* `diffie-hellman-group14-sha256`
+* `diffie-hellman-group16-sha512`
+* `diffie-hellman-group18-sha512`
+* `diffie-hellman-group14-sha1`
+
+#### Cifras
+
+* `aes256-gcm@openssh.com`
+* `aes256-gcm`
+* `aes128-gcm@openssh.com`
+* `aes128-gcm`
+* `aes256-ctr`
+* `aes192-ctr`
+* `aes128-ctr`
+* `aes256-cbc`
+* `aes192-cbc`
+* `aes128-cbc`
+* `blowfish-cbc`
+
+#### Formatos de Chave de Host do Servidor
+
+* `ssh-ed25519`
+* `ecdsa-sha2-nistp256`
+* `ecdsa-sha2-nistp384`
+* `ecdsa-sha2-nistp521`
+* `ssh-rsa`
+* `ssh-dss`
+* `rsa-sha2-256`
+* `rsa-sha2-512`
 
 ## Módulos [!UICONTROL SFTP] e seus campos
 
