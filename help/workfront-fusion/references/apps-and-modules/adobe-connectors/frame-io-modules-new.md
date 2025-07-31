@@ -4,18 +4,18 @@ description: A conta  [!DNL Adobe Workfront Fusion Frame].io modules enable you 
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: cc1ce10fccf159a0c17a3bba978d88c0d1013cbf
+source-git-commit: 7eaed8b6afd5de0d36c94605c9708d74b6ec8aa6
 workflow-type: tm+mt
-source-wordcount: '2936'
+source-wordcount: '3471'
 ht-degree: 1%
 
 ---
 
-# [!DNL Frame.io] módulos do Beta (V4)
+# [!DNL Frame.io] módulos V4
 
 >[!IMPORTANT]
 >
->Este artigo descreve a nova versão (beta) do conector Frame.io. Esse conector é usado para conectar ao Frame.io versão 4.
+>Este artigo descreve a nova versão do conector Frame.io. Esse conector é usado para conectar ao Frame.io versão 4.
 >
 >Para obter instruções sobre a versão herdada do conector Frame.io, consulte [Conector herdado Frame.io](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md).
 
@@ -25,7 +25,7 @@ O Workfront oferece dois conectores Frame.io, com base na versão do Frame.io à
 
 | Conector | Versão do Frame.io |
 |---|---|
-| Frame.io (Beta) | V4 |
+| Frame.io | V4 |
 | Frame.io (Herdado) | V3 |
 
 Para obter instruções sobre a versão herdada do conector Frame.io, consulte [Conector herdado Frame.io](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md).
@@ -316,7 +316,8 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 * [[!UICONTROL Excluir um ativo]](#delete-an-asset)
 * [[!UICONTROL Obter um ativo]](#get-an-asset)
 * [[!UICONTROL Listar ativos]](#list-assets)
-* [[!UICONTROL Atualizar um ativo]](#update-an-asset)
+* [Inspecionar ativo excluído](#watch-asset-deleted)
+* [Observar novo ativo](#watch-new-asset)
 
 #### [!UICONTROL Criar um ativo] <!--different for v4-->
 
@@ -436,6 +437,60 @@ Este módulo de pesquisa recupera todos os ativos na pasta do projeto especifica
  </tbody> 
 </table>
 
+#### Inspecionar ativo excluído
+
+Este módulo de acionamento inicia um cenário quando um ativo é excluído.
+
+Selecione o webhook que deseja usar para esse módulo ou clique em Adicionar ao lado do campo Webhook e insira as seguintes informações:
+
+<table style="table-layout:auto"> 
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Nome do Webhook] </td> 
+   <td> <p>Insira um nome para o novo webhook.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td>Para obter instruções sobre como criar uma conexão com [!DNL Frame.io], consulte <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Conectar [!DNL Frame.io] a [!DNL Adobe Workfront Fusion]</a> neste artigo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de Conta] </td> 
+   <td> <p>Selecione a conta ou mapeie a ID da conta que deseja observar para ativos excluídos.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Observar novo ativo
+
+Esse módulo de acionador inicia um cenário quando um novo ativo é criado.
+
+Selecione o webhook que deseja usar para esse módulo ou clique em Adicionar ao lado do campo Webhook e insira as seguintes informações:
+
+<table style="table-layout:auto"> 
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Nome do Webhook] </td> 
+   <td> <p>Insira um nome para o novo webhook.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td>Para obter instruções sobre como criar uma conexão com [!DNL Frame.io], consulte <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Conectar [!DNL Frame.io] a [!DNL Adobe Workfront Fusion]</a> neste artigo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de Conta] </td> 
+   <td> <p>Selecione a conta ou mapeie a ID da conta que você deseja observar para novos ativos.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 ### Comentários
 
 * [[!UICONTROL Criar um comentário]](#create-a-comment)
@@ -443,6 +498,8 @@ Este módulo de pesquisa recupera todos os ativos na pasta do projeto especifica
 * [[!UICONTROL Obter um comentário]](#get-a-comment)
 * [[!UICONTROL Listar comentários]](#list-comments)
 * [[!UICONTROL Atualizar um comentário]](#update-a-comment)
+* [Assista ao comentário atualizado](#watch-comment-updated)
+* [Assista ao novo comentário](#watch-new-comment)
 
 #### [!UICONTROL Criar um comentário]
 
@@ -603,6 +660,60 @@ Este módulo de ação edita um comentário existente.
  </tbody> 
 </table>
 
+#### Assista ao comentário atualizado
+
+Este módulo de acionamento inicia um cenário quando um comentário é atualizado.
+
+Selecione o webhook que deseja usar para esse módulo ou clique em Adicionar ao lado do campo Webhook e insira as seguintes informações:
+
+<table style="table-layout:auto"> 
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Nome do Webhook] </td> 
+   <td> <p>Insira um nome para o novo webhook.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td>Para obter instruções sobre como criar uma conexão com [!DNL Frame.io], consulte <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Conectar [!DNL Frame.io] a [!DNL Adobe Workfront Fusion]</a> neste artigo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de Conta] </td> 
+   <td> <p>Selecione a conta ou mapeie a ID da conta que deseja observar para ver comentários atualizados.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Assista ao novo comentário
+
+Este módulo de acionamento inicia um cenário quando um comentário é criado.
+
+Selecione o webhook que deseja usar para esse módulo ou clique em Adicionar ao lado do campo Webhook e insira as seguintes informações:
+
+<table style="table-layout:auto"> 
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Nome do Webhook] </td> 
+   <td> <p>Insira um nome para o novo webhook.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td>Para obter instruções sobre como criar uma conexão com [!DNL Frame.io], consulte <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Conectar [!DNL Frame.io] a [!DNL Adobe Workfront Fusion]</a> neste artigo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de Conta] </td> 
+   <td> <p>Selecione a conta ou mapeie a ID da conta que deseja observar para novos comentários.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 ### Pastas
 
 #### Criar uma pasta
@@ -643,6 +754,7 @@ Este módulo de ação cria uma nova pasta no Frame.io.
 ### Projetos
 
 * [Criar um projeto](#create-a-project)
+* [Convidar usuários para o projeto Frame.io](#invite-users-to-frameio-project)
 * [Listar projetos](#list-projects)
 
 #### Criar um projeto
@@ -668,6 +780,38 @@ Este módulo de ação cria um novo projeto no Frame.io.
    <tr> 
    <td role="rowheader">Nome </td> 
    <td> <p>Insira ou mapeie um nome para o novo projeto.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Convidar usuários para o projeto Frame.io
+
+Este módulo de ação convida os usuários para o projeto Frame.io especificado.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td>Para obter instruções sobre como criar uma conexão com [!DNL Frame.io], consulte <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Conectar [!DNL Frame.io] a [!DNL Adobe Workfront Fusion]</a> neste artigo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de Conta] </td> 
+   <td> <p>Selecione ou mapeie a conta que contém o projeto para o qual você deseja convidar um usuário.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td> <p>Selecione ou mapeie o espaço de trabalho que contém o projeto para o qual você deseja convidar um usuário.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">ID do projeto </td> 
+   <td> <p>Selecione ou mapeie o projeto para o qual você deseja convidar um usuário.</p> </td> 
+  </tr> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">ID de usuário </td> 
+   <td> <p>Selecione ou mapeie o usuário que deseja convidar para o projeto.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -834,6 +978,10 @@ Este módulo lista todos os espaços de trabalho em uma conta.
 
 ### Outro
 
+* [Fazer uma chamada de API personalizada](#make-a-custom-api-call)
+* [Observar valor de metadados atualizado](#watch-metadata-value-updated)
+
+
 #### [!UICONTROL Fazer uma chamada de API personalizada]
 
 Este módulo permite executar uma chamada de API personalizada.
@@ -868,6 +1016,33 @@ Este módulo permite executar uma chamada de API personalizada.
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Observar valor de metadados atualizado
+
+Este módulo de acionamento inicia um cenário quando um comentário é atualizado.
+
+Selecione o webhook que deseja usar para esse módulo ou clique em Adicionar ao lado do campo Webhook e insira as seguintes informações:
+
+<table style="table-layout:auto"> 
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Nome do Webhook] </td> 
+   <td> <p>Insira um nome para o novo webhook.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td>Para obter instruções sobre como criar uma conexão com [!DNL Frame.io], consulte <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Conectar [!DNL Frame.io] a [!DNL Adobe Workfront Fusion]</a> neste artigo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de Conta] </td> 
+   <td> <p>Selecione a conta ou mapeie a ID da conta que deseja observar para valores de metadados atualizados.</p> </td> 
   </tr> 
  </tbody> 
 </table>
