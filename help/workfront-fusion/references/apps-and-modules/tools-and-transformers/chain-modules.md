@@ -5,9 +5,10 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 454e06527fe1a624f36be3b7f3682ff49a61d42d
+exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
+source-git-commit: efab436edce8a5253b147c77b87a005f6efc63d0
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '628'
 ht-degree: 1%
 
 ---
@@ -105,6 +106,7 @@ Para configurar o módulo Chamar um cenário filho
    Os campos configurados no módulo de acionador do cenário filho aparecem no módulo Chamar um cenário filho.
 
 1. Insira ou mapeie as informações a serem passadas para o cenário filho no módulo Chamar um cenário filho.
+1. (Condicional) Se desejar que o cenário pai continue sua execução sem esperar uma resposta do cenário filho, habilite a opção **Acionar e Ignorar**.
 1. Clique em **OK** para salvar o módulo.
 
 >[!NOTE]
@@ -128,4 +130,3 @@ Para configurar o módulo Adicionar respondente:
    Para obter instruções sobre como criar uma estrutura de dados, consulte [Estruturas de dados](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
 
 1. Clique em **OK** para salvar o módulo.
-
