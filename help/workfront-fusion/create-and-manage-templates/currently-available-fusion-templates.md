@@ -23,7 +23,7 @@ Para exibir os modelos disponíveis, clique no ícone **Modelos** ![Ícone Model
 
 Esses modelos automatizam processos e fluxos de trabalho do Workfront.
 
-### [!BADGE Novo! ]{type=Informative} Workfront - Ajustar Automaticamente A Linha Do Tempo Do Projeto Quando As Tarefas Forem Concluídas Com Antecedência
+### [!BADGE Novo! &#x200B;]{type=Informative} Workfront - Ajustar Automaticamente A Linha Do Tempo Do Projeto Quando As Tarefas Forem Concluídas Com Antecedência
 
 <!--New June 10, 2025-->
 
@@ -33,13 +33,13 @@ Se a sua equipe se esforça para manter o ritmo porque as linhas do tempo do pro
 
 Esse modelo do Fusion automatiza esse processo. Quando uma tarefa é concluída com antecedência, todas as tarefas dependentes (sucessoras) são automaticamente reagendadas para começarem mais cedo, ajudando sua equipe a se mover mais rápido e a permanecer ágil.
 
-### [!BADGE Novo! ]{type=Informative} HTTP>CSV>WF - Criar lista de subs de eventos por domínio e camada e exportar para CSV
+### [!BADGE Novo! &#x200B;]{type=Informative} HTTP>CSV>WF - Criar lista de subs de eventos por domínio e camada e exportar para CSV
 
 Baixe informações de assinatura de eventos, crie um arquivo CSV e faça upload do arquivo para o Workfront.
 
 <!--New August 8, 2025-->
 
-### [!BADGE Novo! ]{type=Informative} Quadros Workfront - Excluir cartões arquivados da coluna designada (por demanda)
+### [!BADGE Novo! &#x200B;]{type=Informative} Quadros Workfront - Excluir cartões arquivados da coluna designada (por demanda)
 
 <!--New March 12, 2025-->
 
@@ -117,7 +117,7 @@ Uma vez por mês, revise os modelos de projeto usando sua própria política com
 
 Esses modelos automatizam fluxos de trabalho que combinam o Workfront com o Workfront Proof.
 
-### [!BADGE Novo! ]{type=Informative} Workfront > Workfront Proof - Alterar função de usuário de prova para Somente leitura e bloquear Prova no fechamento do projeto
+### [!BADGE Novo! &#x200B;]{type=Informative} Workfront > Workfront Proof - Alterar função de usuário de prova para Somente leitura e bloquear Prova no fechamento do projeto
 
 <!--New March 12, 2025-->
 
