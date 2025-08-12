@@ -5,7 +5,7 @@ description: Você pode definir configurações específicas para cenários no p
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: a7411649c0d65956552f40a7710315536755dc65
+source-git-commit: 273a07a28563a0eb3a3446937964e8dcef8a68d3
 workflow-type: tm+mt
 source-wordcount: '1288'
 ht-degree: 0%
@@ -191,7 +191,7 @@ Para obter mais informações sobre esta página, consulte [Detalhes do cenário
 
 ### Número de erros consecutivos
 
-Define o número máximo de tentativas consecutivas de execução antes da desativação da execução de um cenário (excluindo `DataError`, `DuplicateDataError` e `ConnectionError`).
+Define o número máximo de tentativas consecutivas de execução antes da desativação da execução de um cenário (excluindo `DataError`, `DuplicateDataError`, `ModuleTimeoutError` e `ConnectionError`).
 
 Para obter mais informações sobre erros, consulte [Tipos de erro](/help/workfront-fusion/references/errors/error-processing.md).
 
