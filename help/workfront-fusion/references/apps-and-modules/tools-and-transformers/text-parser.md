@@ -4,9 +4,9 @@ description: Você pode usar a ferramenta Analisador de texto para analisar o te
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 679a4f5c91625dfecf32e10904700bf75ea7a7cf
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1311'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Novo:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
+   <p>Novo menu:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
    <p>Ou</p>
    <p>Atual: sua organização deve comprar o Adobe Workfront Fusion.</p>
    </td> 
@@ -85,7 +85,7 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 * [[!UICONTROL Obter Elementos do texto]](#get-elements-from-text)
 * [[!UICONTROL HTML para texto]](#html-to-text)
 * [[!UICONTROL Corresponder Padrão]](#match-pattern)
-* [[!UICONTROL Substituir]](#replace)
+* [[!UICONTROL Replace]](#replace)
 
 #### [!UICONTROL Obter Elementos do HTML]
 
@@ -129,7 +129,7 @@ Analisa os elementos do texto com base no padrão fornecido.
   </tr> 
   <tr> 
    <td>[!UICONTROL Padrão]</td> 
-   <td> <p>Selecione o padrão que reflete os elementos que você deseja analisar do texto.</p> </td> 
+   <td> <p>Selecione o padrão que reflete os elementos que você deseja analisar do texto.</p> <p>Para inserir expressões regulares personalizadas, selecione Personalizado na lista e, em seguida, insira a expressão personalizada no campo Regex personalizado.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Ignorar Ocorrências Duplicadas]</td> 
@@ -177,7 +177,7 @@ Uma discussão de expressões regulares está fora do escopo deste artigo. Recom
  <tbody> 
   <tr> 
    <td>[!UICONTROL Padrão] </td> 
-   <td> <p>Insira o padrão de expressão regular. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemplo: </b></span></span> <code>[+-]?(\d+(\.\d+)?|\.\d+)([eE][+-]?\d+)?</code> extrai todos os numerais no texto fornecido.</p> <p>Nota:  <p>O padrão deve conter pelo menos um grupo de captura entre parênteses <code>()</code>. Se o padrão não contiver nenhum grupo de captura, o pacote de saída estará vazio.</p> </p> </td> 
+   <td> <p>Insira o padrão de expressão regular. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemplo: </b></span></span> <code>[+-]?(\d+(\.\d+)?|\.\d+)([eE][+-]?\d+)?</code> extrai todos os numerais no texto fornecido.</p> <p>Observação:  <p>O padrão deve conter pelo menos um grupo de captura entre parênteses <code>()</code>. Se o padrão não contiver nenhum grupo de captura, o pacote de saída estará vazio.</p> </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Correspondência global]</td> 
@@ -206,7 +206,7 @@ Uma discussão de expressões regulares está fora do escopo deste artigo. Recom
  </tbody> 
 </table>
 
-#### [!UICONTROL Substituir]
+#### [!UICONTROL Replace]
 
 Pesquisa no texto inserido um valor especificado ou uma expressão regular e substitui o resultado pelo novo valor.
 
