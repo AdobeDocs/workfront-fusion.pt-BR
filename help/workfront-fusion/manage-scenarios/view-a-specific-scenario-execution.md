@@ -3,9 +3,10 @@ title: Exibir a execução de um cenário específico
 description: Você pode exibir detalhes da execução de um cenário específico, incluindo filtragem e pesquisa de eventos de cenário.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 5915476de34a883560d207d101a14e5b24abf3da
+exl-id: 34dd9836-9a1b-4ce2-b24e-ae769888a52a
+source-git-commit: 62b09469c1d85fd2bd1f154cde339cc4a10fc34a
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '430'
 ht-degree: 1%
 
 ---
@@ -41,7 +42,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Novo:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
+   <p>Novo menu:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
    <p>Ou</p>
    <p>Atual: sua organização deve comprar o Adobe Workfront Fusion.</p>
    </td> 
@@ -85,3 +86,17 @@ Você pode exibir uma execução no histórico de cenários do cenário.
 1. Para exibir os pacotes que passaram por um filtro, clique no filtro. O número próximo ao filtro representa o número de pacotes que passaram pelo filtro.
 1. Para procurar um módulo ou evento específico no painel de execução, insira o termo de pesquisa na caixa **Pesquisar eventos de execução**. Os resultados são exibidos conforme você digita.
 1. Para limitar os resultados da pesquisa do painel de execução por status, como Sucesso ou Aviso, clique na lista suspensa **Filtro de Status** e selecione o status.
+
+
+
+
+>[!NOTE]
+>
+>Para criar um link para um módulo específico, adicione `?moduleId=<module-id>` à URL ao visualizar as seguintes páginas:
+>
+>* Página de edição do cenário (URL termina em `/edit`)
+>* Uma execução de cenário específica (a URL termina em `/logs/<log-id>`)
+>
+>`<module-id>` refere-se ao número ao lado do rótulo do módulo ao visualizar o cenário.
+>
+>Isso pode ser útil ao depurar cenários ou copiar a configuração do módulo.

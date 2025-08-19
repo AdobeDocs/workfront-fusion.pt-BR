@@ -4,9 +4,9 @@ description: Este artigo descreve o processo básico de adicionar um módulo a u
 author: Becky
 feature: Workfront Fusion
 exl-id: f3757468-3e11-4862-a83e-ed447805545b
-source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
+source-git-commit: 62b09469c1d85fd2bd1f154cde339cc4a10fc34a
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '682'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Novo:</p> <ul><li>Plano [!DNL Workfront] da [!UICONTROL Select] ou da [!UICONTROL Prime]: sua organização deve comprar [!DNL Adobe Workfront Fusion].</li><li>Plano [!DNL Workfront] da [!UICONTROL Ultimate] [!DNL Workfront Fusion] incluído.</li></ul>
+   <p>Novo menu:</p> <ul><li>Plano [!DNL Workfront] da [!UICONTROL Select] ou da [!UICONTROL Prime]: sua organização deve comprar [!DNL Adobe Workfront Fusion].</li><li>Plano [!DNL Workfront] da [!UICONTROL Ultimate] [!DNL Workfront Fusion] incluído.</li></ul>
    <p>Ou</p>
    <p>Atual: sua organização deve comprar o [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -108,3 +108,14 @@ A lista de conectores é aberta, mostrando todos os conectores já usados no cen
 1. Configure o módulo.
 
    Para obter instruções sobre como configurar módulos específicos, consulte o artigo para os aplicativos escolhidos, listados em [Aplicativos Fusion e suas referências de módulos: índice do artigo](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
+
+>[!NOTE]
+>
+>Para criar um link para um módulo específico, adicione `?moduleId=<module-id>` à URL ao visualizar as seguintes páginas:
+>
+>* Página de edição do cenário (URL termina em `/edit`)
+>* Uma execução de cenário específica (a URL termina em `/logs/<log-id>`)
+>
+>`<module-id>` refere-se ao número ao lado do rótulo do módulo ao visualizar o cenário.
+>
+>Isso pode ser útil ao depurar cenários ou copiar a configuração do módulo.
