@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: 7f5339de5164a6eb43dae311335cacbc5c10ff96
+source-git-commit: f169b9d918d42bbecd885aeec1505bd41088907b
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,8 @@ O Fusion oferece conectores para muitos aplicativos de terceiros.
 * [Módulos do Google Slides](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-slides-modules.md)
 * [Módulos do Google Team Drive](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-team-drive-modules.md)
 * [Módulos CRM do Hubspot](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/hubspot-crm-modules.md)
-* [Módulos do Jira Software](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md)
+* [Módulos do Jira](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md)
+* [Módulos do Jira Software (herdado)](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md)
 * [Módulos do MariaDB](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/mariadb-modules.md)
 * [Módulos do Microsoft 365 Calendar](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-calendar-modules.md)
 * [Módulos de email do Microsoft 356](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-email-modules.md)
