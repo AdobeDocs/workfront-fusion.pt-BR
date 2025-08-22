@@ -165,7 +165,7 @@ Para obter mais informações, consulte [Número de erros consecutivos](/help/wo
 >[!NOTE]
 >
 >Se um cenário começar com um gatilho instantâneo e encontrar esse erro, a configuração de [!UICONTROL Número máximo de erros consecutivos] será ignorada e o cenário será desativado imediatamente.
->>Para obter mais informações, consulte [Acionadores instantâneos](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers) no artigo Visão geral de módulos.
+>&#x200B;>Para obter mais informações, consulte [Acionadores instantâneos](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers) no artigo Visão geral de módulos.
 
 ## Erro de inconsistência
 

@@ -115,7 +115,7 @@ Iniciar o cenário manualmente no editor de cenários.
 >Para evitar que todo o cenário seja executado, é possível:
 >
 >* Desvincule os módulos após o módulo [!UICONTROL JSON] > [!UICONTROL Parse JSON] para impedir que o fluxo continue.
->  >   Ou
+>  &#x200B;>   Ou
 >* Clique com o botão direito do mouse no módulo [!UICONTROL JSON] > [!UICONTROL Parse JSON] e escolha **[!UICONTROL Executar somente este módulo]** no menu de contexto para executar somente o módulo [!UICONTROL JSON] > [!UICONTROL Parse JSON].
 
 Depois que o [!UICONTROL JSON] > [!UICONTROL Parse JSON] for executado, ele poderá fornecer informações sobre suas saídas para todos os módulos subsequentes, incluindo o módulo Iterador. O painel de mapeamento na configuração do Iterador exibe os itens:

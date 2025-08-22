@@ -186,7 +186,7 @@ Se o módulo [!UICONTROL SOAP] se recusar a processar o arquivo WSDL ou lançar 
 
 1. Depois de localizado, copie a URL do atributo `location`.
 1. No Workfront Fusion, cole o URL no campo URL do módulo HTTP.
-1. Abra o [Cliente [!UICONTROL SOAP] do {Online](https://wsdlbrowser.com/) em uma nova janela/guia do navegador da Web.
+1. Abra o [Cliente [!UICONTROL SOAP] do &lbrace;Online](https://wsdlbrowser.com/) em uma nova janela/guia do navegador da Web.
 1. Cole o URL do WSDL no campo URL do WSDL.
 1. Clique em **[!UICONTROL Procurar]**.
 1. Escolha na lista de funções à esquerda, por exemplo `getLanguages`.

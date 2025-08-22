@@ -483,7 +483,7 @@ Envia um novo email.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Tipo de Conteúdo]</p> </td> 
-   <td> <p>Selecione o tipo de conteúdo [!UICONTROL] para o email:</p> 
+   <td> <p>Selecione o tipo de conteúdo  para o email:</p> 
     <ul> 
      <li>HTML</li> 
      <li>[!UICONTROL Texto sem formatação]</li> 
