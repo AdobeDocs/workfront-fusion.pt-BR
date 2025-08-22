@@ -5,16 +5,16 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: e6fbbc20-4315-4668-9e11-af7cfa82ae66
-source-git-commit: 896597fa4a0689c19eb56d98f447c6a719d90ca2
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '4128'
+source-wordcount: '4145'
 ht-degree: 0%
 
 ---
 
 # [!DNL Adobe PDF Services]
 
-Com o [!DNL Adobe Workfront Fusion] [!DNL Adobe PDF Services], você pode extrair dados de um arquivo PDF ou gerar um novo arquivo PDF a partir dos dados que fornecer. Além disso, é possível converter diversos tipos de arquivos em PDFs ou PDFs em outros tipos de arquivos. Os Serviços da PDF também permitem combinar, compactar ou ler metadados de um arquivo PDF, bem como controlar a proteção por senha no arquivo.
+Com o Adobe Workfront Fusion [!DNL Adobe PDF Services], você pode extrair dados de um arquivo do PDF ou gerar um novo arquivo do PDF a partir dos dados fornecidos. Além disso, é possível converter diversos tipos de arquivos em PDFs ou PDFs em outros tipos de arquivos. Os Serviços da PDF também permitem combinar, compactar ou ler metadados de um arquivo PDF, bem como controlar a proteção por senha no arquivo.
 
 Para obter instruções sobre como criar um cenário, consulte os artigos em [Criar cenários: índice do artigo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -24,7 +24,7 @@ Para obter informações sobre a API usada para os Serviços PDF, consulte [API 
 
 ## Considerações de segurança ao usar [!DNL Adobe PDF Services]
 
-O [!DNL Adobe PDF Services] pode ler, converter ou modificar seus arquivos, mas nem o [!DNL Adobe] nem o [!DNL Workfront Fusion] armazenam seus arquivos ou dados. Isso significa que:
+O [!DNL Adobe PDF Services] pode ler, converter ou modificar seus arquivos, mas nem o [!DNL Adobe] nem o Workfront Fusion armazenam seus arquivos ou dados. Isso significa que:
 
 * Você tem controle sobre seus arquivos, incluindo a segurança deles
 * Você não precisa ter uma conta de armazenamento ou armazenamento na nuvem [!UICONTROL Adobe] para usar os Serviços da PDF.
@@ -58,7 +58,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Novo:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
+   <p>Novo menu:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
    <p>Ou</p>
    <p>Atual: sua organização deve comprar o Adobe Workfront Fusion.</p>
    </td> 
@@ -68,7 +68,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
 
 Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -87,7 +87,7 @@ O Adobe PDF Services Connector usa o seguinte:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">URL base</td> 
+   <td role="rowheader">URL básica</td> 
    <td>https://pdf-services-stage.adobe.io</td> 
   </tr>
   <tr> 
@@ -176,7 +176,7 @@ Para criar uma conexão para seus módulos do [!DNL Adobe PDF Services]:
 
 ## [!DNL Adobe PDF Services] módulos e seus campos
 
-Quando você configura o [!DNL PDF Services], o [!DNL Workfront Fusion] exibe os campos listados abaixo. Junto com esses, campos adicionais podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
+Ao configurar o [!DNL PDF Services], o Workfront Fusion exibe os campos listados abaixo. Junto com esses, campos adicionais podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -346,7 +346,7 @@ Esta ferramenta converte um arquivo HTML em um arquivo PDF.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL JSON]</td> 
-   <td> <p>Se o HTML referenciar variáveis do JavaScript, você pode incluí-las aqui. </p> <p>Para cada variável, clique em <strong>[!UICONTROL Adicionar item]</strong> e inclua a chave e o valor da variável.</p> <p>Nota:   
+   <td> <p>Se o HTML referenciar variáveis do JavaScript, você pode incluí-las aqui. </p> <p>Para cada variável, clique em <strong>[!UICONTROL Adicionar item]</strong> e inclua a chave e o valor da variável.</p> <p>Observação:   
      <ul> 
       <li> <p>Ao criar uma PDF a partir de um arquivo ZIP, o material de apoio de origem deve incluir um elemento de script como: <code> &lt;script src='./json.js' type='text/javascript'&gt;&lt;/script&gt;</code> </p> </li> 
       <li> <p>Ao criar uma PDF a partir de um URL, o conteúdo desse objeto JSON é inserido na VM do navegador antes que a página seja renderizada. </p> </li> 
@@ -577,7 +577,7 @@ Preencha os campos do módulo [!UICONTROL Gerar documento] da seguinte maneira:
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Arquivo Source]</td> 
-   <td> <p>Selecione um arquivo de origem de um módulo anterior ou mapeie o nome e os dados do arquivo de origem.</p> <p>Esse arquivo de origem é o modelo [!DNL Microsoft Word] que o módulo usa para gerar o novo PDF.</p> <p>Recomendamos criar um projeto no [!DNL Workfront] para os modelos [!DNL Microsoft Word] que você usa no [!DNL Workfront Fusion]. Você pode usar o módulo [!DNL Workfront] &gt; [!UICONTROL Baixar documento] para inserir o modelo apropriado em seu cenário.</p> </td> 
+   <td> <p>Selecione um arquivo de origem de um módulo anterior ou mapeie o nome e os dados do arquivo de origem.</p> <p>Esse arquivo de origem é o modelo [!DNL Microsoft Word] que o módulo usa para gerar o novo PDF.</p> <p>Recomendamos criar um projeto no Workfront para os [!DNL Microsoft Word] modelos que você usa no Workfront Fusion. Em seguida, você pode usar o módulo Workfront &gt; [!UICONTROL Baixar documento] para inserir o modelo apropriado em seu cenário.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Formato de Saída]</td> 
@@ -681,7 +681,7 @@ Esse módulo de ação cria uma solicitação HTTP personalizada para a API de s
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Campos]</td> 
-   <td> <p>Para cada campo que você deseja adicionar à chamada de API, clique em <b>Adicionar item</b> e insira a chave do campo e o valor opcional.</p> <p>Nota:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
+   <td> <p>Para cada campo que você deseja adicionar à chamada de API, clique em <b>Adicionar item</b> e insira a chave do campo e o valor opcional.</p> <p>Observação:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -745,7 +745,7 @@ Esse módulo permite girar ou excluir seletivamente as páginas em um documento 
    <td role="rowheader">[!UICONTROL Ação]</td> 
    <td> <p>Selecione a ação que deseja executar no arquivo.</p> 
     <ul> 
-     <li> <p><b>[!UICONTROL Excluir]</b> </p> <p>Selecione esta opção para excluir páginas do documento.</p><p>Para cada intervalo de páginas a ser excluído, clique em <strong>[!UICONTROL Adicionar]</strong> e insira a primeira e a última página do intervalo de páginas. </p> <p>Nota:   
+     <li> <p><b>[!UICONTROL Excluir]</b> </p> <p>Selecione esta opção para excluir páginas do documento.</p><p>Para cada intervalo de páginas a ser excluído, clique em <strong>[!UICONTROL Adicionar]</strong> e insira a primeira e a última página do intervalo de páginas. </p> <p>Observação:   
      <ul> 
       <li> <p>Você pode usar números negativos para contar do final do documento. A última página de um documento é -1, a segunda página à última é -2 e assim por diante.</p> </li> 
       <li> <p>Para excluir uma única página, defina o mesmo número de página que o início e o fim do intervalo.</p></ul> </li> 
@@ -754,7 +754,7 @@ Esse módulo permite girar ou excluir seletivamente as páginas em um documento 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Páginas]</td> 
-   <td> <p>Para cada intervalo de páginas a ser excluído, clique em <strong>[!UICONTROL Adicionar]</strong> e insira a primeira e a última página do intervalo de páginas. </p> <p>Nota:   
+   <td> <p>Para cada intervalo de páginas a ser excluído, clique em <strong>[!UICONTROL Adicionar]</strong> e insira a primeira e a última página do intervalo de páginas. </p> <p>Observação:   
      <ul> 
       <li> <p>Você pode usar números negativos para contar do final do documento. A última página de um documento é -1, a segunda página à última é -2 e assim por diante.</p> </li> 
       <li> <p>Para excluir uma única página, defina o mesmo número de página que o início e o fim do intervalo.</p> </li> 

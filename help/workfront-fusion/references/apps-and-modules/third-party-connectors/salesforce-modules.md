@@ -4,9 +4,9 @@ description: Em um cenário do Adobe Workfront Fusion, é possível automatizar 
 author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
-source-git-commit: 87b15e32338b798983adbf0016709752ee862567
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2952'
+source-wordcount: '2984'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Novo:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
+   <p>Novo menu:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
    <p>Ou</p>
    <p>Atual: sua organização deve comprar o Adobe Workfront Fusion.</p>
    </td> 
@@ -68,7 +68,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
 
 Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -85,7 +85,7 @@ O conector do Salesforce usa o seguinte:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">URL base</td> 
+   <td role="rowheader">URL básica</td> 
    <td> {{connection.instanceUrl}}</td>
   </tr> 
   <tr> 
@@ -165,7 +165,7 @@ Para criar uma conexão para seus módulos do [!DNL Salesforce]:
 
 ## [!DNL Salesforce] módulos e seus campos
 
-* [Acionadores](#triggers)
+* [Triggers](#triggers)
 * [Ações](#actions)
 * [Pesquisas](#searches)
 
@@ -185,7 +185,7 @@ Este módulo de acionador inicia um cenário quando um campo é atualizado em [!
  <tbody> 
   <tr> 
    <td>[!UICONTROL Conexão]</td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao [!DNL Workfront Fusion], consulte <a href="#create-a-connection-to-salesforce">Criar uma conexão com o Salesforce</a> neste artigo.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao Workfront Fusion, consulte <a href="#create-a-connection-to-salesforce">Criar uma conexão com o Salesforce</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Tipo de Registro] </td> 
@@ -214,7 +214,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Conexão]</td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao [!DNL Workfront Fusion], consulte <a href="#create-a-connection-to-salesforce">Criar uma conexão com o Salesforce</a> neste artigo.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao Workfront Fusion, consulte <a href="#create-a-connection-to-salesforce">Criar uma conexão com o Salesforce</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Tipo] </td> 
@@ -261,7 +261,7 @@ Este módulo requer configuração extra. Deve haver um Fluxo configurado para m
 
 1. Specify name, description, Endpoint URL, and fields you want to include in the new outbound message, then click **[!UICONTROL Save]**.
 
-   The **[!UICONTROL Endpoint URL]** field contains the URL provided on the [!DNL Salesforce] [!UICONTROL Outbound Message] in [!DNL Workfront Fusion].
+   The **[!UICONTROL Endpoint URL]** field contains the URL provided on the [!DNL Salesforce] [!UICONTROL Outbound Message] in Workfront Fusion.
 
 1. Configure a scenario beginning with the [!UICONTROL Outbound Message] event. 
 
@@ -278,7 +278,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Webhook]</td> 
-   <td> <p>Selecione o webhook que deseja usar para assistir mensagens de saída. Para adicionar um webhook, clique em <strong>[!UICONTROL Adicionar]</strong> e insira o nome e a conexão do webhook.</p> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!UICONTROL Adobe Workfront Fusion] - Instruções básicas</a></p> </td> 
+   <td> <p>Selecione o webhook que deseja usar para assistir mensagens de saída. Para adicionar um webhook, clique em <strong>[!UICONTROL Adicionar]</strong> e insira o nome e a conexão do webhook.</p> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!UICONTROL Adobe Workfront Fusion] - Instruções básicas</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Tipo de Registro] </td> 
@@ -317,7 +317,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Conexão]</td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao [!DNL Workfront Fusion], consulte <a href="#create-a-connection-to-salesforce">Criar uma conexão com o Salesforce</a> neste artigo.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao Workfront Fusion, consulte <a href="#create-a-connection-to-salesforce">Criar uma conexão com o Salesforce</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Tipo de Registro] </p> </td> 
@@ -351,7 +351,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Conexão]</td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao [!DNL Workfront Fusion], consulte <a href="#create-a-connection-to-salesforce">Criar uma conexão com o Salesforce</a> neste artigo.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao Workfront Fusion, consulte <a href="#create-a-connection-to-salesforce">Criar uma conexão com o Salesforce</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
@@ -371,7 +371,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Corpo]</td> 
-   <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Nota:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
+   <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -417,7 +417,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Conexão]</td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao [!DNL Workfront Fusion], consulte <a href="#create-a-connection-to-salesforce">Criar uma conexão com o Salesforce</a> neste artigo.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao Workfront Fusion, consulte <a href="#create-a-connection-to-salesforce">Criar uma conexão com o Salesforce</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Tipo de Registro] </td> 
@@ -446,7 +446,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <tbody> 
   <tr>
     <td>[!UICONTROL Conexão]</td>
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao [!DNL Workfront Fusion], consulte <a href="#create-a-connection-to-salesforce">Criar uma conexão com o Salesforce</a> neste artigo.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao Workfront Fusion, consulte <a href="#create-a-connection-to-salesforce">Criar uma conexão com o Salesforce</a> neste artigo.</p> </td> 
   </tr> 
   <tr>
     <td>[!UICONTROL Tipo de Download]</td>
@@ -480,7 +480,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <tbody> 
   <tr>
     <td>[!UICONTROL Conexão]</td>
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao [!DNL Workfront Fusion], consulte <a href="#create-a-connection-to-salesforce">Criar uma conexão com o Salesforce</a> neste artigo.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao Workfront Fusion, consulte <a href="#create-a-connection-to-salesforce">Criar uma conexão com o Salesforce</a> neste artigo.</p> </td> 
   </tr> 
   <tr>
     <td>[!UICONTROL Tipo de Registro]</td>
@@ -514,7 +514,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Conexão]</td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao [!DNL Workfront Fusion], consulte <a href="#create-a-connection-to-salesforce">Criar uma conexão com o Salesforce</a> neste artigo.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao Workfront Fusion, consulte <a href="#create-a-connection-to-salesforce">Criar uma conexão com o Salesforce</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL ID]</td> 
@@ -546,7 +546,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Conexão]</td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao [!DNL Workfront Fusion], consulte <a href="#create-a-connection-to-salesforce">Criar uma conexão com o Salesforce</a> neste artigo.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao Workfront Fusion, consulte <a href="#create-a-connection-to-salesforce">Criar uma conexão com o Salesforce</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Tipo de Carregamento]</td> 
@@ -577,7 +577,7 @@ Esse módulo de ação faz upload de um único arquivo para o Salesforce.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Conexão]</td> 
-   <td>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o[!DNL &#x200B; Adobe Workfront Fusion] - Instruções básicas</a></td> 
+   <td>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o[!DNL  Adobe Workfront Fusion] - Instruções básicas</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL arquivo Source]</td> 
@@ -617,7 +617,7 @@ Este módulo de ação recupera todos os registros que atendem a um determinado 
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Conexão]</td> 
-   <td>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o[!DNL &#x200B; Adobe Workfront Fusion] - Instruções básicas</a></td> 
+   <td>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o[!DNL  Adobe Workfront Fusion] - Instruções básicas</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Tipo]</td> 
@@ -654,7 +654,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Conexão]</td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao [!DNL Workfront Fusion], consulte <a href="#create-a-connection-to-salesforce">Criar uma conexão com o Salesforce</a> neste artigo.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao Workfront Fusion, consulte <a href="#create-a-connection-to-salesforce">Criar uma conexão com o Salesforce</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Tipo de Pesquisa]</td> 

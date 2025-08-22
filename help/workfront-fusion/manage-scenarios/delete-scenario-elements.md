@@ -4,16 +4,16 @@ description: Você pode visualizar e gerenciar as conexões de equipes na área 
 author: Becky
 feature: Workfront Fusion
 exl-id: 7bedf002-061b-40fc-a0f8-c12d2930bcf9
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 1%
+source-wordcount: '227'
+ht-degree: 2%
 
 ---
 
 # Excluir elementos do cenário
 
-Você pode armazenar e excluir elementos do cenário nas seguintes áreas na conta do [!DNL Adobe Workfront Fusion]:
+Você pode armazenar e excluir elementos do cenário nas seguintes áreas em sua conta do Adobe Workfront Fusion:
 
 * [!UICONTROL Cenário]
 * [!UICONTROL Conexões]
@@ -53,7 +53,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Novo:</p> <ul><li>Selecione ou Prime Workfront Plan: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Plano do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
+   <p>Novo menu:</p> <ul><li>Selecione ou Prime Workfront Plan: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Plano do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
    <p>Ou</p>
    <p>Atual: sua organização deve comprar o Adobe Workfront Fusion.</p>
    </td> 

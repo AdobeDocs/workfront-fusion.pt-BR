@@ -4,9 +4,9 @@ description: O mapeamento é o processo de atribuir as saídas de um módulo, es
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e3f7729-f48e-451e-a90b-d680c9e3bcbc
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
@@ -30,17 +30,17 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] pacote</td> 
+   <td role="rowheader">Pacote do Adobe Workfront</td> 
    <td> <p>Qualquer</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licença</td> 
-   <td> <p>Novo: [!UICONTROL Standard]</p><p>Ou</p><p>Atual: [!UICONTROL Work] ou superior</p> </td> 
+   <td role="rowheader">Licença do Adobe Workfront</td> 
+   <td> <p>Novo: Padrão</p><p>Ou</p><p>Atual: [!UICONTROL Trabalho] ou superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licença**</td> 
+   <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Atual: nenhum requisito de licença [!DNL Workfront Fusion].</p>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion.</p>
    <p>Ou</p>
    <p>Herdados: Qualquer um </p>
    </td> 
@@ -48,9 +48,9 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Novo:</p> <ul><li>[!UICONTROL Select] ou plano do [!UICONTROL Prime] [!DNL Workfront]: sua organização deve comprar o [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plano: [!DNL Workfront Fusion] está incluído.</li></ul>
+   <p>Novo menu:</p> <ul><li>Plano do Workfront para [!UICONTROL Select] ou [!UICONTROL Prime]: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Plano do Workfront do [!UICONTROL Ultimate]: o Workfront Fusion está incluído.</li></ul>
    <p>Ou</p>
-   <p>Atual: sua organização deve comprar o [!DNL Adobe Workfront Fusion].</p>
+   <p>Atual: sua organização deve comprar o Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -58,7 +58,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
 
 Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -68,7 +68,7 @@ Depois de criar uma sequência de módulos vinculando dois ou mais deles, cada m
 
 Para atribuir itens de saída aos campos de entrada de um módulo:
 
-1. Clique na guia **[!UICONTROL Scenarios]** no painel esquerdo.
+1. Clique na guia **[!UICONTROL Cenários]** no painel esquerdo.
 1. Selecione o cenário em que deseja mapear dados.
 1. Clique em qualquer lugar no cenário para entrar no editor de cenários.
 1. Clique no módulo que deve processar a saída dos módulos anteriores.
@@ -100,7 +100,7 @@ O painel de mapeamento exibe itens de saída de módulos anteriores. Ocasionalme
 
 #### Acionador instantâneo
 
-1. Clique com o botão direito do mouse no módulo e, em seguida, clique em **[!UICONTROL Run this module only]** no menu exibido.
+1. Clique com o botão direito do mouse no módulo e clique em **[!UICONTROL Executar este módulo somente]** no menu exibido.
 
    Como esse é um acionador instantâneo, ele começa a observar eventos.
 
@@ -114,8 +114,8 @@ O painel de mapeamento exibe itens de saída de módulos anteriores. Ocasionalme
 
 #### Acionador de sondagem
 
-1. Clique com o botão direito do mouse no módulo e, em seguida, clique em **[!UICONTROL Run this module only]** no menu exibido.
-1. Se não houver saída, clique em **[!UICONTROL Choose where to start]** e ajuste as configurações.
+1. Clique com o botão direito do mouse no módulo e clique em **[!UICONTROL Executar este módulo somente]** no menu exibido.
+1. Se não houver saída, clique em **[!UICONTROL Escolher onde começar]** e ajuste as configurações.
 1. (Condicional) Se não houver um evento a ser processado, crie o evento que o módulo observará e repita a etapa 2.
 
    Por exemplo, se o módulo for um módulo Workfront > Observar registros que esteja observando atribuições de tarefas, faça logon no Workfront (como um usuário que não é o usuário que a conexão Fusion está usando) e atribua uma tarefa, em seguida, execute o módulo novamente.
@@ -133,7 +133,7 @@ Você pode optar por executar:
 
 Para executar o módulo único:
 
-1. Clique com o botão direito do mouse no módulo e clique em **[!UICONTROL Run this module only]** no menu que é exibido.
+1. Clique com o botão direito do mouse no módulo e clique em **[!UICONTROL Executar este módulo somente]** no menu exibido.
 1. Forneça valores de exemplo para os itens de entrada, em seguida, clique em **[!UICONTROL OK]**.
 1. Quando o módulo terminar de ser executado, clique no balão acima do módulo para explorar sua saída completa.
 

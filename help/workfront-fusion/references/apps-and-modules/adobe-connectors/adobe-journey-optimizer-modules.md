@@ -1,19 +1,19 @@
 ---
 title: Módulos do Adobe Journey Optimizer
-description: Em um cenário  [!DNL Adobe Workfront Fusion] , é possível automatizar fluxos de trabalho que usam  [!DNL Adobe Journey Optimizer], bem como conectá-los a vários aplicativos e serviços de terceiros.
+description: Em um cenário do Adobe Workfront Fusion, é possível automatizar fluxos de trabalho que usam o  [!DNL Adobe Journey Optimizer], bem como conectá-lo a vários aplicativos e serviços de terceiros.
 author: Becky
 feature: Workfront Fusion
 exl-id: 1d0ccf4d-9f06-4210-86ec-7da7970f6a47
-source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '3704'
+source-wordcount: '3747'
 ht-degree: 0%
 
 ---
 
 # [!DNL Adobe Journey Optimizer] módulos
 
-Em um cenário [!DNL Adobe Workfront Fusion], você pode automatizar fluxos de trabalho que usam [!DNL Adobe Journey Optimizer], bem como conectá-los a vários aplicativos e serviços de terceiros. Os módulos do [!DNL Adobe Journey Optimizer] permitem criar, ler, atualizar ou excluir registros, ou executar uma chamada de API personalizada para a API [!DNL Adobe Journey Optimizer].
+Em um cenário do Adobe Workfront Fusion, é possível automatizar fluxos de trabalho que usam o [!DNL Adobe Journey Optimizer], bem como conectá-lo a vários aplicativos e serviços de terceiros. Os módulos do [!DNL Adobe Journey Optimizer] permitem criar, ler, atualizar ou excluir registros, ou executar uma chamada de API personalizada para a API [!DNL Adobe Journey Optimizer].
 
 
 Se você precisar de instruções sobre como criar um cenário, consulte os artigos em [Criar um cenário: índice do artigo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
@@ -31,40 +31,40 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] plano*</td>
+      <td role="rowheader">plano do Adobe Workfront*</td>
       <td>
         <p>[!UICONTROL Pro] ou superior</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] licença*</td>
+      <td role="rowheader">Licença da Adobe Workfront*</td>
       <td>
         <p>[!UICONTROL Plano], [!UICONTROL Trabalho]</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!DNL Adobe Workfront Fusion] licença**</td>
+      <td role="rowheader">Licença do Adobe Workfront Fusion**</td>
       <td>
-   <p>Requisito de licença atual: nenhum requisito de licença [!DNL Workfront Fusion].</p>
+   <p>Requisito de licença atual: nenhum requisito de licença do Workfront Fusion.</p>
    <p>Ou</p>
-   <p>Requisito de licença herdada: [!UICONTROL [!DNL Workfront Fusion] para Automação e Integração do Trabalho] </p>
+   <p>Requisito de licença herdado: [!UICONTROL Workfront Fusion para Automação e Integração do Trabalho] </p>
    </td>
     </tr>
     <tr>
       <td role="rowheader">Produto</td>
       <td>
-   <p>Requisito atual do produto: se você tiver o Plano [!DNL Adobe Workfront] da [!UICONTROL Select] ou da [!UICONTROL Prime], sua organização deve comprar o [!DNL Adobe Workfront Fusion] e o [!DNL Adobe Workfront] para usar a funcionalidade descrita neste artigo. [!DNL Workfront Fusion] está incluído no plano [!DNL Workfront] da [!UICONTROL Ultimate].</p>
+   <p>Requisito atual do produto: se você tiver o Plano do Adobe Workfront [!UICONTROL Select] ou [!UICONTROL Prime], sua organização deve comprar o Adobe Workfront Fusion, bem como o Adobe Workfront, para usar a funcionalidade descrita neste artigo. O Workfront Fusion está incluído no plano do Workfront da [!UICONTROL Ultimate].</p>
    <p>Ou</p>
-   <p>Requisito de produto herdado: sua organização deve comprar o [!DNL Adobe Workfront Fusion] e o [!DNL Adobe Workfront] para usar a funcionalidade descrita neste artigo.</p>
+   <p>Requisito de produto herdado: sua organização deve comprar o Adobe Workfront Fusion e o Adobe Workfront para usar a funcionalidade descrita neste artigo.</p>
    </td>
     </tr>
   </tbody>
 </table>
 
 
-Para saber que plano, tipo de licença ou acesso você tem, contate o administrador do [!DNL Workfront].
+Para descobrir seu plano, tipo de licença ou acesso, entre em contato com o administrador do Workfront.
 
-Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -83,7 +83,7 @@ O conector do Adobe Journey Optimizer usa o seguinte:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">URL base</td> 
+   <td role="rowheader">URL básica</td> 
    <td>{{connection.url}}</td> 
   </tr>
   <tr> 
@@ -147,7 +147,7 @@ Você pode criar uma conexão em qualquer módulo do Adobe Journey Optimizer.
 
 ## [!DNL Adobe Journey Optimizer] módulos e seus campos
 
-Ao configurar módulos do [!DNL Adobe Journey Optimizer], o [!DNL Workfront Fusion] exibe os campos listados abaixo. Junto com esses, campos [!DNL Adobe Journey Optimizer] adicionais podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
+Ao configurar módulos do [!DNL Adobe Journey Optimizer], o Workfront Fusion exibe os campos listados abaixo. Junto com esses, campos [!DNL Adobe Journey Optimizer] adicionais podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -159,7 +159,7 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 * [Gerenciamento de mensagens](#message-management)
 * [Verificações de status](#status-checks)
 * [Pesquisas](#searches)
-* [Outro](#other)
+* [Outras](#other)
 
 
 
@@ -1315,7 +1315,7 @@ Este módulo de pesquisa lista todas as configurações de limitação.
 </table>
 
 
-### Outro
+### Outras
 
 
 #### Fazer uma chamada de API personalizada
@@ -1347,7 +1347,7 @@ Esse módulo de ação faz uma chamada de API personalizada para a API do Adobe 
       <td>
         <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p>
         <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] adiciona a autorização, <code>x-api-key</code> e <code>x-gw-ims-org-id</code> cabeçalhos automaticamente.</p>
+        <p>O Workfront Fusion adiciona automaticamente os cabeçalhos de autorização, <code>x-api-key</code> e <code>x-gw-ims-org-id</code>.</p>
       </td>
     </tr>
     <tr>
@@ -1358,7 +1358,7 @@ Esse módulo de ação faz uma chamada de API personalizada para a API do Adobe 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Corpo]</td>
-   <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Nota:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
+   <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>

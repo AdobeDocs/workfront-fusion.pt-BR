@@ -4,9 +4,9 @@ description: As seguintes funções de data e hora estão disponíveis no painel
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: 9249223c6fbe0360b11d41988fe8b9c35e45dbb8
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1879'
 ht-degree: 1%
 
 ---
@@ -139,7 +139,7 @@ Esta função retorna uma nova data com os segundos especificados em parâmetros
 
 Especifique um número de 0 a 59. Se o número estiver fora desse intervalo, a função retornará um segundo do minuto anterior (para um número negativo) ou do minuto subsequente (para um número positivo).
 
-Se você precisar especificar um número fora do intervalo, recomendamos usar [!UICONTROL &#x200B; addSeconds], conforme descrito acima na seção [addSeconds (date; number)](#addseconds-date-number).
+Se você precisar especificar um número fora do intervalo, recomendamos usar [!UICONTROL  addSeconds], conforme descrito acima na seção [addSeconds (date; number)](#addseconds-date-number).
 
 >[!BEGINSHADEBOX]
 
@@ -341,7 +341,7 @@ A função `formatDate` retorna uma representação de texto do valor de Data es
 
 * `formatDate(1. Date created; YYYY-MM-DD hh:mm A)`
 
-  Devoluções 2018-10-01 09:32 AM
+  Retorna 01/10/2018 9:32 AM
 
 * `formatDate(1. Date created;DD.MM.YYYY HH:mm;UTC)`
 
@@ -459,7 +459,7 @@ Se nenhuma unidade for especificada, a função retornará a diferença em milis
 
 #### Como calcular o n-ésimo dia da semana no mês
 
-Esta seção é adaptada para [!DNL Workfront Fusion] a partir da página da Web [!DNL Exceljet], que explica como obter o n-ésimo dia da semana em um mês.
+Esta seção é adaptada para o Workfront Fusion a partir da página da Web [!DNL Exceljet], que explica como obter o enésimo dia da semana em um mês.
 
 Se você precisar calcular uma data correspondente ao n-ésimo dia da semana no mês (por exemplo, primeira terça-feira, terceira sexta-feira e assim por diante), poderá usar a seguinte fórmula:
 

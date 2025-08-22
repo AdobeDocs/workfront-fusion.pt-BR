@@ -1,12 +1,12 @@
 ---
 title: Execução de cenários, ciclos e fases
-description: Este artigo descreve os eventos que ocorrem durante a execução de um cenário  [!DNL Adobe Workfront Fusion] , como inicialização, operações, confirmações e reversões.
+description: Este artigo descreve os eventos que ocorrem enquanto um cenário do Adobe Workfront Fusion está em execução, como inicialização, operações, confirmações e reversões.
 author: Becky
 feature: Workfront Fusion
 exl-id: abf41be5-df32-4eaf-b3f4-93ddf005bfe3
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '481'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Durante a fase de inicialização, todas as conexões necessárias (conexão com
 
 Cada ciclo representa uma unidade indivisível de trabalho composta por uma série de operações, cada uma com uma confirmação ou reversão.
 
-Você pode definir o número máximo de ciclos no painel [!UICONTROL scenario settings]. O número padrão é 1.
+Você pode definir o número máximo de ciclos no painel [!UICONTROL configurações de cenário]. O número padrão é 1.
 
 * [Operação](#operation)
 * [Confirmar](#commit)
@@ -53,11 +53,11 @@ Você pode definir o número máximo de ciclos no painel [!UICONTROL scenario se
 Durante a fase de operação, uma operação de leitura ou gravação é executada:
 
 * Uma operação de leitura consiste em obter dados de um serviço que é processado por outros módulos de acordo com um cenário predefinido. Por exemplo, o módulo [!UICONTROL Workfront] >[!UICONTROL Watch records] retorna novos conjuntos (registros) criados desde a última execução do cenário.
-* Uma operação de gravação consiste em enviar dados para um determinado serviço para processamento adicional. Por exemplo, o módulo [!DNL Workfront] >[!UICONTROL Upload Document] carrega um arquivo para o Workfront.
+* Uma operação de gravação consiste em enviar dados para um determinado serviço para processamento adicional. Por exemplo, o módulo Workfront >[!UICONTROL Carregar documento] carrega um arquivo no Workfront.
 
 #### Confirmar
 
-Se a fase de operação for bem-sucedida, a fase de confirmação será iniciada durante a qual todas as operações executadas pelos módulos serão confirmadas. Isso significa que o [!DNL Workfront Fusion] envia informações sobre seu êxito para todos os serviços envolvidos na fase de operação.
+Se a fase de operação for bem-sucedida, a fase de confirmação será iniciada durante a qual todas as operações executadas pelos módulos serão confirmadas. Isso significa que o Workfront Fusion envia informações sobre seu sucesso para todos os serviços envolvidos na fase de operação.
 
 ### Reversão
 
@@ -65,11 +65,11 @@ Se ocorrer um erro durante a operação ou a fase de confirmação em qualquer m
 
 >[!IMPORTANT]
 >
->Todos os [!DNL Workfront Fusion] módulos que oferecem suporte à reversão (também conhecidos como transacionalidade) são marcados com a marca ACID.
+>Todos os módulos do Workfront Fusion que oferecem suporte à reversão (também conhecida como transacionalidade) são marcados com a tag ACID.
 >
 >![Módulos Acid](assets/acid-modules.png)
 >
->Os módulos não marcados com essa tag não podem ser revertidos para seu estado inicial quando ocorrem erros em outros módulos. Um exemplo típico de um módulo não-ACID é a ação [!UICONTROL Email] >[!UICONTROL Send an Email]. Depois que o email é enviado, não é possível desfazer o envio.
+>Os módulos não marcados com essa tag não podem ser revertidos para seu estado inicial quando ocorrem erros em outros módulos. Um exemplo típico de um módulo não ACID é a ação [!UICONTROL Email] >[!UICONTROL Enviar um Email]. Depois que o email é enviado, não é possível desfazer o envio.
 
 ### Finalização
 

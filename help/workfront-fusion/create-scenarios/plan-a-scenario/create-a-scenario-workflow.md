@@ -4,9 +4,9 @@ description: Siga este fluxo de trabalho geral para criar um cenário
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: 394f80a2d7c124bbd00e1a5b51ad3dc6e73a996b
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '808'
 ht-degree: 0%
 
 ---
@@ -34,18 +34,18 @@ Atalhos de teclado
 
 ## Criar e nomear o cenário
 
-1. Entre na sua conta [!DNL Workfront Fusion].
-1. Clique no **[!UICONTROL Scenarios]** ![ícone Cenários](assets/scenarios-icon.png) no painel esquerdo.
+1. Faça logon em sua conta do Workfront Fusion.
+1. Clique em **[!UICONTROL Cenários]** ![Ícone de cenários](assets/scenarios-icon.png) no painel esquerdo.
 
    >[!NOTE]
    >
    >Se você não vir o painel de navegação esquerdo ou seus ícones, clique no ícone Menu ![Menu](assets/main-menu-icon-left-nav.png).
 
-1. (Opcional) No painel [!UICONTROL **Pastas**], clique no ícone **[!UICONTROL Add folder]** ![Ícone Adicionar pasta](assets/add-folder-icon.png) e digite um nome como &quot;Cenários de prática&quot; para a sua primeira pasta.
+1. (Opcional) No painel [!UICONTROL **Pastas**], clique no ícone **[!UICONTROL Adicionar pasta]** ![Ícone Adicionar pasta](assets/add-folder-icon.png) e digite um nome como &quot;Cenários de prática&quot; para a sua primeira pasta.
 
-1. (Opcional) Abra a pasta e clique em **[!UICONTROL Create a new scenario]** no canto superior direito da página.
+1. (Opcional) Abra a pasta e clique em **[!UICONTROL Criar um novo cenário]** no canto superior direito da página.
 
-1. Selecione o nome do espaço reservado **[!UICONTROL New scenario]** no canto superior esquerdo e digite um nome como &quot;Cenário de prática 1&quot;.
+1. Selecione o nome do espaço reservado **[!UICONTROL Novo cenário]** no canto superior esquerdo e digite um nome como &quot;Praticar cenário 1&quot;.
 
    ![Nomear o cenário](assets/name-the-scenario.png)
 
@@ -101,13 +101,13 @@ Para obter instruções, consulte os artigos em [Definir configurações de cen�
 
 Testar o cenário permite determinar se ele está funcionando como esperado. Você pode revisar o cenário com base nos resultados e testar novamente.
 
-1. Clique em **[!UICONTROL Run once]** no canto inferior esquerdo do editor de cenários.
+1. Clique em **[!UICONTROL Executar uma vez]** no canto inferior esquerdo do editor de cenários.
 1. Depois que o cenário terminar de ser executado, clique na bolha do inspetor de execução acima de cada módulo para ver a entrada de informações e a saída desse módulo.
 
    * Para obter informações gerais sobre a leitura de informações de execução do cenário, consulte [Fluxo de execução do cenário](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md).
-   * Para obter informações sobre pacotes processados, consulte [Execução do cenário, ciclos e fases em [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
+   * Para obter informações sobre pacotes processados, consulte [Execução de cenário, ciclos e fases no Adobe Workfront Fusion](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
 
-1. Em [!DNL Workfront Fusion], clique em **[!UICONTROL Save]** ![Ícone Salvar](assets/save-icon.png) próximo ao canto inferior esquerdo para salvar seu progresso no cenário.
+1. No Workfront Fusion, clique em **[!UICONTROL Salvar]** ![Ícone Salvar](assets/save-icon.png) próximo ao canto inferior esquerdo para salvar seu progresso no cenário.
 
    >[!IMPORTANT]
    >
@@ -138,32 +138,32 @@ Você pode usar os seguintes atalhos de teclado ao criar ou editar um cenário:
  </thead> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Save] </td> 
+   <td role="rowheader">[!UICONTROL Salvar] </td> 
    <td>Ctrl+Shift+S</td> 
    <td>Cmd+Shift+S</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Run Once]</td> 
+   <td role="rowheader">[!UICONTROL Executar Uma Vez]</td> 
    <td>Ctrl+Shift+Enter</td> 
    <td>Cmd+Shift+Enter</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Open the DevTool]</td> 
+   <td role="rowheader">[!UICONTROL Abrir DevTool]</td> 
    <td>F12</td> 
    <td>Ctrl+Fn+F12</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select multiple modules]</td> 
+   <td role="rowheader">[!UICONTROL Selecionar vários módulos]</td> 
    <td>Shift+Arrastar</td> 
    <td>Shift+Arrastar</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Copy]</td> 
+   <td role="rowheader">[!UICONTROL Copiar]</td> 
    <td>Ctrl+C</td> 
    <td>Cmd+C</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Paste]</td> 
+   <td role="rowheader">[!UICONTROL Colar]</td> 
    <td>Ctrl+V</td> 
    <td>Cmd+V</span> </td> 
   </tr> 

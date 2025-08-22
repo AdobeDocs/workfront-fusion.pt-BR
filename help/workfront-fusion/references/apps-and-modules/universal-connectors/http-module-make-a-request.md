@@ -4,16 +4,16 @@ description: O módulo Adobe Workfront Fusion HTTP > Criar uma solicitação é 
 author: Becky
 feature: Workfront Fusion
 exl-id: 42f6176e-86e0-489e-868b-66823a932daf
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '960'
 ht-degree: 1%
 
 ---
 
 # [!UICONTROL HTTP] > [!UICONTROL Fazer uma solicitação] para o módulo
 
-O [!DNL Adobe Workfront Fusion] [!UICONTROL HTTP] > [!UICONTROL Criar um módulo de solicitação] é um módulo universal que permite configurar uma solicitação HTTP e enviá-la a um servidor. A resposta HTTP recebida é então contida no pacote de saída.
+O Adobe Workfront Fusion [!UICONTROL HTTP] > [!UICONTROL Criar um módulo de solicitação] é um módulo universal que permite configurar uma solicitação HTTP e enviá-la a um servidor. A resposta HTTP recebida é então contida no pacote de saída.
 
 >[!NOTE]
 >
@@ -48,7 +48,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Novo:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
+   <p>Novo menu:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
    <p>Ou</p>
    <p>Atual: sua organização deve comprar o Adobe Workfront Fusion.</p>
    </td> 
@@ -58,13 +58,13 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
 
 Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## [!UICONTROL HTTP] > [!UICONTROL Fazer uma solicitação] para configuração de módulo
 
-Ao configurar o módulo [!UICONTROL HTTP] > [!UICONTROL Fazer uma solicitação], o [!DNL Adobe Workfront Fusion] exibe os campos listados abaixo. Um título em negrito em um módulo indica um campo obrigatório.
+Ao configurar o módulo [!UICONTROL HTTP] > [!UICONTROL Fazer uma solicitação], o Adobe Workfront Fusion exibe os campos listados abaixo. Um título em negrito em um módulo indica um campo obrigatório.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -164,7 +164,7 @@ Ao configurar o módulo [!UICONTROL HTTP] > [!UICONTROL Fazer uma solicitação]
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Desabilitar serialização de várias chaves de cadeia de caracteres de consulta como matrizes]</p> </td> 
-   <td> <p>Por padrão, [!DNL Workfront Fusion] manipula vários valores para a mesma chave de parâmetro da cadeia de caracteres de consulta da URL que as matrizes. Por exemplo, <code>www.test.com?foo=bar&amp;foo=baz</code> será convertido em <code>www.test.com?foo[0]=bar&amp;foo[1]=baz</code>. Ative esta opção para desativar este recurso. </p> </td> 
+   <td> <p>Por padrão, o Workfront Fusion lida com vários valores para a mesma chave de parâmetro de string de consulta de URL que os arrays. Por exemplo, <code>www.test.com?foo=bar&amp;foo=baz</code> será convertido em <code>www.test.com?foo[0]=bar&amp;foo[1]=baz</code>. Ative esta opção para desativar este recurso. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Solicitar conteúdo compactado]</td> 

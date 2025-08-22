@@ -4,9 +4,9 @@ description: O Fusion usa endereços IP e domínios específicos para comunicaç
 author: Becky
 feature: Workfront Fusion
 exl-id: 406dd45c-0863-4270-a80e-c1c115e0b367
-source-git-commit: 59d739093c88238af7a7e97499fd0c7d7cf6053a
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Como o Adobe Workfront Fusion se comunica com a rede da sua organização, o fir
 
 Isso é feito por meio de uma inclui na lista de permissões, que é essencialmente uma &quot;lista&quot; de sites que têm &quot;permissão&quot; para enviar ou receber dados por meio do firewall. Os sites podem ser identificados de uma das duas formas a seguir:
 
-* **Endereço IP**: uma série de números, como 52.31.132.175
+* **Endereço IP**: uma série de números como 52.31.132.175
 * **Domínio**: parte de uma URL, como `thisdomain` em `www.thisdomain.com`
 
 O Fusion usa endereços IP e domínios específicos para comunicação na Web. Eles devem ser adicionados ao arquivo de inclui na lista de permissões da sua organização antes de você poder usar o Workfront na organização.
@@ -36,10 +36,10 @@ Adicione os seguintes endereços IP ao incluo na lista de permissões:
 
 * 52.30.133.50
 * 54.220.93.204
-* 34 254 76 122
-* 54 244 142 219
+* 34.254.76.122
+* 54.244.142.219
 * 52.39.217.230
-* 44 241 82 96
+* 44.241.82.96
 * 100.20.126.137
 * 34.223.32.4
 * 52.39.176.220
@@ -82,7 +82,7 @@ Se você acessar o Fusion por meio do `experience.adobe.com`, poderá verificar 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] Centro de dados da UE</td> 
+   <td role="rowheader">Adobe Workfront EU Datacenter</td> 
    <td> 
     <ul> 
      <li>52.30.133.50</li> 
@@ -91,7 +91,7 @@ Se você acessar o Fusion por meio do `experience.adobe.com`, poderá verificar 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!DNL Adobe Workfront] Data center dos EUA</p> </td> 
+   <td role="rowheader"> <p>Adobe Workfront US Datacenter</p> </td> 
    <td> 
     <ul> 
      <li>54 244 142 219</li> 
@@ -103,7 +103,7 @@ Se você acessar o Fusion por meio do `experience.adobe.com`, poderá verificar 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] no cluster do Microsoft Azure</td> 
+   <td role="rowheader">Adobe Workfront Fusion no cluster do Microsoft Azure</td> 
    <td> 
     <ul> 
      <li>20.36.133.48/28</li> 
@@ -121,15 +121,15 @@ Incluir na lista de permissões Além disso, se a sua organização usar filtrag
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] Centro de dados da UE</td> 
+   <td role="rowheader">Adobe Workfront EU Datacenter</td> 
    <td> <p> hook.app-eu.workfrontfusion.com </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!DNL Adobe Workfront] Data center dos EUA</p> </td> 
+   <td role="rowheader"> <p>Adobe Workfront US Datacenter</p> </td> 
    <td> <p>hook.app.workfrontfusion.com </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!DNL Adobe Workfront Fusion] no cluster do Microsoft Azure</p> </td> 
+   <td role="rowheader"> <p>Adobe Workfront Fusion no cluster do Microsoft Azure</p> </td> 
    <td> <p>hook.app-az.workfrontfusion.com </p> </td> 
   </tr> 
  </tbody> 

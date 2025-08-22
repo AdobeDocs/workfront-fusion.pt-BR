@@ -1,19 +1,19 @@
 ---
 title: Módulos do Draft.js
-description: Em um cenário  [!DNL Adobe Workfront Fusion] , você pode usar os módulos Draft.js para converter o Draft.js em HTML e o HTML em Draft.js.
+description: Em um cenário do Adobe Workfront Fusion, é possível usar os módulos Draft.js para converter o Draft.js em HTML e o HTML em Draft.js.
 author: Becky
 feature: Workfront Fusion
 exl-id: 0116e379-cef8-4036-875b-46ca79a9e94d
-source-git-commit: d8c40e310931e5901a5c5a2be2357b5021452bc2
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '256'
 ht-degree: 1%
 
 ---
 
 # [!UICONTROL Módulos Draft.js]
 
-Em um cenário [!DNL Adobe Workfront Fusion], você pode usar os módulos [!UICONTROL Draft.js] para converter o Draft.js em HTML e o HTML em Draft.js. Você pode usar isso em combinação com módulos do Workfront para adicionar rich text ou ler rich text de campos do Workfront.
+Em um cenário do Adobe Workfront Fusion, é possível usar os módulos do [!UICONTROL Draft.js] para converter o Draft.js em HTML e o HTML em Draft.js. Você pode usar isso em combinação com módulos do Workfront para adicionar rich text ou ler rich text de campos do Workfront.
 
 Para obter instruções sobre como criar um cenário, consulte os artigos em [Criar cenários: índice do artigo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -46,7 +46,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Novo:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
+   <p>Novo menu:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
    <p>Ou</p>
    <p>Atual: sua organização deve comprar o Adobe Workfront Fusion.</p>
    </td> 
@@ -56,7 +56,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
 
 Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 

@@ -1,19 +1,19 @@
 ---
 title: Proteções de Desempenho de Fusão
-description: A automação de trabalho requer processamento rápido, portanto, o  [!DNL Adobe Workfront Fusion]  foi projetado para alto desempenho. Como cenários de longa duração podem retardar o ritmo do seu trabalho, projetamos [!DNL Workfront Fusion] medidas de proteção que preservam o desempenho e limitam o tempo de execução, o tamanho dos dados e outros parâmetros do cenário. [!DNL Workfront Fusion] os designers devem estar cientes dessas medidas de proteção e incorporá-las às suas práticas de design.
+description: A automação de trabalho requer processamento rápido, de modo que o Adobe Workfront Fusion é projetado para alto desempenho. Como cenários de longa duração podem retardar o ritmo do seu trabalho, projetamos o Workfront Fusion com medidas de proteção que preservam o desempenho e limitam o tempo de execução, o tamanho dos dados e outros parâmetros de cenário. Os designers do Workfront Fusion devem estar cientes dessas medidas de proteção e incorporá-las às suas práticas de design.
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: e036784fbf241c6d528f2020b7c368249e4f2133
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1104'
 ht-degree: 0%
 
 ---
 
 # Medidas de proteção do desempenho de fusão
 
-A automação de trabalho requer processamento rápido, portanto, o [!DNL Adobe Workfront Fusion] foi desenvolvido para alto desempenho. Como cenários de longa duração podem retardar o ritmo do seu trabalho, criamos o [!DNL Workfront Fusion] com medidas de proteção que preservam o desempenho e limitam o tempo de execução, o tamanho dos dados e outros parâmetros do cenário. Os designers do [!DNL Workfront Fusion] devem estar cientes dessas medidas de proteção e incorporá-las às suas práticas de design.
+A automação de trabalho requer processamento rápido, de modo que o Adobe Workfront Fusion é projetado para alto desempenho. Como cenários de longa duração podem retardar o ritmo do seu trabalho, projetamos o Workfront Fusion com medidas de proteção que preservam o desempenho e limitam o tempo de execução, o tamanho dos dados e outros parâmetros de cenário. Os designers do Workfront Fusion devem estar cientes dessas medidas de proteção e incorporá-las às suas práticas de design.
 
 ## Navegadores
 
@@ -21,17 +21,17 @@ A automação de trabalho requer processamento rápido, portanto, o [!DNL Adobe 
 
 ## Cenários
 
-* O tempo limite de execução de cenário padrão é de **40 minutos**. Quando a execução atinge esse tempo limite, [!DNL Workfront Fusion] interrompe a execução do cenário após o próximo ciclo ou operação, dependendo do cenário. Isso força o cenário a parar logo após o limite de 40 minutos ser atingido
+* O tempo limite de execução de cenário padrão é de **40 minutos**. Quando a execução atinge esse tempo limite, o Workfront Fusion interrompe a execução do cenário após o próximo ciclo ou operação, dependendo do cenário. Isso força o cenário a parar logo após o limite de 40 minutos ser atingido
 
   Os cenários de encadeamento não contam para o tempo limite de execução do cenário. Um cenário pai não acumula tempo enquanto aguarda a execução de um cenário filho.
 * O tamanho máximo de um blueprint do cenário é **5 MB**, mas recomendamos manter o tamanho do cenário abaixo de **3 MB**.
 
   Os módulos do aplicativo que criam ou atualizam dados com um grande número de campos podem causar blueprints muito grandes.
 
-   * Ao usar o aplicativo [!DNL Workfront], selecione apenas os campos necessários para seus casos de uso de criação ou atualização.
+   * Ao usar o aplicativo Workfront, selecione apenas os campos necessários para criar ou atualizar casos de uso.
    * Ao usar outros aplicativos, use módulos de API personalizados para interagir com qualquer tipo de registro que tenha um grande número de campos.
 
-* Embora não haja um limite para o número de módulos em um cenário, os cenários com mais de 150 módulos afetam negativamente o desempenho do seu sistema [!DNL Workfront Fusion]. Por esse motivo, não recomendamos criar cenários com mais de 150 módulos.
+* Embora não haja limite para o número de módulos em um cenário, cenários com mais de 150 módulos afetam negativamente o desempenho do seu sistema Workfront Fusion. Por esse motivo, não recomendamos criar cenários com mais de 150 módulos.
 
 ## Operações
 
@@ -60,7 +60,7 @@ Para obter mais informações, consulte [Trabalhando com arquivos grandes](/help
 
 * O tamanho máximo padrão de uma carga é **5 MB**.
 * Os webhooks estão limitados a **100 solicitações por segundo**. Quando esse limite é atingido, o Workfront Fusion envia um status 429 ([!UICONTROL Muitas solicitações]).
-* O [!DNL Workfront Fusion] armazena cargas de webhook por 30 dias. O acesso a uma carga de webhook por mais de 30 dias após seu recebimento resulta no erro &quot;[!UICONTROL Falha ao ler o arquivo do armazenamento.]&quot;
+* O Workfront Fusion armazena cargas de webhook por 30 dias. O acesso a uma carga de webhook por mais de 30 dias após seu recebimento resulta no erro &quot;[!UICONTROL Falha ao ler o arquivo do armazenamento.]&quot;
 * Os webhooks são desativados automaticamente se qualquer uma das seguintes situações se aplicar:
 
    * O webhook não foi conectado a nenhum cenário por mais de 5 dias

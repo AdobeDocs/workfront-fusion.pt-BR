@@ -3,14 +3,14 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: connections-annd-webhooks
 title: Gerenciar conexões
-description: Para a maioria dos aplicativos, é necessário criar uma conexão, por meio da qual o [!DNL Adobe Workfront Fusion]  pode se comunicar com o serviço de terceiros fornecido de acordo com as configurações do cenário específico.
+description: Para a maioria dos aplicativos, é necessário criar uma conexão, por meio da qual o Adobe Workfront Fusion pode se comunicar com o serviço de terceiros fornecido, de acordo com as configurações do cenário específico.
 author: Becky
 feature: Workfront Fusion
 exl-id: 26d7caad-8e12-4f04-ac7c-f71686c90ee6
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 1%
+source-wordcount: '476'
+ht-degree: 2%
 
 ---
 
@@ -33,17 +33,17 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] pacote</td> 
+   <td role="rowheader">Pacote do Adobe Workfront</td> 
    <td> <p>Qualquer</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licença</td> 
-   <td> <p>Novo: [!UICONTROL Standard]</p><p>Ou</p><p>Atual: [!UICONTROL Work] ou superior</p> </td> 
+   <td role="rowheader">Licença do Adobe Workfront</td> 
+   <td> <p>Novo: Padrão</p><p>Ou</p><p>Atual: [!UICONTROL Trabalho] ou superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licença**</td> 
+   <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Atual: nenhum requisito de licença [!DNL Workfront Fusion].</p>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion.</p>
    <p>Ou</p>
    <p>Herdados: Qualquer um </p>
    </td> 
@@ -51,9 +51,9 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Novo:</p> <ul><li>[!UICONTROL Select] ou plano do [!UICONTROL Prime] [!DNL Workfront]: sua organização deve comprar o [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plano: [!DNL Workfront Fusion] está incluído.</li></ul>
+   <p>Novo menu:</p> <ul><li>Plano do Workfront para [!UICONTROL Select] ou [!UICONTROL Prime]: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Plano do Workfront do [!UICONTROL Ultimate]: o Workfront Fusion está incluído.</li></ul>
    <p>Ou</p>
-   <p>Atual: sua organização deve comprar o [!DNL Adobe Workfront Fusion].</p>
+   <p>Atual: sua organização deve comprar o Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -61,7 +61,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
 
 Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -86,13 +86,13 @@ Você pode gerenciar todas as conexões na área Conexões.
 
 ## Renovar uma conexão
 
-[!DNL Workfront Fusion] geralmente obtém direitos de acesso a um determinado serviço por um período ilimitado. Alguns aplicativos exigem que a permissão de acesso seja renovada após um determinado período. Nesses casos, o [!DNL Workfront Fusion] o notifica por email pouco antes da expiração dos direitos de acesso.
+O Workfront Fusion geralmente obtém direitos de acesso a um determinado serviço por um período ilimitado. Alguns aplicativos exigem que a permissão de acesso seja renovada após um determinado período. Nesses casos, o Workfront Fusion notifica você por email pouco antes da expiração dos direitos de acesso.
 
 Para renovar uma conexão:
 
 1. Para abrir a área Conexões, clique no ícone **Conexões** ![Conexões](assets/connections-icon.png) no painel de navegação esquerdo.
 1. Localize a conexão que deseja renovar.
-1. Na linha dessa conexão, clique no botão **[!UICONTROL Reauthorize]** na área **[!UICONTROL Connections]**.
+1. Na linha dessa conexão, clique no botão **[!UICONTROL Reautorizar]** na área **[!UICONTROL Conexões]**.
 
 ## Recursos
 

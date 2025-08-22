@@ -1,19 +1,19 @@
 ---
 title: Módulos de email
-description: Em um cenário  [!DNL Adobe Workfront Fusion] , você pode conectar sua conta de email a vários aplicativos e serviços de terceiros. Isso permite baixar emails via IMAP, enviar emails via SMTP, criar novos rascunhos, mover e copiar emails de uma pasta para outra pasta, marcar emails como lidos ou não lidos e excluir emails.
+description: Em um cenário do Adobe Workfront Fusion, é possível conectar sua conta de email a vários aplicativos e serviços de terceiros. Isso permite baixar emails via IMAP, enviar emails via SMTP, criar novos rascunhos, mover e copiar emails de uma pasta para outra pasta, marcar emails como lidos ou não lidos e excluir emails.
 author: Becky
 feature: Workfront Fusion
 exl-id: 28a04bad-d3ef-4f3a-be93-8b04761a75e4
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2460'
+source-wordcount: '2485'
 ht-degree: 0%
 
 ---
 
 # Módulos de email
 
-Em um cenário do [!DNL Adobe Workfront Fusion], você pode conectar sua conta de email a vários aplicativos e serviços de terceiros. Isso permite baixar emails via IMAP, enviar emails via SMTP, criar novos rascunhos, mover e copiar emails de uma pasta para outra pasta, marcar emails como lidos ou não lidos e excluir emails.
+Em um cenário do Adobe Workfront Fusion, é possível conectar sua conta de email a vários aplicativos e serviços de terceiros. Isso permite baixar emails via IMAP, enviar emails via SMTP, criar novos rascunhos, mover e copiar emails de uma pasta para outra pasta, marcar emails como lidos ou não lidos e excluir emails.
 
 ## Requisitos de acesso
 
@@ -44,7 +44,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Novo:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
+   <p>Novo menu:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
    <p>Ou</p>
    <p>Atual: sua organização deve comprar o Adobe Workfront Fusion.</p>
    </td> 
@@ -54,7 +54,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
 
 Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -100,7 +100,7 @@ Para adicionar um certificado autoassinado:
 
 ## Módulos [!UICONTROL Email] e seus campos
 
-Ao configurar os módulos de [!UICONTROL Email], o [!DNL Workfront Fusion] exibe os campos listados abaixo. Junto com esses, campos adicionais podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
+Ao configurar módulos do [!UICONTROL Email], o Workfront Fusion exibe os campos listados abaixo. Junto com esses, campos adicionais podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
 
 Alguns dos campos de email podem já conter dados porque você os usou em outro módulo no cenário. Consulte a documentação de ajuda do email se precisar de informações sobre eles.
 
@@ -161,7 +161,7 @@ Esse módulo de acionamento inicia um cenário quando um novo email é recebido 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Número máximo de resultados]</td> 
-   <td> <p> Insira ou mapeie o número máximo de emails que [!DNL Workfront Fusion] deve retornar durante um ciclo de execução de cenário.</p> </td> 
+   <td> <p> Insira ou mapeie o número máximo de emails que o Workfront Fusion deve retornar durante um ciclo de execução de cenário.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -251,7 +251,7 @@ Este módulo de ação cria e adiciona um novo rascunho a uma pasta selecionada.
   </tr> 
   <!--<tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL From] </td> 
-   <td> <p>Enter or map the email address (and name, if needed) that appears in the [!UICONTROL From] field in the email. </p> <p>Important: Use the correct syntax: <code>name@email.com</code> or <code>"Name" name@email.com</code>.</p> <p>Note:  Normally, [!DNL Workfront Fusion] uses the email address that you entered when creating the connection as the sender address. If you enter any other email address, an error may occur when sending a message because your account may not have permission to send emails from a different address than your own. E.g. <code>test@mail.com</code> or "<code>John Bush" test@email.com</code>.</p> </td> 
+   <td> <p>Enter or map the email address (and name, if needed) that appears in the [!UICONTROL From] field in the email. </p> <p>Important: Use the correct syntax: <code>name@email.com</code> or <code>"Name" name@email.com</code>.</p> <p>Note:  Normally, Workfront Fusion uses the email address that you entered when creating the connection as the sender address. If you enter any other email address, an error may occur when sending a message because your account may not have permission to send emails from a different address than your own. E.g. <code>test@mail.com</code> or "<code>John Bush" test@email.com</code>.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader"> <p>[!UICONTROL Sender]</p> </td> 
@@ -371,11 +371,11 @@ Este módulo retorna emails que correspondem aos critérios especificados.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID DE E-MAIL (UID)]</td> 
-   <td> <p> Insira a ID de email (UID) do email cujos detalhes você deseja recuperar.</p> <p>Você pode obter a UID do email usando o módulo [!UICONTROL Watch Email] ou o módulo [!UICONTROL Search Email] de [!DNL Workfront Fusion].</p> </td> 
+   <td> <p> Insira a ID de email (UID) do email cujos detalhes você deseja recuperar.</p> <p>Você pode obter a UID do email usando o módulo [!UICONTROL Watch Email] do Workfront Fusion ou o módulo [!UICONTROL Search Email].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Número máximo de resultados]</td> 
-   <td> <p> O número máximo de emails [!DNL Workfront Fusion] deve retornar durante um ciclo de execução de cenário.</p> </td> 
+   <td> <p> O número máximo de emails que o Workfront Fusion deve retornar durante um ciclo de execução de cenário.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Continuar a execução da rota mesmo se o módulo não retornar resultados]</td> 
@@ -467,11 +467,11 @@ Envia um novo email.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Conexão] </td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta de email ao [!DNL Workfront Fusion], consulte <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Conectar seu email ao [!UICONTROL Workfront Fusion]</a> neste artigo.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta de email ao Workfront Fusion, consulte <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Conectar seu email ao [!UICONTROL Workfront Fusion]</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Salvar Mensagem após Envio]</td> 
-   <td>Depois que a mensagem de email for enviada, ela será salva na sua caixa de correio. Habilite esta opção se quiser salvar emails enviados usando o [!DNL Workfront Fusion] na pasta <i>[!UICONTROL Email enviado]</i> ou em outra pasta da sua caixa de correio. Alguns serviços de email, como o [!DNL Gmail], salvam mensagens enviadas automaticamente.</td> 
+   <td>Depois que a mensagem de email for enviada, ela será salva na sua caixa de correio. Habilite esta opção se quiser salvar emails enviados usando o Workfront Fusion na pasta <i>[!UICONTROL Email enviado]</i> ou em outra pasta da caixa de correio. Alguns serviços de email, como o [!DNL Gmail], salvam mensagens enviadas automaticamente.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Para] </td> 
@@ -483,7 +483,7 @@ Envia um novo email.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Tipo de Conteúdo]</p> </td> 
-   <td> <p>Selecione o tipo de conteúdo  para o email:</p> 
+   <td> <p>Selecione o tipo de conteúdo [!UICONTROL] para o email:</p> 
     <ul> 
      <li>HTML</li> 
      <li>[!UICONTROL Texto sem formatação]</li> 
@@ -545,7 +545,7 @@ Envia um novo email.
   </tr> 
 <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL De] </td> 
-   <td> <p>Insira ou mapeie o endereço de email (e o nome, se necessário) que aparece no campo [!UICONTROL From] no email. </p> <p>Importante: use a sintaxe correta: <code>name@email.com</code> ou <code>"Name" name@email.com</code>.</p> <p>Observação: normalmente, o [!DNL Workfront Fusion] usa o endereço de email que você inseriu ao criar a conexão como o endereço do remetente. Se você inserir qualquer outro endereço de email, poderá ocorrer um erro ao enviar uma mensagem porque sua conta talvez não tenha permissão para enviar emails de um endereço diferente do seu. Por exemplo, <code>test@mail.com</code> ou "<code>John Bush" test@email.com</code>.</p> </td> 
+   <td> <p>Insira ou mapeie o endereço de email (e o nome, se necessário) que aparece no campo [!UICONTROL From] no email. </p> <p>Importante: use a sintaxe correta: <code>name@email.com</code> ou <code>"Name" name@email.com</code>.</p> <p>Observação: normalmente, o Workfront Fusion usa o endereço de email inserido ao criar a conexão como o endereço do remetente. Se você inserir qualquer outro endereço de email, poderá ocorrer um erro ao enviar uma mensagem porque sua conta talvez não tenha permissão para enviar emails de um endereço diferente do seu. Por exemplo, <code>test@mail.com</code> ou "<code>John Bush" test@email.com</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>

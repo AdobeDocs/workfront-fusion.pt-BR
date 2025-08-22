@@ -1,25 +1,25 @@
 ---
 title: Módulos de arquivamento
-description: Em um cenário  [!DNL Adobe Workfront Fusion] , é possível conectar um arquivo, como um arquivo compactado, a vários aplicativos e serviços de terceiros. Por exemplo, você pode configurar um cenário que
+description: Em um cenário do Adobe Workfront Fusion, é possível conectar um arquivo, como um arquivo compactado, a vários aplicativos e serviços de terceiros. Por exemplo, você pode configurar um cenário que
 author: Becky
 feature: Workfront Fusion
 exl-id: 4b5ff3d5-601c-4119-ad70-3612ad5ba1ab
-source-git-commit: 640aae1f4b7563545d7f9aa3f801671aa3d45fca
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
 
 # Módulos [!UICONTROL Arquivar]
 
-Em um cenário [!DNL Adobe Workfront Fusion], você pode usar um arquivo morto, como um arquivo zipado, em seu cenário, permitindo que você o use em suas automações ou integrações.
+Em um cenário do Adobe Workfront Fusion, é possível usar um arquivo, como um arquivo compactado, em seu cenário, permitindo usá-lo em suas automações ou integrações.
 
 Para obter instruções sobre como criar um cenário, consulte os artigos em [Criar cenários: índice do artigo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md). Para obter informações sobre módulos, consulte os artigos em [Módulos: índice do artigo](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## [!UICONTROL Arquivar] módulos e seus campos
 
-Ao configurar os módulos [!UICONTROL Arquivar], o [!DNL Workfront Fusion] exibe os campos listados abaixo. Junto com esses, campos adicionais do [!UICONTROL Arquivo] podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
+Ao configurar módulos [!UICONTROL Arquivar], o Workfront Fusion exibe os campos listados abaixo. Junto com esses, campos adicionais do [!UICONTROL Arquivo] podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -74,7 +74,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
   </tr> 
   <tr> 
    <td>[!UICONTROL Tipo] </td> 
-   <td> <p>Selecione se deseja adicionar arquivos a um arquivo ZIP , GZIP ou [!UICONTROL TAR].</p> </td> 
+   <td> <p>Selecione se deseja adicionar arquivos a um arquivo ZIP [!UICONTROL], GZIP ou [!UICONTROL TAR].</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Comentário]</td> 

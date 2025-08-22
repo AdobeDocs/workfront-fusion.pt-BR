@@ -1,19 +1,19 @@
 ---
 title: Módulos do Adobe Acrobat Sign
-description: Com os  [!DNL Adobe Acrobat Sign] módulos, você pode iniciar um [!DNL Adobe Workfront Fusion] cenário com base nos eventos da sua [!DNL Adobe] conta da Acrobat Sign, criar, ler ou atualizar contratos e outros registros, pesquisar registros usando os critérios que você definiu e carregar documentos.
+description: Com os  [!DNL Adobe Acrobat Sign] módulos, você pode iniciar um cenário do Adobe Workfront Fusion com base em eventos na sua conta da  [!DNL Adobe] Acrobat Sign, criar, ler ou atualizar contratos e outros registros, pesquisar registros usando os critérios definidos e carregar documentos.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
-source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '6664'
+source-wordcount: '6790'
 ht-degree: 0%
 
 ---
 
 # [!DNL Adobe Acrobat Sign] módulos
 
-Com os módulos do [!DNL Adobe Acrobat Sign], você pode iniciar um cenário do [!DNL Adobe Workfront Fusion] com base em eventos na sua conta do [!DNL Adobe Acrobat Sign], criar, ler ou atualizar contratos e outros registros, pesquisar registros usando os critérios que você definiu e carregar documentos.
+Com os módulos do [!DNL Adobe Acrobat Sign], você pode iniciar um cenário do Adobe Workfront Fusion com base em eventos na sua conta do [!DNL Adobe Acrobat Sign], criar, ler ou atualizar contratos e outros registros, pesquisar registros usando os critérios definidos e carregar documentos.
 
 ## Requisitos de acesso
 
@@ -24,35 +24,35 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plano*</td>
+   <td role="rowheader">plano do Adobe Workfront*</td>
   <td> <p>[!UICONTROL Pro] ou superior</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licença*</td>
+   <td role="rowheader">Licença da Adobe Workfront*</td>
    <td> <p>[!UICONTROL Plano], [!UICONTROL Trabalho]</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licença**</td> 
+   <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisito de licença atual: nenhum requisito de licença [!DNL Workfront Fusion].</p>
+   <p>Requisito de licença atual: nenhum requisito de licença do Workfront Fusion.</p>
    <p>Ou</p>
-   <p>Requisito de licença herdada: [!UICONTROL [!DNL Workfront Fusion] para Automação e Integração do Trabalho] </p>
+   <p>Requisito de licença herdado: [!UICONTROL Workfront Fusion para Automação e Integração do Trabalho] </p>
    </td>  
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Requisito atual do produto: se você tiver o Plano [!DNL Adobe Workfront] da [!UICONTROL Select] ou da [!UICONTROL Prime], sua organização deve comprar o [!DNL Adobe Workfront Fusion] e o [!DNL Adobe Workfront] para usar a funcionalidade descrita neste artigo. [!DNL Workfront Fusion] está incluído no plano [!DNL Workfront] da [!UICONTROL Ultimate].</p>
+   <p>Requisito atual do produto: se você tiver o Plano do Adobe Workfront [!UICONTROL Select] ou [!UICONTROL Prime], sua organização deve comprar o Adobe Workfront Fusion, bem como o Adobe Workfront, para usar a funcionalidade descrita neste artigo. O Workfront Fusion está incluído no plano do Workfront da [!UICONTROL Ultimate].</p>
    <p>Ou</p>
-   <p>Requisito de produto herdado: sua organização deve comprar o [!DNL Adobe Workfront Fusion] e o [!DNL Adobe Workfront] para usar a funcionalidade descrita neste artigo.</p>
+   <p>Requisito de produto herdado: sua organização deve comprar o Adobe Workfront Fusion e o Adobe Workfront para usar a funcionalidade descrita neste artigo.</p>
    </td> 
   </tr> 
  </tbody> 
 </table>
 
-Para saber que plano, tipo de licença ou acesso você tem, contate o administrador do [!DNL Workfront].
+Para descobrir seu plano, tipo de licença ou acesso, entre em contato com o administrador do Workfront.
 
-Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 ## Informações da API [!DNL Adobe Acrobat Sign]
 
@@ -86,7 +86,7 @@ Os novos usuários do [!DNL Adobe Sign] devem estar muito atentos a algumas rest
 
 ## [!DNL Adobe Acrobat Sign] módulos e seus campos
 
-Ao configurar módulos do [!DNL Adobe Acrobat Sign], o [!DNL Workfront Fusion] exibe os campos listados abaixo. Junto com esses, campos [!DNL Adobe Acrobat Sign] adicionais podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
+Ao configurar módulos do [!DNL Adobe Acrobat Sign], o Workfront Fusion exibe os campos listados abaixo. Junto com esses, campos [!DNL Adobe Acrobat Sign] adicionais podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -113,7 +113,7 @@ Este módulo de acionador inicia um cenário quando um contrato é criado ou atu
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Conexão]</td> 
-<td>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Acrobat Sign] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a></td>  </tr> 
+<td>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Acrobat Sign] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a></td>  </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Filtro]</td> 
    <td>Selecione se deseja observar novos registros, registros atualizados ou ambos.</td> 
@@ -124,7 +124,7 @@ Este módulo de acionador inicia um cenário quando um contrato é criado ou atu
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Localizar texto]</td> 
-   <td> <p>Insira os termos que você deseja pesquisar. O módulo retorna registros que incluem esses termos como valores de campo.</p> <p>Para obter mais informações sobre a pesquisa de campos no [!DNL Adobe Acrobat Sign], consulte "Como funciona a pesquisa de texto" no <a href="https://helpx.adobe.com/br/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Adobe Sign Search - Como funciona</a>.</p> </td> 
+   <td> <p>Insira os termos que você deseja pesquisar. O módulo retorna registros que incluem esses termos como valores de campo.</p> <p>Para obter mais informações sobre a pesquisa de campos no [!DNL Adobe Acrobat Sign], consulte "Como funciona a pesquisa de texto" no <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Adobe Sign Search - Como funciona</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Número máximo de contratos retornados]</td> 
@@ -153,7 +153,7 @@ Esse módulo de acionador inicia um cenário quando ocorre um evento selecionado
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Conexão]</td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Acrobat Sign] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Acrobat Sign] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Escopos]</td> 
@@ -225,7 +225,7 @@ Este módulo de ação cria um novo registro do tipo selecionado.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Conexão]</td> 
-   <td>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Acrobat Sign] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a></td> 
+   <td>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Acrobat Sign] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Cabeçalhos]</td> 
@@ -256,7 +256,7 @@ Este módulo de ação cria um novo registro do tipo selecionado.
         <ul> 
          <li> <p><b>[!UICONTROL Mime-Type]</b> </p> <p>Insira o tipo MIME do arquivo original. Os tipos MIME (Multipurpose Internet Mail Extension) são rótulos que permitem que o software identifique diferentes tipos de dados compartilhados na Internet. Servidores da Web e navegadores usam o tipo MIME para determinar o que deve ser feito com um arquivo. Por exemplo, um arquivo com o tipo MIME <code>text/html</code> será processado em um navegador de forma diferente de um arquivo com o tipo MIME <code>image/jpeg</code>.</p> </li> 
          <li> <p><b>[!UICONTROL Nome]</b> </p> <p>Insira um nome para o arquivo.</p> </li> 
-         <li> <p><b></b> </p> <p>Insira o URL do arquivo que deseja enviar.</p> </li> 
+         <li> <p><b>[!UICONTROL]</b> </p> <p>Insira o URL do arquivo que deseja enviar.</p> </li> 
         </ul> </li> 
        <li> <p><b>[!UICONTROL Notarize]</b> </p> <p>Selecione se este documento precisa ser notariado.</p> </li> 
       </ul> </li> 
@@ -265,7 +265,7 @@ Este módulo de ação cria um novo registro do tipo selecionado.
      <li> <p><b>[!UICONTROL Estado do documento da biblioteca]</b> </p> <p>Selecione se o documento está no estado de criação ou ativo.</p> </li> 
      <li> <p><b>[!UICONTROL Tipo de modelo de biblioteca]</b> </p> <p>Para cada tipo de modelo de biblioteca que você deseja usar, clique em <b>[!UICONTROL Adicionar item]</b> e selecione o tipo de modelo.</p> </li> 
      <li> <p><b>[!UICONTROL Data do último evento]</b> </p> <p>Insira a última data em que um evento ocorreu no documento da biblioteca.</p> <p>Para obter uma lista de formatos de data e hora com suporte, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerção de tipo</a>.</p> </li> 
-     <li> <p><b>[!UICONTROL Status do documento da biblioteca]</b> </p> <p>Selecione o status do documento de biblioteca.</p> </li> 
+     <li> <p><b>[!Status do documento da biblioteca UICONTROL]</b> </p> <p>Selecione o status do documento de biblioteca.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -321,14 +321,14 @@ Este módulo de ação cria um novo registro do tipo selecionado.
       </ul> </li> 
      <li> <p><b>[!UICONTROL Informações de falha de autenticação]</b> </p> <p>Para fornecer uma página de erro ou falha para seus usuários, selecione <b>[!UICONTROL Sim]</b> e preencha os seguintes campos:</p> 
       <ul> 
-       <li> <p><b></b> </p> <p>Insira o URL da página de erro</p> </li> 
+       <li> <p><b>[!UICONTROL]</b> </p> <p>Insira o URL da página de erro</p> </li> 
        <li> <p><b>[!UICONTROL Desframe]</b> </p> <p>Ative esta opção se desejar que a página de erro apareça dentro do formulário web</p> </li> 
        <li> <p><b>[!UICONTROL Retardo]</b> </p> <p>Insira o atraso, em segundos, antes que o usuário seja redirecionado para a página de erro.</p> </li> 
       </ul> </li> 
      <li> <p><b>[!UICONTROL informações CC]</b> </p> <p>Para cada endereço de email no qual você deseja receber um email quando o contrato final no formulário da Web for assinado, clique em <b>[!UICONTROL Adicionar item]</b> e insira o endereço de email.</p> </li> 
      <li> <p><b>[!UICONTROL Informações de conclusão]</b> </p> <p style="font-style: normal;">Para fornecer uma página de sucesso aos seus usuários, selecione <b>[!UICONTROL Sim]</b> e preencha os seguintes campos:</p> 
       <ul> 
-       <li> <p><b></b> </p> <p>Insira o URL da página de sucesso</p> </li> 
+       <li> <p><b>[!UICONTROL]</b> </p> <p>Insira o URL da página de sucesso</p> </li> 
        <li> <p><b>[!UICONTROL Desframe]</b> </p> <p>Ative esta opção se desejar que a página de sucesso apareça dentro do formulário web</p> </li> 
        <li> <p><b>[!UICONTROL Retardo]</b> </p> <p>Insira o atraso, em segundos, antes que o usuário seja redirecionado para a página de sucesso.</p> </li> 
       </ul> </li> 
@@ -358,7 +358,7 @@ Este módulo de ação cria um contrato, o envia para assinatura e retorna a ID 
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Conexão]</td> 
-<td>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Acrobat Sign] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a></td>  </tr> 
+<td>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Acrobat Sign] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a></td>  </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Cabeçalhos]</td> 
    <td>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão. Por exemplo, <code>{"Content-type":"application/json"}</code></td> 
@@ -384,7 +384,7 @@ Este módulo de ação cria um contrato, o envia para assinatura e retorna a ID 
         <ul> 
          <li> <p><b>[!UICONTROL Mime-Type]</b> </p> <p>Insira o tipo MIME do arquivo original. Os tipos MIME (Multipurpose Internet Mail Extension) são rótulos que permitem que o software identifique diferentes tipos de dados compartilhados na Internet. Servidores da Web e navegadores usam o tipo MIME para determinar o que deve ser feito com um arquivo. Por exemplo, um arquivo com o tipo MIME <code>text/html</code> será processado em um navegador de forma diferente de um arquivo com o tipo MIME <code>image/jpeg</code>.</p> </li> 
          <li> <p><b>[!UICONTROL Nome]</b> </p> <p>Insira um nome para o arquivo.</p> </li> 
-         <li> <p><b></b> </p> <p>Insira o URL do arquivo que deseja enviar.</p> </li> 
+         <li> <p><b>[!UICONTROL]</b> </p> <p>Insira o URL do arquivo que deseja enviar.</p> </li> 
         </ul> </li> 
       </ul> </li> 
      <li> <p><b>[!UICONTROL RÓTULO]</b> </p> <p>Insira um rótulo para o arquivo.</p> </li> 
@@ -498,11 +498,11 @@ Esse módulo de ação cria registros vinculados a um módulo selecionado.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Conexão]</td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Acrobat Sign] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Acrobat Sign] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Cabeçalhos]</td> 
-   <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p> <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] O adiciona cabeçalhos de autorização automaticamente.</p> </td> 
+   <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p> <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p> <p>O Workfront Fusion adiciona cabeçalhos de autorização automaticamente.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Tipo de registro]</td> 
@@ -616,7 +616,7 @@ Este módulo permite executar uma chamada de API personalizada.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Conexão]</td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Acrobat Sign] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Acrobat Sign] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
@@ -628,7 +628,7 @@ Este módulo permite executar uma chamada de API personalizada.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Cabeçalhos]</td> 
-   <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p> <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] O adiciona cabeçalhos de autorização automaticamente.</p> </td> 
+   <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p> <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p> <p>O Workfront Fusion adiciona cabeçalhos de autorização automaticamente.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Cadeia de Consulta] </td> 
@@ -636,7 +636,7 @@ Este módulo permite executar uma chamada de API personalizada.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Corpo]</td> 
-   <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Nota:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
+   <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -660,11 +660,11 @@ Esse módulo de ação lista todos os registros do tipo selecionado aos quais a 
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Conexão]</td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Acrobat Sign] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Acrobat Sign] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Cabeçalhos]</td> 
-   <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p> <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] O adiciona cabeçalhos de autorização automaticamente.</p> </td> 
+   <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p> <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p> <p>O Workfront Fusion adiciona cabeçalhos de autorização automaticamente.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Tipo de registro]</td> 
@@ -713,11 +713,11 @@ Este módulo de ação recupera informações de um único registro.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Conexão]</td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Acrobat Sign] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Acrobat Sign] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Cabeçalhos]</td> 
-   <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p> <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] O adiciona cabeçalhos de autorização automaticamente.</p> </td> 
+   <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p> <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p> <p>O Workfront Fusion adiciona cabeçalhos de autorização automaticamente.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Tipo de registro]</td> 
@@ -742,11 +742,11 @@ Leia informações adicionais relacionadas a um único registro.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Conexão]</td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Acrobat Sign] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Acrobat Sign] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Cabeçalhos]</td> 
-   <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p> <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] O adiciona cabeçalhos de autorização automaticamente.</p> </td> 
+   <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p> <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p> <p>O Workfront Fusion adiciona cabeçalhos de autorização automaticamente.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Tipo de registro]</td> 
@@ -772,7 +772,7 @@ Este módulo de ação atualiza um único registro em [!DNL Adobe Acrobat Sign].
 >[!IMPORTANT]
 >
 >* Como prática recomendada, se você estiver antecipando alterações substanciais em um contrato, recomendamos criar um novo contrato em vez de atualizar o contrato existente.
->* Algumas atualizações apresentam campos obrigatórios. Ao configurar sua atualização, preencha todos os campos obrigatórios. Os campos obrigatórios estão em negrito nos módulos [!DNL Workfront Fusion].
+>* Algumas atualizações apresentam campos obrigatórios. Ao configurar sua atualização, preencha todos os campos obrigatórios. Os campos obrigatórios estão em negrito nos módulos do Workfront Fusion.
 >
 
 
@@ -783,11 +783,11 @@ Este módulo de ação atualiza um único registro em [!DNL Adobe Acrobat Sign].
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Conexão]</td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Acrobat Sign] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Acrobat Sign] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Cabeçalhos]</td> 
-   <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p> <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] O adiciona cabeçalhos de autorização automaticamente.</p> </td> 
+   <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p> <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p> <p>O Workfront Fusion adiciona cabeçalhos de autorização automaticamente.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID de Registro] </td> 
@@ -833,7 +833,7 @@ Esse módulo de ação atualiza registros relacionados a um objeto específico.
 >[!IMPORTANT]
 >
 >* Como prática recomendada, se você estiver antecipando alterações substanciais em um contrato, recomendamos criar um novo contrato em vez de atualizar o contrato existente.
->* Algumas atualizações apresentam campos obrigatórios. Ao configurar sua atualização, preencha todos os campos obrigatórios. Os campos obrigatórios estão em negrito nos módulos [!DNL Workfront Fusion].
+>* Algumas atualizações apresentam campos obrigatórios. Ao configurar sua atualização, preencha todos os campos obrigatórios. Os campos obrigatórios estão em negrito nos módulos do Workfront Fusion.
 >
 
 
@@ -844,11 +844,11 @@ Esse módulo de ação atualiza registros relacionados a um objeto específico.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Conexão]</td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Acrobat Sign] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Acrobat Sign] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Cabeçalhos]</td> 
-   <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p> <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] O adiciona cabeçalhos de autorização automaticamente.</p> </td> 
+   <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p> <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p> <p>O Workfront Fusion adiciona cabeçalhos de autorização automaticamente.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Tipo de registro]</td> 
@@ -922,11 +922,11 @@ Carregue um documento transitório. Um documento transitório fica disponível p
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Conexão]</td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Acrobat Sign] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Acrobat Sign] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Cabeçalhos]</td> 
-   <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p> <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] O adiciona cabeçalhos de autorização automaticamente.</p> </td> 
+   <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p> <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p> <p>O Workfront Fusion adiciona cabeçalhos de autorização automaticamente.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID de Registro]</td> 
@@ -961,7 +961,7 @@ Este módulo de pesquisa pesquisa procura contratos com base nos critérios forn
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Conexão]</td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Acrobat Sign] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Adobe Acrobat Sign] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Cabeçalhos]</td> 
@@ -973,7 +973,7 @@ Este módulo de pesquisa pesquisa procura contratos com base nos critérios forn
     <ul> 
      <li> <p><b>[!UICONTROL Localizar texto]</b> </p> <p>Insira o texto que deseja localizar nos metadados do contrato. Cada palavra é tratada como um item de texto separado. </p> </li> 
      <li> <p><b>[!UICONTROL Localizar texto em]</b> </p> <p>Selecione os campos de metadados nos quais deseja localizar texto. Se você não selecionar nada, os módulos pesquisarão todos os metadados.</p> </li> 
-    </ul> <p>O módulo retorna qualquer contrato que contenha qualquer um dos textos inseridos em qualquer um dos campos selecionados. Exemplo: inserir "campanha de primavera" e selecionar as opções Título e Nota retorna quaisquer contratos com as palavras "primavera" ou "Campanha" no Título ou Nota.</p> <p>Para obter mais informações sobre a pesquisa de campos no [!DNL Adobe Acrobat Sign], consulte "Como funciona a pesquisa de texto" no <a href="https://helpx.adobe.com/br/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] Search - Como funciona</a>.</p> </td> 
+    </ul> <p>O módulo retorna qualquer contrato que contenha qualquer um dos textos inseridos em qualquer um dos campos selecionados. Exemplo: inserir "campanha de primavera" e selecionar as opções Título e Nota retorna quaisquer contratos com as palavras "primavera" ou "Campanha" no Título ou Nota.</p> <p>Para obter mais informações sobre a pesquisa de campos no [!DNL Adobe Acrobat Sign], consulte "Como funciona a pesquisa de texto" no <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] Search - Como funciona</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Data de criação]</td> 

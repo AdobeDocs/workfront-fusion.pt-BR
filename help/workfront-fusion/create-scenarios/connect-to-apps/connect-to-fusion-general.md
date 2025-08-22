@@ -1,24 +1,24 @@
 ---
 title: Criar uma conexão - Instruções básicas
-description: Muitos  [!DNL Adobe Workfront Fusion]  conectores não exigem configuração personalizada ao criar uma conexão. Este artigo descreve o processo de criação de conexão padrão.
+description: Muitos conectores do Adobe Workfront Fusion não exigem configuração personalizada ao criar uma conexão. Este artigo descreve o processo de criação de conexão padrão.
 author: Becky
 feature: Workfront Fusion
 exl-id: e47ab4d9-6612-4d9a-a024-da508a8bbfb2
-source-git-commit: 6aec65919e79a9e9d950a11de53bfbb1051ca20b
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 0%
+source-wordcount: '546'
+ht-degree: 1%
 
 ---
 
 # Criar uma conexão - Instruções básicas
 
-Muitos conectores do [!DNL Adobe Workfront Fusion] não exigem configuração personalizada ao criar uma conexão. Este artigo descreve o processo de criação de conexão padrão.
+Muitos conectores do Adobe Workfront Fusion não exigem configuração personalizada ao criar uma conexão. Este artigo descreve o processo de criação de conexão padrão.
 
 >[!NOTE]
 >
 >
->Se o Adobe Workfront Fusion não oferecer um aplicativo para o serviço Web que você deseja usar no cenário, é possível conectar-se ao serviço Web usando os módulos HTTP e Webhooks do [!DNL Workfront Fusion], conforme explicado nos seguintes artigos:
+>Se o Adobe Workfront Fusion não oferecer um aplicativo para o serviço Web que você deseja usar em seu cenário, é possível se conectar ao serviço Web usando os módulos HTTP e Webhooks do Workfront Fusion, conforme explicado nos seguintes artigos:
 >
 >* [Conecte o Adobe Workfront Fusion a um serviço Web que usa a autorização do token de API](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-wf-web-service-uses-api-token-auth.md)
 >* [Configurar um webhook para um serviço Web sem um conector](/help/workfront-fusion/create-scenarios/add-modules/receive-a-webhook-from-a-web-service.md)
@@ -52,7 +52,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Novo:</p> <ul><li>Selecione ou Prime Workfront Plan: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Plano do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
+   <p>Novo menu:</p> <ul><li>Selecione ou Prime Workfront Plan: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Plano do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
    <p>Ou</p>
    <p>Atual: sua organização deve comprar o Adobe Workfront Fusion.</p>
    </td> 
@@ -70,7 +70,7 @@ Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [li
 
 Para criar uma conexão com um determinado aplicativo, você deve estar em um módulo desse aplicativo. Por exemplo, para criar uma conexão com o Workfront, você deve estar em um módulo do Workfront.
 
-Para criar uma conexão dentro de um módulo [!DNL Workfront Fusion]:
+Para criar uma conexão dentro de um módulo do Workfront Fusion:
 
 1. Em qualquer módulo do aplicativo fornecido, clique em **[!UICONTROL Adicionar]** ao lado da caixa [!UICONTROL Conexão] para abrir o painel **[!UICONTROL Criar uma conexão]**.
 1. (Opcional) Altere o **[!UICONTROL Nome da conexão]** padrão.
@@ -82,7 +82,7 @@ Para criar uma conexão dentro de um módulo [!DNL Workfront Fusion]:
 
 1. Clique em **[!UICONTROL Continuar]**.
 1. Na janela de logon que é exibida, digite suas credenciais para fazer logon no aplicativo, se ainda não tiver feito.
-1. (Condicional) Se um botão **[!UICONTROL Permitir]** for exibido, examine as ações que o conector poderá realizar e clique no botão para conectar o aplicativo ao [!DNL Workfront Fusion].
+1. (Condicional) Se um botão **[!UICONTROL Permitir]** for exibido, examine as ações que o conector poderá realizar e clique no botão para conectar o aplicativo ao Workfront Fusion.
 
    >[!NOTE]
    >

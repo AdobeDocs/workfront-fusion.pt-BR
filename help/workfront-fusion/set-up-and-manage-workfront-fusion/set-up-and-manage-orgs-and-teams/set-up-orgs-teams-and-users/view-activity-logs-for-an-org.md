@@ -4,9 +4,9 @@ description: Você pode exibir um log de atividades, como criação ou ativaçã
 author: Becky
 feature: Workfront Fusion
 exl-id: 3cf851e3-50a1-4baa-8318-a24e1f467134
-source-git-commit: edeed099b26dae635889fd35de61d66a1ea1ffc1
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
@@ -26,17 +26,17 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plano</td>
+   <td role="rowheader">plano do Adobe Workfront</td>
    <td> <p>Novo: Ultimate</p> <p>Ou</p> <p>Atual: não disponível</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licença</td> 
-   <td> <p>Novo: [!UICONTROL Standard]</p><p>Ou</p><p>Atual: não disponível</p> </td> 
+   <td role="rowheader">Licença do Adobe Workfront</td> 
+   <td> <p>Novo: Padrão</p><p>Ou</p><p>Atual: não disponível</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licença**</td> 
+   <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Atual: nenhum requisito de licença [!DNL Workfront Fusion].</p>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion.</p>
    <p>Ou</p>
    <p>Herdados: Qualquer um </p>
    </td> 
@@ -48,7 +48,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Essa funcionalidade está disponível somente para organizações com o plano do Ultimate Workfront, que inclui [!DNL Workfront Fusion]. Não é necessária nenhuma compra de produto adicional.</p>
+   <p>Essa funcionalidade está disponível somente para organizações com o plano do Ultimate Workfront, que inclui o Workfront Fusion. Não é necessária nenhuma compra de produto adicional.</p>
    </td> 
   </tr>
  </tbody> 
@@ -56,7 +56,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
 
 Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação do Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -66,7 +66,7 @@ Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte
 
 1. No painel de navegação esquerdo, clique em **Visão geral da organização** ![ícone de visão geral da organização](assets/org-overview-icon.png).
 1. Se você não estiver na organização para a qual deseja exibir o log de atividades, clique no nome da organização no canto superior direito da tela e selecione a organização na lista suspensa.
-1. Clique na guia **[!UICONTROL Activity Logs]** próxima à parte superior da tela.
+1. Clique na guia **[!UICONTROL Logs de atividade]** próxima à parte superior da tela.
 
    A página Log de atividades é aberta.
 1. (Opcional) Filtre o log de atividades para limitar os resultados pelos critérios especificados.
@@ -82,7 +82,7 @@ Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte
 
 1. No painel de navegação esquerdo, clique em **Visão geral da organização** ![ícone de visão geral da organização](assets/org-overview-icon.png).
 1. Se você não estiver na organização para a qual deseja exibir o log de atividades, clique no nome da organização no canto superior direito da tela e selecione a organização na lista suspensa.
-1. Clique na guia **[!UICONTROL Activity Logs]** próxima à parte superior da tela.
+1. Clique na guia **[!UICONTROL Logs de atividade]** próxima à parte superior da tela.
 
    A página Log de atividades é aberta.
 1. Clique em **Filtro** ![Ícone Filtro](assets/filter-activity-log.png).
@@ -100,7 +100,7 @@ Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte
 
 1. No painel de navegação esquerdo, clique em **Visão geral da organização** ![ícone de visão geral da organização](assets/org-overview-icon.png).
 1. Se você não estiver na organização para a qual deseja exibir o log de atividades, clique no nome da organização no canto superior direito da tela e selecione a organização na lista suspensa.
-1. Clique na guia **[!UICONTROL Activity Logs]** próxima à parte superior da tela.
+1. Clique na guia **[!UICONTROL Logs de atividade]** próxima à parte superior da tela.
 
    A página Log de atividades é aberta.
 1. Selecione o intervalo de datas no calendário e (opcional) insira horas.

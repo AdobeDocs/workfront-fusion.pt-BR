@@ -3,9 +3,10 @@ title: Exibir e gerenciar equipes
 description: Você pode exibir uma lista das equipes da sua organização e editar os nomes das equipes.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: ef41c85010b53bbc80c5b44ba8a622027c9e4911
+exl-id: 80899745-de1e-4fa8-a398-e5e8e35aa6f4
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '329'
 ht-degree: 3%
 
 ---
@@ -37,17 +38,17 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] pacote</td> 
+   <td role="rowheader">Pacote do Adobe Workfront</td> 
    <td> <p>Qualquer</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licença</td> 
-   <td> <p>Novo: [!UICONTROL Padrão]</p><p>Ou</p><p>Atual: [!UICONTROL Trabalho] ou superior</p> </td> 
+   <td role="rowheader">Licença do Adobe Workfront</td> 
+   <td> <p>Novo: Padrão</p><p>Ou</p><p>Atual: [!UICONTROL Trabalho] ou superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licença**</td> 
+   <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Atual: nenhum requisito de licença [!DNL Workfront Fusion].</p>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion.</p>
    <p>Ou</p>
    <p>Herdados: Qualquer um </p>
    </td> 
@@ -55,16 +56,16 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Novo menu:</p> <ul><li>Plano [!DNL Workfront] da [!UICONTROL Select] ou da [!UICONTROL Prime]: sua organização deve comprar [!DNL Adobe Workfront Fusion].</li><li>Plano [!DNL Workfront] da [!UICONTROL Ultimate] [!DNL Workfront Fusion] incluído.</li></ul>
+   <p>Novo menu:</p> <ul><li>Plano do Workfront para [!UICONTROL Select] ou [!UICONTROL Prime]: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Plano do Workfront do [!UICONTROL Ultimate]: o Workfront Fusion está incluído.</li></ul>
    <p>Ou</p>
-   <p>Atual: sua organização deve comprar o [!DNL Adobe Workfront Fusion].</p>
+   <p>Atual: sua organização deve comprar o Adobe Workfront Fusion.</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">Configurações de nível de acesso*</td> 
    <td> 
-     <p>Você deve ser um administrador do [!DNL Workfront Fusion] para sua organização.</p>
-     <p>Você deve ser um administrador [!DNL Workfront Fusion] para sua equipe.</p>
+     <p>Você deve ser um administrador do Workfront Fusion para sua organização.</p>
+     <p>Você deve ser um administrador do Workfront Fusion para sua equipe.</p>
    </td> 
   </tr> 
    </td> 
@@ -74,7 +75,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
 
 Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -89,6 +90,3 @@ Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte
 1. (Opcional) Para ocultar ou exibir colunas, clique no ícone **Colunas** ![Colunas](assets/columns-icon.png) próximo ao canto superior direito da lista e, em seguida, habilite ou desabilite colunas.
 1. (Opcional) Para filtrar a lista, comece a digitar na barra de pesquisa. A lista filtra para incluir somente as equipes que incluem o termo de pesquisa.
 1. (Opcional) Para renomear uma equipe, clique em **Editar** na linha dessa equipe, em seguida, digite o novo nome da equipe e clique em **Salvar**.
-
-
-

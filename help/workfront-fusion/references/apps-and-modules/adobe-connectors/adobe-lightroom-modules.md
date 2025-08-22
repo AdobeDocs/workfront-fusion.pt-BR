@@ -4,16 +4,16 @@ description: Com os módulos do Adobe Lightroom, é possível iniciar um cenári
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
-source-git-commit: 420665071db63954bce14b2011c5ecdb97403fd1
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '3187'
+source-wordcount: '3200'
 ht-degree: 0%
 
 ---
 
 # [!DNL Adobe Lightroom] módulos
 
-Em um cenário [!DNL Adobe Workfront Fusion], você pode automatizar fluxos de trabalho que usam [!DNL Adobe Lightroom], bem como conectá-los a vários aplicativos e serviços de terceiros.
+Em um cenário do Adobe Workfront Fusion, é possível automatizar fluxos de trabalho que usam o [!DNL Adobe Lightroom], bem como conectá-lo a vários aplicativos e serviços de terceiros.
 
 Se você precisar de instruções sobre como criar um cenário, consulte os artigos em [Criar um cenário: índice do artigo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -48,7 +48,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Novo:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
+   <p>Novo menu:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
    <p>Ou</p>
    <p>Atual: sua organização deve comprar o Adobe Workfront Fusion.</p>
    </td> 
@@ -58,7 +58,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
 
 Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -78,7 +78,7 @@ O conector do Adobe Lightroom usa o seguinte:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">URL base</td> 
+   <td role="rowheader">URL básica</td> 
    <td>https://lr.adobe.io</td> 
   </tr>
   <tr> 
@@ -174,17 +174,17 @@ Para criar uma conexão para seus módulos do [!DNL Adobe Lightroom]:
 
 ## Módulos do Adobe Lightroom e seus campos
 
-Ao configurar módulos do [!DNL Adobe Lightroom], o [!DNL Workfront Fusion] exibe os campos listados abaixo. Junto com esses, campos [!DNL Adobe Lightroom] adicionais podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
+Ao configurar módulos do [!DNL Adobe Lightroom], o Workfront Fusion exibe os campos listados abaixo. Junto com esses, campos [!DNL Adobe Lightroom] adicionais podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Alternância de mapa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [Outro](#other)
+* [Outras](#other)
 * [Ativos](#assets)
 * [Álbuns](#albums)
 
-### Outro
+### Outras
 
 * [Verificação de integridade](#health-check)
 * [Recuperar metadados de catálogo do usuário](#retrieve-user-catalog-metadata)
@@ -997,7 +997,7 @@ Este módulo de ação recupera uma lista de álbuns no catálogo especificado.
     <tr>
       <td role="rowheader">[!UICONTROL Número de Álbuns a Serem Retornados]</td>
       <td>
-        <p>Defina o número máximo de ativos que [!DNL Workfront Fusion] retornará durante um ciclo de execução. O valor padrão deste campo é 100.Este módulo pode retornar mais álbuns do que este limite se vários álbuns no limite tiverem o mesmo valor <code>name_after</code>.</p>
+        <p>Defina o número máximo de ativos que o Workfront Fusion retornará durante um ciclo de execução. O valor padrão deste campo é 100.Este módulo pode retornar mais álbuns do que este limite se vários álbuns no limite tiverem o mesmo valor <code>name_after</code>.</p>
       </td>
     </tr>
   </tbody>

@@ -5,9 +5,9 @@ description: Você pode definir configurações específicas para cenários no p
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 273a07a28563a0eb3a3446937964e8dcef8a68d3
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -27,17 +27,17 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plano</td> 
+   <td role="rowheader">plano do Adobe Workfront</td> 
    <td> <p>Qualquer</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licença</td> 
-   <td> <p>Novo: [!UICONTROL Padrão]</p><p>Ou</p><p>Atual: [!UICONTROL Trabalho] ou superior</p> </td> 
+   <td role="rowheader">Licença do Adobe Workfront</td> 
+   <td> <p>Novo: Padrão</p><p>Ou</p><p>Atual: [!UICONTROL Trabalho] ou superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licença**</td> 
+   <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Atual: nenhum requisito de licença [!DNL Workfront Fusion].</p>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion.</p>
    <p>Ou</p>
    <p>Herdados: Qualquer um </p>
    </td> 
@@ -45,16 +45,16 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Novo:</p> <ul><li>[!UICONTROL Select] ou [!UICONTROL Prime] Plano [!DNL Workfront]: sua organização deve comprar [!DNL Adobe Workfront Fusion].</li><li>Plano [!DNL Workfront] da [!UICONTROL Ultimate] [!DNL Workfront Fusion] incluído.</li></ul>
+   <p>Novo menu:</p> <ul><li>Plano do Workfront para [!UICONTROL Select] ou [!UICONTROL Prime]: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Plano do Workfront do [!UICONTROL Ultimate]: o Workfront Fusion está incluído.</li></ul>
    <p>Ou</p>
-   <p>Atual: sua organização deve comprar o [!DNL Adobe Workfront Fusion].</p>
+   <p>Atual: sua organização deve comprar o Adobe Workfront Fusion.</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">Configurações de nível de acesso*</td> 
    <td> 
-     <p>Você deve ser um administrador do [!DNL Workfront Fusion] para sua organização.</p>
-     <p>Você deve ser um administrador [!DNL Workfront Fusion] para sua equipe.</p>
+     <p>Você deve ser um administrador do Workfront Fusion para sua organização.</p>
+     <p>Você deve ser um administrador do Workfront Fusion para sua equipe.</p>
    </td> 
   </tr> 
    </td> 
@@ -64,7 +64,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
 
 Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação do Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -119,15 +119,15 @@ Depois que um cenário é executado, você pode exibir informações padrão sob
 
 ### [!UICONTROL Permitir o armazenamento de execuções incompletas]
 
-Esta opção determina como [!DNL Adobe Workfront Fusion] procede se ocorrer um erro durante a execução de um cenário. Com essa opção ativada, o cenário é pausado e movido para a pasta de execução incompleta. Isso oferece a possibilidade de corrigir o problema e continuar a execução de onde o cenário foi interrompido. Se essa opção estiver desativada, a execução do cenário será interrompida e uma fase de reversão será iniciada.
+Essa opção determina como o Adobe Workfront Fusion procede se ocorrer um erro durante a execução de um cenário. Com essa opção ativada, o cenário é pausado e movido para a pasta de execução incompleta. Isso oferece a possibilidade de corrigir o problema e continuar a execução de onde o cenário foi interrompido. Se essa opção estiver desativada, a execução do cenário será interrompida e uma fase de reversão será iniciada.
 
 Para obter mais informações sobre execuções incompletas, consulte [Exibir e resolver execuções incompletas](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
 ### Ativar perda de dados
 
-Esta opção tem a ver com a habilitação da perda de dados se [!DNL Workfront Fusion] falhar ao salvar um pacote na fila de execuções incompletas (por exemplo, devido à falta de espaço livre). Com essa opção ativada, os dados são perdidos para evitar interrupções na execução geral do cenário. Isso é útil para cenários em que a prioridade mais alta é a execução contínua e os dados incorretos recebidos não são tão importantes.
+Essa opção tem a ver com ativar a perda de dados se o Workfront Fusion falhar ao salvar um pacote na fila de execuções incompletas (por exemplo, devido à falta de espaço livre). Com essa opção ativada, os dados são perdidos para evitar interrupções na execução geral do cenário. Isso é útil para cenários em que a prioridade mais alta é a execução contínua e os dados incorretos recebidos não são tão importantes.
 
-Além disso, ao executar um cenário, um módulo pode às vezes encontrar um arquivo maior do que o tamanho máximo permitido. Nesse caso, [!DNL Workfront Fusion] continua de acordo com a configuração da opção [!UICONTROL Habilitar perda de dados], e uma mensagem de aviso é exibida.
+Além disso, ao executar um cenário, um módulo pode às vezes encontrar um arquivo maior do que o tamanho máximo permitido. Nesse caso, o Workfront Fusion continua de acordo com a configuração da opção [!UICONTROL Habilitar perda de dados], e uma mensagem de aviso é exibida.
 
 Para obter mais informações sobre execuções incompletas, consulte [Exibir e resolver execuções incompletas](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
@@ -160,7 +160,7 @@ Definir mais ciclos pode ser útil quando você deseja impedir a interrupção d
 
 >[!BEGINSHADEBOX]
 
-**Exemplos:** [!DNL Workfront] > [!UICONTROL Observar registro] verifica novos problemas que entram, e [!DNL Workfront] >[!UICONTROL Converter objeto] converte a nova solicitação em um projeto e atribui a ela o modelo apropriado.
+**Exemplos:** Workfront > [!UICONTROL Observar registro] verifica novos problemas que entram, e Workfront >[!UICONTROL Converter objeto] converte a nova solicitação em um projeto e atribui a ela o modelo apropriado.
 
 ![Configurações de cenário](assets/scenario-settings-ex-1-350x157.png)
 
@@ -171,7 +171,7 @@ Uma configuração de [!UICONTROL mais ciclos] é aplicada somente quando você 
 ![Número máximo de ciclos](assets/max-number-cycles-1-350x201.png)
 
 O número máximo de ciclos no módulo Workfront > Registros de observação está definido como `10`.
-Se 100 solicitações forem enviadas para [!DNL Workfront], e o campo Número máximo de ciclos for definido como 10, 90 arquivos serão deixados sem processamento após a execução de um cenário. Os próximos 10 arquivos são processados na próxima execução de cenário agendada.
+Se 100 solicitações forem enviadas ao Workfront e o campo Número máximo de ciclos for definido como 10, 90 arquivos serão deixados sem processamento após a execução de um cenário. Os próximos 10 arquivos são processados na próxima execução de cenário agendada.
 
 #### O número máximo de ciclos é definido como 10
 

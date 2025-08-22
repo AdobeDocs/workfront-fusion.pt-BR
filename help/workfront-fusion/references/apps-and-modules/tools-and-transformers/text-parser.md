@@ -1,19 +1,19 @@
 ---
 title: Analisador de texto
-description: Você pode usar a ferramenta Analisador de texto para analisar o texto a ser usado em outros  [!DNL Adobe Workfront Fusion] módulos de cenário. O analisador de Texto não requer uma conexão.
+description: Você pode usar a ferramenta Analisador de texto para analisar o texto para uso em outros módulos de cenário do Adobe Workfront Fusion. O analisador de Texto não requer uma conexão.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 679a4f5c91625dfecf32e10904700bf75ea7a7cf
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL Analisador de texto]
 
-Você pode usar a [!UICONTROL Ferramenta de análise de texto] para analisar o texto a ser usado em outros módulos de cenário [!DNL Adobe Workfront Fusion]. O [!UICONTROL analisador de texto] não requer uma conexão.
+Você pode usar a [!UICONTROL Ferramenta de análise de texto] para analisar o texto a ser usado em outros módulos de cenário do Adobe Workfront Fusion. O [!UICONTROL analisador de texto] não requer uma conexão.
 
 ## Requisitos de acesso
 
@@ -52,7 +52,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
 
 Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -73,7 +73,7 @@ O conector do analisador de texto usa o seguinte:
 
 ## Módulos [!UICONTROL Analisador de texto] e seus campos
 
-Ao configurar módulos do [!UICONTROL Analisador de texto], o [!DNL Adobe Workfront Fusion] exibe os campos listados abaixo. Um título em negrito em um módulo indica um campo obrigatório.
+Ao configurar módulos do [!UICONTROL Analisador de texto], o Adobe Workfront Fusion exibe os campos listados abaixo. Um título em negrito em um módulo indica um campo obrigatório.
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 

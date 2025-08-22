@@ -1,13 +1,13 @@
 ---
 title: Módulos do Adobe Workfront Planning
-description: Com os  [!DNL Adobe Workfront Planning] módulos, você pode iniciar um [!DNL Adobe Workfront Fusion] cenário com base nos eventos da sua [!DNL Adobe] conta do Workfront Planning, criar, ler ou atualizar contratos e outros registros, pesquisar registros usando critérios definidos por você e carregar documentos.
+description: Com os  [!DNL Adobe Workfront Planning] módulos, você pode iniciar um cenário do Adobe Workfront Fusion com base em eventos na sua  [!DNL Adobe] conta do Workfront Planning, criar, ler ou atualizar contratos e outros registros, pesquisar registros usando critérios definidos por você e carregar documentos.
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 51bb87572f16f6194f6c37bbe52ea7f27050c303
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1591'
-ht-degree: 0%
+source-wordcount: '1607'
+ht-degree: 1%
 
 ---
 
@@ -44,7 +44,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Novo:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
+   <p>Novo menu:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
    <p>Ou</p>
    <p>Atual: sua organização deve comprar o Adobe Workfront Fusion.</p>
    </td> 
@@ -54,7 +54,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
 
 Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -75,7 +75,7 @@ O conector do Adobe Workfront Planning usa o seguinte:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">URL base</td> 
+   <td role="rowheader">URL básica</td> 
    <td>https://{{connection.host}}/maestro/api/{{common.maestroApiVersion}}/</td> 
   </tr>
   <tr> 
@@ -87,7 +87,7 @@ O conector do Adobe Workfront Planning usa o seguinte:
 
 ## Criar uma conexão com [!DNL Adobe Workfront Planning] {#create-a-connection-to-adobe-workfront-planning}
 
-Você pode criar uma conexão com sua conta do [!DNL Workfront Planning] diretamente de dentro de um módulo do [!DNL Workfront Fusion].
+Você pode criar uma conexão com sua conta do [!DNL Workfront Planning] diretamente de dentro de um módulo do Workfront Fusion.
 
 1. Em qualquer módulo [!DNL Adobe Workfront Planning], clique em **[!UICONTROL Adicionar]** ao lado da caixa Conexão.
 
@@ -184,7 +184,7 @@ Este módulo de acionamento inicia um cenário quando um registro, tipo de regis
     </tr>
      <tr data-mc-conditions=""> 
       <td> <p>[!UICONTROL Eventos filtros]</p> </td> 
-      <td> <p>É possível definir filtros para observar apenas os registros que atendem aos critérios selecionados.</p> <p>Para cada filtro, insira o campo que deseja que o filtro avalie, o operador e o valor que deseja que o filtro permita. Você pode usar mais de um filtro adicionando regras AND.</p> <p>Observação: não é possível editar filtros em webhooks [!DNL Workfront] existentes. Para configurar filtros diferentes para assinaturas de evento [!DNL Workfront], remova o webhook atual e crie um novo.</p> <p>Para obter mais informações sobre filtros de evento, consulte <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">Filtros de assinatura de evento nos módulos [!DNL Workfront] &gt; [!UICONTROL Watch Events]</a> no artigo sobre módulos do Workfront.</p> </td> 
+      <td> <p>É possível definir filtros para observar apenas os registros que atendem aos critérios selecionados.</p> <p>Para cada filtro, insira o campo que deseja que o filtro avalie, o operador e o valor que deseja que o filtro permita. Você pode usar mais de um filtro adicionando regras AND.</p> <p>Observação: não é possível editar filtros em webhooks existentes do Workfront. Para configurar diferentes filtros para assinaturas de eventos do Workfront, remova o webhook atual e crie um novo.</p> <p>Para obter mais informações sobre filtros de evento, consulte <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">Filtros de assinatura de evento no Workfront &gt; [!UICONTROL Watch Events] módulos</a> no artigo sobre módulos do Workfront.</p> </td> 
      </tr> 
     <tr>
       <td role="rowheader">[!UICONTROL Objetos a serem observados]</td>
@@ -260,7 +260,7 @@ Este módulo faz uma chamada de API personalizada para a API [!DNL Adobe Workfro
       <td>
         <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p>
         <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] O adiciona cabeçalhos de autorização automaticamente.</p>
+        <p>O Workfront Fusion adiciona cabeçalhos de autorização automaticamente.</p>
       </td>
     </tr>
     <tr>
@@ -271,7 +271,7 @@ Este módulo faz uma chamada de API personalizada para a API [!DNL Adobe Workfro
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Corpo]</td>
-   <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Nota:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
+   <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
@@ -315,7 +315,7 @@ Este módulo de ação recupera uma lista de registros com base nos critérios q
       <td role="rowheader">
         <p>[!UICONTROL Condição para filtros]</p>
       </td>
-      <td>Selecione a condição para seus filtros:<ul><li><b>E</b><p>O módulo retorna registros que correspondem a <b>todos</b> dos valores de campo selecionados.</p></li><li><b>OU</b><p>O módulo retorna registros que correspondem a <b>qualquer</b> dos valores de campo selecionados.</p></li></ul></td> 
+      <td>Selecione a condição para seus filtros:<ul><li><b>E</b><p>O módulo retorna registros que correspondem a <b>todos</b> dos valores de campo selecionados.</p></li><li><b>OR</b><p>O módulo retorna registros que correspondem a <b>qualquer</b> dos valores de campo selecionados.</p></li></ul></td> 
       </tr>
      <tr>
       <td role="rowheader">

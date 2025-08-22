@@ -1,13 +1,13 @@
 ---
 title: Tipos de dados de item
-description: Seus  [!DNL Adobe Workfront Fusion] cenários podem conter os tipos de itens listados abaixo em um pacote.
+description: Os cenários do Adobe Workfront Fusion podem conter os tipos de itens listados abaixo em um pacote.
 author: Becky
 feature: Workfront Fusion
 exl-id: 3ad65959-5c19-4727-bc9d-4ff1d238ad8b
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 0%
+source-wordcount: '577'
+ht-degree: 1%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Você pode conter os tipos de itens listados abaixo em um pacote.
 
-Para obter informações sobre quais tipos de itens [!DNL Workfront Fusion] permitem a conversão entre si, consulte [Coerção de tipo](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md).
+Para obter informações sobre quais tipos de itens o Workfront Fusion permite a conversão entre si, consulte [Coerção de tipo](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md).
 
 <table style="table-layout:auto">
  <col> 
@@ -23,11 +23,11 @@ Para obter informações sobre quais tipos de itens [!DNL Workfront Fusion] perm
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>Texto</p> </td> 
-   <td> <p>O tipo de item mais comum. Para alguns itens de texto, o [!DNL Adobe Workfront Fusion] verifica se o comprimento máximo ou mínimo permitido foi atingido ou se o item executa a validação de formato (email, URL ou nome de arquivo).</p> </td> 
+   <td> <p>O tipo de item mais comum. Para alguns itens de texto, o Adobe Workfront Fusion verifica se o comprimento máximo ou mínimo permitido foi atingido ou se o item executa a validação de formato (email, URL ou nome de arquivo).</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Número</p> </td> 
-   <td> <p>Para alguns itens numéricos, [!DNL Workfront Fusion] pode validar a entrada para um intervalo especificado (o valor mínimo ou máximo permitido).</p> </td> 
+   <td> <p>Para alguns itens numéricos, o Workfront Fusion pode validar a entrada para um intervalo especificado (o valor mínimo ou máximo permitido).</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Booleano (Sim/Não)</p> </td> 
@@ -35,7 +35,7 @@ Para obter informações sobre quais tipos de itens [!DNL Workfront Fusion] perm
     <ul> 
      <li> <p>A caixa de seleção obrigatória é exibida caso o campo seja obrigatório e deva ser preenchido.</p> <p> <img src="assets/boolean-checkbox-350x158.jpg" style="width: 350;height: 158;"> </p> </li> 
      <li> <p>Campos opcionais que podem ser deixados em branco são exibidos como uma caixa de seleção, permitindo a seleção entre três valores: <code>Yes</code>, <code>No</code> e <code>Not defined</code> (padrão).</p> <p> <img src="assets/boolean-convert-file-350x129.jpg" style="width: 350;height: 129;"> </p> </li> 
-    </ul> <p>Você pode clicar em <strong>[!UICONTROL Map]</strong> se precisar mapear o valor para um item de outro módulo.</p> </td> 
+    </ul> <p>Você pode clicar em <strong>[!UICONTROL Mapa]</strong> se precisar mapear o valor para um item de outro módulo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Data</p> </td> 
@@ -43,7 +43,7 @@ Para obter informações sobre quais tipos de itens [!DNL Workfront Fusion] perm
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Buffer (dados binários)</p> </td> 
-   <td> <p>O conteúdo do arquivo geralmente é enviado como conteúdo do tipo Buffer (conteúdo de imagem, arquivo de vídeo e outros). Em alguns casos, dados de texto são incluídos nesse tipo (por exemplo, um arquivo de texto). O [!DNL Workfront Fusion] pode converter automaticamente dados de texto em código binário em texto e texto em dados de texto em código binário. Para obter mais informações, consulte <a href="/help/workfront-fusion/create-scenarios/map-data/map-files.md" class="MCXref xref">Arquivos de mapa</a>.</p> </td> 
+   <td> <p>O conteúdo do arquivo geralmente é enviado como conteúdo do tipo Buffer (conteúdo de imagem, arquivo de vídeo e outros). Em alguns casos, dados de texto são incluídos nesse tipo (por exemplo, um arquivo de texto). O Workfront Fusion é capaz de converter automaticamente dados de texto em código binário em texto e texto em dados de texto em código binário. Para obter mais informações, consulte <a href="/help/workfront-fusion/create-scenarios/map-data/map-files.md" class="MCXref xref">Arquivos de mapa</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Coleção</p> </td> 
@@ -59,7 +59,7 @@ Para obter informações sobre quais tipos de itens [!DNL Workfront Fusion] perm
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Validação</p> </td> 
-   <td> <p>[!DNL Workfront Fusion] executar a validação em cada tipo de item. Se um item não passar na validação, o módulo parará de ser processado devido a um erro de dados. Para obter mais informações, consulte <a href="/help/workfront-fusion/references/errors/error-processing.md" class="MCXref xref">Tipos de erro </a>. </p> </td> 
+   <td> <p>O Workfront Fusion pode executar a validação em cada tipo de item. Se um item não passar na validação, o módulo parará de ser processado devido a um erro de dados. Para obter mais informações, consulte <a href="/help/workfront-fusion/references/errors/error-processing.md" class="MCXref xref">Tipos de erro </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>

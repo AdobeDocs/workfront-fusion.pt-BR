@@ -4,9 +4,9 @@ description: O Adobe Workfront Fusion oferece duas licenças diferentes que dete
 author: Becky
 feature: Workfront Fusion
 exl-id: 6e2df1a0-c1f9-4833-b1c2-65efb3be9657
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '763'
 ht-degree: 1%
 
 ---
@@ -40,9 +40,9 @@ Para descobrir que tipo de licença do Workfront Fusion sua organização tem, e
 
 #### Benefícios da automação do Workfront Fusion for Work
 
-Uma licença do Workfront Fusion for Work Automation permite automatizar os fluxos de trabalho do [!DNL Workfront]. Ao usar o Workfront Fusion for Work Automation, é possível criar cenários para automatizar os processos de trabalho exclusivos de sua organização.
+Uma licença do Workfront Fusion for Work Automation permite automatizar os workflows do Workfront. Ao usar o Workfront Fusion for Work Automation, é possível criar cenários para automatizar os processos de trabalho exclusivos de sua organização.
 
-Os benefícios da automatização dos processos do [!DNL Workfront] incluem:
+Os benefícios da automatização dos processos do Workfront incluem:
 
 * A automação é mais rápida e menos propensa a erros.
 * Fluxos de trabalho que não exigem nenhuma decisão ou que têm decisões são baseados em lógica simples, como se/então, são bons candidatos para automação.
@@ -105,8 +105,8 @@ Para obter uma lista de conectores dedicados disponíveis, consulte [Referência
 O exemplo a seguir mostra um workflow que:
 
 1. Observa uma planilha para novos usuários
-1. Verifica se o usuário existe em [!DNL Workfront]
-1. Cria o usuário em [!DNL Workfront] se ele não existir
-1. Carrega a ID de usuário [!DNL Workfront] de volta para a planilha.
+1. Verifica se o usuário existe no Workfront
+1. Cria o usuário no Workfront se o usuário não existia
+1. Faz upload da ID de usuário do Workfront de volta para a planilha.
 
 ![Exemplo de cenário de automação](assets/fusion-integration-example.png)

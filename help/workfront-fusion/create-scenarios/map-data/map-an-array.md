@@ -4,9 +4,9 @@ description: Você pode mapear uma matriz ou elementos de matriz individuais par
 author: Becky
 feature: Workfront Fusion
 exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Uma matriz é um item do pacote que pode conter o seguinte:
 
 **Exemplo:**
 
-* **Matriz complexa**: o módulo [!UICONTROL Watch emails] retorna uma matriz de anexos para cada email. Cada anexo representa uma coleção que pode conter um nome, conteúdo, tamanho e assim por diante.
+* **Matriz complexa**: o módulo [!UICONTROL Assistir emails] retorna uma matriz de anexos para cada email. Cada anexo representa uma coleção que pode conter um nome, conteúdo, tamanho e assim por diante.
 
 >[!ENDSHADEBOX]
 
@@ -37,17 +37,17 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] pacote</td> 
+   <td role="rowheader">Pacote do Adobe Workfront</td> 
    <td> <p>Qualquer</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licença</td> 
-   <td> <p>Novo: [!UICONTROL Standard]</p><p>Ou</p><p>Atual: [!UICONTROL Work] ou superior</p> </td> 
+   <td role="rowheader">Licença do Adobe Workfront</td> 
+   <td> <p>Novo: Padrão</p><p>Ou</p><p>Atual: [!UICONTROL Trabalho] ou superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licença**</td> 
+   <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
    <td>
-   <p>Atual: nenhum requisito de licença [!DNL Workfront Fusion].</p>
+   <p>Atual: nenhum requisito de licença do Workfront Fusion.</p>
    <p>Ou</p>
    <p>Herdados: Qualquer um </p>
    </td> 
@@ -55,9 +55,9 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Novo:</p> <ul><li>[!UICONTROL Select] ou plano do [!UICONTROL Prime] [!DNL Workfront]: sua organização deve comprar o [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plano: [!DNL Workfront Fusion] está incluído.</li></ul>
+   <p>Novo menu:</p> <ul><li>Plano do Workfront para [!UICONTROL Select] ou [!UICONTROL Prime]: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Plano do Workfront do [!UICONTROL Ultimate]: o Workfront Fusion está incluído.</li></ul>
    <p>Ou</p>
-   <p>Atual: sua organização deve comprar o [!DNL Adobe Workfront Fusion].</p>
+   <p>Atual: sua organização deve comprar o Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -65,24 +65,24 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
 
 Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Mapear uma matriz inteira
 
-1. Clique na guia **[!UICONTROL Scenarios]** no painel esquerdo.
+1. Clique na guia **[!UICONTROL Cenários]** no painel esquerdo.
 1. Selecione o cenário no qual deseja mapear uma matriz.
 1. Clique em qualquer lugar no cenário para entrar no editor de cenários.
 1. No módulo para o qual deseja mapear a matriz, clique no campo onde deseja mapear a matriz. Este é o campo para o qual a matriz está mapeada.
 
 1. Na caixa exibida, mapeie o item.
 
-   O painel permite mapear campos da mesma forma que com qualquer outro tipo de item. Se você não quiser preencher cada item separadamente, mas quiser mapear outra matriz no campo de destino, use o botão [!UICONTROL Map]. Nesse caso, verifique se ambos os storages (o storage de origem e o storage de destino) têm a mesma estrutura.
+   O painel permite mapear campos da mesma forma que com qualquer outro tipo de item. Se você não quiser preencher cada item separadamente, mas quiser mapear outra matriz no campo de destino, use o botão [!UICONTROL Mapear]. Nesse caso, verifique se ambos os storages (o storage de origem e o storage de destino) têm a mesma estrutura.
 
    Você pode adicionar qualquer número de itens a uma matriz.
 
-É possível dividir uma matriz em pacotes individuais usando um iterador. Para obter mais informações, consulte o módulo [[!UICONTROL Iterator] em [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/modules/iterator-module.md).
+É possível dividir uma matriz em pacotes individuais usando um iterador. Para obter mais informações, consulte o módulo [[!UICONTROL Iterador] no Adobe Workfront Fusion](/help/workfront-fusion/references/modules/iterator-module.md).
 
 ## Mapear itens em uma nova matriz
 
@@ -151,7 +151,7 @@ A fórmula pode ser explicada da seguinte maneira:
 * `map`
 
    1. O primeiro parâmetro da função `map()` é o item de matriz inteiro.
-   1. O segundo parâmetro é o nome bruto do item de valor. Para obter o nome bruto, passe o mouse sobre o item no painel [!UICONTROL mapping]:
+   1. O segundo parâmetro é o nome bruto do item de valor. Para obter o nome bruto, passe o mouse sobre o item no painel [!UICONTROL mapeamento]:
 
       ![Obter nome bruto](assets/obtain-raw-name-350x124.png)
 
@@ -185,6 +185,6 @@ Para obter mais informações sobre a função `get()`, consulte [Funções gera
 
 ## Converter elementos de matriz em uma série de pacotes
 
-Matrizes podem ser convertidas em uma série de pacotes usando o módulo [!UICONTROL Iterator]. Para obter mais informações, consulte [[!UICONTROL Iterator] módulo](/help/workfront-fusion/references/modules/iterator-module.md).
+Matrizes podem ser convertidas em uma série de conjuntos usando o módulo [!UICONTROL Iterador]. Para obter mais informações, consulte [[!UICONTROL Iterador] módulo](/help/workfront-fusion/references/modules/iterator-module.md).
 
 ![Série de pacotes](assets/series-of-bundles.png)

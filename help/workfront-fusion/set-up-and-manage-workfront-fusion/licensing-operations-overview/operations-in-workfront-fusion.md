@@ -4,10 +4,10 @@ description: Uma operação no Adobe Workfront Fusion é uma tarefa executada po
 author: Becky
 feature: Workfront Fusion
 exl-id: c14e2bb2-1cce-48ff-8bea-acc9829d3cf2
-source-git-commit: 3470f7a9658ac4e6214c27f94f5b41821f2f8665
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 0%
+source-wordcount: '355'
+ht-degree: 1%
 
 ---
 
@@ -29,9 +29,9 @@ Uma operação no Adobe Workfront Fusion é uma tarefa executada por um módulo.
 
 ## Limites de operação
 
-Sua organização pode ter um limite mensal de operações. Isso se baseia no plano [!DNL Workfront] que sua organização adquiriu. O plano [!UICONTROL Ultimate] [!DNL Workfront] oferece operações ilimitadas.
+Sua organização pode ter um limite mensal de operações. Isso se baseia no plano Workfront adquirido pela sua organização. O plano do Workfront [!UICONTROL Ultimate] oferece operações ilimitadas.
 
-Se sua organização tiver um limite mensal, você será notificado quando ela estiver perto do limite. Se sua organização ultrapassar o limite, o [!DNL Workfront] entrará em contato com sua organização para garantir que seu plano atenda às suas necessidades.
+Se sua organização tiver um limite mensal, você será notificado quando ela estiver perto do limite. Se sua organização ultrapassar o limite, a Workfront entrará em contato com sua organização para garantir que seu plano atenda às suas necessidades.
 
 O Workfront Fusion envia uma notificação quando sua organização atinge as seguintes porcentagens do limite mensal da organização:
 

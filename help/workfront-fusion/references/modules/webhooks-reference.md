@@ -4,9 +4,9 @@ description: Muitos serviços fornecem webhooks para fornecer notificações ins
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '868'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Ao configurar um acionador instantâneo, você será solicitado a selecionar qua
 
 ![Configuração de agendamento](assets/schedule-setting.png)
 
-Selecione `Immediately` para executar o cenário imediatamente quando [!DNL Workfront Fusion] receber novos eventos do serviço. Esses eventos são enviados imediatamente para uma fila e processados no cenário, um de cada vez, na mesma ordem em que os dados são recebidos.
+Selecione `Immediately` para executar o cenário imediatamente quando o Workfront Fusion receber novos eventos do serviço. Esses eventos são enviados imediatamente para uma fila e processados no cenário, um de cada vez, na mesma ordem em que os dados são recebidos.
 
 Quando o cenário é executado, a quantidade total de eventos pendentes em espera na fila é contada e o cenário executa quantos ciclos houver de eventos pendentes, processando um evento por ciclo.
 
@@ -60,10 +60,10 @@ Para obter mais informações sobre ciclos, consulte [Execução do cenário, ci
 >
 
 
-Se você usar qualquer configuração de agendamento diferente de [!UICONTROL Immediately], o cenário será executado nos intervalos especificados. Como vários webhooks podem ser coletados na fila durante o intervalo, recomendamos definir a opção [!UICONTROL Maximum number of cycles] com um valor maior que o padrão 1 para processar mais webhooks em uma execução de cenário:
+Se você usar qualquer outra configuração de agendamento que não [!UICONTROL Imediatamente], o cenário será executado nos intervalos especificados. Como vários webhooks podem ser coletados na fila durante o intervalo, recomendamos definir a opção [!UICONTROL Número máximo de ciclos] com um valor maior que o padrão 1 para processar mais webhooks em uma execução de cenário:
 
-1. Clique no ícone [!UICONTROL Scenario settings] ![Ícone de configurações do cenário](assets/scenario-settings-icon.png) na parte inferior do cenário.
-1. No painel **[!UICONTROL Scenario settings]** exibido, insira um número no campo **[!UICONTROL Max number of cycles]** para indicar o número de eventos da fila que você deseja executar sempre que executar o cenário.
+1. Clique no ícone [!UICONTROL Configurações de cenário] ícone ![Configurações de cenário](assets/scenario-settings-icon.png) na parte inferior do cenário.
+1. No painel **[!UICONTROL Configurações de cenário]** exibido, insira um número no campo **[!UICONTROL Número máximo de ciclos]** para indicar o número de eventos da fila que você deseja executar sempre que executar o cenário.
 
 Os eventos restantes na fila serão processados na próxima vez que o cenário for executado, até o número definido no campo Número máximo de ciclos.
 
@@ -81,20 +81,20 @@ Um webhook que não foi atribuído a nenhum cenário por mais de 120 horas é re
 
 ### Cargas do Webhook
 
-O [!DNL Workfront Fusion] armazena cargas de webhook por 30 dias. Acessar uma carga de webhook mais de 30 dias após sua criação resulta no erro [!UICONTROL `Failed to read file from storage.`]
+O Workfront Fusion armazena cargas de webhook por 30 dias. Acessar uma carga de webhook mais de 30 dias após sua criação resulta no erro [!UICONTROL `Failed to read file from storage.`]
 
 ### Tratamento de erros
 
 Quando há um erro no seu cenário com um acionador instantâneo, o cenário:
 
-* Para imediatamente quando o cenário está definido para execução [!UICONTROL Immediately].
+* Para imediatamente quando o cenário está definido para execução [!UICONTROL Imediatamente].
 * Interrompe após 3 tentativas malsucedidas (3 erros) quando o cenário está definido para ser executado como programado.
 
 Se ocorrer um erro durante a execução do cenário, o evento será colocado de volta na fila durante a fase de reversão do acionador instantâneo. Nessa situação, você pode corrigir o cenário e executá-lo novamente.
 
 Para obter mais informações, consulte [Reversão](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#rollback) no artigo Execução de cenário, ciclos e fases.
 
-Se houver um módulo de resposta do Webhook em seu cenário, o erro será enviado para a resposta do Webhook. O módulo de resposta do Webhook é sempre executado por último (quando a opção [!UICONTROL Auto commit] nas configurações de Cenário não está habilitada).
+Se houver um módulo de resposta do Webhook em seu cenário, o erro será enviado para a resposta do Webhook. O módulo de resposta do Webhook é sempre executado por último (quando a opção [!UICONTROL Confirmação automática] nas configurações de Cenário não está habilitada).
 
 Para obter mais informações, consulte [Responding to webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md#responding-to-webhooks) no artigo Webhooks.
 

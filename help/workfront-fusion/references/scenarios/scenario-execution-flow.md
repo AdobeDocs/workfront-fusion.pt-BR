@@ -5,9 +5,9 @@ description: Este artigo explica como um cenário é executado e como os dados f
 author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
-source-git-commit: 0ef6dde9566ca3b97c1c52d6055f0ce44f575cee
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,11 @@ Se o módulo de acionamento retornar algum pacote de dados, esses pacotes passar
 
 Se os pacotes forem processados corretamente por todos os módulos, o cenário será marcado como bem-sucedido na página de detalhes do cenário.
 
-### Exemplo: [!UICONTROL [!DNL Workfront Fusion] para Automação de Trabalho]
+### Exemplo: [!UICONTROL Workfront Fusion para Automação de Trabalho]
 
 >[!BEGINSHADEBOX]
 
-**Exemplo:** neste cenário que observa as solicitações recebidas em [!DNL Workfront] e as converte em projetos [!DNL Workfront], os dados fluiriam da seguinte maneira:
+**Exemplo:** neste cenário que observa as solicitações recebidas no Workfront e as converte em projetos Workfront, os dados fluiriam da seguinte maneira:
 
 O primeiro passo do cenário, executado pelo primeiro módulo, é observar as solicitações. Cada solicitação encontrada é considerada um pacote. Se o módulo for executado sem encontrar nenhum pacote, o cenário terminará após o primeiro módulo.
 
@@ -42,11 +42,11 @@ Se o primeiro módulo retornar um pacote, ele passará pelo restante do cenário
 
 >[!ENDSHADEBOX]
 
-### Exemplo: [!UICONTROL [!DNL Workfront Fusion] para Automação e Integração de Trabalho]
+### Exemplo: [!UICONTROL Automação e Integração do Workfront Fusion for Work]
 
 >[!BEGINSHADEBOX]
 
-**Exemplo:** Neste cenário, que baixa documentos de [!DNL Adobe Workfront] e os envia para uma pasta em [!DNL Dropbox], os dados fluiriam da seguinte maneira:
+**Exemplo:** Neste cenário, que baixa documentos do Adobe Workfront e os envia para uma pasta em [!DNL Dropbox], os dados fluiriam da seguinte maneira:
 
 O primeiro passo do cenário, realizado pelo primeiro módulo, é observar documentos no Workfront. Cada documento encontrado é considerado um pacote. Se o módulo for executado sem encontrar nenhum pacote, o cenário terminará após o primeiro módulo.
 

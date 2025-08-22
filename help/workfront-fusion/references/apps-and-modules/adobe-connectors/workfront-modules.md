@@ -4,10 +4,10 @@ description: Você pode usar o conector do Adobe Workfront Fusion Adobe Workfron
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 9dfab6838057a5852a2725dbfd398144ea2097dd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '8061'
-ht-degree: 2%
+source-wordcount: '8067'
+ht-degree: 6%
 
 ---
 
@@ -46,7 +46,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Novo:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
+   <p>Novo menu:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
    <p>Ou</p>
    <p>Atual: sua organização deve comprar o Adobe Workfront Fusion.</p>
    </td> 
@@ -56,7 +56,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
 
 Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte [[!DNL Adobe Workfront Fusion] licenças](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 
 >[!NOTE]
@@ -140,7 +140,7 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 >* Se você não vir os campos mais atualizados em um módulo do Workfront, isso pode ser devido a problemas de cache. Aguarde uma hora e tente novamente.
 >* Os códigos de status HTTP 429 do Adobe Workfront não devem causar desativações, mas acionar uma pausa de execução curta no cenário.
 
-* [Acionadores](#triggers)
+* [Triggers](#triggers)
 * [Ações](#actions)
 * [Pesquisas](#searches)
 
@@ -206,7 +206,7 @@ O módulo retorna quaisquer campos padrão associados ao registro, juntamente co
 
 Depois que o webhook for criado, você poderá exibir o endereço do endpoint para o qual os eventos são enviados.
 
-Para obter mais informações, consulte a seção [Exemplos de cargas de evento](https://experienceleague.adobe.com/pt-br/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) no artigo API de assinatura de evento na documentação do Workfront.
+Para obter mais informações, consulte a seção [Exemplos de cargas de evento](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) no artigo API de assinatura de evento na documentação do Workfront.
 
 Veja uma lista dos tipos de objetos do Workfront para os quais você pode usar este módulo em [tipos de objetos do Workfront disponíveis para cada módulo do Workfront](#workfront-object-types-available-for-each-workfront-module).
 
@@ -375,7 +375,7 @@ Esse módulo de ação faz uma das seguintes conversões:
 
 +++
 
-+++ **[!UICONTROL Criar um registro]**
++++ **[!UICONTROL Criar um registro]** 
 
 Esse módulo de ação cria um objeto, como um projeto, tarefa ou problema no Workfront, e permite adicionar um formulário personalizado ao novo objeto. O módulo permite selecionar quais dos campos do objeto estão disponíveis no módulo.
 
@@ -439,7 +439,7 @@ Veja uma lista dos tipos de objetos do Workfront para os quais você pode usar e
 >
 >   Para resolver usuários que foram adicionados em um lote grande, é possível adicionar o lote de usuários diretamente ao Adobe Admin Console.
 >
->   Para obter instruções, consulte [Gerenciar vários usuários | Upload em massa de CSV](https://helpx.adobe.com/br/enterprise/using/bulk-upload-users.html) na documentação do Adobe.
+>   Para obter instruções, consulte [Gerenciar vários usuários | Upload em massa de CSV](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html) na documentação do Adobe.
 
 +++
 
@@ -448,7 +448,7 @@ Veja uma lista dos tipos de objetos do Workfront para os quais você pode usar e
 >[!IMPORTANT]
 >
 >Esse módulo foi substituído pelo módulo Criar um registro. Recomendamos o uso desse módulo em novos cenários.
->Os cenários existentes que usam esse módulo continuarão a funcionar conforme esperado. Este módulo será removido do seletor de módulos em maio de 2025.
+>>Os cenários existentes que usam esse módulo continuarão a funcionar conforme esperado. Este módulo será removido do seletor de módulos em maio de 2025.
 
 Esse módulo de ação cria um objeto, como um projeto, tarefa ou problema no Workfront. O módulo permite selecionar quais dos campos do objeto estão disponíveis no módulo.
 
@@ -539,7 +539,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Corpo]</td> 
-   <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Nota:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
+   <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -665,7 +665,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
       </ul> <p>Para todos os outros tipos de registro, selecione <b>[!UICONTROL Outros objetos e pontos de extremidade]</b> e localize o tipo de registro nas páginas classificadas alfabeticamente.</p> </li> 
      <li value="2"> <p>Na página do tipo de registro apropriado, pesquise (Ctrl-F ou Cmd-F) a ação.</p> </li> 
      <li value="3"> <p>Exibir descrições para campos disponíveis sob a ação selecionada.</p> </li> 
-    </ol> <p>Nota:  <p>Ao criar uma prova por meio do módulo [!UICONTROL Misc Action] da Workfront, a prática recomendada é criar uma prova sem nenhuma opção avançada e, em seguida, atualizar a prova usando a API do SOAP [!DNL Workfront Proof].</p><p>Para obter mais informações sobre como criar uma prova com a API Workfront (que este módulo usa), consulte <a href="https://experienceleague.adobe.com/pt-br/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Adicionar opções de prova avançada ao criar uma prova por meio da API Adobe Workfront</a></p> </p> </td> 
+    </ol> <p>Observação:  <p>Ao criar uma prova por meio do módulo [!UICONTROL Misc Action] da Workfront, a prática recomendada é criar uma prova sem nenhuma opção avançada e, em seguida, atualizar a prova usando a API do SOAP [!DNL Workfront Proof].</p><p>Para obter mais informações sobre como criar uma prova com a API Workfront (que este módulo usa), consulte <a href="https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Adicionar opções de prova avançada ao criar uma prova por meio da API Adobe Workfront</a></p> </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
@@ -886,7 +886,7 @@ Veja uma lista dos tipos de objetos do Workfront para os quais você pode usar e
 >[!IMPORTANT]
 >
 >Esse módulo foi substituído pelo módulo Ler um registro. Recomendamos o uso desse módulo em novos cenários.
->Os cenários existentes que usam esse módulo continuarão a funcionar conforme esperado. Este módulo será removido do seletor de módulos em maio de 2025.
+>>Os cenários existentes que usam esse módulo continuarão a funcionar conforme esperado. Este módulo será removido do seletor de módulos em maio de 2025.
 
 Este módulo de ação recupera dados de um único registro.
 
@@ -939,9 +939,9 @@ Veja uma lista dos tipos de objetos do Workfront para os quais você pode usar e
 
 A Workfront lançou recentemente uma nova versão de seu serviço de assinatura de eventos. A nova versão não é uma alteração na API do Workfront, mas uma alteração na funcionalidade de assinatura do evento. Este módulo de ação atualiza a versão de carga útil do evento usada para este cenário.
 
-Para obter mais informações sobre a nova versão de assinatura de eventos, consulte [Versão de assinatura de eventos](https://experienceleague.adobe.com/pt-br/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) na documentação da Workfront
+Para obter mais informações sobre a nova versão de assinatura de eventos, consulte [Versão de assinatura de eventos](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) na documentação da Workfront
 
-Para obter recursos sobre como preservar seus cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservando seus cenários do Fusion Durante a Atualização da V2 de Assinaturas do Evento](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=pt).
+Para obter recursos sobre como preservar seus cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservando seus cenários do Fusion Durante a Atualização da V2 de Assinaturas do Evento](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 <table style="table-layout:auto">
  <col> 
@@ -1015,7 +1015,7 @@ Veja uma lista dos tipos de objetos do Workfront para os quais você pode usar e
 >[!IMPORTANT]
 >
 >Este módulo foi substituído pelo módulo Atualizar um registro. Recomendamos o uso desse módulo em novos cenários.
->Os cenários existentes que usam esse módulo continuarão a funcionar conforme esperado. Este módulo será removido do seletor de módulos em maio de 2025.
+>>Os cenários existentes que usam esse módulo continuarão a funcionar conforme esperado. Este módulo será removido do seletor de módulos em maio de 2025.
 
 Esse módulo de ação atualiza um objeto, como um projeto, tarefa ou problema. O módulo permite selecionar quais dos campos do objeto estão disponíveis no módulo.
 
@@ -1249,7 +1249,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
 >[!IMPORTANT]
 >
 >Esse módulo foi substituído pelo módulo Search records. Recomendamos o uso desse módulo em novos cenários.
->Os cenários existentes que usam esse módulo continuarão a funcionar conforme esperado. Este módulo será removido do seletor de módulos em maio de 2025.
+>>Os cenários existentes que usam esse módulo continuarão a funcionar conforme esperado. Este módulo será removido do seletor de módulos em maio de 2025.
 
 Esse módulo de pesquisa procura registros em um objeto no Workfront que correspondam à consulta de pesquisa especificada.
 
@@ -1461,7 +1461,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>Hora</td> 
+   <td>Hour</td> 
    <td> </td> 
    <td>✓</td> 
    <td>✓</td> 
@@ -1509,7 +1509,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>Nota</td> 
+   <td>Observação</td> 
    <td>✓</td> 
    <td>✓</td> 
    <td>✓</td> 
@@ -1617,7 +1617,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td>✓</td> 
   </tr> 
   <tr> 
-   <td>Atualizar</td> 
+   <td>Atualização</td> 
    <td> </td> 
    <td> </td> 
    <td> </td> 
@@ -1796,7 +1796,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td>✓</td> 
   </tr> 
   <tr> 
-   <td>Hora</td> 
+   <td>Hour</td> 
    <td>✓</td> 
    <td>✓</td> 
    <td>✓</td> 
@@ -1876,7 +1876,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>Nota</td> 
+   <td>Observação</td> 
    <td>✓</td> 
    <td>✓</td> 
    <td>✓</td> 
@@ -2036,7 +2036,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td>✓</td> 
   </tr> 
   <tr> 
-   <td>Atualizar</td> 
+   <td>Atualização</td> 
    <td> </td> 
    <td>✓</td> 
    <td> </td> 
@@ -2120,7 +2120,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td>✓</td> 
   </tr> 
   <tr> 
-   <td>Hora</td> 
+   <td>Hour</td> 
    <td>✓</td> 
    <td> </td> 
   </tr> 
@@ -2160,7 +2160,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>Nota</td> 
+   <td>Observação</td> 
    <td>✓</td> 
    <td> </td> 
   </tr> 
@@ -2259,9 +2259,9 @@ Recomendamos que você verifique novamente para garantir que isso funcione da ma
 >
 >* A Workfront lançou recentemente uma nova versão de seu serviço de assinatura de eventos. A nova versão não é uma alteração na API do Workfront, mas uma alteração na funcionalidade de assinatura do evento. Este módulo de ação atualiza a versão de carga útil do evento usada para este cenário.
 >
->   Para obter mais informações sobre a nova versão de assinatura de eventos, consulte [Versão de assinatura de eventos](https://experienceleague.adobe.com/pt-br/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) na documentação da Workfront
+>   Para obter mais informações sobre a nova versão de assinatura de eventos, consulte [Versão de assinatura de eventos](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) na documentação da Workfront
 >
->   Para obter recursos sobre como preservar seus cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservando seus cenários do Fusion Durante a Atualização de Assinaturas de Eventos V2(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=pt)].
+>   Para obter recursos sobre como preservar seus cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservando seus cenários do Fusion Durante a Atualização de Assinaturas de Eventos V2(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)].
 
 O módulo [!UICONTROL Assistir Eventos] do Workfront aciona cenários com base em um webhook que cria uma assinatura de evento na API do Workfront. A assinatura do evento é um conjunto de dados que determina quais eventos são enviados para o webhook. Por exemplo, se você configurar um módulo [!UICONTROL Eventos de observação] que esteja observando problemas, a assinatura do evento enviará somente eventos relacionados a problemas.
 
@@ -2311,7 +2311,7 @@ Os seguintes operadores estão disponíveis no filtro Workfront > Eventos de obs
 >
 >Se 100 edições forem criadas em um dia, mas apenas duas delas forem atribuídas a Ana, o cenário seria executado 100 vezes. 98 das execuções parariam no filtro, mas o módulo de acionamento ainda está consumindo dados e executando operações em todas as execuções.
 
-Para obter mais informações sobre assinaturas de eventos do Workfront, consulte [Perguntas frequentes - Assinaturas de Eventos](https://experienceleague.adobe.com/pt-br/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq).
+Para obter mais informações sobre assinaturas de eventos do Workfront, consulte [Perguntas frequentes - Assinaturas de Eventos](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq).
 
 Para obter mais informações sobre webhooks, consulte [Acionadores instantâneos (webhooks) no Adobe Workfront Fusion](/help/workfront-fusion/references/modules/webhooks-reference.md)
 
