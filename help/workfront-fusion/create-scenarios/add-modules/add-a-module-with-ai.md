@@ -75,7 +75,7 @@ Sua organização deve atender aos seguintes pré-requisitos para usar essa func
 * Sua organização deve ter participado do programa Workfront AI Assistant Beta.
 * A Adobe deve ter um contrato Gen AI da Adobe assinado no arquivo para sua organização.
 
-  Para obter mais informações sobre como assinar o contrato, consulte [Assinar o contrato da Adobe Gen AI](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) no artigo Visão geral do Assistente de IA na documentação da Workfront.
+  Para obter mais informações sobre como assinar o contrato, consulte [Assinar o contrato da Adobe Gen AI](https://experienceleague.adobe.com/pt-br/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) no artigo Visão geral do Assistente de IA na documentação da Workfront.
 
 ## Aplicativos do módulo de IA compatíveis no momento
 

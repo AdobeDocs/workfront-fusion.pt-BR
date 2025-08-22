@@ -62,7 +62,7 @@ Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [li
 
 Você deve adicionar os endereços IP do Fusion a [!DNL Adobe Campaign].
 
-* Para obter instruções sobre como adicionar endereços IP ao arquivo de incluir na lista de permissões inclui na lista de permissões do Campaign, consulte [Adicionar endereços IP ao arquivo](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list) na documentação do Adobe Campaign.
+* Para obter instruções sobre como adicionar endereços IP ao arquivo de incluir na lista de permissões inclui na lista de permissões do Campaign, consulte [Adicionar endereços IP ao arquivo](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list) na documentação do Adobe Campaign.
 * Incluir na lista de permissões incluir na lista de permissões Para obter uma lista de endereços IP a serem adicionados ao arquivo, consulte [Configurar Endereços IP para Fusion no arquivo da sua organização](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md).
 
 ## Informações da API do Adobe Campaign
@@ -86,7 +86,7 @@ O conector do Adobe Campaign usa o seguinte:
 >
 >É altamente recomendável criar uma conexão de servidor para servidor. A Adobe Campaign atualizou a API para aceitar somente conexões servidor para servidor. Se você estiver se conectando ao Campaign versão 8 ou superior, **deverá** criar uma conexão servidor a servidor.
 >
->Para obter mais informações sobre os novos requisitos de conexão do Campaign, consulte [Migração de operadores técnicos do Campaign para o Adobe Developer Console](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/ims-migration.html) na documentação do Campaign.
+>Para obter mais informações sobre os novos requisitos de conexão do Campaign, consulte [Migração de operadores técnicos do Campaign para o Adobe Developer Console](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/ims-migration.html?lang=pt-BR) na documentação do Campaign.
 
 1. Em qualquer módulo [!DNL Adobe Campaign], clique em **[!UICONTROL Adicionar]** ao lado do campo [!UICONTROL Conexão].
 1. Preencha os seguintes campos:
@@ -283,7 +283,7 @@ Este módulo faz uma chamada de API personalizada para a API [!DNL Adobe Campaig
 
 Este módulo de ação executa uma ação selecionada em um objeto na API [!DNL Adobe Campaign].
 
-Para obter informações sobre ações e campos específicos, consulte [[!DNL Adobe Campaign] - Documentação da API](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html).
+Para obter informações sobre ações e campos específicos, consulte [[!DNL Adobe Campaign] - Documentação da API](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=pt-BR).
 
 <table style="table-layout:auto"> 
  <col> 
