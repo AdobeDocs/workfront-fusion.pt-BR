@@ -4,9 +4,9 @@ description: As equipes são grupos menores dentro da organização e compartilh
 author: Becky
 feature: Workfront Fusion
 exl-id: 511b5a9c-0b7f-4003-ad86-4bbe630674e0
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: ecfba475bdf25cb5d9200246f7d86bfe20700f1c
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '351'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] licença</td> 
-   <td> <p>Novo: [!UICONTROL Standard]</p><p>Ou</p><p>Atual: [!UICONTROL Work] ou superior</p> </td> 
+   <td> <p>Novo: [!UICONTROL Padrão]</p><p>Ou</p><p>Atual: [!UICONTROL Trabalho] ou superior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] licença**</td> 
@@ -50,7 +50,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Novo:</p> <ul><li>[!UICONTROL Select] ou plano do [!UICONTROL Prime] [!DNL Workfront]: sua organização deve comprar o [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plano: [!DNL Workfront Fusion] está incluído.</li></ul>
+   <p>Novo menu:</p> <ul><li>Plano [!DNL Workfront] da [!UICONTROL Select] ou da [!UICONTROL Prime]: sua organização deve comprar [!DNL Adobe Workfront Fusion].</li><li>Plano [!DNL Workfront] da [!UICONTROL Ultimate] [!DNL Workfront Fusion] incluído.</li></ul>
    <p>Ou</p>
    <p>Atual: sua organização deve comprar o [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -81,8 +81,18 @@ Os proprietários e administradores da organização podem criar equipes. As equ
 
 Para criar um grupo:
 
-1. No painel de navegação esquerdo, clique em **[!UICONTROL Org overview]**
-1. Selecione a guia **[!UICONTROL Teams]**.
-1. Clique em **[!UICONTROL Add a new team]**.
+1. No painel de navegação esquerdo, clique em **[!UICONTROL Visão geral da organização]**
+1. Selecione a guia **[!UICONTROL Equipes]**.
+1. Clique em **[!UICONTROL Adicionar uma nova equipe]**.
    ![Criar uma equipe](assets/create-new-team-button.png)
 1. Digite um nome para a nova equipe e clique em **Adicionar**.
+
+## Editar uma equipe
+
+É possível editar o nome de uma equipe.
+
+1. No painel de navegação esquerdo, clique em **[!UICONTROL Visão geral da organização]**
+1. Selecione a guia **[!UICONTROL Equipes]**.
+1. Localize a equipe da qual você deseja editar o nome e clique em **Editar** na linha da equipe.
+1. Digite um novo nome para a equipe e clique em **Salvar**.
+

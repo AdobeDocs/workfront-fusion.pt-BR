@@ -1,23 +1,18 @@
 ---
-title: Exibir ou editar detalhes do usuário
-description: Gerenciar  [!DNL Adobe Workfront Fusion]  usuários na sua organização
+title: Exibir usuários em uma organização
+description: Você pode exibir uma lista dos usuários de sua organização
 author: Becky
 feature: Workfront Fusion
-exl-id: 0eeed98c-0c87-4e34-9efe-027f3f03af1b
 source-git-commit: ef41c85010b53bbc80c5b44ba8a622027c9e4911
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '233'
 ht-degree: 2%
 
 ---
 
-# Exibir ou editar detalhes do usuário
+# Exibir usuários em uma organização
 
-Os administradores do [!DNL Adobe Workfront Fusion] podem gerenciar os detalhes do usuário dentro do [!DNL Workfront Fusion].
-
->[!NOTE]
->
->Se sua organização estiver migrando para a Adobe Admin Console, não será possível gerenciar usuários na Workfront (adicionar ou excluir usuários). Você poderá executar essas ações no Adobe Admin Console após a conclusão da migração.
+É possível exibir, classificar e filtrar uma lista de usuários em sua organização.
 
 ## Requisitos de acesso
 
@@ -71,11 +66,15 @@ Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte
 
 +++
 
-## Exibir ou editar detalhes do usuário
+## Exibir usuários na área Usuários
 
-Os administradores do [!DNL Adobe Workfront Fusion] podem exibir e atualizar detalhes do usuário.
+1. Na navegação à esquerda, clique em **Visão geral da organização** no canto superior esquerdo da tela.
+1. Selecione a guia **Usuários**.
 
-1. Enquanto estiver logado como administrador [!DNL Workfront Fusion], selecione **[!UICONTROL Todos os usuários]** na navegação à esquerda.
-1. Clique em **[!UICONTROL Detalhes]** na linha do usuário que você deseja exibir.
-1. (Opcional) Para atualizar os detalhes do usuário, clique em **[!UICONTROL Opções]** no canto superior direito da tela e selecione **[!UICONTROL Alterar Detalhes]**.
-1. Edite os detalhes e clique em **Salvar**.
+   A lista Usuários é aberta.
+
+1. (Opcional) Para classificar a lista Usuários por qualquer coluna, clique no **ícone Classificar** ![ícone Classificar](assets/sort-icon.png) dessa coluna.
+1. (Opcional) Para ocultar ou exibir colunas, clique no ícone **Colunas** ![Colunas](assets/columns-icon.png) próximo ao canto superior direito da lista e, em seguida, habilite ou desabilite colunas.
+1. (Opcional) Para filtrar a lista, comece a digitar na barra de pesquisa. A lista filtra para incluir somente as equipes que incluem o termo de pesquisa.
+
+

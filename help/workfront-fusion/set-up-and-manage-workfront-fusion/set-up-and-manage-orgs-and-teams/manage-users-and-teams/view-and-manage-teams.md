@@ -1,23 +1,30 @@
 ---
-title: Exibir ou editar detalhes do usuário
-description: Gerenciar  [!DNL Adobe Workfront Fusion]  usuários na sua organização
+title: Exibir e gerenciar equipes
+description: Você pode exibir uma lista das equipes da sua organização e editar os nomes das equipes.
 author: Becky
 feature: Workfront Fusion
-exl-id: 0eeed98c-0c87-4e34-9efe-027f3f03af1b
 source-git-commit: ef41c85010b53bbc80c5b44ba8a622027c9e4911
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 2%
+source-wordcount: '301'
+ht-degree: 3%
 
 ---
 
-# Exibir ou editar detalhes do usuário
+# Exibir e gerenciar equipes
 
-Os administradores do [!DNL Adobe Workfront Fusion] podem gerenciar os detalhes do usuário dentro do [!DNL Workfront Fusion].
+Equipes são grupos de usuários que compartilham acesso a recursos específicos. Esses recursos podem incluir:
 
->[!NOTE]
->
->Se sua organização estiver migrando para a Adobe Admin Console, não será possível gerenciar usuários na Workfront (adicionar ou excluir usuários). Você poderá executar essas ações no Adobe Admin Console após a conclusão da migração.
+* Cenários
+* Conexões
+* Webhooks
+* Chaves
+* Armazenamentos de dados
+* Estruturas de dados
+* Configurações de notificação por email
+
+Você pode exibir uma lista de equipes da sua organização e editar os nomes das equipes.
+
+Para adicionar usuários a equipes, consulte [Adicionar um usuário a uma equipe](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md).
 
 ## Requisitos de acesso
 
@@ -71,11 +78,17 @@ Para obter informações sobre [!DNL Adobe Workfront Fusion] licenças, consulte
 
 +++
 
-## Exibir ou editar detalhes do usuário
+## Exibir e gerenciar equipes na área Equipes
 
-Os administradores do [!DNL Adobe Workfront Fusion] podem exibir e atualizar detalhes do usuário.
+1. Na navegação à esquerda, clique em **Visão geral da organização** no canto superior esquerdo da tela.
+1. Selecione a guia **Equipes**.
 
-1. Enquanto estiver logado como administrador [!DNL Workfront Fusion], selecione **[!UICONTROL Todos os usuários]** na navegação à esquerda.
-1. Clique em **[!UICONTROL Detalhes]** na linha do usuário que você deseja exibir.
-1. (Opcional) Para atualizar os detalhes do usuário, clique em **[!UICONTROL Opções]** no canto superior direito da tela e selecione **[!UICONTROL Alterar Detalhes]**.
-1. Edite os detalhes e clique em **Salvar**.
+   A lista Equipes é aberta.
+
+1. (Opcional) Para classificar a lista Equipes por qualquer coluna, clique no **ícone Classificar** ![ícone Classificar](assets/sort-icon.png) dessa coluna.
+1. (Opcional) Para ocultar ou exibir colunas, clique no ícone **Colunas** ![Colunas](assets/columns-icon.png) próximo ao canto superior direito da lista e, em seguida, habilite ou desabilite colunas.
+1. (Opcional) Para filtrar a lista, comece a digitar na barra de pesquisa. A lista filtra para incluir somente as equipes que incluem o termo de pesquisa.
+1. (Opcional) Para renomear uma equipe, clique em **Editar** na linha dessa equipe, em seguida, digite o novo nome da equipe e clique em **Salvar**.
+
+
+
