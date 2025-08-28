@@ -4,7 +4,7 @@ description: Com os módulos do Adobe Photoshop, você pode iniciar um cenário 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 95d52f8227c8a40c0db165eea9d2877e60446de9
 workflow-type: tm+mt
 source-wordcount: '5392'
 ht-degree: 0%
@@ -276,7 +276,7 @@ Esse módulo de ação aplica uma variedade de edições de documento e nível d
       <td role="rowheader">
         <p>[!UICONTROL (Opções) Camadas]</p>
       </td>
-   <td> Para cada camada que deseja adicionar, clique em Adicionar item e preencha os detalhes da camada. <p>Para obter detalhes sobre opções de camada, consulte <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_applyPsdEdits/">Aplicar edições de PSD</a> na documentação do Adobe Photoshop.  </td> 
+   <td> Para cada camada que deseja adicionar, clique em Adicionar item e preencha os detalhes da camada. <p>Para obter detalhes sobre opções de camada, consulte <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/modifyDocumentAsync">Aplicar edições de PSD</a> na documentação do Adobe Photoshop.  </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Saídas]</td>
@@ -552,7 +552,7 @@ Esse módulo de ação cria uma nova PSD com camadas opcionais e gera representa
       <td role="rowheader">
         <p>[!UICONTROL (Opções) Camadas]</p>
       </td>
-   <td> Para cada camada que deseja adicionar, clique em Adicionar item e preencha os detalhes da camada. <p>Para obter detalhes sobre opções de camada, consulte <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_createPsd/">Criar PSD</a> na documentação do Adobe Photoshop.  </td> 
+   <td> Para cada camada que deseja adicionar, clique em Adicionar item e preencha os detalhes da camada. <p>Para obter detalhes sobre opções de camada, consulte <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/createDocumentAsync">Criar PSD</a> na documentação do Adobe Photoshop.  </td> 
     </tr>
     <tr>
       <td role="rowheader">
@@ -599,7 +599,7 @@ Esse módulo de ação cria uma nova PSD com camadas opcionais e gera representa
     <tr>
       <td role="rowheader">[!UICONTROL (Saída) Outros campos]</td>
       <td>
-        <p><p>Para obter detalhes sobre opções de saída, consulte <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_createPsd/">Criar PSD</a> na documentação do Adobe Photoshop.  </p>
+        <p><p>Para obter detalhes sobre opções de saída, consulte <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/createDocumentAsync">Criar PSD</a> na documentação do Adobe Photoshop.  </p>
       </td>
     </tr>
     </tbody>
@@ -649,7 +649,7 @@ Esse módulo de ação edita camadas de texto em um arquivo do Photoshop. É pos
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Camadas]</td>
-   <td> <p>Para cada camada de texto que você deseja editar, clique em <b>Adicionar item</b> e insira as opções de camada.<p>Para obter detalhes sobre opções de camada, consulte <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_editText/">Editar texto</a> na documentação do Adobe Photoshop.</p>  </td>     </tr>
+   <td> <p>Para cada camada de texto que você deseja editar, clique em <b>Adicionar item</b> e insira as opções de camada.<p>Para obter detalhes sobre opções de camada, consulte <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">Editar texto</a> na documentação do Adobe Photoshop.</p>  </td>     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL (Saída) Armazenamento]</td>
       <td>
@@ -723,7 +723,7 @@ Para editar várias camadas, use o módulo [Editar camadas de texto](#edit-text-
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Camadas]</td>
-   <td> <p>Para obter detalhes sobre opções de camada, consulte <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_editText/">Editar camada de texto</a> na documentação do Adobe Photoshop.</p>  </td>     </tr>
+   <td> <p>Para obter detalhes sobre opções de camada, consulte <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">Editar camada de texto</a> na documentação do Adobe Photoshop.</p>  </td>     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Armazenamento de arquivo de saída]</td>
       <td>
@@ -885,7 +885,7 @@ Esse módulo de ação executa o Desfoque de Profundidade no arquivo selecionado
    <tr>
       <td role="rowheader">[!UICONTROL Outros campos]</td>
       <td>
-        <p>Para obter detalhes sobre outras opções de Desfoque de Profundidade, consulte <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_depthBlur/">Executar Desfoque de Profundidade </a>na documentação da API do Adobe Photoshop.</p>
+        <p>Para obter detalhes sobre outras opções de Desfoque de Profundidade, consulte <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">Executar Desfoque de Profundidade </a>na documentação da API do Adobe Photoshop.</p>
       </td>
     </tr>
   </tbody>
@@ -972,7 +972,7 @@ Esse módulo de ação executa uma ação Photoshop na imagem selecionada.
    <tr>
       <td role="rowheader">[!UICONTROL Outros campos]</td>
       <td>
-        <p>Para obter detalhes sobre outras opções de Desfoque de Profundidade, consulte <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_depthBlur/">Executar Desfoque de Profundidade </a>na documentação da API do Adobe Photoshop.</p>
+        <p>Para obter detalhes sobre outras opções de Desfoque de Profundidade, consulte <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">Executar Desfoque de Profundidade </a>na documentação da API do Adobe Photoshop.</p>
       </td>
     </tr>
   </tbody>
@@ -1047,7 +1047,7 @@ Esse módulo de ação executa o Recorte de produto na imagem selecionada.
    <tr>
       <td role="rowheader">[!UICONTROL Outros campos]</td>
       <td>
-        <p>Para obter detalhes sobre outras opções de Desfoque de Profundidade, consulte <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_depthBlur/">Executar Desfoque de Profundidade </a>na documentação da API do Adobe Photoshop.</p>
+        <p>Para obter detalhes sobre outras opções de Desfoque de Profundidade, consulte <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">Executar Desfoque de Profundidade </a>na documentação da API do Adobe Photoshop.</p>
       </td>
     </tr>
   </tbody>
@@ -1238,7 +1238,7 @@ Este módulo usa a API de objeto inteligente versão 2.
       <td role="rowheader">
         <p>[!UICONTROL Camadas]</p>
       </td>
-   <td>Para cada camada que você deseja adicionar ao Objeto inteligente, clique em Adicionar item e Insira o nome ou ID do objeto, o serviço de arquivos onde o Objeto inteligente está armazenado e o URL ou caminho da camada.<p>Para obter descrições das configurações avançadas nesta área, consulte <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">Substituir um objeto inteligente</a> na documentação da API do Photoshop </td> 
+   <td>Para cada camada que você deseja adicionar ao Objeto inteligente, clique em Adicionar item e Insira o nome ou ID do objeto, o serviço de arquivos onde o Objeto inteligente está armazenado e o URL ou caminho da camada.<p>Para obter descrições das configurações avançadas nesta área, consulte <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/replaceSmartObjectAsync">Substituir um objeto inteligente</a> na documentação da API do Photoshop </td> 
     </tr>
     <tr>
       <td role="rowheader">
@@ -1303,7 +1303,7 @@ Este módulo usa a versão herdada dos Objetos Inteligentes.
       <td role="rowheader">
         <p>[!UICONTROL Camadas]</p>
       </td>
-   <td>Para cada camada que você deseja adicionar ao Objeto inteligente, clique em Adicionar item e Insira o nome ou ID do objeto, o serviço de arquivos onde o Objeto inteligente está armazenado e o URL ou caminho da camada.<p>Para obter descrições das configurações avançadas nesta área, consulte <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">Substituir um objeto inteligente</a> na documentação da API do Photoshop </td> 
+   <td>Para cada camada que você deseja adicionar ao Objeto inteligente, clique em Adicionar item e Insira o nome ou ID do objeto, o serviço de arquivos onde o Objeto inteligente está armazenado e o URL ou caminho da camada.<p>Para obter descrições das configurações avançadas nesta área, consulte <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/replaceSmartObjectAsync">Substituir um objeto inteligente</a> na documentação da API do Photoshop </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Saídas]</td>

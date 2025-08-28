@@ -4,9 +4,9 @@ description: Você pode usar o módulo SOAP para se conectar às APIs do SOAP no
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 95d52f8227c8a40c0db165eea9d2877e60446de9
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '638'
 ht-degree: 1%
 
 ---
@@ -186,13 +186,11 @@ Se o módulo [!UICONTROL SOAP] se recusar a processar o arquivo WSDL ou lançar 
 
 1. Depois de localizado, copie a URL do atributo `location`.
 1. No Workfront Fusion, cole o URL no campo URL do módulo HTTP.
-1. Abra o [Cliente [!UICONTROL SOAP] do &lbrace;Online](https://wsdlbrowser.com/) em uma nova janela/guia do navegador da Web.
-1. Cole o URL do WSDL no campo URL do WSDL.
-1. Clique em **[!UICONTROL Procurar]**.
-1. Escolha na lista de funções à esquerda, por exemplo `getLanguages`.
-1. Copie o conteúdo da área de texto [!UICONTROL Solicitar XML].
-1. No [!UICONTROL Workfront Fusion], cole o conteúdo copiado no campo de URL do módulo.
-1. Forneça valores para os parâmetros selecionados substituindo os pontos de interrogação pelos valores reais:
+1. Forneça valores para os parâmetros selecionados substituindo os pontos de interrogação pelos valores reais.
+
+   >[!NOTE]
+   >
+   > Para obter valores específicos do arquivo WSDL, use um visualizador WSDL online.
 
    <!--![Request](/help/workfront-fusion/references/apps-and-modules/assets/request-xml-350x172.png)-->
 
