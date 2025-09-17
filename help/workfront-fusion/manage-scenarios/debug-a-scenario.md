@@ -4,9 +4,9 @@ description: O Adobe Workfront Fusion Devtool permite compreender e solucionar p
 author: Becky
 feature: Workfront Fusion
 exl-id: 34215370-27e3-4c28-8bd1-a16268900b86
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 71bd96915f21922d637433010acea9321ed476d5
 workflow-type: tm+mt
-source-wordcount: '1483'
+source-wordcount: '1514'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ O Adobe Workfront Fusion Devtool ajuda você a entender e solucionar problemas d
 Para obter uma introdução em vídeo e uma apresentação do Fusion Devtool, consulte
 
 * [Ferramenta de Desenvolvimento Fusion](https://video.tv.adobe.com/v/3427031/){target=_blank}
-* [Apresentação de Devtool](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=pt-BR)
+* [Apresentação de Devtool](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=en)
 
 ## Requisitos de acesso
 
@@ -150,6 +150,12 @@ O Live Stream exibe o que está acontecendo em segundo plano quando você clica 
    </table>
 
 ### Depurador de cenários
+
+>[!NOTE]
+>
+>Para acessar rapidamente o depurador a partir de um cenário com erro, você pode clicar em **Obter detalhes** na mensagem de erro na saída do módulo.
+>
+>![Obter detalhes na saída do módulo](assets/go-to-debugger.png)
 
 O Depurador de cenários é útil para cenários mais complexos. Ele exibe o histórico das execuções de cenário e permite pesquisar módulos pelo nome ou ID.
 
