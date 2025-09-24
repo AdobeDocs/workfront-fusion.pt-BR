@@ -4,10 +4,10 @@ description: Atualmente, há suporte para arquivos grandes nos conectores Workfr
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: a5a98d2e0b246d46389d4574e29f91c74f053472
+source-git-commit: 80cb3736d96d4b7c3226d78149842a80077e3551
 workflow-type: tm+mt
-source-wordcount: '1050'
-ht-degree: 1%
+source-wordcount: '1043'
+ht-degree: 2%
 
 ---
 
@@ -64,9 +64,15 @@ Se você planeja trabalhar com arquivos maiores, recomendamos substituir o módu
 
 ### Qual é o novo limite de tamanho de arquivo?
 
-Os usuários agora podem processar arquivos que excediam o limite anterior de 1 GB, aumentando a eficiência e a produtividade.  Embora a plataforma possa oferecer suporte a arquivos individuais de até 15 GB para uma única ação (como o upload de um arquivo), há outros fatores que afetam a transferência de dados. O limite de tamanho de arquivo de uma única ação depende do serviço Web ao qual o Fusion se conecta. A transferência de dados é o processamento total de uma única execução. Isso significa que várias ações em uma única execução contribuem para a transferência total de dados.
+Os usuários agora podem processar arquivos que excediam o limite anterior de 1 GB, aumentando a eficiência e a produtividade.  Embora não haja limite de tamanho de arquivo definido para a plataforma Workfront Fusion, há outros fatores que podem afetar o uso de arquivos grandes:
 
-O Fusion processa arquivos até que o limite de execução de 40 minutos seja atingido. Arquivos grandes podem levar algum tempo para carregar, baixar ou processar em seu cenário do Fusion. Embora não haja limite para o tamanho de arquivo individual, há um limite de 40 minutos no tempo de execução do cenário. Portanto, se arquivos grandes fazem com que a execução demore mais de 40 minutos, o cenário falha. O tempo de execução do cenário também pode ser afetado pelo tamanho do cenário, pela complexidade do módulo e pela velocidade da rede. Portanto, recomendamos que você considere esses aspectos de seus cenários ao usar arquivos grandes.
+* **Limitações de tamanho de arquivo do serviço ao qual o Fusion está se conectando**: se o serviço limitar o tamanho do arquivo, o Workfront Fusion não ultrapassará essa limitação. As limitações de tamanho de arquivo dependem do serviço Web ao qual o Fusion se conecta.
+
+* **Tempo de execução do cenário**: o Fusion processa arquivos de qualquer tamanho até que o limite de execução de 40 minutos seja atingido. Arquivos grandes podem levar algum tempo para carregar, baixar ou processar em seu cenário do Fusion. Se arquivos grandes fazem com que a execução demore mais de 40 minutos, o cenário falha. O tempo de execução do cenário também pode ser afetado pelo tamanho do cenário, pela complexidade do módulo e pela velocidade da rede. Portanto, recomendamos que você considere esses aspectos de seus cenários ao usar arquivos grandes.
+
+>[!NOTE]
+>
+>Como prática recomendada, limite o tamanho do arquivo para 15 GB.
 
 ### Como funciona a nova transferência de arquivos do Fusion?
 
@@ -92,7 +98,7 @@ Esse recurso já foi concluído e implantado na produção.
 
 Projetar um cenário para funcionar dentro do limite de execução de 40 minutos pode parecer complicado. Recomendamos considerar o seguinte ao criar um cenário:
 
-* **Entenda seus requisitos de negócios para o tempo de execução**: o limite do tempo de execução da plataforma Fusion é de 40 minutos, mas espera-se que a maioria das automações do processo de negócios seja executada muito mais rapidamente. Por exemplo, seria esperado que as automações iniciadas pelo usuário com continuidade dependente de resultados fossem bem concluídas abaixo do limite de 40 minutos.
+* **Entenda seus requisitos de negócios para o tempo de execução**: o limite do tempo de execução da plataforma Fusion é de 40 minutos, mas espera-se que a maioria das automações do processo de negócios seja executada muito mais rapidamente. Por exemplo, seria esperado que as automações iniciadas pelo usuário com continuação dependente de resultados terminassem bem abaixo do limite de 40 minutos.
 * **Considere o tempo de execução ao criar**: ao criar seu cenário, é essencial entender o tempo de execução do módulo para ações de arquivo individuais, como carregamentos e downloads. Esse conhecimento ajuda a planejar cenários que envolvem várias ações de arquivo.  Para garantir a precisão em seu design, recomendamos arredondar o tempo de execução do módulo para cima para incluir um buffer.
 Por exemplo, se o Fusion baixar um documento em 144 segundos (2,4 minutos), você pode prever que uma única execução pode executar ações semelhantes várias vezes. Neste exemplo, a execução do módulo leva 144 segundos e você deve planejar a execução por 3 minutos para o download. Se seus requisitos incluírem um upload e um download, o tempo de execução esperado seria de aproximadamente 6 minutos. Observe que os tempos de execução do Fusion são limitados a 40 minutos.
 

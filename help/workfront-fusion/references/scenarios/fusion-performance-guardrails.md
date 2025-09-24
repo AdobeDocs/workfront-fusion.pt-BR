@@ -4,9 +4,9 @@ description: A automação de trabalho requer processamento rápido, de modo que
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 80cb3736d96d4b7c3226d78149842a80077e3551
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1084'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ A automação de trabalho requer processamento rápido, de modo que o Adobe Work
 ## Arquivos
 
 * A capacidade total de processamento do Fusion para arquivos é de **1 GB**. O limite se baseia em um custo total de memória. Cada operação contribui para esse custo. Se um único arquivo de 400 MB for baixado e carregado, o custo total da capacidade do arquivo será de 800 MB.
-* As organizações no plano Workfront Ultimate têm acesso a um maior processamento de arquivos além de 1 GB. A plataforma Fusion pode oferecer suporte a arquivos individuais de até 15 GB para uma única ação (por exemplo, carregar arquivo), mas há outros fatores que afetam a transferência de dados. O limite de tamanho de arquivo de uma única ação depende do serviço Web ao qual o Fusion se conecta. A transferência de dados é o processamento total de uma única execução. Isso significa que várias ações em uma única execução contribuem para a transferência total de dados. O Fusion processará arquivos até que o limite de execução de 40 minutos seja atingido.
+* As organizações no plano Workfront Ultimate têm acesso a um maior processamento de arquivos além de 1 GB. No entanto, há outros fatores que afetam a transferência de dados. O serviço ao qual o Fusion está se conectando pode limitar o tamanho do arquivo, o que afetaria quaisquer arquivos processados por esse serviço. Além disso, arquivos grandes podem afetar o tempo de execução do cenário. O Fusion processará os arquivos até que o limite de execução de 40 minutos seja atingido, momento em que a execução falhará.
 * Se um arquivo for baixado usando um módulo que suporte arquivos grandes e, em seguida, for passado para um módulo que não suporta arquivos grandes, esse módulo não processará o arquivo com êxito. Arquivos grandes devem ser manipulados exclusivamente com módulos compatíveis durante todo o fluxo de trabalho.
 * Os módulos que não oferecem suporte a arquivos grandes podem processar arquivos de até **200 MB**.
 
@@ -71,7 +71,7 @@ Para obter mais informações, consulte [Trabalhando com arquivos grandes](/help
 ## Histórico de execução
 
 * Os logs do histórico de execução são limitados ao tamanho de **100 MB**. Se o histórico de execução exceder esse tamanho, somente os primeiros 100 MB serão exibidos.
-* Se um cenário tiver várias execuções simultâneas. apenas 5 execuções são exibidas na área Execuções da página de detalhes do cenário. Isso é verdade mesmo quando mais de 5 execuções estão em andamento.
+* Se um cenário tiver várias execuções simultâneas, apenas 5 execuções serão exibidas na área Execuções da página de detalhes do cenário. Isso é verdade mesmo quando mais de 5 execuções estão em andamento.
 
 ## Execuções incompletas
 
