@@ -7,9 +7,9 @@ description: Saiba como criar um cenário de automação simples com o Adobe Wor
 author: Becky
 feature: Workfront Fusion
 exl-id: 5284dee1-e890-4357-a28d-29e09ac02822
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 7f4709920e52f6b8660370af83de1f11eecbf092
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1426'
 ht-degree: 1%
 
 ---
@@ -191,9 +191,9 @@ Para esse cenário, um teste bem-sucedido resultaria na localização da solicit
 >
 >1. Feche a área **[!UICONTROL Notas]**.
 >
->     Depois que você adiciona uma observação a um cenário, um ponto laranja é exibido no ícone **[!UICONTROL Notas]** ícone ![Notas com ponto](assets/notes-icon-w-dot.png) na parte inferior do editor de cenários.
+>     Depois que você adicionar uma observação a um cenário, um ponto será exibido no ícone **[!UICONTROL Notas]** ícone ![Notas com ponto](assets/notes-icon-w-dot.png) na parte inferior do editor de cenários.
 >
->1. Clique no ícone **[!UICONTROL Notas]** ícone ![Notas com ponto](assets/notes-icon-w-dot.png) para exibir suas notas.
+>1. Clique no ícone **[!UICONTROL Notas]** ícone ![Notas com ponto](assets/notes-icon-w-dot.png) para exibir suas notas. Quando as anotações são abertas, um círculo é exibido ao redor do ícone Anotações.
 >
 
 ## Ativar o cenário

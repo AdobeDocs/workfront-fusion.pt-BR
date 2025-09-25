@@ -5,9 +5,9 @@ description: Recomendamos a prática opcional, mas útil, de adicionar observaç
 author: Becky
 feature: Workfront Fusion
 exl-id: 754601fa-b572-42c2-96a3-3c36a8ed2c56
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 7f4709920e52f6b8660370af83de1f11eecbf092
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '163'
 ht-degree: 0%
 
 ---
@@ -25,3 +25,7 @@ Recomendamos a prática opcional, mas útil, de adicionar observações ao seu c
    Depois que você adicionar uma observação a um cenário, um ponto azul será exibido no ícone **[!UICONTROL Notas]** ícone ![Notas com ponto](assets/notes-icon-w-dot.png) na parte inferior do editor de cenários.
 
 1. Para exibir ou ocultar todas as notas, clique no ícone **[!UICONTROL Notas]** ícone ![Notas com ponto](assets/notes-icon-w-dot.png).
+
+   Quando as anotações são abertas, um círculo é exibido ao redor do ícone Anotações.
+
+   ![Ícone de anotações com círculo](assets/notes-icon-with-circle.png)
