@@ -4,9 +4,9 @@ description: Os recursos de Organização e Equipes do Adobe Workfront Fusion po
 author: Becky
 feature: Workfront Fusion
 exl-id: 44e6de2a-b2d3-410d-abc3-10facd258495
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 4cd97fe2924150b9e7be140a25215f135b2788da
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '549'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ Os usuários devem ser adicionados a uma organização antes de serem adicionado
 Um usuário tem uma das seguintes funções em uma organização:
 
 * **[!UICONTROL Proprietário]**: o proprietário tem todas as permissões disponíveis na organização.
-* **[!UICONTROL Administrador]**: os administradores podem criar e gerenciar equipes e usuários para a organização e podem aprovar modelos.
+* **[!UICONTROL Administrador]**: os administradores podem gerenciar usuários na Adobe Admin Console se a organização estiver habilitada para o Adobe Identity Management System (IMS) ou podem convidar novos usuários para organizações que não estejam no IMS. Eles também podem aprovar templates.
 * **[!UICONTROL Member]**: os membros podem usar o Workfront Fusion, mas não podem fazer alterações organizacionais.
 * **[!UICONTROL Contador]**: os contadores podem ver informações de licença no painel da organização, mas não podem executar nenhuma ação.
 * **[!UICONTROL Desenvolvedor de Aplicativos]**: A funcionalidade para esta função está indisponível no momento e será disponibilizada em breve. Não é recomendável atribuir usuários a essa função no momento.
