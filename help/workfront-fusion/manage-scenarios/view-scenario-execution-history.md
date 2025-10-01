@@ -4,9 +4,9 @@ description: Você pode exibir informações sobre os eventos ou execuções de 
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: c0a4e563657871f856b7d449432d563c6caa27a1
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '922'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Um evento de cenário é uma modificação no cenário, como edição, ativaçã
 
 >[!NOTE]
 >
->O histórico de um cenário exibe todos os eventos e execuções de um cenário nos últimos 30 dias.
+>O histórico de um cenário exibe todas as execuções de um cenário nos últimos 30 dias.
 
 ## Requisitos de acesso
 
