@@ -4,9 +4,9 @@ description: O Fusion usa metadados para identificar atributos importantes de um
 author: Becky
 feature: Workfront Fusion
 exl-id: b41fbe8c-30fa-49d0-8a24-3535642b97ae
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: d13312031955a697e10ddfcdc2e64dfe198b3dac
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '282'
 ht-degree: 1%
 
 ---
@@ -19,9 +19,11 @@ Os metadados de conexão podem ser definidos ao criar uma nova conexão. Esses a
 
 ![Metadados de conexão](assets/connection-metadata-setup.png)
 
-Os usuários do Fusion podem exibir e editar conexões na área Conexões.
+Os usuários do Fusion podem exibir e editar conexões na área Conexões. Você pode acessar a área Conexões clicando em Conexões no painel de navegação esquerdo.
 
-![Metadados de conexão na área Conexões](assets/connections-area-metadata.png)
+![Área de conexões na navegação à esquerda](assets/connections-in-left-nav.png)
+
+<!--![Connection metadata in Connections area](assets/connections-area-metadata.png)-->
 
 ## Tipo de ambiente
 
@@ -35,7 +37,7 @@ As conexões de fusão podem ser usadas para contas de serviço e contas pessoai
 
 O tipo de autenticação, como outros metadados de conexão, é usado apenas para fins informativos. Os usuários são responsáveis por definir com precisão esse atributo e usar o tipo correto de conexão em um cenário.
 
-Para obter mais informações sobre tipos de autenticação, consulte [Autenticação](https://developer.adobe.com/developer-console/docs/guides/authentication/) no guia de Autenticação do Adobe.
+Para obter mais informações sobre tipos de autenticação, consulte [Autenticação](https://developer.adobe.com/developer-console/docs/guides/authentication/) no Guia de autenticação da Adobe.
 
 ## Recursos
 

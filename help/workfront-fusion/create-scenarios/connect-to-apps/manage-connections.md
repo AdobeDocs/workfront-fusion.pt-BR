@@ -7,10 +7,10 @@ description: Para a maioria dos aplicativos, é necessário criar uma conexão, 
 author: Becky
 feature: Workfront Fusion
 exl-id: 26d7caad-8e12-4f04-ac7c-f71686c90ee6
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: d13312031955a697e10ddfcdc2e64dfe198b3dac
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 2%
+source-wordcount: '561'
+ht-degree: 1%
 
 ---
 
@@ -80,9 +80,10 @@ Você pode gerenciar todas as conexões na área Conexões.
 1. (Opcional) Atribua um ambiente e um tipo de conexão clicando nos menus suspensos **Ambiente** e **Tipo** e selecionando uma opção.
 1. (Opcional) Para exibir quais permissões foram fornecidas ao Workfront Fusion para a conexão, clique no ícone Exibir ![Exibir permissões de conexão](assets/view-connection-permissions.png) para essa conexão.
 1. (Opcional) Para renomear uma conexão, realce o nome da conexão e digite o novo nome.
-1. (Opcional) Para reautorizar uma conexão, clique em **Reautorizar**.
-1. (Opcional) Para excluir uma conexão, clique em **Excluir** e em **Realmente?**.
-1. (Opcional) Para verificar se a conexão com o serviço foi estabelecida com êxito, clique em **Verificar**.
+1. (Opcional) Para reautorizar uma conexão, marque a caixa de seleção ao lado da conexão e clique em **Reautorizar** próximo à parte inferior da tela.
+1. (Opcional) Para excluir uma conexão, marque a caixa de seleção ao lado da conexão, clique em **Excluir** próximo à parte inferior da tela e clique em **Deseja realmente?**.
+1. (Opcional) Para verificar se a conexão com o serviço foi estabelecida com êxito, marque a caixa de seleção ao lado da conexão e clique em **Verificar** próximo à parte inferior da tela.
+1. Para exibir cenários ativos que usam essa conexão, marque a caixa de seleção ao lado da conexão e clique em **Buscar Cenários Ativos**. Você pode clicar em um cenário na lista Cenários ativos para ir para esse cenário.
 
 ## Renovar uma conexão
 
@@ -92,7 +93,7 @@ Para renovar uma conexão:
 
 1. Para abrir a área Conexões, clique no ícone **Conexões** ![Conexões](assets/connections-icon.png) no painel de navegação esquerdo.
 1. Localize a conexão que deseja renovar.
-1. Na linha dessa conexão, clique no botão **[!UICONTROL Reautorizar]** na área **[!UICONTROL Conexões]**.
+1. Na linha dessa conexão, marque a caixa de seleção ao lado da conexão e clique em **Reautorizar** próximo à parte inferior da tela.
 
 ## Recursos
 
