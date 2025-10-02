@@ -7,9 +7,9 @@ description: Para a maioria dos aplicativos, é necessário criar uma conexão, 
 author: Becky
 feature: Workfront Fusion
 exl-id: 26d7caad-8e12-4f04-ac7c-f71686c90ee6
-source-git-commit: d13312031955a697e10ddfcdc2e64dfe198b3dac
+source-git-commit: bc1b025af534addf032519142148f6285f481784
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '562'
 ht-degree: 1%
 
 ---
@@ -83,7 +83,7 @@ Você pode gerenciar todas as conexões na área Conexões.
 1. (Opcional) Para reautorizar uma conexão, marque a caixa de seleção ao lado da conexão e clique em **Reautorizar** próximo à parte inferior da tela.
 1. (Opcional) Para excluir uma conexão, marque a caixa de seleção ao lado da conexão, clique em **Excluir** próximo à parte inferior da tela e clique em **Deseja realmente?**.
 1. (Opcional) Para verificar se a conexão com o serviço foi estabelecida com êxito, marque a caixa de seleção ao lado da conexão e clique em **Verificar** próximo à parte inferior da tela.
-1. Para exibir cenários ativos que usam essa conexão, marque a caixa de seleção ao lado da conexão e clique em **Buscar Cenários Ativos**. Você pode clicar em um cenário na lista Cenários ativos para ir para esse cenário.
+1. (Opcional) Para exibir cenários ativos que usam essa conexão, marque a caixa de seleção ao lado da conexão e clique em **Buscar cenários ativos**. Você pode clicar em um cenário na lista Cenários ativos para ir para esse cenário.
 
 ## Renovar uma conexão
 
