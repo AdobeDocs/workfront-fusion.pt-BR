@@ -4,9 +4,9 @@ description: Você pode usar o módulo SOAP para se conectar às APIs do SOAP no
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: 95d52f8227c8a40c0db165eea9d2877e60446de9
+source-git-commit: 29f9595d063e89e9cd393fecba07194d2e9008aa
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '639'
 ht-degree: 1%
 
 ---
@@ -185,7 +185,7 @@ Se o módulo [!UICONTROL SOAP] se recusar a processar o arquivo WSDL ou lançar 
    <!--![Service](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
 
 1. Depois de localizado, copie a URL do atributo `location`.
-1. No Workfront Fusion, cole o URL no campo URL do módulo HTTP.
+1. No Workfront Fusion, cole a URL no campo **Solicitar conteúdo** do módulo HTTP.
 1. Forneça valores para os parâmetros selecionados substituindo os pontos de interrogação pelos valores reais.
 
    >[!NOTE]
