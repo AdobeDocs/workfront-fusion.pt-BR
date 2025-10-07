@@ -67,10 +67,10 @@ Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [li
 * Você deve ter uma conta do Adobe Experience Manager Assets para usar esses módulos.
 * Você deve configurar o fluxo de servidor para servidor no console do Adobe Developer.
 
-  Para obter instruções sobre como configurar o fluxo de servidor para servidor no console do Adobe Developer, consulte [Gerando tokens de acesso para APIs do lado do servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
+  Para obter instruções sobre como configurar o fluxo de servidor para servidor no console do Adobe Developer, consulte [Gerando tokens de acesso para APIs do lado do servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=pt-BR#the-server-to-server-flow).
 * Sua conta técnica do Adobe Experience Manager deve ter permissões de gravação.
 
-  Para obter instruções sobre como adicionar permissões de gravação à sua conta técnica da Adobe Experience Manager, consulte [Credenciais de serviço](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) na documentação da Adobe Experience Manager.
+  Para obter instruções sobre como adicionar permissões de gravação à sua conta técnica da Adobe Experience Manager, consulte [Credenciais de serviço](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) na documentação da Adobe Experience Manager.
 
 ## Informações da API do Adobe Experience Manager Assets
 
@@ -118,11 +118,11 @@ Para criar uma conexão para os módulos do Adobe Experience Manager Assets:
 >
 >* As informações desses campos são geradas como parte da configuração do fluxo de servidor para servidor no Adobe Developer Console. Você pode encontrar esses valores no arquivo JSON de credenciais de serviço gerado como parte dessa configuração.
 >
->   Para obter instruções sobre como configurar o fluxo de servidor para servidor no Adobe Developer Console, consulte [Gerando tokens de acesso para APIs do lado do servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
+>   Para obter instruções sobre como configurar o fluxo de servidor para servidor no Adobe Developer Console, consulte [Gerando tokens de acesso para APIs do lado do servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=pt-BR#the-server-to-server-flow).
 >
 >* Sua conta técnica do Adobe Experience Manager deve ter permissões de gravação.
 >
->   Para obter instruções sobre como adicionar permissões de gravação à sua conta técnica da Adobe Experience Manager, consulte [Credenciais de serviço](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) na documentação da Adobe Experience Manager.
+>   Para obter instruções sobre como adicionar permissões de gravação à sua conta técnica da Adobe Experience Manager, consulte [Credenciais de serviço](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) na documentação da Adobe Experience Manager.
 
 
 <table style="table-layout:auto"> 
