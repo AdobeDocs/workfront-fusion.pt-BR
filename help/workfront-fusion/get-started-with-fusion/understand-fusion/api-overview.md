@@ -3,9 +3,9 @@ title: Visão geral da API
 description: As APIs (Application Programming Interfaces, interfaces de programação de aplicativos) são uma maneira de os aplicativos e os serviços se comunicarem entre si. O Fusion usa APIs para se comunicar com o aplicativo ao qual você está se conectando. Cada aplicativo tem uma API separada.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 1ee32ad1faa8c105142f85e83f1b522548fc7f93
+source-git-commit: f5dcb5207581fb68d0f3048d23214d08a28f2f22
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '431'
 ht-degree: 0%
 
 ---
@@ -38,8 +38,8 @@ Uma causa comum para alterações importantes é a desativação, quando um prop
 Como os cenários do Fusion são configurados com seus dados específicos, talvez seja necessário atualizar os cenários.
 
 * Se as alterações foram relacionadas à autenticação ou autorização, talvez seja necessário atualizar as conexões desse aplicativo.
-* Se as alterações estavam relacionadas a uma ação específica (endpoint) na API, talvez seja necessário atualizar os módulos relacionados a essa ação para uma nova versão do módulo.
-* Se toda a versão da API usada pelo Fusion for descontinuada, talvez seja necessário atualizar todos os módulos desse conector para uma nova versão de um conector.
+* Se as alterações estavam relacionadas a uma ação específica (endpoint) na API, talvez seja necessário atualizar qualquer módulo relacionado a essa ação para uma nova versão do módulo.
+* Se toda a versão da API usada pelo Fusion for descontinuada, talvez seja necessário atualizar todos os módulos desse conector para uma nova versão do conector.
 
 Em muitos casos, é possível atualizar para a nova versão de um módulo sem precisar reconfigurar esse módulo.
 
