@@ -2,9 +2,9 @@
 user-guide-title: Documentação do Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Use os documentos, tutoriais e recursos adicionais para saber como implementar e usar efetivamente o Adobe Workfront Fusion em sua organização.
-source-git-commit: 45b595cb8e3bf74e552e68714460a919e7e1ded6
+source-git-commit: 3832299db48566c07d2031d75237846bc3568631
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1879'
 ht-degree: 3%
 
 ---
@@ -391,6 +391,7 @@ ht-degree: 3%
          * [Módulos do Split.io](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/split-io-modules.md)
          * [Módulos do Trello](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)
          * [Ampliar módulos](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/widen-modules.md)
+         * [Módulos do Veeva Vault](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/veeva-vault-modules.md)
          * [Módulos do Workday](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/workday-modules.md)
       * Ferramentas e transformadores {#tools-and-transformers}
          * [Módulos de arquivamento](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/archive-modules.md)

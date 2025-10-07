@@ -4,7 +4,7 @@ description: Com o conector do Adobe Experience Manager Assets para Adobe Workfr
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
-source-git-commit: d62a8bd4675c034581f6cf5f3a1e61c177de5ebc
+source-git-commit: 190c35629f1fc1e07eef4110f3f4f771af1065fb
 workflow-type: tm+mt
 source-wordcount: '3727'
 ht-degree: 2%
@@ -48,7 +48,7 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Novo:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
+   <p>Novo menu:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
    <p>Ou</p>
    <p>Atual: sua organização deve comprar o Adobe Workfront Fusion.</p>
    </td> 
@@ -67,10 +67,10 @@ Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [li
 * Você deve ter uma conta do Adobe Experience Manager Assets para usar esses módulos.
 * Você deve configurar o fluxo de servidor para servidor no console do Adobe Developer.
 
-  Para obter instruções sobre como configurar o fluxo de servidor para servidor no console do Adobe Developer, consulte [Gerando tokens de acesso para APIs do lado do servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=pt-BR#the-server-to-server-flow).
+  Para obter instruções sobre como configurar o fluxo de servidor para servidor no console do Adobe Developer, consulte [Gerando tokens de acesso para APIs do lado do servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
 * Sua conta técnica do Adobe Experience Manager deve ter permissões de gravação.
 
-  Para obter instruções sobre como adicionar permissões de gravação à sua conta técnica da Adobe Experience Manager, consulte [Credenciais de serviço](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) na documentação da Adobe Experience Manager.
+  Para obter instruções sobre como adicionar permissões de gravação à sua conta técnica da Adobe Experience Manager, consulte [Credenciais de serviço](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) na documentação da Adobe Experience Manager.
 
 ## Informações da API do Adobe Experience Manager Assets
 
@@ -118,11 +118,11 @@ Para criar uma conexão para os módulos do Adobe Experience Manager Assets:
 >
 >* As informações desses campos são geradas como parte da configuração do fluxo de servidor para servidor no Adobe Developer Console. Você pode encontrar esses valores no arquivo JSON de credenciais de serviço gerado como parte dessa configuração.
 >
->   Para obter instruções sobre como configurar o fluxo de servidor para servidor no Adobe Developer Console, consulte [Gerando tokens de acesso para APIs do lado do servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=pt-BR#the-server-to-server-flow).
+>   Para obter instruções sobre como configurar o fluxo de servidor para servidor no Adobe Developer Console, consulte [Gerando tokens de acesso para APIs do lado do servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
 >
 >* Sua conta técnica do Adobe Experience Manager deve ter permissões de gravação.
 >
->   Para obter instruções sobre como adicionar permissões de gravação à sua conta técnica da Adobe Experience Manager, consulte [Credenciais de serviço](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) na documentação da Adobe Experience Manager.
+>   Para obter instruções sobre como adicionar permissões de gravação à sua conta técnica da Adobe Experience Manager, consulte [Credenciais de serviço](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) na documentação da Adobe Experience Manager.
 
 
 <table style="table-layout:auto"> 
@@ -164,8 +164,8 @@ Para criar uma conexão para os módulos do Adobe Experience Manager Assets:
                   <td class="">Se você inserir detalhes manualmente, insira a ID da organização. Este é o campo "org" no arquivo JSON de credenciais do cliente.</td>
               </tr>
               <tr>
-                  <td role="rowheader">Metaescopos</td>
-                  <td>Insira os Metaescopos gerados na configuração de servidor para servidor.</td>
+                  <td role="rowheader">Escopos do Meta</td>
+                  <td>Insira os escopos do Meta gerados na configuração de servidor para servidor.</td>
               </tr>
               <tr>
                   <td role="rowheader">Chave privada</td>
@@ -216,7 +216,7 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 ![Alternância de mapa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Operações de arquivos](#files-operations)
-* [Outro](#other)
+* [Outras](#other)
 * [Assets (API do autor)](#assets-author-api)
 * [Eventos (API do autor)](#events-author-api)
 * [Metadados (API do autor)](#metadata-author-api)
@@ -341,7 +341,7 @@ Esse módulo de ação faz upload de um ativo para sua conta da Adobe Experience
  </tbody> 
 </table>
 
-### Outro
+### Outras
 
 
 * [Copiar uma pasta ou um ativo](#copy-a-folder-or-asset)
@@ -499,7 +499,7 @@ Esse módulo de ação faz uma chamada de API personalizada para a API do Adobe 
   </tr> 
   <tr> 
    <td role="rowheader">Corpo</td> 
-   <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Nota:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
+   <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -773,7 +773,7 @@ Este módulo de ação faz upload de um novo ativo importando arquivos dos URLs 
   </tr> 
   <tr> 
    <td role="rowheader">Data de expiração</td> 
-   <td> <p>Insira ou mapeie a data de experimento do ativo.</p><p>Para obter uma lista de formatos de data e hora com suporte, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerção de tipo</a>.</p> </td> 
+   <td> <p>Insira ou mapeie a data de expiração do ativo.</p><p>Para obter uma lista de formatos de data e hora com suporte, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerção de tipo</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Metadados personalizados</td> 
@@ -929,7 +929,7 @@ Este módulo de ação cria uma nova pasta no Adobe Experience Manager Assets.
    <ul>
    <li><b>Novo local da pasta</b><p>Selecione o caminho para o local onde deseja criar a nova pasta.</p></li>
        <li> <b>Nome</b> <p>Insira um nome para a pasta. Esse nome aparecerá no caminho do arquivo, portanto, não deve incluir espaços ou outros caracteres. </p> </li> 
-       <li> <b>Título</b> <p>Insira um título para a pasta, que pode ser exibido em vez do nome.</p> </li> 
+       <li> <b>Title</b> <p>Insira um título para a pasta, que pode ser exibido em vez do nome.</p> </li> 
    </ul> </td> 
   </tr> 
  </tbody> 
