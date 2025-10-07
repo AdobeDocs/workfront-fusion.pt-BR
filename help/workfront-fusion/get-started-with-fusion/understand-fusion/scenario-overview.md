@@ -26,7 +26,7 @@ Um cenário é criado com elementos diferentes. Entender a terminologia desses e
 * [Módulo](#module)
 * [Rota](#route)
 * [Segmento de cenário](#scenario-segment)
-* [Conector ](#connector)
+* [Conector &#x200B;](#connector)
 
 ### Cenário
 
