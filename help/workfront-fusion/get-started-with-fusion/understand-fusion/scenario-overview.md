@@ -4,9 +4,9 @@ description: O Adobe Workfront Fusion exige uma licença do Adobe Workfront Fusi
 author: Becky
 feature: Workfront Fusion
 exl-id: de81ad4c-27e5-4b6c-acf0-f01a8c85922e
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 34dad92019ca855f40698d3f3795788698c1cece
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '704'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ Para obter uma lista de conectores dedicados, consulte [Referências de aplicati
 
 >[!IMPORTANT]
 >
->O Adobe Workfront Fusion pode se conectar a quase qualquer serviço da Web. Se o aplicativo com o qual você deseja trabalhar não tiver um conector dedicado do Workfront Fusion, use conectores universais para se conectar ao aplicativo ou serviço.
+>O Adobe Workfront Fusion pode se conectar a quase qualquer serviço da Web. Se o aplicativo com o qual você deseja trabalhar não tiver um conector dedicado do Workfront Fusion, você poderá usar conectores universais para se conectar ao aplicativo ou serviço.
 >
 >Para obter uma lista de conectores universais, consulte [Conectores universais](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)
 
