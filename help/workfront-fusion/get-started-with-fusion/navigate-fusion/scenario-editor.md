@@ -4,9 +4,9 @@ description: O editor de cenários permite criar e editar cenários em uma inter
 author: Becky
 feature: Workfront Fusion
 exl-id: 47ccecf0-751c-4026-96a9-329c33cb6801
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: ce2a41a9708bb0e611ab4056aac733d58d27d7a9
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '589'
 ht-degree: 3%
 
 ---
@@ -100,7 +100,7 @@ Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [li
 | Configurações de cenário | O painel Configurações de cenário contém configurações avançadas para o cenário. Para obter mais informações sobre as configurações disponíveis, consulte [Definir configurações de cenário](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md). |
 | Notas | Faça observações sobre o cenário. Outros usuários podem exibir essas notas quando estão no cenário. |
 | Alinhamento automático | Alinhe automaticamente os módulos no seu cenário. |
-| Explicar fluxo | Exibir uma animação que mostra como os dados fluem pelo cenário. |
+| Explicar fluxo | Exibir uma animação em que os pontos móveis mostram como os dados fluem pelo cenário. |
 | Ferramentas de desenvolvimento | Usando o Devtool, você pode verificar todas as execuções manuais do cenário, revisar todas as operações executadas e ver os detalhes de cada chamada de API executada. Você pode ver qual módulo, operação ou única resposta causou o erro e usar esse conhecimento para refinar seu cenário. Para obter mais informações, consulte [Depurar um cenário](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md). |
 | Mais | No menu Mais, você pode importar ou exportar blueprints e restaurar o cenário para versões anteriores. |
 
