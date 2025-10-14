@@ -510,7 +510,7 @@ Caso queira calcular apenas um caso específico, por exemplo, a cada segunda qua
 * `1.dow` = `3`
 * `1.date` = `now`
 
-![Valor da variável de dia ](assets/nth-day-variable-value-350x33.png)
+![Valor da variável de dia &#x200B;](assets/nth-day-variable-value-350x33.png)
 
 #### Explicação:
 
