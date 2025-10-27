@@ -1365,7 +1365,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
 >[!IMPORTANT]
 >
 >Esse módulo foi substituído pelo módulo Search records. Recomendamos o uso desse módulo em novos cenários.
->>Os cenários existentes que usam esse módulo continuarão a funcionar conforme esperado. Este módulo será removido do seletor de módulos em maio de 2025.
+>&#x200B;>Os cenários existentes que usam esse módulo continuarão a funcionar conforme esperado. Este módulo será removido do seletor de módulos em maio de 2025.
 
 Esse módulo de pesquisa procura registros em um objeto no Workfront que correspondam à consulta de pesquisa especificada.
 
