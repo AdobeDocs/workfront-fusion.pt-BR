@@ -3,9 +3,9 @@ title: Módulos do Veeva Vault
 description: Em um cenário do Adobe Workfront Fusion, é possível automatizar workflows que usam o Veeva Vault, bem como conectá-lo a vários aplicativos e serviços de terceiros.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 6e7125bee77526caa93edc17f05b75bdfd7d7ac4
+source-git-commit: 4f5a4cf8691e5bb47eec6f6b2842369c5c6fbad8
 workflow-type: tm+mt
-source-wordcount: '1514'
+source-wordcount: '1516'
 ht-degree: 3%
 
 ---
@@ -318,7 +318,7 @@ Este módulo atualiza um único documento, binder ou modelo.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Tipo</p> </td> 
-   <td> <p>Selecione se deseja criar um documento, um binder ou um modelo.</p> </td> 
+   <td> <p>Selecione se deseja criar um documento, uma versão do documento, um binder ou um modelo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>ID / Nome</p> </td> 
