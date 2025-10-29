@@ -4,9 +4,9 @@ description: As seguintes funções de matriz estão disponíveis no painel de m
 author: Becky
 feature: Workfront Fusion
 exl-id: 16c3915c-add1-4aab-a0e1-75fc590c42a6
-source-git-commit: d141738a7e013ed817cb657b883fc5e1061e2165
+source-git-commit: 9b61a3b18df1f755cc7ccc28889564e4bcb6cda0
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -57,9 +57,9 @@ Retorna uma matriz primitiva contendo valores de uma matriz complexa. Esta funç
 
   Retorna uma matriz primitiva com emails
 
-* `map(Emails[];email;label;work;home)`
+* `map(Emails[];email;label;work)`
 
-  Retorna uma matriz primitiva com emails com rótulo igual a trabalho ou casa
+  Retorna uma matriz primitiva com emails com um rótulo igual a trabalho
 
 >[!ENDSHADEBOX]
 
