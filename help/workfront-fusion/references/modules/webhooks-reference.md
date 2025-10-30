@@ -4,9 +4,9 @@ description: Muitos serviços fornecem webhooks para fornecer notificações ins
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: e0cfe4e6af0c6d1fe8f44fd72e13f9e9d5e6a73f
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '1064'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,25 @@ Para obter uma introdução em vídeo a webhooks no Workfront Fusion, consulte:
 
 * [Introdução aos Webhooks](https://video.tv.adobe.com/v/3427025/){target=_blank}
 * [Webhooks intermediários](https://video.tv.adobe.com/v/3427030/){target=_blank}
+
+## Exibir detalhes do webhook
+
+É possível exibir uma lista de webhooks na área Webhooks.
+
+1. Para abrir a área Webhooks, clique no ícone Webhooks ![Webhooks](assets/webhooks-icon.png) na navegação à esquerda.
+
+   Aqui você pode ver uma lista de webhooks.
+
+   ![Lista de Webhook](assets/list-of-webhooks.png)
+
+1. Para procurar um webhook específico, digite o termo de pesquisa na caixa Pesquisar.
+1. Para copiar um webhook, clique no ícone Copiar ![ícone de webhook Copiar](assets/copy-webhook-icon.png) próximo à URL na linha desse webhook.
+1. Para desativar ou ativar um webhook, desative ou ative a alternância na coluna Status na linha desse webhook.
+1. Para ver se uma fila de webhooks está cheia, verifique a coluna Fila cheia. O número nesta coluna é o número de itens atualmente na fila.
+1. Para exibir operações tratadas por um webhook, clique em **Operações** na coluna Fila Completa desse webhook.
+1. Para exibir o cenário em que um webhook é usado, clique no botão **Cenário** na coluna Cenário desse webhook.
+1. Para exibir a conexão usada para este webhook, clique no botão **Conexão** na coluna Conexão para esse webhook.
+1. Para ocultar colunas ou mostrar colunas ocultas anteriormente, clique no ícone **Colunas** ícone ![Colunas](assets/glist-column.png) e marque ou desmarque nomes de colunas.
 
 ## Agendar acionadores instantâneos
 
