@@ -264,7 +264,7 @@ O módulo retorna quaisquer campos padrão associados ao registro, juntamente co
 
 Depois que o webhook for criado, você poderá exibir o endereço do endpoint para o qual os eventos são enviados.
 
-Para obter mais informações, consulte a seção [Exemplos de cargas de evento](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) no artigo API de assinatura de evento na documentação do Workfront.
+Para obter mais informações, consulte a seção [Exemplos de cargas de evento](https://experienceleague.adobe.com/pt-br/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) no artigo API de assinatura de evento na documentação do Workfront.
 
 Veja uma lista dos tipos de objetos do Workfront para os quais você pode usar este módulo em [tipos de objetos do Workfront disponíveis para cada módulo do Workfront](#workfront-object-types-available-for-each-workfront-module).
 
@@ -497,7 +497,7 @@ Veja uma lista dos tipos de objetos do Workfront para os quais você pode usar e
 >
 >   Para resolver usuários que foram adicionados em um lote grande, é possível adicionar o lote de usuários diretamente ao Adobe Admin Console.
 >
->   Para obter instruções, consulte [Gerenciar vários usuários | Upload em massa de CSV](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html) na documentação do Adobe.
+>   Para obter instruções, consulte [Gerenciar vários usuários | Upload em massa de CSV](https://helpx.adobe.com/br/enterprise/using/bulk-upload-users.html) na documentação do Adobe.
 
 +++
 
@@ -750,7 +750,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
       </ul> <p>Para todos os outros tipos de registro, selecione <b>[!UICONTROL Outros objetos e pontos de extremidade]</b> e localize o tipo de registro nas páginas classificadas alfabeticamente.</p> </li> 
      <li value="2"> <p>Na página do tipo de registro apropriado, pesquise (Ctrl-F ou Cmd-F) a ação.</p> </li> 
      <li value="3"> <p>Exibir descrições para campos disponíveis sob a ação selecionada.</p> </li> 
-    </ol> <p>Observação:  <p>Ao criar uma prova por meio do módulo [!UICONTROL Misc Action] da Workfront, a prática recomendada é criar uma prova sem nenhuma opção avançada e, em seguida, atualizar a prova usando a API do SOAP [!DNL Workfront Proof].</p><p>Para obter mais informações sobre como criar uma prova com a API Workfront (que este módulo usa), consulte <a href="https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Adicionar opções de prova avançada ao criar uma prova por meio da API Adobe Workfront</a></p> </p> </td> 
+    </ol> <p>Observação:  <p>Ao criar uma prova por meio do módulo [!UICONTROL Misc Action] da Workfront, a prática recomendada é criar uma prova sem nenhuma opção avançada e, em seguida, atualizar a prova usando a API do SOAP [!DNL Workfront Proof].</p><p>Para obter mais informações sobre como criar uma prova com a API Workfront (que este módulo usa), consulte <a href="https://experienceleague.adobe.com/pt-br/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Adicionar opções de prova avançada ao criar uma prova por meio da API Adobe Workfront</a></p> </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
@@ -1028,9 +1028,9 @@ See a list of the Workfront object types for which you can use this module in [W
 
 A Workfront lançou recentemente uma nova versão de seu serviço de assinatura de eventos. A nova versão não é uma alteração na API do Workfront, mas uma alteração na funcionalidade de assinatura do evento. Este módulo de ação atualiza a versão de carga útil do evento usada para este cenário.
 
-Para obter mais informações sobre a nova versão de assinatura de eventos, consulte [Versão de assinatura de eventos](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) na documentação da Workfront
+Para obter mais informações sobre a nova versão de assinatura de eventos, consulte [Versão de assinatura de eventos](https://experienceleague.adobe.com/pt-br/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) na documentação da Workfront
 
-Para obter recursos sobre como preservar seus cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservando seus cenários do Fusion Durante a Atualização da V2 de Assinaturas do Evento](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
+Para obter recursos sobre como preservar seus cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservando seus cenários do Fusion Durante a Atualização da V2 de Assinaturas do Evento](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=pt).
 
 <table style="table-layout:auto">
  <col> 
@@ -2356,9 +2356,9 @@ Recomendamos que você verifique novamente para garantir que isso funcione da ma
 >
 >* A Workfront lançou recentemente uma nova versão de seu serviço de assinatura de eventos. A nova versão não é uma alteração na API do Workfront, mas uma alteração na funcionalidade de assinatura do evento. Este módulo de ação atualiza a versão de carga útil do evento usada para este cenário.
 >
->   Para obter mais informações sobre a nova versão de assinatura de eventos, consulte [Versão de assinatura de eventos](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) na documentação da Workfront
+>   Para obter mais informações sobre a nova versão de assinatura de eventos, consulte [Versão de assinatura de eventos](https://experienceleague.adobe.com/pt-br/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) na documentação da Workfront
 >
->   Para obter recursos sobre como preservar seus cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservando seus cenários do Fusion Durante a Atualização de Assinaturas de Eventos V2(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)].
+>   Para obter recursos sobre como preservar seus cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservando seus cenários do Fusion Durante a Atualização de Assinaturas de Eventos V2(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=pt)].
 
 O módulo [!UICONTROL Assistir Eventos] do Workfront aciona cenários com base em um webhook que cria uma assinatura de evento na API do Workfront. A assinatura do evento é um conjunto de dados que determina quais eventos são enviados para o webhook. Por exemplo, se você configurar um módulo [!UICONTROL Eventos de observação] que esteja observando problemas, a assinatura do evento enviará somente eventos relacionados a problemas.
 
@@ -2408,7 +2408,7 @@ Os seguintes operadores estão disponíveis no filtro Workfront > Eventos de obs
 >
 >Se 100 edições forem criadas em um dia, mas apenas duas delas forem atribuídas a Ana, o cenário seria executado 100 vezes. 98 das execuções parariam no filtro, mas o módulo de acionamento ainda está consumindo dados e executando operações em todas as execuções.
 
-Para obter mais informações sobre assinaturas de eventos do Workfront, consulte [Perguntas frequentes - Assinaturas de Eventos](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq).
+Para obter mais informações sobre assinaturas de eventos do Workfront, consulte [Perguntas frequentes - Assinaturas de Eventos](https://experienceleague.adobe.com/pt-br/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq).
 
 Para obter mais informações sobre webhooks, consulte [Acionadores instantâneos (webhooks) no Adobe Workfront Fusion](/help/workfront-fusion/references/modules/webhooks-reference.md)
 
