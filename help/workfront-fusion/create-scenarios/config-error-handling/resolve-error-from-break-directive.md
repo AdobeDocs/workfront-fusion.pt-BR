@@ -4,9 +4,9 @@ description: Às vezes, é útil executar novamente um módulo com falha se houv
 author: Becky
 feature: Workfront Fusion
 exl-id: d568942c-2cd5-430c-bdbf-e1496da25b50
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,42 @@ Quando um erro é tratado pela diretiva Break, um registro é criado na pasta In
 
 Para obter mais informações, consulte [Exibir e resolver execuções incompletas](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
+## Requisitos de acesso
+
++++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Pacote do Adobe Workfront</td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Licenças do Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Produto</td> 
+   <td>
+   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   </td> 
+  </tr>
+ </tbody> 
+</table>
+
+Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+
++++
+
 ## Resolver erros resultantes da diretiva de Interrupção
 
 Você pode resolver o erro manualmente atualizando o cenário (se necessário) e executando-o uma vez.
 
 Você também pode configurar o cenário para processar automaticamente uma execução incompleta reexecutando o cenário. Para configurar o módulo para processar execuções incompletas:
 
-1. Clique na guia **[!UICONTROL Scenarios]** no painel esquerdo.
+1. Clique na guia **[!UICONTROL Cenários]** no painel esquerdo.
 1. Selecione o cenário no qual deseja adicionar a solução alternativa.
 1. Clique em qualquer lugar no cenário para entrar no editor de cenários.
 1. Clique no ícone **Controle de Fluxo** ![Controle de fluxo](assets/flow-control-icon.png) e selecione **Quebra**.
@@ -33,7 +62,7 @@ Você também pode configurar o cenário para processar automaticamente uma exec
    Este número deve estar entre 1 e 100.
 1. No campo **Intervalo entre tentativas**, digite ou mapeie o número de minutos entre cada nova tentativa.
 
-Com essa opção habilitada, quando ocorre um erro, a execução incompleta é recuperada (após o tempo especificado no campo [!UICONTROL Interval between attempts]) e executada com os dados de entrada originais. Isso se repetirá até que a execução do módulo seja concluída sem erros ou até que o Número de tentativas especificado seja atingido.
+Com essa opção habilitada, quando ocorre um erro, a execução incompleta é recuperada (após o tempo especificado no campo [!UICONTROL Intervalo entre tentativas]) e executada com os dados de entrada originais. Isso se repetirá até que a execução do módulo seja concluída sem erros ou até que o Número de tentativas especificado seja atingido.
 
 >[!NOTE]
 >
