@@ -4,9 +4,9 @@ description: Um armazenamento de dados, semelhante a um banco de dados ou a uma 
 author: Becky
 feature: Workfront Fusion
 exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: b59532d96d64f77c04d31d03f6ae5addf15c0dd7
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1324'
 ht-degree: 1%
 
 ---
@@ -81,7 +81,7 @@ As instâncias do Fusion nos pacotes Select ou Prime recebem:-->
 
   Por exemplo, uma organização com operações de 600 K recebe 110 MB.
 
-Sua organização pode ter até 50 armazenamentos de dados. O tamanho combinado desses armazenamentos de dados não pode exceder o tamanho total do armazenamento de dados de sua organização.
+Cada equipe em sua organização pode ter até 50 armazenamentos de dados. O tamanho combinado desses armazenamentos de dados não pode exceder o tamanho total do armazenamento de dados de sua organização.
 
 ## Criar um armazenamento de dados no Workfront Fusion
 
