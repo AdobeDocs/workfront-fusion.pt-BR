@@ -4,9 +4,9 @@ description: Em um cenário do Adobe Workfront Fusion, é possível automatizar 
 author: Becky
 feature: Workfront Fusion
 exl-id: 5df5cd2b-ad4c-4a02-9d0c-7cee35232f93
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '5380'
+source-wordcount: '5386'
 ht-degree: 0%
 
 ---
@@ -23,34 +23,29 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
 
 +++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
 
-Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licença do Adobe Workfront</td> 
-   <td> <p>Novo: Padrão</p><p>Ou</p><p>Atual: trabalho ou superior</p> </td> 
+   <td role="rowheader">Licenças do Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licença do Adobe Workfront Fusion**</td> 
+   <td role="rowheader">Licença do Adobe Workfront Fusion</td> 
    <td>
-   <p>Atual: nenhum requisito de licença do Workfront Fusion</p>
-   <p>Ou</p>
-   <p>Herdados: Automação e integração do Workfront Fusion for Work </p>
+   <p>Baseado em operação: nenhum requisito de licença do Workfront Fusion</p>
+   <p>Baseado em conector (herdado): automação e integração do Workfront Fusion for Work </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Novo menu:</p> <ul><li>Selecionar ou pacote do Prime Workfront: sua organização deve comprar o Adobe Workfront Fusion.</li><li>Pacote do Ultimate Workfront: o Workfront Fusion está incluído.</li></ul>
-   <p>Ou</p>
-   <p>Atual: sua organização deve comprar o Adobe Workfront Fusion.</p>
+   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -255,7 +250,7 @@ Este módulo de ação cria um novo quadro com as configurações selecionadas.
    <td> <p>Selecione entre dois modos de amadurecimento de cartão. </p> 
     <ul> 
      <li><strong>[!UICONTROL Modo pirata]</strong>: cartões rasgarão, ficarão amarelos e quebrarão como um mapa de pirata antigo à medida que envelhecerem.</li> 
-     <li><strong>[!UICONTROL Modo regular &#x200B;]</strong>: Os cartões tornam-se progressivamente mais transparentes à medida que envelhecem. </li> 
+     <li><strong>[!UICONTROL Modo regular ]</strong>: Os cartões tornam-se progressivamente mais transparentes à medida que envelhecem. </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -270,95 +265,95 @@ Este módulo de ação edita as configurações de um quadro existente.
 >[!SUCCESS]
 >
 ><table style="table-layout:auto">
-><col> 
-> <col> 
-> <tbody> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Conexão] </td> 
->   <td> <p>Para obter instruções sobre como conectar sua conta do [!UICONTROL Trello] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL ID do Quadro]</p> </td> 
->   <td> <p>Insira ou mapeie a ID exclusiva do [!UICONTROL Trello] da placa que você deseja que o módulo crie. Você pode recuperar a ID da placa usando outro módulo, como o módulo Watch Boards</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/watch-boards.png"> </p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Novo nome]</td> 
->   <td> <p> Informe ou mapeie um novo nome para o quadro.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Nova descrição]</td> 
->   <td> <p> Informe ou mapeie uma nova descrição do painel de discussão.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL ID da Organização]</p> </td> 
->   <td> <p>Insira ou mapeie a ID exclusiva do [!UICONTROL Trello] do quadro que você deseja que o módulo edite.  </p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Assinar] </td> 
->   <td> <p>Selecione uma opção para especificar se o usuário proprietário da conexão usada por esse módulo está inscrito no quadro.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL Nível de permissão]</p> </td> 
->   <td> <p>Os painéis têm regras de votação e comentário diferentes para cada nível de permissão. Por exemplo: se o seu painel for [!UICONTROL Privado] e você definir as regras de votação e comentários como [!UICONTROL Tudo], você receberá um erro. </p> <p>A votação e os comentários são limitados aos seguintes grupos para cada nível de permissão:</p> 
->    <ul> 
->     <li><strong>[!UICONTROL Privado]</strong>: 
->      Membros, Membros e Observadores</li> 
->     <li><strong>[!UICONTROL Para a organização]</strong>: 
->      Membros, Membros e Observadores, Membros da Organização</li> 
->     <li><strong>[!UICONTROL Público]</strong>: 
->      Membros, Membros e Observadores, Membros da Organização, Todos</li> 
->    </ul> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL Votação]</p> </td> 
->   <td> <p>Selecione uma opção para especificar quem pode votar neste painel. Consulte o campo [!UICONTROL Nível de permissão] para ver as limitações de votação em níveis de permissão.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL Comentários]</p> </td> 
->   <td> <p>Selecione uma opção para especificar quem pode comentar em cartões para este quadro. Consulte o campo [!UICONTROL Nível de permissão] para comentar limitações em níveis de permissão.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Convites] </td> 
->   <td> <p>Selecione quem pode convidar pessoas para este painel.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL AutoJunção]</td> 
->   <td> <p> Selecione se os membros da equipe podem ingressar no painel ou se precisam ser convidados.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Cartão cobre]</td> 
->   <td> <p> Selecione se as capas de cartão devem ser exibidas neste quadro.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Plano de Fundo] </td> 
->   <td> <p>Selecione a cor do plano de fundo ou do plano de fundo personalizado.</p> <p>Observação: planos de fundo personalizados estão disponíveis somente para assinantes do [!UICONTROL Trello Gold e Business Class].</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL ID de Plano de Fundo]</td> 
->   <td> <p> Se você optou por usar um plano de fundo personalizado no campo [!UICONTROL Plano de Fundo], digite ou mapeie a ID do plano de fundo que deseja usar.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL Duração da Placa]</p> </td> 
->   <td> <p>Selecione entre dois modos de amadurecimento de cartão. </p> 
->    <ul> 
->     <li><strong>[!UICONTROL Modo pirata]</strong>: cartões rasgarão, ficarão amarelos e quebrarão como um mapa de pirata antigo à medida que envelhecerem.</li> 
->     <li><strong>[!UICONTROL Modo regular]</strong>: os cartões tornam-se progressivamente mais transparentes à medida que envelhecem. </li> 
->    </ul> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Feed de calendário habilitado]</td> 
->   <td> <p> Selecione se o feed de calendário está habilitado ou não.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL &lt;Cor&gt; nome do rótulo]</td> 
->   <td> <p> Atribua um nome ao rótulo de cor desejado.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Arquivo Morto] </td> 
->   <td> <p>Selecione uma opção para indicar se deseja arquivar (fechar) o quadro. </p> </td> 
->  </tr> 
-> </tbody> 
-></table>
+<col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!UICONTROL Trello] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL ID do Quadro]</p> </td> 
+   <td> <p>Insira ou mapeie a ID exclusiva do [!UICONTROL Trello] da placa que você deseja que o módulo crie. Você pode recuperar a ID da placa usando outro módulo, como o módulo Watch Boards</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/watch-boards.png"> </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Novo nome]</td> 
+   <td> <p> Informe ou mapeie um novo nome para o quadro.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Nova descrição]</td> 
+   <td> <p> Informe ou mapeie uma nova descrição do painel de discussão.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL ID da Organização]</p> </td> 
+   <td> <p>Insira ou mapeie a ID exclusiva do [!UICONTROL Trello] do quadro que você deseja que o módulo edite.  </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Assinar] </td> 
+   <td> <p>Selecione uma opção para especificar se o usuário proprietário da conexão usada por esse módulo está inscrito no quadro.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Nível de permissão]</p> </td> 
+   <td> <p>Os painéis têm regras de votação e comentário diferentes para cada nível de permissão. Por exemplo: se o seu painel for [!UICONTROL Privado] e você definir as regras de votação e comentários como [!UICONTROL Tudo], você receberá um erro. </p> <p>A votação e os comentários são limitados aos seguintes grupos para cada nível de permissão:</p> 
+    <ul> 
+     <li><strong>[!UICONTROL Privado]</strong>: 
+      Membros, Membros e Observadores</li> 
+     <li><strong>[!UICONTROL Para a organização]</strong>: 
+      Membros, Membros e Observadores, Membros da Organização</li> 
+     <li><strong>[!UICONTROL Público]</strong>: 
+      Membros, Membros e Observadores, Membros da Organização, Todos</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Votação]</p> </td> 
+   <td> <p>Selecione uma opção para especificar quem pode votar neste painel. Consulte o campo [!UICONTROL Nível de permissão] para ver as limitações de votação em níveis de permissão.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Comentários]</p> </td> 
+   <td> <p>Selecione uma opção para especificar quem pode comentar em cartões para este quadro. Consulte o campo [!UICONTROL Nível de permissão] para comentar limitações em níveis de permissão.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Convites] </td> 
+   <td> <p>Selecione quem pode convidar pessoas para este painel.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL AutoJunção]</td> 
+   <td> <p> Selecione se os membros da equipe podem ingressar no painel ou se precisam ser convidados.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Cartão cobre]</td> 
+   <td> <p> Selecione se as capas de cartão devem ser exibidas neste quadro.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Plano de Fundo] </td> 
+   <td> <p>Selecione a cor do plano de fundo ou do plano de fundo personalizado.</p> <p>Observação: planos de fundo personalizados estão disponíveis somente para assinantes do [!UICONTROL Trello Gold e Business Class].</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de Plano de Fundo]</td> 
+   <td> <p> Se você optou por usar um plano de fundo personalizado no campo [!UICONTROL Plano de Fundo], digite ou mapeie a ID do plano de fundo que deseja usar.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Duração da Placa]</p> </td> 
+   <td> <p>Selecione entre dois modos de amadurecimento de cartão. </p> 
+    <ul> 
+     <li><strong>[!UICONTROL Modo pirata]</strong>: cartões rasgarão, ficarão amarelos e quebrarão como um mapa de pirata antigo à medida que envelhecerem.</li> 
+     <li><strong>[!UICONTROL Modo regular]</strong>: os cartões tornam-se progressivamente mais transparentes à medida que envelhecem. </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Feed de calendário habilitado]</td> 
+   <td> <p> Selecione se o feed de calendário está habilitado ou não.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL &lt;Cor&gt; nome do rótulo]</td> 
+   <td> <p> Atribua um nome ao rótulo de cor desejado.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Arquivo Morto] </td> 
+   <td> <p>Selecione uma opção para indicar se deseja arquivar (fechar) o quadro. </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 
 +++
@@ -616,7 +611,7 @@ Esse módulo de ação adiciona um anexo ao cartão selecionado.
    <td> <p>Selecione se deseja fazer upload do arquivo diretamente ou fornecer um URL para o arquivo.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Arquivo]</strong> </p> <p>Selecione um arquivo de origem de um módulo anterior ou mapeie o nome e os dados do arquivo de origem.</p> </li> 
-     <li> <p><strong></strong> </p> <p>Insira a URL do arquivo e forneça um nome para o anexo.</p> </li> 
+     <li> <p><strong>[!UICONTROL]</strong> </p> <p>Insira a URL do arquivo e forneça um nome para o anexo.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
