@@ -280,7 +280,7 @@ Este módulo de pesquisa procura mensagens com base em critérios específicos.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Pesquisar]</td> 
-   <td>Insira sua consulta de pesquisa. Para obter informações sobre como gravar uma consulta de pesquisa, consulte o artigo de suporte do [!DNL Microsoft] <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&amp;rs=en-us&amp;ad=us">Pesquisar Emails e Pessoas no [!DNL Outlook.com]</a>.</td> 
+   <td>Insira sua consulta de pesquisa. Para obter informações sobre como gravar uma consulta de pesquisa, consulte o artigo de suporte do [!DNL Microsoft] <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&rs=en-us&ad=us">Pesquisar Emails e Pessoas no [!DNL Outlook.com]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Ordenar por]</td> 
@@ -326,7 +326,7 @@ Esse módulo de acionamento inicia um cenário quando uma nova mensagem de email
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Pesquisar]</td> 
-   <td>Insira sua consulta de pesquisa. O módulo retorna mensagens que correspondem a esta consulta. Para obter informações sobre como gravar uma consulta de pesquisa, consulte o artigo de suporte do [!DNL Microsoft] <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&amp;rs=en-us&amp;ad=us">Pesquisar Emails e Pessoas no [!DNL Outlook.com]</a>.</td> 
+   <td>Insira sua consulta de pesquisa. O módulo retorna mensagens que correspondem a esta consulta. Para obter informações sobre como gravar uma consulta de pesquisa, consulte o artigo de suporte do [!DNL Microsoft] <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&rs=en-us&ad=us">Pesquisar Emails e Pessoas no [!DNL Outlook.com]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limite] </td> 

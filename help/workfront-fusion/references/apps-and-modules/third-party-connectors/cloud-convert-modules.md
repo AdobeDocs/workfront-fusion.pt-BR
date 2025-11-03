@@ -179,7 +179,7 @@ Converte um arquivo em um formato de saída selecionado.
    <td role="rowheader">[!UICONTROL Importar um Arquivo da URL]</td> 
    <td> 
     <ul> 
-     <li> <p><strong>[!UICONTROL]</strong> </p> <p>Insira o URL do arquivo que você deseja converter.</p> </li> 
+     <li> <p><strong></strong> </p> <p>Insira o URL do arquivo que você deseja converter.</p> </li> 
      <li> <p><strong>[!UICONTROL Cabeçalhos]</strong></p> <p>Definir cabeçalhos de solicitação (opcional). Isso é útil, por exemplo, quando o URL especificado requer a autorização.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -232,7 +232,7 @@ Permite adicionar um ou vários arquivos ao arquivo ZIP, RAR, 7Z, TAR, TAR.GZ ou
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Importar um arquivo da URL]</p> </td> 
-   <td> <p><strong>[!UICONTROL]</strong> </p> <p>Insira o URL do arquivo que deseja arquivar.</p> <p><strong>[!UICONTROL Cabeçalhos]</strong> </p> <p>Definir cabeçalhos de solicitação (opcional). Isso é útil, por exemplo, quando o URL especificado requer a autorização.</p> </td> 
+   <td> <p><strong></strong> </p> <p>Insira o URL do arquivo que deseja arquivar.</p> <p><strong>[!UICONTROL Cabeçalhos]</strong> </p> <p>Definir cabeçalhos de solicitação (opcional). Isso é útil, por exemplo, quando o URL especificado requer a autorização.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Formato de Saída]</td> 
@@ -275,7 +275,7 @@ Mescla pelo menos dois arquivos em uma PDF. Se os arquivos de entrada não forem
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Importar um arquivo da URL]</p> </td> 
-   <td> <p><strong>[!UICONTROL]</strong> </p> <p>Insira o URL do arquivo que deseja arquivar.</p> <p><strong>[!UICONTROL Cabeçalhos]</strong> </p> <p>Definir cabeçalhos de solicitação (opcional). Isso é útil, por exemplo, quando o URL especificado requer a autorização.</p> </td> 
+   <td> <p><strong></strong> </p> <p>Insira o URL do arquivo que deseja arquivar.</p> <p><strong>[!UICONTROL Cabeçalhos]</strong> </p> <p>Definir cabeçalhos de solicitação (opcional). Isso é útil, por exemplo, quando o URL especificado requer a autorização.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Formato de Saída]</td> 

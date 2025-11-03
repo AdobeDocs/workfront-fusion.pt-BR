@@ -105,7 +105,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
   </tr> 
   <tr> 
    <td>[!UICONTROL Tipo] </td> 
-   <td> <p>Selecione se deseja adicionar arquivos a um arquivo ZIP [!UICONTROL], GZIP ou [!UICONTROL TAR].</p> </td> 
+   <td> <p>Selecione se deseja adicionar arquivos a um arquivo ZIP , GZIP ou [!UICONTROL TAR].</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Comentário]</td> 

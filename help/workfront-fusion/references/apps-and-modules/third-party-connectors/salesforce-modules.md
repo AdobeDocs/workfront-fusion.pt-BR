@@ -184,7 +184,7 @@ Este módulo de acionador inicia um cenário quando um campo é atualizado em [!
   </tr> 
   <tr> 
    <td>[!UICONTROL Tipo de Registro] </td> 
-   <td> <p>Selecione o tipo de registro que contém o campo que o módulo deve observar. Você deve escolher um tipo de registro que tenha o [!UICONTROL Field History] ativado na configuração [!DNL Salesforce]. Para obter mais informações, consulte <a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&amp;type=5">Rastreamento do histórico do campo</a> na documentação [!DNL Salesforce]. </p> </td> 
+   <td> <p>Selecione o tipo de registro que contém o campo que o módulo deve observar. Você deve escolher um tipo de registro que tenha o [!UICONTROL Field History] ativado na configuração [!DNL Salesforce]. Para obter mais informações, consulte <a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&type=5">Rastreamento do histórico do campo</a> na documentação [!DNL Salesforce]. </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Campo]</td> 
@@ -572,7 +572,7 @@ Esse módulo de ação faz upload de um único arquivo para o Salesforce.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Conexão]</td> 
-   <td>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o[!DNL  Adobe Workfront Fusion] - Instruções básicas</a></td> 
+   <td>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o[!DNL &#x200B; Adobe Workfront Fusion] - Instruções básicas</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL arquivo Source]</td> 
@@ -612,7 +612,7 @@ Este módulo de ação recupera todos os registros que atendem a um determinado 
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Conexão]</td> 
-   <td>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o[!DNL  Adobe Workfront Fusion] - Instruções básicas</a></td> 
+   <td>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o[!DNL &#x200B; Adobe Workfront Fusion] - Instruções básicas</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Tipo]</td> 
