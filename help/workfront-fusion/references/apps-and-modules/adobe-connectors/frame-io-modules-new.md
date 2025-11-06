@@ -1,12 +1,12 @@
 ---
-title: Módulos do Frame.io (Beta)
+title: Módulos do Frame.io
 description: A conta  [!DNL Adobe Workfront Fusion Frame].io modules enable you to monitor, create, update, retrieve, or delete assets and comments in your [!DNL Frame.io] .
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: b23255cb9585c58f025a0b2c99b824ecbf2c6879
 workflow-type: tm+mt
-source-wordcount: '3559'
+source-wordcount: '3555'
 ht-degree: 1%
 
 ---
@@ -112,7 +112,7 @@ Você pode se conectar automaticamente com credenciais de usuário, criar manual
 
 Este método cria uma conexão automaticamente se você estiver conectado ao Frame.io ou conecta você à página de logon do Frame.io para que você possa fazer logon.
 
-1. Em qualquer módulo Frame.io do Beta, clique em **[!UICONTROL Adicionar]** ao lado da caixa Conexão.
+1. Em qualquer módulo Frame.io, clique em **[!UICONTROL Adicionar]** ao lado da caixa Conexão.
 1. Insira um nome para a conexão.
 1. Clique em **Continuar**.
 1. Se for solicitado que você faça logon em sua conta Frame.io, faça isso.
@@ -177,7 +177,7 @@ Se você ainda não tiver credenciais de servidor para servidor em um projeto do
 
 #### Configurar uma conexão de autenticação de usuário
 
-1. Em qualquer módulo Frame.io do Beta, clique em **[!UICONTROL Adicionar]** ao lado da caixa Conexão.
+1. Em qualquer módulo Frame.io, clique em **[!UICONTROL Adicionar]** ao lado da caixa Conexão.
 1. Na caixa Criar uma conexão, clique em **Mostrar configurações avançadas**.
 
 1. Preencha os seguintes campos:
@@ -252,7 +252,7 @@ Se você ainda não tiver credenciais de servidor para servidor em um projeto do
 
 #### Configurar uma conexão servidor a servidor
 
-1. Em qualquer módulo Frame.io do Beta, clique em **[!UICONTROL Adicionar]** ao lado da caixa Conexão.
+1. Em qualquer módulo Frame.io, clique em **[!UICONTROL Adicionar]** ao lado da caixa Conexão.
 
 1. Preencha os seguintes campos:
 
