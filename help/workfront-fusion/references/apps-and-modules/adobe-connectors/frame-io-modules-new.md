@@ -4,9 +4,9 @@ description: A conta  [!DNL Adobe Workfront Fusion Frame].io modules enable you 
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: b23255cb9585c58f025a0b2c99b824ecbf2c6879
+source-git-commit: 52dbf75ebb65a1de1a7a86619af4c7633e0cbe03
 workflow-type: tm+mt
-source-wordcount: '3555'
+source-wordcount: '4399'
 ht-degree: 1%
 
 ---
@@ -303,6 +303,7 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 * [Projetos](#projects)
 * [Compartilhamento](#shares)
 * [Espaços de trabalho](#workspaces)
+* [Metadados](#metadata)
 * [Outras](#other)
 
 ### Ativos
@@ -315,6 +316,61 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 * [Observar novo ativo](#watch-new-asset)
 
 #### [!UICONTROL Criar um ativo] <!--different for v4-->
+
+Este módulo de ação cria um novo ativo. Você pode fazer upload de um arquivo local ou fornecer o URL de um arquivo remoto do qual criar o ativo.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td>Para obter instruções sobre como criar uma conexão com o [!DNL Frame.io], consulte <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Conectar o [!DNL Frame.io] ao Adobe Workfront Fusion</a> neste artigo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de Conta] </td> 
+   <td> <p>Selecione a conta ou mapeie a ID da conta que contém o projeto para o qual você deseja criar um ativo.</p> </td> 
+  </tr> 
+ <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td> <p>Selecione o espaço de trabalho ou mapeie a ID do espaço de trabalho que contém o projeto para o qual você deseja criar um ativo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de Projeto] </td> 
+   <td> <p>Selecione o projeto ou mapeie a ID do projeto para o qual você deseja criar um ativo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Caminho] </td> 
+   <td> <p>Selecione o caminho onde deseja criar um ativo.</p> </td> 
+  </tr> 
+<!--  <tr> 
+   <td role="rowheader">[!UICONTROL File Name] </td> 
+   <td> <p>Enter the name of the file that you want to use for this asset.</p> </td> 
+  </tr> -->
+    <tr> 
+    <td role="rowheader">Tipo de upload </td> 
+    <td> <p>Selecione se você está criando um ativo de um arquivo local ou de uma vida remota.</p> </td> 
+   </tr>
+    <tr> 
+    <td role="rowheader">Tamanho do arquivo </td> 
+    <td> <p>Se você estiver fazendo upload de um arquivo local, insira ou mapeie o tamanho do arquivo em bytes.</p> </td> 
+   </tr>
+  <tr> 
+   <td role="rowheader">[!UICONTROL URL DO Source] </td> 
+   <td> <p>Se estiver criando o ativo a partir de um arquivo remoto, insira o URL do arquivo do qual deseja fazer upload.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL arquivo Source]</td> 
+   <td> <p>Selecione um arquivo de origem de um módulo anterior ou mapeie o nome do arquivo de origem.</p> </td> 
+  </tr> 
+<!--  <tr> 
+   <td role="rowheader">[!UICONTROL Media type] </td> 
+   <td> <p>Select the media type for this asset.</p> </td> 
+  </tr> -->
+  </tbody> 
+</table>
+
+#### [!UICONTROL Criar um ativo (Herdado)] <!--different for v4-->
 
 Este módulo de ação cria um novo ativo.
 
@@ -967,6 +1023,183 @@ Este módulo lista todos os espaços de trabalho em uma conta.
    <td role="rowheader">[!UICONTROL Número máximo de espaços de trabalho retornados] </td> 
    <td> <p>Insira ou mapeie o número máximo de espaços de trabalho
    você deseja que o módulo retorne durante cada ciclo de execução do cenário.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### Metadados
+
+* [Criar um campo de nível de conta](#create-an-account-level-field)
+* [Excluir um campo de nível de conta](#delete-an-account-level-field)
+* [Obter metadados](#get-metadata)
+* [Listar campos de nível de conta](#list-account-level-fields)
+* [Atualizar uma definição de campo de nível de conta](#update-an-account-level-field-definition)
+* [Atualizar metadados em vários arquivos](#update-metadata-across-multiple-files)
+
+#### Criar um campo de nível de conta
+
+Esse módulo de ação cria e configura um novo campo de metadados no nível da conta.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td>Para obter instruções sobre como criar uma conexão com o [!DNL Frame.io], consulte <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Conectar o [!DNL Frame.io] ao Adobe Workfront Fusion</a> neste artigo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de Conta] </td> 
+   <td> <p>Selecione ou mapeie a conta na qual deseja criar os metadados.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Tipo de campo </td> 
+   <td> <p>Selecione o tipo de campo de metadados que deseja criar e configure as opções desse campo.</p> </td> 
+  </tr> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Nome </td> 
+   <td> <p>Insira ou mapeie um nome para o novo campo.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Excluir um campo de nível de conta
+
+Esse módulo de ação exclui um único campo de metadados de nível de conta.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td>Para obter instruções sobre como criar uma conexão com o [!DNL Frame.io], consulte <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Conectar o [!DNL Frame.io] ao Adobe Workfront Fusion</a> neste artigo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de Conta] </td> 
+   <td> <p>Selecione ou mapeie a conta que contém o campo de metadados que você deseja excluir.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">ID de definição de campo </td> 
+   <td> <p>Insira ou mapeie a ID do campo que deseja excluir. Você pode encontrar IDs de campo com o módulo List account level fields.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Obter metadados
+
+Este módulo de ação recupera os metadados de um arquivo no Frame.io.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td>Para obter instruções sobre como criar uma conexão com o [!DNL Frame.io], consulte <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Conectar o [!DNL Frame.io] ao Adobe Workfront Fusion</a> neste artigo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de Conta] </td> 
+   <td> <p>Selecione ou mapeie a conta que contém o arquivo para o qual deseja recuperar metadados.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">ID do arquivo </td> 
+   <td> <p>Insira ou mapeie a ID do arquivo para o qual deseja recuperar metadados.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Mostrar nulo </td> 
+   <td> <p>Ative essa opção para incluir campos com um valor nulo na saída.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Listar campos de nível de conta
+
+Este módulo recupera uma lista de campos de metadados no nível da conta especificada.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td>Para obter instruções sobre como criar uma conexão com o [!DNL Frame.io], consulte <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Conectar o [!DNL Frame.io] ao Adobe Workfront Fusion</a> neste artigo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de Conta] </td> 
+   <td> <p>Selecione ou mapeie a conta da qual deseja listar campos.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Número máximo de contratos retornados]</td> 
+   <td> <p>Insira ou mapeie o número máximo de campos que você deseja que o módulo retorne durante cada ciclo de execução de cenário.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Atualizar uma definição de campo de nível de conta
+
+Esse módulo atualiza a definição de um único campo de metadados existente.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td>Para obter instruções sobre como criar uma conexão com o [!DNL Frame.io], consulte <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Conectar o [!DNL Frame.io] ao Adobe Workfront Fusion</a> neste artigo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de Conta] </td> 
+   <td> <p>Selecione ou mapeie a conta na qual deseja criar os metadados.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">ID de definição de campo </td> 
+   <td> <p>Insira ou mapeie a ID do campo que você deseja atualizar. Você pode encontrar IDs de campo com o módulo List account level fields.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Tipo de campo </td> 
+   <td> <p>Se desejar alterar o tipo de campo do campo, selecione o tipo de campo de metadados que deseja criar e configure as opções desse campo.</p> </td> 
+  </tr> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Nome </td> 
+   <td> <p>Insira ou mapeie um novo nome para o campo.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Atualizar metadados em vários arquivos
+
+Esse módulo atualiza campos de metadados em um ou mais arquivos com valores especificados.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td>Para obter instruções sobre como criar uma conexão com o [!DNL Frame.io], consulte <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Conectar o [!DNL Frame.io] ao Adobe Workfront Fusion</a> neste artigo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de Conta] </td> 
+   <td> <p>Selecione ou mapeie a conta que contém os arquivos para os quais deseja atualizar os metadados.</p> </td> 
+  </tr> 
+ <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td> <p>Selecione o espaço de trabalho ou mapeie a ID do espaço de trabalho que contém o projeto para o qual você deseja criar um ativo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de Projeto] </td> 
+   <td> <p>Selecione o projeto ou mapeie a ID do projeto para o qual você deseja criar um ativo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL IDs de Arquivo] </td> 
+   <td> <p>Para cada arquivo para o qual deseja atualizar os metadados, clique em <b>Adicionar item</b> e insira ou mapeie a ID do arquivo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Valores] </td> 
+   <td> <p>Para cada campo para o qual deseja atualizar os metadados, clique em <b>Adicionar item</b> e insira ou mapeie a ID da definição do campo e o valor que deseja colocar nesse campo. Todos os arquivos especificados no campo IDs de arquivo são atualizados com esse valor de campo.</p> </td> 
   </tr> 
  </tbody> 
 </table>
