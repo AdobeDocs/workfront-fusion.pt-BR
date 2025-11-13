@@ -3,17 +3,19 @@ title: Encadear vários cenários em conjunto
 description: É possível encadear cenários, permitindo que um cenário acione outro e retornando a saída de dados pelo segundo cenário para o primeiro.
 author: Becky
 feature: Workfront Fusion
-hide: true
-hidefromtoc: true
-source-git-commit: b41f7795273d35dc4e0c019c568f8939926b875a
+exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
+source-git-commit: 7f73007e219714c38dd0cf29d2a1e3a4c8f6f3cc
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1247'
 ht-degree: 0%
 
 ---
 
-
 # Encadear vários cenários em conjunto
+
+>[!NOTE]
+>
+>Este recurso atualmente está no Beta.
 
 É possível encadear cenários, permitindo que um cenário acione outro e retornando a saída de dados pelo segundo cenário para o primeiro. Isso permite a criação de cenários mais modulares, em que você não precisa duplicar seções de cenário em vários cenários.
 
