@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: b5892f64c73c41524029621591e64c942c146432
+source-git-commit: bb1cd0c54ae2c81c601d463cdc281d6ae7b8c434
 workflow-type: tm+mt
-source-wordcount: '4699'
+source-wordcount: '4560'
 ht-degree: 0%
 
 ---
@@ -454,43 +454,6 @@ Esse módulo de acionamento inicia o cenário quando uma nova mensagem é adicio
 +++
 
 ### Arquivos
-
-+++ **[!UICONTROL Criar um Arquivo de Texto]**
-
-Este módulo de ação cria um arquivo de texto.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
-   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Slack] ao [!DNL Workfront Fusion], consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o [!DNL Adobe Workfront Fusion] - Instruções básicas</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Canais]</td> 
-   <td> <p>Para cada canal para o qual você deseja carregar o arquivo, clique em <b>[!UICONTROL Adicionar item]</b> e selecione o tipo de canal e o canal.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL arquivo Source]</td> 
-   <td>Selecione um arquivo de origem de um módulo anterior ou mapeie o nome e os dados do arquivo de origem.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Título]</td> 
-   <td>Insira um título para o arquivo que você deseja fazer upload</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL ID de Thread (carimbo de data/hora)]</td> 
-   <td> <p>Se você estiver fazendo upload do arquivo como uma resposta, digite ou mapeie o carimbo de data e hora da mensagem à qual deseja responder.</p> <p>Observação: o carimbo de data/hora pode ser recuperado usando outro módulo, como o módulo [!UICONTROL Watch Private Channel].</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Comentário inicial]</td> 
-   <td> <p>Insira ou mapeie o texto da mensagem que introduz o arquivo.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-+++
 
 +++ **[!UICONTROL Excluir um arquivo]**
 
