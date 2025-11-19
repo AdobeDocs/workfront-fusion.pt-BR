@@ -4,9 +4,9 @@ description: Com os módulos do Adobe Workfront Fusion Figma, é possível recup
 author: Becky
 feature: Workfront Fusion
 exl-id: 1220460b-1957-4dfc-b7c1-4c97b36ea061
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 545bc38a619c44dd39bb746d751775f63e7aa16d
 workflow-type: tm+mt
-source-wordcount: '2600'
+source-wordcount: '2638'
 ht-degree: 0%
 
 ---
@@ -86,6 +86,11 @@ O conector Figma usa o seguinte:
 
 ## Criar uma conexão com Figma
 
+>[!IMPORTANT]
+>
+>* O Figma alterou seus requisitos de autenticação em janeiro de 2025. O tipo de conexão `Figma` atende aos novos requisitos. O tipo de conexão `Figma (Legacy)` foi descontinuado e será removido em breve.
+>* Se você estiver usando uma URL de redirecionamento, use `https://oauth.app.workfrontfusion.com/oauth/cb/figma3`.
+
 Para criar uma conexão para os módulos do Figma:
 
 1. Em qualquer módulo Figma, clique em **[!UICONTROL Adicionar]** ao lado da caixa Conexão.
@@ -101,7 +106,7 @@ Para criar uma conexão para os módulos do Figma:
         <tr>
         <td role="rowheader">[!UICONTROL Tipo de conexão]</td>
         <td>
-          <p> Para novas conexões, selecione <code>Figma</code> sem a marca Herdada. </p><p>O Figma alterou seus requisitos de autenticação em janeiro de 2025. O tipo de conexão <code>Figma</code> atende aos novos requisitos. O tipo de conexão <code>Figma (Legacy)</code> será removido no futuro.</p>
+          <p> Selecione <code>Figma</code> sem a marca Herdada. </p><p>O Figma alterou seus requisitos de autenticação em janeiro de 2025. O tipo de conexão <code>Figma</code> atende aos novos requisitos. O tipo de conexão <code>Figma (Legacy)</code> foi substituído e será removido no futuro.</p>
         </td>
         </tr>
         <tr>
@@ -112,7 +117,7 @@ Para criar uma conexão para os módulos do Figma:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL ID do Cliente]</td>
-        <td>Insira o [!UICONTROL Figme] [!UICONTROL Client ID].</td>
+        <td>Insira sua [!UICONTROL Figma] [!UICONTROL ID do cliente].</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Segredo do Cliente]</td>
