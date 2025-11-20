@@ -4,9 +4,9 @@ description: Você pode exibir um log de atividades, como criação ou ativaçã
 author: Becky
 feature: Workfront Fusion
 exl-id: 3cf851e3-50a1-4baa-8318-a24e1f467134
-source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
+source-git-commit: 2ffb7676067720a5b9daa51b560389396f4a665f
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 0%
 # Exibir logs de atividades de uma organização
 
 Você pode exibir um log de atividades, como criar um cenário ou convidar um usuário, para sua organização.
+
+Os registros de atividade mostram três meses de dados. Os dados com mais de 3 meses podem ser exportados.
 
 ## Requisitos de acesso
 
