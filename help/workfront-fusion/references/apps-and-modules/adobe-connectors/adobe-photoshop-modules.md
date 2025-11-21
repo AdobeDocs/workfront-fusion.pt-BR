@@ -4,9 +4,9 @@ description: Com os módulos do Adobe Photoshop, você pode iniciar um cenário 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
+source-git-commit: a68de976258d17631459f0951d28657fd0e0dcf6
 workflow-type: tm+mt
-source-wordcount: '5398'
+source-wordcount: '5414'
 ht-degree: 0%
 
 ---
@@ -186,6 +186,8 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 ### Aplicar edições no PSD
 
 Esse módulo de ação aplica uma variedade de edições de documento e nível de camada.
+
+Este módulo suporta arquivos grandes. Para obter mais informações sobre arquivos grandes, consulte [Trabalhando com arquivos grandes](/help/workfront-fusion/references/scenarios/fusion-large-files.md).
 
 <table style="table-layout:auto"> 
   <col/>
