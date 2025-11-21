@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 1a3865325fed3ebb0862f05641cdeb28d9e6c9f3
+source-git-commit: 671773fa1baaac8e01e0f01546602a738e219fdf
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -46,6 +46,10 @@ Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisit
 +++
 
 ## Componentes do painel de desempenho
+
+>[!NOTE]
+>
+>As métricas são mostradas pelo pool de trabalhadores. Para exibir um pool de trabalhadores diferente, clique no campo Pool próximo ao canto superior esquerdo do painel e selecione o pool para o qual deseja exibir métricas.
 
 No painel de desempenho do Fusion, é possível ver as seguintes métricas.
 
