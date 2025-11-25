@@ -1,11 +1,12 @@
 ---
+title: Módulos Anaplan
 description: Em um cenário do Adobe Workfront Fusion, é possível automatizar workflows que usam o Anaplan, bem como conectá-lo a vários aplicativos e serviços de terceiros.
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 81c9b141-4e40-430f-99f1-c44b7a833bcd
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: b54a2ae43efb44ebd002357d7b2269f40523bc9f
 workflow-type: tm+mt
-source-wordcount: '2029'
+source-wordcount: '2031'
 ht-degree: 1%
 
 ---
