@@ -3,9 +3,9 @@ title: Módulos do Veeva Vault
 description: Em um cenário do Adobe Workfront Fusion, é possível automatizar workflows que usam o Veeva Vault, bem como conectá-lo a vários aplicativos e serviços de terceiros.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 4ba05a5f400ba1bdfb97586500baf741b555cd20
+source-git-commit: 881e5ba39d1730b641085cf0d02137d18e443135
 workflow-type: tm+mt
-source-wordcount: '2325'
+source-wordcount: '2485'
 ht-degree: 2%
 
 ---
@@ -64,7 +64,12 @@ Para usar os módulos do Veeva Vault, você deve ter uma conta do Veeva Vault.
 
 Você pode criar uma conexão com sua conta do Veeva Vault diretamente de dentro de um módulo do Veeva Vault.
 
+Ao criar uma conexão, você pode selecionar se deseja usar uma senha ou se deseja usar a autenticação OAuth2.
+
+### Conecte-se ao Veeva Vault usando um nome de usuário e senha
+
 1. Em qualquer módulo do Veeva Vault, clique em **Adicionar** ao lado do campo Conexão.
+1. No campo **Tipo de conexão**, selecione `Veeva Username Password`.
 1. Preencha os campos a seguir.
 
    <table style="table-layout:auto"> 
@@ -75,18 +80,6 @@ Você pode criar uma conexão com sua conta do Veeva Vault diretamente de dentro
        <td role="rowheader">Nome da conexão</td> 
        <td> <p>Insira um nome para a conexão.</p> </td> 
       </tr> 
-      <tr>
-        <td role="rowheader">Ambiente</td>
-        <td>
-          <p>Selecione se estão se conectando a um ambiente de produção ou não produção.</p>
-        </td>
-      </tr>
-      <tr>
-        <td role="rowheader">Tipo</td>
-        <td>
-          <p>Selecione se você está se conectando a uma conta de serviço ou a uma conta pessoal.</p>
-        </td>
-      </tr>
       <tr>
         <td role="rowheader">Nome de usuário</td>
         <td>
@@ -108,6 +101,58 @@ Você pode criar uma conexão com sua conta do Veeva Vault diretamente de dentro
 
 1. Clique em **[!UICONTROL Continuar]** para criar a conexão e voltar para o módulo.
 
+### Conectar-se ao Veeva Vault usando a autenticação OAuth2
+
+1. Em qualquer módulo do Veeva Vault, clique em **Adicionar** ao lado do campo Conexão.
+1. No campo **Tipo de conexão**, selecione `Veeva Oauth 2`.
+1. Preencha os campos a seguir.
+
+   <table style="table-layout:auto"> 
+     <col> 
+     <col> 
+     <tbody> 
+      <tr> 
+       <td role="rowheader">Nome da conexão</td> 
+       <td> <p>Insira um nome para a conexão.</p> </td> 
+      </tr> 
+      <tr>
+        <td role="rowheader">ID do cliente</td>
+        <td>
+          <p>Insira a ID do cliente do aplicativo Veeva Vault que essa conexão usará.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Segredo do cliente</td>
+        <td>
+          <p>Insira o Segredo do cliente para o aplicativo Veeva Vault que essa conexão usará.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Escopo</td>
+        <td>
+          <p>Insira o escopo desta conexão.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">ID do inquilino</td>
+        <td>
+          <p>Insira a ID do locatário para esta conexão.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">ID do perfil</td>
+        <td>
+          <p>Insira a ID do seu perfil de conexão OAuth2 / Copen ID.</p>
+        </td>
+      </tr>
+      <tr> 
+       <td role="rowheader">DNS do Vault</td> 
+       <td>Insira seu DNS do Veeva Vault (nome de domínio).</p><p>Para localizar o DNS do Veeva Vault, examine o URL que você usa para acessar o Veeva Vault.</p>Por exemplo, na URL <code>https://my-dns.veevavault.com</code>, o DNS é <code>my-dns</code>. Não é necessário inserir o URL inteiro.</td> 
+      </tr> 
+     </tbody> 
+    </table>
+
+1. Clique em **[!UICONTROL Continuar]** para criar a conexão e voltar para o módulo.
 
 
 ## Módulos do Veeva Vault e seus campos
