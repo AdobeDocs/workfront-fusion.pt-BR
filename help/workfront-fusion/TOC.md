@@ -2,9 +2,9 @@
 user-guide-title: Documentação do Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Use os documentos, tutoriais e recursos adicionais para saber como implementar e usar efetivamente o Adobe Workfront Fusion em sua organização.
-source-git-commit: e254122177cffb69eb34ebc2459239ebc9e055a7
+source-git-commit: ec4fec0fc66fd89afad4cfe85a0fb41fc1786925
 workflow-type: tm+mt
-source-wordcount: '1946'
+source-wordcount: '1953'
 ht-degree: 3%
 
 ---
@@ -17,6 +17,7 @@ ht-degree: 3%
    * [Atividade de lançamento do Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Versões do Fusion - 2025 {#fusion-releases-2025}
       * [Atividade de lançamento do Workfront Fusion: semana de 17 de novembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-17.md)
+      * [Atividade de lançamento do Workfront Fusion: semana de 1 de dezembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-1.md)
       * [Atividade de lançamento do Workfront Fusion: semana de 10 de novembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-10.md)
       * [Atividade de lançamento do Workfront Fusion: semana de 3 de novembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-3.md)
       * [Atividade de lançamento do Workfront Fusion: semana de 20 de outubro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-20.md)
