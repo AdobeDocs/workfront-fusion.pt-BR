@@ -4,10 +4,10 @@ description: As seguintes funções gerais estão disponíveis no painel Mapeame
 author: Becky
 feature: Workfront Fusion
 exl-id: 6d4b8801-aa7e-47d4-80b3-aceac10c073f
-source-git-commit: 295004ab7536b85124bc366d6832c08365338d08
+source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 0%
+source-wordcount: '318'
+ht-degree: 2%
 
 ---
 
@@ -15,10 +15,12 @@ ht-degree: 0%
 
 ## Variáveis
 
-Há duas variáveis gerais que podem ser usadas para identificar detalhes sobre uma execução:
+Você pode usar essas variáveis gerais para identificar detalhes sobre uma execução:
 
 * `executionID`: a ID de execução deste cenário
 * `triggerTimestamp`: a hora em que essa execução foi disparada
+* `scenarioID`: a ID do cenário aberto no momento
+* `operationsConsumed`: o número de operações usadas nesse ponto do cenário.
 
 ## [!UICONTROL obter (objeto ou matriz; caminho)]
 

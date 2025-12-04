@@ -4,9 +4,9 @@ description: Muitos serviços fornecem webhooks para fornecer notificações ins
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
+source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1232'
 ht-degree: 0%
 
 ---
@@ -83,6 +83,11 @@ Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisit
 1. Para exibir o cenário em que um webhook é usado, clique no botão **Cenário** na coluna Cenário desse webhook.
 1. Para exibir a conexão usada para este webhook, clique no botão **Conexão** na coluna Conexão para esse webhook.
 1. Para ocultar colunas ou mostrar colunas ocultas anteriormente, clique no ícone **Colunas** ícone ![Colunas](assets/glist-column.png) e marque ou desmarque nomes de colunas.
+1. Para exibir assinaturas de evento associadas a um webhook do Workfront, marque a caixa ao lado do webhook e selecione **Mostrar Detalhes** na parte inferior da página.
+
+   >[!NOTE]
+   >
+   > Os detalhes de assinatura do evento estão disponíveis somente para webhooks do Workfront criados no novo conector do Workfront. Os detalhes do Webhook não estão disponíveis no momento para outros conectores.
 
 
 ## Agendar acionadores instantâneos
