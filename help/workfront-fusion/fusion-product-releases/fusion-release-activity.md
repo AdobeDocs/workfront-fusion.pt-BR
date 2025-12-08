@@ -3,34 +3,35 @@ product-previous: workfront-fusion
 content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: product-releases
-title: Visão geral da atividade de versão do Adobe Workfront Fusion
-description: O Adobe Workfront Fusion conecta perfeitamente aplicativos e serviços da web para que você possa se concentrar em novas tarefas, em vez de repetir as que já concluiu.
+title: Visão geral da atividade de lançamento do Adobe Workfront Fusion
+description: O Adobe Workfront Fusion conecta perfeitamente aplicativos e serviços da Web para que você possa se concentrar em novas tarefas, em vez de repetir aquelas que já concluiu.
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: c37aea95-7cc3-4939-a4d7-9a6a75557b85
-source-git-commit: ec4fec0fc66fd89afad4cfe85a0fb41fc1786925
+source-git-commit: 04fe3b413638119d06686b420deaeb4f7d37d81c
 workflow-type: tm+mt
-source-wordcount: '1063'
-ht-degree: 16%
+source-wordcount: '1070'
+ht-degree: 100%
 
 ---
 
-# Visão geral da atividade de versão do Adobe Workfront Fusion
+# Visão geral da atividade de lançamento do Adobe Workfront Fusion
 
-O Adobe Workfront Fusion conecta perfeitamente aplicativos e serviços da web para que você possa se concentrar em novas tarefas, em vez de repetir as que já concluiu.
+O Adobe Workfront Fusion conecta perfeitamente aplicativos e serviços da Web para que você possa se concentrar em novas tarefas, em vez de repetir aquelas que já concluiu.
 
-## Versões da fusão em 2025
+## Versões do Fusion em 2025
 
 ### Dezembro de 2025
 
-* [Atividade de lançamento do Workfront Fusion: semana de 1 de dezembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-1.md)
+* [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 8 de dezembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-8.md)
+* [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 1 de dezembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-1.md)
 
 ### Novembro de 2025
 
-* [Atividade de lançamento do Workfront Fusion: semana de 17 de novembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-17.md)
-* [Atividade de lançamento do Workfront Fusion: semana de 10 de novembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-10.md)
-* [Atividade de lançamento do Workfront Fusion: semana de 3 de novembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-3.md)
+* [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 17 de novembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-17.md)
+* [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 10 de novembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-10.md)
+* [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 3 de novembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-3.md)
 
 ### Outubro de 2025
 
@@ -93,7 +94,7 @@ O Adobe Workfront Fusion conecta perfeitamente aplicativos e serviços da web pa
 * [Atividade de lançamento do Workfront Fusion: semana de 13 de janeiro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-13.md)
 * [Atividade de lançamento do Workfront Fusion: semana de 6 de janeiro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-6.md)
 
-## Versões da fusão em 2024
+## Versões do Fusion em 2024
 
 +++ **Clique para abrir**
 
@@ -160,11 +161,11 @@ O Adobe Workfront Fusion conecta perfeitamente aplicativos e serviços da web pa
 
 ### Janeiro de 2024
 
-* [Atividade de lançamento do Workfront Fusion: semana de 1 de janeiro de 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-1-4.md)
+* [Atividade de lançamento do Workfront Fusion: semana de 1º de janeiro de 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-1-4.md)
 
 +++
 
-## Versões da fusão em 2023
+## Versões do Fusion em 2023
 
 +++**Clique para abrir**
 
@@ -200,7 +201,7 @@ O Adobe Workfront Fusion conecta perfeitamente aplicativos e serviços da web pa
 ### Maio de 2023
 
 * [Atividade de lançamento do Workfront Fusion: semana de 15 de maio de 2023](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-5-15.md)
-* [Atividade de lançamento do Workfront Fusion: semana de 1 de maio de 2023](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-5-2.md)
+* [Atividade de lançamento do Workfront Fusion: semana de 1º de maio de 2023](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-5-2.md)
 
 ### Abril de 2023
 
@@ -213,7 +214,7 @@ O Adobe Workfront Fusion conecta perfeitamente aplicativos e serviços da web pa
 
 +++
 
-## Versões da fusão em 2022
+## Versões do Fusion em 2022
 
 +++**Clique para abrir**
 
@@ -274,7 +275,7 @@ O Adobe Workfront Fusion conecta perfeitamente aplicativos e serviços da web pa
 
 +++
 
-## Versões da fusão em 2021
+## Versões do Fusion em 2021
 
 +++**Clique para abrir**
 
@@ -330,7 +331,7 @@ O Adobe Workfront Fusion conecta perfeitamente aplicativos e serviços da web pa
 
 ### Janeiro de 2021
 
-* [Atividade de lançamento do Workfront Fusion: semana de 1 de fevereiro de 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-feb-1.md)
+* [Atividade de lançamento do Workfront Fusion: semana de 1º de fevereiro de 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-feb-1.md)
 * [Atividade de lançamento do Workfront Fusion: semana de 25 de janeiro de 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jan-25.md)
 * [Atividade de lançamento do Workfront Fusion: semana de 18 de janeiro de 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jan-18.md)
 * [Atividade de lançamento do Workfront Fusion: semana de 11 de janeiro de 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jan-11.md)
@@ -338,7 +339,7 @@ O Adobe Workfront Fusion conecta perfeitamente aplicativos e serviços da web pa
 
 +++
 
-## Versões da fusão em 2020
+## Versões do Fusion em 2020
 
 +++**Clique para abrir**
 
@@ -348,7 +349,7 @@ O Adobe Workfront Fusion conecta perfeitamente aplicativos e serviços da web pa
 
 ### Novembro de 2020
 
-* [Atividade de lançamento do Workfront Fusion: Semana de 30 de novembro de 2020](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-nov-30.md)
+* [Atividade de lançamento do Workfront Fusion: semana de 30 de novembro de 2020](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-nov-30.md)
 * [Atividade de lançamento do Workfront Fusion: semana de 16 de novembro de 2020](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-nov-16.md)
 * [Atividade de lançamento do Workfront Fusion: semana de 2 de novembro de 2020](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-nov-2.md)
 
