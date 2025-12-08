@@ -1,21 +1,21 @@
 ---
 title: Adobe Workfront Fusion
-description: Bem-vindo à página inicial da documentação técnica e do produto do Adobe Workfront Fusion. Use os links, os artigos de ajuda e os recursos adicionais a seguir para saber como implementar e usar efetivamente o Adobe Workfront Fusion na sua organização.
+description: Damos as boas-vindas à página inicial da documentação técnica e do produto do Adobe Workfront Fusion. Use os links, artigos de ajuda e recursos adicionais a seguir para saber como implementar e usar com eficácia o Adobe Workfront Fusion em sua organização.
 exl-id: c005fc89-4b58-4c4e-ba45-0155cd2c8f03
 source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '306'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 # Documentação do Workfront Fusion
 
-Bem-vindo à página inicial da documentação técnica e do produto do Adobe Workfront Fusion. Use os links, os artigos de ajuda e os recursos adicionais a seguir para saber como implementar e usar efetivamente o Adobe Workfront Fusion na sua organização.
+Damos as boas-vindas à página inicial da documentação técnica e do produto do Adobe Workfront Fusion. Use os links, artigos de ajuda e recursos adicionais a seguir para saber como implementar e usar com eficácia o Adobe Workfront Fusion em sua organização.
 
 ## Novidades
 
-* [Atividade de liberação](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
+* [Atividade de lançamento](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
 * [Problemas conhecidos](https://experienceleague.adobe.com/pt-br/docs/workfront-known-issues/issues/fusion/workfrontfusion)
 
 ## Explorar documentação
@@ -35,7 +35,7 @@ Bem-vindo à página inicial da documentação técnica e do produto do Adobe Wo
     <td>
         <ul>
         <li><a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion-toc.md">Entender o Workfront Fusion</a></li>
-        <li><a href="/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md">Navegar pelo Workfront Fusion</a></li>
+        <li><a href="/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md">Navegar no Workfront Fusion</a></li>
         <li><a href="/help/workfront-fusion/create-scenarios/create-scenarios-toc.md">Criar cenários</a></li>
         <li><a href="/help/workfront-fusion/references/references-toc.md">Material de referência</a></li>
         </ul>
@@ -43,20 +43,20 @@ Bem-vindo à página inicial da documentação técnica e do produto do Adobe Wo
   </tr>
 </table>
 
-## Dicas para encontrar conteúdo no Experience League
+## Dicas para encontrar conteúdo na Experience League
 
-A pesquisa de documentação pode ser mais eficiente com algumas abordagens estratégicas. Estas são algumas dicas para ajudá-lo a encontrar o que você precisa com eficiência:
+A pesquisa de documentação pode ser mais eficiente com algumas abordagens estratégicas. Veja a seguir algumas dicas que podem ajudar você a encontrar o que precisa com eficácia:
 
-### Usar o sumário e a barra de pesquisa
+### Use o sumário e a barra de pesquisa
 
-* **Sumário**: comece com o sumário à esquerda da página para obter uma visão geral dos tópicos disponíveis e se restringir a tópicos específicos nas seções em expansão.
-* **Barra de pesquisa**: use a barra de pesquisa próxima à parte superior da página para localizar a documentação. Insira termos específicos relacionados ao problema ou tópico. Em vez de termos gerais como &quot;cenário&quot;, use &quot;adicionar um filtro&quot; ou &quot;Conector do Workfront&quot;.
+* **Sumário**: comece pelo sumário à esquerda da página para ter uma visão geral dos tópicos disponíveis e aprofunde-se em tópicos específicos por meio das seções expansíveis.
+* **Barra de pesquisa**: use a barra de pesquisa próxima à parte superior da página para localizar a documentação. Insira termos específicos relacionados ao problema ou tópico. Em vez de termos gerais como “cenário”, use “adicionar um filtro” ou “conector do Workfront”.
 
-### Explorar as seções de aprendizado e treinamento
+### Explore as seções Aprendizado e Treinamento
 
-* **Sessões de treinamento ministradas por instrutores em tempo real** O Adobe oferece sessões de treinamento em tempo real de três dias para Fusion. Consulte [Gerenciar Conexões e Fluxos de Trabalho no Adobe Workfront Fusion](https://learning.adobe.com/courses/adobe_workfront/cours000000000098121.html) para obter detalhes e sessões disponíveis.
-* **Materiais de Treinamento**: Navegue até a [página de treinamento Introdução e estratégia técnica](https://experienceleague.adobe.com/pt-br/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy) do Workfront Fusion para iniciar uma série de lições e exercícios projetados para ajudá-lo a entender melhor como usar o Fusion.
+* **Sessões de treinamento ministradas por instrutor ao vivo** a Adobe oferece sessões de treinamento ao vivo de três dias para o Fusion. Consulte [Gerenciar conexões e fluxos de trabalho no Adobe Workfront Fusion](https://learning.adobe.com/courses/adobe_workfront/cours000000000098121.html) para obter detalhes e sessões disponíveis.
+* **Materiais de treinamento**: vá para a página de treinamento [Introdução e estratégia técnica](https://experienceleague.adobe.com/pt-br/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy) do Workfront Fusion para iniciar uma série de lições e exercícios desenvolvidos para ajudar você a entender melhor como usar o Fusion.
 
-### Encontre respostas em Fóruns da comunidade
+### Encontre respostas nos fóruns da comunidade
 
-* **Fazer perguntas**: se a documentação não responder à sua pergunta, tente postar nos [fóruns da Comunidade do Workfront Fusion](https://experienceleaguecommunities.adobe.com/t5/workfront-fusion/ct-p/workfront-fusion-2?profile.language=pt) onde outros usuários e especialistas podem oferecer assistência.
+* **Faça perguntas**: se a documentação não responder à sua pergunta, tente postar nos [Fóruns da comunidade do Workfront Fusion](https://experienceleaguecommunities.adobe.com/t5/workfront-fusion/ct-p/workfront-fusion-2), outros usuários e especialistas podem oferecer assistência.

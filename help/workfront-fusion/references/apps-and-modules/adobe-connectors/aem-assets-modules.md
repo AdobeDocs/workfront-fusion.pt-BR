@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
 source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3734'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 2%
 
 Com o conector do Adobe Experience Manager Assets para Adobe Workfront Fusion, é possível criar, fazer upload e atualizar ativos, além de copiar ou mover pastas e ativos.
 
-Para obter uma introdução ao vídeo sobre o conector do Adobe Experience Manager Assets, consulte:
+Para obter um vídeo de introdução ao conector do Adobe Experience Manager Assets, consulte:
 
 * [Adobe Experience Manager Assets](https://video.tv.adobe.com/v/3427034/){target=_blank}
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -29,45 +29,45 @@ Para obter uma introdução ao vídeo sobre o conector do Adobe Experience Manag
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion</td> 
    <td>
    <p>Baseado em operação: nenhum requisito de licença do Workfront Fusion</p>
-   <p>Baseado em conector (herdado): automação e integração do Workfront Fusion for Work </p>
+   <p>Baseado em conector (legado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações nesta tabela, consulte os [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Pré-requisitos
 
 * Você deve ter uma conta do Adobe Experience Manager Assets para usar esses módulos.
-* Você deve configurar o fluxo de servidor para servidor no console do Adobe Developer.
+* Você deve configurar o fluxo de servidor para servidor no Adobe Developer Console.
 
-  Para obter instruções sobre como configurar o fluxo de servidor para servidor no console do Adobe Developer, consulte [Gerando tokens de acesso para APIs do lado do servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=pt-BR#the-server-to-server-flow).
+  Para obter instruções sobre como configurar o fluxo de servidor para servidor no Adobe Developer Console, consulte [Geração de tokens de acesso para APIs do lado do servidor](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow).
 * Sua conta técnica do Adobe Experience Manager deve ter permissões de gravação.
 
-  Para obter instruções sobre como adicionar permissões de gravação à sua conta técnica da Adobe Experience Manager, consulte [Credenciais de serviço](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) na documentação da Adobe Experience Manager.
+  Para obter instruções sobre como adicionar permissões de gravação à sua conta técnica do Adobe Experience Manager, consulte [Credenciais de serviço](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) na documentação do Adobe Experience Manager.
 
-## Informações da API do Adobe Experience Manager Assets
+## Informações sobre API do Adobe Experience Manager Assets
 
 O conector do Adobe Experience Manager Assets usa o seguinte:
 
@@ -90,34 +90,34 @@ Para criar uma conexão para os módulos do Adobe Experience Manager Assets:
 
 2. Selecione o tipo de conexão que você está criando:
 
-   * **AEM Assets as a Cloud Service**
+   * **AEM Assets as a Cloud Service**
 
-     Essa configuração requer informações da Adobe Admin Console.
+     Esta configuração requer informações do Adobe Admin Console.
 
    * **AEM Assets Basic (Adobe Managed Services)**
 
-     Esta configuração requer um nome de usuário e senha.
+     Esta configuração requer um nome de usuário e uma senha.
 
 3. Preencha os campos para o tipo de conexão que você está criando.
 
-   Para o AEM Assets as a Cloud Service, consulte [Configurar a conexão para o AEM Assets as a Cloud Service](#configure-the-connection-for-aem-assets-as-a-cloud-service).
+   Para o AEM Assets as a Cloud Service, consulte [Configurar a conexão do AEM Assets as a Cloud Service](#configure-the-connection-for-aem-assets-as-a-cloud-service).
 
-   Para o AEM Assets Basic (Adobe Managed Services), consulte [Configurar a conexão para o AEM Assets Basic](#configure-the-connection-for-aemassets-basic-adobe-managed-services).
+   Para o AEM Assets Basic (Adobe Managed Services), consulte [Configurar a conexão do AEM Assets Basic](#configure-the-connection-for-aemassets-basic-adobe-managed-services).
 
 4. Clique em **Continuar** para salvar a conexão e retornar ao módulo.
 
 
-### Configurar a conexão para o AEM Assets as a Cloud Service
+### Configurar a conexão do AEM Assets as a Cloud Service
 
 >[!NOTE]
 >
->* As informações desses campos são geradas como parte da configuração do fluxo de servidor para servidor no Adobe Developer Console. Você pode encontrar esses valores no arquivo JSON de credenciais de serviço gerado como parte dessa configuração.
+>* As informações destes campos são geradas como parte da configuração do fluxo de servidor para servidor no Adobe Developer Console. Você pode encontrar esses valores no arquivo JSON de credenciais de serviço gerado como parte dessa configuração.
 >
->   Para obter instruções sobre como configurar o fluxo de servidor para servidor no Adobe Developer Console, consulte [Gerando tokens de acesso para APIs do lado do servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=pt-BR#the-server-to-server-flow).
+>   Para obter instruções sobre como configurar o fluxo de servidor para servidor no Adobe Developer Console, consulte [Geração de tokens de acesso para APIs do lado do servidor](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow).
 >
 >* Sua conta técnica do Adobe Experience Manager deve ter permissões de gravação.
 >
->   Para obter instruções sobre como adicionar permissões de gravação à sua conta técnica da Adobe Experience Manager, consulte [Credenciais de serviço](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) na documentação da Adobe Experience Manager.
+>   Para obter instruções sobre como adicionar permissões de gravação à sua conta técnica do Adobe Experience Manager, consulte [Credenciais de serviço](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) na documentação do Adobe Experience Manager.
 
 
 <table style="table-layout:auto"> 
@@ -127,12 +127,12 @@ Para criar uma conexão para os módulos do Adobe Experience Manager Assets:
               <tr>
                   <td role="rowheader">Nome da conexão</td>
                   <td>
-                      <p>Insira um nome para esta conexão.</p>
+                      <p>Insira um nome para essa conexão.</p>
                   </td>
               </tr>
               <tr>
-                  <td role="rowheader">URL da instância sem uma barra à direita</td>
-                  <td>Insira o URL da sua instância do Adobe Experience Manager. Não inclua uma barra <code>/</code> ao final da URL.</td>
+                  <td role="rowheader">URL da instância sem uma barra final</td>
+                  <td>Insira o URL para a instância do Adobe Experience Manager. Não inclua uma barra <code>/</code> no final do URL.</td>
               </tr>
               <tr>
                   <td role="rowheader">Opções de preenchimento dos detalhes da conta</td>
@@ -148,7 +148,7 @@ Para criar uma conexão para os módulos do Adobe Experience Manager Assets:
               </tr>
               <tr>
                   <td role="rowheader">Segredo do cliente</td>
-                  <td>Se estiver inserindo detalhes manualmente, insira o Segredo do cliente gerado na configuração de Servidor para Servidor.</td>
+                  <td>Se estiver inserindo detalhes manualmente, insira o segredo do cliente gerado na configuração de servidor para servidor.</td>
               </tr>
               <tr>
                   <td role="rowheader">ID da conta técnica</td>
@@ -156,25 +156,25 @@ Para criar uma conexão para os módulos do Adobe Experience Manager Assets:
               </tr>
               <tr>
                   <td role="rowheader">ID da organização</td>
-                  <td class="">Se você inserir detalhes manualmente, insira a ID da organização. Este é o campo "org" no arquivo JSON de credenciais do cliente.</td>
+                  <td class="">Se inserir detalhes manualmente, insira a ID da sua organização. Este é o campo “org” no arquivo JSON de credenciais do cliente.</td>
               </tr>
               <tr>
-                  <td role="rowheader">Escopos do Meta</td>
-                  <td>Insira os escopos do Meta gerados na configuração de servidor para servidor.</td>
+                  <td role="rowheader">Metaescopos</td>
+                  <td>Insira os metaescopos gerados na configuração de servidor para servidor.</td>
               </tr>
               <tr>
                   <td role="rowheader">Chave privada</td>
-                  <td>Insira a chave privada gerada na configuração de servidor para servidor. Para extrair a chave privada, clique em Extract (Extrair) e, em seguida, insira o arquivo a ser extraído e a senha do arquivo.</td>
+                  <td>Insira a chave privada gerada na configuração de servidor para servidor. Para extrair a chave privada, clique em Extrair e insira o arquivo a ser extraído e a senha do arquivo.</td>
               </tr>
               <tr>
                   <td role="rowheader">URL de autenticação</td>
-                  <td>Digite a URL de autenticação desta conta.</td>
+                  <td>Insira o URL de autenticação desta conta.</td>
               </tr>
           </tbody>
       </table>
 
 
-### Configurar a conexão para o AEM Assets Basic (Adobe Managed Services)
+### Configurar a conexão do AEM Assets Basic (Adobe Managed Services)
 
 <table style="table-layout:auto"> 
         <col/>
@@ -183,12 +183,12 @@ Para criar uma conexão para os módulos do Adobe Experience Manager Assets:
             <tr>
                 <td role="rowheader">Nome da conexão</td>
                 <td>
-                    <p>Insira um nome para esta conexão.</p>
+                    <p>Insira um nome para essa conexão.</p>
                 </td>
             </tr>
             <tr>
-                <td role="rowheader">URL da instância sem uma barra à direita</td>
-                <td>Insira o URL da sua instância do Adobe Experience Manager. Não inclua uma barra <code>/</code> ao final da URL.</td>
+                <td role="rowheader">URL da instância sem uma barra final</td>
+                <td>Insira o URL para a instância do Adobe Experience Manager. Não inclua uma barra <code>/</code> no final do URL.</td>
             </tr>
             <tr>
                 <td role="rowheader">Nome de usuário</td>
@@ -196,7 +196,7 @@ Para criar uma conexão para os módulos do Adobe Experience Manager Assets:
             </tr>
             <tr>
                 <td role="rowheader">Senha</td>
-                <td>Digite a senha da conta do AEM Assets que essa conexão usa.</td>
+                <td>Insira a senha da conta do AEM Assets que essa conexão usa.</td>
             </tr>
         </tbody>
     </table>
@@ -204,31 +204,31 @@ Para criar uma conexão para os módulos do Adobe Experience Manager Assets:
 
 ## Módulos do Adobe Experience Manager Assets e seus campos
 
-Ao configurar módulos do Adobe Experience Manager Assets, o Workfront Fusion exibe os campos listados abaixo. Junto com esses, campos adicionais do Adobe Experience Manager Assets podem ser exibidos, dependendo de fatores como nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
+Ao configurar módulos do Adobe Experience Manager Assets, o Workfront Fusion exibe os campos listados abaixo. Junto deles, podem ser exibidos campos adicionais do Adobe Experience Manager Assets, dependendo de fatores como nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Alternância de mapa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Botão Mapear](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Operações de arquivos](#files-operations)
 * [Outras](#other)
-* [Assets (API do autor)](#assets-author-api)
-* [Eventos (API do autor)](#events-author-api)
-* [Metadados (API do autor)](#metadata-author-api)
-* [Importar (API do autor)](#import-author-api)
-* [Relações (API do autor)](#relations-author-api)
-* [Pastas (API Pastas)](#folders-folders-api)
+* [Assets (API de criação)](#assets-author-api)
+* [Eventos (API de criação)](#events-author-api)
+* [Metadados (API de criação)](#metadata-author-api)
+* [Importar (API de criação)](#import-author-api)
+* [Relações (API de criação)](#relations-author-api)
+* [Pastas (API de pastas)](#folders-folders-api)
 
 ### Operações de arquivos
 
-* [Carregamento completo](#complete-upload)
+* [Concluir upload](#complete-upload)
 * [Obter armazenamento pré-assinado](#get-presigned-storage)
 * [Iniciar upload](#initiate-upload)
 * [Fazer upload de um ativo](#upload-an-asset)
 
-#### Carregamento completo
+#### Concluir upload
 
-Esse módulo de ação conclui um upload iniciado depois que todas as partes do arquivo são carregadas.
+Este módulo de ação conclui um upload iniciado depois que todas as partes do arquivo são enviadas.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -240,15 +240,15 @@ Esse módulo de ação conclui um upload iniciado depois que todas as partes do 
   </tr> 
   <tr> 
    <td role="rowheader">Nome do arquivo</td> 
-   <td> <p>Insira ou mapeie um nome para o arquivo carregado.</p> </td> 
+   <td> <p>Insira ou mapeie um nome para o arquivo enviado.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Carregar token</td> 
+   <td role="rowheader">Token para upload</td> 
    <td>Insira ou mapeie o token de upload para o binário, conforme fornecido pela iniciação.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Tipo MIME</td> 
-   <td>Insira ou mapeie o tipo de MIME para o arquivo concluído.</td> 
+   <td>Insira ou mapeie o tipo MIME do arquivo concluído.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">URI completo</td> 
@@ -260,7 +260,7 @@ Esse módulo de ação conclui um upload iniciado depois que todas as partes do 
 
 #### Obter armazenamento pré-assinado
 
-Esse módulo de ação cria um URL pré-assinado temporário para carregar ou baixar arquivos do AEM com segurança, sem exigir credenciais diretas.
+Este módulo de ação cria um URL pré-assinado temporário para fazer upload ou baixar arquivos do AEM com segurança, sem exigir credenciais diretas.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -303,11 +303,11 @@ Este módulo de ação inicia um upload.
   </tr> 
   <tr> 
    <td role="rowheader">Nome do arquivo</td> 
-   <td> <p>Insira ou mapeie um nome para o arquivo carregado</p> </td> 
+   <td> <p>Insira ou mapeie um nome para o arquivo enviado</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Tamanho máximo do arquivo</td> 
-   <td>Insira ou mapeie o tamanho, em bytes, do arquivo carregado.</td> 
+   <td>Insira ou mapeie o tamanho, em bytes, do arquivo enviado.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -315,7 +315,7 @@ Este módulo de ação inicia um upload.
 
 #### Fazer upload de um ativo
 
-Esse módulo de ação faz upload de um ativo para sua conta da Adobe Experience Manager Assets.
+Este módulo de ação faz upload de um ativo para sua conta do Adobe Experience Manager Assets.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -330,7 +330,7 @@ Esse módulo de ação faz upload de um ativo para sua conta da Adobe Experience
    <td> <p>Selecione a pasta na qual deseja fazer upload de um ativo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Arquivo Source</td> 
+   <td role="rowheader">Arquivo de origem</td> 
    <td>Insira ou mapeie o nome e os dados do arquivo de origem.</td> 
   </tr> 
  </tbody> 
@@ -341,7 +341,7 @@ Esse módulo de ação faz upload de um ativo para sua conta da Adobe Experience
 
 * [Copiar uma pasta ou um ativo](#copy-a-folder-or-asset)
 * [Criar um registro](#create-a-record)
-* [Excluir uma pasta, ativo ou representação](#delete-a-folder-asset-or-rendition)
+* [Excluir uma pasta, um ativo ou uma representação](#delete-a-folder-asset-or-rendition)
 * [Obter uma lista de pastas](#get-a-folder-listing)
 * [Fazer uma chamada de API personalizada](#make-a-custom-api-call)
 * [Mover uma pasta ou um ativo](#move-a-folder-or-asset)
@@ -351,7 +351,7 @@ Esse módulo de ação faz upload de um ativo para sua conta da Adobe Experience
 
 #### Copiar uma pasta ou um ativo
 
-Este módulo de ação copia uma pasta ou um ativo para outro local em sua conta da Adobe Experience Manager Assets.
+Este módulo de ação copia uma pasta ou um ativo para outro local em sua conta do Adobe Experience Manager Assets.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -366,20 +366,20 @@ Este módulo de ação copia uma pasta ou um ativo para outro local em sua conta
    <td> <p>Selecione se deseja copiar uma pasta ou um ativo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Pasta/ativo</td> 
+   <td role="rowheader">Pasta/Ativo</td> 
    <td>Selecione ou mapeie a pasta ou o ativo que deseja copiar.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Caminho de destino</td> 
-   <td>Selecione ou mapeie o caminho para o local da nova pasta ou ativo.</td> 
+   <td>Selecione ou mapeie o caminho para o local da nova pasta ou do novo ativo.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Nome da pasta/ativo copiado</td> 
-   <td>Insira um nome para a nova pasta ou ativo. O nome da pasta exibido no Adobe Experience Manager Assets é igual ao nome original. O nome inserido aqui aparece no URL da nova pasta ou ativo.</td> 
+   <td>Insira um nome para a nova pasta ou para o novo ativo. O nome da pasta exibido no Adobe Experience Manager Assets é igual ao nome original. O nome inserido aqui aparece no URL da nova pasta ou do novo ativo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Copiar secundário</td> 
-   <td>Se estiver copiando uma pasta, ative essa opção para copiar quaisquer subpastas ou ativos dentro da pasta.</td> 
+   <td role="rowheader">Copiar filhos</td> 
+   <td>Se estiver copiando uma pasta, habilite essa opção para copiar quaisquer ativos contidos ou subpastas.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Substituir</td> 
@@ -392,7 +392,7 @@ Este módulo de ação copia uma pasta ou um ativo para outro local em sua conta
 
 #### Criar um registro
 
-Esse módulo de ação cria uma pasta ou um comentário de ativo.
+Este módulo de ação cria uma pasta ou um comentário de ativo.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -421,9 +421,9 @@ Esse módulo de ação cria uma pasta ou um comentário de ativo.
  </tbody> 
 </table>
 
-#### Excluir uma pasta, ativo ou representação
+#### Excluir uma pasta, um ativo ou uma representação
 
-Este módulo de ação exclui uma pasta, ativo ou representação.
+Este módulo de ação exclui uma pasta, um ativo ou uma representação.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -435,11 +435,11 @@ Este módulo de ação exclui uma pasta, ativo ou representação.
   </tr> 
   <tr> 
    <td role="rowheader">Tipo de registro</td> 
-   <td> <p>Selecione se deseja excluir uma pasta, ativo ou representação.</p> 
+   <td> <p>Selecione se deseja excluir uma pasta, um ativo ou uma representação.</p> 
     <ul> 
      <li> <p>Pasta</p> <p>Selecione a pasta a ser excluída selecionando as pastas em seu caminho.</p> </li> 
-     <li> <p>Ativo</p> <p>Selecione o ativo, selecionando as pastas em seu caminho e, em seguida, o ativo que deseja excluir.</p> </li> 
-     <li> <p>Representação</p> <p>Selecione a representação selecionando as pastas em seu caminho.</p> <p>Insira ou mapeie o nome da representação.</p> </li> 
+     <li> <p>Ativo</p> <p>Selecione o ativo, selecionando as pastas no respectivo caminho e, em seguida, o ativo que deseja excluir.</p> </li> 
+     <li> <p>Representação</p> <p>Selecione a representação, selecionando as pastas no respectivo caminho.</p> <p>Insira ou mapeie o nome da representação.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -447,7 +447,7 @@ Este módulo de ação exclui uma pasta, ativo ou representação.
 
 #### Obter uma lista de pastas
 
-Este módulo de ação recupera uma representação de uma pasta existente e de suas entidades filhas (pastas ou ativos).
+Este módulo de ação recupera a representação de uma pasta e de suas entidades filhas (pastas ou ativos).
 
 <table style="table-layout:auto"> 
  <col> 
@@ -459,14 +459,14 @@ Este módulo de ação recupera uma representação de uma pasta existente e de 
   </tr> 
   <tr> 
    <td role="rowheader">Pasta</td> 
-   <td>Selecione ou mapeie a pasta que deseja recuperar. Para adicionar subpastas ao caminho, clique no ícone de adição e selecione a subpasta.</td> 
+   <td>Selecione ou mapeie a pasta que deseja recuperar. Para adicionar subpastas ao caminho, clique no ícone de sinal de mais e selecione a subpasta.</td> 
   </tr> 
  </tbody> 
 </table>
 
 #### Fazer uma chamada de API personalizada
 
-Esse módulo de ação faz uma chamada de API personalizada para a API do Adobe Experience Manager Assets.
+Este módulo de ação faz uma chamada de API personalizada para a API do Adobe Experience Manager Assets.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -478,7 +478,7 @@ Esse módulo de ação faz uma chamada de API personalizada para a API do Adobe 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>URL</p> </td> 
-   <td> <p>Insira um caminho relativo ao URL base do Adobe Experience Manager.</p> </td> 
+   <td> <p>Insira um caminho relativo ao URL de base do Adobe Experience Manager.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Método</p> </td> 
@@ -489,12 +489,12 @@ Esse módulo de ação faz uma chamada de API personalizada para a API do Adobe 
    <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p> <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p> <p> O Workfront Fusion adiciona cabeçalhos de autorização automaticamente.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Sequência de consulta</td> 
+   <td role="rowheader">String de consulta</td> 
    <td> <p>Insira a string de consulta da solicitação. Para cada par Chave/Valor, clique em <b>Adicionar item</b> e insira a Chave e o Valor.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Corpo</td> 
-   <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
+   <td> <p>Adicione o conteúdo do corpo para a chamada de API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais, como <code>if</code>, em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -504,7 +504,7 @@ Esse módulo de ação faz uma chamada de API personalizada para a API do Adobe 
 
 #### Mover uma pasta ou um ativo
 
-Este módulo de ação move o ativo ou pasta no caminho fornecido para um novo local.
+Este módulo de ação move o ativo ou a pasta no caminho fornecido para um novo local.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -519,12 +519,12 @@ Este módulo de ação move o ativo ou pasta no caminho fornecido para um novo l
    <td> <p>Selecione se deseja mover uma pasta ou um ativo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Pasta/ativo</td> 
+   <td role="rowheader">Pasta/Ativo</td> 
    <td>Selecione ou mapeie a pasta ou o ativo que deseja mover.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Caminho de destino</td> 
-   <td>Selecione ou mapeie o caminho para o local para o qual deseja mover a pasta ou ativo.</td> 
+   <td>Selecione ou mapeie o caminho para o local que você deseja mover a pasta ou o ativo.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Nome da pasta/ativo movido</td> 
@@ -553,9 +553,9 @@ Este módulo de ação atualiza um registro existente.
    <td role="rowheader">Tipo de registro</td> 
    <td> <p>Selecione se deseja excluir metadados de ativos ou uma representação de ativos.</p> 
     <ul> 
-     <li> <p>Metadados do ativo</p> 
+     <li> <p>Metadados de ativos</p> 
       <ul> 
-       <li> <p>Selecione o ativo para o qual deseja atualizar metadados.</p> </li> 
+       <li> <p>Selecione o ativo para o qual você deseja atualizar os metadados.</p> </li> 
        <li> <p>Insira o novo título do ativo.</p> </li> 
       </ul> </li> 
      <li> <p>Representação do ativo</p> 
@@ -568,7 +568,7 @@ Este módulo de ação atualiza um registro existente.
  </tbody> 
 </table>
 
-### Assets (API do autor)
+### Assets (API de criação)
 
 * [Excluir ativo](#delete-asset)
 * [Obter status do trabalho](#get-job-status)
@@ -591,7 +591,7 @@ Este módulo de ação exclui um único ativo por sua ID.
   </tr> 
   <tr> 
    <td role="rowheader">Forçar</td> 
-   <td>Ative essa opção para forçar a exclusão do ativo, mesmo que ele seja referenciado.</td> 
+   <td>Habilite essa opção para forçar a exclusão do ativo, mesmo que ele seja referenciado.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -609,19 +609,19 @@ Este módulo de ação obtém o status atual de um trabalho assíncrono.
    <td> <p>Para obter instruções sobre como conectar sua conta do Adobe Experience Manager Assets ao Workfront Fusion, consulte <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Conectar o Adobe Experience Manager Assets ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">ID da tarefa</td> 
+   <td role="rowheader">ID do trabalho</td> 
    <td> <p>Insira ou mapeie a ID do trabalho para o qual você deseja obter o status.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### Eventos (API do autor)
+### Eventos (API de criação)
 
-#### Assistir a eventos
+#### Monitorar eventos
 
-Esse módulo de acionamento inicia um cenário quando um evento ocorre no AEM Assets.
+Este módulo de acionador inicia um cenário quando um evento ocorre no AEM Assets.
 
-O módulo contém um único campo: Webhook. Selecione um webhook existente para usar para esses eventos ou crie um novo.
+O módulo contém um único campo: Webhook. Selecione um webhook para ser usado nesses eventos ou crie um novo.
 
 Para criar um novo webhook:
 
@@ -633,8 +633,8 @@ Para criar um novo webhook:
      <col/>
      <tbody>
        <tr>
-         <td role="rowheader">Nome do Webhook</td>
-        <td>Insira um nome para este webhook.</td>
+         <td role="rowheader">Nome do webhook</td>
+        <td>Insira um nome para o webhook.</td>
        </tr>
        <tr>
          <td role="rowheader">Conexão</td>
@@ -646,7 +646,7 @@ Para criar um novo webhook:
 1. Clique em Salvar para salvar o webhook e retornar ao módulo.
 
 
-### Metadados (API do autor)
+### Metadados (API de criação)
 
 * [Obter metadados de ativos](#get-asset-metadata)
 * [Atualizar metadados de ativos](#update-asset-metadata)
@@ -672,7 +672,7 @@ Este módulo de ação recupera metadados sobre o ativo especificado.
 
 #### Atualizar metadados de ativos
 
-Esse módulo de ação atualiza os metadados do ativo especificado.
+Este módulo de ação atualiza os metadados do ativo especificado.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -694,7 +694,7 @@ Esse módulo de ação atualiza os metadados do ativo especificado.
 </table>
 
 
-### Importar (API do autor)
+### Importar (API de criação)
 
 * [Obter resultados do trabalho de importação](#get-import-job-results)
 * [Obter status do trabalho de importação](#get-import-job-status)
@@ -714,7 +714,7 @@ Este módulo de ação recupera resultados para o trabalho de importação espec
   </tr> 
   <tr> 
    <td role="rowheader">Importar ID do trabalho</td> 
-   <td> <p>Informe ou mapeie a ID do job para o qual deseja recuperar os resultados.</p> </td> 
+   <td> <p>Insira ou mapeie a ID do trabalho para o qual deseja recuperar os resultados.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -733,14 +733,14 @@ Este módulo de ação recupera o status do trabalho de importação especificad
   </tr> 
   <tr> 
    <td role="rowheader">Importar ID do trabalho</td> 
-   <td> <p>Informe ou mapeie a ID do job do qual deseja recuperar o status.</p> </td> 
+   <td> <p>Insira ou mapeie a ID do trabalho do qual deseja recuperar o status.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### Fazer upload de um ativo de um URL
 
-Este módulo de ação faz upload de um novo ativo importando arquivos dos URLs especificados.
+Este módulo de ação faz upload de um novo ativo, importando arquivos dos URLs especificados.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -768,7 +768,7 @@ Este módulo de ação faz upload de um novo ativo importando arquivos dos URLs 
   </tr> 
   <tr> 
    <td role="rowheader">Data de expiração</td> 
-   <td> <p>Insira ou mapeie a data de expiração do ativo.</p><p>Para obter uma lista de formatos de data e hora com suporte, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerção de tipo</a>.</p> </td> 
+   <td> <p>Insira ou mapeie a data de expiração do ativo.</p><p>Para obter uma lista de formatos de data e hora compatíveis, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerção de tipo</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Metadados personalizados</td> 
@@ -776,7 +776,7 @@ Este módulo de ação faz upload de um novo ativo importando arquivos dos URLs 
   </tr> 
   <tr> 
    <td role="rowheader">Caminho ou ID da pasta</td> 
-   <td> <p>Selecione se deseja especificar a pasta de destino pelo caminho ou ID e, em seguida, selecione o caminho ou insira a ID.</p> </td> 
+   <td> <p>Selecione se deseja especificar a pasta de destino por seu caminho ou ID e, em seguida, selecione o caminho ou insira a ID.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Arquivos a serem importados</td> 
@@ -789,7 +789,7 @@ Este módulo de ação faz upload de um novo ativo importando arquivos dos URLs 
  </tbody> 
 </table>
 
-### Relações (API do autor)
+### Relações (API de criação)
 
 * [Criar relações de ativos](#create-asset-relations)
 * [Excluir relação de ativo](#create-asset-relations)
@@ -798,7 +798,7 @@ Este módulo de ação faz upload de um novo ativo importando arquivos dos URLs 
 
 #### Criar relações de ativos
 
-Esse módulo de ação cria novas relações de ativos para o ativo selecionado.
+Este módulo de ação cria novas relações de ativos para o ativo selecionado.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -821,7 +821,7 @@ Esse módulo de ação cria novas relações de ativos para o ativo selecionado.
 
 #### Excluir relação de ativo
 
-Esse módulo de ação exclui uma relação de ativo para um ativo.
+Este módulo de ação exclui uma relação de ativo para um ativo.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -837,15 +837,15 @@ Esse módulo de ação exclui uma relação de ativo para um ativo.
   </tr> 
   <tr> 
    <td role="rowheader">Ativos relacionados</td> 
-   <td> <p>Informe ou mapeie o tipo de relação que deseja deletar.</p> </td> 
+   <td> <p>Insira ou mapeie o tipo de relação que você deseja excluir.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Forneça a ID específica do ativo relacionado que será excluído</td> 
-   <td> <p>Marque essa caixa se desejar deletar uma relação específica. Se essa caixa não estiver marcada, todas as relações do tipo selecionado serão excluídas.</p> </td> 
+   <td role="rowheader">Fornecer a ID específica do ativo relacionado que será excluído</td> 
+   <td> <p>Marque essa caixa se desejar excluir uma relação específica. Se essa caixa não estiver marcada, todas as relações do tipo selecionado serão excluídas.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">ID de ativo relacionado</td> 
-   <td> <p>Se você estiver deletando uma relação específica, informe ou mapeie a ID da relação que deseja deletar.</p> </td> 
+   <td role="rowheader">ID do ativo relacionado</td> 
+   <td> <p>Se você estiver excluindo uma relação específica, insira ou mapeie a ID da relação que deseja excluir.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -888,20 +888,20 @@ Este módulo lista as relações de ativos para o ativo especificado.
   </tr> 
   <tr> 
    <td role="rowheader">Tipos de relação</td> 
-   <td> <p>Insira ou mapeie uma lista separada por vírgulas dos tipos de relações para os quais você deseja listar as relações.</p> </td> 
+   <td> <p>Insira ou mapeie uma lista separada por vírgulas dos tipos de relação para os quais você deseja listar as relações.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 
 
-### Pastas (API Pastas)
+### Pastas (API de pastas)
 
 * [Criar pastas](#create-folders)
 * [Excluir uma pasta por ID](#delete-a-folder-by-id)
 * [Excluir pastas por caminho](#delete-folders-by-path)
 * [Obter resultados do trabalho de pastas](#get-folders-job-results)
-* [Obter status do trabalho das pastas](#get-folders-job-status)
+* [Obter status do trabalho de pastas](#get-folders-job-status)
 * [Listar pastas](#list-folders)
 
 #### Criar pastas
@@ -919,10 +919,10 @@ Este módulo de ação cria uma nova pasta no Adobe Experience Manager Assets.
    <td> <p>Para obter instruções sobre como conectar sua conta do Adobe Experience Manager Assets ao Workfront Fusion, consulte <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Conectar o Adobe Experience Manager Assets ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Pastas para criar</td> 
+   <td role="rowheader">Pastas a serem criadas</td> 
    <td> <p>Para cada pasta que você deseja criar, clique em <b>Adicionar item</b> e insira as seguintes informações:</p>
    <ul>
-   <li><b>Novo local da pasta</b><p>Selecione o caminho para o local onde deseja criar a nova pasta.</p></li>
+   <li><b>Novo local da pasta</b><p>Selecione o caminho para o local onde você deseja criar a nova pasta.</p></li>
        <li> <b>Nome</b> <p>Insira um nome para a pasta. Esse nome aparecerá no caminho do arquivo, portanto, não deve incluir espaços ou outros caracteres. </p> </li> 
        <li> <b>Title</b> <p>Insira um título para a pasta, que pode ser exibido em vez do nome.</p> </li> 
    </ul> </td> 
@@ -932,7 +932,7 @@ Este módulo de ação cria uma nova pasta no Adobe Experience Manager Assets.
 
 #### Excluir uma pasta por ID
 
-Esse módulo de ação exclui a pasta Adobe Experience Manager Assets com a ID especificada.
+Este módulo de ação exclui a pasta do Adobe Experience Manager Assets com a ID especificada.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -948,18 +948,18 @@ Esse módulo de ação exclui a pasta Adobe Experience Manager Assets com a ID e
   </tr> 
  <tr> 
    <td role="rowheader">Excluir subpastas</td> 
-   <td> Ative essa opção para excluir a pasta e todas as suas subpastas.</td>
+   <td> Habilite essa opção para excluir a pasta e todas as suas subpastas.</td>
   </tr> 
  <tr> 
    <td role="rowheader">Forçar</td> 
-   <td> Habilite essa opção para forçar a exclusão de pastas, mesmo que ela seja mencionada.</td>
+   <td> Habilite essa opção para forçar a exclusão de pastas, mesmo que ela seja referenciada.</td>
   </tr> 
  </tbody> 
 </table>
 
 #### Excluir pastas por caminho
 
-Esse módulo de ação exclui as pastas do Adobe Experience Manager Assets nos caminhos especificados.
+Este módulo de ação exclui as pastas do Adobe Experience Manager Assets nos caminhos especificados.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -975,11 +975,11 @@ Esse módulo de ação exclui as pastas do Adobe Experience Manager Assets nos c
   </tr> 
  <tr> 
    <td role="rowheader">Excluir subpastas</td> 
-   <td> Ative essa opção para excluir a pasta e todas as suas subpastas.</td>
+   <td> Habilite essa opção para excluir a pasta e todas as suas subpastas.</td>
   </tr> 
  <tr> 
    <td role="rowheader">Forçar</td> 
-   <td> Ative essa opção para forçar a exclusão do ativo, mesmo que ele seja referenciado.</td>
+   <td> Habilite essa opção para forçar a exclusão do ativo, mesmo que ele seja referenciado.</td>
   </tr> 
  </tbody> 
 </table>
@@ -997,13 +997,13 @@ Este módulo recupera os resultados de um trabalho assíncrono criado pela API d
    <td> <p>Para obter instruções sobre como conectar sua conta do Adobe Experience Manager Assets ao Workfront Fusion, consulte <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Conectar o Adobe Experience Manager Assets ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">ID da tarefa</td> 
-   <td> Informe ou mapeie a ID do job para o qual deseja recuperar os resultados.</td>
+   <td role="rowheader">ID do trabalho</td> 
+   <td> Insira ou mapeie a ID do trabalho para o qual deseja recuperar os resultados.</td>
   </tr> 
  </tbody> 
 </table>
 
-#### Obter status do trabalho das pastas
+#### Obter status do trabalho de pastas
 
 Este módulo recupera o status de um trabalho assíncrono criado pela API da pasta do Adobe Experience Manager Assets.
 
@@ -1016,8 +1016,8 @@ Este módulo recupera o status de um trabalho assíncrono criado pela API da pas
    <td> <p>Para obter instruções sobre como conectar sua conta do Adobe Experience Manager Assets ao Workfront Fusion, consulte <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Conectar o Adobe Experience Manager Assets ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">ID da tarefa</td> 
-   <td> Informe ou mapeie a ID do job para o qual deseja recuperar o status.</td>
+   <td role="rowheader">ID do trabalho</td> 
+   <td> Insira ou mapeie a ID do trabalho do qual deseja recuperar o status.</td>
   </tr> 
  </tbody> 
 </table>
@@ -1037,7 +1037,7 @@ Este módulo lista as subpastas da pasta especificada.
    </tr> 
    <tr> 
    <td role="rowheader">Caminho ou ID da pasta</td> 
-   <td> <p>Selecione se deseja especificar a pasta de destino pelo caminho ou ID e, em seguida, selecione o caminho ou insira a ID.</p> </td> 
+   <td> <p>Selecione se deseja especificar a pasta de destino por seu caminho ou ID e, em seguida, selecione o caminho ou insira a ID.</p> </td> 
   </tr> 
  </tbody> 
 </table>
