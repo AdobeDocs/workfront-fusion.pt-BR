@@ -59,4 +59,4 @@ A pesquisa de documentação pode ser mais eficiente com algumas abordagens estr
 
 ### Encontre respostas nos fóruns da comunidade
 
-* **Faça perguntas**: se a documentação não responder à sua pergunta, tente postar nos [Fóruns da comunidade do Workfront Fusion](https://experienceleaguecommunities.adobe.com/t5/workfront-fusion/ct-p/workfront-fusion-2), outros usuários e especialistas podem oferecer assistência.
+* **Faça perguntas**: se a documentação não responder à sua pergunta, tente postar nos [Fóruns da comunidade do Workfront Fusion](https://experienceleaguecommunities.adobe.com/t5/workfront-fusion/ct-p/workfront-fusion-2?profile.language=pt), outros usuários e especialistas podem oferecer assistência.
