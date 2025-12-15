@@ -4,10 +4,10 @@ description: Siga este fluxo de trabalho geral para criar um cenário
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: fc0b3b7ca4ec999c7a121d0564d36abff6f2d620
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 0%
+source-wordcount: '816'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +23,7 @@ Os cenários são criados para atender às necessidades de sua organização, co
 * [Mapear dados entre módulos](#map-data-between-modules)
 * [Configurar roteamento](#configure-routing)
 * [Configurar tratamento de erros](#configure-error-handling)
-* [Definir configurações de cenário](#onfigure-scenario-settings)
+* [Definir configurações do cenário](#onfigure-scenario-settings)
 * [Teste e revisão](#test-and-revise)
 * [Ativar o cenário](#activate-the-scenario)
 * [Atalhos de teclado do cenário do Workfront Fusion](#workfront-fusion-scenario-keyboard-shortcuts)
@@ -91,7 +91,7 @@ A manipulação de erros permite que o cenário se recupere de erros. Você pode
 
 Para obter instruções, consulte [Adicionar tratamento de erros](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md).
 
-## Definir configurações de cenário
+## Definir configurações do cenário
 
 É possível definir configurações para o cenário como um todo, como agendar um cenário, fazer observações ou determinar como os dados são armazenados.
 
@@ -166,6 +166,11 @@ Você pode usar os seguintes atalhos de teclado ao criar ou editar um cenário:
    <td role="rowheader">[!UICONTROL Colar]</td> 
    <td>Ctrl+V</td> 
    <td>Cmd+V</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Procurar módulos]</td> 
+   <td>Ctrl+K</td> 
+   <td>Cmd+K</span> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Cole o cURL no cenário para criar o módulo HTTP</td> 

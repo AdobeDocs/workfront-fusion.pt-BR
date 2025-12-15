@@ -4,10 +4,10 @@ description: Muitos serviços fornecem webhooks para fornecer notificações ins
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
+source-git-commit: 45efeecd1758e302f57498bab842594800a84c1d
 workflow-type: tm+mt
-source-wordcount: '1232'
-ht-degree: 0%
+source-wordcount: '1272'
+ht-degree: 10%
 
 ---
 
@@ -37,7 +37,7 @@ Para obter uma introdução em vídeo a webhooks no Workfront Fusion, consulte:
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -45,22 +45,22 @@ Para obter uma introdução em vídeo a webhooks no Workfront Fusion, consulte:
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -76,6 +76,9 @@ Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisit
 
 1. Para procurar um webhook específico, digite o termo de pesquisa na caixa Pesquisar.
 1. Para copiar um webhook, clique no ícone Copiar ![ícone de webhook Copiar](assets/copy-webhook-icon.png) próximo à URL na linha desse webhook.
+1. Para definir a prioridade de um webhook, clique na lista suspensa na coluna Prioridade e selecione a nova prioridade.
+
+   Webhooks com maior prioridade serão tratados primeiro, o que pode ser benéfico se um pool de trabalhadores tiver muitas automações competindo por recursos.
 1. Para desativar ou ativar um webhook, desative ou ative a alternância na coluna Status na linha desse webhook.
 1. Para ver se uma fila de webhooks está cheia, verifique a coluna Fila cheia. O número nesta coluna é o número de itens atualmente na fila.
 1. Para exibir operações tratadas por um webhook, clique em **Operações** na coluna Fila Completa desse webhook.
@@ -136,7 +139,7 @@ Um webhook que não foi atribuído a nenhum cenário por mais de 120 horas é re
 
 ### Cargas do Webhook
 
-O Workfront Fusion armazena cargas de webhook por 30 dias. Acessar uma carga de webhook mais de 30 dias após sua criação resulta no erro [!UICONTROL `Failed to read file from storage.`]
+O Workfront Fusion armazena conteúdo do webhook por 30 dias. Acessar uma carga de webhook mais de 30 dias após sua criação resulta no erro [!UICONTROL `Failed to read file from storage.`]
 
 ### Tratamento de erros
 
@@ -158,7 +161,7 @@ Para obter mais informações, consulte [Responding to webhooks](/help/workfront
 Os webhooks são desativados automaticamente se qualquer uma das seguintes situações se aplicar:
 
 * O webhook não foi conectado a nenhum cenário por mais de 5 dias.
-* O webhook é usado somente em cenários inativos, que ficaram inativos por mais de 30 dias.
+* O webhook é usado somente em cenários inativos, que ficaram assim por mais de 30 dias.
 
 Os webhooks desativados são excluídos e não registrados automaticamente se não estiverem conectados a nenhum cenário e estiverem com o status desativado por mais de 30 dias.
 
