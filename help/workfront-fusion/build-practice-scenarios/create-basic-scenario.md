@@ -7,22 +7,22 @@ description: Saiba como criar um cenário de automação simples com o Adobe Wor
 author: Becky
 feature: Workfront Fusion
 exl-id: 5284dee1-e890-4357-a28d-29e09ac02822
-source-git-commit: 93d06cb917680f9cabc1bad6be0f9cd843449d07
+source-git-commit: 6269db7454a63e80de3d770ab1012162d5080565
 workflow-type: tm+mt
-source-wordcount: '1403'
-ht-degree: 0%
+source-wordcount: '1419'
+ht-degree: 12%
 
 ---
 
 # Criar um cenário básico
 
-O papel do Adobe Workfront Fusion é automatizar seus processos para que você possa se concentrar em novas tarefas, em vez de repetir as mesmas tarefas repetidamente. Ele funciona vinculando ações em e entre aplicativos e serviços para criar um cenário que transfere e transforma seus dados automaticamente. O cenário que você cria observa dados em um aplicativo ou serviço e processa esses dados para fornecer o resultado desejado.
+A função do Adobe Workfront Fusion é automatizar processos para que você possa se concentrar em novas tarefas, em vez de repetir as mesmas tarefas continuamente. Ele trabalha vinculando ações em vários aplicativos e serviços para criar um cenário que transfere e transforma seus dados automaticamente. O cenário que você cria monitora dados em um aplicativo ou serviço e processa esses dados para fornecer o resultado desejado.
 
 Esse exemplo orienta você pelo processo de criação de um cenário que pesquisa uma solicitação no Workfront e a converte em um projeto.
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -30,22 +30,22 @@ Esse exemplo orienta você pelo processo de criação de um cenário que pesquis
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -123,7 +123,7 @@ Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisit
 
    O botão fica azul quando é ativado. Isso permite mapear a ID da tarefa do módulo anterior.
 
-   ![Alternância de mapa](assets/map-toggle.png)
+   ![Botão de alternância Mapear](assets/map-toggle.png)
 1. Clique no campo **[!UICONTROL ID da Tarefa]**.
 
    É aberto um painel que permite selecionar o que será usado como a ID da tarefa que você deseja converter em um projeto. Como você ativou o mapeamento, o painel inclui a saída de qualquer módulo anterior. Você selecionou ID como uma saída do módulo anterior, de modo que ele agora está disponível no painel.
@@ -162,7 +162,7 @@ Para esse cenário, um teste bem-sucedido resultaria na localização da solicit
 
    >[!IMPORTANT]
    >
-   >Salve com frequência à medida que você aprimora e testa um cenário.
+   >Salve com frequência à medida que você aprimora e testa um cenário. Talvez seja necessário criar um novo problema em sua conta da Workfront para acionar o cenário.
 
 >[!TIP]
 >
