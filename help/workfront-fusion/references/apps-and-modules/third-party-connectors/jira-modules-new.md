@@ -4,7 +4,7 @@ description: Em um cenário do Adobe Workfront Fusion, é possível automatizar 
 author: Becky
 feature: Workfront Fusion
 exl-id: b74a3618-c4a1-4965-a88d-1643bfab12db
-source-git-commit: 017341e045a703f5d6e933a6df860f4fc8c0649d
+source-git-commit: e65d868dc2165cbe800600f271f6b03d0a906cb4
 workflow-type: tm+mt
 source-wordcount: '2348'
 ht-degree: 20%
@@ -80,7 +80,7 @@ O procedimento para criar uma conexão com o Jira é diferente conforme você cr
 Para criar uma conexão OAuth2 com o Jira, você deve criar um aplicativo no Jira antes de configurar a conexão no Fusion.
 
 * [Criar um aplicativo OAuth2 no Jira](#create-an-oauth2-application-in-jira)
-* [Configurar a conexão OAutt2 no Fusion](#configure-the-oauth2-connection-in-fusion)
+* [Configurar a conexão OAuth2 no Fusion](#configure-the-oauth2-connection-in-fusion)
 
 #### Criar um aplicativo OAuth2 no Jira
 
