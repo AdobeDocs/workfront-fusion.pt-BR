@@ -2,10 +2,10 @@
 user-guide-title: Documentação do Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Use os documentos, tutoriais e recursos adicionais para saber como implementar e usar efetivamente o Adobe Workfront Fusion em sua organização.
-source-git-commit: fc0b3b7ca4ec999c7a121d0564d36abff6f2d620
+source-git-commit: aa3bdd7d14c86085c36e3859f6d53c0cadb28920
 workflow-type: tm+mt
-source-wordcount: '1970'
-ht-degree: 99%
+source-wordcount: '1979'
+ht-degree: 98%
 
 ---
 
@@ -269,6 +269,7 @@ ht-degree: 99%
    * [Exibir, editar e excluir modelos](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)
    * [Publicar e compartilhar modelos](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)
    * [Modelos do Adobe Workfront Fusion disponíveis no momento](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md)
+   * [Usar modelos para conectar o Adobe Workfront Fusion e o Jira](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md)
    * [Perguntas frequentes sobre modelos do Adobe Workfront Fusion](/help/workfront-fusion/create-and-manage-templates/fusion-templates-faqs.md)
 * Referências {#references}
    * [Referências](/help/workfront-fusion/references/references-toc.md)
