@@ -4,10 +4,10 @@ description: A conta do  [!DNL Adobe Workfront Fusion Frame].io modules enable y
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: 52dbf75ebb65a1de1a7a86619af4c7633e0cbe03
+source-git-commit: 3cb613c11500dfc94774783ee0b38e6f1768de20
 workflow-type: tm+mt
-source-wordcount: '4399'
-ht-degree: 86%
+source-wordcount: '4539'
+ht-degree: 84%
 
 ---
 
@@ -1207,6 +1207,7 @@ Esse módulo atualiza campos de metadados em um ou mais arquivos com valores esp
 ### Outras
 
 * [Fazer uma chamada de API personalizada](#make-a-custom-api-call)
+* [Assistir a eventos](#watch-events)
 * [Monitorar valores de metadados atualizados](#watch-metadata-value-updated)
 
 
@@ -1247,6 +1248,48 @@ Este módulo permite executar uma chamada de API personalizada.
   </tr> 
  </tbody> 
 </table>
+
+#### Assistir a eventos
+
+Esse módulo de acionador instantâneo inicia um cenário quando o evento selecionado ocorre no Frame.io.
+
+Você pode usar um webhook existente ou criar um novo.
+
+Para criar um novo webhook:
+
+1. Clique em **Adicionar** ao lado do campo Webhook.
+1. Preencha as seguintes informações:
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+     <td role="rowheader">Nome do Webhook </td> 
+      <td> <p>Insira um nome para o novo webhook.</p> </td> 
+     </tr> 
+     <tr> 
+       <td role="rowheader">[!UICONTROL Connection] </td> 
+       <td>Para obter instruções sobre como criar uma conexão com o [!DNL Frame.io], consulte <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Conectar o [!DNL Frame.io] ao Adobe Workfront Fusion</a> neste artigo.</td> 
+     </tr> 
+     <tr> 
+     <td role="rowheader">[!UICONTROL Account ID] </td> 
+      <td> <p>Selecione ou mapeie a conta que contém o espaço de trabalho no qual você deseja assistir aos eventos.</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Workspace ID]</td> 
+      <td> <p>Digite a ID do espaço de trabalho onde deseja assistir aos eventos.</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Eventos]</td> 
+      <td> <p>Selecione os eventos que deseja acionar esse módulo</p> </td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+1. Clique em **Salvar** para salvar o webhook e retornar ao módulo.
+1. Clique em **OK** no módulo Eventos de observação para salvar a configuração.
+
 
 #### Monitorar valores de metadados atualizados
 
