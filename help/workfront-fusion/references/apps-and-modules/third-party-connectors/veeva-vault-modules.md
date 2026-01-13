@@ -3,10 +3,10 @@ title: Módulos do Veeva Vault
 description: Em um cenário do Adobe Workfront Fusion, é possível automatizar workflows que usam o Veeva Vault, bem como conectá-lo a vários aplicativos e serviços de terceiros.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 881e5ba39d1730b641085cf0d02137d18e443135
+source-git-commit: b57ae36cf9225705c7f4923d7302b1749aa04d94
 workflow-type: tm+mt
-source-wordcount: '2485'
-ht-degree: 2%
+source-wordcount: '2539'
+ht-degree: 19%
 
 ---
 
@@ -20,7 +20,7 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -28,31 +28,31 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion</td> 
    <td>
    <p>Baseado em operação: nenhum requisito de licença do Workfront Fusion</p>
-   <p>Baseado em conector (herdado): automação e integração do Workfront Fusion for Work </p>
+   <p>Baseado em conector (legado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -115,6 +115,26 @@ Ao criar uma conexão, você pode selecionar se deseja usar uma senha ou se dese
        <td role="rowheader">Nome da conexão</td> 
        <td> <p>Insira um nome para a conexão.</p> </td> 
       </tr> 
+      <tr> 
+       <td role="rowheader">Provedor de Servidor de Autorização</td> 
+       <td> <p>Selecione o provedor que deseja usar para esta autenticação.</p> </td> 
+      </tr> 
+      <tr> 
+       <td role="rowheader">Executar ping no host</td> 
+       <td> <p>Se você estiver usando o PingFederate, insira o host do ping.</p> </td> 
+      </tr> 
+      <tr>
+        <td role="rowheader">Escopo</td>
+        <td>
+          <p>Insira o escopo desta conexão.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">ID do inquilino</td>
+        <td>
+          <p>Se você estiver usando o Azure AD/Microsoft Entra ID para o seu provedor de servidor de autorização, insira a ID do locatário para esta conexão.</p>
+        </td>
+      </tr>
       <tr>
         <td role="rowheader">ID do cliente</td>
         <td>
@@ -128,18 +148,6 @@ Ao criar uma conexão, você pode selecionar se deseja usar uma senha ou se dese
         </td>
       </tr>
       <tr>
-        <td role="rowheader">Escopo</td>
-        <td>
-          <p>Insira o escopo desta conexão.</p>
-        </td>
-      </tr>
-      <tr>
-        <td role="rowheader">ID do inquilino</td>
-        <td>
-          <p>Insira a ID do locatário para esta conexão.</p>
-        </td>
-      </tr>
-      <tr>
         <td role="rowheader">ID do perfil</td>
         <td>
           <p>Insira a ID do seu perfil de conexão OAuth2 / Copen ID.</p>
@@ -149,6 +157,12 @@ Ao criar uma conexão, você pode selecionar se deseja usar uma senha ou se dese
        <td role="rowheader">DNS do Vault</td> 
        <td>Insira seu DNS do Veeva Vault (nome de domínio).</p><p>Para localizar o DNS do Veeva Vault, examine o URL que você usa para acessar o Veeva Vault.</p>Por exemplo, na URL <code>https://my-dns.veevavault.com</code>, o DNS é <code>my-dns</code>. Não é necessário inserir o URL inteiro.</td> 
       </tr> 
+      <tr>
+        <td role="rowheader">O tempo de expiração da sua sessão em minutos</td>
+        <td>
+          <p>Insira o tempo de expiração da sua sessão, em minutos.</p>
+        </td>
+      </tr>
      </tbody> 
     </table>
 
@@ -161,7 +175,7 @@ Ao configurar os módulos do Veeva Vault, o Workfront Fusion exibe os campos lis
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Alternância de mapa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Botão de alternância Mapear](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Documento](#document)
 * [Objeto](#object)
@@ -410,7 +424,7 @@ Este módulo retorna os resultados de uma exportação de documento solicitada a
    <td> <p>Para obter instruções sobre como conectar sua conta do Veeva Vault ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>ID da tarefa</p> </td> 
+   <td role="rowheader"> <p>ID do trabalho</p> </td> 
    <td> <p>Insira ou mapeie a ID do trabalho para o qual deseja retornar resultados. </p> </td> 
   </tr> 
   </tbody> 
@@ -674,12 +688,12 @@ Esse módulo de ação faz uma chamada personalizada para a API do Veeva Vault.
    <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p> <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p> <p>O Workfront Fusion adiciona os cabeçalhos de autorização para você.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Sequência de consulta</td> 
-   <td> <p>Adicione a consulta da chamada à API na forma de um objeto JSON padrão.</p> <p>Por exemplo: <code>{"name":"something-urgent"}</code></p> </td> 
+   <td role="rowheader">String de consulta</td> 
+   <td> <p>Adicione a consulta para a chamada de API na forma de um objeto JSON padrão.</p> <p>Por exemplo: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Corpo</td> 
-   <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
+   <td> <p>Adicione o conteúdo do corpo para a chamada de API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais, como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -728,11 +742,11 @@ Este módulo retorna dados de trilhas de auditoria
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Data inicial</p> </td> 
-   <td> <p>Informe ou mapeie a data inicial das auditorias que deseja recuperar.</p><p>Para obter uma lista de formatos de data e hora com suporte, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerção de tipo</a>.</p> </td> 
+   <td> <p>Informe ou mapeie a data inicial das auditorias que deseja recuperar.</p><p>Para obter uma lista de formatos de data e hora compatíveis, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerção de tipo</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Data final</p> </td> 
-   <td> <p>Informe ou mapeie a data final das auditorias que deseja recuperar.</p><p>Para obter uma lista de formatos de data e hora com suporte, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerção de tipo</a>.</p> </td> 
+   <td> <p>Informe ou mapeie a data final das auditorias que deseja recuperar.</p><p>Para obter uma lista de formatos de data e hora compatíveis, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerção de tipo</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>URL de resultado </p> </td> 
