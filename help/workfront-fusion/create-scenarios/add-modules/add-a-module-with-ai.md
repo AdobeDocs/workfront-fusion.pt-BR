@@ -4,10 +4,10 @@ description: Você pode usar a IA para inserir um prompt de texto que descreve o
 author: Becky
 feature: Workfront Fusion
 exl-id: d231e33a-6033-4e3c-b1d4-7034797c45a5
-source-git-commit: c83070a7c2d1d048000a4eace4aaede73c7ec49d
+source-git-commit: 2bec2607d55e4ba2ffd6ddcae6daa51071b204c4
 workflow-type: tm+mt
 source-wordcount: '612'
-ht-degree: 1%
+ht-degree: 19%
 
 ---
 
@@ -27,7 +27,7 @@ Assim como em qualquer coisa gerada pela IA, recomendamos que você verifique e 
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -35,31 +35,33 @@ Assim como em qualquer coisa gerada pela IA, recomendamos que você verifique e 
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Pré-requisitos
++++
+
+## Pré-requisitos
 
 Sua organização deve atender aos seguintes pré-requisitos para usar essa funcionalidade:
 
 * Sua organização deve ter participado do programa Workfront AI Assistant Beta.
 * A Adobe deve ter um contrato Gen AI da Adobe assinado no arquivo para sua organização.
 
-  Para obter mais informações sobre como assinar o contrato, consulte [Assinar o contrato da Adobe Gen AI](https://experienceleague.adobe.com/pt-br/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) no artigo Visão geral do Assistente de IA na documentação da Workfront.
+  Para obter mais informações sobre como assinar o contrato, consulte [Assinar o contrato da Adobe Gen AI](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) no artigo Visão geral do Assistente de IA na documentação da Workfront.
 
 ## Aplicativos do módulo de IA compatíveis no momento
 
@@ -68,13 +70,13 @@ A Fusion AI pode atualmente gerar módulos que se conectam aos seguintes aplicat
 * Adobe Firefly
 * Azure OpenAI
 * Gráfico do Microsoft
-* Planejamento do Adobe Workfront
+* Adobe Workfront Planning
 * Adobe Analytics
-* Serviços da Adobe PDF
+* Adobe PDF Services
 * Adobe Marketo
 * Adobe Frame.io
 * Dropbox
-* NetSuite
+* Netsuite
 * Calendário do Google
 * Atlassian Jira
 * GitLab
