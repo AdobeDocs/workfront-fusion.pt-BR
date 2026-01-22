@@ -23,7 +23,7 @@ O Adobe Workfront Fusion conecta perfeitamente aplicativos e serviços da Web pa
 ## Versões do Fusion em 2026
 
 * [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 19 de janeiro de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-19.md)
-* [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 12 de janeiro de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-12.md)
+* [Atividade de lançamento do Workfront Fusion: semana de 12 de janeiro de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-12.md)
 
 
 ## Versões do Fusion em 2025
@@ -32,15 +32,15 @@ O Adobe Workfront Fusion conecta perfeitamente aplicativos e serviços da Web pa
 
 ### Dezembro de 2025
 
-* [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 15 de dezembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-15.md)
-* [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 8 de dezembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-8.md)
-* [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 1 de dezembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-1.md)
+* [Atividade de lançamento do Workfront Fusion: semana de 15 de dezembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-15.md)
+* [Atividade de lançamento do Workfront Fusion: semana de 8 de dezembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-8.md)
+* [Atividade de lançamento do Workfront Fusion: semana de 1° de dezembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-1.md)
 
 ### Novembro de 2025
 
-* [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 17 de novembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-17.md)
-* [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 10 de novembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-10.md)
-* [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 3 de novembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-3.md)
+* [Atividade de lançamento do Workfront Fusion: semana de 17 de novembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-17.md)
+* [Atividade de lançamento do Workfront Fusion: semana de 10 de novembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-10.md)
+* [Atividade de lançamento do Workfront Fusion: semana de 3 de novembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-3.md)
 
 ### Outubro de 2025
 

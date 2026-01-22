@@ -5,7 +5,7 @@ user-guide-description: Use os documentos, tutoriais e recursos adicionais para 
 source-git-commit: 3ae274720ea2d7e4ee823a8467b750ad6f4d0c52
 workflow-type: tm+mt
 source-wordcount: '1993'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 98%
    * [Atividade de lançamento do Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Versões do Fusion – 2025 {#fusion-releases-2025}
       * [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 19 de janeiro de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-19.md)
-      * [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 12 de janeiro de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-12.md)
-      * [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 17 de novembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-17.md)
-      * [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 15 de dezembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-15.md)
-      * [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 8 de dezembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-8.md)
-      * [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 1 de dezembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-1.md)
-      * [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 10 de novembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-10.md)
-      * [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 3 de novembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-3.md)
+      * [Atividade de lançamento do Workfront Fusion: semana de 12 de janeiro de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-12.md)
+      * [Atividade de lançamento do Workfront Fusion: semana de 17 de novembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-17.md)
+      * [Atividade de lançamento do Workfront Fusion: semana de 15 de dezembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-15.md)
+      * [Atividade de lançamento do Workfront Fusion: semana de 8 de dezembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-8.md)
+      * [Atividade de lançamento do Workfront Fusion: semana de 1° de dezembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-1.md)
+      * [Atividade de lançamento do Workfront Fusion: semana de 10 de novembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-10.md)
+      * [Atividade de lançamento do Workfront Fusion: semana de 3 de novembro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-3.md)
       * [Atividade de lançamento do Workfront Fusion: semana de 20 de outubro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-20.md)
       * [Atividade de lançamento do Workfront Fusion: semana de 27 de outubro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-27.md)
       * [Atividade de lançamento do Workfront Fusion: semana de 13 de outubro de 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-13.md)
@@ -271,7 +271,7 @@ ht-degree: 98%
    * [Exibir, editar e excluir modelos](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)
    * [Publicar e compartilhar modelos](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)
    * [Modelos do Adobe Workfront Fusion disponíveis no momento](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md)
-   * [Usar modelos para conectar o Adobe Workfront Fusion e o Jira](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md)
+   * [Usar modelos para conectar o Adobe Workfront Fusion ao Jira](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md)
    * [Perguntas frequentes sobre modelos do Adobe Workfront Fusion](/help/workfront-fusion/create-and-manage-templates/fusion-templates-faqs.md)
 * Referências {#references}
    * [Referências](/help/workfront-fusion/references/references-toc.md)
@@ -347,7 +347,7 @@ ht-degree: 98%
          * [Módulos do Adobe Marketo](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-modules.md)
          * [Módulos dos Adobe PDF Services](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/pdf-modules.md)
          * [Módulos do Adobe Photoshop](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-photoshop-modules.md)
-         * [Módulos de substâncias do Adobe](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-substance-modules.md)
+         * [Módulos do Adobe Substance](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-substance-modules.md)
          * [Módulos do Adobe Storage](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-storage-modules.md)
          * [Módulos do Adobe Target](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
          * [Módulos do Gerenciamento de Usuários da Adobe](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
