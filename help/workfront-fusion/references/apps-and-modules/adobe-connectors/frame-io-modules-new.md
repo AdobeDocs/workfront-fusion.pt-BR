@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
 source-git-commit: 3cb613c11500dfc94774783ee0b38e6f1768de20
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4539'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -112,7 +112,7 @@ Você pode se conectar automaticamente com credenciais de usuário, criar manual
 
 Este método cria uma conexão automaticamente se você estiver conectado ao Frame.io ou conecta você à página de logon do Frame.io para que você possa fazer logon.
 
-1. Em qualquer módulo Frame.io, clique em **[!UICONTROL Adicionar]** ao lado da caixa Conexão.
+1. Em qualquer módulo do Frame.io, clique em **[!UICONTROL Adicionar]** ao lado da caixa “Conexão”.
 1. Insira um nome para a conexão.
 1. Clique em **Continuar**.
 1. Se for solicitado que você faça logon em sua conta do Frame.io, faça-o.
@@ -177,7 +177,7 @@ Se você ainda não tiver credenciais de servidor para servidor em um projeto do
 
 #### Configurar uma conexão de autenticação de usuário
 
-1. Em qualquer módulo Frame.io, clique em **[!UICONTROL Adicionar]** ao lado da caixa Conexão.
+1. Em qualquer módulo do Frame.io, clique em **[!UICONTROL Adicionar]** ao lado da caixa “Conexão”.
 1. Na caixa Criar uma conexão, clique em **Mostrar configurações avançadas**.
 
 1. Preencha os seguintes campos:
@@ -252,7 +252,7 @@ Se você ainda não tiver credenciais de servidor para servidor em um projeto do
 
 #### Configurar uma conexão de servidor para servidor
 
-1. Em qualquer módulo Frame.io, clique em **[!UICONTROL Adicionar]** ao lado da caixa Conexão.
+1. Em qualquer módulo do Frame.io, clique em **[!UICONTROL Adicionar]** ao lado da caixa “Conexão”.
 
 1. Preencha os seguintes campos:
 
@@ -317,7 +317,7 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 
 #### [!UICONTROL Criar um ativo] <!--different for v4-->
 
-Este módulo de ação cria um novo ativo. Você pode fazer upload de um arquivo local ou fornecer o URL de um arquivo remoto do qual criar o ativo.
+Este módulo de ação cria um novo ativo. Você pode fazer upload de um arquivo local ou fornecer o URL de um arquivo remoto a partir do qual criar o ativo.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -349,15 +349,15 @@ Este módulo de ação cria um novo ativo. Você pode fazer upload de um arquivo
   </tr> -->
     <tr> 
     <td role="rowheader">Tipo de upload </td> 
-    <td> <p>Selecione se você está criando um ativo de um arquivo local ou de uma vida remota.</p> </td> 
+    <td> <p>Selecione se você está criando um ativo a partir de um arquivo local ou de um arquivo remoto.</p> </td> 
    </tr>
     <tr> 
     <td role="rowheader">Tamanho do arquivo </td> 
-    <td> <p>Se você estiver fazendo upload de um arquivo local, insira ou mapeie o tamanho do arquivo em bytes.</p> </td> 
+    <td> <p>Se você estiver fazendo upload de arquivo local, insira ou mapeie o tamanho do arquivo em bytes.</p> </td> 
    </tr>
   <tr> 
    <td role="rowheader">[!UICONTROL Source URL] </td> 
-   <td> <p>Se estiver criando o ativo a partir de um arquivo remoto, insira o URL do arquivo do qual deseja fazer upload.</p> </td> 
+   <td> <p>Se estiver criando o ativo a partir de um arquivo remoto, insira o URL do arquivo para fazer o upload.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Source file]</td> 
@@ -370,7 +370,7 @@ Este módulo de ação cria um novo ativo. Você pode fazer upload de um arquivo
   </tbody> 
 </table>
 
-#### [!UICONTROL Criar um ativo (Herdado)] <!--different for v4-->
+#### [!UICONTROL Criar um ativo (herdado)] <!--different for v4-->
 
 Este módulo de ação cria um novo ativo.
 
@@ -1029,16 +1029,16 @@ Este módulo lista todos os espaços de trabalho de uma conta.
 
 ### Metadados
 
-* [Criar um campo de nível de conta](#create-an-account-level-field)
-* [Excluir um campo de nível de conta](#delete-an-account-level-field)
+* [Criar um campo na camada da conta](#create-an-account-level-field)
+* [Excluir um campo na camada da conta](#delete-an-account-level-field)
 * [Obter metadados](#get-metadata)
-* [Listar campos de nível de conta](#list-account-level-fields)
-* [Atualizar uma definição de campo de nível de conta](#update-an-account-level-field-definition)
+* [Listar campos na camada da conta](#list-account-level-fields)
+* [Atualizar uma definição de campo na camada da conta](#update-an-account-level-field-definition)
 * [Atualizar metadados em vários arquivos](#update-metadata-across-multiple-files)
 
-#### Criar um campo de nível de conta
+#### Criar um campo na camada da conta
 
-Esse módulo de ação cria e configura um novo campo de metadados no nível da conta.
+Este módulo de ação cria e configura um novo campo de metadados na camada da conta.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1050,11 +1050,11 @@ Esse módulo de ação cria e configura um novo campo de metadados no nível da 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Selecione ou mapeie a conta na qual deseja criar os metadados.</p> </td> 
+   <td> <p>Selecione ou mapeie a conta na qual você deseja criar os metadados.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">Tipo de campo </td> 
-   <td> <p>Selecione o tipo de campo de metadados que deseja criar e configure as opções desse campo.</p> </td> 
+   <td> <p>Selecione o tipo de campo de metadados que você deseja criar e configure as opções desse campo.</p> </td> 
   </tr> 
   </tr> 
    <tr> 
@@ -1064,9 +1064,9 @@ Esse módulo de ação cria e configura um novo campo de metadados no nível da 
  </tbody> 
 </table>
 
-#### Excluir um campo de nível de conta
+#### Excluir um campo na camada da conta
 
-Esse módulo de ação exclui um único campo de metadados de nível de conta.
+Este módulo de ação exclui um campo de metadados na camada da conta.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1082,7 +1082,7 @@ Esse módulo de ação exclui um único campo de metadados de nível de conta.
   </tr> 
    <tr> 
    <td role="rowheader">ID de definição de campo </td> 
-   <td> <p>Insira ou mapeie a ID do campo que deseja excluir. Você pode encontrar IDs de campo com o módulo List account level fields.</p> </td> 
+   <td> <p>Insira ou mapeie o ID do campo que você deseja excluir. Você pode encontrar IDs de campos com o módulo “Listar campos na camada da conta”.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1101,22 +1101,22 @@ Este módulo de ação recupera os metadados de um arquivo no Frame.io.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Selecione ou mapeie a conta que contém o arquivo para o qual deseja recuperar metadados.</p> </td> 
+   <td> <p>Selecione ou mapeie a conta que contém o arquivo cujos metadados você deseja recuperar.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">ID do arquivo </td> 
-   <td> <p>Insira ou mapeie a ID do arquivo para o qual deseja recuperar metadados.</p> </td> 
+   <td> <p>Insira ou mapeie o ID do arquivo cujos metadados você deseja recuperar.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">Mostrar nulo </td> 
-   <td> <p>Ative essa opção para incluir campos com um valor nulo na saída.</p> </td> 
+   <td> <p>Habilite esta opção para incluir campos com um valor nulo na saída.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### Listar campos de nível de conta
+#### Listar campos na camada da conta
 
-Este módulo recupera uma lista de campos de metadados no nível da conta especificada.
+Este módulo recupera uma lista de campos de metadados na camada da conta especificada.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1128,18 +1128,18 @@ Este módulo recupera uma lista de campos de metadados no nível da conta especi
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Selecione ou mapeie a conta da qual deseja listar campos.</p> </td> 
+   <td> <p>Selecione ou mapeie a conta cujos campos você deseja listar.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Número máximo de contratos retornados]</td> 
-   <td> <p>Insira ou mapeie o número máximo de campos que você deseja que o módulo retorne durante cada ciclo de execução de cenário.</p> </td> 
+   <td role="rowheader">[!UICONTROL Maximum number of returned agreements]</td> 
+   <td> <p>Insira ou mapeie o número máximo de registros que você deseja que o módulo retorne durante cada ciclo de execução de cenários.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### Atualizar uma definição de campo de nível de conta
+#### Atualizar uma definição de campo na camada da conta
 
-Esse módulo atualiza a definição de um único campo de metadados existente.
+Este módulo atualiza a definição de um campo de metadados existente.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1151,15 +1151,15 @@ Esse módulo atualiza a definição de um único campo de metadados existente.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Selecione ou mapeie a conta na qual deseja criar os metadados.</p> </td> 
+   <td> <p>Selecione ou mapeie a conta na qual você deseja criar os metadados.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">ID de definição de campo </td> 
-   <td> <p>Insira ou mapeie a ID do campo que você deseja atualizar. Você pode encontrar IDs de campo com o módulo List account level fields.</p> </td> 
+   <td> <p>Insira ou mapeie o ID do campo que você deseja atualizar. Você pode encontrar IDs de campos com o módulo “Listar campos na camada da conta”.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">Tipo de campo </td> 
-   <td> <p>Se desejar alterar o tipo de campo do campo, selecione o tipo de campo de metadados que deseja criar e configure as opções desse campo.</p> </td> 
+   <td> <p>Se quiser alterar o tipo de campo, selecione o tipo de campo de metadados que deseja criar e, em seguida, configure as opções desse campo.</p> </td> 
   </tr> 
   </tr> 
    <tr> 
@@ -1171,7 +1171,7 @@ Esse módulo atualiza a definição de um único campo de metadados existente.
 
 #### Atualizar metadados em vários arquivos
 
-Esse módulo atualiza campos de metadados em um ou mais arquivos com valores especificados.
+Este módulo atualiza campos de metadados em um ou mais arquivos com valores especificados.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1183,7 +1183,7 @@ Esse módulo atualiza campos de metadados em um ou mais arquivos com valores esp
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>Selecione ou mapeie a conta que contém os arquivos para os quais deseja atualizar os metadados.</p> </td> 
+   <td> <p>Selecione ou mapeie a conta que contém os arquivos cujos metadados você deseja atualizar.</p> </td> 
   </tr> 
  <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID] </td> 
@@ -1194,12 +1194,12 @@ Esse módulo atualiza campos de metadados em um ou mais arquivos com valores esp
    <td> <p>Selecione o projeto para o qual você deseja criar um ativo, ou mapeie sua ID.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL IDs de Arquivo] </td> 
-   <td> <p>Para cada arquivo para o qual deseja atualizar os metadados, clique em <b>Adicionar item</b> e insira ou mapeie a ID do arquivo.</p> </td> 
+   <td role="rowheader">[!UICONTROL File IDs] </td> 
+   <td> <p>Para cada arquivo cujos metadados você deseja atualizar, clique em <b>Adicionar item</b> e insira ou mapeie o ID do arquivo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Valores] </td> 
-   <td> <p>Para cada campo para o qual deseja atualizar os metadados, clique em <b>Adicionar item</b> e insira ou mapeie a ID da definição do campo e o valor que deseja colocar nesse campo. Todos os arquivos especificados no campo IDs de arquivo são atualizados com esse valor de campo.</p> </td> 
+   <td role="rowheader">[!UICONTROL Values] </td> 
+   <td> <p>Para cada campo cujos metadados você deseja atualizar, clique em <b>Adicionar item</b> e insira ou mapeie o ID da definição do campo e o valor que deseja colocar nesse campo. Todos os arquivos especificados no campo de ID do arquivo são atualizados com o valor desse campo.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1207,7 +1207,7 @@ Esse módulo atualiza campos de metadados em um ou mais arquivos com valores esp
 ### Outras
 
 * [Fazer uma chamada de API personalizada](#make-a-custom-api-call)
-* [Assistir a eventos](#watch-events)
+* [Monitorar eventos](#watch-events)
 * [Monitorar valores de metadados atualizados](#watch-metadata-value-updated)
 
 
@@ -1249,11 +1249,11 @@ Este módulo permite executar uma chamada de API personalizada.
  </tbody> 
 </table>
 
-#### Assistir a eventos
+#### Monitorar eventos
 
-Esse módulo de acionador instantâneo inicia um cenário quando o evento selecionado ocorre no Frame.io.
+Este módulo de acionador instantâneo inicia um cenário quando o evento selecionado ocorre no Frame.io.
 
-Você pode usar um webhook existente ou criar um novo.
+Você pode usar um webhook existente ou criar um novo webhook.
 
 Para criar um novo webhook:
 
@@ -1265,7 +1265,7 @@ Para criar um novo webhook:
     <col> 
     <tbody> 
      <tr> 
-     <td role="rowheader">Nome do Webhook </td> 
+     <td role="rowheader">Nome do webhook </td> 
       <td> <p>Insira um nome para o novo webhook.</p> </td> 
      </tr> 
      <tr> 
@@ -1274,21 +1274,21 @@ Para criar um novo webhook:
      </tr> 
      <tr> 
      <td role="rowheader">[!UICONTROL Account ID] </td> 
-      <td> <p>Selecione ou mapeie a conta que contém o espaço de trabalho no qual você deseja assistir aos eventos.</p> </td> 
+      <td> <p>Selecione ou mapeie a conta que contém o espaço de trabalho no qual você deseja monitorar eventos.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Workspace ID]</td> 
-      <td> <p>Digite a ID do espaço de trabalho onde deseja assistir aos eventos.</p> </td> 
+      <td> <p>Insira o ID do espaço de trabalho onde deseja monitorar eventos.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Eventos]</td> 
-      <td> <p>Selecione os eventos que deseja acionar esse módulo</p> </td> 
+      <td role="rowheader">[!UICONTROL Events]</td> 
+      <td> <p>Selecione os eventos desejados para acionar este módulo</p> </td> 
      </tr> 
     </tbody> 
    </table>
 
 1. Clique em **Salvar** para salvar o webhook e retornar ao módulo.
-1. Clique em **OK** no módulo Eventos de observação para salvar a configuração.
+1. Clique em **OK** no módulo “Monitorar eventos” para salvar a configuração.
 
 
 #### Monitorar valores de metadados atualizados
