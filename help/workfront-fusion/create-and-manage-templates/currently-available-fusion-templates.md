@@ -33,7 +33,7 @@ Se a sua equipe se esforça para manter o ritmo porque as linhas do tempo do pro
 
 Esse modelo do Fusion automatiza esse processo. Quando uma tarefa é concluída com antecedência, todas as tarefas dependentes (sucessoras) são automaticamente reagendadas para começarem mais cedo, ajudando sua equipe a se mover mais rápido e a permanecer ágil.
 
-### [!BADGE Novo! ]{type=Informative} HTTP>CSV>WF - Criar lista de subs de eventos por domínio e camada e exportar para CSV
+### [!BADGE Novo! &#x200B;]{type=Informative} HTTP>CSV>WF - Criar lista de subs de eventos por domínio e camada e exportar para CSV
 
 Baixe informações de assinatura de eventos, crie um arquivo CSV e faça upload do arquivo para o Workfront.
 
