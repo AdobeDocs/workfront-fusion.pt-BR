@@ -59,7 +59,7 @@ Para obter mais detalhes sobre as informações desta tabela, consulte [Requisit
   Para obter informações e instruções, consulte [Configuração da conta técnica](https://developer.adobe.com/cloud-storage/guides/getting-started/technical-account-setup) na documentação da Adobe.
 * Você deve aplicar permissões de Administrador do sistema à conta técnica na área Perfis de produto do Adobe Admin Console.
 
-  Para obter informações e instruções, consulte [Criar administradores do sistema no Workfront com a Adobe Admin Console](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)
+  Para obter informações e instruções, consulte [Criar administradores do sistema no Workfront com a Adobe Admin Console](https://experienceleague.adobe.com/pt-br/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)
 
 ### Jira
 
@@ -154,13 +154,13 @@ Para usar esses módulos, o seguinte deve ser criado no Workfront:
 
 1. No Workfront, crie um usuário de Integração do sistema. Esse usuário é usado somente pelo Workfront Fusion e não representa um usuário humano. As tarefas atribuídas a esse usuário acionarão o cenário que sincroniza o Workfront com o Jira.
 
-   Para obter instruções, consulte [Adicionar usuários](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users) na documentação do Workfront.
+   Para obter instruções, consulte [Adicionar usuários](https://experienceleague.adobe.com/pt-br/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users) na documentação do Workfront.
 
 #### Criar um formulário personalizado no Workfront
 
 1. No Workfront, comece criando um formulário personalizado.
 
-   Para obter instruções, consulte [Criar um formulário personalizado](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form) na documentação do Workfront.
+   Para obter instruções, consulte [Criar um formulário personalizado](https://experienceleague.adobe.com/pt-br/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form) na documentação do Workfront.
 1. Nomeie o formulário &quot;**JIRA Fields**&quot;.
 1. Incluir os seguintes campos no formulário personalizado:
 
@@ -177,7 +177,7 @@ Para usar esses módulos, o seguinte deve ser criado no Workfront:
 >
 >Recomendamos impedir que este formulário seja editado por outros usuários. Você pode fazer isso garantindo que todos os usuários adicionados ao formulário personalizado tenham acesso Somente visualização.
 >
->Para obter instruções, consulte [Compartilhar um formulário personalizado](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form) na documentação do Workfront.
+>Para obter instruções, consulte [Compartilhar um formulário personalizado](https://experienceleague.adobe.com/pt-br/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form) na documentação do Workfront.
 
 ### Configurar conexões no Workfront Fusion
 
