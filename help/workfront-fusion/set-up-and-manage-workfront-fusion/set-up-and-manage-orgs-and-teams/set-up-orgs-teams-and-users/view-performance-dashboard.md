@@ -5,10 +5,10 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 671773fa1baaac8e01e0f01546602a738e219fdf
+source-git-commit: 0b9f972a0d051db6771f5a54d8af57cdee8b0ce6
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 0%
+source-wordcount: '548'
+ht-degree: 9%
 
 ---
 
@@ -18,7 +18,7 @@ O Painel de Desempenho do Fusion permite que você veja rapidamente quais cenár
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -30,7 +30,7 @@ O Painel de Desempenho do Fusion permite que você veja rapidamente quais cenár
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p></td> 
+   <td> <p>Padrão</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Configurações de nível de acesso</td> 
@@ -41,7 +41,7 @@ O Painel de Desempenho do Fusion permite que você veja rapidamente quais cenár
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações desta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -50,6 +50,10 @@ Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisit
 >[!NOTE]
 >
 >As métricas são mostradas pelo pool de trabalhadores. Para exibir um pool de trabalhadores diferente, clique no campo Pool próximo ao canto superior esquerdo do painel e selecione o pool para o qual deseja exibir métricas.
+
+>[!NOTE]
+>
+>As organizações podem solicitar o provisionamento para um pool de trabalhadores adicional (para um total de 2).
 
 No painel de desempenho do Fusion, é possível ver as seguintes métricas.
 
