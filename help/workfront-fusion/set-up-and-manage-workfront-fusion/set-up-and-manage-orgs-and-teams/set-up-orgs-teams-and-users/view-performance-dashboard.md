@@ -5,10 +5,10 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 85b7a5e07ef7d3169b31f91bc54d4cb246199443
+source-git-commit: b4c9cd075cc2bb7aa3d5c568bb91fb8ce5c6f31e
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 9%
+source-wordcount: '686'
+ht-degree: 7%
 
 ---
 
@@ -61,14 +61,22 @@ Para obter mais detalhes sobre as informações desta tabela, consulte [Requisit
 
 No painel de desempenho do Fusion, é possível ver as seguintes métricas.
 
-* Execuções aguardando para serem processadas
-Este gráfico mostra o número de execuções aguardando para serem processadas em um determinado momento.
-* Utilização do Pool
+* **Execuções aguardando para serem processadas**
+Este gráfico mostra o número de execuções aguardando para serem processadas (também conhecido como backlog de execução) em um determinado momento.
+
+  Um alto número de execuções aguardando para serem processadas pode afetar o desempenho em sua instância do Fusion. Você receberá uma notificação se o backlog de execução atingir 5000 execuções. Recomendamos identificar cenários responsáveis e modificá-los ou desativá-los. Se o backlog de alta execução persistir, a equipe do Fusion protegerá o desempenho da instância do Fusion desativando os cenários responsáveis.
+* **Utilização do Pool**
 Este gráfico mostra a utilização do pool de trabalhadores ao longo do tempo. Se este gráfico mostrar rotineiramente a utilização do pool de trabalhadores, talvez você queira atribuir alguns cenários a outro pool.
-* Execuções por cenário
+
+  Se um pool estiver perto de 100% de utilização, outros recursos que usam o mesmo pool poderão ser atrasados ou interrompidos. Se isso ocorrer, é recomendável reatribuir um cenário de alto uso a outro pool de trabalhadores ou modificar cenários existentes para que consumam menos recursos.
+* **Execuções por cenário**
 Este gráfico exibe execuções por cenário. Cores diferentes representam cenários diferentes. Quando você passa o mouse sobre o gráfico, é exibida uma janela mostrando qual cor é qual cenário.
-* Duração das execuções
+
+  Você pode usar este gráfico para identificar quais cenários podem estar causando um backlog de execução ou alta utilização do pool de trabalhadores.
+* **Duração das execuções**
 Este gráfico exibe execuções por cenário. Cores diferentes representam cenários diferentes. Quando você passa o mouse sobre o gráfico, é exibida uma janela mostrando qual cor é qual cenário.
+
+  Você pode usar este gráfico para identificar cenários que estão demorando mais do que o normal, incluindo aqueles afetados por problemas com um aplicativo ou serviço conectado.
 
 ## Exibir o Painel de Desempenho do Fusion
 
