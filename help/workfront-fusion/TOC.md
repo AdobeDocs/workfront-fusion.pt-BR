@@ -2,10 +2,10 @@
 user-guide-title: Documentação do Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Use os documentos, tutoriais e recursos adicionais para saber como implementar e usar efetivamente o Adobe Workfront Fusion em sua organização.
-source-git-commit: 95cdc14b313a3f76d6feebabb59f72b4277ae9e4
+source-git-commit: b6822db8c177beade3e70616ef4282bc9ed02c08
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 100%
+source-wordcount: '2013'
+ht-degree: 99%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 100%
 * Atividade de lançamento do Fusion {#fusion-release-activity}
    * [Atividade de lançamento do Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Versões do Fusion – 2025 {#fusion-releases-2025}
+      * [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 2 de fevereiro de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-2.md)
       * [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 26 de janeiro de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-26.md)
       * [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 19 de janeiro de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-19.md)
       * [Atividade de lançamento do Workfront Fusion: semana de 12 de janeiro de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-12.md)
@@ -258,6 +259,7 @@ ht-degree: 100%
    * [Assistente de IA no Workfront Fusion](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
    * [Executar especialista de pontuação de cenários](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
    * [Excluir elementos do cenário](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
+   * [Gerenciar cenários na área Cenários](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
 * Criar cenários de prática {#build-practice-scenarios}
    * [Criar cenários de prática](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)
    * [Criar um cenário básico](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)

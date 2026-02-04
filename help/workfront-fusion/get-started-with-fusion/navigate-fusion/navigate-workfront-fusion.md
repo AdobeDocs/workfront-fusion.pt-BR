@@ -4,8 +4,8 @@ description: Ao abrir o Fusion, você tem muitas opções de ações. Este artig
 author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
-source-git-commit: b54a2ae43efb44ebd002357d7b2269f40523bc9f
-workflow-type: ht
+source-git-commit: 05c75c0e125a4f3f657049d7e57bbc94cc5e4d67
+workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ Você pode navegar pelas diferentes áreas do Adobe Workfront Fusion usando o pa
 Este artigo apresenta essas áreas e fornece links para mais informações sobre cada uma delas.
 
 | Área | Descrição | Para obter mais informações, consulte |
-|---|---|---|
+| --- | --- | --- |
 | Visão geral da organização <br> ![Ícone Organização](assets/org-icon.png) | Aqui, você pode ver informações sobre sua organização do Fusion. Você pode exibir o número de operações executadas por cenários nesta organização, bem como uma lista de cenários ativos. Você também pode exibir listas de equipes, usuários e ambientes dessa organização.<br>A organização selecionada no momento é exibida acima desse ícone. | [Organizações e equipes](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
 | Visão geral da equipe <br> ![Ícone Equipe](assets/team-icon.png) | Aqui, você pode ver informações sobre as equipes do Fusion, como o número de operações executadas por cenários nessa equipe e uma lista de cenários ativos. Você também pode exibir e gerenciar os usuários nesta equipe. Ao visualizar uma equipe, você pode selecionar uma equipe diferente em uma lista suspensa na parte superior desta página.<br>A equipe selecionada no momento aparece acima desse ícone.<br>Talvez seja necessário criar uma equipe para que você possa ver a visão geral da equipe ou qualquer uma das seções de equipe listadas neste artigo. | [Organizações e equipes](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
 | Cenários  <br> ![Ícone Cenários](assets/scenarios-icon.png) | Um cenário no Fusion representa um fluxo de trabalho automatizado. Por exemplo, um cenário pode monitorar as solicitações recebidas do Workfront e convertê-las em projetos, enquanto outro pode gerar imagens, fazer seu upload para um provedor de documentos e adicionar tarefas de aprovação ao Workfront. Grande parte do seu trabalho no Fusion é configurar e gerenciar cenários. Na área Cenários, você pode exibir e organizar uma lista de cenários da equipe, selecionar cenários individuais para exibir ou modificar ou começar a criar um novo cenário. | [Visão geral do cenário](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md) |
