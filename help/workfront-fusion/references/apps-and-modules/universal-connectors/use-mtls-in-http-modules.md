@@ -4,9 +4,9 @@ description: Você pode usar o TLS mútuo nos módulos HTTP do Adobe Workfront F
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-source-git-commit: e0b25da3d0c7a2cab454adafc7525f14c4f0b4eb
+source-git-commit: 6a4bf090e7804f0b2b9ca6eefbb7490d1c35b6ce
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '866'
 ht-degree: 16%
 
 ---
@@ -83,7 +83,7 @@ Você pode usar os links a seguir para baixar os certificados públicos do Workf
 
 >[!IMPORTANT]
 >
->* Estes certificados públicos do Workfront Fusion expiram em **2 de março de 2027** (EUA e UE) ou em **8 de março de 2027** (Azure). Depois que o seu expirar, será necessário carregar um novo certificado no serviço da Web. Recomendamos:
+>* Esses certificados públicos do Workfront Fusion expiram em dias diferentes, dependendo do cluster. Verifique o gráfico abaixo para ver quando o seu expira. Após a expiração, será necessário fazer upload de um novo certificado para o serviço da Web. Recomendamos:
 >
 >   * Anote a data de expiração e defina um lembrete para você fazer upload do certificado para o seu serviço da Web.
 >   * Adicione esta página aos favoritos para encontrar facilmente os novos certificados.
@@ -92,9 +92,10 @@ Você pode usar os links a seguir para baixar os certificados públicos do Workf
 
 | Data center | Link de download | Data válida |
 | --- | --- | --- |
-| Data center dos EUA | [Baixar o Certificado do Workfront Fusion US 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-us-mtls-certificate-2026.pem) | 29 de janeiro de 2026 a 2 de março de 2027 |
-| Centro de dados da UE | [Baixar o Certificado UE do Workfront Fusion 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-mtls-certificate-2026.pem) | 29 de janeiro de 2026 a 2 de março de 2027 |
-| Cluster do Azure | [Baixar Certificado do Workfront Fusion Azure 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem) | 4 de fevereiro de 2026 a 8 de março de 2027 |
+| AWS Datacenter EUA | [Baixar o Certificado do Workfront Fusion US 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-us-mtls-certificate-2026.pem) | 29 de janeiro de 2026 a 2 de março de 2027 |
+| Cluster do Azure dos EUA | [Baixar o Certificado do Workfront Fusion US Azure 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-az-mtls-certificate.pem) | 21 de setembro de 2025 a 23 de outubro de 2026 |
+| Centro de dados AWS da UE | [Baixar o Certificado UE do Workfront Fusion 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-mtls-certificate-2026.pem) | 29 de janeiro de 2026 a 2 de março de 2027 |
+| Cluster EU Azure | [Baixar o Certificado do Workfront Fusion EU Azure 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem) | 4 de fevereiro de 2026 a 8 de março de 2027 |
 
 
 ### Certificados para 2025
