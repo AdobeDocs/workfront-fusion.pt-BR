@@ -3,9 +3,8 @@ title: Exibir o painel de desempenho de uma organização
 description: Os administradores do Fusion podem visualizar um painel que mostra as métricas de execução de uma organização.
 author: Becky
 feature: Workfront Fusion
-hide: true
-hidefromtoc: true
-source-git-commit: b4c9cd075cc2bb7aa3d5c568bb91fb8ce5c6f31e
+exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
+source-git-commit: 1d8504b10d9ca74a5df5532232cda235c67b0185
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 7%
@@ -93,6 +92,3 @@ Este gráfico exibe execuções por cenário. Cores diferentes representam cená
 1. Para alterar o intervalo de tempo do painel, abra o campo Intervalo de tempo no canto superior direito do painel e selecione um novo intervalo de tempo. O período mais longo disponível é de 24 horas e o mais curto é de 15 minutos.
 1. Para atualizar os gráficos, clique no ícone Atualizar próximo ao canto superior direito do painel.
 1. Para exibir um pool de trabalhadores diferente, clique no campo Pool próximo ao canto superior esquerdo do painel e selecione o pool que deseja exibir.
-
-
-
