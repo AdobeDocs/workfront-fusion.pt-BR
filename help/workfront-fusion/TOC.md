@@ -2,9 +2,9 @@
 user-guide-title: Documentação do Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Use os documentos, tutoriais e recursos adicionais para saber como implementar e usar efetivamente o Adobe Workfront Fusion em sua organização.
-source-git-commit: b6822db8c177beade3e70616ef4282bc9ed02c08
+source-git-commit: 0c91cd108c7350a9e2d790ca71e6d4edbd4a461b
 workflow-type: tm+mt
-source-wordcount: '2013'
+source-wordcount: '2015'
 ht-degree: 99%
 
 ---
@@ -172,6 +172,7 @@ ht-degree: 99%
       * [Visões gerais de licenciamento e operações](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/licensing-operations-overviews.md)
       * [Licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
       * [Operações](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
+        [Pools de trabalho](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)
    * Configurar e gerenciar organizações e equipes {#set-up-and-manage-orgs-and-teams}
       * [Configurar e gerenciar organizações e equipes: índice do artigo](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
       * Configurar organizações e equipes {#set-up-orgs-teams-and-users}
