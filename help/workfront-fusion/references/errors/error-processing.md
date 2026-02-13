@@ -5,10 +5,10 @@ description: Às vezes, um erro pode ocorrer durante a execução de um cenário
 author: Becky
 feature: Workfront Fusion
 exl-id: abf5f844-d13b-416e-a8b8-2d4ee1786262
-source-git-commit: 99621f57da1eb294834a0eacfe527dcf017408e9
+source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
 workflow-type: tm+mt
 source-wordcount: '1211'
-ht-degree: 1%
+ht-degree: 8%
 
 ---
 
@@ -20,7 +20,7 @@ O Adobe Workfront Fusion distingue entre vários tipos de erro básicos. O tipo 
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -28,24 +28,26 @@ O Adobe Workfront Fusion distingue entre vários tipos de erro básicos. O tipo 
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Erro de conexão 
++++
+
+## Erro de conexão
 
 `ConnectionError`
 
@@ -148,7 +150,7 @@ Para obter mais informações, consulte [Número de erros consecutivos](/help/wo
 >[!NOTE]
 >
 >Se um cenário começar com um gatilho instantâneo e encontrar esse erro, a configuração de [!UICONTROL Número máximo de erros consecutivos] será ignorada e o cenário será desativado imediatamente.
->&#x200B;>Para obter mais informações, consulte [Acionadores instantâneos](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers) no artigo Visão geral de módulos.
+>Para obter mais informações, consulte [Acionadores instantâneos](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers) no artigo Visão geral de módulos.
 
 ## Erro de inconsistência
 

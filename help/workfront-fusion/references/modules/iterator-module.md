@@ -4,10 +4,10 @@ description: Um módulo Iterador é um tipo especial de módulo que converte uma
 author: Becky
 feature: Workfront Fusion
 exl-id: 43d39955-3dd7-453d-8eb0-3253a768e114
-source-git-commit: 99621f57da1eb294834a0eacfe527dcf017408e9
+source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
 workflow-type: tm+mt
 source-wordcount: '615'
-ht-degree: 0%
+ht-degree: 15%
 
 ---
 
@@ -17,7 +17,7 @@ Um [!UICONTROL Iterador] é um tipo de módulo que converte uma matriz em uma s�
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -25,24 +25,26 @@ Um [!UICONTROL Iterador] é um tipo de módulo que converte uma matriz em uma s�
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Configuração do módulo [!UICONTROL Iterador]
++++
+
+## Configuração do módulo [!UICONTROL Iterador]
 
 O módulo Iterador geral tem um único campo, O campo [!UICONTROL Matriz]. Este campo contém a matriz a ser convertida ou dividida em pacotes separados.
 
@@ -98,7 +100,7 @@ Iniciar o cenário manualmente no editor de cenários.
 >Para evitar que todo o cenário seja executado, é possível:
 >
 >* Desvincule os módulos após o módulo [!UICONTROL JSON] > [!UICONTROL Parse JSON] para impedir que o fluxo continue.
->  &#x200B;>   Ou
+>   Ou
 >* Clique com o botão direito do mouse no módulo [!UICONTROL JSON] > [!UICONTROL Parse JSON] e escolha **[!UICONTROL Executar somente este módulo]** no menu de contexto para executar somente o módulo [!UICONTROL JSON] > [!UICONTROL Parse JSON].
 
 Depois que o [!UICONTROL JSON] > [!UICONTROL Parse JSON] for executado, ele poderá fornecer informações sobre suas saídas para todos os módulos subsequentes, incluindo o módulo Iterador. O painel de mapeamento na configuração do Iterador exibe os itens:

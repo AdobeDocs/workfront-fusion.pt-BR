@@ -4,10 +4,10 @@ description: Você pode usar o conector de placas Adobe Workfront para automatiz
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
 workflow-type: tm+mt
 source-wordcount: '2904'
-ht-degree: 1%
+ht-degree: 15%
 
 ---
 
@@ -25,7 +25,7 @@ Você pode usar os módulos Quadros Adobe Workfront para ler ou atualizar regist
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -33,24 +33,26 @@ Você pode usar os módulos Quadros Adobe Workfront para ler ou atualizar regist
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações desta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Pré-requisitos
++++
+
+## Pré-requisitos
 
 Você deve ter configurado um quadro no Adobe Workfront antes de se conectar a ele.
 
@@ -77,7 +79,7 @@ O conector das placas Adobe Workfront usa o seguinte:
 
 Para criar uma conexão com Workfront Boards:
 
-1. Em qualquer módulo [!DNL Adobe Workfront Boards], clique em **[!UICONTROL Adicionar]** ao lado da caixa Conexão.
+1. Em qualquer módulo do [!DNL Adobe Workfront Boards], clique em **[!UICONTROL Adicionar]** ao lado da caixa Conexão.
 
 1. Preencha os seguintes campos:
 
@@ -88,33 +90,33 @@ Para criar uma conexão com Workfront Boards:
       </col>
       <tbody>
         <tr>
-          <td role="rowheader">[!UICONTROL Nome da Conexão]</td>
+          <td role="rowheader">[!UICONTROL Connection name]</td>
           <td>
-            <p>Insira um nome para esta conexão.</p>
+            <p>Insira um nome para essa conexão.</p>
           </td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Ambiente]</td>
+          <td role="rowheader">[!UICONTROL Environment]</td>
           <td>Selecione se você está se conectando a um ambiente de produção ou não produção.</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Tipo]</td>
+          <td role="rowheader">[!UICONTROL Type]</td>
           <td>Selecione se você deseja se conectar a uma conta de serviço ou a uma conta pessoal.</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL ID do Cliente]<p>(Opcional)</p></td>
-          <td>Insira sua [!DNL Adobe] [!UICONTROL ID do Cliente]. Isso pode ser encontrado na seção [!UICONTROL Credentials details] do [!DNL Adobe Developer Console].</td>
+          <td role="rowheader">[!UICONTROL Client ID]<p>(Opcional)</p></td>
+          <td>Insira sua [!UICONTROL Client ID] do [!DNL Adobe]. Essa informação pode ser encontrada na seção [!UICONTROL Credentials details] do [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Segredo do Cliente]<p>(Opcional)</p></td>
-          <td>Insira seu [!DNL Adobe] [!UICONTROL Segredo do Cliente]. Isso pode ser encontrado na seção [!UICONTROL Credentials details] do [!DNL Adobe Developer Console].
+          <td role="rowheader">[!UICONTROL Client Secret]<p>(Opcional)</p></td>
+          <td>Insira o [!UICONTROL Client Secret] do [!DNL Adobe]. Essa informação pode ser encontrada na seção [!UICONTROL Credentials details] do [!DNL Adobe Developer Console].
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL URL de Autenticação]<p>(Opcional)</p></td>
+          <td role="rowheader">[!UICONTROL Authentication URL]<p>(Opcional)</p></td>
           <td>Insira o URL que sua instância do Workfront usará para autenticar essa conexão. <p>O valor padrão é <code>https://oauth.my.workfront.com/integrations/oauth2</code>.</p>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Prefixo de host]</td>
+          <td role="rowheader">[!UICONTROL Host prefix]</td>
           <td>Insira seu prefixo de host.<p>O valor padrão é <code>origin-</code>.</p>
         </tr>
       </tbody>
@@ -127,7 +129,7 @@ Ao configurar módulos do Workfront Boards, o Workfront Fusion exibe os campos l
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Alternância de mapa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Botão de alternância Mapear](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Cartões](#cards)
 * [Quadros](#boards)
@@ -154,7 +156,7 @@ Esse módulo de ação adiciona um item de lista de verificação ao cartão esp
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão]</td> 
+   <td>[!UICONTROL Connection]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo Workfront ao Workfront Fusion, consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -177,7 +179,7 @@ Este módulo de ação adiciona uma subtarefa a um cartão em Quadros. A placa d
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão]</td> 
+   <td>[!UICONTROL Connection]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo Workfront ao Workfront Fusion, consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -189,7 +191,7 @@ Este módulo de ação adiciona uma subtarefa a um cartão em Quadros. A placa d
    <td>Insira ou mapeie a ID do quadro que contém o cartão ao qual você deseja adicionar uma subtarefa.<p>Você pode encontrar a ID da placa no URL ao visualizar a placa no Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Nome]</td> 
+   <td>[!UICONTROL Name]</td> 
    <td>Insira ou mapeie um nome para a nova subtarefa.</p></td> 
   </tr> 
  </tbody> 
@@ -204,7 +206,7 @@ Este módulo de ação cria um novo cartão em um quadro Workfront.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão]</td> 
+   <td>[!UICONTROL Connection]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo Workfront ao Workfront Fusion, consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -216,7 +218,7 @@ Este módulo de ação cria um novo cartão em um quadro Workfront.
    <td>Insira ou mapeie a ID da coluna à qual deseja adicionar uma subtarefa.<p>Você pode encontrar a ID da coluna nas informações retornadas do módulo Leia uma placa.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Nome]</td> 
+   <td>[!UICONTROL Name]</td> 
    <td>Insira ou mapeie um nome para o novo cartão.</p></td> 
   </tr> 
  </tbody> 
@@ -231,7 +233,7 @@ Este módulo de ação move um cartão para uma coluna diferente no mesmo quadro
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão]</td> 
+   <td>[!UICONTROL Connection]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo Workfront ao Workfront Fusion, consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -262,7 +264,7 @@ Este módulo de ação recupera informações sobre um cartão específico.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão]</td> 
+   <td>[!UICONTROL Connection]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo Workfront ao Workfront Fusion, consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -285,7 +287,7 @@ Esse módulo de ação atualiza as informações de um cartão especificado.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão]</td> 
+   <td>[!UICONTROL Connection]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo Workfront ao Workfront Fusion, consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -297,11 +299,11 @@ Esse módulo de ação atualiza as informações de um cartão especificado.
    <td>Insira ou mapeie a ID do quadro que contém o cartão que você deseja atualizar.<p>Você pode encontrar a ID da placa no URL ao visualizar a placa no Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Nome]</td> 
+   <td>[!UICONTROL Name]</td> 
    <td>Insira ou mapeie um novo nome para o cartão.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Descrição]</td> 
+   <td>[!UICONTROL Description]</td> 
    <td>Insira ou mapeie uma nova descrição para o cartão.</p></td> 
   </tr> 
   <tr> 
@@ -311,7 +313,7 @@ Esse módulo de ação atualiza as informações de um cartão especificado.
   <tr> 
    <td>[!UICONTROL Data de vencimento]</td> 
    <td>Insira ou mapeie a data de vencimento deste cartão.</p>
-   <p>Para obter uma lista de formatos de data e hora com suporte, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerção de tipo</a>.</p>
+   <p>Para obter uma lista de formatos de data e hora compatíveis, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerção de tipo</a>.</p>
    </td> 
   </tr> 
   <tr> 
@@ -335,7 +337,7 @@ Este módulo de ação cria um quadro no Workfront. Você pode especificar o tip
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão]</td> 
+   <td>[!UICONTROL Connection]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo Workfront ao Workfront Fusion, consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -358,7 +360,7 @@ Esse módulo de ação retorna informações sobre um único quadro, como cartõ
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão]</td> 
+   <td>[!UICONTROL Connection]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo Workfront ao Workfront Fusion, consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -383,7 +385,7 @@ Esse módulo de ação cria uma nova coluna no quadro especificado.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão]</td> 
+   <td>[!UICONTROL Connection]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo Workfront ao Workfront Fusion, consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -410,7 +412,7 @@ Este módulo de pesquisa retorna informações sobre a coluna com o nome especif
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão]</td> 
+   <td>[!UICONTROL Connection]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo Workfront ao Workfront Fusion, consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -433,7 +435,7 @@ Esse módulo de ação atualiza o nome ou o limite WIP da coluna especificada.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão]</td> 
+   <td>[!UICONTROL Connection]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo Workfront ao Workfront Fusion, consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -465,7 +467,7 @@ Esse módulo de ação adiciona uma tag a um cartão.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão]</td> 
+   <td>[!UICONTROL Connection]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo Workfront ao Workfront Fusion, consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -492,7 +494,7 @@ Esse módulo de ação cria uma nova tag e a atribui a uma cor.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão]</td> 
+   <td>[!UICONTROL Connection]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo Workfront ao Workfront Fusion, consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -524,7 +526,7 @@ Esse módulo de ação criou um comentário no cartão especificado.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão]</td> 
+   <td>[!UICONTROL Connection]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo Workfront ao Workfront Fusion, consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -547,7 +549,7 @@ Esse módulo de ação recupera os comentários do cartão especificado.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão]</td> 
+   <td>[!UICONTROL Connection]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo Workfront ao Workfront Fusion, consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -555,7 +557,7 @@ Esse módulo de ação recupera os comentários do cartão especificado.
    <td>Insira ou mapeie a ID do cartão para o qual deseja recuperar os comentários.<p>Você pode encontrar a ID do cartão no URL ao visualizá-lo no Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Limite]</td> 
+   <td>[!UICONTROL Limit]</td> 
    <td>Insira o número máximo de comentários que você deseja que o módulo retorne em um ciclo de execução.</p></td> 
   </tr> 
  </tbody> 
@@ -572,7 +574,7 @@ Esse módulo de ação faz uma chamada personalizada para a API de placas do Wor
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo Workfront ao Workfront Fusion, consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -580,20 +582,20 @@ Esse módulo de ação faz uma chamada personalizada para a API de placas do Wor
    <td> <p>Insira um caminho relativo a <code> https://&lt;WORKFRONT_DOMAIN&gt;/boards-service/graphql?</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Método]</td> 
+   <td role="rowheader">[!UICONTROL Method]</td> 
    <td> <p>Selecione o método de solicitação HTTP necessário para configurar a chamada de API. Para obter mais informações, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitação HTTP</a>.</p><p>Para a maioria das chamadas de quadros, o método é POST. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Cabeçalhos]</td> 
+   <td role="rowheader">[!UICONTROL Headers]</td> 
    <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão. Isso determina o tipo de conteúdo da solicitação.</p> <p>Por exemplo,<code> { "Content-type":"application/json-stringify()"}</code></p>  </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Cadeia de Consulta]</td> 
-   <td> <p>Adicione a consulta da chamada à API na forma de um objeto JSON padrão.</p> <p>Para Workfront Boards, essa seção geralmente fica vazia.</p>  </td> 
+   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td> <p>Adicione a consulta para a chamada de API na forma de um objeto JSON padrão.</p> <p>Para Workfront Boards, essa seção geralmente fica vazia.</p>  </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Corpo]</td> 
-   <td> <p>Adicione o conteúdo do corpo para a chamada de API na forma de um Graphql incorporado JSON </p> <p>Exemplo:</p><p>Este exemplo atualiza um nome de coluna. Você pode incluir o <code>boardId</code> e <code>columnId</code> como GUIDs codificados ou mapeados de um módulo anterior.<p><pre>{<br> "query": "mutation { updateColumn(boardId: \"\", columnId: \"\", updateColumnInput: { name: \"\" }) { id name }}"<br>}</pre><p>Observação:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
+   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td> <p>Adicione o conteúdo do corpo para a chamada de API na forma de um Graphql incorporado JSON </p> <p>Exemplo:</p><p>Este exemplo atualiza um nome de coluna. Você pode incluir o <code>boardId</code> e <code>columnId</code> como GUIDs codificados ou mapeados de um módulo anterior.<p><pre>{<br> "query": "mutation { updateColumn(boardId: \"\", columnId: \"\", updateColumnInput: { name: \"\" }) { id name }}"<br>}</pre><p>Observação:  <p>Ao usar instruções condicionais, como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -611,16 +613,16 @@ Esse módulo de ação faz uma solicitação GraphQL personalizada para a API de
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
       <td> <p>Você pode usar uma conexão Workfront existente para se conectar a Workfront Boards, ou usar uma conexão Workfront Boards específica. </p><p>Para obter instruções sobre como conectar seu aplicativo Workfront ao Workfront Fusion, consulte <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Criar uma conexão com Workfront Boards</a> neste artigo.</p> </td> 
   </tr> 
    <tr> 
-   <td role="rowheader">[!UICONTROL Método]</td> 
+   <td role="rowheader">[!UICONTROL Method]</td> 
    <td> <p>Selecione o método para esta chamada. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Consulta]</td> 
-   <td> <p>Adicione a consulta da chamada à API na forma de um objeto JSON padrão.</p> </td> 
+   <td> <p>Adicione a consulta para a chamada de API na forma de um objeto JSON padrão.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Nome da operação]</td> 
@@ -635,7 +637,7 @@ Esse módulo de ação faz uma solicitação GraphQL personalizada para a API de
    <td> <p>Para cada variável que você deseja adicionar, clique em <b>Adicionar item</b> e insira a chave e o valor da variável.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limite]</td> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
    <td>Insira ou mapeie o número máximo de registros que deseja que o módulo retorne durante cada ciclo de execução de cenário.</td> 
    </tr> 
  </tbody> 
