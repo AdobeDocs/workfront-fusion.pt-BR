@@ -4,10 +4,10 @@ description: Em um cenário do Adobe Workfront Fusion, é possível automatizar 
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 2493ce7ccca599e30b44b62558573ce2a55b03e0
 workflow-type: tm+mt
-source-wordcount: '4130'
-ht-degree: 0%
+source-wordcount: '4276'
+ht-degree: 13%
 
 ---
 
@@ -21,7 +21,7 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -29,31 +29,31 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion</td> 
    <td>
    <p>Baseado em operação: nenhum requisito de licença do Workfront Fusion</p>
-   <p>Baseado em conector (herdado): automação e integração do Workfront Fusion for Work </p>
+   <p>Baseado em conector (legado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -86,7 +86,7 @@ O conector do SharePoint usa o seguinte:
 
 ## Conectar o Microsoft SharePoint Online ao Workfront Fusion {#connect-microsoft-sharepoint-online-to-workfront-fusion}
 
-* [Conectar o Microsoft SharePoint Online ao Workfront Fusion usando uma conta  [!DNL Microsoft] &#x200B;](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
+* [Conectar o Microsoft SharePoint Online ao Workfront Fusion usando uma conta  [!DNL Microsoft] ](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [Conectar o Microsoft SharePoint Online ao Workfront Fusion usando configurações avançadas](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
 * [Conectar o Microsoft SharePoint Online ao Workfront Fusion usando a autorização de certificado](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
 
@@ -107,15 +107,15 @@ Para incluir credenciais na conexão, habilite a opção Mostrar configurações
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Tipo de conexão]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL Connection type]</p> </td> 
       <td>Para usar as credenciais do cliente, selecione <b>Email do Microsoft 365</b>.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Nome da Conexão]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
       <td>Insira um nome para a conexão.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL ID do Cliente]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL Client ID]</p> </td> 
       <td>Insira a ID do cliente do aplicativo SharePoint ao qual você está se conectando. </td> 
      </tr> 
      <tr> 
@@ -150,15 +150,15 @@ Você pode usar a autorização de certificado para se conectar ao SharePoint.
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Tipo de conexão]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL Connection type]</p> </td> 
       <td>Para usar autorização de certificado, selecione <b>Microsoft SharePoint Online (Autenticação do Certificado)</b>.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Nome da Conexão]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
       <td>Insira um nome para a conexão.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL ID do Cliente]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL Client ID]</p> </td> 
       <td>Insira a ID do cliente do aplicativo SharePoint ao qual você está se conectando. </td> 
      </tr> 
      <tr> 
@@ -166,10 +166,10 @@ Você pode usar a autorização de certificado para se conectar ao SharePoint.
       <td>Insira a impressão digital do aplicativo SharePoint ao qual você está se conectando.</td> 
      </tr> 
       <tr>
-        <td role="rowheader">[!UICONTROL Chave privada]</td>
+        <td role="rowheader">[!UICONTROL Private key]</td>
         <td>
           <p>Insira o certificado ou a chave privada que foi gerada quando suas credenciais foram criadas no Microsoft. </p>
-          <p>Para extrair sua chave privada ou certificado:</p>
+          <p>Para extrair a chave privada ou o certificado:</p>
           <ol>
             <li>
               <p>Clique em <b>[!UICONTROL Extract]</b>.</p>
@@ -183,10 +183,10 @@ Você pode usar a autorização de certificado para se conectar ao SharePoint.
               <p>Selecione o arquivo que contém a chave privada ou o certificado.</p>
             </li>
             <li>
-              <p>Digite a senha do arquivo.</p>
+              <p>Insira a senha do arquivo.</p>
             </li>
             <li>
-              <p>Clique em <b>[!UICONTROL Salvar]</b> para extrair o arquivo e retornar à configuração de conexão.</p>
+              <p>Clique em <b>[!UICONTROL Save]</b> para extrair o arquivo e retornar à configuração de conexão.</p>
             </li>
           </ol>
         </td>
@@ -202,7 +202,7 @@ Ao configurar módulos do Microsoft SharePoint Online, o Workfront Fusion exibe 
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Alternância de mapa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Botão de alternância Mapear](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Item da unidade](#drive-item)
 * [Item](#item)
@@ -222,14 +222,14 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 
 #### Criar um arquivo
 
-Este módulo retorna as alterações feitas no SharePoint.
+Esse módulo retorna cria um arquivo no SharePoint. Este módulo tem melhor desempenho do que o módulo Criar um arquivo (Herdado).
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -241,8 +241,38 @@ Este módulo retorna as alterações feitas no SharePoint.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL arquivo Source]</td> 
-      <p>Selecione um arquivo de origem de um módulo anterior ou mapeie o nome e os dados do arquivo de origem.</p>
+   <td role="rowheader">[!UICONTROL Source file] </td>
+      <td><p>Selecione um arquivo de origem de um módulo anterior ou mapeie o nome e os dados do arquivo de origem.</p></td>
+  </tr>  </tbody> 
+</table>
+
+
+
+#### Criar um arquivo (herdado)
+
+Este módulo cria um arquivo no SharePoint.
+
+Para obter um melhor desempenho, recomendamos usar o módulo [Criar um arquivo](#create-a-file).
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao Workfront Fusion</a> neste artigo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Inserir Site, Unidade e IDs de Pasta]</td> 
+   <td> <p>Selecione como você deseja identificar o local da pasta na qual deseja recuperar as alterações.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Inserir manualmente]</strong> </p> <p>Insira ou mapeie a <strong>[!UICONTROL ID do Site]</strong>, <strong>[!UICONTROL ID da Unidade]</strong> e <strong>[!UICONTROL ID da Pasta]</strong> do local em que deseja criar o arquivo.</p> </li> 
+     <li> <p><strong>[!UICONTROL Selecionar na lista que você segue]</strong> </p> <p>Selecione o local em que deseja criar o arquivo. </p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
+      <td><p>Selecione um arquivo de origem de um módulo anterior ou mapeie o nome e os dados do arquivo de origem.</p></td>
   </tr>  </tbody> 
 </table>
 
@@ -255,7 +285,7 @@ Este módulo de ação cria uma nova pasta no SharePoint.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -282,7 +312,7 @@ Este módulo de ação recupera o arquivo SharePoint especificado.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -305,7 +335,7 @@ Este módulo recuperou detalhes sobre a pasta especificada
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -328,7 +358,7 @@ Este módulo de ação atualiza os metadados de uma pasta ou arquivo
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -340,7 +370,7 @@ Este módulo de ação atualiza os metadados de uma pasta ou arquivo
     </ul> </td> 
   </tr> 
   </tr> 
-   <td role="rowheader">[!UICONTROL Campos]</td> 
+   <td role="rowheader">[!UICONTROL Fields]</td> 
    <td>Para cada campo de metadados que você deseja atualizar, clique em <b>Adicionar item</b> e insira o caminho e o valor do campo.</td> 
   <tr>
 </tbody> 
@@ -355,7 +385,7 @@ Este módulo de acionamento inicia um cenário quando um item é atualizado em u
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -366,7 +396,7 @@ Este módulo de acionamento inicia um cenário quando um item é atualizado em u
      <li> <p><strong>[!UICONTROL Selecionar na lista que você segue]</strong> </p> <p>Selecione o local da pasta que deseja observar. </p> </li> 
     </ul> </td> 
   </tr> 
-   <td role="rowheader">[!UICONTROL Limite]</td> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
    <td>Insira o número máximo de itens que o Workfront Fusion deve retornar durante um ciclo de execução de cenário.</td> 
   <tr>
   </tr>
@@ -395,7 +425,7 @@ Este módulo de ação copia um item existente em uma lista do SharePoint.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -426,7 +456,7 @@ Este módulo de ação cria um novo item em uma lista do SharePoint.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -438,7 +468,7 @@ Este módulo de ação cria um novo item em uma lista do SharePoint.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Campos]</td> 
+   <td role="rowheader">[!UICONTROL Fields]</td> 
    <td>Para cada campo que você deseja definir para o novo item, clique em <b>Adicionar item</b> e insira a chave do campo (que identifica o campo) e o valor que você deseja que o novo item tenha para esse campo.</td> 
   </tr> 
  </tbody> 
@@ -453,7 +483,7 @@ Este módulo de ação exclui um item existente em uma lista do SharePoint.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -476,7 +506,7 @@ Este módulo de ação retorna os dados de um item especificado.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -499,7 +529,7 @@ Esse módulo obtém detalhes do item do URL especificado.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -518,7 +548,7 @@ Este módulo de ação recupera uma lista de todos os itens em uma lista especif
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -530,7 +560,7 @@ Este módulo de ação recupera uma lista de todos os itens em uma lista especif
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limite]</td> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
    <td> <p>Insira ou mapeie o número máximo de itens que você deseja que o módulo retorne durante cada ciclo de execução de cenário.</p> </td> 
   </tr> 
  </tbody> 
@@ -545,7 +575,7 @@ Este módulo de ação copia um item existente em uma lista do SharePoint.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -576,7 +606,7 @@ Este módulo de ação atualiza um item existente em uma lista do SharePoint.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -588,7 +618,7 @@ Este módulo de ação atualiza um item existente em uma lista do SharePoint.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Campos]</td> 
+   <td role="rowheader">[!UICONTROL Fields]</td> 
    <td>Para cada campo que você deseja atualizar para o novo item, clique em <b>Adicionar item</b> e insira a chave do campo (que identifica o campo) e o novo valor que você deseja que o item tenha para esse campo.</td> 
   </tr> 
  </tbody> 
@@ -603,7 +633,7 @@ Esse módulo de acionamento inicia um cenário quando um item é criado ou modif
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -619,7 +649,7 @@ Esse módulo de acionamento inicia um cenário quando um item é criado ou modif
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limite]</td> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
    <td> <p>Insira ou mapeie o número máximo de itens que você deseja que o módulo retorne durante cada ciclo de execução de cenário.</p> </td> 
   </tr> 
  </tbody> 
@@ -641,7 +671,7 @@ Este módulo de ação cria uma nova lista no SharePoint.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -657,7 +687,7 @@ Este módulo de ação cria uma nova lista no SharePoint.
    <td>Insira ou mapeie um nome para a nova lista.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Descrição]</td> 
+   <td role="rowheader">[!UICONTROL Description]</td> 
    <td>Insira ou mapeie uma descrição para a nova lista.</td> 
   </tr> 
   <tr> 
@@ -676,7 +706,7 @@ Este módulo de ação retorna os dados de uma lista especificada.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -699,7 +729,7 @@ Este módulo de ação recupera uma lista de todos os itens em um site especific
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -711,7 +741,7 @@ Este módulo de ação recupera uma lista de todos os itens em um site especific
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limite]</td> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
    <td> <p>Insira ou mapeie o número máximo de listas que você deseja que o módulo retorne durante cada ciclo de execução de cenário.</p> </td> 
   </tr> 
  </tbody> 
@@ -726,7 +756,7 @@ Esse módulo de acionador inicia um cenário quando uma lista é criada ou modif
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -742,7 +772,7 @@ Esse módulo de acionador inicia um cenário quando uma lista é criada ou modif
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limite]</td> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
    <td> <p>Insira ou mapeie o número máximo de listas que você deseja que o módulo retorne durante cada ciclo de execução de cenário.</p> </td> 
   </tr> 
  </tbody> 
@@ -768,7 +798,7 @@ Este módulo de ação retorna os dados de uma página especificada.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -791,7 +821,7 @@ Este módulo recupera uma lista de todas as páginas.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -803,7 +833,7 @@ Este módulo recupera uma lista de todas as páginas.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limite]</td> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
    <td> <p>Insira ou mapeie o número máximo de páginas que você deseja que o módulo retorne durante cada ciclo de execução do cenário.</p> </td> 
   </tr> 
  </tbody> 
@@ -818,7 +848,7 @@ Esse módulo de ação publica a versão mais recente da página selecionada.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -841,7 +871,7 @@ Esse módulo de acionador inicia um cenário quando uma página é modificada no
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -853,7 +883,7 @@ Esse módulo de acionador inicia um cenário quando uma página é modificada no
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limite]</td> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
    <td> <p>Insira ou mapeie o número máximo de páginas que você deseja que o módulo retorne durante cada ciclo de execução do cenário.</p> </td> 
   </tr> 
  </tbody> 
@@ -873,7 +903,7 @@ Este módulo de ação retorna os dados de um site especificado.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -896,7 +926,7 @@ Esse módulo de ação pesquisa sites por um parâmetro especificado.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -904,7 +934,7 @@ Esse módulo de ação pesquisa sites por um parâmetro especificado.
    <td> <p>Insira ou mapeie o termo de pesquisa que você deseja pesquisar nos sites.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limite]</td> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
    <td> <p>Insira ou mapeie o número máximo de sites que você deseja que o módulo retorne durante cada ciclo de execução de cenário.</p> </td> 
   </tr> 
  </tbody> 
@@ -914,7 +944,7 @@ Esse módulo de ação pesquisa sites por um parâmetro especificado.
 
 * [Obter alterações](#get-changes)
 * [Fazer uma chamada de API](#make-an-api-call)
-* [Assistir a eventos](#watch-events)
+* [Monitorar eventos](#watch-events)
 
 #### Obter alterações
 
@@ -925,7 +955,7 @@ Este módulo recupera adições, atualizações e exclusões feitas na pasta do 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -952,32 +982,32 @@ Este módulo permite executar uma chamada de API personalizada.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
-   <td> <p>Insira um caminho relativo para <code>https://graph.microsoft.com</code>. Exemplo:<code> /beta/sites</code></p> </td> 
+   <td> <p>Insira um caminho relativo a <code>https://graph.microsoft.com</code>. Exemplo:<code> /beta/sites</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Método]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
    <td> <p>Selecione o método de solicitação HTTP necessário para configurar a chamada de API. Para obter mais informações, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitação HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Cabeçalhos]</td> 
+   <td role="rowheader">[!UICONTROL Headers]</td> 
    <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão. Por exemplo, <code>{"Content-type":"application/json"}</code>. O Workfront Fusion adiciona os cabeçalhos de autorização para você.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Cadeia de Consulta]</td> 
-   <td> <p> Adicione a consulta da chamada à API na forma de um objeto JSON padrão.</p> </td> 
+   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td> <p> Adicione a consulta para a chamada de API na forma de um objeto JSON padrão.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Tipo]</td> 
+   <td role="rowheader">[!UICONTROL Type]</td> 
    <td>Selecione o tipo de dados que deseja enviar na chamada de API.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Corpo]</td> 
-   <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
+   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td> <p>Adicione o conteúdo do corpo para a chamada de API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais, como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -985,7 +1015,7 @@ Este módulo permite executar uma chamada de API personalizada.
  </tbody> 
 </table>
 
-#### Assistir a eventos
+#### Monitorar eventos
 
 Esse módulo de acionador instantâneo inicia um cenário quando um item é adicionado, atualizado ou excluído no SharePoint.
 

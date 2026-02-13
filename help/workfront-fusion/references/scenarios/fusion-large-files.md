@@ -4,10 +4,10 @@ description: Atualmente, há suporte para arquivos grandes nos conectores Workfr
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: a68de976258d17631459f0951d28657fd0e0dcf6
+source-git-commit: 2493ce7ccca599e30b44b62558573ce2a55b03e0
 workflow-type: tm+mt
-source-wordcount: '1048'
-ht-degree: 2%
+source-wordcount: '1052'
+ht-degree: 6%
 
 ---
 
@@ -27,7 +27,7 @@ No momento, os seguintes conectores são compatíveis com arquivos grandes.
 
 >[!NOTE]
 >
->* Se um arquivo for baixado usando um módulo que suporte arquivos grandes e, em seguida, for passado para um módulo que não suporta arquivos grandes, esse módulo não processará o arquivo com êxito. Arquivos grandes devem ser manipulados exclusivamente com módulos compatíveis durante todo o fluxo de trabalho.
+>* Se um arquivo for baixado usando um módulo compatível com arquivos grandes e, em seguida, for passado para um módulo que não é, esse módulo não processará o arquivo com êxito. Arquivos grandes devem ser manipulados exclusivamente com módulos compatíveis durante todo o fluxo de trabalho.
 >* Os módulos que não aceitam arquivos grandes podem processar arquivos de até 200 MB.
 
 * Workfront
@@ -44,6 +44,7 @@ No momento, os seguintes conectores são compatíveis com arquivos grandes.
    * Aplicar edições no PSD
 * SharePoint
    * Criar um arquivo
+   * Criar um arquivo (herdado)
    * Obter um arquivo
 * Salesforce
    * Carregar arquivo
@@ -78,7 +79,7 @@ Os usuários agora podem processar arquivos que excediam o limite anterior de 1 
 
 ### Como funciona a nova transferência de arquivos do Fusion?
 
-Quando o Fusion processa arquivos, arquivos maiores são adicionados ao armazenamento persistente (Armazenamento S3 Bucket ou Armazenamento Azure Blob). Quando um módulo Fusion executa uma ação de arquivo, como upload ou download, o Fusion usa o arquivo no armazenamento persistente como origem, em vez da memória ativa.
+Quando o Fusion processa arquivos, arquivos maiores são adicionados ao armazenamento persistente (armazenamento S3 Bucket ou Azure Blob). Quando um módulo Fusion executa uma ação de arquivo, como upload ou download, o Fusion usa o arquivo no armazenamento persistente como origem, em vez da memória ativa.
 
 ### Posso trabalhar com arquivos maiores usando execuções incompletas?
 
