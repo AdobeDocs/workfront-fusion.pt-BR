@@ -7,10 +7,10 @@ description: Saiba como adicionar uma função para atualizar um item de trabalh
 author: Becky
 feature: Workfront Fusion
 exl-id: aa082ac8-48e8-4569-880e-024dd77feaa1
-source-git-commit: 6269db7454a63e80de3d770ab1012162d5080565
+source-git-commit: 88147d0305595e1d0d388f510ed43fc5beaa4b64
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 19%
+source-wordcount: '603'
+ht-degree: 18%
 
 ---
 
@@ -47,7 +47,7 @@ Este exemplo modifica o cenário criado em [Criar um cenário básico](/help/wor
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações desta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -111,4 +111,4 @@ Quando esse cenário converte uma solicitação em um projeto, o nome do projeto
 
 ## Recursos
 
-* [Mapear itens usando funções](/help//workfront-fusion/create-scenarios/map-data/map-using-functions.md)
+* [Mapear itens usando funções integradas](/help//workfront-fusion/create-scenarios/map-data/map-using-functions.md)

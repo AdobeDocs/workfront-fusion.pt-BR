@@ -1,26 +1,27 @@
 ---
-title: Mapear itens usando funções
+title: Mapear itens usando funções integradas
 description: Ao mapear itens, você pode usar funções para criar fórmulas simples ou complexas.
 author: Becky
 feature: Workfront Fusion
 exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: 3c726c1df589785719c0f141fbd5bc17194cc218
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 0%
+source-wordcount: '711'
+ht-degree: 24%
 
 ---
 
-# Mapear um item usando funções
+# Mapear um item usando funções integradas
 
-Ao mapear itens, você pode usar funções para criar fórmulas simples ou complexas. As funções disponíveis são semelhantes às funções no Excel e em algumas linguagens de programação:
+O Workfront Fusion inclui funções integradas que permitem criar fórmulas simples ou complexas. Essas funções cobrem uma grande variedade de casos de uso, incluindo funções para matrizes, sequências, números e dados de módulos anteriores.
 
-* Eles avaliam a lógica geral, matemática, texto, datas e matrizes.
-* Elas permitem executar lógica condicional e transformações de valores de item, como converter um texto em maiúsculas, cortar texto, converter uma data em um formato diferente e muito mais.
+Além disso, é possível criar funções personalizadas que seus cenários poderão usar para transformar e manipular dados.
+
+Para obter informações e instruções sobre funções personalizadas, consulte [Mapear dados usando funções personalizadas](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md).
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -28,26 +29,33 @@ Ao mapear itens, você pode usar funções para criar fórmulas simples ou compl
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p><ul><li>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li><li>Você deve ter uma licença do Adobe App Builder para usar funções personalizadas.</ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
-## Inserir funções em campos
+## Mapear dados usando funções integradas
+
+Ao mapear itens, você pode usar funções para criar fórmulas simples ou complexas. As funções disponíveis são semelhantes às funções no Excel e em algumas linguagens de programação:
+
+* Elas avaliam lógica geral, matemática, texto, datas e matrizes.
+* Elas permitem executar lógica condicional e transformações de valores de item, como converter um texto em maiúsculas, aparar texto, converter uma data em um formato diferente e muito mais.
+
+### Inserir funções em campos
 
 Para inserir uma função em um campo:
 
@@ -86,7 +94,7 @@ Neste exemplo, a função de subsequência de caracteres limita o nome do projet
 
 >[!ENDSHADEBOX]
 
-## Aninhamento de funções
+### Aninhamento de funções
 
 É possível aninhar funções entre si.
 
@@ -112,7 +120,7 @@ Para aninhar uma função:
 1. Continue a configurar a função conforme desejado.
 1. Continue a configurar o módulo ou clique em **OK**.
 
-## Usar funções [!DNL Google Sheets]
+### Usar funções [!DNL Google Sheets]
 
 Se o Workfront Fusion não apresentar uma função que você queira usar, mas que seja apresentada por [!DNL Google Sheets], você poderá usá-la seguindo estas etapas:
 
