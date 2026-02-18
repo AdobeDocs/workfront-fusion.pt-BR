@@ -6,14 +6,14 @@ feature: Workfront Fusion
 hide: true
 hidefromtoc: true
 exl-id: 748055ad-d305-4513-9a5c-9c970b74a96e
-source-git-commit: 5dfca593b17a234c80c807470026a7b192cbf7fa
+source-git-commit: 97abe6bf0ff7b10a139268f02f8a1a24f3e31b47
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 23%
+source-wordcount: '488'
+ht-degree: 18%
 
 ---
 
-# Módulo do Model Context Protocol (MCP)
+# Módulo do agente MCP
 
 <!--SET UP REDIRECTS-->
 
@@ -22,6 +22,8 @@ O protocolo de contexto de modelo (MCP) é uma maneira de conectar com seguranç
 Por exemplo, você pode configurar um servidor MCP para conectar um modelo de IA ao Gmail. Quando você envia o prompt &quot;Me dê meus últimos 5 emails do Gmail&quot;, ele pode acessar seu Gmail e retornar os emails.
 
 O módulo Protocolo de Contexto de Modelo (MCP) permite processar um prompt de usuário usando um modelo de idioma e servidores MCP.
+
+Para obter mais informações sobre o MCP em cenários do Fusion, consulte [Adicionar um prompt de IA ao seu cenário](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md).
 
 ## Requisitos de acesso
 
@@ -48,21 +50,24 @@ O módulo Protocolo de Contexto de Modelo (MCP) permite processar um prompt de u
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações desta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
+## Pré-requisitos
 
-
-
+* Você deve ter configurado todos os servidores MCP aos quais pretende se conectar.
+* Você deve ter uma chave LLM para o LLM selecionado (Modelo de idioma grande).
 
 ## Módulo do protocolo de contexto do modelo e seus campos
-
-Ao configurar o módulo MCP, o Adobe Workfront Fusion exibe os campos listados abaixo. Um título em negrito em um módulo indica um campo obrigatório.
 
 ### Processar prompt de usuário
 
 Esse módulo de ação processa um prompt, usando o modelo de idioma e os servidores MCP especificados.
+
+>[!NOTE]
+>
+>Este módulo deve retornar um objeto. Ele não retorna saída como sequências ou números.
 
 <table style="table-layout:auto"> 
  <col> 
