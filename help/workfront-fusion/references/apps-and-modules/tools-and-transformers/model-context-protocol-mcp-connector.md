@@ -6,51 +6,49 @@ feature: Workfront Fusion
 hide: true
 hidefromtoc: true
 exl-id: 748055ad-d305-4513-9a5c-9c970b74a96e
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+source-git-commit: 5dfca593b17a234c80c807470026a7b192cbf7fa
 workflow-type: tm+mt
-source-wordcount: '34'
-ht-degree: 0%
+source-wordcount: '455'
+ht-degree: 23%
 
 ---
 
-# Módulo do Protocolo de Contexto de Modelo (MCP)
+# Módulo do Model Context Protocol (MCP)
 
-Não há módulos MCP disponíveis no momento.
+<!--SET UP REDIRECTS-->
 
-<!-- SET UP REDIRECTS
+O protocolo de contexto de modelo (MCP) é uma maneira de conectar com segurança modelos de idioma de IA a outros aplicativos. Você configura servidores MCP, que permitem que o modelo de IA acesse o aplicativo. Em seguida, você pode enviar um prompt para o modelo de IA, que pode retornar informações do aplicativo.
 
-Model Context Protocol (MCP) is a way to securely connect AI language models with other applications. You configure MCP servers, which allow the AI model to access the application. You can then send a prompt to the AI model, and it can return information from the application.
+Por exemplo, você pode configurar um servidor MCP para conectar um modelo de IA ao Gmail. Quando você envia o prompt &quot;Me dê meus últimos 5 emails do Gmail&quot;, ele pode acessar seu Gmail e retornar os emails.
 
-For example, you could configure a MCP server to connect an AI model with Gmail. When you send the prompt "Give me my last 5 emails from Gmail," it can access your Gmail and return the emails.
+O módulo Protocolo de Contexto de Modelo (MCP) permite processar um prompt de usuário usando um modelo de idioma e servidores MCP.
 
-The Model Context Protocol (MCP) module allows you to process a user prompt using a language model and MCP servers.
+## Requisitos de acesso
 
-## Access requirements
-
-+++ Expand to view access requirements for the functionality in this article.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront package</td> 
-   <td> <p>Any Adobe Workfront Workflow package and any Adobe Workfront Automation and Integration package</p><p>Workfront Ultimate</p><p>Workfront Prime and Select packages, with an additional purchase of Workfront Fusion.</p> </td> 
+   <td role="rowheader">Pacote do Adobe Workfront</td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront licenses</td> 
-   <td> <p>Standard</p><p>Work or higher</p> </td> 
+   <td role="rowheader">Licenças do Adobe Workfront</td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Product</td> 
+   <td role="rowheader">Produto</td> 
    <td>
-   <p>If your organization has a Select or Prime Workfront package that does not include Workfront Automation and Integration, your organization must purchase Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -58,31 +56,47 @@ For more detail about the information in this table, see [Access requirements in
 
 
 
-## Model Context Protocol module and its fields
+## Módulo do protocolo de contexto do modelo e seus campos
 
-When you configure the MCP module, Adobe Workfront Fusion displays the fields listed below. A bolded title in a module indicates a required field.
+Ao configurar o módulo MCP, o Adobe Workfront Fusion exibe os campos listados abaixo. Um título em negrito em um módulo indica um campo obrigatório.
 
-### Process User Prompt
+### Processar prompt de usuário
 
-This action module processes a prompt, using the language model and MCP servers you specify.
+Esse módulo de ação processa um prompt, usando o modelo de idioma e os servidores MCP especificados.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Large language model (LLM) key]</td> 
-   <td> <p>Enter or map API key for the large language model you want to use for this prompt. </p> <p>Currently, only the Anthropic API key is supported.</p></td> 
+   <td>Chave LLM</td> 
+   <td> Selecione uma chave LLM existente ou crie uma nova clicando em <b>Adicionar</b> e inserindo as seguintes informações: 
+     <ul>
+       <li><b>Nome da chave</b>: insira um nome para a nova chave.</li>
+       <li><b>LLM</b>: selecione o modelo de idioma grande ao qual esta chave está associada.</li>
+       <li><b>Chave</b>: insira ou mapeie sua chave de API para o modelo selecionado.</li>
+       <li><b>Modelo</b>: selecione o modelo LLM que a chave usará.</li>
+       <li><b>Máximo de Tokens</b>: insira ou mapeie o número máximo de tokens que o LLM pode gerar em sua resposta.<p>Um token geralmente equivale a quatro caracteres, ou 0,75 de uma palavra em inglês. "Olá, mundo" seria igual a dois tokens e "Autenticação" seria igual a um ou dois tokens.</li>
+      </ul>
+    </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL MCP servers]</td> 
-   <td> <p>For each MCP server that you want to make available for this prompt, click <b>Add item</b> and enter the server's name and host. </p> </td> 
+   <td>Servidores MCP</td> 
+   <td> <p>Para cada servidor MCP ao qual você deseja se conectar, clique em <b>Adicionar</b> e insira as seguintes informações: </p> 
+     <ul>
+       <li><b>Conexão</b>: selecione a conexão que o Fusion usará para se conectar ao servidor MCP.</li>
+       <li><b>Host do Servidor MCP</b>: insira a URL do servidor MCP.</li>
+       <li><b>Nome do Servidor MCP</b>: insira ou mapeie um nome para este servidor MCP.</li>
+       <li><b>Cabeçalhos</b>: adicione quaisquer cabeçalhos aplicáveis.</li>
+       <li><b>Tipo de Servidor MCP</b>: selecione o tipo de servidor.</li>
+      </ul>
+    </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Enter your prompt]</td> 
-   <td> <p>Enter or map the prompt for the large lanugage model. </p> </td> 
+   <td>Insira seu prompt </td> 
+   <td> <p>Insira ou mapeie o prompt que deseja processar.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
--->
+
