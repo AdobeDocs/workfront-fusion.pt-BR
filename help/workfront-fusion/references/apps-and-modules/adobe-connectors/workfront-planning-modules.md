@@ -4,9 +4,9 @@ description: Com os  [!DNL Adobe Workfront Planning] módulos, você pode inicia
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 86747ffc38fddde91352558277d40572d13ba2b0
+source-git-commit: a58a6c25751eb10365508c06ab1571ce7652d0c8
 workflow-type: tm+mt
-source-wordcount: '1993'
+source-wordcount: '1992'
 ht-degree: 52%
 
 ---
@@ -40,11 +40,11 @@ Com os módulos [!DNL Adobe Workfront Planning], é possível acionar um cenári
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações desta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
-Pré-requisitos do s##
+## Pré-requisitos
 
 Para acessar o Workfront Planning, é necessário ter o seguinte:
 
@@ -211,7 +211,7 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 
 ### Acionadores
 
-#### Assistir a eventos
+#### Monitorar eventos
 
 Este módulo de acionamento inicia um cenário quando um registro, tipo de registro ou espaço de trabalho é criado, atualizado ou excluído no Workfront Planning.
 
@@ -235,7 +235,7 @@ Este módulo de acionamento inicia um cenário quando um registro, tipo de regis
       <td role="rowheader">[!UICONTROL State]</td>
       <td>Selecione se deseja monitorar o estado antigo ou novo.<ul><li><p><b>[!UICONTROL New state]</b></p><p>Acione um cenário quando o registro é alterado <b>para</b> um valor específico.</p></li><li><p><b>[!UICONTROL Old state]</b></p><p>Acione um cenário quando o registro é alterado <b>de</b> um valor específico.</p></li></ul></td> 
     <tr>
-      <td role="rowheader">[!UICONTROL Workspace]</td>
+      <td role="rowheader">[!UICONTROL Espaço de trabalho]</td>
       <td>Se estiver observando registros, selecione o Workspace que deseja observar para os registros.</td>
     </tr>
     <tr>
@@ -356,7 +356,7 @@ Este módulo de ação recupera uma lista de registros com base nos critérios q
     </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
+        <p>[!UICONTROL Espaço de trabalho]</p>
       </td>
       <td>Insira ou mapeie a Workspace que contém os registros que você deseja pesquisar.</td> 
       </tr>
@@ -472,7 +472,7 @@ Este módulo de ação recupera todos os registros do tipo especificado.
       <td>Para obter instruções sobre como criar uma conexão com o [!DNL Adobe Workfront Planning], consulte <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Criar uma conexão com o [!DNL Adobe Workfront Planning]</a> neste artigo.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Workspace]</td>
+      <td role="rowheader">[!UICONTROL Espaço de trabalho]</td>
       <td>Selecione ou mapeie o espaço de trabalho que contém os registros que deseja recuperar.</td>
     </tr>
     <tr>
@@ -500,7 +500,7 @@ Este módulo de ação recupera uma lista de tipos de registros em uma conta [!D
       <td>Para obter instruções sobre como criar uma conexão com o [!DNL Adobe Workfront Planning], consulte <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Criar uma conexão com o [!DNL Adobe Workfront Planning]</a> neste artigo.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Workspace]</td>
+      <td role="rowheader">[!UICONTROL Espaço de trabalho]</td>
       <td>Selecione ou mapeie o espaço de trabalho que contém os tipos de registro que deseja recuperar.</td>
     </tr>
   </tbody>
