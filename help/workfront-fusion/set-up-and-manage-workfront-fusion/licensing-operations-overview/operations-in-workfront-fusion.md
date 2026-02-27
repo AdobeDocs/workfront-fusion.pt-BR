@@ -4,9 +4,9 @@ description: Uma operação no Adobe Workfront Fusion é uma tarefa executada po
 author: Becky
 feature: Workfront Fusion
 exl-id: c14e2bb2-1cce-48ff-8bea-acc9829d3cf2
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: d630251ec01f5e11bad0305a2f49fb447bf1dd1e
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '412'
 ht-degree: 1%
 
 ---
@@ -20,12 +20,17 @@ Uma operação no Adobe Workfront Fusion é uma tarefa executada por um módulo.
 * Em geral, qualquer execução bem-sucedida da etapa de ação é considerada uma operação.
 * O primeiro módulo em um cenário é executado apenas uma vez e é sempre contado como uma operação, mesmo que não retorne um pacote.
 * O número de vezes que o restante dos módulos é executado depende do número de pacotes que eles devem processar.  Uma execução de um módulo para um pacote é uma operação. Uma exceção é o módulo agregador, que é contado como uma operação por conjunto de pacotes sendo processados.
+* O valor das operações pode ser diferente. Algumas serão operações menores, mais simples e outras mais complexas. As operações contam para o seu total, independentemente de quão simples ou complexas elas possam ser.
 * As operações são contadas no estágio [!UICONTROL Finalization] de execução de um cenário.
 * Os itens a seguir são **não** contados como operações:
    * Quaisquer etapas de filtro.
    * Qualquer ação que cause erros ou seja interrompida.
    * Qualquer rota que não seja executada porque as regras da rota não foram atendidas, como rotas de fallback ou desabilitadas.
    * Qualquer ação que não seja executada porque um filtro não permitiu a passagem de dados ou porque o cenário foi interrompido devido a um erro.
+
+>[!NOTE]
+>
+>Se sua organização tenta regularmente usar mais operações do que o permitido pelo pacote Workfront Fusion, recomendamos considerar a atualização para o pacote de Automação e Integração do Ultimate.
 
 ## Limites de operação
 
