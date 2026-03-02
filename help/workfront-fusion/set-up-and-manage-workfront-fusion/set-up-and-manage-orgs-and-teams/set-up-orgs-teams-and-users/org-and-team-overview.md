@@ -4,10 +4,10 @@ description: Os recursos de Organização e Equipes do Adobe Workfront Fusion po
 author: Becky
 feature: Workfront Fusion
 exl-id: 44e6de2a-b2d3-410d-abc3-10facd258495
-source-git-commit: 4cd97fe2924150b9e7be140a25215f135b2788da
+source-git-commit: 9cb630b713f5fac90acff54fa2034e9d65dd1611
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 1%
+source-wordcount: '612'
+ht-degree: 2%
 
 ---
 
@@ -26,6 +26,18 @@ Para obter instruções sobre como criar uma equipe, consulte [Criar uma equipe]
 Os usuários do Workfront Fusion pertencem a uma organização.
 
 Os usuários devem ser adicionados a uma organização antes de serem adicionados a uma equipe.
+
+### Recursos da organização
+
+Os seguintes recursos afetam toda a organização do Fusion e, portanto, são de propriedade e tratados no nível da organização:
+
+* **Pools de trabalhadores:**: um pool de trabalhadores é uma quantidade de recursos de processamento do Workfront Fusion dedicados a uma organização específica.
+
+  Para obter mais informações, consulte [Pools de trabalhadores](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md).
+
+* **Operações**: uma operação no Adobe Workfront Fusion é uma tarefa executada por um módulo.
+
+  Para obter mais informações, consulte [Operações](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md).
 
 ### Funções da organização
 
