@@ -1,24 +1,24 @@
 ---
-title: Módulos Airtable
+title: Módulos do Airtable
 description: O Adobe Workfront Fusion exige uma licença do Adobe Workfront Fusion, além de uma licença do Adobe Workfront.
 author: Becky
 feature: Workfront Fusion
 exl-id: 3b445b50-5812-4ded-9788-f467991e0b52
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: a5a1f8f596b55b2f1eca9d7874b5885e435b2489
 workflow-type: tm+mt
-source-wordcount: '1923'
-ht-degree: 2%
+source-wordcount: '1957'
+ht-degree: 26%
 
 ---
 
-# Módulos Airtable
+# Módulos do Airtable
 
 
 Com o conector [!DNL Airtable] para Adobe Workfront Fusion, você pode iniciar um cenário com base em eventos na sua conta do [!DNL Airtable], criar, carregar e atualizar registros, registros de pesquisa e fazer chamadas de API personalizadas para a API do Airtable.
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -26,31 +26,31 @@ Com o conector [!DNL Airtable] para Adobe Workfront Fusion, você pode iniciar u
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion</td> 
    <td>
    <p>Baseado em operação: nenhum requisito de licença do Workfront Fusion</p>
-   <p>Baseado em conector (herdado): automação e integração do Workfront Fusion for Work </p>
+   <p>Baseado em conector (legado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -89,8 +89,10 @@ O conector Airtable usa o seguinte:
 1. Open your account overview and generate the API key.
 -->
 1. Abra o Workfront Fusion e a caixa de diálogo **Criar uma conexão** do módulo desejado.
+1. Selecione se você está usando um token de acesso pessoal ou uma autorização OAuth 2.
 1. Insira um nome para a conexão.
-1. (Opcional) Clique em Mostrar configurações avançadas e digite a ID do cliente do Airtable e o Segredo do cliente.
+1. (Condicional) Se estiver usando um Token de acesso pessoal, clique em Mostrar configurações avançadas e insira seu Token de acesso pessoal.
+1. (Condicional) Se estiver usando o OAuth 2, clique em Mostrar configurações avançadas e insira sua ID de cliente do Airtable e a Segredo do cliente.
 1. Clique no botão **Continuar** para criar a conexão e retornar ao módulo.
 
 ## Módulos dirigíveis e seus campos
@@ -100,7 +102,7 @@ O conector Airtable usa o seguinte:
 * [Criar um Registro](#create-a-record)
 * [Excluir um Registro](#delete-a-record)
 * [Obter um registro](#get-a-record)
-* [Pesquisar Registros](#search-records)
+* [Pesquisar registros](#search-records)
 * [Atualizar um Registro](#update-a-record)
 * [Inserir um Registro](#upsert-a-record)
 * [Observar registros](#watch-records)
@@ -173,7 +175,7 @@ Esse módulo de ação exclui um registro específico.
 
 Especifique a ID e os locais do registro.
 
-O módulo retorna a ID do registro e quaisquer campos associados, juntamente com quaisquer campos e valores personalizados que a conexão acessa. Você pode mapear essas informações em módulos subsequentes no cenário.
+O módulo retorna a ID do registro e todos os campos associados, juntamente com quaisquer campos e valores personalizados que a conexão acessa. Você pode mapear essas informações em módulos subsequentes no cenário.
 
 Ao configurar esse módulo, os campos a seguir são exibidos.
 
@@ -473,7 +475,7 @@ Agora, sempre que o formulário for enviado, o módulo Observar respostas no cen
 
 #### Chamada de API personalizada
 
-Este módulo de ação permite fazer uma chamada autenticada personalizada para a API [!DNL Airtable]. Dessa forma, você pode criar uma automação de fluxo de dados que não pode ser realizada pelos outros módulos do [!DNL Airtable].
+Este módulo de ação permite fazer uma chamada autenticada personalizada para a API do [!DNL Airtable]. Dessa forma, você pode criar uma automação de fluxo de dados que não pode ser realizada pelos outros módulos do [!DNL Airtable].
 
 A ação é baseada no tipo de entidade (tipo de objeto Alocadia) especificado.
 
@@ -489,7 +491,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
-   <td>Insira um caminho relativo para <code>https://api.airtable.com/</code>. Exemplo: <code>v0/{base}/{table}</code> </td> 
+   <td>Insira um caminho relativo a <code>https://api.airtable.com/</code>. Exemplo: <code>v0/{base}/{table}</code> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Método</td> 
@@ -500,12 +502,12 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
    <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p> <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p> <p>O Workfront Fusion adiciona os cabeçalhos de autorização para você.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Sequência de consulta</td> 
+   <td role="rowheader">String de consulta</td> 
    <td> <p>Adicione a consulta para a chamada da API no formato de uma Chave e Valor</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Corpo</td> 
-   <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
+   <td> <p>Adicione o conteúdo do corpo para a chamada de API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais, como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
