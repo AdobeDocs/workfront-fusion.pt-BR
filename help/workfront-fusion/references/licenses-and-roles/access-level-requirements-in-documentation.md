@@ -34,7 +34,7 @@ Algumas linhas contêm informações denominadas “Novo” e “Atual”. Isso 
    <td role="rowheader">Pacote do Adobe Workfront 
    <td> Os pacotes do Adobe Workfront se referem ao conjunto de recursos que sua organização adquiriu. A maioria da funcionalidade do Fusion está disponível em todos os planos, mas há algumas exceções que só estão disponíveis para organizações com um pacote do Ultimate Workfront. 
    <ul><li>Para descobrir qual pacote do Adobe Workfront sua organização usa, incluindo se sua organização está no modelo de pacote novo ou atual, entre em contato com o administrador do Workfront.</li>
-   <li>Para obter instruções sobre como um administrador do Workfront pode localizar o pacote Workfront da sua organização, consulte <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-package">Exibir o cluster e o plano Workfront da sua organização</a> no artigo Visão geral do firewall.</li><li>Para obter mais informações sobre os novos pacotes da Workfront, consulte <a href="https://business.adobe.com/products/workfront/pricing.html">Preços e pacotes da Adobe Workfront</a>.</li></ul> </td> 
+   <li>Para obter instruções sobre como um administrador do Workfront pode localizar o pacote Workfront da sua organização, consulte <a href="https://experienceleague.adobe.com/pt-br/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-package">Exibir o cluster e o plano Workfront da sua organização</a> no artigo Visão geral do firewall.</li><li>Para obter mais informações sobre os novos pacotes da Workfront, consulte <a href="https://business.adobe.com/br/products/workfront/pricing.html">Preços e pacotes da Adobe Workfront</a>.</li></ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront</td> 
@@ -43,9 +43,9 @@ Algumas linhas contêm informações denominadas “Novo” e “Atual”. Isso 
    <li>Para descobrir qual licença você está atribuído, entre em contato com o administrador do Workfront.</li>
    <li>A Adobe Workfront está fazendo a transição para um novo modelo de preços e empacotamento. Para obter informações sobre licenças, consulte:
    <ul>
-   <li>Novo: <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/access-levels/licenses-overview">Visão geral das novas licenças</a></li>
-   <li>Atual: <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/legacy-access-levels/wf-licenses">Visão geral das licenças</a></li></ul></li>
-   <li>Se você tiver o nível de acesso correto e ainda assim não tiver acesso, pergunte ao administrador do Workfront se ele definiu restrições adicionais em seu nível de acesso. Para obter informações sobre como um administrador do Workfront pode modificar seu nível de acesso, consulte <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/configure-access/create-modify-access-levels" class="MCXref xref">Criar e modificar níveis de acesso personalizados</a>.
+   <li>Novo: <a href="https://experienceleague.adobe.com/pt-br/docs/workfront/using/administration-and-setup/add-users/access-levels/licenses-overview">Visão geral das novas licenças</a></li>
+   <li>Atual: <a href="https://experienceleague.adobe.com/pt-br/docs/workfront/using/administration-and-setup/add-users/legacy-access-levels/wf-licenses">Visão geral das licenças</a></li></ul></li>
+   <li>Se você tiver o nível de acesso correto e ainda assim não tiver acesso, pergunte ao administrador do Workfront se ele definiu restrições adicionais em seu nível de acesso. Para obter informações sobre como um administrador do Workfront pode modificar seu nível de acesso, consulte <a href="https://experienceleague.adobe.com/pt-br/docs/workfront/using/administration-and-setup/add-users/configure-access/create-modify-access-levels" class="MCXref xref">Criar e modificar níveis de acesso personalizados</a>.
    </ul>
       </p> </td> 
   </tr> 
