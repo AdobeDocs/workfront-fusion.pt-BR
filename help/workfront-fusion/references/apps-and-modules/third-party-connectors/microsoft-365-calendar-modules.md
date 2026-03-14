@@ -358,7 +358,7 @@ Este módulo de ação atualiza um evento existente.
    <td> <p>Informe os detalhes do local do evento.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!Resposta de UICONTROL solicitada]</td> 
+   <td role="rowheader">[!UICONTROL Resposta de solicitada]</td> 
    <td>Selecione <strong>[!UICONTROL Yes]</strong> para solicitar que o convidado envie uma resposta ao convite de evento.</td> 
   </tr> 
   <tr> 
