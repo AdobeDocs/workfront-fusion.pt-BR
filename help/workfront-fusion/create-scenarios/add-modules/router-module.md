@@ -1,17 +1,17 @@
 ---
-title: Adicione um módulo de Roteador e configure rotas
+title: Adicionar um módulo Roteador e configurar rotas
 description: O módulo de Roteador permite ramificar seu fluxo em várias rotas e processar os dados em cada rota de forma diferente. Depois que um módulo de roteador recebe um pacote, ele o encaminha para cada rota conectada na ordem em que as rotas foram anexadas ao módulo de roteador.
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: c83070a7c2d1d048000a4eace4aaede73c7ec49d
+source-git-commit: bec838423e13c3efe4f3d002f824c203cad6ecf8
 workflow-type: tm+mt
-source-wordcount: '853'
-ht-degree: 0%
+source-wordcount: '891'
+ht-degree: 13%
 
 ---
 
-# Adicione um módulo de Roteador e configure rotas
+# Adicionar um módulo Roteador e configurar rotas
 
 O módulo de Roteador permite ramificar seu cenário em várias rotas e processar os dados em cada rota de forma diferente. Quando um módulo de roteador recebe um pacote, ele o encaminha para cada rota conectada na ordem em que as rotas foram anexadas ao módulo de roteador.
 
@@ -20,7 +20,7 @@ As rotas são processadas sequencialmente, não em paralelo. Um pacote não é e
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -28,22 +28,22 @@ As rotas são processadas sequencialmente, não em paralelo. Um pacote não é e
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações desta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -54,8 +54,7 @@ Você deve adicionar um módulo de roteador antes de configurar rotas.
 1. Clique na guia **[!UICONTROL Cenários]** no painel esquerdo.
 1. Selecione o cenário em que deseja adicionar um roteador.
 1. Clique em qualquer lugar no cenário para entrar no editor de cenários.
-1. No editor de cenários, clique na alça direita do módulo após o qual deseja adicionar o roteador.
-1. Selecione **[!UICONTROL Controle de Fluxo]** > **Roteador** na lista de módulos a serem exibidos.
+1. No editor de cenários, clique na alça direita do módulo após o qual deseja adicionar o roteador e selecione **[!UICONTROL Controle de Fluxo]** > **Roteador** na lista de módulos a serem exibidos.
 
    ![Conectar a rota](assets/connect-the-router-350x108.png)
 
@@ -69,7 +68,11 @@ Você deve adicionar um módulo de roteador antes de configurar rotas.
 
    Você pode adicionar quantas rotas desejar.
 
-1. Para verificar a ordem das rotas, clique no ícone Alinhamento automático ![ícone de Alinhamento automático](assets/auto-align.png).
+1. Para verificar a ordem das rotas, verifique o rótulo de cada rota. A Rota 1 é executada primeiro, depois a Rota 2 e assim por diante.
+
+   Ou
+
+   Clique no ícone Alinhamento automático ![Ícone de Alinhamento automático](assets/auto-align.png).
 
    As rotas são organizadas na ordem em que são executadas. A rota superior é executada primeiro.
 
@@ -85,6 +88,8 @@ Você pode colocar um filtro em uma rota após o módulo de roteador para filtra
 
 Se os dados passarem pelo filtro de mais de uma rota, os dados serão tratados por ambas as rotas. A rota superior manipula os dados primeiro.
 
+Roteadores com filtros exibem o ícone de filtro ![Ícone de filtro](assets/fusion-scenario-filter-icon.png) no rótulo da rota.
+
 1. Clique na guia **[!UICONTROL Cenários]** no painel esquerdo.
 1. Selecione o cenário ao qual deseja adicionar um filtro.
 1. Clique em qualquer lugar no cenário para entrar no editor de cenários.
@@ -93,7 +98,7 @@ Se os dados passarem pelo filtro de mais de uma rota, os dados serão tratados p
 1. No campo de rótulo do painel que é exibido, adicione um rótulo. Esse rótulo é exibido no cenário.
 1. Configurar condições de filtro.
 
-   Para obter mais informações, consulte [Adicionar um filtro a um cenário](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).
+   Para obter mais informações, consulte [Adicionar filtro a um cenário](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).
 
 1. Clique em **[!UICONTROL OK]** para salvar a configuração do filtro.
 
@@ -102,6 +107,8 @@ Se os dados passarem pelo filtro de mais de uma rota, os dados serão tratados p
 ## Configurar uma rota de fallback
 
 A rota de fallback é a rota que é executada em qualquer conjunto que não passa nenhum filtro para outra rota.
+
+As rotas de fallback exibem &quot;Fallback&quot; no rótulo.
 
 Você pode ativar uma rota de fallback no painel de filtro.
 

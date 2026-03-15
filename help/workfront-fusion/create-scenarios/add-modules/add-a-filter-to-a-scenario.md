@@ -4,10 +4,10 @@ description: Em alguns cenários, é necessário trabalhar somente com pacotes q
 author: Becky
 feature: Workfront Fusion
 exl-id: b507dca0-0e85-4ab7-8310-b6e6bcb7ae12
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+source-git-commit: bec838423e13c3efe4f3d002f824c203cad6ecf8
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 17%
+source-wordcount: '525'
+ht-degree: 19%
 
 ---
 
@@ -79,28 +79,46 @@ Você deve adicionar ambos os módulos a um cenário antes de poder adicionar um
 
 ## Copiar um filtro
 
-Atualmente, o editor de cenários inclui um recurso para copiar um filtro.
-
->[!NOTE]
->
->Se você copiar os módulos em ambos os lados do filtro, o filtro também será copiado.
->
->Para obter mais informações sobre como copiar módulos, consulte [Copiar módulos ou cenários no Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md).
-
-Para copiar um filtro sem copiar módulos, é possível usar a Ferramenta de Desenvolvimento Fusion
+Você pode copiar um filtro existente e colá-lo em outro lugar do cenário.
 
 1. Clique na guia **[!UICONTROL Cenários]** no painel esquerdo.
 1. Selecione o cenário ao qual deseja adicionar um filtro.
 1. Clique em qualquer lugar no cenário para entrar no editor de cenários.
-1. Abra o Fusion DevTool clicando no ícone DevTool ![ícone DevTool](assets/debugger-icon.png) próximo à parte inferior da tela.
+1. Clique com o botão direito do mouse nos pontos de conexão entre módulos onde o filtro está localizado.
+1. Selecione **Copiar filtro**.
+1. Clique com o botão direito do mouse nos pontos de conexão entre módulos nos quais deseja colar o filtro.
+1. Selecionar **Colar filtro
+1. (Opcional) Para ajustar o filtro, clique no ícone de filtro ou rótulo e insira valores conforme descrito em [Adicionar um filtro entre dois módulos](#add-a-filter-between-two-modules) neste artigo.
 
-   Se você não vir o ícone DevTool, consulte [Depurar um cenário](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md) para obter instruções sobre como abrir a DevTool.
 
-1. Clique no ícone **[!UICONTROL Ferramentas]** ![Ferramentas de Desenvolvimento](assets/devtools-tools-icon.png) na barra lateral esquerda.
 
-1. Clique em **[!UICONTROL Copiar Filtro]** e configure a ferramenta **[!UICONTROL Copiar Filtro]** no painel direito:
 
-   1. Defina o **[!UICONTROL Módulo Source]** como o módulo diretamente após o filtro que você deseja copiar.
-   1. Defina o **[!UICONTROL Módulo de Destino]** como o módulo após o qual você deseja colocar o filtro.
+<!--
 
-1. Clique em **[!UICONTROL Executar]**.
+Currently, the scenario editor does include a feature for copying a filter.
+
+>[!NOTE]
+>
+>If you copy the modules on either side of the filter, the filter is also copied.
+>
+>For more information on copying modules, see [Copy modules or scenarios in Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md).
+
+To copy a filter without copying modules, you can use the Fusion DevTool
+
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
+1. Select the scenario where you want to add a filter.
+1. Click anywhere on the scenario to enter the Scenario editor.
+1. Open the Fusion DevTool by clicking on the DevTool icon ![DevTool icon](assets/debugger-icon.png) near the bottom of the screen.
+   
+   If you do not see the DevTool icon, see [Debug a scenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md) for instructions on opening the DevTool.
+   
+1. Click the **[!UICONTROL Tools]** icon ![DevTool tools](assets/devtools-tools-icon.png) in the left side bar.
+
+1. Click **[!UICONTROL Copy Filter]**, then configure the **[!UICONTROL Copy Filter]** tool in the right side panel:
+
+   1. Set the **[!UICONTROL Source Module]** as the module directly after the filter you want to copy.
+   1. Set the **[!UICONTROL Target Module]** as the module that you want to place the filter directly after.
+
+1. Click **[!UICONTROL Run]**.
+
+-->
