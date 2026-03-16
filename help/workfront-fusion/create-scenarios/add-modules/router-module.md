@@ -4,10 +4,10 @@ description: O módulo de Roteador permite ramificar seu fluxo em várias rotas 
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: bec838423e13c3efe4f3d002f824c203cad6ecf8
+source-git-commit: c93a342c2300c5a008a95f180dfebd3abaeb95d0
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 13%
+source-wordcount: '984'
+ht-degree: 11%
 
 ---
 
@@ -80,6 +80,11 @@ Você deve adicionar um módulo de roteador antes de configurar rotas.
 
    ![Rota da ordem](assets/order-routes.png)
 
+1. (Opcional) Para desabilitar uma rota, clique com o botão direito do mouse nos pontos que levam do roteador a essa rota e selecione **Desabilitar rota**.
+
+   Rotas desabilitadas exibem pontos cinzas levando do roteador para o primeiro módulo na rota e mostram o ícone de rota desabilitado ![Ícone de rota desabilitado](assets/disabled-route-icon.png) no rótulo.
+
+1. (Opcional e condicional) Para habilitar uma rota desabilitada, clique no ícone de rota desabilitada ![Ícone de rota desabilitada](assets/disabled-route-icon.png) no rótulo da rota.
 1. Continue em [Adicionar um filtro a uma rota](#add-a-filter-to-a-route).
 
 ## Adicionar um filtro a uma rota
@@ -101,6 +106,7 @@ Roteadores com filtros exibem o ícone de filtro ![Ícone de filtro](assets/fusi
    Para obter mais informações, consulte [Adicionar filtro a um cenário](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).
 
 1. Clique em **[!UICONTROL OK]** para salvar a configuração do filtro.
+1. (Condicional) Se o nome do filtro for muito longo para caber no rótulo, passe o mouse sobre o rótulo para exibir o nome inteiro.
 
 1. Continue em [Configurar uma rota de fallback](#configure-a-fallback-route).
 
