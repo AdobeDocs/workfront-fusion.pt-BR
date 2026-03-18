@@ -5,10 +5,10 @@ description: Este artigo descreve as diretivas que podem ser usadas para a manip
 author: Becky
 feature: Workfront Fusion
 exl-id: d7b0141f-d99d-4ab7-a60f-ed552a76f05d
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+source-git-commit: bf2e689f7015b08a0cf773e990077a53144263b6
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 32%
+source-wordcount: '583'
+ht-degree: 31%
 
 ---
 
@@ -55,7 +55,7 @@ As seguintes diretivas de manipulação de erros estão disponíveis no Workfron
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>Reversão</p> <p> <img src="assets/rollback.png"> </p> </td> 
-   <td> <ul><li><p>A execução do cenário é interrompida imediatamente.</li><li>Uma fase de reversão é iniciada em todos os módulos, em uma tentativa de reverter todos para o estado inicial. </li><li>Os módulos subsequentes não são processados.</p></li><li> <p>Na maioria dos casos, o cenário é desativado após o número de erros consecutivos especificados em Configurações do cenário. Para obter mais informações, consulte <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors" class="MCXref xref">Número de erros consecutivos</a>.</p> </li><li><p>O status de execução do cenário é marcado como "Erro".</p></li></ul> <p><b>Observação</b>: este é o comportamento padrão se nenhuma rota de manipulador de erros estiver anexada ao módulo e se a opção <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions" class="MCXref xref">Permitir o armazenamento de execuções incompletas</a>Permitir o armazenamento de execuções incompletas nas [!UICONTROL Configurações de cenário] não estiver marcada.</p> </td> 
+   <td> <ul><li><p>A execução do cenário é interrompida imediatamente.</li><li>Uma fase de reversão é iniciada em todos os módulos, em uma tentativa de reverter todos para o estado inicial. </li><li>Os módulos subsequentes não são processados.</p></li><li> <p>Na maioria dos casos, o cenário é desativado após o número de erros consecutivos especificados em Configurações do cenário. Para obter mais informações, consulte <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors" class="MCXref xref">Número de erros consecutivos</a>.</p> </li><li><p>O status de execução do cenário é marcado como "Erro".</p></li></ul> <p><b>Observação</b>: este é o comportamento padrão se nenhuma rota de manipulador de erros estiver anexada ao módulo e se a configuração de cenário <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions" class="MCXref xref">Permitir o armazenamento de execuções incompletas</a> não estiver marcada.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Confirmar</p> <p> <img src="assets/commit.png"> </p> </td> 
@@ -63,11 +63,11 @@ As seguintes diretivas de manipulação de erros estão disponíveis no Workfron
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Retomar</p> <p> <img src="assets/resume.png"> </p> </td> 
-   <td> <ul><li><p>Uma saída substituta é especificada e fornecida ao módulo que encontra um erro.</p> </li><li><p>Os módulos subsequentes são processados.</p></li><li> <p>O status de execução do cenário é marcado como “sucesso”.</p></li></ul> </td> 
+   <td> <ul><li><p>Uma saída substituta é especificada e fornecida ao módulo que encontra um erro.</p> </li><li><p>Os módulos subsequentes são processados.</p></li>Se o manipulador de erros estiver em um roteador, o cenário continuará pelas rotas conforme esperado.<li></li><li> <p>O status de execução do cenário é marcado como “sucesso”.</p></li></ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Ignorar</p> <p> <img src="assets/ignore.png"> </p> </td> 
-   <td><ul><li> <p>O erro é ignorado.</li><li> Os módulos subsequentes não são processados.</p> </li><li><p>Se houver pacotes não processados, a execução do cenário continuará normalmente.</p> </li><li><p>O status de execução do cenário é marcado como “sucesso”.</p> </li></ul></td> 
+   <td><ul><li> <p>O erro é ignorado.</li><li> Os módulos subsequentes não são processados.</p> </li><li><p>Se houver pacotes não processados, a execução do cenário continuará normalmente.</p> </li><li>Se o manipulador de erros estiver em um roteador, as rotas subsequentes desse roteador serão ignoradas.</li><li><p>O status de execução do cenário é marcado como “sucesso”.</p> </li></ul></td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Interrupção</p> <p> <img src="assets/break.png"> </p> </td> 
