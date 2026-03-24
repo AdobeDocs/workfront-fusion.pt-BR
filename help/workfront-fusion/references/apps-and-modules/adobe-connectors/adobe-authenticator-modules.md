@@ -1,13 +1,13 @@
 ---
-title: Módulo Adobe Authenticator
+title: Módulo do Adobe Authenticator
 description: Com o módulo Adobe Authenticator, você pode se conectar a qualquer produto da Adobe com uma API, usando uma única conexão.
 author: Becky
 feature: Workfront Fusion
 exl-id: af4da661-eeee-4033-a2bb-a2196e446a3d
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: 42ec34b1931eb9962569906d78c281bbef86a57e
 workflow-type: tm+mt
-source-wordcount: '1207'
-ht-degree: 1%
+source-wordcount: '1478'
+ht-degree: 33%
 
 ---
 
@@ -21,7 +21,7 @@ Para ver uma lista de APIs do Adobe disponíveis, consulte [APIs do Adobe](https
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -29,31 +29,31 @@ Para ver uma lista de APIs do Adobe disponíveis, consulte [APIs do Adobe](https
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion</td> 
    <td>
    <p>Baseado em operação: nenhum requisito de licença do Workfront Fusion</p>
-   <p>Baseado em conector (herdado): automação e integração do Workfront Fusion for Work </p>
+   <p>Baseado em conector (legado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -109,46 +109,46 @@ Para criar uma conexão:
     </col>
     <tbody>
       <tr>
-        <td role="rowheader">[!UICONTROL Tipo de conexão]</td>
+        <td role="rowheader">[!UICONTROL Connection type]</td>
         <td>
           <p>Selecione se deseja criar uma conexão de servidor para servidor OAuth ou uma conexão de conta de serviço (JWT). Recomendamos criar conexões OAuth.</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Nome da Conexão]</td>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
         <td>
-          <p>Insira um nome para esta conexão.</p>
+          <p>Insira um nome para essa conexão.</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL ID do Cliente]</td>
-        <td>Insira sua ID de cliente do [!DNL Adobe]. Isso pode ser encontrado na seção [!UICONTROL Credentials details] do [!DNL Adobe Developer Console].
+        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td>Insira sua ID de cliente do [!DNL Adobe]. Essa informação pode ser encontrada na seção [!UICONTROL Credentials details] do [!DNL Adobe Developer Console].
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Segredo do Cliente]</td>
-        <td>Insira seu Segredo do Cliente do [!DNL Adobe]. Isso pode ser encontrado na seção [!UICONTROL Credentials details] do [!DNL Adobe Developer Console].
+        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td>Insira seu Segredo do Cliente do [!DNL Adobe]. Essa informação pode ser encontrada na seção [!UICONTROL Credentials details] do [!DNL Adobe Developer Console].
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Escopos]</td>
+        <td role="rowheader">[!UICONTROL Scopes]</td>
         <td>Se você selecionou uma conexão OAuth, insira os escopos necessários para essa conexão.</td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL ID da conta técnica]</td>
-        <td>Se você selecionou uma conexão JWT, digite sua ID de conta técnica do [!DNL Adobe]. Isso pode ser encontrado na seção [!UICONTROL Credentials details] do [!DNL Adobe Developer Console].
+        <td>Se você selecionou uma conexão JWT, digite sua ID de conta técnica do [!DNL Adobe]. Essa informação pode ser encontrada na seção [!UICONTROL Credentials details] do [!DNL Adobe Developer Console].
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL ID da Organização]</td>
-        <td>Se você selecionou uma conexão JWT, insira sua ID da organização [!DNL Adobe]. Isso pode ser encontrado na seção [!UICONTROL Credentials details] do [!DNL Adobe Developer Console].
+        <td>Se você selecionou uma conexão JWT, insira sua ID da organização [!DNL Adobe]. Essa informação pode ser encontrada na seção [!UICONTROL Credentials details] do [!DNL Adobe Developer Console].
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Escopos do Meta]</td>
         <td>Se você selecionou uma conexão JWT, insira os metaescopos necessários para essa conexão. </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Chave privada]</td>
+        <td role="rowheader">[!UICONTROL Private key]</td>
         <td>
           <p>Se você selecionou uma conexão JWT, insira a chave privada que foi gerada quando suas credenciais foram criadas no [!DNL Adobe Developer Console]. </p>
-          <p>Para extrair sua chave privada ou certificado:</p>
+          <p>Para extrair a chave privada ou o certificado:</p>
           <ol>
             <li value="1">
               <p>Clique em <b>[!UICONTROL Extract]</b>.</p>
@@ -160,10 +160,10 @@ Para criar uma conexão:
               <p>Selecione o arquivo que contém a chave privada ou o certificado.</p>
             </li>
             <li value="4">
-              <p>Digite a senha do arquivo.</p>
+              <p>Insira a senha do arquivo.</p>
             </li>
             <li value="5">
-              <p>Clique em <b>[!UICONTROL Salvar]</b> para extrair o arquivo e retornar à configuração de conexão.</p>
+              <p>Clique em <b>[!UICONTROL Save]</b> para extrair o arquivo e retornar à configuração de conexão.</p>
             </li>
           </ol>
         </td>
@@ -173,7 +173,7 @@ Para criar uma conexão:
         <td>Você deve adicionar os URLs de base que este autenticador deve permitir. Ao usar o módulo Fazer uma chamada de API personalizada posteriormente no cenário, você adicionará um caminho relativo ao URL escolhido. Ao inserir URLs aqui, você pode controlar a que o módulo Fazer uma chamada de API personalizada pode se conectar, o que aumenta a segurança.<p>Para cada URL base que você deseja adicionar ao autenticador, clique em <b>Adicionar item</b> e insira a URL base.</td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL URL de Autenticação]</td>
+        <td role="rowheader">[!UICONTROL Authentication URL]</td>
         <td>Deixe em branco para usar a URL de autenticação padrão do Adobe IMS de <code>https://ims-na1.adobelogin.com</code>. Se você não usar o Adobe IMS para autenticação, insira o URL a ser usado para autenticação.</td>
       </tr>
     </tbody>
@@ -185,6 +185,7 @@ Para criar uma conexão:
 
 * [Fazer uma chamada de API personalizada](#make-a-custom-api-call)
 * [Fazer uma chamada de API personalizada (herdado)](#make-a-custom-api-call-legacy)
+* [Fazer uma chamada de API personalizada (Polling)](#make-a-custom-api-call-polling)
 
 ### Fazer uma chamada de API personalizada
 
@@ -197,7 +198,7 @@ Esse módulo foi disponibilizado em 14 de novembro de 2024. Qualquer chamada de 
   <col/>
   <tbody>
     <tr>
-     <td role="rowheader">[!UICONTROL Conexão]</td>
+     <td role="rowheader">[!UICONTROL Connection]</td>
      <td>Para obter instruções sobre como criar uma conexão com o módulo Adobe Authenticator, consulte <a href="#create-a-connection" class="MCXref xref" >Criar uma conexão</a> neste artigo.</td>
     </tr>
     <tr>
@@ -217,12 +218,12 @@ Esse módulo foi disponibilizado em 14 de novembro de 2024. Qualquer chamada de 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Método]</p>
+        <p>[!UICONTROL Method]</p>
    <td> <p>Selecione o método de solicitação HTTP necessário para configurar a chamada de API. Para obter mais informações, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitação HTTP</a>.</p> </td> 
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Cabeçalhos]</td>
+      <td role="rowheader">[!UICONTROL Headers]</td>
       <td>
         <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p>
         <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p>
@@ -230,7 +231,7 @@ Esse módulo foi disponibilizado em 14 de novembro de 2024. Qualquer chamada de 
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Cadeia de Consulta]  </td>
+      <td role="rowheader">[!UICONTROL Query String]  </td>
       <td>
         <p>Insira a string de consulta da solicitação.</p>
       </td>
@@ -263,7 +264,7 @@ Esse módulo de ação permite fazer uma chamada para qualquer API do Adobe.
   <col/>
   <tbody>
     <tr>
-     <td role="rowheader">[!UICONTROL Conexão]</td>
+     <td role="rowheader">[!UICONTROL Connection]</td>
      <td>Para obter instruções sobre como criar uma conexão com o módulo Adobe Authenticator, consulte <a href="#create-a-connection" class="MCXref xref" >Criar uma conexão</a> neste artigo.</td>
     </tr>
     <tr>
@@ -283,12 +284,12 @@ Esse módulo de ação permite fazer uma chamada para qualquer API do Adobe.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Método]</p>
+        <p>[!UICONTROL Method]</p>
    <td> <p>Selecione o método de solicitação HTTP necessário para configurar a chamada de API. Para obter mais informações, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitação HTTP</a>.</p> </td> 
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Cabeçalhos]</td>
+      <td role="rowheader">[!UICONTROL Headers]</td>
       <td>
         <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p>
         <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p>
@@ -296,16 +297,101 @@ Esse módulo de ação permite fazer uma chamada para qualquer API do Adobe.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Cadeia de Consulta]  </td>
+      <td role="rowheader">[!UICONTROL Query String]  </td>
       <td>
         <p>Insira a string de consulta da solicitação.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Corpo]</td>
-   <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
+      <td role="rowheader">[!UICONTROL Body]</td>
+   <td> <p>Adicione o conteúdo do corpo para a chamada de API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais, como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"></p> 
      </div> </p> </td>     </tr>
+  </tbody>
+</table>
+
+### Fazer uma chamada de API personalizada (Polling)
+
+Esse módulo faz uma chamada personalizada e inclui a opção de executar a chamada repetidamente até que uma condição específica seja atendida ou um limite definido seja atingido.
+
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+     <td role="rowheader">[!UICONTROL Connection]</td>
+     <td>Para obter instruções sobre como criar uma conexão com o módulo Adobe Authenticator, consulte <a href="#create-a-connection" class="MCXref xref" >Criar uma conexão</a> neste artigo.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL URL Base]</p>
+      </td>
+      <td>
+        <p>Insira o URL de base do ponto de API ao qual você deseja se conectar.</p>
+      </td>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL URL]</p>
+      </td>
+      <td>
+        <p>Insira o caminho relativo ao URL de base.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Method]</p>
+   <td> <p>Selecione o método de solicitação HTTP necessário para configurar a chamada de API. Para obter mais informações, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitação HTTP</a>.</p> </td> 
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Headers]</td>
+      <td>
+        <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p>
+        <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p>
+        <p>O Workfront Fusion adiciona cabeçalhos de autorização automaticamente.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Query String]  </td>
+      <td>
+        <p>Insira a string de consulta da solicitação.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Tipo de Corpo]</td>
+   <td> Selecione o tipo de corpo para esta solicitação de API:
+   <ul>
+   <li>Brutos</li>
+   <li>application/x-www-form-urlencoded</li>
+   <li>multipart/form-data</li>
+   </ul>
+      </td>
+      </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Repetir Até]  </td>
+      <td>
+        <p>Configure um filtro condicional que determine quando a pesquisa deve ser interrompida. Você pode referenciar dados de resposta usando a notação de pontos (como <code>body.status</code>, <code>body.data.state</code> ou <code>headers.status</code>). A condição é avaliada após cada execução e a sondagem continua até que a condição seja avaliada como <code>true</code>. Os operadores suportados incluem: <code>Equal to</code>, <code>Not equal to</code>, <code>Exists</code>, <code>Does not exist</code></p><p>Por exemplo, você pode configurar <code>body.status not equal completed</code> para manter a sondagem até que a resposta da API indique que o processo foi concluído.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Repetir Atraso]  </td>
+      <td>
+        <p>Insira ou mapeie o atraso entre as execuções, em segundos.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Limite de Repetição]  </td>
+      <td>
+        <p>Insira ou mapeie o número máximo de vezes que deseja que a chamada de API seja executada.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Tipo de Saída]  </td>
+      <td>
+        <p>Selecione o tipo de dados que você deseja que o módulo produza. Se você não selecionar um tipo, o módulo selecionará um tipo automaticamente.</p>
+      </td>
+    </tr>
   </tbody>
 </table>
