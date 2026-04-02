@@ -4,10 +4,10 @@ description: Um armazenamento de dados, semelhante a um banco de dados ou a uma 
 author: Becky
 feature: Workfront Fusion
 exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
-source-git-commit: b59532d96d64f77c04d31d03f6ae5addf15c0dd7
+source-git-commit: ac19f04af9ce80912e3dd9d63dc2ca414080c0c1
 workflow-type: tm+mt
-source-wordcount: '1324'
-ht-degree: 1%
+source-wordcount: '1356'
+ht-degree: 8%
 
 ---
 
@@ -29,11 +29,11 @@ Para obter informações sobre como usar os módulos de repositório de dados, c
 
 Para obter uma introdução em vídeo aos armazenamentos de dados no Workfront Fusion, consulte:
 
-* [Repositórios de Dados](https://video.tv.adobe.com/v/3427029/){target=_blank}
+* [Armazenamentos de dados](https://video.tv.adobe.com/v/3427029/){target=_blank}
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -41,22 +41,22 @@ Para obter uma introdução em vídeo aos armazenamentos de dados no Workfront F
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações desta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -131,7 +131,7 @@ Antes de usar um armazenamento de dados em um módulo, você deve criar o armaze
 
 ### Configurar a estrutura de dados
 
-1. Ao criar ou editar um armazenamento de dados, clique em **[!UICONTROL Adicionar]**.
+1. Ao criar ou editar um armazenamento de dados, clique em **[!UICONTROL Adicionar]** ao lado do campo Estrutura de dados.
 1. Na caixa **[!UICONTROL Adicionar estrutura de dados]** que é exibida, configure os seguintes campos:
 
    <table style="table-layout:auto">
@@ -184,7 +184,7 @@ Antes de usar um armazenamento de dados em um módulo, você deve criar o armaze
 As propriedades de um armazenamento de dados incluem a estrutura de dados que o armazenamento de dados usa, bem como o tamanho do armazenamento de dados.
 
 1. Clique em **[!UICONTROL Repositórios de dados]** ![Ícone de repositório de dados](assets/data-store-icon.png) no painel de navegação esquerdo para abrir a área [!UICONTROL Repositórios de dados].
-1. Clique em **[!UICONTROL Editar]** ![Editar armazenamento de dados](assets/data-store-edit.png) ao lado do armazenamento de dados que você deseja editar.
+1. Clique na caixa de seleção ao lado do armazenamento de dados que você deseja editar e em **Editar** no banner na parte inferior da tela.
 1. (Opcional) Se desejar alterar a estrutura de dados usada por esse armazenamento de dados para outra estrutura de dados existente, selecione-a no menu suspenso **[!UICONTROL Estrutura de dados]**.
 
    Ou
@@ -197,10 +197,9 @@ As propriedades de um armazenamento de dados incluem a estrutura de dados que o 
 ### Editar o conteúdo de um armazenamento de dados
 
 1. Clique no ícone do **[!UICONTROL Repositório de Dados]** ![Ícone do repositório de dados](assets/data-store-icon.png) no painel de navegação esquerdo para abrir a área do [!UICONTROL Repositório de Dados].
-1. Clique em **[!UICONTROL Procurar]** ao lado do armazenamento de dados que você deseja editar.
-1. (Opcional) Reordene as colunas arrastando-as para o local desejado.
-1. (Opcional) [!UICONTROL Edite] uma única célula clicando no ícone **[!UICONTROL Editar]** nessa célula e inserindo o valor desejado.
+1. Clique na caixa de seleção ao lado do armazenamento de dados que você deseja editar e em **Procurar** no banner na parte inferior da tela.
 1. (Opcional) Adicione um novo item ao armazenamento de dados clicando em **[!UICONTROL Adicionar]** e inserindo as informações do novo item.
+1. (Opcional) exclua um ou mais itens do armazenamento de dados clicando na caixa de seleção desse item e em **Excluir selecionados** ou **Excluir todos** no canto superior direito da tela.
 1. Clique em **[!UICONTROL Salvar]**.
 
 ## Solução de problemas
