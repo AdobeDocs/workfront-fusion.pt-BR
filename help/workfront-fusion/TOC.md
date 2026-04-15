@@ -2,9 +2,9 @@
 user-guide-title: Documentação do Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Use os documentos, tutoriais e recursos adicionais para saber como implementar e usar efetivamente o Adobe Workfront Fusion em sua organização.
-source-git-commit: ac19f04af9ce80912e3dd9d63dc2ca414080c0c1
+source-git-commit: 6885e29b3b14d97bebcb046d86e204bd2fdfbace
 workflow-type: tm+mt
-source-wordcount: '2091'
+source-wordcount: '2104'
 ht-degree: 97%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 97%
 * Atividade de lançamento do Fusion {#fusion-release-activity}
    * [Atividade de lançamento do Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Versões do Fusion – 2026 {#fusion-releases-2026}
+      * [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 13 de abril de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-4-13.md)
       * [Atividade de lançamento do Workfront Fusion: semana de 30 de março de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-30.md)
       * [Atividade de lançamento do Workfront Fusion: semana de 23 de março de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-23.md)
       * [Atividade de lançamento do Workfront Fusion: semana de 16 de março de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-16.md)
@@ -266,6 +267,7 @@ ht-degree: 97%
    * [Exibir e resolver execuções incompletas](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)
    * [Exibir histórico de execuções de um cenário](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)
    * [Exibir execução de um cenário específico](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md)
+   * [Exibir e gerenciar relacionamentos de cenário encadeados](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md)
    * [Exibir fluxo de dados em um cenário em execução](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
    * [Exibir uma fila de webhooks](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
    * [Assistente de IA no Workfront Fusion](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)

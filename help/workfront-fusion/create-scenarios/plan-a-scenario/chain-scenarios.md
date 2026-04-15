@@ -4,14 +4,14 @@ description: É possível encadear cenários, permitindo que um cenário acione 
 author: Becky
 feature: Workfront Fusion
 exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
-source-git-commit: 7f73007e219714c38dd0cf29d2a1e3a4c8f6f3cc
+source-git-commit: 34f24f26675fbdf0dd84223cbe8e2d1c3b1aa8cf
 workflow-type: tm+mt
-source-wordcount: '1247'
-ht-degree: 0%
+source-wordcount: '1267'
+ht-degree: 12%
 
 ---
 
-# Encadear vários cenários em conjunto
+# Encadear vários cenários juntos
 
 >[!NOTE]
 >
@@ -88,20 +88,22 @@ Considere as práticas recomendadas a seguir ao encadear um cenário.
 
 ### Evitar recursão ao encadear cenários
 
-A recursão ocorre quando um cenário aciona uma nova execução de si mesmo, que aciona uma nova execução e assim por diante em um loop infinito.
+A recursão ocorre quando um cenário aciona uma nova execução de si mesmo, que aciona uma nova execução, e assim por diante em um loop infinito.
 
-A recursão pode causar problemas de desempenho para a organização proprietária do cenário recursivo e para outras organizações.
+A recursão pode causar problemas de desempenho tanto para a organização responsável pelo cenário recursivo quanto para outras organizações.
 
 Ao encadear cenários, siga estas práticas para evitar recursão:
 
 * Verifique se **os cenários filho não podem disparar o cenário pai**. Por exemplo, se um cenário principal for acionado quando uma solicitação for criada, verifique se os cenários secundários não criam solicitações.
 * Certifique-se de que **os cenários filho não façam chamadas entre si**. Por exemplo, se o cenário-filho A chamar o cenário-filho B, certifique-se de que o cenário-filho B não chame o cenário-filho A.
-* Verifique se **um cenário não pode chamar a si mesmo**. Por exemplo, um cenário é acionado quando uma tarefa é criada e esse cenário cria duas tarefas. As tarefas recém-criadas acionam o cenário novamente, o que cria quatro novas tarefas. Toda vez que uma tarefa é criada, o cenário é acionado e toda vez que o cenário é executado, o número de tarefas dobra. O número de tarefas aumenta exponencialmente.
+* Verifique se **um cenário não pode chamar a si mesmo**. Por exemplo, um cenário é acionado quando uma tarefa é criada e esse cenário cria duas tarefas. As tarefas recém-criadas acionam o cenário novamente, criando quatro novas tarefas. Toda vez que uma tarefa é criada, o cenário é acionado, e toda vez que o cenário é executado, o número de tarefas dobra. O número de tarefas aumenta exponencialmente.
 
 >[!IMPORTANT]
 >
 >* **Quando um cenário está causando recursão, ele é desativado pela equipe de engenharia do Fusion para evitar mais problemas de desempenho.**
->* Como a recursão é um resultado do design do cenário, você deve projetar seus cenários de forma a garantir que o cenário não inclua ações que acionem o cenário.
+>* Como a recursão é resultado do próprio design do cenário, é preciso projetar os cenários de forma que eles não incluam ações que acionem o próprio cenário.
+>* Você pode exibir um diagrama dos relacionamentos entre cenários pai e filho.
+>   Para obter instruções, consulte [Exibir relações de cenário encadeadas](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md).
 
 ### Use o tratamento de erros para garantir uma resposta
 
