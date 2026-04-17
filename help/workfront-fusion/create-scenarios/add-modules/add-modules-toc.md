@@ -6,10 +6,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 45935dab-199b-46b8-a339-abfea8650320
-source-git-commit: bd8e770765ac535fd8c11e6f58620e1e4cadfc3d
+source-git-commit: 3d957c219cdc5fed4fdf9b0649cab724fae21871
 workflow-type: tm+mt
-source-wordcount: '88'
-ht-degree: 70%
+source-wordcount: '82'
+ht-degree: 68%
 
 ---
 
@@ -17,7 +17,6 @@ ht-degree: 70%
 
 * [Adicionar módulo a um cenário](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-basic.md)
 * [Configurar um módulo](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)
-* [Gerar um segmento de cenário usando IA](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md)
 * [Adicionar um prompt de IA ao seu cenário](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)
 * [Copiar módulos ou cenários](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md)
 * [Criar cenários com modelos do Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md)

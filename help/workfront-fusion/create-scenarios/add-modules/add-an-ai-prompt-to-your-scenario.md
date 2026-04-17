@@ -3,9 +3,10 @@ title: Adicionar um prompt de IA ao seu cenário
 description: Você pode incluir um prompt de IA no seu cenário que se conecta ao seu
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 09e8ca28c12990a699816671d07f85288d973bc7
+exl-id: d0ac0d0b-e3a0-46de-801d-e53c1c4d63ff
+source-git-commit: 3d957c219cdc5fed4fdf9b0649cab724fae21871
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -13,12 +14,6 @@ ht-degree: 0%
 # Adicionar um prompt de IA ao seu cenário
 
 Você pode incluir um prompt de IA em seu cenário usando o Protocolo de contexto de modelo (MCP) combinado com modelos de idioma grandes (LLMs). Ao configurá-los no módulo Agente MCP, você pode usar inteligência artificial para configurar workflows que sejam eficientes, seguros e flexíveis.
-
->[!NOTE]
->
->Essa funcionalidade é separada da capacidade de adicionar módulos a um cenário usando IA.
->
->Para obter informações sobre como adicionar módulos com IA, consulte [Gerar um segmento de cenário usando IA](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md).
 
 ## Visão Geral do Protocolo de Contexto do Modelo
 
