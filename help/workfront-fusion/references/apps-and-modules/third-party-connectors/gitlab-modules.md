@@ -4,10 +4,10 @@ description: O Adobe Workfront Fusion exige uma licença do Adobe Workfront Fusi
 author: Becky
 feature: Workfront Fusion
 exl-id: fabbadce-5669-4363-834e-6d7428520f62
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
 workflow-type: tm+mt
-source-wordcount: '4095'
-ht-degree: 1%
+source-wordcount: '4099'
+ht-degree: 10%
 
 ---
 
@@ -27,7 +27,7 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -35,31 +35,31 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion</td> 
    <td>
    <p>Baseado em operação: nenhum requisito de licença do Workfront Fusion</p>
-   <p>Baseado em conector (herdado): automação e integração do Workfront Fusion for Work </p>
+   <p>Baseado em conector (legado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -73,7 +73,7 @@ Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [li
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Nome da Conexão]</td> 
+      <td role="rowheader">[!UICONTROL Connection name]</td> 
       <td> <p>Insira um nome para a conexão.</p> </td> 
      </tr> 
      <tr> 
@@ -91,13 +91,13 @@ Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [li
 1. Clique em **[!UICONTROL Continuar]**.
 1. Clique em **[!UICONTROL Autorizar]** para criar a conexão e retornar ao módulo.
 
-## [!DNL GitLab] módulos e seus campos
+## Módulos do [!DNL GitLab] e seus campos
 
-Ao configurar módulos do [!DNL GitLab], o Workfront Fusion exibe os campos listados abaixo. Junto com esses, campos [!DNL GitLab] adicionais podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
+Ao configurar módulos do [!DNL GitLab], o Workfront Fusion exibe os campos listados abaixo. Junto com eles, outros campos do [!DNL GitLab] podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Alternância de mapa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Botão de alternância Mapear](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 ### Acionadores
 
@@ -251,7 +251,7 @@ Esse módulo de acionamento agendado inicia um cenário quando um novo projeto �
    <col> 
    <tbody> 
    <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>Para obter instruções sobre como conectar sua conta do [!DNL GitLab] ao Workfront Fusion, consulte <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Conectar [!DNL GitLab] ao Workfront Fusion</a> neste artigo.</td> 
    </tr> 
    <tr> 
@@ -272,7 +272,7 @@ Esse módulo de acionador agendado inicia um cenário quando uma nova ramificaç
    <col> 
    <tbody> 
    <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>Para obter instruções sobre como conectar sua conta do [!DNL GitLab] ao Workfront Fusion, consulte <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Conectar [!DNL GitLab] ao Workfront Fusion</a> neste artigo.</td> 
    </tr> 
    <tr> 
@@ -362,11 +362,11 @@ Este módulo de ação cancela uma única build de um projeto.
    <col> 
    <tbody> 
    <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>Para obter instruções sobre como conectar sua conta do [!DNL GitLab] ao Workfront Fusion, consulte <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Conectar [!DNL GitLab] ao Workfront Fusion</a> neste artigo.</td> 
    </tr> 
    <tr> 
-   <td role="rowheader">[!UICONTROL ID de Projeto]</td> 
+   <td role="rowheader">[!UICONTROL Project ID]</td> 
    <td> <p>Selecione ou mapeie o projeto que contém a build que você deseja cancelar.</p> </td> 
    </tr> 
    <tr> 
@@ -643,11 +643,11 @@ Este módulo de ação recupera os detalhes do problema.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>Para criar uma nova conexão, consulte <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] to Workfront Fusion]</a> neste artigo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Projeto]</td> 
+   <td role="rowheader">[!UICONTROL Project]</td> 
    <td> <p>Selecione o projeto que contém o problema sobre o qual deseja recuperar detalhes.</p> </td> 
   </tr> 
   <tr> 
@@ -767,7 +767,7 @@ Para obter informações sobre campos, consulte [Listar todas as notas de solici
 
 Este módulo obtém uma lista de todas as notas de um único trecho. As notas de trecho são comentários que os usuários podem publicar em um trecho.
 
-Para obter informações sobre campos, consulte [🔗](https://docs.gitlab.com/ee/api/notes.html#list-all-snippet-notes) na documentação de [!DNL GitLab].
+Para obter informações sobre campos, consulte [Listar todas as notas de trecho](https://docs.gitlab.com/ee/api/notes.html#list-all-snippet-notes) na documentação [!DNL GitLab].
 
 +++
 
@@ -780,11 +780,11 @@ Este módulo de pesquisa retorna uma lista de builds para uma confirmação espe
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>Para criar uma nova conexão, consulte <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] to Workfront Fusion]</a> neste artigo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ID de Projeto]</td> 
+   <td role="rowheader">[!UICONTROL Project ID]</td> 
    <td> <p>Selecione o projeto que contém a confirmação que você deseja listar builds.</p> </td> 
   </tr> 
   <tr> 
@@ -1013,11 +1013,11 @@ Este módulo de ação tenta novamente um único build em uma confirmação.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>Para criar uma nova conexão, consulte <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] to Workfront Fusion]</a> neste artigo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ID de Projeto]</td> 
+   <td role="rowheader">[!UICONTROL Project ID]</td> 
    <td> <p>Selecione o projeto que contém a build que você deseja tentar novamente.</p> </td> 
   </tr> 
   <tr> 

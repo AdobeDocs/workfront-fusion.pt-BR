@@ -9,10 +9,10 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 1a0a2b9f-a530-48aa-a627-d32c89d1dc60
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
 source-wordcount: '204'
-ht-degree: 36%
+ht-degree: 40%
 
 ---
 

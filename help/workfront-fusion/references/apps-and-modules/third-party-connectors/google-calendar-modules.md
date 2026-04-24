@@ -4,14 +4,14 @@ description: Em um cenário do Adobe Workfront Fusion, é possível automatizar 
 author: Becky
 feature: Workfront Fusion
 exl-id: 6e514204-cd8e-4f30-bbbb-b8fbe48fc670
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
 workflow-type: tm+mt
 source-wordcount: '2696'
-ht-degree: 0%
+ht-degree: 16%
 
 ---
 
-# [!DNL Google Calendar] módulos
+# Módulos do [!DNL Google Calendar]
 
 Em um cenário do Adobe Workfront Fusion, você pode automatizar fluxos de trabalho que usam o [!UICONTROL Google Calendar], bem como conectá-lo a vários aplicativos e serviços de terceiros.
 
@@ -21,7 +21,7 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -29,37 +29,37 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion</td> 
    <td>
    <p>Baseado em operação: nenhum requisito de licença do Workfront Fusion</p>
-   <p>Baseado em conector (herdado): automação e integração do Workfront Fusion for Work </p>
+   <p>Baseado em conector (legado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Pré-requisitos
 
-Para usar módulos [!DNL Google Calendar], você deve ter uma conta [!DNL Google].
+Para usar módulos [!DNL Google Calendar], você deve ter uma conta do [!DNL Google].
 
 ## Informações da API do calendário do Google
 
@@ -84,13 +84,13 @@ O conector do Calendário do Google usa o seguinte:
  </tbody> 
  </table>
 
-## [!DNL Google Calendar] módulos e seus campos
+## Módulos do [!DNL Google Calendar] e seus campos
 
-Ao configurar módulos do [!DNL Google Calendar], o Workfront Fusion exibe os campos listados abaixo. Junto com esses, campos [!DNL Google Calendar] adicionais podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
+Ao configurar módulos do [!DNL Google Calendar], o Workfront Fusion exibe os campos listados abaixo. Junto com eles, outros campos do [!DNL Google Calendar] podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Alternância de mapa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Botão de alternância Mapear](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 
 * [Acionadores](#triggers)
@@ -99,12 +99,12 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 
 ### Acionadores
 
-* [Assistir a eventos](#watch-events)
+* [Monitorar eventos](#watch-events)
 * [Assistir a eventos (instantâneo)](#watch-events-instant)
 
-#### Assistir a eventos
+#### Monitorar eventos
 
-Esse módulo de acionamento executa um cenário quando um novo evento é adicionado, atualizado, excluído, iniciado ou encerrado no calendário especificado. O módulo retorna todos os campos padrão associados ao registro ou aos registros, juntamente com quaisquer campos e valores personalizados que a conexão acesse. Você pode mapear essas informações em módulos subsequentes no cenário.
+Esse módulo de acionamento executa um cenário quando um novo evento é adicionado, atualizado, excluído, iniciado ou encerrado no calendário especificado. O módulo retorna todos os campos padrão associados a um ou mais registros, juntamente com quaisquer campos e valores personalizados que a conexão acessa. Você pode mapear essas informações em módulos subsequentes no cenário.
 
 Ao configurar esse módulo, os campos a seguir são exibidos.
 
@@ -113,11 +113,11 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão] </td> 
+   <td>[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google Calendar] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Calendário] </td> 
+   <td>[!UICONTROL Calendar] </td> 
    <td> <p>Selecione o calendário com o qual deseja que o módulo funcione.</p> </td> 
   </tr> 
   <tr> 
@@ -175,7 +175,7 @@ Este módulo de ação cria um calendário associado à conta.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão] </td> 
+   <td>[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google Calendar] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a></p> </td> 
   </tr> 
   <tr> 
@@ -204,11 +204,11 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão] </td> 
+   <td>[!UICONTROL Connection] </td> 
    <td>Para obter instruções sobre como conectar sua conta do [!DNL Google Calendar] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Calendário]</td> 
+   <td>[!UICONTROL Calendar]</td> 
    <td> <p>Selecione o calendário no qual deseja que o evento apareça.</p> </td> 
   </tr> 
   <tr> 
@@ -232,7 +232,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
    <td> <p> Insira ou mapeie a data e a hora de término do evento. </p> <p>Para obter uma lista de formatos de data com suporte, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerção de tipo</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Descrição]</td> 
+   <td>[!UICONTROL Description]</td> 
    <td>Insira ou mapeie uma descrição para o evento. Este campo é compatível com o HTML.</td> 
   </tr> 
   <tr> 
@@ -260,8 +260,8 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
    <td> <p>Selecione a visibilidade deste evento. </p> 
     <ul> 
      <li> <p><b>[!UICONTROL Padrão]</b></p> <p>O evento tem a visibilidade definida nas configurações do calendário.</p> </li> 
-     <li> <p><b>[!UICONTROL Público]</b></p> <p>Qualquer pessoa com quem o calendário é compartilhado pode ver este evento.</p> </li> 
-     <li> <p><b>[!UICONTROL Privado]</b></p> <p>Somente os participantes podem ver este evento.</p> </li> 
+     <li> <p><b>[!UICONTROL Public]</b></p> <p>Qualquer pessoa com quem o calendário é compartilhado pode ver este evento.</p> </li> 
+     <li> <p><b>[!UICONTROL Private]</b></p> <p>Somente os participantes podem ver este evento.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -294,11 +294,11 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão] </td> 
+   <td>[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google Calendar] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Calendário]</td> 
+   <td>[!UICONTROL Calendar]</td> 
    <td> <p>Selecione o calendário que contém o evento que você deseja excluir.</p> </td> 
   </tr> 
   <tr> 
@@ -323,20 +323,20 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão] </td> 
+   <td>[!UICONTROL Connection] </td> 
    <td>Para obter instruções sobre como conectar sua conta do [!DNL Google Calendar] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Calendário]</td> 
+   <td>[!UICONTROL Calendar]</td> 
    <td> <p>Selecione o calendário para o qual deseja recuperar eventos.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Data de início]</td> 
-   <td> <p> Insira ou mapeie a data de início do evento. Esse módulo também recupera eventos iniciados antes dessa data, que ainda estão ocorrendo na data inicial inserida. </p> <p>Para obter uma lista de formatos de data e hora com suporte, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerção de tipo</a>.</p> </td> 
+   <td> <p> Insira ou mapeie a data de início do evento. Esse módulo também recupera eventos iniciados antes dessa data, que ainda estão ocorrendo na data inicial inserida. </p> <p>Para obter uma lista de formatos de data e hora compatíveis, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerção de tipo</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Data de término]</td> 
-   <td> <p> Insira ou mapeie a data de término do evento. </p> <p> Para obter uma lista de formatos de data e hora com suporte, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerção de tipo</a>.</p> </td> 
+   <td> <p> Insira ou mapeie a data de término do evento. </p> <p> Para obter uma lista de formatos de data e hora compatíveis, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerção de tipo</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Eventos únicos]</td> 
@@ -376,11 +376,11 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão] </td> 
+   <td>[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google Calendar] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Calendário] </td> 
+   <td>[!UICONTROL Calendar] </td> 
    <td> <p>Selecione o calendário com o qual deseja trabalhar.</p> </td> 
   </tr> 
   <tr> 
@@ -403,7 +403,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
    <td> <p> Insira ou mapeie a data e a hora de término do evento. </p> <p>Para obter uma lista de formatos de data com suporte, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerção de tipo</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Descrição]</td> 
+   <td>[!UICONTROL Description]</td> 
    <td>Insira ou mapeie uma descrição para o evento. Este campo é compatível com o HTML.</td> 
   </tr> 
   <tr> 
@@ -431,8 +431,8 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
    <td> <p>Selecione a visibilidade deste evento. </p> 
     <ul> 
      <li> <p><b>[!UICONTROL Padrão]</b></p> <p>O evento tem a visibilidade definida nas configurações do calendário.</p> </li> 
-     <li> <p><b>[!UICONTROL Público]</b></p> <p>Qualquer pessoa com quem o calendário é compartilhado pode ver este evento.</p> </li> 
-     <li> <p><b>[!UICONTROL Privado]</b></p> <p>Somente os participantes podem ver este evento.</p> </li> 
+     <li> <p><b>[!UICONTROL Public]</b></p> <p>Qualquer pessoa com quem o calendário é compartilhado pode ver este evento.</p> </li> 
+     <li> <p><b>[!UICONTROL Private]</b></p> <p>Somente os participantes podem ver este evento.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -505,7 +505,7 @@ Você pode acionar um cenário em um horário especificado antes de um evento co
    1. Abra suas configurações do **[!UICONTROL [!DNL Gmail]]**.
    1. Abra a guia **[!UICONTROL Encaminhamento e POP/IMAP]**.
    1. Clique em **[!UICONTROL Adicionar um endereço de encaminhamento].**
-   1. Cole o endereço de email dos mailhooks copiados, clique em&#x200B;**[!UICONTROL Avançar]**, confirme pressionando **[!UICONTROL Prosseguir]** na janela pop-up e clique em **[!UICONTROL OK]**.
+   1. Cole o endereço de email dos mailhooks copiados, clique em **[!UICONTROL Avançar]**, confirme pressionando **[!UICONTROL Continuar]** na janela pop-up e depois clique em **[!UICONTROL OK]**.
 
    1. No Workfront Fusion, alterne para o novo cenário que deve concluir sua execução recebendo o email de confirmação.
    1. Clique no balão acima do módulo para inspecionar a saída do módulo.
@@ -513,13 +513,13 @@ Você pode acionar um cenário em um horário especificado antes de um evento co
 
       ![Código de confirmação](/help/workfront-fusion/references/apps-and-modules/assets/confirmation-code-350x252.png)
 
-   1. No Gmail, cole o código de Confirmação na caixa de edição e clique em&#x200B;**[!UICONTROL Verificar]**:
+   1. No Gmail, cole o código de Confirmação na caixa de edição e clique em **[!UICONTROL Verificar]**:
 
       ![Colar código](/help/workfront-fusion/references/apps-and-modules/assets/paste-code-350x46.png)
 
    1. Abra a guia **[!UICONTROL Filtros e endereços bloqueados]**.
    1. Clique em **[!UICONTROL Criar um novo filtro]**.
-   1. Configure um filtro para todos os emails provenientes de `     calendar-notification@google.com` e clique em&#x200B;**[!UICONTROL Criar um filtro]**:
+   1. Configure um filtro para todos os emails provenientes de `     calendar-notification@google.com` e clique em **[!UICONTROL Criar um filtro]**:
    1. Selecione **[!UICONTROL Encaminhá-lo para]** e escolha o endereço de email dos ganchos na lista.
    1. Clique em **[!UICONTROL Criar filtro]** para criar o filtro.
 

@@ -4,7 +4,7 @@ description: Você pode usar o conector do Adobe Workfront do Fusion para automa
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
 source-wordcount: '7366'
 ht-degree: 99%
@@ -695,7 +695,7 @@ Veja uma lista dos tipos de objeto do Workfront para os quais você pode usar es
 
 +++
 
-### **Obter um URL de arquivo pré-assinado**
++++ **Obter um URL de arquivo pré-assinado**
 
 Esse módulo de ação obtém URLs de arquivos pré-assinados que podem ser usados posteriormente por outras APIs.
 
@@ -717,6 +717,8 @@ Esse módulo de ação obtém URLs de arquivos pré-assinados que podem ser usad
   </tr> 
  </tbody> 
 </table>
+
++++
 
 +++ **[!UICONTROL Ações diversas]**
 
@@ -1034,7 +1036,7 @@ A Workfront lançou recentemente uma nova versão de seu serviço de assinatura 
 
 Para obter mais informações sobre a nova versão de assinatura do evento, consulte [Controle de versão de assinatura do evento](https://experienceleague.adobe.com/pt-br/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) na documentação do Workfront
 
-Para obter recursos sobre como preservar os cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservação de seus cenários do Fusion durante a atualização da V2 de assinaturas do evento](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=pt).
+Para obter recursos sobre como preservar os cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservação de seus cenários do Fusion durante a atualização da V2 de assinaturas do evento](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 <table style="table-layout:auto">
  <col> 
@@ -2366,7 +2368,7 @@ Recomendamos que você verifique novamente para garantir que isso funcione da ma
 >
 >   Para obter mais informações sobre a nova versão de assinatura do evento, consulte [Controle de versão de assinatura do evento](https://experienceleague.adobe.com/pt-br/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) na documentação do Workfront
 >
->   Para obter recursos sobre como preservar os cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservação de seus cenários do Fusion durante a atualização da V2 de assinaturas de evento (https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=pt)].
+>   Para obter recursos sobre como preservar os cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservação de seus cenários do Fusion durante a atualização da V2 de assinaturas de evento (https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)].
 
 O módulo [!UICONTROL Monitorar eventos] do Workfront aciona cenários com base em um webhook que cria uma assinatura de evento na API do Workfront. A assinatura do evento é um conjunto de dados que determina quais eventos são enviados para o webhook. Por exemplo, se você configurar um módulo [!UICONTROL Monitorar eventos] que esteja observando problemas, a assinatura do evento enviará somente eventos relacionados a problemas.
 

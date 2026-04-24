@@ -1,19 +1,19 @@
 ---
-title: Atividade de lançamento do Workfront Fusion:&nbsp;Semana de 14 de fevereiro de 2022
-description: Atividade de lançamento do Workfront Fusion:&nbsp;Semana de 14 de fevereiro de 2022
+title: 'Atividade de lançamento do Workfront Fusion: semana de terça-feira, 14 de fevereiro de 2022'
+description: 'Atividade de lançamento do Workfront Fusion: semana de terça-feira, 14 de fevereiro de 2022'
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: f0b07131-6851-458e-ac06-07a4ba391257
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 37%
+source-wordcount: '141'
+ht-degree: 53%
 
 ---
 
-# Atividade de lançamento do Workfront Fusion: semana de 14 de fevereiro de 2022
+# Atividade de lançamento do Workfront Fusion: semana de terça-feira, 14 de fevereiro de 2022
 
 Esta página descreve todos os aprimoramentos realizados no Adobe Workfront Fusion na semana de terça-feira, 14 de fevereiro de 2022.
 

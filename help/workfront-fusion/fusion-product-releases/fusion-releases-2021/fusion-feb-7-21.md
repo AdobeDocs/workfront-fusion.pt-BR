@@ -1,15 +1,15 @@
 ---
-title: Atividade de lançamento do Workfront Fusion:&nbsp;Semana de 7 de fevereiro de 2022
-description: Atividade de lançamento do Workfront Fusion:&nbsp;Semana de 7 de fevereiro de 2022
+title: 'Atividade de lançamento do Workfront Fusion: semana de 7 de fevereiro de 2022'
+description: 'Atividade de lançamento do Workfront Fusion: semana de 7 de fevereiro de 2022'
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: f20d93af-7d0a-4257-9146-a29999fbb0dd
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 29%
+source-wordcount: '179'
+ht-degree: 41%
 
 ---
 

@@ -9,14 +9,14 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: eb793c35-8709-48ab-8968-c9d553ba5ca0
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
 source-wordcount: '189'
-ht-degree: 39%
+ht-degree: 43%
 
 ---
 
-# Atividade de lançamento do Workfront Fusion: semana de 19 de abril de 2021
+# Atividade de lançamento do Workfront Fusion: semana de terça-feira, 19 de abril de 2021
 
 Esta página descreve todos os aprimoramentos realizados no Adobe Workfront Fusion na semana de terça-feira, 19 de abril de 2021.
 

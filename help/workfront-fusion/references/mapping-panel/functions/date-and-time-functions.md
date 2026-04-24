@@ -4,10 +4,10 @@ description: As seguintes funções de data e hora estão disponíveis no painel
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 42bf7b0ac6eb414312573b32b93677a5c9650fa8
 workflow-type: tm+mt
 source-wordcount: '1879'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -139,7 +139,7 @@ Esta função retorna uma nova data com os segundos especificados em parâmetros
 
 Especifique um número de 0 a 59. Se o número estiver fora desse intervalo, a função retornará um segundo do minuto anterior (para um número negativo) ou do minuto subsequente (para um número positivo).
 
-Se você precisar especificar um número fora do intervalo, recomendamos usar [!UICONTROL &#x200B; addSeconds], conforme descrito acima na seção [addSeconds (date; number)](#addseconds-date-number).
+Se você precisar especificar um número fora do intervalo, recomendamos usar [!UICONTROL  addSeconds], conforme descrito acima na seção [addSeconds (date; number)](#addseconds-date-number).
 
 >[!BEGINSHADEBOX]
 
@@ -333,7 +333,7 @@ A função `formatDate` retorna uma representação de texto do valor de Data es
 
 **Exemplos:** O Cenário e o fuso horário da Web foram definidos como `Europe/Prague` nesses exemplos.
 
-![Exemplo de função de data e hora](assets/date&time-functions-examples-350x61.png)
+![Exemplo de função de data e hora](assets/date-time-functions-examples-350x61.png)
 
 * `formatDate(1. Date created;MM/DD/YYYY)`
 
@@ -463,7 +463,7 @@ Esta seção é adaptada para o Workfront Fusion a partir da página da Web [!DN
 
 Se você precisar calcular uma data correspondente ao n-ésimo dia da semana no mês (por exemplo, primeira terça-feira, terceira sexta-feira e assim por diante), poderá usar a seguinte fórmula:
 
-![Calcular dia n](assets/date&time-functions-calc-nth-day-350x31.png)
+![Calcular dia n](assets/date-time-functions-calc-nth-day-350x31.png)
 
 ```
 {{addDays(setDate(1.date; 1); 1.n * 7 - formatDate(addDays(setDate(1.date; 1); "-" + 1.dow); "E"))}}
@@ -510,7 +510,7 @@ Caso queira calcular apenas um caso específico, por exemplo, a cada segunda qua
 * `1.dow` = `3`
 * `1.date` = `now`
 
-![Valor da variável de dia &#x200B;](assets/nth-day-variable-value-350x33.png)
+![Valor da variável de dia ](assets/nth-day-variable-value-350x33.png)
 
 #### Explicação:
 

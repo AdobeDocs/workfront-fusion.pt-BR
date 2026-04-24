@@ -1,15 +1,15 @@
 ---
-title: Atividade de lançamento do Workfront Fusion:&nbsp;Semana de 3 de janeiro de 2022
-description: Atividade de lançamento do Workfront Fusion:&nbsp;Semana de 3 de janeiro de 2022
+title: 'Atividade de lançamento do Workfront Fusion: semana de 3 de janeiro de 2022'
+description: 'Atividade de lançamento do Workfront Fusion: semana de 3 de janeiro de 2022'
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: b532aabe-581b-401d-bf81-c5bd95dd60a0
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
-source-wordcount: '137'
-ht-degree: 39%
+source-wordcount: '133'
+ht-degree: 56%
 
 ---
 

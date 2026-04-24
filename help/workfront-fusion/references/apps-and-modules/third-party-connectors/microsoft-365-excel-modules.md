@@ -4,16 +4,16 @@ description: Em um cenário do Adobe Workfront Fusion, é possível automatizar 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 059bc82b-f1bc-4b92-a44b-51c1daf14f08
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 03f4556d7f903689c85cba966ad875973037a2ba
 workflow-type: tm+mt
 source-wordcount: '2699'
-ht-degree: 0%
+ht-degree: 18%
 
 ---
 
-# [!DNL Microsoft Office 365 Excel] módulos
+# Módulos do [!DNL Microsoft Office 365 Excel]
 
-Em um cenário do Adobe Workfront Fusion, é possível automatizar fluxos de trabalho que usam o [!DNL Microsoft 365 Excel], bem como conectá-lo a vários aplicativos e serviços de terceiros.
+Em um cenário do Adobe Workfront Fusion, é possível automatizar fluxos de trabalho que usam [!DNL Microsoft 365 Excel], bem como conectá-lo a vários aplicativos e serviços de terceiros.
 
 Para obter instruções sobre como criar um cenário, consulte os artigos em [Criar cenários: índice do artigo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -21,7 +21,7 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -29,31 +29,31 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion</td> 
    <td>
    <p>Baseado em operação: nenhum requisito de licença do Workfront Fusion</p>
-   <p>Baseado em conector (herdado): automação e integração do Workfront Fusion for Work </p>
+   <p>Baseado em conector (legado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -96,13 +96,13 @@ Para obter instruções sobre como conectar sua conta do [!DNL Office 365 Excel]
 >
 >Por exemplo, se um usuário tiver permissões de &quot;Tabela de leitura&quot; concedidas por meio do conector do Excel e criar uma conexão no conector do Outlook para ler emails, a tela de consentimento de permissões mostrará a permissão &quot;Tabela de leitura&quot; já concedida e a permissão &quot;Gravar email&quot; recém-necessária.
 
-## [!DNL Microsoft Office 365 Excel] módulos e seus campos
+## Módulos do [!DNL Microsoft Office 365 Excel] e seus campos
 
-Ao configurar módulos do [!DNL Microsoft 365 Excel], o Workfront Fusion exibe os campos listados abaixo. Junto com esses, campos [!DNL Microsoft 365 Excel] adicionais podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
+Ao configurar módulos do [!DNL Microsoft 365 Excel], o Workfront Fusion exibe os campos listados abaixo. Junto com eles, outros campos do [!DNL Microsoft 365 Excel] podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Alternância de mapa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Botão de alternância Mapear](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Pasta de trabalho](#workbook)
 * [Planilha](#worksheet)
@@ -124,7 +124,7 @@ Este módulo de ação baixa o conteúdo da pasta de trabalho do Excel especific
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Conexão]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -147,19 +147,19 @@ Este módulo de ação pesquisa por [!DNL Excel] pastas de trabalho.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Conexão]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Pasta]</td> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
    <td> <p>Selecione a pasta na qual deseja pesquisar pastas de trabalho.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Filtro]</p> </td> 
-   <td> <p>É possível definir um filtro para pesquisar apenas pastas de trabalho que atendam aos critérios selecionados.</p> <p>Para cada filtro, insira o campo que deseja que o filtro avalie, o operador e o valor que deseja que o filtro permita. É possível usar mais de um filtro adicionando regras AND ou OR.</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Filter]</p> </td> 
+   <td> <p>É possível definir um filtro para pesquisar apenas pastas de trabalho que atendam aos critérios selecionados.</p> <p>Para cada filtro, insira o campo que você deseja que o filtro avalie, bem como o operador e o valor que deseja que o filtro permita. É possível usar mais de um filtro adicionando regras AND ou OR.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limite]</td> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
    <td> <p>Insira ou mapeie o número máximo de planilhas que você deseja que o módulo retorne durante cada ciclo de execução do cenário.</p> </td> 
   </tr> 
  </tbody> 
@@ -175,19 +175,19 @@ Esse módulo de acionador inicia um cenário quando uma pasta de trabalho é cri
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Conexão]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Pasta]</td> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
    <td> <p>Selecione a pasta que deseja observar para novas pastas de trabalho.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Filtro]</p> </td> 
-   <td> <p>É possível definir um filtro para observar somente as pastas de trabalho que atendem aos critérios selecionados.</p> <p>Para cada filtro, insira o campo que deseja que o filtro avalie, o operador e o valor que deseja que o filtro permita. É possível usar mais de um filtro adicionando regras AND ou OR.</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Filter]</p> </td> 
+   <td> <p>É possível definir um filtro para observar somente as pastas de trabalho que atendem aos critérios selecionados.</p> <p>Para cada filtro, insira o campo que você deseja que o filtro avalie, bem como o operador e o valor que deseja que o filtro permita. É possível usar mais de um filtro adicionando regras AND ou OR.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limite]</td> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
    <td> <p>Insira ou mapeie o número máximo de pastas de trabalho que você deseja que o módulo retorne durante cada ciclo de execução do cenário.</p> </td> 
   </tr> 
  </tbody> 
@@ -212,7 +212,7 @@ Esse módulo de ação cria uma nova planilha na pasta de trabalho selecionada.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Conexão]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr>
@@ -220,7 +220,7 @@ Esse módulo de ação cria uma nova planilha na pasta de trabalho selecionada.
    <td> <p>Selecione a pasta de trabalho à qual deseja adicionar uma planilha, incluindo o caminho se a pasta de trabalho não estiver no diretório raiz.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Nome] </td>
+    <td role="rowheader" >[!UICONTROL Name] </td>
    <td> <p>Insira ou mapeie um nome para a nova planilha.</p> </td> 
   </tr> 
  </tbody> 
@@ -235,7 +235,7 @@ Este módulo de ação adiciona uma nova linha à planilha selecionada.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Conexão]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -271,7 +271,7 @@ Este módulo de ação exclui uma linha de uma planilha.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Conexão]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -298,7 +298,7 @@ Este módulo de ação recupera uma lista de linhas na planilha especificada.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Conexão]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr>
@@ -310,7 +310,7 @@ Este módulo de ação recupera uma lista de linhas na planilha especificada.
    <td> <p>Selecione a planilha que contém as linhas que deseja listar.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Limite]</td>
+    <td role="rowheader" >[!UICONTROL Limit]</td>
    <td> <p>Insira ou mapeie o número máximo de linhas da planilha que você deseja que o módulo retorne durante cada ciclo de execução do cenário.</p> </td> 
   </tr> 
  </tbody> 
@@ -325,7 +325,7 @@ Este módulo de ação recupera uma lista de planilhas na pasta de trabalho espe
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Conexão]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -333,7 +333,7 @@ Este módulo de ação recupera uma lista de planilhas na pasta de trabalho espe
    <td> <p>Selecione a pasta de trabalho que contém as planilhas que você deseja que o módulo liste.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Limite]</td>
+    <td role="rowheader" >[!UICONTROL Limit]</td>
    <td> <p>Insira ou mapeie o número máximo de planilhas que você deseja que o módulo retorne durante cada ciclo de execução do cenário.</p> </td> 
   </tr> 
  </tbody> 
@@ -348,7 +348,7 @@ Este módulo de ação atualiza uma linha de planilha existente.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Conexão]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -388,7 +388,7 @@ Esse módulo de acionamento inicia um cenário quando uma nova linha é adiciona
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Conexão]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -404,7 +404,7 @@ Esse módulo de acionamento inicia um cenário quando uma nova linha é adiciona
    <td> <p>Habilite esta opção para não retornar pacotes para linhas vazias na planilha.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Limite]</td>
+    <td role="rowheader" >[!UICONTROL Limit]</td>
    <td> <p>Insira ou mapeie o número máximo de linhas da planilha que você deseja que o módulo retorne durante cada ciclo de execução do cenário.</p> </td> 
   </tr> 
  </tbody> 
@@ -430,7 +430,7 @@ Esse módulo de ação cria um elemento de tabela na planilha do Excel.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Conexão]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -461,7 +461,7 @@ Este módulo de ação modifica uma tabela existente.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Conexão]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -496,7 +496,7 @@ Este módulo de ação exclui a tabela especificada de uma planilha [!DNL Excel]
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Conexão]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -520,11 +520,11 @@ Este módulo de ação recupera metadados para a tabela especificada.
  <tbody> 
   <tr> 
    <td role="rowheader"> 
-     <p >[!UICONTROL Conexão]</p>
+     <p >[!UICONTROL Connection]</p>
    </td> 
    <td> 
      <p>Para obter instruções sobre como conectar sua conta do Office 365 ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p>
-    --&gt; </td> 
+     </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Obter uma tabela]</td> 
@@ -546,7 +546,7 @@ Este módulo de pesquisa recupera uma lista de todas as linhas de tabela em uma 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Conexão]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -562,7 +562,7 @@ Este módulo de pesquisa recupera uma lista de todas as linhas de tabela em uma 
    <td> <p>Selecione a tabela que contém as linhas que você deseja listar.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Limite]</td>
+    <td role="rowheader" >[!UICONTROL Limit]</td>
    <td> <p>Insira ou mapeie o número máximo de linhas de tabela que você deseja que o módulo retorne durante cada ciclo de execução do cenário.</p> </td> 
   </tr> 
  </tbody> 
@@ -577,7 +577,7 @@ Este módulo de pesquisa recupera uma lista de todos os objetos de tabela.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Conexão]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr>
@@ -589,7 +589,7 @@ Este módulo de pesquisa recupera uma lista de todos os objetos de tabela.
    <td> <p>Selecione a planilha que contém as tabelas que deseja listar</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Limite]</td>
+    <td role="rowheader" >[!UICONTROL Limit]</td>
    <td> <p>Insira ou mapeie o número máximo de tabelas que você deseja que o módulo retorne durante cada ciclo de execução de cenário.</p> </td> 
   </tr> 
  </tbody> 
@@ -604,7 +604,7 @@ Este módulo de ação atualiza uma tabela existente.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Conexão]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -616,7 +616,7 @@ Este módulo de ação atualiza uma tabela existente.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Nome]</td> 
+   <td role="rowheader">[!UICONTROL Name]</td> 
    <td> <p>Se quiser renomear a tabela, insira ou mapeie um novo nome para ela.</p> </td> 
   </tr> 
   <tr> 
@@ -649,7 +649,7 @@ Esse acionador inicia um cenário quando uma nova linha é adicionada a uma tabe
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Conexão]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -665,7 +665,7 @@ Esse acionador inicia um cenário quando uma nova linha é adicionada a uma tabe
    <td> <p>Selecione a tabela que deseja observar.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Limite]</td>
+    <td role="rowheader" >[!UICONTROL Limit]</td>
    <td> <p>Insira ou mapeie o número máximo de linhas que você deseja que o módulo retorne durante cada ciclo de execução do cenário.</p> </td> 
   </tr> 
  </tbody> 
@@ -685,28 +685,28 @@ Esse módulo de ação permite fazer uma chamada de API personalizada.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Conexão]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
-   <td>Insira um caminho relativo para <code>https://graph.microsoft.com</code>. Exemplo:<code> /v1.0/me/drive/root/children</code></td> 
+   <td>Insira um caminho relativo a <code>https://graph.microsoft.com</code>. Exemplo:<code> /v1.0/me/drive/root/children</code></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Método]</td> 
+   <td role="rowheader">[!UICONTROL Method]</td> 
    td&gt; <p>Selecione o método de solicitação HTTP necessário para configurar a chamada de API. Para obter mais informações, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitação HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Cabeçalhos]</td> 
+   <td role="rowheader">[!UICONTROL Headers]</td> 
    <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p> <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p> <p>O Workfront Fusion adiciona os cabeçalhos de autorização para você.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Cadeia de Consulta]</td> 
-   <td> <p>Adicione a consulta da chamada à API na forma de um objeto JSON padrão.</p> <p>Por exemplo: <code>{"name":"something-urgent"}</code></p> </td> 
+   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td> <p>Adicione a consulta para a chamada de API na forma de um objeto JSON padrão.</p> <p>Por exemplo: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Corpo]</td> 
-   <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Observação:   <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
+   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td> <p>Adicione o conteúdo do corpo para a chamada de API na forma de um objeto JSON padrão.</p> <p>Observação:   <p>Ao usar instruções condicionais, como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>">  
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -723,7 +723,7 @@ Esta ação recupera dados do intervalo de planilhas definido e retorna um conju
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Conexão]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 

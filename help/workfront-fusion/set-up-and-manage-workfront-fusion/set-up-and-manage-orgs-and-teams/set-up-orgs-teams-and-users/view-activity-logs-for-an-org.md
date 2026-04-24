@@ -4,10 +4,10 @@ description: Você pode exibir um log de atividades, como criação ou ativaçã
 author: Becky
 feature: Workfront Fusion
 exl-id: 3cf851e3-50a1-4baa-8318-a24e1f467134
-source-git-commit: 2ffb7676067720a5b9daa51b560389396f4a665f
+source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 0%
+ht-degree: 8%
 
 ---
 
@@ -19,7 +19,7 @@ Os registros de atividade mostram três meses de dados. Os dados com mais de 3 m
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -31,7 +31,7 @@ Os registros de atividade mostram três meses de dados. Os dados com mais de 3 m
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p></td> 
+   <td> <p>Padrão</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Configurações de nível de acesso</td> 
@@ -43,7 +43,7 @@ Os registros de atividade mostram três meses de dados. Os dados com mais de 3 m
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações desta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 

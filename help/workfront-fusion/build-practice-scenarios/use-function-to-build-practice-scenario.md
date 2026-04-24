@@ -7,7 +7,7 @@ description: Saiba como adicionar uma função para atualizar um item de trabalh
 author: Becky
 feature: Workfront Fusion
 exl-id: aa082ac8-48e8-4569-880e-024dd77feaa1
-source-git-commit: 88147d0305595e1d0d388f510ed43fc5beaa4b64
+source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
 workflow-type: tm+mt
 source-wordcount: '603'
 ht-degree: 18%
@@ -79,7 +79,7 @@ Quando esse cenário converte uma solicitação em um projeto, o nome do projeto
 1. Clique no campo **Nome**.
 
    O painel de mapeamento é aberto.
-1. No painel de mapeamento, clique no ícone **Funções binárias e de texto**. ![Ícone de funções de texto](assets/toolbar-icon-text&binary-functions.png)
+1. No painel de mapeamento, clique no ícone **Funções binárias e de texto**. ![Ícone de funções de texto](assets/toolbar-icon-text-binary-functions.png)
 1. Selecione a função **upper**.
 
    A função aparece no campo Nome, incluindo a formatação da entrada esperada.

@@ -4,10 +4,10 @@ description: O aplicativo JSON do Adobe Workfront Fusion fornece módulos para p
 author: Becky
 feature: Workfront Fusion
 exl-id: f8b281c5-bb63-4412-98c5-d82f45f8eafc
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
 workflow-type: tm+mt
 source-wordcount: '1229'
-ht-degree: 1%
+ht-degree: 14%
 
 ---
 
@@ -17,7 +17,7 @@ O aplicativo Adobe Workfront Fusion [!UICONTROL JSON] fornece módulos para proc
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -25,22 +25,22 @@ O aplicativo Adobe Workfront Fusion [!UICONTROL JSON] fornece módulos para proc
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações desta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -113,7 +113,7 @@ Ao configurar módulos do [!DNL JSON], o Workfront Fusion exibe os campos listad
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Alternância de mapa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Botão de alternância Mapear](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Converter JSON em XML](#convert-json-to-xml)
 * [Analisar JSON](#parse-json)
@@ -226,7 +226,7 @@ Esse módulo de ação transforma um objeto em uma sequência de caracteres json
    <td> <p>Selecione o recuo que deseja usar para este JSON.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Objeto]</td> 
+   <td role="rowheader">[!UICONTROL Object]</td> 
    <td> <p>Insira ou mapeie o objeto que deseja transformar em JSON.</p> </td> 
   </tr> 
  </tbody> 
@@ -238,7 +238,7 @@ Esse módulo de ação transforma um objeto em uma sequência de caracteres json
 
 **Exemplo:** o exemplo a seguir mostra como transformar registros de dados de [!DNL Google Sheets] para o formato JSON:
 
-1. Coloque o módulo [!DNL Google Sheets] > [!UICONTROL Selecionar linhas] no cenário para buscar os dados. Configure o módulo para recuperar linhas da planilha [!DNL Google]. Defina o&#x200B;**[!UICONTROL Número máximo de linhas retornadas]** para um número pequeno, porém maior que um para fins de teste (Exemplo, três). Execute o módulo [!DNL Google Sheets] clicando com o botão direito do mouse nele e escolhendo &quot;**[!UICONTROL Executar este módulo somente]**.&quot; Verifique a saída do módulo.
+1. Coloque o módulo [!DNL Google Sheets] > [!UICONTROL Selecionar linhas] no cenário para buscar os dados. Configure o módulo para recuperar linhas da planilha [!DNL Google]. Defina o **[!UICONTROL número máximo de linhas retornadas]** para um número pequeno, porém maior que um para fins de teste (Exemplo, três). Execute o módulo [!DNL Google Sheets] clicando com o botão direito do mouse nele e escolhendo &quot;**[!UICONTROL Executar este módulo somente]**.&quot; Verifique a saída do módulo.
 
 1. Conecte o módulo [!UICONTROL Agregador de Matriz] após o módulo [!DNL Google Sheets]. Na configuração do módulo, escolha o módulo [!DNL Google Sheets] no campo **[!UICONTROL nó do Source]**. Deixe os outros campos como estão para o momento.
 
@@ -285,7 +285,7 @@ Verifique se o conteúdo JSON está mapeado corretamente no módulo [!UICONTROL 
 
 ### O módulo falha ao usar declarações condicionais em JSON
 
-Ao usar instruções condicionais como `if` em seu JSON, coloque as aspas fora da instrução condicional.
+Ao usar instruções condicionais, como `if` em seu JSON, coloque as aspas fora da instrução condicional.
 
 >[!BEGINSHADEBOX]
 
