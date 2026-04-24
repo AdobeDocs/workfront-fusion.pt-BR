@@ -4,16 +4,15 @@ content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: fusion-release-activity
 title: 'Atividade de lançamento do Workfront Fusion: semana de 17 de outubro de 2022'
-description: Esta página descreve todas as melhorias feitas no Adobe Workfront Fusion na semana de 17 de outubro de 2022.
+description: Esta página descreve todos os aprimoramentos realizados no Adobe Workfront Fusion na semana de terça-feira, 17 de outubro de 2022.
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: 74130f09-2b18-4732-b338-c2bf53a3ed3f
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '109'
-ht-degree: 0%
+ht-degree: 25%
 
 ---
 

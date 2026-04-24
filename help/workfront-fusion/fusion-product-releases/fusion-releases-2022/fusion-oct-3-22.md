@@ -4,16 +4,15 @@ content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: fusion-release-activity
 title: 'Atividade de lançamento do Workfront Fusion: semana de 3 de outubro de 2022'
-description: Esta página descreve todas as melhorias feitas no Adobe Workfront Fusion na semana de 3 de outubro de 2022.
+description: Esta página descreve todos os aprimoramentos realizados no Adobe Workfront Fusion na semana de terça-feira, 3 de outubro de 2022.
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: 0dcd5fd6-f4d3-4ab8-99f4-305ef5f94ca5
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '157'
-ht-degree: 0%
+ht-degree: 22%
 
 ---
 
@@ -25,8 +24,8 @@ Para permitir mais flexibilidade e especificidade ao criar filtros de evento no 
 
 Adicionamos alguns novos operadores ao filtro de eventos. Agora, você pode usar qualquer um dos seguintes:
 
-* Igual
-* Não é igual
+* Igual a
+* Diferente de
 * Maior que
 * Menor que
 

@@ -1,23 +1,23 @@
 ---
-title: Módulos de email
+title: Módulos de Email
 description: Em um cenário do Adobe Workfront Fusion, é possível conectar sua conta de email a vários aplicativos e serviços de terceiros. Isso permite baixar emails via IMAP, enviar emails via SMTP, criar novos rascunhos, mover e copiar emails de uma pasta para outra pasta, marcar emails como lidos ou não lidos e excluir emails.
 author: Becky
 feature: Workfront Fusion
 exl-id: 28a04bad-d3ef-4f3a-be93-8b04761a75e4
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '2491'
-ht-degree: 0%
+ht-degree: 11%
 
 ---
 
-# Módulos de email
+# Módulos de Email
 
 Em um cenário do Adobe Workfront Fusion, é possível conectar sua conta de email a vários aplicativos e serviços de terceiros. Isso permite baixar emails via IMAP, enviar emails via SMTP, criar novos rascunhos, mover e copiar emails de uma pasta para outra pasta, marcar emails como lidos ou não lidos e excluir emails.
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -25,31 +25,31 @@ Em um cenário do Adobe Workfront Fusion, é possível conectar sua conta de ema
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion</td> 
    <td>
    <p>Baseado em operação: nenhum requisito de licença do Workfront Fusion</p>
-   <p>Baseado em conector (herdado): automação e integração do Workfront Fusion for Work </p>
+   <p>Baseado em conector (legado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -90,18 +90,18 @@ Para adicionar um certificado autoassinado:
 1. Clique em **Extrair**.
 1. Selecione o tipo de arquivo que você está extraindo.
 1. Selecione o arquivo que contém o certificado ou.
-1. Digite a senha do arquivo.
+1. Insira a senha do arquivo.
 1. Clique em **Salvar** para extrair o arquivo e retornar à configuração do módulo.
 
 ## Módulos [!UICONTROL Email] e seus campos
 
-Ao configurar módulos do [!UICONTROL Email], o Workfront Fusion exibe os campos listados abaixo. Junto com esses, campos adicionais podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
+Ao configurar módulos do [!UICONTROL Email], o Workfront Fusion exibe os campos listados abaixo. Junto com eles, outros campos podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
 
 Alguns dos campos de email podem já conter dados porque você os usou em outro módulo no cenário. Consulte a documentação de ajuda do email se precisar de informações sobre eles.
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Alternância de mapa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Botão de alternância Mapear](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 >[!NOTE]
 >
@@ -122,11 +122,11 @@ Esse módulo de acionamento inicia um cenário quando um novo email é recebido 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta de email ao [!UICONTROL Workfront Fusion], consulte <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Conectar seu email ao [!UICONTROL Workfront Fusion]</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Pasta] </td> 
+   <td role="rowheader">[!UICONTROL Folder] </td> 
    <td> <p>Selecione a pasta que contém os emails que você deseja observar.</p> </td> 
   </tr> 
   <tr> 
@@ -181,7 +181,7 @@ Esse módulo de ação copia um email ou um rascunho para uma pasta selecionada.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta de email ao [!UICONTROL Workfront Fusion], consulte <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Conectar seu email ao [!UICONTROL Workfront Fusion]</a> neste artigo.</p> </td>
   </tr> 
   <tr> 
@@ -208,11 +208,11 @@ Este módulo de ação cria e adiciona um novo rascunho a uma pasta selecionada.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta de email ao [!UICONTROL Workfront Fusion], consulte <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Conectar seu email ao [!UICONTROL Workfront Fusion]</a> neste artigo.</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Pasta]</td> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
    <td>Selecione a pasta na qual deseja criar o rascunho de email.</td> 
   </tr> 
   <tr> 
@@ -244,27 +244,28 @@ Este módulo de ação cria e adiciona um novo rascunho a uma pasta selecionada.
    <td role="rowheader">[!UICONTROL Destinatário da Cópia Offline]</td> 
    <td> <p> Para cada endereço de email para o qual você deseja enviar uma cópia deste email sem que o endereço apareça no email, clique em <b>Adicionar item</b> e insira o endereço de email.</p> </td> 
   </tr> 
-  <!--<tr data-mc-conditions=""> 
+  <!--
+  <tr data-mc-conditions="">
    <td role="rowheader">[!UICONTROL From] </td> 
    <td> <p>Enter or map the email address (and name, if needed) that appears in the [!UICONTROL From] field in the email. </p> <p>Important: Use the correct syntax: <code>name@email.com</code> or <code>"Name" name@email.com</code>.</p> <p>Note:  Normally, Workfront Fusion uses the email address that you entered when creating the connection as the sender address. If you enter any other email address, an error may occur when sending a message because your account may not have permission to send emails from a different address than your own. E.g. <code>test@mail.com</code> or "<code>John Bush" test@email.com</code>.</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
+   </tr> 
+   <tr data-mc-conditions=""> 
    <td role="rowheader"> <p>[!UICONTROL Sender]</p> </td> 
    <td> <p>Enter or map the email address that appears in the [!UICONTROL Sender] field in the email.</p> <p>Tip:  If you are unsure whether to use this field or the From field, we recommend choosing the From field.</p> <p>Important: Use the correct syntax: <code>name@email.com</code> or <code>"Name" name@email.com</code></p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
+   </tr> 
+   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL Reply-To]</td> 
    <td> <p> If you want replies to this email sent to a different address than the "[!UICONTROL from]" address, enter the email address where you want replies to this email sent.</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
+   </tr> 
+   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL In-Reply-To]</td> 
    <td> <p> If you are replying to a specific email, enter or map the ID of the email you are replying to.</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
+   </tr> 
+   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL References] </td> 
    <td> <p>Enter the message IDs of all the replies in the thread.</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
+   </tr> 
+   <tr data-mc-conditions=""> 
    <td role="rowheader"> <p>[!UICONTROL Priority]</p> </td> 
    <td> <p>Select the priority of the email:</p> 
     <ul> 
@@ -272,15 +273,16 @@ Este módulo de ação cria e adiciona um novo rascunho a uma pasta selecionada.
      <li>[!UICONTROL Normal]</li> 
      <li>[!UICONTROL Low]</li> 
     </ul> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
+   </tr> 
+   <tr data-mc-conditions=""> 
    <td role="rowheader"> <p>[!UICONTROL Headers]</p> </td> 
    <td> <p>Add the headers:</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Key]</strong> </p> <p>Add the key. For example, Sender, Date, To, and so on.</p> </li> 
      <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>Enter the value for the key.</p> </li> 
     </ul> </td> 
-  </tr> -->
+   </tr>
+   -->
  </tbody> 
 </table>
 
@@ -293,11 +295,11 @@ Este módulo de ação remove um email ou um rascunho da pasta selecionada.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta de email ao [!UICONTROL Workfront Fusion], consulte <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Conectar seu email ao [!UICONTROL Workfront Fusion]</a> neste artigo.</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Pasta]</td> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
    <td>Selecione a pasta que contém o email que deseja excluir.</td> 
   </tr> 
   <tr> 
@@ -320,11 +322,11 @@ Este módulo retorna emails que correspondem aos critérios especificados.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta de email ao [!UICONTROL Workfront Fusion], consulte <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Conectar seu email ao [!UICONTROL Workfront Fusion]</a> neste artigo.</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Pasta] </td> 
+   <td role="rowheader">[!UICONTROL Folder] </td> 
    <td> <p>Selecione a pasta que contém os emails que deseja recuperar.</p> </td> 
   </tr> 
   <tr> 
@@ -388,11 +390,11 @@ Este módulo de ação marca um email ou rascunho em uma pasta selecionada como 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta de email ao [!UICONTROL Workfront Fusion], consulte <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Conectar seu email ao [!UICONTROL Workfront Fusion]</a> neste artigo.</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Pasta]</td> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
    <td>Selecione a pasta que contém o email que você deseja marcar como lido.</td> 
   </tr> 
   <tr> 
@@ -411,11 +413,11 @@ Marca um email ou rascunho em uma pasta selecionada como não lido ao configurar
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta de email ao [!UICONTROL Workfront Fusion], consulte <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Conectar seu email ao [!UICONTROL Workfront Fusion]</a> neste artigo.</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Pasta]</td> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
    <td>Selecione a pasta que contém o email que você deseja marcar como não lido. Exemplo: Principal.</td> 
   </tr> 
   <tr> 
@@ -434,7 +436,7 @@ Move um email ou rascunho escolhido para uma pasta selecionada.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta de email ao [!UICONTROL Workfront Fusion], consulte <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Conectar seu email ao [!UICONTROL Workfront Fusion]</a> neste artigo.</p> </td>
   </tr> 
   <tr> 
@@ -461,7 +463,7 @@ Envia um novo email.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta de email ao Workfront Fusion, consulte <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Conectar seu email ao [!UICONTROL Workfront Fusion]</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -478,7 +480,7 @@ Envia um novo email.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Tipo de Conteúdo]</p> </td> 
-   <td> <p>Selecione o tipo de conteúdo  para o email:</p> 
+   <td> <p>Selecione o tipo de conteúdo [!UICONTROL] para o email:</p> 
     <ul> 
      <li>HTML</li> 
      <li>[!UICONTROL Texto sem formatação]</li> 
@@ -518,11 +520,11 @@ Envia um novo email.
    <td> <p> Se estiver respondendo a um email específico, insira ou mapeie a ID do email ao qual você está respondendo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Referências] </td> 
+   <td role="rowheader">[!UICONTROL References] </td> 
    <td> <p>Informe as IDs de mensagem de todas as respostas da thread.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Prioridade]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Priority]</p> </td> 
    <td> <p>Selecione a prioridade do email:</p> 
     <ul> 
      <li>[!UICONTROL Alto]</li> 
@@ -531,7 +533,7 @@ Envia um novo email.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Cabeçalhos]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Headers]</p> </td> 
    <td> <p>Adicione os cabeçalhos:</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL chave]</strong> </p> <p>Adicione a chave. Por exemplo, [!UICONTROL Remetente], [!UICONTROL Data], [!UICONTROL Para], e assim por diante.</p> </li> 

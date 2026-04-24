@@ -4,10 +4,10 @@ description: Em um cenário do Adobe Workfront Fusion, é possível automatizar 
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: 017341e045a703f5d6e933a6df860f4fc8c0649d
+source-git-commit: 27ff7374e5e2d6765a1bcbfae9d10fb8a8f77521
 workflow-type: tm+mt
 source-wordcount: '2466'
-ht-degree: 37%
+ht-degree: 43%
 
 ---
 
@@ -309,8 +309,8 @@ Este módulo de acionamento inicia um cenário quando um registro é adicionado,
      <li value="4"> <p>Selecione o tipo de registro que você deseja que o software assista:</p> 
       <ul> 
        <li>[!UICONTROL Comentário] </li> 
-       <li>[!UICONTROL Problema]</li> 
-       <li>[!UICONTROL Projeto] </li> 
+       <li>[!UICONTROL Issue]</li> 
+       <li>[!UICONTROL Project] </li> 
        <li>[!UICONTROL Sprint]</li> 
       </ul> </li> 
     </ol> </td> 
@@ -375,8 +375,8 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
     <ul> 
      <li>[!UICONTROL Anexo]</li> 
      <li>[!UICONTROL Comentário]</li> 
-     <li>[!UICONTROL Problema]</li> 
-     <li>[!UICONTROL Projeto]</li> 
+     <li>[!UICONTROL Issue]</li> 
+     <li>[!UICONTROL Project]</li> 
      <li>[!UICONTROL Sprint] </li> 
      <li>[!UICONTROL Log de Trabalho]</li> 
     </ul> </td> 
@@ -446,8 +446,8 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
     <ul> 
      <li>[!UICONTROL Anexo]</li> 
      <li>[!UICONTROL Comentário]</li> 
-     <li>[!UICONTROL Problema]</li> 
-     <li>[!UICONTROL Projeto]</li> 
+     <li>[!UICONTROL Issue]</li> 
+     <li>[!UICONTROL Project]</li> 
      <li>[!UICONTROL Sprint] </li> 
     </ul> </td> 
   </tr> 
@@ -502,10 +502,10 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
    <td> <p>Selecione o tipo de registro [!DNL Jira] que deseja que o módulo leia.</p> 
     <ul> 
      <li>[!UICONTROL Anexo]</li> 
-     <li>[!UICONTROL Problema]</li> 
-     <li>[!UICONTROL Projeto]</li> 
+     <li>[!UICONTROL Issue]</li> 
+     <li>[!UICONTROL Project]</li> 
      <li>[!UICONTROL Sprint] </li> 
-     <li>[!UICONTROL Usuário]</li> 
+     <li>[!UICONTROL User]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -542,8 +542,8 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
    <td> <p>Selecione o tipo de registro que deseja que o módulo atualize. Quando você seleciona um tipo de registro, outros campos específicos desse tipo de registro aparecem no módulo.</p> 
     <ul> 
      <li>[!UICONTROL Comentário]</li> 
-     <li>[!UICONTROL Problema]</li> 
-     <li>[!UICONTROL Projeto]</li> 
+     <li>[!UICONTROL Issue]</li> 
+     <li>[!UICONTROL Project]</li> 
      <li>[!UICONTROL Sprint] </li> 
      <li>[!UICONTROL Problema de transição]</li> 
     </ul> </td> 
@@ -562,21 +562,21 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
 
 >[!IMPORTANT]
 >
->O módulo de pesquisa usado pelo conector Jira herdado pode resultar no seguinte erro:
+>O módulo de pesquisa usado pelo conector do Jira legado pode resultar no seguinte erro:
 >
 >`[410] The requested API has been removed. Please migrate to the /rest/api/3/search/jql API. A full migration guideline is available at https://developer.atlassian.com/changelog/#CHANGE-2046`
 >
->Isso se deve a uma descontinuação no lado de Jira.
+>Deve-se a uma descontinuação feita pelo Jira.
 >
->Se encontrar esse erro, você poderá substituir o módulo de pesquisa do conector Jira herdado pelo módulo de pesquisa do novo conector. Observe que o novo conector permite selecionar a versão da API usada. Certifique-se de selecionar V3 ao criar a conexão.
+>Se você se deparar com esse erro, poderá substituir o módulo de pesquisa do conector do Jira legado pelo módulo de pesquisa do novo conector. Observe que o novo conector permite selecionar a versão da API usada. Certifique-se de selecionar V3 ao criar a conexão.
 >
 > ![Opção de versão da API no novo conector Jira](/help/workfront-fusion/references/apps-and-modules/assets/jira-version-option.png)
 >
 >Observe que:
 >
->* Somente o módulo de Pesquisa é afetado. No momento, outros endpoints da API Jira usados pelo conector Fusion não são afetados por essa desativação.
+>* Somente o módulo de pesquisa é afetado. No momento, outros pontos de acesso da API do Jira usados pelo conector do Fusion não são afetados por essa descontinuação.
 >
->* A implantação geográfica pode causar inconsistências. A Atlassian está lançando essa alteração regionalmente, o que significa que algumas instâncias do Jira Cloud ainda podem oferecer suporte temporário a endpoints mais antigos. Isso pode levar a um comportamento inconsistente entre ambientes.
+>* A implantação geográfica pode causar inconsistências. A Atlassian está implantando essa alteração regionalmente, o que significa que algumas instâncias da Jira Cloud ainda podem ser compatíveis temporariamente com pontos de acesso mais antigos. Isso pode levar a um comportamento inconsistente entre ambientes.
 
 #### [!UICONTROL Listar registros]
 
@@ -599,8 +599,8 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
    <td> <p>Selecione o tipo de registro que deseja que o módulo liste. Quando você seleciona um tipo de registro, outros campos específicos desse tipo de registro aparecem no módulo.</p> 
     <ul> 
      <li>[!UICONTROL Comentário]</li> 
-     <li>[!UICONTROL Problema]</li> 
-     <li>[!UICONTROL Projeto]</li> 
+     <li>[!UICONTROL Issue]</li> 
+     <li>[!UICONTROL Project]</li> 
      <li>[!UICONTROL Problema de Sprint]</li> 
      <li>[!UICONTROL Log de Trabalho]</li> 
     </ul> </td> 
@@ -608,7 +608,8 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Máximo de Resultados]</p> </td> 
    <td> <p>Insira ou mapeie o número máximo de registros que você deseja que o módulo recupere durante cada ciclo de execução de cenário.</p> </td> 
-  </tr> <!--
+  </tr> 
+  <!--
    <tr> 
     <td role="rowheader">Offset</td> 
     <td> Enter or map the ID of the first item you want to retrieve details for. This is a way to paginate the records. If you enter the 5000th item as the offset, the module would return items 5000-9999.</td> 
@@ -639,9 +640,9 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
     <ul> 
      <li>[!UICONTROL Issues]</li> 
      <li> <p>[!UICONTROL Problemas por JQL (Jira Query Language)] </p> <p>Para obter mais informações sobre JQL, consulte <a href="https://www.atlassian.com/blog/jira-software/jql-the-most-flexible-way-to-search-jira-14#:~:text=JQLstandsforJiraQuery,projectmanagers%2Candbusinessusers.">JQL</a> no site de ajuda da Atlassian. </p> </li> 
-     <li>[!UICONTROL Projeto]</li> 
+     <li>[!UICONTROL Project]</li> 
      <li>[!UICONTROL Projeto por problema]</li> 
-     <li>[!UICONTROL Usuário]</li> 
+     <li>[!UICONTROL User]</li> 
     </ul> </td> 
   </tr> 
  </tbody> 

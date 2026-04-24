@@ -5,22 +5,21 @@ author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: bc72bb8b-25d9-488f-a1f0-89d4f41a7e76
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 0%
+ht-degree: 11%
 
 ---
 
 # Atividade de lançamento do Workfront Fusion: semana de 13 de setembro de 2021
 
-Esta página descreve todas as melhorias feitas no Adobe Workfront Fusion na semana de 23 de setembro de 2021.
+Esta página descreve todos os aprimoramentos realizados no Adobe Workfront Fusion na semana de sexta-feira, 23 de setembro de 2021.
 
-Para obter uma lista de todas as alterações recentes, consulte [atividade de versão do Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
+Para obter uma lista de todas as alterações recentes, consulte a [atividade de lançamento do Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-Para obter uma lista de correções de erros recentes no Workfront Fusion, consulte a página [Atualizações de Manutenção do Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=pt-BR) e verifique se há atualizações rotuladas como Atualização de Manutenção do Workfront Fusion.
+Para obter uma lista de correções de erros recentes no Workfront Fusion, consulte a página [Atualizações de manutenção do Workfront](https://experienceleague.adobe.com/pt-br/docs/workfront-known-issues/releases/current-updates) e verifique se há atualizações rotuladas como atualização de manutenção do Workfront Fusion.
 
 ## Filtrar e classificar o histórico de execução do cenário do Workfront Fusion
 

@@ -4,10 +4,10 @@ description: Em um cenário do Adobe Workfront Fusion, é possível automatizar 
 author: Becky
 feature: Workfront Fusion
 exl-id: 9e741dce-05a6-4e13-8d58-fbe3b4900d7e
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '1548'
-ht-degree: 1%
+ht-degree: 25%
 
 ---
 
@@ -19,7 +19,7 @@ Para obter instruções sobre como criar um cenário, consulte os artigos em [Cr
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -27,37 +27,37 @@ Para obter instruções sobre como criar um cenário, consulte os artigos em [Cr
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion</td> 
    <td>
    <p>Baseado em operação: nenhum requisito de licença do Workfront Fusion</p>
-   <p>Baseado em conector (herdado): automação e integração do Workfront Fusion for Work </p>
+   <p>Baseado em conector (legado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Pré-requisitos
 
-Para usar módulos [!DNL Box], você deve ter uma conta [!DNL Box].
+Para usar módulos [!DNL Box], você deve ter uma conta do [!DNL Box].
 
 ## Informações da API de caixa
 
@@ -83,13 +83,13 @@ O conector Box usa o seguinte:
  </tbody> 
  </table>
 
-## [!DNL Box] módulos e seus campos
+## Módulos do [!DNL Box] e seus campos
 
-Ao configurar módulos do [!DNL Box], o Workfront Fusion exibe os campos listados abaixo. Junto com esses, campos [!DNL Box] adicionais podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
+Ao configurar módulos do [!DNL Box], o Workfront Fusion exibe os campos listados abaixo. Junto com eles, outros campos do [!DNL Box] podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Alternância de mapa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Botão de alternância Mapear](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Acionadores](#triggers)
 * [Ações](#actions)
@@ -164,17 +164,20 @@ Este módulo de acionamento inicia um cenário quando um novo arquivo é adicion
 
 ### Ações
 
-<!--* [[!UICONTROL Delete a file]](#delete-a-file)
+<!--
+* [[!UICONTROL Delete a file]](#delete-a-file)
 * [[!UICONTROL Get a file]](#get-a-file)
 * [[!UICONTROL Update a file]](#update-a-file)
-* [[!UICONTROL Upload] a file](#upload-a-file)-->
+* [[!UICONTROL Upload] a file](#upload-a-file)
+-->
 * [Criar uma pasta](#create-a-folder)
 * [Obter uma pasta](#get-a-folder)
 * [Obter metadados da pasta](#get-folder-metadata)
 * [Fazer uma chamada de API](#make-an-api-call)
 * [Atualizar metadados da pasta](#update-folder-metadata)
 
-<!--#### [!UICONTROL Delete a file] 
+<!--
+#### [!UICONTROL Delete a file]
 
 This action module deletes a file.
 
@@ -270,7 +273,8 @@ You specify the file. You can also provide a new filename for the file.
 >If this module is not successful, consider the following:
 >
 >* The size of the file might exceed the maximum file size limit for your [!DNL Box] plan, or you may have used all of your [!DNL Box] account's storage quota. To get more storage space, delete existing files from [!DNL Box] or upgrade your [!DNL Box] account.
->* [!DNL Box] does not upload more than one files with the same name to a single folder. If the destination folder contains a file with the same name as the file being uploaded, the scenario run terminates with an error. To avoid this, rename the file. If you want to update the file, use the **[!UICONTROL Update a file]** module.-->
+>* [!DNL Box] does not upload more than one files with the same name to a single folder. If the destination folder contains a file with the same name as the file being uploaded, the scenario run terminates with an error. To avoid this, rename the file. If you want to update the file, use the **[!UICONTROL Update a file]** module.
+-->
 
 #### Criar uma pasta
 
@@ -281,11 +285,11 @@ Este módulo de ação cria uma nova pasta vazia dentro da pasta pai especificad
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Box] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Nome]</td> 
+   <td role="rowheader">[!UICONTROL Name]</td> 
    <td> <p>Insira ou mapeie um nome para a nova pasta.</p> </td> 
   </tr> 
   <tr> 
@@ -312,11 +316,11 @@ Esse módulo de ação recupera detalhes de uma pasta, incluindo as primeiras 10
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Box] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Pasta]</td> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
    <td> <p>Selecione a pasta para a qual deseja recuperar detalhes.</p> </td> 
   </tr> 
  </tbody> 
@@ -331,7 +335,7 @@ Este módulo de ação recupera os metadados da pasta pela ID da pasta.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Box] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -339,7 +343,7 @@ Este módulo de ação recupera os metadados da pasta pela ID da pasta.
    <td> <p>Selecione o escopo que deseja usar para essa recuperação de metadados.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Pasta]</td> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
    <td> <p>Selecione a pasta para a qual deseja recuperar metadados.</p> </td> 
   </tr> 
  </tbody> 
@@ -356,28 +360,28 @@ Esse módulo de ação faz uma chamada personalizada para a API Box.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Conexão]</p> </td> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Bynder] ao Workfront Fusion, consulte <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Bynder] ao Workfront Fusion </a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
-   <td>Insira um caminho relativo para <code>https://api.box.com</code>. <p>Exemplo: <code>/2.0/users/me</code></p></td> 
+   <td>Insira um caminho relativo a <code>https://api.box.com</code>. <p>Exemplo: <code>/2.0/users/me</code></p></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Método]</td> 
+   <td role="rowheader">[!UICONTROL Method]</td> 
    <td> <p>Selecione o método de solicitação HTTP necessário para configurar a chamada de API. Para obter mais informações, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitação HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Cabeçalhos]</td> 
+   <td role="rowheader">[!UICONTROL Headers]</td> 
    <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p> <p>Por exemplo: <code>{"Content-type":"application/json"}</code></p> <p>O Workfront Fusion adiciona os cabeçalhos de autorização para você.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Cadeia de Consulta]</td> 
-   <td> <p>Adicione a consulta da chamada à API na forma de um objeto JSON padrão.</p> <p>Por exemplo: <code>{"name":"something-urgent"}</code></p> </td> 
+   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td> <p>Adicione a consulta para a chamada de API na forma de um objeto JSON padrão.</p> <p>Por exemplo: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Corpo]</td> 
-   <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
+   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td> <p>Adicione o conteúdo do corpo para a chamada de API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais, como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -394,7 +398,7 @@ Esse módulo de ação cria ou atualiza os metadados de uma pasta.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Box] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -402,7 +406,7 @@ Esse módulo de ação cria ou atualiza os metadados de uma pasta.
    <td> <p>Selecione o escopo que deseja usar para esta atualização de metadados.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Pasta]</td> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
    <td> <p>Selecione a pasta para a qual deseja atualizar os metadados.</p> </td> 
   </tr> 
  </tbody> 
@@ -420,7 +424,7 @@ Este módulo de pesquisa procura por itens que estejam disponíveis para o usuá
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Box] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -432,7 +436,7 @@ Este módulo de pesquisa procura por itens que estejam disponíveis para o usuá
    <td> <p>Selecione se você está procurando conteúdo associado ao usuário cujas credenciais são usadas para a conexão usada neste módulo ou procurando conteúdo associado a toda a empresa.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Tipo]</td> 
+   <td role="rowheader">[!UICONTROL Type]</td> 
    <td> <p>Selecione se você está procurando arquivos, pastas ou links da Web.</p> </td> 
   </tr> 
   <tr> 
@@ -464,7 +468,7 @@ Este módulo de pesquisa procura por itens que estejam disponíveis para o usuá
    <td> <p>Para pesquisar ativos atualizados em um determinado intervalo de datas, insira a última data no intervalo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Campos]</td> 
+   <td role="rowheader">[!UICONTROL Fields]</td> 
    <td> <p>Para cada atributo que você deseja retornar na resposta do módulo, clique em <b>Adicionar item</b> e insira o campo.</p><p>Isso pode ser usado para solicitar campos que normalmente não são retornados em uma resposta padrão. Esteja ciente de que a especificação desse parâmetro terá o efeito de que nenhum dos campos padrão será retornado na resposta, a menos que especificado explicitamente. </p></td> 
   </tr> 
   <tr> 
@@ -484,7 +488,7 @@ Este módulo de pesquisa procura por itens que estejam disponíveis para o usuá
    <td> <p>Para pesquisar ativos de propriedade de usuários específicos, insira uma lista separada por vírgulas de IDs de proprietários.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limite]</td> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
    <td> <p>Insira ou mapeie o número máximo de resultados que você deseja que o módulo retorne em cada ciclo de execução.</p> </td> 
   </tr> 
  </tbody> 

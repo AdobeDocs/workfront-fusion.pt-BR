@@ -4,8 +4,8 @@ description: A conta do  [!DNL Adobe Workfront Fusion Frame].io modules enable y
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: 3cb613c11500dfc94774783ee0b38e6f1768de20
-workflow-type: ht
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+workflow-type: tm+mt
 source-wordcount: '4539'
 ht-degree: 100%
 
@@ -343,10 +343,12 @@ Este módulo de ação cria um novo ativo. Você pode fazer upload de um arquivo
    <td role="rowheader">[!UICONTROL Path] </td> 
    <td> <p>Selecione o caminho em que deseja criar um ativo.</p> </td> 
   </tr> 
-<!--  <tr> 
+  <!--
+  <tr>
    <td role="rowheader">[!UICONTROL File Name] </td> 
    <td> <p>Enter the name of the file that you want to use for this asset.</p> </td> 
-  </tr> -->
+  </tr>
+  -->
     <tr> 
     <td role="rowheader">Tipo de upload </td> 
     <td> <p>Selecione se você está criando um ativo a partir de um arquivo local ou de um arquivo remoto.</p> </td> 
@@ -363,10 +365,12 @@ Este módulo de ação cria um novo ativo. Você pode fazer upload de um arquivo
    <td>[!UICONTROL Source file]</td> 
    <td> <p>Selecione um arquivo de origem de um módulo anterior ou mapeie o nome do arquivo de origem.</p> </td> 
   </tr> 
-<!--  <tr> 
-   <td role="rowheader">[!UICONTROL Media type] </td> 
-   <td> <p>Select the media type for this asset.</p> </td> 
-  </tr> -->
+  <!--
+  <tr>
+    <td role="rowheader">[!UICONTROL Media type] </td> 
+    <td> <p>Select the media type for this asset.</p> </td> 
+    </tr>
+  -->
   </tbody> 
 </table>
 
@@ -1319,7 +1323,7 @@ Selecione o webhook que deseja usar para este módulo ou clique em Adicionar ao 
 </table>
 
 
-<!-- 
+<!--
 **Example:** The following API call returns all teams and its details in your [!DNL Frame.io] account:
 
 URL: `/v2/teams`

@@ -4,10 +4,10 @@ description: Ao criar um modelo, ele fica disponível para todos os membros da e
 author: Becky
 feature: Workfront Fusion
 exl-id: 99a1227d-bff9-479f-b8b9-efcf7cea3708
-source-git-commit: 3a977d805c10fda7209b0634c6e32e818a980691
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '483'
-ht-degree: 0%
+ht-degree: 20%
 
 ---
 
@@ -19,7 +19,7 @@ Para obter informações sobre como criar um modelo, consulte [Criar um novo mod
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -27,22 +27,22 @@ Para obter informações sobre como criar um modelo, consulte [Criar um novo mod
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações desta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -93,7 +93,8 @@ Os seguintes status estão disponíveis:
 * **[!UICONTROL Publicado]**: este modelo é visível somente para o autor do modelo e sua equipe. Você pode enviar modelos publicados para aprovação e copiar um link compartilhável.
 * **[!UICONTROL Aprovado]**: este modelo está visível para todos os usuários do Workfront Fusion na guia [!UICONTROL Modelos públicos]. Você pode copiar um link compartilhável clicando em [!UICONTROL Opções] no canto superior direito da tela.
 
-<!--You can also check the status from the [!UICONTROL Team templates] tab. If a template is published, it will have an icon to the right of the template name.
+<!--
+You can also check the status from the [!UICONTROL Team templates] tab. If a template is published, it will have an icon to the right of the template name.
 
 * **Eye icon**: The template is published, it is visible only for the team, and the approval request was not sent.
 * **Yellow checkmark icon**: The template is published, it is visible only for the team, and the approval request was sent.

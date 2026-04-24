@@ -6,10 +6,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 473dba8b-faa4-432f-9357-c2146e86b261
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '766'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,7 @@ Se você for um administrador, terá permissão para exibir, modificar, renomear
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
 
@@ -30,12 +30,12 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
   <col>
   <tbody>
     <tr>
-      <td role="rowheader">plano do Adobe Workfront</td>
+      <td role="rowheader">Plano Adobe Workfront</td>
       <td><p>Qualquer</p></td>
     </tr>
     <tr data-mc-conditions="">
       <td role="rowheader">Licença do Adobe Workfront</td>
-      <td><p>Novo: Padrão</p><p>Ou</p><p>Atual: [!UICONTROL Trabalho] ou superior</p></td>
+      <td><p>Novo: padrão</p><p>Ou</p><p>Atual: [!UICONTROL Trabalho] ou superior</p></td>
     </tr>
     <tr>
       <td role="rowheader">Licença do Adobe Workfront Fusion**</td>
@@ -63,7 +63,8 @@ Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
 <!--
 For more detail about the information in this table, see [Access requirements in Workfront documentation](/help/quicksilver/administration-and-setup/add-users/access-levels-and-object-permissions/access-level-requirements-in-documentation.md). 
 
-For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md). -->
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).
+-->
 
 +++
 

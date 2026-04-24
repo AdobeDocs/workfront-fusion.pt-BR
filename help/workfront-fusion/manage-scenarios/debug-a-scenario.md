@@ -4,10 +4,10 @@ description: O Adobe Workfront Fusion Devtool permite compreender e solucionar p
 author: Becky
 feature: Workfront Fusion
 exl-id: 34215370-27e3-4c28-8bd1-a16268900b86
-source-git-commit: 93d06cb917680f9cabc1bad6be0f9cd843449d07
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '1468'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
@@ -22,11 +22,11 @@ O Adobe Workfront Fusion Devtool ajuda você a entender e solucionar problemas d
 Para obter uma introdução em vídeo e uma apresentação do Fusion Devtool, consulte
 
 * [Ferramenta de Desenvolvimento Fusion](https://video.tv.adobe.com/v/3427031/){target=_blank}
-* [Apresentação de Devtool](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=pt-BR)
+* [Apresentação de Devtool](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=en)
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -34,22 +34,22 @@ Para obter uma introdução em vídeo e uma apresentação do Fusion Devtool, co
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações desta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -111,10 +111,12 @@ O Live Stream exibe o que está acontecendo em segundo plano quando você clica 
       <td role="rowheader"> <p>Limpar lista de solicitações </p> </td> 
       <td> <p>Clique no ícone de lixeira no canto superior direito do painel esquerdo do Devtool para limpar a lista de solicitações registradas pelo Workfront Fusion Devtool. </p> </td> 
      </tr> 
-     <!--<tr> 
+     <!--
+     <tr>
       <td role="rowheader"> <p>Enable Console Logging</p> </td> 
       <td> <p>Click the computer icon <img src="assets/console-computer-icon.png"> in the top-right corner of the Devtool's left panel.</p> <p>Logging in the console is enabled when the computer icon is green.</p> </td> 
-     </tr>-->
+     </tr>
+     -->
      <tr> 
       <td role="rowheader"> <p>Recuperar a solicitação no formato JSON bruto ou cURL</p> </td> 
       <td> 
@@ -264,7 +266,7 @@ Copia o nome do módulo selecionado para a área de transferência.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Módulo] </td> 
+   <td role="rowheader">[!UICONTROL Module] </td> 
    <td> <p>Selecione o módulo do qual deseja copiar o nome.</p> </td> 
   </tr> 
  </tbody> 
@@ -298,7 +300,7 @@ Pesquisa variáveis especificadas no cenário e as substitui por uma nova variá
    <td> <p>Localize o preenchimento de variável que deseja substituir a variável no módulo de variáveis no cenário e copie-o para este campo ([!UICONTROL Variável a Ser Localizada]). No campo, ele é exibido com chaves duplas. Exemplo: <code>&#123;&#123;5.value&#125;&#125;</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Módulo]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Module]</p> </td> 
    <td> <p>Selecione o módulo de variáveis no qual deseja substituir a variável. Se nenhum módulo for selecionado, a variável será substituída em todo o cenário.</p> </td> 
   </tr> 
  </tbody> 

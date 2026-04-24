@@ -4,7 +4,7 @@ description: O Adobe Workfront Fusion exige uma licença do Adobe Workfront Fusi
 author: Becky
 feature: Workfront Fusion
 exl-id: 3b445b50-5812-4ded-9788-f467991e0b52
-source-git-commit: a5a1f8f596b55b2f1eca9d7874b5885e435b2489
+source-git-commit: 805e3e0d194d0f73caa1455ea1dadf1d799bdc7a
 workflow-type: tm+mt
 source-wordcount: '1957'
 ht-degree: 26%
@@ -137,7 +137,9 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
   </tr> 
   <tr> 
    <td> <p>Registro</p> </td> 
-   <td> <p>Insira os valores para o novo registro. Os campos disponíveis são baseados na tabela selecionada.</p> <!--<p>For more information on field types, search for "Supported field types" in the Airtable documentation.</p> 
+   <td> <p>Insira os valores para o novo registro. Os campos disponíveis são baseados na tabela selecionada.</p> 
+   <!--
+   <p>For more information on field types, search for "Supported field types" in the Airtable documentation.</p> 
     <ul> 
      <li> <p><strong>Text</strong>: string</p> <p>A single line of text.</p> </li> 
      <li> <p><strong>Long text</strong>: string</p> <p>Multiple lines of text, which may contain "mention tokens", for example:</p><pre>&lt;airtable:mention id="menE1i9oBaGX3DseR"&gt;@Alex&lt;/airtable:mention&gt;</pre> </li> 
@@ -160,7 +162,9 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
      <li><strong>Lookup</strong>: Array of long text fields</li> 
      <li><strong>Autonumber</strong>: Automatically incremented unique counter for each record.</li> 
      <li> <p><strong>Barcode</strong>: The barcode object may contain the following two properties, both of which are optional.</p> <p>Barcode data (text)</p> <p>Barcode symbology, for example, "upce" or "code39" (type)</p> </li> 
-    </ul> --></td> 
+    </ul> 
+   -->
+   </td> 
   </tr> 
   <tr> 
    <td>Links inteligentes</td> 
@@ -304,7 +308,9 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
   </tr> 
   <tr> 
    <td> <p>Registro</p> </td> 
-   <td> <p>Insira os valores para o novo registro. Os campos disponíveis dependem da tabela selecionada.</p> <!--<p>In order to delete the content of the field, use the erase function. </p>  <p>Field types (via airtable.com/api):</p> 
+   <td> <p>Insira os valores para o novo registro. Os campos disponíveis dependem da tabela selecionada.</p> 
+   <!--
+   <p>In order to delete the content of the field, use the erase function. </p>  <p>Field types (via airtable.com/api):</p> 
     <ul> 
      <li> <p><strong>Text</strong>: string</p> <p>A single line of text.</p> </li> 
      <li> <p><strong>Long text</strong>: string</p> <p>The string can contain multiple lines of text with "mention tokens." For example:</p><pre>&lt;airtable:mention id="menE1i9oBaGX3DseR"&gt;@Alex&lt;/airtable:mention&gt;</pre> </li> 
@@ -327,7 +333,9 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
      <li><strong>Lookup</strong>: Array of long text fields</li> 
      <li><strong>Autonumber</strong>: Automatically incremented unique counter for each record.</li> 
      <li> <p><strong>Barcode</strong>: The barcode object may contain the following two properties, both of which are optional.</p> <p>Barcode data (text)</p> <p>Barcode symbology, for example, "upce" or "code39" (type)</p> </li> 
-    </ul> --></td> 
+    </ul> 
+   -->
+   </td> 
   </tr> 
   <tr> 
    <td>Links inteligentes</td> 
@@ -368,7 +376,9 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
   </tr> 
   <tr> 
    <td> <p>Registro</p> </td> 
-   <td> <p>Insira os valores para o novo registro. Os campos disponíveis dependem da tabela selecionada.</p> <!-- <p>In order to delete the content of the field, use the erase function. </p>  <p>Field types (via airtable.com/api):</p> 
+   <td> <p>Insira os valores para o novo registro. Os campos disponíveis dependem da tabela selecionada.</p> 
+   <!-- 
+   <p>In order to delete the content of the field, use the erase function. </p>  <p>Field types (via airtable.com/api):</p> 
     <ul> 
      <li> <p><strong>Text</strong>: string</p> <p>A single line of text.</p> </li> 
      <li> <p><strong>Long text</strong>: string</p> <p>The string can contain multiple lines of text with "mention tokens." For example:</p><pre>&lt;airtable:mention id="menE1i9oBaGX3DseR"&gt;@Alex&lt;/airtable:mention&gt;</pre> </li> 
@@ -391,7 +401,9 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
      <li><strong>Lookup</strong>: Array of long text fields</li> 
      <li><strong>Autonumber</strong>: Automatically incremented unique counter for each record.</li> 
      <li> <p><strong>Barcode</strong>: The barcode object may contain the following two properties, both of which are optional.</p> <p>Barcode data (text)</p> <p>Barcode symbology, for example, "upce" or "code39" (type)</p> </li> 
-    </ul> --></td> 
+    </ul> 
+   -->
+   </td> 
   </tr> 
   <tr> 
    <td>Links inteligentes</td> 
