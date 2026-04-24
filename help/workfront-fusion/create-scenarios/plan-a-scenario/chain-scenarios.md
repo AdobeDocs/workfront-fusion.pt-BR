@@ -4,9 +4,9 @@ description: É possível encadear cenários, permitindo que um cenário acione 
 author: Becky
 feature: Workfront Fusion
 exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
-source-git-commit: 34f24f26675fbdf0dd84223cbe8e2d1c3b1aa8cf
+source-git-commit: 0390bb875eb10278967d7d1c9cd61e5243e5f37e
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1266'
 ht-degree: 12%
 
 ---
@@ -66,45 +66,45 @@ Considere os seguintes exemplos de casos de uso para cenários de encadeamento:
 
 * **Procurar e criar um registro**: por exemplo, você pode criar um cenário que procure um usuário. Se existirem, o cenário os adicionará como aprovador com acesso que eles precisam revisar e aprovar. Se não existirem, o cenário criará uma solicitação para o administrador integrar um novo usuário.
 
-## Exibição do histórico de execução para cenários encadeados
+## Viewing execution history for chained scenarios
 
-Você pode exibir o histórico de execução de cenários encadeados ao exibir o histórico de cada cenário incluído na cadeia. Por exemplo, o histórico de execução do cenário principal incluiria informações sobre módulos e dados processados diretamente no cenário principal. Para exibir o histórico de execução de módulos e dados processados em um cenário filho, abra o cenário filho e exiba o histórico de execução.
+You can view execution history for chained scenarios by viewing the history of each scenario included in the chain. For example, the parent scenario&#39;s execution history would include information about modules and data processed directly in the parent scenario. To view execution history for modules and data processed in a child scenario, open the child scenario and view the execution history there.
 
-Recomendamos usar o botão **Ir para o cenário filho** no módulo Chamar um cenário filho para ir rapidamente para o cenário filho, onde você pode visualizar seu histórico de execução. O cenário filho é aberto em outra janela do navegador, permitindo que você veja cenários pai e filho ao mesmo tempo.
+We recommend using the **Go to the child scenario** button in the Call a child scenario module to quickly go to the child scenario, where you can view its execution history. The child scenario opens in another browser window, allowing you to see parent and child scenarios at the same time.
 
-![Ir para o botão de cenário filho](assets/go-to-the-child-button.png)
+![Go to the child scenario button](assets/go-to-the-child-button.png)
 
-## Erros e execuções incompletas
+## Errors and incomplete executions
 
 ### Tratamento de erros
 
-Se ocorrer um erro no cenário filho, isso poderá afetar a transferência de dados de volta para o pai.
+If the child scenario errors out, that may affect getting data back to your parent.
 
-Recomendamos configurar o tratamento de erros no cenário filho para garantir que, se algo der errado, o cenário pai não fique parado aguardando a resposta do cenário filho.
+We recommend configuring error handling in the child scenario to ensure that if something goes wrong in the child scenario, the parent scenario is not stuck waiting for the response from the child scenario.
 
 ## Práticas recomendadas
 
-Considere as práticas recomendadas a seguir ao encadear um cenário.
+Consider the following best practices when chaining a scenario.
 
-### Evitar recursão ao encadear cenários
+### Avoid recursion when chaining scenarios
 
 A recursão ocorre quando um cenário aciona uma nova execução de si mesmo, que aciona uma nova execução, e assim por diante em um loop infinito.
 
 A recursão pode causar problemas de desempenho tanto para a organização responsável pelo cenário recursivo quanto para outras organizações.
 
-Ao encadear cenários, siga estas práticas para evitar recursão:
+When chaining scenarios, follow these practices to avoid recursion:
 
-* Verifique se **os cenários filho não podem disparar o cenário pai**. Por exemplo, se um cenário principal for acionado quando uma solicitação for criada, verifique se os cenários secundários não criam solicitações.
-* Certifique-se de que **os cenários filho não façam chamadas entre si**. Por exemplo, se o cenário-filho A chamar o cenário-filho B, certifique-se de que o cenário-filho B não chame o cenário-filho A.
-* Verifique se **um cenário não pode chamar a si mesmo**. Por exemplo, um cenário é acionado quando uma tarefa é criada e esse cenário cria duas tarefas. As tarefas recém-criadas acionam o cenário novamente, criando quatro novas tarefas. Toda vez que uma tarefa é criada, o cenário é acionado, e toda vez que o cenário é executado, o número de tarefas dobra. O número de tarefas aumenta exponencialmente.
+* Ensure that **child scenarios cannot trigger the parent scenario**. For example, if a parent scenario is triggered when a request is created, ensure that the child scenarios do not create requests.
+* Ensure that **child scenarios do not call each other**. For example, If child scenario A calls child scenario B, ensure that child scenario B does not call child scenario A.
+* Ensure that **a scenario cannot call itself**. Por exemplo, um cenário é acionado quando uma tarefa é criada e esse cenário cria duas tarefas. As tarefas recém-criadas acionam o cenário novamente, criando quatro novas tarefas. Toda vez que uma tarefa é criada, o cenário é acionado, e toda vez que o cenário é executado, o número de tarefas dobra. O número de tarefas aumenta exponencialmente.
 
 >[!IMPORTANT]
 >
 >* **Quando um cenário está causando recursão, ele é desativado pela equipe de engenharia do Fusion para evitar mais problemas de desempenho.**
 >* Como a recursão é resultado do próprio design do cenário, é preciso projetar os cenários de forma que eles não incluam ações que acionem o próprio cenário.
->* Você pode exibir um diagrama dos relacionamentos entre cenários pai e filho.
->   Para obter instruções, consulte [Exibir relações de cenário encadeadas](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md).
+>* You can view a diagram of the relationships between parent and child scenarios.
+>   For instructions, see [View chained scenario relationships](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md).
 
-### Use o tratamento de erros para garantir uma resposta
+### Use error handling to ensure a response
 
-Como o cenário pai está aguardando uma resposta do cenário filho antes de poder continuar, você deve garantir que o cenário filho seja criado para que ele forneça uma resposta mesmo se encontrar um erro.
+Because the parent scenario is waiting for a response from the child scenario before it can continue, you must ensure that the child scenario is built so that it will provide a response even if it encounters an error.

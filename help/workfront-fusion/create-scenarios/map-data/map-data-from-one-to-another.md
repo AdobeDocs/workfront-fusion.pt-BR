@@ -1,13 +1,13 @@
 ---
 title: Mapear informações de um módulo para outro
-description: O mapeamento é o processo de atribuir as saídas de um módulo, estruturadas em itens, aos campos de entrada de outro módulo.
+description: Mapeamento é o processo de atribuir as saídas de um módulo, estruturadas em itens, aos campos de entrada de outro módulo.
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e3f7729-f48e-451e-a90b-d680c9e3bcbc
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: 8de3e365ff7ff91f4b29fb8a298f3b846de0a980
 workflow-type: tm+mt
-source-wordcount: '774'
-ht-degree: 0%
+source-wordcount: '777'
+ht-degree: 17%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 Mapeamento é o processo de atribuir as saídas de um módulo aos campos de entrada de outro módulo.
 
-O painel de mapeamento é exibido ao clicar em um campo, onde é possível inserir um valor emitido de um módulo anterior em um cenário.
+The mapping panel displays when you click a field where you can insert a value outputted from a preceding module in a scenario.
 
-Também é possível criar uma fórmula usando qualquer combinação de funções e itens mapeados do painel de mapeamento com texto estático digitado. Esses elementos podem ser aninhados um dentro do outro.
+You can also create a formula using any combination of functions and mapped items from the mapping panel with static text that you type. These elements can be nested inside each other.
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -29,58 +29,58 @@ Também é possível criar uma fórmula usando qualquer combinação de funçõe
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
-## Mapear um item
+## Map an item
 
-Depois de criar uma sequência de módulos vinculando dois ou mais deles, cada módulo pode processar valores de itens gerados pelos módulos que o precedem.
+After you have created a sequence of modules by linking two or more of them, each module can process values of items outputted by the modules that precede it.
 
-Para atribuir itens de saída aos campos de entrada de um módulo:
+To assign output items to a module&#39;s input fields:
 
 1. Clique na guia **[!UICONTROL Cenários]** no painel esquerdo.
 1. Selecione o cenário em que deseja mapear dados.
 1. Clique em qualquer lugar no cenário para entrar no editor de cenários.
-1. Clique no módulo que deve processar a saída dos módulos anteriores.
-1. No painel Configurações do módulo que é exibido, clique em um campo onde você deseja usar o valor de um item emitido de um módulo anterior.
+1. Click on the module that should process the output of the preceding module or modules.
+1. In the Module settings panel that displays, click a field where you want to use the value of an item outputted from a preceding module.
 
    O painel de mapeamento é aberto.
 
-1. (Opcional) Para pesquisar um campo específico no painel de mapeamento, clique na barra de pesquisa do painel de mapeamento e digite o termo que deseja pesquisar. Clique no campo quando ele aparecer na lista.
+1. (Optional) To search for a particular field in the mapping panel, click the mapping panel search bar and type in the term you want to search for. Click the field when it appears in the list.
 
-   Os resultados da pesquisa contêm o termo de pesquisa e não diferenciam maiúsculas de minúsculas.
-1. Para selecionar um valor que seja um elemento de uma coleção, clique na seta ao lado dessa coleção e selecione o elemento quando ele for exibido.
+   Search results contain the search term and are not case sensitive.
+1. To select a value that is an element of a collection, click the arrow next to that collection, then select the element when it appears.
 
-   ![Elemento de coleção](assets/collection-dropdown.png)
+   ![Collection element](assets/collection-dropdown.png)
 
-1. Clique em um item no painel de mapeamento para inseri-lo no campo.
+1. Click an item from the mapping panel to insert it into the field.
 
-Para obter mais informações, consulte [Configurar um módulo](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md).
+For more information, see [Configure a module](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md).
 
 
 ## Solução de problemas
 
-### Problema: itens ausentes no painel de mapeamento
+### Problem: Missing items in the mapping panel
 
-O painel de mapeamento exibe itens de saída de módulos anteriores. Ocasionalmente, alguns itens podem estar ausentes nesse painel. Você pode executar o módulo cuja saída está ausente no editor de cenários, e o painel de mapeamento pode então incluir esses itens em módulos posteriores. O procedimento exato difere dependendo do tipo do módulo
+The mapping panel displays output items from previous modules. Occasionally, some items might be missing from this panel. You can run the module that is missing output in the scenario editor, and the mapping panel can then include those items in later modules. The exact procedure differs depending on the module&#39;s type.
 
-* [Acionador instantâneo](#instant-trigger)
+* [Instant trigger](#instant-trigger)
 * [Acionador de sondagem](#polling-trigger)
 * [Outros módulos](#other-modules)
 

@@ -4,9 +4,9 @@ description: Os administradores do Fusion podem visualizar um painel que mostra 
 author: Becky
 feature: Workfront Fusion
 exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
-source-git-commit: 1d8504b10d9ca74a5df5532232cda235c67b0185
+source-git-commit: 6762806f17a0fc55531b647a84901b8ca572a997
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '694'
 ht-degree: 7%
 
 ---
@@ -79,7 +79,7 @@ Este gráfico exibe execuções por cenário. Cores diferentes representam cená
 
 ## Exibir o Painel de Desempenho do Fusion
 
-1. No Fusion, clique em Desempenho no painel de navegação esquerdo.
+1. No Fusion, clique em **Desempenho** na navegação à esquerda.
 
    O Painel é aberto.
 

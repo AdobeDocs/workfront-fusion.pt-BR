@@ -4,9 +4,9 @@ description: Em alguns cenários, é necessário trabalhar somente com pacotes q
 author: Becky
 feature: Workfront Fusion
 exl-id: b507dca0-0e85-4ab7-8310-b6e6bcb7ae12
-source-git-commit: bec838423e13c3efe4f3d002f824c203cad6ecf8
+source-git-commit: 8de3e365ff7ff91f4b29fb8a298f3b846de0a980
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '528'
 ht-degree: 19%
 
 ---
@@ -47,7 +47,7 @@ Você pode adicionar um filtro entre dois módulos e verificar se os pacotes rec
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações desta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -71,7 +71,7 @@ Você deve adicionar ambos os módulos a um cenário antes de poder adicionar um
    >É possível inserir valores em campos de filtro no painel de mapeamento
    >Para obter mais informações sobre mapeamento, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-   Por exemplo, se você deseja que o filtro passe arquivos no Adobe Workfront terminando em XML, digite **[!UICONTROL Nome do arquivo]** na primeira caixa e .**[!UICONTROL xml]** na segunda caixa. No menu suspenso entre elas, você selecionaria **[!UICONTROL Termina com (sem distinção entre maiúsculas e minúsculas)]**. Esse filtro se aplicaria aos pacotes recebidos do primeiro módulo (Workfront). Somente pacotes contendo arquivos XML passariam para o módulo seguinte.
+   Por exemplo, se você deseja que o filtro passe arquivos no Adobe Workfront terminando em XML, você deve digitar **[!UICONTROL Nome do arquivo]** na primeira caixa e .**[!UICONTROL xml]** na segunda caixa. No menu suspenso entre elas, você selecionaria **[!UICONTROL Termina com (sem distinção entre maiúsculas e minúsculas)]**. Esse filtro se aplicaria aos pacotes recebidos do primeiro módulo (Workfront). Somente pacotes contendo arquivos XML passariam para o módulo seguinte.
 
    ![Configurar um filtro](assets/set-up-filter-box.png)
 
@@ -87,7 +87,7 @@ Você pode copiar um filtro existente e colá-lo em outro lugar do cenário.
 1. Clique com o botão direito do mouse nos pontos de conexão entre módulos onde o filtro está localizado.
 1. Selecione **Copiar filtro**.
 1. Clique com o botão direito do mouse nos pontos de conexão entre módulos nos quais deseja colar o filtro.
-1. Selecionar **Colar filtro
+1. Selecionar filtro **Colar**
 1. (Opcional) Para ajustar o filtro, clique no ícone de filtro ou rótulo e insira valores conforme descrito em [Adicionar um filtro entre dois módulos](#add-a-filter-between-two-modules) neste artigo.
 
 

@@ -4,10 +4,10 @@ description: Com os  [!DNL Adobe Campaign] módulos, você pode iniciar um cená
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+source-git-commit: bbd1ec27e52127c8814188612a1e8d5cfab0cd25
 workflow-type: tm+mt
-source-wordcount: '1401'
-ht-degree: 36%
+source-wordcount: '1449'
+ht-degree: 35%
 
 ---
 
@@ -57,7 +57,7 @@ Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Li
 
 Você deve adicionar os endereços IP do Fusion a [!DNL Adobe Campaign].
 
-* Para obter instruções sobre como adicionar endereços IP ao incluo na lista de permissões do Campaign, consulte [Adicionar endereços IP ao incluo na lista de permissões](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list) na documentação do Adobe Campaign.
+* Para obter instruções sobre como adicionar endereços IP ao incluo na lista de permissões do Campaign, consulte [Adicionar endereços IP ao incluo na lista de permissões](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list) na documentação do Adobe Campaign.
 * Para obter uma lista de endereços IP a serem adicionados ao incluo na lista de permissões, consulte [Configurar Endereços IP para Fusion no incluo na lista de permissões de sua organização](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md).
 
 ## Informações da API do Adobe Campaign
@@ -81,7 +81,7 @@ O conector do Adobe Campaign usa o seguinte:
 >
 >É altamente recomendável criar uma conexão de servidor para servidor. A Adobe Campaign atualizou a API para aceitar somente conexões servidor para servidor. Se você estiver se conectando ao Campaign versão 8 ou superior, **deverá** criar uma conexão servidor a servidor.
 >
->Para obter mais informações sobre os novos requisitos de conexão do Campaign, consulte [Migração de operadores técnicos do Campaign para o Adobe Developer Console](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/ims-migration.html?lang=pt-BR) na documentação do Campaign.
+>Para obter mais informações sobre os novos requisitos de conexão do Campaign, consulte [Migração de operadores técnicos do Campaign para o Adobe Developer Console](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/ims-migration.html) na documentação do Campaign.
 
 1. Em qualquer módulo [!DNL Adobe Campaign], clique em **[!UICONTROL Adicionar]** ao lado do campo [!UICONTROL Conexão].
 1. Preencha os seguintes campos:
@@ -254,11 +254,13 @@ Este módulo faz uma chamada de API personalizada para a API [!DNL Adobe Campaig
     <tr>
       <td role="rowheader">[!UICONTROL Action]</td>
       <td><p>Selecione a ação que você deseja que a chamada de API execute.</p>
-      <p>[!UICONTROL Executar consulta]</p>
-      <p>[!UICONTROL Gravar]</p>
-      <p>[!UICONTROL Obter entidade se mais recente]</p>
-      <p>[!UICONTROL Selecionar tudo]</p>
-      <p>[!UICONTROL Evento Push]</p>
+      <ul>
+      <li><p>[!UICONTROL Executar consulta]</p></li>
+      <li><p>[!UICONTROL Gravar]</p></li>
+      <li><p>[!UICONTROL Obter entidade se mais recente]</p></li>
+      <li><p>[!UICONTROL Selecionar tudo]</p></li>
+      <li><p>[!UICONTROL Evento Push]</p></li>
+      </ul>
     </td>
     </tr>
     <tr>
@@ -280,7 +282,7 @@ Este módulo faz uma chamada de API personalizada para a API [!DNL Adobe Campaig
 
 Este módulo de ação executa uma ação selecionada em um objeto na API [!DNL Adobe Campaign].
 
-Para obter informações sobre ações e campos específicos, consulte [[!DNL Adobe Campaign] - Documentação da API](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=pt-BR).
+Para obter informações sobre ações e campos específicos, consulte [[!DNL Adobe Campaign] - Documentação da API](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html).
 
 <table style="table-layout:auto"> 
  <col> 

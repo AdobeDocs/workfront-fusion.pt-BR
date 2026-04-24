@@ -4,9 +4,9 @@ description: Com os módulos do Adobe I/O Events, é possível iniciar um cenár
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+source-git-commit: bbd1ec27e52127c8814188612a1e8d5cfab0cd25
 workflow-type: tm+mt
-source-wordcount: '1091'
+source-wordcount: '1099'
 ht-degree: 44%
 
 ---
@@ -161,8 +161,6 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 * [Pesquisas](#searches)
 
 ### Acionadores
-
-<!--Becky start here-->
 
 #### Criar um registro de evento
 
@@ -358,7 +356,6 @@ Este módulo de pesquisa recupera todos os eventos de um registro de um journal.
        </tr>
      </tbody>
    </table>
-&lt;!—
 
 Monitorar eventos
 

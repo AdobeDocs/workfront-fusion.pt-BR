@@ -3,19 +3,19 @@ content-type: reference
 product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: get-started-with-workfront-fusion-2-0
-title: Adicionar usuários ao Adobe Workfront Fusion por meio da Adobe Admin Console
+title: Adicionar usuários ao Adobe Workfront Fusion por meio do Adobe Admin Console
 description: Você pode adicionar um usuário ao Adobe Admin Console e atribuí-lo ao Adobe Workfront Fusion ou atribuir um usuário existente no Adobe Admin Console ao Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 exl-id: 7cb1c1a7-3c7a-459a-818f-d9cefcb9988b
-source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
+source-git-commit: 6762806f17a0fc55531b647a84901b8ca572a997
 workflow-type: tm+mt
-source-wordcount: '605'
-ht-degree: 1%
+source-wordcount: '607'
+ht-degree: 21%
 
 ---
 
-# Adicionar usuários ao Adobe Workfront Fusion por meio da Adobe Admin Console
+# Adicionar usuários ao Adobe Workfront Fusion por meio do Adobe Admin Console
 
 Você pode adicionar um usuário ao [!DNL Adobe Admin Console] e atribuí-lo ao Adobe Workfront Fusion, ou atribuir um usuário existente no [!DNL Adobe Admin Console] ao Workfront Fusion.
 
@@ -23,7 +23,7 @@ Para assistir a um vídeo que descreve o Workfront Fusion no [!DNL Adobe Admin C
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -31,16 +31,16 @@ Para assistir a um vídeo que descreve o Workfront Fusion no [!DNL Adobe Admin C
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
@@ -58,7 +58,7 @@ Para assistir a um vídeo que descreve o Workfront Fusion no [!DNL Adobe Admin C
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações desta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -68,11 +68,11 @@ Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisit
 
 Antes de usar o [!DNL Admin Console] for Workfront, você deve receber um email convidando você para o console.
 
-1. Se você é novo no [!DNL Adobe] e recebeu um email informando que agora tem direitos de administrador para gerenciar software e serviços do [!DNL Adobe] para sua organização, clique no botão no email para criar uma conta do [!DNL Adobe] e abrir o [!DNL Admin Console].
+* Se você é novo no [!DNL Adobe] e recebeu um email informando que agora tem direitos de administrador para gerenciar software e serviços do [!DNL Adobe] para sua organização, clique no botão no email para criar uma conta do [!DNL Adobe] e abrir o [!DNL Admin Console].
 
-   Ou
+  Ou
 
-   Se você já tiver uma conta do Adobe, vá para a [[!DNL Adobe Admin Console] página](https://adminconsole.adobe.com).
+  Se você já tiver uma conta do Adobe, vá para a [[!DNL Adobe Admin Console] página](https://adminconsole.adobe.com).
 
 
 ## Adicionar um novo usuário ao [!DNL Adobe Admin Console] e ao Workfront Fusion
@@ -99,7 +99,7 @@ Antes de usar o [!DNL Admin Console] for Workfront, você deve receber um email 
 
    O usuário é criado no Workfront Fusion.
 
-1. (Opcional) Continue para [Alterar o nível de acesso de um usuário no Workfront Fusion](#change-a-users-access-level-in-workfront-fusion)
+1. (Opcional) Continue para [Alterar o nível de acesso de um usuário no Workfront Fusion](#change-a-users-access-level-in-workfront-fusion).
 
 ## Alterar o nível de acesso de um usuário no Workfront Fusion
 
