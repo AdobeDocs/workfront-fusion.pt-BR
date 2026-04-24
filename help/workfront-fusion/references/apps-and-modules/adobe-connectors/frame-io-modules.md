@@ -109,7 +109,7 @@ Você pode se conectar a [!DNL Frame.io] usando um token de API ou usando o OAut
 
 ### Conectar-se a [!DNL Frame.io] usando um token de API
 
-Para conectar sua conta do [!DNL Frame.io] ao Workfront Fusion usando um token de API, você deve criar o token de API em sua conta do [!DNL Frame.io] e inseri-lo na caixa de diálogo [!DNL Frame.io]Criar uma conexão[!UICONTROL  do Workfront Fusion ].
+Para conectar sua conta do [!DNL Frame.io] ao Workfront Fusion usando um token de API, você deve criar o token de API em sua conta do [!DNL Frame.io] e inseri-lo na caixa de diálogo [!DNL Frame.io]Criar uma conexão[!UICONTROL &#x200B; do Workfront Fusion &#x200B;].
 
 1. Faça logon em sua conta do [!DNL Frame.io].
 1. Vá para a página **[!UICONTROL Tokens]** no [!DNL Frame.io] Developer.
