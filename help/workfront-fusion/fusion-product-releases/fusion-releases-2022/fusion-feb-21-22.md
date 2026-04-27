@@ -1,19 +1,20 @@
 ---
-title: 'Atividade de lançamento do Workfront Fusion: semana de terça-feira, 21 de fevereiro de 2022'
-description: 'Atividade de lançamento do Workfront Fusion: semana de terça-feira, 21 de fevereiro de 2022'
+title: 'Atividade de lançamento do Workfront Fusion: semana de 21 de fevereiro de 2022'
+description: 'Atividade de lançamento do Workfront Fusion: semana de 21 de fevereiro de 2022'
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: 9cafd129-3348-485c-87dd-db599b37bf08
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 61%
+source-wordcount: '146'
+ht-degree: 47%
 
 ---
 
-# Atividade de lançamento do Workfront Fusion: semana de terça-feira, 21 de fevereiro de 2022
+# Atividade de lançamento do Workfront Fusion: semana de 21 de fevereiro de 2022
 
 Esta página descreve todos os aprimoramentos realizados no Adobe Workfront Fusion na semana de terça-feira, 21 de fevereiro de 2022.
 

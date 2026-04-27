@@ -1,19 +1,20 @@
 ---
-title: 'Atividade de lançamento do Workfront Fusion: semana de terça-feira, 15 de novembro de 2021'
-description: 'Atividade de lançamento do Workfront Fusion: semana de terça-feira, 15 de novembro de 2021'
+title: 'Atividade de lançamento do Workfront Fusion: semana de 15 de novembro de 2021'
+description: 'Atividade de lançamento do Workfront Fusion: semana de 15 de novembro de 2021'
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: f523c1eb-682a-45af-8945-a1815422fbea
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 44%
+source-wordcount: '184'
+ht-degree: 34%
 
 ---
 
-# Atividade de lançamento do Workfront Fusion: semana de terça-feira, 15 de novembro de 2021
+# Atividade de lançamento do Workfront Fusion: semana de 15 de novembro de 2021
 
 Esta página descreve todos os aprimoramentos realizados no Adobe Workfront Fusion na semana de terça-feira, 15 de novembro de 2021.
 
