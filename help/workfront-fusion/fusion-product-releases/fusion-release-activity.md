@@ -9,10 +9,10 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: c37aea95-7cc3-4939-a4d7-9a6a75557b85
-source-git-commit: 4a089138a9d3292c6044e4e9d5a2fa106c72c309
+source-git-commit: 97545ffb73017e147b73c32776ca890761c0f235
 workflow-type: tm+mt
-source-wordcount: '1183'
-ht-degree: 100%
+source-wordcount: '1462'
+ht-degree: 92%
 
 ---
 
@@ -24,28 +24,29 @@ O Adobe Workfront Fusion conecta perfeitamente aplicativos e serviços da Web pa
 
 ### Abril de 2026
 
-* [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 13 de abril de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-4-13.md)
+* [Atividade de lançamento do Workfront Fusion: semana de 27 de abril de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-4-27.md)
+* [Atividade de lançamento do Workfront Fusion: semana de 13 de abril de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-4-13.md)
 
 ### Março de 2026
 
-* [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 30 de março de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-30.md)
-* [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 23 de março de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-23.md)
-* [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 16 de março de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-16.md)
-* [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 9 de março de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-9.md)
-* [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 2 de março de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-2.md)
+* [Atividade de lançamento do Workfront Fusion: semana de 30 de março de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-30.md)
+* [Atividade de lançamento do Workfront Fusion: semana de 23 de março de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-23.md)
+* [Atividade de lançamento do Workfront Fusion: semana de 16 de março de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-16.md)
+* [Atividade de lançamento do Workfront Fusion: semana de 9 de março de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-9.md)
+* [Atividade de lançamento do Workfront Fusion: semana de 2 de março de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-2.md)
 
 
 ### Fevereiro de 2026
 
-* [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 23 de fevereiro de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-23.md)
-* [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 16 de fevereiro de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-16.md)
-* [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 9 de fevereiro de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-9.md)
-* [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 2 de fevereiro de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-2.md)
+* [Atividade de lançamento do Workfront Fusion: semana de 23 de fevereiro de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-23.md)
+* [Atividade de lançamento do Workfront Fusion: semana de 16 de fevereiro de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-16.md)
+* [Atividade de lançamento do Workfront Fusion: semana de 9 de fevereiro de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-9.md)
+* [Atividade de lançamento do Workfront Fusion: semana de 2 de fevereiro de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-2.md)
 
 
 ### Janeiro de 2026
 
-* [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 26 de janeiro de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-26.md)
+* [Atividade de lançamento do Workfront Fusion: semana de 26 de janeiro de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-26.md)
 * [Atividade de lançamento do Workfront Fusion: semana de terça-feira, 19 de janeiro de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-19.md)
 * [Atividade de lançamento do Workfront Fusion: semana de 12 de janeiro de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-12.md)
 
