@@ -5,9 +5,9 @@ description: Você pode definir configurações específicas para cenários no p
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 3e999de9127d6ce320e313f26bf143bf13637ad1
+source-git-commit: e63ec5927f2844f94fd0c7cd3f9890b7d236aede
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1306'
 ht-degree: 7%
 
 ---
@@ -41,7 +41,7 @@ Você pode definir configurações específicas para cenários no painel configu
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações desta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -58,6 +58,10 @@ Para obter mais detalhes sobre as informações desta tabela, consulte [Requisit
 1. Ative ou desative as configurações de Cenário conforme necessário. Consulte [Opções de configurações do cenário](#scenario-settings-options) abaixo.
 
 ## Opções de configurações de cenário
+
+### Descrição
+
+Aqui, você pode inserir uma descrição para o cenário, que aparecerá na lista Cenários. As descrições são limitadas a 240 caracteres.
 
 ### [!UICONTROL Processamento sequencial]
 

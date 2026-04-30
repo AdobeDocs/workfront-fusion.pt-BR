@@ -4,10 +4,11 @@ title: Gerenciar cenários na área Cenários
 description: Esta seção contém artigos relacionados ao gerenciamento de cenários no Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 8801b8c175b3cf6ed7b0dc98a8b3d269ca2bbd2b
+exl-id: 4e2f1bbb-fcd6-4724-bd0f-c028f3ea8d69
+source-git-commit: e63ec5927f2844f94fd0c7cd3f9890b7d236aede
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 21%
+source-wordcount: '463'
+ht-degree: 19%
 
 ---
 
@@ -54,6 +55,9 @@ Para obter mais detalhes sobre as informações contidas nesta tabela, consulte 
 1. Para pesquisar um cenário específico, comece digitando na barra de pesquisa. Os cenários são filtrados à medida que você digita.
 1. Para ativar ou desativar um cenário, localize o cenário na lista e alterne na coluna **Status** para esse cenário.
 1. Para ir diretamente para a página Detalhes de um cenário, localize o cenário na lista e clique em **Abrir** na linha desse cenário.
+1. Para adicionar uma descrição a um cenário, clique na coluna Descrição desse cenário e insira uma descrição.
+
+   As descrições podem ter até 240 caracteres.
 1. Para clonar um cenário, clique na caixa de seleção na linha desse cenário e selecione **Clonar** na barra localizada na parte inferior da tela.
 
    Para obter mais informações sobre cenários de clonagem, consulte [Copiar um cenário por clonagem](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md#copy-a-scenario-by-cloning) no artigo Copiar módulos ou cenários.
@@ -61,4 +65,3 @@ Para obter mais detalhes sobre as informações contidas nesta tabela, consulte 
 1. Para atribuir um ou mais cenários a um pool de trabalhadores, clique na caixa de seleção ao lado de cada cenário que você deseja atribuir a um pool e clique em **Atribuir ao Pool de Trabalhadores** na barra na parte inferior da tela. Selecione o pool de trabalhadores ao qual você deseja atribuir os cenários.
 1. Para excluir um cenário, clique na caixa de seleção ao lado do cenário que deseja excluir e clique em **Excluir** na barra na parte inferior da página.
 1. Para ocultar as colunas da lista, clique no ícone **Colunas** ![Colunas](assets/glist-column.png) e marque ou desmarque as caixas ao lado dos nomes das colunas.
-
