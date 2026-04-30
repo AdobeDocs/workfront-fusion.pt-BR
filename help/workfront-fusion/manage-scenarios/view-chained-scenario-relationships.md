@@ -3,10 +3,11 @@ title: Exibir relacionamentos de cenário encadeados
 description: Você pode criar um mapa dos relacionamentos entre cenários pai e filho.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: e7b12ec51474440990cc28996bc70fd97688b082
+exl-id: 0782c6b1-42a5-48de-bfa0-3ced6ed2bf7f
+source-git-commit: aee2b35919e240cce5346df6d94a610c34b26e88
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 20%
+source-wordcount: '485'
+ht-degree: 18%
 
 ---
 
@@ -88,5 +89,6 @@ Para exibir o mapa de relacionamento de um cenário encadeado:
 
    * Se você estiver visualizando apenas uma parte do mapa, essa parte será mais escura no mapa simplificado.
    * O cenário atual está marcado em azul no mapa simplificado.
+1. Para exibir o histórico de execução da cadeia, clique na guia Histórico próximo à parte superior da exibição.
 
-
+   Você pode clicar em um histórico para exibir os dados específicos transmitidos entre os cenários encadeados.
