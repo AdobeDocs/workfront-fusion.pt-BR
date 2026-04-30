@@ -2,9 +2,9 @@
 user-guide-title: Documentação do Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Use os documentos, tutoriais e recursos adicionais para saber como implementar e usar efetivamente o Adobe Workfront Fusion em sua organização.
-source-git-commit: 97545ffb73017e147b73c32776ca890761c0f235
+source-git-commit: b13664750da1280aa2d6ac3c419271ea18cbe9fc
 workflow-type: tm+mt
-source-wordcount: '2386'
+source-wordcount: '2388'
 ht-degree: 93%
 
 ---
@@ -275,6 +275,7 @@ ht-degree: 93%
    * [Executar especialista de pontuação de cenários](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
    * [Excluir elementos do cenário](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
    * [Gerenciar cenários na área Cenários](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
+   * [Editar Webhooks](/help/workfront-fusion/manage-scenarios/edit-webhooks.md)
 * Criar cenários de prática {#build-practice-scenarios}
    * [Criar cenários de prática](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)
    * [Criar um cenário básico](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)

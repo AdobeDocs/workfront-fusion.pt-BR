@@ -4,10 +4,10 @@ description: Com os  [!DNL Adobe Workfront Planning] módulos, você pode inicia
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+source-git-commit: 35cbede1551bd8d158d2ef502b436bc2f760bcae
 workflow-type: tm+mt
-source-wordcount: '1992'
-ht-degree: 52%
+source-wordcount: '2106'
+ht-degree: 50%
 
 ---
 
@@ -40,7 +40,7 @@ Com os módulos [!DNL Adobe Workfront Planning], é possível acionar um cenári
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações desta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -214,6 +214,17 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 #### Monitorar eventos
 
 Este módulo de acionamento inicia um cenário quando um registro, tipo de registro ou espaço de trabalho é criado, atualizado ou excluído no Workfront Planning.
+
+>[!IMPORTANT]
+>
+>Você pode editar esse módulo posteriormente, o que editará o webhook.
+>
+>Considere o seguinte ao atualizar um webhook:
+>
+>* O webhook editado é tratado pelas assinaturas de evento do Workfront como uma nova assinatura. O histórico de assinaturas do evento não é preservado para a configuração de webhook anterior, pois essa é considerada uma assinatura de evento separada.
+>* A alternância da assinatura de evento antiga para a nova pode não estar perfeitamente sincronizada. Portanto, é possível receber um evento duas vezes (se a nova assinatura começar a ser executada antes da antiga) ou perder um evento (se a assinatura antiga for interrompida antes da nova começar a ser executada).
+>
+>Para obter mais informações sobre edição de webhooks, consulte [Editar webhooks](/help/workfront-fusion/manage-scenarios/edit-webhooks.md).
 
 <table style="table-layout:auto"> 
   <col/>
