@@ -8,9 +8,8 @@ description: Esta página descreve todos os aprimoramentos realizados no Adobe W
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: eb4b2371-f423-4efc-9e04-ca4be55767d2
-source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
+source-git-commit: a48a7f5f6577782dbc043e322a3c769781ffd63b
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 66%

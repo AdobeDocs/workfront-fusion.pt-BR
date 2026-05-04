@@ -1,22 +1,23 @@
 ---
 cloud: Experience Cloud
 solution: Workfront
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 feature-set: Workfront
 product: experience cloud
 type: Documentation
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/workfront-fusion.pt-BR
+git-repo: https://github.com/AdobeDocs/workfront-fusion.en
 index: true
-source-git-commit: 44fa136641cb57b85831482281386e83ddfc3690
+source-git-commit: 74d6389e51fdc00ea34187baa502798eba651a55
 workflow-type: tm+mt
-source-wordcount: '53'
-ht-degree: 98%
+source-wordcount: 69
+ht-degree: 75%
 
 ---
 
 
 # Metadados para uso interno
 
-O arquivo metadata.md inclui metadados em nível de repositório que são transmitidos para os arquivos TOC.md do guia do usuário no repositório. Se quiser alterar o conteúdo metadata.md para qualquer guia do usuário, faça isso em qualquer arquivo TOC.md.
+O arquivo metadata.md inclui metadados de nível de repositório que são repassados para os arquivos TOC.md do guia do usuário no repositório. Se quiser alterar o conteúdo do arquivo metadata.md para qualquer guia do usuário, faça isso em qualquer arquivo TOC.md.
 
-Acesse [Metadados](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/editing/user-guide-setup/metadata.html?lang=pt-BR) para consultar uma lista de valores válidos para **solução**, **produto** e **tipo**.
+Consulte [Metadados](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/editing/user-guide-setup/metadata.html) para obter uma lista de valores válidos para **solução**, **produto** e **tipo**.
