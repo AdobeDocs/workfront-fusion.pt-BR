@@ -4,9 +4,9 @@ description: As seguintes funções de data e hora estão disponíveis no painel
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
+source-git-commit: fc7f98c128f73a60d75750c6bd57ec8ddc31954c
 workflow-type: tm+mt
-source-wordcount: '2253'
+source-wordcount: '2375'
 ht-degree: 3%
 
 ---
@@ -294,6 +294,31 @@ Retorna a data mais antiga da lista.
 >[!ENDSHADEBOX]
 
 
+### [!UICONTROL endOfMonth(data)]
+
+[!BADGE Novo!]{type=Informative}
+
+Retorna o último momento do mês de uma data informada — o milissegundo final do último dia (23:59:59.999). Contabiliza automaticamente o número de dias do mês, incluindo anos bissextos.
+
+>[!BEGINSHADEBOX]
+
+**Exemplos:**
+
+* `endOfMonth("2016-06-15T12:30:00.000Z")`
+
+  Retorna 30T23:59:59.999Z/2016
+
+* `endOfMonth("2016-01-01T00:00:00.000Z")`
+
+  Retorna 31T23:59:59.999Z de 2016
+
+* `endOfMonth("2016-02-01T00:00:00.000Z")`
+
+  Retorna 29/02/2016:59:59.999Z
+
+>[!ENDSHADEBOX]
+
+
 ### [!UICONTROL hora(data)]
 
 [!BADGE Novo!]{type=Informative}
@@ -310,6 +335,35 @@ Retorna a hora da data como um número entre 0 e 23.
 * `hour("2016-12-08T00:00:00.000Z")`
 
   Retorna 0
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL isWeekend(data)]
+
+[!BADGE Novo!]{type=Informative}
+
+Retorna `true` se a data cair em um sábado ou domingo, e `false` para qualquer outro dia. O resultado é determinado no fuso horário configurado do cenário.
+
+>[!BEGINSHADEBOX]
+
+**Exemplos:**
+
+* `isWeekend("2016-12-10T00:00:00.000Z")`
+
+  Retorna verdadeiro (sábado)
+
+* `isWeekend("2016-12-11T00:00:00.000Z")`
+
+  Retorna verdadeiro (domingo)
+
+* `isWeekend("2016-12-12T00:00:00.000Z")`
+
+  Retorna falso (segunda-feira)
+
+* `isWeekend("2016-12-09T00:00:00.000Z")`
+
+  Retorna falso (sexta-feira)
 
 >[!ENDSHADEBOX]
 
@@ -370,6 +424,27 @@ Retorna o segundo da data como um número entre 0 e 59.
 * `second("2016-12-08T15:55:00.000Z")`
 
   Retorna 0
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL startOfMonth(data)]
+
+[!BADGE Novo!]{type=Informative}
+
+Retorna o primeiro momento do mês de uma data informada — meia-noite no primeiro dia (00:00:00.000). O resultado reconhece fusos horários.
+
+>[!BEGINSHADEBOX]
+
+**Exemplos:**
+
+* `startOfMonth("2016-06-15T12:30:00.000Z")`
+
+  Retorna 2016-06-01T00:00:00.000Z
+
+* `startOfMonth("2024-02-14T08:00:00.000Z")`
+
+  Retorna 2024-02-01T00:00:00.000Z
 
 >[!ENDSHADEBOX]
 
@@ -439,7 +514,7 @@ Esta função retorna uma nova data com os segundos especificados em parâmetros
 
 Especifique um número de 0 a 59. Se o número estiver fora desse intervalo, a função retornará um segundo do minuto anterior (para um número negativo) ou do minuto subsequente (para um número positivo).
 
-Se você precisar especificar um número fora do intervalo, recomendamos usar [!UICONTROL &#x200B; addSeconds], conforme descrito acima na seção [addSeconds (date; number)](#addseconds-date-number).
+Se você precisar especificar um número fora do intervalo, recomendamos usar [!UICONTROL  addSeconds], conforme descrito acima na seção [addSeconds (date; number)](#addseconds-date-number).
 
 >[!BEGINSHADEBOX]
 
@@ -811,7 +886,7 @@ Caso queira calcular apenas um caso específico, por exemplo, a cada segunda qua
 * `1.dow` = `3`
 * `1.date` = `now`
 
-![Valor da variável de dia &#x200B;](assets/nth-day-variable-value-350x33.png)
+![Valor da variável de dia ](assets/nth-day-variable-value-350x33.png)
 
 #### Explicação:
 
