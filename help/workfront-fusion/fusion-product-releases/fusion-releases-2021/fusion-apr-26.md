@@ -1,20 +1,19 @@
 ---
-title: 'Workfront Fusion release activity: Week of April 26, 2021'
-description: 'Workfront Fusion release activity: Week of April 26, 2021'
+title: 'Atividade de lançamento do Workfront Fusion: semana de 26 de abril de 2021'
+description: 'Atividade de lançamento do Workfront Fusion: semana de 26 de abril de 2021'
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: 5a70ed9e-9f70-40fb-b289-0955b951bf7a
-source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
+source-git-commit: a48a7f5f6577782dbc043e322a3c769781ffd63b
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 31%
 
 ---
 
-# Workfront Fusion release activity: Week of April 26, 2021
+# Atividade de lançamento do Workfront Fusion: semana de 26 de abril de 2021
 
 Esta página descreve todos os aprimoramentos realizados no Adobe Workfront Fusion na semana de terça-feira, 26 de abril de 2021.
 

@@ -4,10 +4,10 @@ description: As seguintes funções gerais estão disponíveis no painel Mapeame
 author: Becky
 feature: Workfront Fusion
 exl-id: 6d4b8801-aa7e-47d4-80b3-aceac10c073f
-source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
+source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 2%
+source-wordcount: '471'
+ht-degree: 7%
 
 ---
 
@@ -19,7 +19,7 @@ Você pode usar essas variáveis gerais para identificar detalhes sobre uma exec
 
 * `executionID`: a ID de execução deste cenário
 * `triggerTimestamp`: a hora em que essa execução foi disparada
-* `scenarioID`: a ID do cenário aberto no momento
+* `scenarioID`: o ID do cenário em execução no momento
 * `operationsConsumed`: o número de operações usadas nesse ponto do cenário.
 
 ## [!UICONTROL obter (objeto ou matriz; caminho)]
@@ -142,3 +142,102 @@ Retorna uma coleção somente da senha e do endereço de email do usuário.
 ## mergeCollections( coleção1; coleção2)
 
 Mescla duas coleções combinando seus pares de valor chave. Se ambas as coleções contiverem a mesma chave, o valor da segunda coleção substituirá esse valor da primeira coleção.
+
+### [!UICONTROL isBlank(value)]
+
+Retorna `true` se o valor for `null` ou uma cadeia de caracteres vazia; caso contrário, retorna `false`. Ao contrário de `ifEmpty`, esta função não trata o número `0` ou cadeias de caracteres com somente espaços em branco como espaços em branco.
+
+>[!BEGINSHADEBOX]
+
+**Exemplo:**
+
+* `isBlank("")     `
+
+  Retorna verdadeiro
+* `isBlank(null)   `
+
+  Retorna verdadeiro
+* `isBlank("Hello")`
+
+  Retorna falso
+* `isBlank(0)      `
+
+  Retorna falso
+* `isBlank(" ")    `
+
+  Retorna falso
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL in(valor; valor1; valor2; ...)]
+
+Retorna `true` se o valor for igual a um dos valores fornecidos (igualdade estrita, sem coerção de tipo).
+
+>[!BEGINSHADEBOX]
+
+**Exemplo:**
+
+* `in("B"; "A"; "B"; "C")`
+
+  Retorna verdadeiro
+* `in("D"; "A"; "B"; "C")`
+
+  Retorna falso
+* `in(2; 1; 2; 3)        `
+
+  Retorna verdadeiro
+* `in("2"; 1; 2; 3)      `
+
+  Retorna falso
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL ifin(valor; valor1; valor2; ...; expressãoVerdadeira; expressãoFalsa)]
+
+Retorna `trueExpression` se o valor corresponder a qualquer um dos valores de correspondência fornecidos; caso contrário, retorna `falseExpression`. Exige pelo menos 3 argumentos (valor, um valor de correspondência e trueExpression + falseExpression).
+
+>[!BEGINSHADEBOX]
+
+**Exemplo:**
+
+* `ifin("B"; "A"; "B"; "yes"; "no")`
+
+  Retorna sim
+* `ifin("D"; "A"; "B"; "yes"; "no")`
+
+  Retorna não
+* `ifin("X"; "X"; "found"; "not found")`
+
+  Retornos encontrados
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL case(número_do_índice; value1; value2; ...)]
+
+Retorna o valor na posição especificada pelo número do índice (com base em 1). Retorna `null` se o índice estiver fora dos limites ou for 0.
+
+>[!BEGINSHADEBOX]
+
+**Exemplo:**
+
+* `case(1; "Sun"; "Mon"; "Tue")`
+
+  Retorna Sun
+* `case(2; "Sun"; "Mon"; "Tue")`
+
+  Retorna Seg
+* `case(3; "Sun"; "Mon"; "Tue")`
+
+  Retorna verdadeiro
+* `case(5; "a"; "b")           `
+
+  Retorna nulo
+
+>[!NOTE]
+>
+>Recomendamos usar para obter o nome do dia de uma data:
+>`case(dayOfWeek(date); "Sun"; "Mon"; "Tue"; "Wed"; "Thu"; "Fri"; "Sat")`
+
+>[!ENDSHADEBOX]
+

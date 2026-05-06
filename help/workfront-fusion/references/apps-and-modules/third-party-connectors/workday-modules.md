@@ -1,20 +1,20 @@
 ---
 filename: workday-modules
 title: Módulos do Workday
-description: Em um cenário do Adobe Workfront Fusion, é possível automatizar fluxos de trabalho que usam o  [!DNL Workday], bem como conectá-lo a vários aplicativos e serviços de terceiros.
+description: Em um cenário do Adobe Workfront Fusion, é possível automatizar fluxos de trabalho que usam  [!DNL Workday], bem como conectá-lo a vários aplicativos e serviços de terceiros.
 author: Becky
 feature: Workfront Fusion
 exl-id: 77237a1b-2acd-4350-9cc0-ec43b8b08137
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 5967d83107337e6567c0bb3974ba4047ed520f11
 workflow-type: tm+mt
-source-wordcount: '1062'
-ht-degree: 1%
+source-wordcount: '1063'
+ht-degree: 52%
 
 ---
 
-# [!DNL Workday] módulos
+# Módulos do [!DNL Workday]
 
-Em um cenário do Adobe Workfront Fusion, é possível automatizar fluxos de trabalho que usam o [!DNL Workday], bem como conectá-lo a vários aplicativos e serviços de terceiros.
+Em um cenário do Adobe Workfront Fusion, é possível automatizar fluxos de trabalho que usam [!DNL Workday], bem como conectá-lo a vários aplicativos e serviços de terceiros.
 
 Para obter instruções sobre como criar um cenário, consulte os artigos em [Criar cenários: índice do artigo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -22,7 +22,7 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -30,31 +30,31 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion</td> 
    <td>
    <p>Baseado em operação: nenhum requisito de licença do Workfront Fusion</p>
-   <p>Baseado em conector (herdado): automação e integração do Workfront Fusion for Work </p>
+   <p>Baseado em conector (legado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -76,7 +76,7 @@ O conector do Workday usa o seguinte:
  <tbody> 
   <tr> 
    <td role="rowheader">URL básica</td> 
-   <td>https://{{connection.servicesUrl}}/api</td> 
+   <td><pre><code>https://&#123;&#123;connection.servicesUrl&#125;&#125;/api</code></pre></td> 
   </tr>
   <tr> 
    <td role="rowheader">Tag da API</td> 
@@ -97,7 +97,7 @@ O conector do Workday usa o seguinte:
         <tbody>
             <tr>
                 <td role="rowheader">
-                    <p role="rowheader">[!UICONTROL Nome da Conexão]</p>
+                    <p role="rowheader">[!UICONTROL Connection name]</p>
                 </td>
                 <td>Insira um nome para a conexão.</td>
             </tr>
@@ -114,11 +114,11 @@ O conector do Workday usa o seguinte:
                 <td>Insira o locatário para esta conta [!DNL Workday]. Seu locatário é o identificador da sua organização e pode ser visto no URL usado para fazer logon no Workday. Exemplo: no endereço <code>https://www.myworkday.com/mycompany</code>, o locatário é <code>mycompany</code>.</td>
             </tr>
             <tr>
-                <td role="rowheader">[!UICONTROL ID do Cliente]</td>
+                <td role="rowheader">[!UICONTROL Client ID]</td>
                 <td>Insira a ID do Cliente para o aplicativo [!DNL Workday] que esta conexão usa. Isso é obtido ao criar o aplicativo em [!DNL Workday].</td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL Segredo do Cliente]</td>
+                <td  role="rowheader">[!UICONTROL Client Secret]</td>
                 <td>Insira o Segredo do Cliente para o aplicativo [!DNL Workday] que esta conexão usa. Isso é obtido ao criar o aplicativo em [!DNL Workday].</td>
             </tr>
             <tr>
@@ -131,13 +131,13 @@ O conector do Workday usa o seguinte:
 
 3. Clique em [!UICONTROL Continuar] para salvar a conexão e retornar ao módulo
 
-## [!DNL Workday] módulos e seus campos
+## Módulos do [!DNL Workday] e seus campos
 
-Ao configurar módulos do [!DNL Workday], o Workfront Fusion exibe os campos listados abaixo. Junto com esses, campos [!DNL Workday] adicionais podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
+Ao configurar módulos do [!DNL Workday], o Workfront Fusion exibe os campos listados abaixo. Junto com eles, outros campos do [!DNL Workday] podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Alternância de mapa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Botão de alternância Mapear](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Ação](#action)
 
@@ -164,11 +164,11 @@ Este módulo de ação cria um único registro em [!DNL Workday].
     <col/>
     <tbody>
         <tr>
-            <td role="rowheader">[!UICONTROL Conexão]</td>
+            <td role="rowheader">[!UICONTROL Connection]</td>
             <td>Para obter instruções sobre como conectar sua conta do [!DNL Workday] ao Workfront Fusion, consulte <a href="#Connect" class="MCXref xref" >Conectar [!DNL Workday] ao Workfront Fusion</a>.</td>
         </tr>
         <tr>
-            <td  role="rowheader">[!UICONTROL Tipo de Registro]</td>
+            <td  role="rowheader">[!UICONTROL Record Type]</td>
             <td>Selecione o tipo de registro que deseja criar.</td>
         </tr>
         <tr>
@@ -193,11 +193,11 @@ Este módulo de ação exclui um único registro em [!DNL Workday].
     </col>
     <tbody>
         <tr>
-            <td role="rowheader">[!UICONTROL Conexão]</td>
+            <td role="rowheader">[!UICONTROL Connection]</td>
             <td>Para obter instruções sobre como conectar sua conta do [!DNL Workday] ao Workfront Fusion, consulte <a href="#Connect" class="MCXref xref" >Conectar [!DNL Workday] ao Workfront Fusion</a>.</td>
         </tr>
         <tr>
-            <td  role="rowheader">[!UICONTROL Tipo de registro]</td>
+            <td  role="rowheader">[!UICONTROL Record type]</td>
             <td>Selecione o tipo de registro que deseja excluir.</td>
         </tr>
         <tr>
@@ -218,7 +218,7 @@ Este módulo de ação exclui um único registro em [!DNL Workday].
 
 ### [!UICONTROL Fazer uma chamada de API personalizada]
 
-Este módulo de ação permite fazer uma chamada autenticada personalizada para a API [!DNL Workday]. Dessa forma, você pode criar uma automação de fluxo de dados que não pode ser realizada pelos outros módulos do [!DNL Workday].
+Este módulo de ação permite fazer uma chamada autenticada personalizada para a API do [!DNL Workday]. Dessa forma, você pode criar uma automação de fluxo de dados que não pode ser realizada pelos outros módulos do [!DNL Workday].
 
 Ao configurar esse módulo, os campos a seguir são exibidos.
 
@@ -234,23 +234,23 @@ O módulo retorna o código de status a, juntamente com os cabeçalhos e o corpo
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
-   <td>Insira um caminho relativo para <code style="color: #ff1493;">https://&lt;tenantHostname>/api/&lt;serviceName>/&lt;version>/&lt;tenant></code>.</td> 
+   <td>Insira um caminho relativo a <code style="color: #ff1493;">https://&lt;tenantHostname>/api/&lt;serviceName>/&lt;version>/&lt;tenant></code>.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Método]</td> 
+   <td role="rowheader">[!UICONTROL Method]</td> 
    <td> <p>Selecione o método de solicitação HTTP necessário para configurar a chamada de API. Para obter mais informações, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Métodos de solicitação HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Cabeçalhos]</td> 
+   <td role="rowheader">[!UICONTROL Headers]</td> 
    <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p> <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p> <p>O [!UICONTROL Workfront Fusion] adiciona os cabeçalhos de autorização para você.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Cadeia de Consulta]</td> 
-   <td> <p>Adicione a consulta da chamada à API na forma de um objeto JSON padrão.</p> <p>Por exemplo: <code>{"name":"something-urgent"}</code></p> </td> 
+   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td> <p>Adicione a consulta para a chamada de API na forma de um objeto JSON padrão.</p> <p>Por exemplo: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Corpo]</td> 
-   <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
+   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td> <p>Adicione o conteúdo do corpo para a chamada de API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais, como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -267,11 +267,11 @@ Este módulo de ação atualiza um único registro em [!DNL Workday].
     <col/>
     <tbody>
         <tr>
-            <td role="rowheader">[!UICONTROL Conexão]</td>
+            <td role="rowheader">[!UICONTROL Connection]</td>
             <td>Para obter instruções sobre como conectar sua conta do [!DNL Workday] ao Workfront Fusion, consulte <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect [!DNL Workday] to Workfront Fusion]</a></td>
         </tr>
         <tr>
-            <td  role="rowheader">[!UICONTROL Tipo de Registro]</td>
+            <td  role="rowheader">[!UICONTROL Record Type]</td>
             <td>Selecione o tipo de registro que deseja atualizar.</td>
         </tr>
         <tr>
@@ -303,11 +303,11 @@ Esse módulo de ação lê um único registro.
     </col>
     <tbody>
         <tr>
-            <td role="rowheader">[!UICONTROL Conexão]</td>
+            <td role="rowheader">[!UICONTROL Connection]</td>
             <td>Para obter instruções sobre como conectar sua conta do [!DNL Workday] ao Workfront Fusion, consulte <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect [!DNL Workday] to Workfront Fusion]</a></td>
         </tr>
         <tr>
-            <td  role="rowheader">[!UICONTROL Tipo de registro]</td>
+            <td  role="rowheader">[!UICONTROL Record type]</td>
             <td>Selecione o tipo de registro que deseja excluir.</td>
         </tr>
         <tr>
@@ -330,15 +330,15 @@ Este módulo de pesquisa recupera uma lista de registros do tipo especificado.
       <col/>
       <tbody>
           <tr>
-              <td role="rowheader">[!UICONTROL Conexão]</td>
+              <td role="rowheader">[!UICONTROL Connection]</td>
               <td>Para obter instruções sobre como conectar sua conta do [!DNL Workday] ao Workfront Fusion, consulte <a href="#Connect" class="MCXref xref" >Conectar [!DNL Workday] ao Workfront Fusion</a></td>
           </tr>
           <tr>
-              <td  role="rowheader">[!UICONTROL Tipo de Registro]</td>
+              <td  role="rowheader">[!UICONTROL Record Type]</td>
               <td>Selecione o tipo de registro que deseja recuperar.</td>
           </tr>
           <tr>
-              <td role="rowheader">[!UICONTROL Limite]</td>
+              <td role="rowheader">[!UICONTROL Limit]</td>
               <td >
                   <p>Insira ou mapeie o número máximo de registros que você deseja que o módulo recupere durante cada ciclo de execução de cenário.</p>
               </td>

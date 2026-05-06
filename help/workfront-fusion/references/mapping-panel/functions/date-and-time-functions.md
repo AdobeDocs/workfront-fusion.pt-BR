@@ -4,10 +4,10 @@ description: As seguintes funções de data e hora estão disponíveis no painel
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: 42bf7b0ac6eb414312573b32b93677a5c9650fa8
+source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
 workflow-type: tm+mt
-source-wordcount: '1879'
-ht-degree: 2%
+source-wordcount: '2253'
+ht-degree: 3%
 
 ---
 
@@ -97,6 +97,25 @@ Retorna uma nova data como resultado da adição de um determinado número de di
 
 >[!ENDSHADEBOX]
 
+### [!UICONTROL addWeekDays(data; número)]
+
+[!BADGE Novo!]{type=Informative}
+
+Adiciona o número de dias úteis à data. Somente valores inteiros são adicionados (valores fracionais são arredondados para baixo).
+
+>[!BEGINSHADEBOX]
+
+**Exemplos:**
+
+`addWeekDays("2016-12-08T15:55:57.536Z"; 2)`
+
+Retorna 2016-12-12T15:55:57.536Z
+`addWeekDays("2016-12-08T15:55:57.536Z"; -2)`
+Retorna 2016-12-06T15:55:57.536Z
+
+>[!ENDSHADEBOX]
+
+
 ### [!UICONTROL addMonths (data; número)]
 
 Retorna uma nova data como resultado da adição de um determinado número de meses a uma data. Para subtrair meses, informe um número negativo.
@@ -130,6 +149,287 @@ Retorna uma nova data como resultado da adição de um determinado número de an
 * `addYears(2016-12-08T15:55:57.536Z; -2)`
 
   Retorna 2014-08-08T15:55:57.536Z
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL dayOfMonth(data)]
+
+[!BADGE Novo!]{type=Informative}
+
+Retorna o dia do mês da data como um número entre 1 e 31.
+
+>[!BEGINSHADEBOX]
+
+**Exemplos:**
+
+* `dayOfMonth("2016-12-28T16:03:06.372Z")`
+
+  Retorna 28
+* `dayOfMonth("2015-01-05T11:36:39.138Z")`
+
+  Devoluções 5
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL dayOfWeek(data)]
+
+[!BADGE Novo!]{type=Informative}
+
+Retorna o dia da semana da data como um número entre 1 (domingo) e 7 (sábado).
+
+>[!BEGINSHADEBOX]
+
+**Exemplos:**
+
+* `dayOfWeek("2016-12-28T16:03:06.372Z")`
+
+  Devoluções 4
+* `dayOfWeek("2016-12-25T16:03:06.372Z")`
+
+  Devoluções 1
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL daysInMonth(data)]
+
+[!BADGE Novo!]{type=Informative}
+
+Retorna o número total de dias no mês de uma data informada.
+
+>[!BEGINSHADEBOX]
+
+**Exemplos:**
+
+* `daysInMonth("2016-01-01T00:00:00.000Z")`
+
+  Retorna 31
+* `daysInMonth("2016-02-01T00:00:00.000Z")`
+
+  Retorna 29
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL daysInSplitWeek(date)]
+
+[!BADGE Novo!]{type=Informative}
+
+Retorna o número total de dias da semana entre a data informada e o fim da semana, ou o fim do mês, o qual vier primeiro.
+
+>[!BEGINSHADEBOX]
+
+**Exemplos:**
+
+* `daysInSplitWeek("2016-12-28T16:03:06.372Z")`
+
+  Devoluções 3
+* `daysInSplitWeek("2016-01-25T16:03:06.372Z")`
+
+  Devoluções 5
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL daysInYear(data)]
+
+[!BADGE Novo!]{type=Informative}
+
+Retorna o número total de dias no ano de uma data informada (365 para um ano regular, 366 para um ano bissexto).
+
+>[!BEGINSHADEBOX]
+
+**Exemplos:**
+
+* `daysInYear("2016-06-01T00:00:00.000Z")`
+
+  Retorna 366
+* `daysInYear("2015-06-01T00:00:00.000Z")`
+
+  Retorna 365
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL dateMax(date1; date2; ...)]
+
+[!BADGE Novo!]{type=Informative}
+
+Retorna a data mais recente (mais recente) da lista.
+
+>[!BEGINSHADEBOX]
+
+**Exemplos:**
+
+* `dateMax("2016-06-01T00:00:00.000Z"; "2016-12-01T00:00:00.000Z") `
+
+  Retorna 2016-12-01T00:00:00.000Z
+
+* `dateMax("2015-01-01T00:00:00.000Z"; "2016-06-15T00:00:00.000Z"; "2014-03-20T00:00:00.000Z")`
+
+  Retorna 2016-06-15T00:00:00.000Z
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL dateMin(data1; data2; ...)]
+
+[!BADGE Novo!]{type=Informative}
+
+Retorna a data mais antiga da lista.
+
+>[!BEGINSHADEBOX]
+
+**Exemplos:**
+
+* `dateMin("2016-06-01T00:00:00.000Z"; "2016-12-01T00:00:00.000Z")`
+
+  Retorna 2016-06-01T00:00:00.000Z
+
+* `dateMin("2015-01-01T00:00:00.000Z"; "2016-06-15T00:00:00.000Z"; "2014-03-20T00:00:00.000Z") `
+
+  Retorna 2014-03-20T00:00:00.000Z
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL hora(data)]
+
+[!BADGE Novo!]{type=Informative}
+
+Retorna a hora da data como um número entre 0 e 23.
+
+>[!BEGINSHADEBOX]
+
+**Exemplos:**
+
+* `hour("2016-12-08T15:55:57.536Z")`
+
+  Retorna 15
+* `hour("2016-12-08T00:00:00.000Z")`
+
+  Retorna 0
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL minuto(data)]
+
+[!BADGE Novo!]{type=Informative}
+
+Retorna os minutos da data como um número entre 0 e 59.
+
+>[!BEGINSHADEBOX]
+
+**Exemplos:**
+
+* `minute("2016-12-08T15:55:57.536Z")`
+
+  Retorna 55
+* `minute("2016-12-08T15:00:00.000Z")`
+
+  Retorna 0
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL mês(data)]
+
+[!BADGE Novo!]{type=Informative}
+
+Retorna o mês da data como um número entre 1 e 12.
+
+>[!BEGINSHADEBOX]
+
+**Exemplos:**
+
+* `month("2016-12-08T15:55:57.536Z")`
+
+  Retorna 12
+* `month("2016-01-08T15:55:57.536Z")`
+
+  Devoluções 1
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL segundo(data)]
+
+[!BADGE Novo!]{type=Informative}
+
+Retorna o segundo da data como um número entre 0 e 59.
+
+>[!BEGINSHADEBOX]
+
+**Exemplos:**
+
+* `second("2016-12-08T15:55:57.536Z")`
+
+  Retorna 57
+* `second("2016-12-08T15:55:00.000Z")`
+
+  Retorna 0
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL weekDayDiff(date2; date1)]
+
+[!BADGE Novo!]{type=Informative}
+
+Retorna o número de dias da semana entre duas datas, contabilizando os carimbos de data e hora nesses dias. Por exemplo, se a hora de início for 15h, o dia de início não será contado como um dia inteiro.
+
+>[!BEGINSHADEBOX]
+
+**Exemplos:**
+
+* `weekDayDiff("2016-12-07T12:00:00.000Z"; "2016-12-05T00:00:00.000Z")`
+
+  Retorna 2,5
+* `weekDayDiff("2016-12-09T15:00:00.000Z"; "2016-12-05T15:00:00.000Z")`
+
+  Devoluções 4
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL workMinutesDiff(date1; date2)]
+
+[!BADGE Novo!]{type=Informative}
+
+Retorna o número de minutos de trabalho agendados entre duas datas, com base em um agendamento padrão de segunda a sexta-feira, das 9h às 17h.
+
+>[!BEGINSHADEBOX]
+
+**Exemplos:**
+
+* `workMinutesDiff("2016-12-05T09:00:00.000Z"; "2016-12-05T17:00:00.000Z")`
+
+  Retorna 480
+* `workMinutesDiff("2016-12-05T09:00:00.000Z"; "2016-12-06T17:00:00.000Z")`
+
+  Retorna 960
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL ano(data)]
+
+[!BADGE Novo!]{type=Informative}
+
+Retorna o ano da data como um número de 4 dígitos.
+
+>[!BEGINSHADEBOX]
+
+**Exemplos:**
+
+* `year("2016-12-08T15:55:57.536Z")`
+
+  Devoluções em 2016
+* `year("2000-01-01T00:00:00.000Z")`
+
+  Retorna 2000
 
 >[!ENDSHADEBOX]
 
@@ -465,6 +765,7 @@ Se você precisar calcular uma data correspondente ao n-ésimo dia da semana no 
 
 ![Calcular dia n](assets/date-time-functions-calc-nth-day-350x31.png)
 
+
 ```
 {{addDays(setDate(1.date; 1); 1.n * 7 - formatDate(addDays(setDate(1.date; 1); "-" + 1.dow); "E"))}}
 ```
@@ -523,6 +824,7 @@ Uma possibilidade é empregar a seguinte expressão:
 
 ![Calcular dias entre datas](assets/calculate-days-between-dates-350x68.png)
 
+
 ```
 {{round((2.value - 1.value) / 1000 / 60 / 60 / 24)}}
 ```
@@ -543,6 +845,7 @@ A fórmula abaixo mostra uma maneira de calcular o último dia do mês anterior:
 
 ![Último dia do mês anterior](assets/last-day-prev-month.png)
 
+
 ```
 {{addDays(setDate(now; 1); -1)}}
 ```
@@ -554,6 +857,7 @@ Em alguns casos, é necessário calcular não apenas o último dia do mês, mas 
 Esta fórmula mostra uma maneira de calcular o último milissegundo do mês anterior:
 
 ![Último milissegundo do mês anterior](assets/last-millisecond-prev-month-350x45.png)
+
 
 ```
 {{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD"; "UTC") - 1; "x")}}
