@@ -100,6 +100,7 @@ Trabalhando na captura de tela da exibição padrão, capture todos os campos vi
    ```
    [!UICONTROL Background > Image > Source]
    ```
+
 2. Leia o texto de ajuda sob o campo na captura de tela (a legenda cinza/amarela). Use-a como base para a descrição.
 3. Faça referência cruzada do contexto da API da etapa 3a para identificar o que o campo representa (por exemplo, `background.fillAreaMask` é &quot;a área do plano de fundo em que o objeto será colocado&quot;).
 4. Escreva a descrição combinando **o que é o campo** (da API) com **como fornecê-lo** (do texto auxiliar da interface e do tipo de campo).
@@ -123,6 +124,7 @@ Trabalhando na captura de tela da visualização avançada:
    ```html
    <td role="rowheader">[!UICONTROL Seeds]*</td>
    ```
+
 4. Após o fechamento de `</table>`, adicione esta nota de rodapé em sua própria linha:
 
    ```markdown
