@@ -4,9 +4,16 @@ description: Em um cenário do Adobe Workfront Fusion, é possível automatizar 
 author: Becky
 feature: Workfront Fusion
 exl-id: 62269eca-c3cf-42fe-a866-fb66d2363b8d
-source-git-commit: 03f4556d7f903689c85cba966ad875973037a2ba
+TQID: https://experienceleague.adobe.com/N1oyeO-yNRUKW3u-BPw-yGOI1nCO8XT8pB4Rdg6zycA
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: 1871
 ht-degree: 25%
 
 ---

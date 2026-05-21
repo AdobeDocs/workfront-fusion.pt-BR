@@ -4,16 +4,21 @@ description: Em um cenário do Adobe Workfront Fusion, é possível automatizar 
 author: Becky
 feature: Workfront Fusion
 exl-id: 808fbb54-6b60-4c1f-aef3-b0db9a350dfd
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/B--y4kY-WgY5rMBOk7j3gr7PggwkGrLJ5FqCYnMYpsA
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 2%
+source-wordcount: 456
+ht-degree: 80%
 
 ---
 
-# [!DNL Quickbase] módulos
+# Módulos do [!DNL Quickbase]
 
-Em um cenário do Adobe Workfront Fusion, é possível automatizar fluxos de trabalho que usam o [!DNL Quickbase], bem como conectá-lo a vários aplicativos e serviços de terceiros.
+Em um cenário do Adobe Workfront Fusion, é possível automatizar fluxos de trabalho que usam [!DNL Quickbase], bem como conectá-lo a vários aplicativos e serviços de terceiros.
 
 Para obter instruções sobre como criar um cenário, consulte os artigos em [Criar cenários: índice do artigo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -21,7 +26,7 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -29,31 +34,31 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion</td> 
    <td>
    <p>Baseado em operação: nenhum requisito de licença do Workfront Fusion</p>
-   <p>Baseado em conector (herdado): automação e integração do Workfront Fusion for Work </p>
+   <p>Baseado em conector (legado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -86,11 +91,11 @@ O Quickbase connector usa o seguinte:
 
 ## Módulo [!DNL Quickbase] e seus campos
 
-Ao configurar módulos do [!DNL Quickbase], o Workfront Fusion exibe os campos listados abaixo. Junto com esses, campos [!DNL Quickbase] adicionais podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
+Ao configurar módulos do [!DNL Quickbase], o Workfront Fusion exibe os campos listados abaixo. Junto com eles, outros campos do [!DNL Quickbase] podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Alternância de mapa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Botão de alternância Mapear](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 ### [!DNL Custom API Call]
 
@@ -101,28 +106,28 @@ Este módulo chama qualquer ponto de extremidade de API RESTful [!DNL Quickbase]
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Conexão]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Quickbase] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
-   <td>Insira um caminho relativo para <code>https://api.quickbase.com/v1/</code>.</td> 
+   <td>Insira um caminho relativo a <code>https://api.quickbase.com/v1/</code>.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Método]</td> 
+   <td role="rowheader">[!UICONTROL Method]</td> 
    <td> <p>Selecione o método de solicitação HTTP necessário para configurar a chamada de API. Para obter mais informações, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Métodos de solicitação HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Cabeçalhos]</td> 
+   <td role="rowheader">[!UICONTROL Headers]</td> 
    <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p> <p>Por exemplo: <code>{"Content-type":"application/json"}</code></p> <p>O Workfront Fusion adiciona os cabeçalhos de autorização para você.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Cadeia de Consulta]</td> 
-   <td> <p>Adicione a consulta da chamada à API na forma de um objeto JSON padrão.</p> <p>Por exemplo: <code>{"name":"something-urgent"}</code></p> </td> 
+   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td> <p>Adicione a consulta para a chamada de API na forma de um objeto JSON padrão.</p> <p>Por exemplo: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Corpo]</td> 
-   <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
+   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td> <p>Adicione o conteúdo do corpo para a chamada de API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais, como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 

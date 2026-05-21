@@ -4,10 +4,17 @@ description: Os módulos FTP permitem monitorar as alterações de arquivos em u
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e14f778-ab8c-421f-a4b4-c57be66c7cad
-source-git-commit: 54c368d335b30f55cab19595a5b4740dde6013a7
+TQID: https://experienceleague.adobe.com/gEM0-dJD4FYvu9TFvxoDtriimtlk001zevih7KnhKJE
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1397'
-ht-degree: 0%
+source-wordcount: 1404
+ht-degree: 15%
 
 ---
 
@@ -17,7 +24,7 @@ Os módulos FTP permitem monitorar as alterações de arquivos em uma pasta sele
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -25,31 +32,31 @@ Os módulos FTP permitem monitorar as alterações de arquivos em uma pasta sele
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion</td> 
    <td>
    <p>Baseado em operação: nenhum requisito de licença do Workfront Fusion</p>
-   <p>Baseado em conector (herdado): automação e integração do Workfront Fusion for Work </p>
+   <p>Baseado em conector (legado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -67,16 +74,16 @@ Para usar módulos FTP, você deve ter uma conta com um serviço FTP.
     <col> 
     <tbody> 
      <tr> 
-      <td>[!UICONTROL Nome da Conexão]</td> 
+      <td>[!UICONTROL Connection name]</td> 
       <td> <p> Insira o nome da conexão FTP.</p> </td> 
      </tr> 
      <tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Ambiente]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL Environment]</p> </td> 
       <td> <p>Selecione se você está usando um ambiente de produção ou não produção.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Tipo]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL Type]</p> </td> 
       <td> <p>Selecione se você está usando uma conta de serviço ou uma conta pessoal.</p> </td> 
      </tr> 
      <tr> 
@@ -92,7 +99,7 @@ Para usar módulos FTP, você deve ter uma conta com um serviço FTP.
       <td> <p>Digite o nome de usuário da sua conta FTP.</p> </td> 
      </tr> 
      <tr> 
-      <td>[!UICONTROL Senha] </td> 
+      <td>[!UICONTROL Password] </td> 
       <td> <p>Digite a senha da sua conta FTP.</p> </td> 
      </tr> 
      <tr> 
@@ -133,11 +140,11 @@ Para usar módulos FTP, você deve ter uma conta com um serviço FTP.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão] </td> 
+   <td>[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como estabelecer uma conexão com a conta FTP, consulte <a href="#create-a-connection" class="MCXref xref">[!UICONTROL Criar uma conexão] em um módulo FTP</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Pasta]</p> </td> 
+   <td> <p>[!UICONTROL Folder]</p> </td> 
    <td> <p>Selecione a pasta que deseja observar.</p> <p><b>Observação:</b> somente uma pasta por cenário é permitida. Subpastas são ignoradas.</p> <p><b>Dica:</b> Para observar várias pastas, crie um cenário separado para cada uma delas.</p> </td> 
   </tr> 
   <tr> 
@@ -167,7 +174,7 @@ Este módulo de ação altera as configurações de permissão de um arquivo ou 
    <col>
    <tbody>
          <tr>
-            <td>[!UICONTROL Conexão]</td>
+            <td>[!UICONTROL Connection]</td>
             <td>Para obter instruções sobre como estabelecer uma conexão com a conta FTP, consulte <a href="#Create" class="MCXref xref" >[!UICONTROL Criar uma conexão] em um módulo FTP</a> neste artigo.</td>
          </tr>
          <tr>
@@ -181,7 +188,7 @@ Este módulo de ação altera as configurações de permissão de um arquivo ou 
             <td>Insira ou mapeie o caminho do arquivo para a pasta ou o arquivo.</td>
          </tr>
          <tr>
-            <td>[!UICONTROL Permissões]</td>
+            <td>[!UICONTROL Permissions]</td>
             <td>
                <p>Defina as permissões desejadas para arquivos ou pastas. Use os parâmetros chmod. Por exemplo: <code>777 </code>ou <code>-rwxrwxrwx</code>.</p>
                <p>As permissões devem corresponder ao padrão <code> /(.?([r-][w-][x-]){3})|[0-7]{3,4}/</code>.</p>
@@ -199,7 +206,7 @@ Este módulo de ação cria uma nova pasta.
    <col>
    <tbody>
          <tr>
-            <td>[!UICONTROL Conexão]</td>
+            <td>[!UICONTROL Connection]</td>
             <td>Para obter instruções sobre como estabelecer uma conexão com a conta FTP, consulte <a href="#Create" class="MCXref xref" >[!UICONTROL Criar uma conexão] em um módulo FTP</a> neste artigo.</td>
          </tr>
          <tr>
@@ -224,11 +231,11 @@ Este módulo de ação exclui um arquivo da pasta especificada.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão] </td> 
+   <td>[!UICONTROL Connection] </td> 
             <td>Para obter instruções sobre como estabelecer uma conexão com a conta FTP, consulte <a href="#Create" class="MCXref xref" >[!UICONTROL Criar uma conexão] em um módulo FTP</a> neste artigo.</td>
   </tr> 
   <tr> 
-   <td>[!UICONTROL Pasta] </td> 
+   <td>[!UICONTROL Folder] </td> 
    <td> <p>Selecione a pasta FTP da qual deseja excluir um arquivo.</p> </td> 
   </tr> 
   <tr> 
@@ -247,11 +254,11 @@ Este módulo de ação exclui permanentemente a pasta especificada.
    <col>
    <tbody>
          <tr>
-            <td>[!UICONTROL Conexão]</td>
+            <td>[!UICONTROL Connection]</td>
             <td>Para obter instruções sobre como estabelecer uma conexão com a conta FTP, consulte <a href="#Create" class="MCXref xref" >[!UICONTROL Criar uma conexão] em um módulo FTP</a> neste artigo.</td>
          </tr>
          <tr>
-            <td>[!UICONTROL Pasta]</td>
+            <td>[!UICONTROL Folder]</td>
             <td>
                <p>Selecione a pasta FTP da qual deseja excluir um arquivo.</p>
             </td>
@@ -268,7 +275,7 @@ Este módulo de ação recupera um arquivo do servidor FTP.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão] </td> 
+   <td>[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como estabelecer uma conexão com a conta FTP, consulte <a href="#creating-the-ftp-connection" class="MCXref xref">Criando a conexão FTP</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -287,11 +294,11 @@ Este módulo de ação recupera informações de arquivos e/ou pastas.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão] </td> 
+   <td>[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como estabelecer uma conexão com a conta FTP, consulte <a href="#creating-the-ftp-connection" class="MCXref xref">Criando a conexão FTP</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Pasta] </td> 
+   <td>[!UICONTROL Folder] </td> 
    <td> <p>Selecione a pasta FTP na qual deseja pesquisar.</p> </td> 
   </tr> 
   <tr> 
@@ -299,7 +306,7 @@ Este módulo de ação recupera informações de arquivos e/ou pastas.
    <td> <p>Selecione se deseja recuperar informações sobre arquivos ou pastas, ou ambos.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Pesquisar] </td> 
+   <td>[!UICONTROL Search] </td> 
    <td> <p>Insira o termo de pesquisa. Se nenhum termo de pesquisa for inserido, todos os arquivos ou pastas da pasta especificada serão recuperados.</p> </td> 
   </tr> 
   <tr> 
@@ -318,7 +325,7 @@ Este módulo de ação move um arquivo ou pasta para um local diferente.
    <col>
    <tbody>
          <tr>
-            <td>[!UICONTROL Conexão]</td>
+            <td>[!UICONTROL Connection]</td>
             <td>Para obter instruções sobre como estabelecer uma conexão com a conta FTP, consulte <a href="#Create" class="MCXref xref" >[!UICONTROL Criar uma conexão] em um módulo FTP</a> neste artigo.</td>
          </tr>
          <tr>
@@ -337,7 +344,7 @@ Este módulo de ação move um arquivo ou pasta para um local diferente.
 </table>
 
 
-#### [!UICONTROL Carregar um arquivo]
+#### [!UICONTROL Fazer upload de um arquivo]
 
 Faz upload de um arquivo para o servidor FTP.
 
@@ -346,15 +353,15 @@ Faz upload de um arquivo para o servidor FTP.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão] </td> 
+   <td>[!UICONTROL Connection] </td> 
    <td>Para obter instruções sobre como estabelecer uma conexão com a conta FTP, consulte <a href="#creating-the-ftp-connection" class="MCXref xref">Criando a conexão FTP</a> neste artigo.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Pasta] </td> 
+   <td>[!UICONTROL Folder] </td> 
    <td> <p>Selecione a pasta FTP na qual deseja fazer upload do arquivo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL arquivo Source] </td> 
+   <td>[!UICONTROL Source file] </td> 
    <td> <p>Selecione um arquivo de origem de um módulo anterior ou mapeie o nome e os dados do arquivo de origem.</p> </td> 
   </tr> 
   <tr> 

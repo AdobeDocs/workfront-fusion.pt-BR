@@ -4,10 +4,15 @@ description: Em um cenário do Adobe Workfront Fusion, é possível automatizar 
 author: Becky
 feature: Workfront Fusion
 exl-id: b74a3618-c4a1-4965-a88d-1643bfab12db
-source-git-commit: e65d868dc2165cbe800600f271f6b03d0a906cb4
+TQID: https://experienceleague.adobe.com/fSi-9BIxl4qI-Vz7Yw9WJoqIX-GlmYDc5u-PGSh5mfc
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2348'
-ht-degree: 20%
+source-wordcount: 2399
+ht-degree: 25%
 
 ---
 
@@ -568,21 +573,21 @@ Este módulo de ação atualiza um registro existente, como um problema ou proje
 
 >[!IMPORTANT]
 >
->O módulo de pesquisa usado pelo conector Jira herdado pode resultar no seguinte erro:
+>O módulo de pesquisa usado pelo conector do Jira legado pode resultar no seguinte erro:
 >
 >`[410] The requested API has been removed. Please migrate to the /rest/api/3/search/jql API. A full migration guideline is available at https://developer.atlassian.com/changelog/#CHANGE-2046`
 >
->Isso se deve a uma descontinuação no lado de Jira.
+>Deve-se a uma descontinuação feita pelo Jira.
 >
->Se encontrar esse erro, você poderá substituir o módulo de pesquisa do conector Jira herdado pelo módulo de pesquisa do novo conector. Observe que o novo conector permite selecionar a versão da API usada. Certifique-se de selecionar V3 ao criar a conexão.
+>Se você se deparar com esse erro, poderá substituir o módulo de pesquisa do conector do Jira legado pelo módulo de pesquisa do novo conector. Observe que o novo conector permite selecionar a versão da API usada. Certifique-se de selecionar V3 ao criar a conexão.
 >
 > ![Opção de versão da API no novo conector Jira](/help/workfront-fusion/references/apps-and-modules/assets/jira-version-option.png)
 >
 >Observe que:
 >
->* Somente o módulo de Pesquisa é afetado. No momento, outros endpoints da API Jira usados pelo conector Fusion não são afetados por essa desativação.
+>* Somente o módulo de pesquisa é afetado. No momento, outros pontos de acesso da API do Jira usados pelo conector do Fusion não são afetados por essa descontinuação.
 >
->* A implantação geográfica pode causar inconsistências. A Atlassian está lançando essa alteração regionalmente, o que significa que algumas instâncias do Jira Cloud ainda podem oferecer suporte temporário a endpoints mais antigos. Isso pode levar a um comportamento inconsistente entre ambientes.
+>* A implantação geográfica pode causar inconsistências. A Atlassian está implantando essa alteração regionalmente, o que significa que algumas instâncias da Jira Cloud ainda podem ser compatíveis temporariamente com pontos de acesso mais antigos. Isso pode levar a um comportamento inconsistente entre ambientes.
 
 #### Pesquisar registros
 

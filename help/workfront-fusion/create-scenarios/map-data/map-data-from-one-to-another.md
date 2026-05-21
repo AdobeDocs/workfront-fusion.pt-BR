@@ -4,9 +4,14 @@ description: Mapeamento é o processo de atribuir as saídas de um módulo, estr
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e3f7729-f48e-451e-a90b-d680c9e3bcbc
-source-git-commit: 8de3e365ff7ff91f4b29fb8a298f3b846de0a980
+TQID: https://experienceleague.adobe.com/wKSHupk1Gx2g7ydAOilpbfRnqu-TMY5W8zKEyKd8Slk
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: 777
 ht-degree: 17%
 
 ---
@@ -15,9 +20,9 @@ ht-degree: 17%
 
 Mapeamento é o processo de atribuir as saídas de um módulo aos campos de entrada de outro módulo.
 
-The mapping panel displays when you click a field where you can insert a value outputted from a preceding module in a scenario.
+O painel de mapeamento é exibido ao clicar em um campo, onde é possível inserir um valor emitido de um módulo anterior em um cenário.
 
-You can also create a formula using any combination of functions and mapped items from the mapping panel with static text that you type. These elements can be nested inside each other.
+Também é possível criar uma fórmula usando qualquer combinação de funções e itens mapeados do painel de mapeamento com texto estático digitado. Esses elementos podem ser aninhados um dentro do outro.
 
 ## Requisitos de acesso
 
@@ -48,39 +53,39 @@ Para obter mais detalhes sobre as informações contidas nesta tabela, consulte 
 
 +++
 
-## Map an item
+## Mapear um item
 
-After you have created a sequence of modules by linking two or more of them, each module can process values of items outputted by the modules that precede it.
+Depois de criar uma sequência de módulos vinculando dois ou mais deles, cada módulo pode processar valores de itens gerados pelos módulos que o precedem.
 
-To assign output items to a module&#39;s input fields:
+Para atribuir itens de saída aos campos de entrada de um módulo:
 
 1. Clique na guia **[!UICONTROL Cenários]** no painel esquerdo.
 1. Selecione o cenário em que deseja mapear dados.
 1. Clique em qualquer lugar no cenário para entrar no editor de cenários.
-1. Click on the module that should process the output of the preceding module or modules.
-1. In the Module settings panel that displays, click a field where you want to use the value of an item outputted from a preceding module.
+1. Clique no módulo que deve processar a saída dos módulos anteriores.
+1. No painel Configurações do módulo que é exibido, clique em um campo onde você deseja usar o valor de um item emitido de um módulo anterior.
 
    O painel de mapeamento é aberto.
 
-1. (Optional) To search for a particular field in the mapping panel, click the mapping panel search bar and type in the term you want to search for. Click the field when it appears in the list.
+1. (Opcional) Para pesquisar um campo específico no painel de mapeamento, clique na barra de pesquisa do painel de mapeamento e digite o termo que deseja pesquisar. Clique no campo quando ele aparecer na lista.
 
-   Search results contain the search term and are not case sensitive.
-1. To select a value that is an element of a collection, click the arrow next to that collection, then select the element when it appears.
+   Os resultados da pesquisa contêm o termo de pesquisa e não diferenciam maiúsculas de minúsculas.
+1. Para selecionar um valor que seja um elemento de uma coleção, clique na seta ao lado dessa coleção e selecione o elemento quando ele for exibido.
 
-   ![Collection element](assets/collection-dropdown.png)
+   ![Elemento de coleção](assets/collection-dropdown.png)
 
-1. Click an item from the mapping panel to insert it into the field.
+1. Clique em um item no painel de mapeamento para inseri-lo no campo.
 
-For more information, see [Configure a module](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md).
+Para obter mais informações, consulte [Configurar um módulo](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md).
 
 
 ## Solução de problemas
 
-### Problem: Missing items in the mapping panel
+### Problema: itens ausentes no painel de mapeamento
 
-The mapping panel displays output items from previous modules. Occasionally, some items might be missing from this panel. You can run the module that is missing output in the scenario editor, and the mapping panel can then include those items in later modules. The exact procedure differs depending on the module&#39;s type.
+O painel de mapeamento exibe itens de saída de módulos anteriores. Ocasionalmente, alguns itens podem estar ausentes nesse painel. Você pode executar o módulo cuja saída está ausente no editor de cenários, e o painel de mapeamento pode então incluir esses itens em módulos posteriores. O procedimento exato difere dependendo do tipo do módulo.
 
-* [Instant trigger](#instant-trigger)
+* [Acionador instantâneo](#instant-trigger)
 * [Acionador de sondagem](#polling-trigger)
 * [Outros módulos](#other-modules)
 

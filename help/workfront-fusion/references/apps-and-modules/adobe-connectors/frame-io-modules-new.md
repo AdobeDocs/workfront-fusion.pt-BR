@@ -4,10 +4,16 @@ description: A conta do  [!DNL Adobe Workfront Fusion Frame].io modules enable y
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/aqE-HRALPymeQ8S3v6W1DGXOKmWIBCCWETigPp232jA
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '4539'
-ht-degree: 100%
+source-wordcount: 4588
+ht-degree: 99%
 
 ---
 
@@ -295,7 +301,7 @@ Ao configurar módulos do [!DNL Frame.io], o Workfront Fusion exibe os campos li
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Botão Mapear](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Botão de alternância Mapear](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Ativos](#assets)
 * [Comentários](#comments)
@@ -893,8 +899,8 @@ Este módulo de pesquisa recupera todos os projetos da equipe especificada.
   </tr> 
    <tr> 
    <td role="rowheader">[!UICONTROL Número máximo de projetos retornados] </td> 
-   <td> <p>Insira ou mapeie o número máximo de projetos
-   que você deseja que o módulo retorne durante cada ciclo de execução do cenário.</p> </td> 
+   <td> <p>Inserir ou mapear o número máximo de projetos
+   você deseja que o módulo retorne durante cada ciclo de execução do cenário.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1026,7 +1032,7 @@ Este módulo lista todos os espaços de trabalho de uma conta.
    <tr> 
    <td role="rowheader">[!UICONTROL Número máximo de workspaces retornados] </td> 
    <td> <p>Insira ou mapeie o número máximo de espaços de trabalho
-   que você deseja que o módulo retorne durante cada ciclo de execução do cenário.</p> </td> 
+   você deseja que o módulo retorne durante cada ciclo de execução do cenário.</p> </td> 
   </tr> 
  </tbody> 
 </table>

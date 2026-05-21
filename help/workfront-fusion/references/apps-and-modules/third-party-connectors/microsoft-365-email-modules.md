@@ -4,20 +4,26 @@ description: Em um cenário do Adobe Workfront Fusion, é possível automatizar 
 author: Becky
 feature: Workfront Fusion
 exl-id: 5d4072ba-c598-4347-a42f-c59c7add0a1b
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/w1Mx5-fbOF8JlvmgHd0P-ARF20jBLM0Bm3BnZZy6YsY
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2921'
-ht-degree: 0%
+source-wordcount: 2976
+ht-degree: 15%
 
 ---
 
-# [!DNL Microsoft Office 365 Email] módulos
+# Módulos do [!DNL Microsoft Office 365 Email]
 
 Em um cenário do Adobe Workfront Fusion, você pode automatizar fluxos de trabalho que usam o [!UICONTROL Email do Microsoft Office 365], bem como conectá-lo a vários aplicativos e serviços de terceiros.
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -25,37 +31,37 @@ Em um cenário do Adobe Workfront Fusion, você pode automatizar fluxos de traba
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion</td> 
    <td>
    <p>Baseado em operação: nenhum requisito de licença do Workfront Fusion</p>
-   <p>Baseado em conector (herdado): automação e integração do Workfront Fusion for Work </p>
+   <p>Baseado em conector (legado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Pré-requisitos
 
-Para usar módulos [!DNL Microsoft Office 365 Email], você deve ter uma conta [!DNL Microsoft Office 365 Email].
+Para usar módulos [!DNL Microsoft Office 365 Email], você deve ter uma conta do [!DNL Microsoft Office 365 Email].
 
 ## Informações da API de email do Microsoft Office 365
 
@@ -90,13 +96,13 @@ Para obter instruções sobre como conectar sua conta do [!DNL Office 365 Email]
 >
 >Por exemplo, se um usuário tiver permissões de &quot;Tabela de leitura&quot; concedidas por meio do conector do Excel e criar uma conexão no conector do Outlook para ler emails, a tela de consentimento de permissões mostrará a permissão &quot;Tabela de leitura&quot; já concedida e a permissão &quot;Gravar email&quot; recém-necessária.
 
-## [!DNL Microsoft Office 365 Email] módulos e seus campos
+## Módulos do [!DNL Microsoft Office 365 Email] e seus campos
 
-Ao configurar módulos do [!DNL Microsoft Office 365 Email], o Workfront Fusion exibe os campos listados abaixo. Junto com esses, campos [!DNL Microsoft Office 365 Email] adicionais podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
+Ao configurar módulos do [!DNL Microsoft Office 365 Email], o Workfront Fusion exibe os campos listados abaixo. Junto com eles, outros campos do [!DNL Microsoft Office 365 Email] podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Alternância de mapa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Botão de alternância Mapear](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Mensagem](#message)
 * [Mensagem de rascunho](#draft-message)
@@ -123,7 +129,7 @@ Esse módulo de ação cria e envia uma mensagem de email.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -194,7 +200,7 @@ Este módulo de ação exclui uma mensagem de email existente.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -217,7 +223,7 @@ Este módulo de ação obtém os metadados de uma mensagem específica
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -244,7 +250,7 @@ Este módulo de ação move uma mensagem de email para uma pasta selecionada na 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -267,7 +273,7 @@ Este módulo de pesquisa procura mensagens com base em critérios específicos.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
     <tr> 
@@ -279,7 +285,7 @@ Este módulo de pesquisa procura mensagens com base em critérios específicos.
    <td> <p>Selecione a pasta que contém as mensagens que você deseja pesquisar.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Pesquisar]</td> 
+   <td role="rowheader">[!UICONTROL Search]</td> 
    <td>Insira sua consulta de pesquisa. Para obter informações sobre como gravar uma consulta de pesquisa, consulte o artigo de suporte do [!DNL Microsoft] <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&rs=en-us&ad=us">Pesquisar Emails e Pessoas no [!DNL Outlook.com]</a>.</td> 
   </tr> 
   <tr> 
@@ -293,7 +299,7 @@ Este módulo de pesquisa procura mensagens com base em critérios específicos.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limite]</td> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
    <td> <p>Insira o número máximo de mensagens que o Workfront Fusion deve retornar durante um ciclo de execução de cenário.</p> </td> 
   </tr> 
  </tbody> 
@@ -308,7 +314,7 @@ Esse módulo de acionamento inicia um cenário quando uma nova mensagem de email
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -325,11 +331,11 @@ Esse módulo de acionamento inicia um cenário quando uma nova mensagem de email
    <td> <p>Selecione a pasta que contém as mensagens que você deseja observar.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Pesquisar]</td> 
+   <td role="rowheader">[!UICONTROL Search]</td> 
    <td>Insira sua consulta de pesquisa. O módulo retorna mensagens que correspondem a esta consulta. Para obter informações sobre como gravar uma consulta de pesquisa, consulte o artigo de suporte do [!DNL Microsoft] <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&rs=en-us&ad=us">Pesquisar Emails e Pessoas no [!DNL Outlook.com]</a>.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limite] </td> 
+   <td role="rowheader">[!UICONTROL Limit] </td> 
    <td> <p>Insira o número máximo de mensagens que o Workfront Fusion deve retornar durante um ciclo de execução de cenário.</p> </td> 
   </tr> 
  </tbody> 
@@ -350,7 +356,7 @@ Esse módulo de ação cria uma nova mensagem de email como rascunho.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -421,7 +427,7 @@ Esse módulo de ação envia uma mensagem de email que está atualmente em rascu
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -444,7 +450,7 @@ Este módulo de ação atualiza uma mensagem existente.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -528,7 +534,7 @@ Este módulo baixa o anexo especificado.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -555,7 +561,7 @@ Este módulo recupera uma lista de anexos pertencentes à mensagem especificada.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -567,7 +573,7 @@ Este módulo recupera uma lista de anexos pertencentes à mensagem especificada.
    <td> <p> Selecione ou mapeie a ID da mensagem da qual deseja recuperar anexos.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limite]</td> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
    <td> <p>Insira ou mapeie o número máximo de anexos que você deseja que o módulo retorne durante cada ciclo de execução do cenário.</p> </td> 
   </tr> 
  </tbody> 
@@ -588,7 +594,7 @@ Este módulo adiciona um grande anexo a uma mensagem.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -600,7 +606,7 @@ Este módulo adiciona um grande anexo a uma mensagem.
    <td> <p> Selecione ou mapeie a ID da mensagem à qual deseja adicionar um anexo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL arquivo Source]</td> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
    <td> <p>Selecione um arquivo de um módulo anterior ou mapeie o nome e os dados do arquivo de origem.</p> </td> 
   </tr> 
  </tbody> 
@@ -615,7 +621,7 @@ Esse módulo de ação cria e envia uma mensagem de email.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -676,7 +682,7 @@ Esse módulo de ação cria e envia uma mensagem de email.
    <td role="rowheader">[!UICONTROL Do endereço de email]</td> 
    <td> <p> Para usar um endereço de email compartilhado, insira o endereço aqui. O usuário cujas credenciais são usadas na conexão usada para este módulo deve ter acesso à pasta compartilhada.<p>Deixe este campo em branco para usar o endereço de email do proprietário da conexão.</p></p> </td> 
   </tr> 
-   <td role="rowheader">[!UICONTROL Limite]</td> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
    <td>Insira ou mapeie o número máximo de registros que deseja que o módulo retorne durante cada ciclo de execução de cenário.</td> 
   </tr> 
  </tbody> 
@@ -691,28 +697,28 @@ Este módulo permite executar uma chamada de API personalizada.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
-   <td> <p>Insira um caminho relativo para <code>https://graph.microsoft.com</code>. Exemplo:<code> /v1.0/me/messages</code></p> </td> 
+   <td> <p>Insira um caminho relativo a <code>https://graph.microsoft.com</code>. Exemplo:<code> /v1.0/me/messages</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Método]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
    td&gt; <p>Selecione o método de solicitação HTTP necessário para configurar a chamada de API. Para obter mais informações, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitação HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Cabeçalhos]</td> 
+   <td role="rowheader">[!UICONTROL Headers]</td> 
    <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão. Por exemplo, <code>{"Content-type":"application/json"}</code>. O Workfront Fusion adiciona os cabeçalhos de autorização para você.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Cadeia de Consulta]</td> 
-   <td> <p> Adicione a consulta da chamada à API na forma de um objeto JSON padrão.</p> </td> 
+   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td> <p> Adicione a consulta para a chamada de API na forma de um objeto JSON padrão.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Corpo]</td> 
-   <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
+   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td> <p>Adicione o conteúdo do corpo para a chamada de API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais, como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 

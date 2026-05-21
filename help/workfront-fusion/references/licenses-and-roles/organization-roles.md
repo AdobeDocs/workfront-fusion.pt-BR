@@ -4,10 +4,13 @@ description: Este artigo inclui informações sobre o acesso e as permissões da
 author: Becky
 feature: Workfront Fusion
 exl-id: 92f3bb09-0b66-45cd-84ef-88b2aa246be1
-source-git-commit: 4cd97fe2924150b9e7be140a25215f135b2788da
+TQID: https://experienceleague.adobe.com/r2AIAgWN-yH4OMHGhjyURrg58H1gJg-o6-QfeIvax7s
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 33%
+source-wordcount: 286
+ht-degree: 6%
 
 ---
 
@@ -30,7 +33,7 @@ Este artigo descreve o acesso e a funcionalidade disponíveis para as diferentes
  <thead> 
   <tr> 
    <th> </th> 
-   <th> <p>[!UICONTROL Proprietário]</p> </th> 
+   <th> <p>[!UICONTROL Owner]</p> </th> 
    <th> <p>[!UICONTROL Admin]</p> </th> 
    <th> <p>[!UICONTROL Membro]</p> </th> 
    <th> <p>[!UICONTROL Contador]</p> </th> 

@@ -4,10 +4,15 @@ description: Um webhook é uma chamada HTTP acionada por um evento. Você pode u
 author: Becky
 feature: Workfront Fusion
 exl-id: 8e415378-e9c1-4b49-874b-6d38aba0c303
-source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
+TQID: https://experienceleague.adobe.com/VuJQ4w3kfMUJ4H-m1PdN-F8242KOJRPz1holJRxSE0Y
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1528'
-ht-degree: 0%
+source-wordcount: 1535
+ht-degree: 13%
 
 ---
 
@@ -21,7 +26,7 @@ Um webhook é uma chamada HTTP acionada por um evento. Você pode usar webhooks 
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -29,31 +34,31 @@ Um webhook é uma chamada HTTP acionada por um evento. Você pode usar webhooks 
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion</td> 
    <td>
    <p>Baseado em operação: nenhum requisito de licença do Workfront Fusion</p>
-   <p>Baseado em conector (herdado): automação e integração do Workfront Fusion for Work </p>
+   <p>Baseado em conector (legado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -102,7 +107,7 @@ Ou você pode enviar os dados de exemplo por meio do módulo [!UICONTROL HTTP] >
       <td>Insira o URL do webhook. Você pode encontrar esse URL no módulo [!UICONTROL Webhooks] que você usou para configurar o webhook.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Método] </td> 
+      <td role="rowheader">[!UICONTROL Method] </td> 
       <td><p>[!UICONTROL POST]</p></td> 
      </tr> 
      <tr> 
@@ -297,7 +302,7 @@ O tempo limite para enviar uma resposta é de 5 minutos. Se a resposta não esti
 >&gt;   <td> <p>Código de status HTTP de sucesso 2xx, por exemplo, 200</p> </td> 
 >&gt;  </tr> 
 >&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Corpo] </td> 
+>&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
 >&gt;   <td> <p>código HTML</p> </td> 
 >&gt;  </tr> 
 >&gt;  <tr> 
@@ -349,9 +354,9 @@ O tempo limite para enviar uma resposta é de 5 minutos. Se a resposta não esti
 Os webhooks são desativados automaticamente se qualquer uma das seguintes situações se aplicar:
 
 * O webhook não foi conectado a nenhum cenário por mais de 5 dias
-* O webhook é usado somente em cenários inativos, que ficaram inativos por mais de 30 dias.
+* O webhook é usado somente em cenários inativos, que ficaram assim por mais de 30 dias.
 
-Os webhooks desativados são excluídos e não registrados automaticamente se não estiverem conectados a nenhum cenário e estiverem com o status desativado por mais de 30 dias.
+Os webhooks desativados serão excluídos e removidos do registro automaticamente se não estiverem conectados a nenhum cenário e estiverem com o status desativado por mais de 30 dias.
 
 
 ## Solução de problemas

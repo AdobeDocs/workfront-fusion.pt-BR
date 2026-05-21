@@ -4,10 +4,15 @@ description: O módulo Adobe Workfront Fusion HTTP > Criar uma solicitação é 
 author: Becky
 feature: Workfront Fusion
 exl-id: 42f6176e-86e0-489e-868b-66823a932daf
-source-git-commit: 54c368d335b30f55cab19595a5b4740dde6013a7
+TQID: https://experienceleague.adobe.com/-SRXhwpwmvCKhZVVqiUf8Pvh5h0hN8H5CyazYxNLCXw
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '976'
-ht-degree: 0%
+source-wordcount: 989
+ht-degree: 20%
 
 ---
 
@@ -23,7 +28,7 @@ O Adobe Workfront Fusion [!UICONTROL HTTP] > [!UICONTROL Criar um módulo de sol
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -31,31 +36,31 @@ O Adobe Workfront Fusion [!UICONTROL HTTP] > [!UICONTROL Criar um módulo de sol
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion</td> 
    <td>
    <p>Baseado em operação: nenhum requisito de licença do Workfront Fusion</p>
-   <p>Baseado em conector (herdado): automação e integração do Workfront Fusion for Work </p>
+   <p>Baseado em conector (legado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -76,15 +81,15 @@ Ao configurar o módulo [!UICONTROL HTTP] > [!UICONTROL Fazer uma solicitação]
    <td> <p>Insira o URL para o qual você deseja enviar uma solicitação, como um endpoint de API ou site.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Método]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
    <td> <p>Selecione o método de solicitação HTTP necessário para configurar a chamada de API. Para obter mais informações, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Métodos de solicitação HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Cabeçalhos] </td> 
+   <td role="rowheader">[!UICONTROL Headers] </td> 
    <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão. Por exemplo, <code>{"Content-type":"application/json"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Cadeia de Consulta]</td> 
+   <td role="rowheader">[!UICONTROL Query String]</td> 
    <td> <p> Insira os pares de valor-chave da consulta desejados.</p> </td> 
   </tr> 
   <tr> 
@@ -114,7 +119,7 @@ Ao configurar o módulo [!UICONTROL HTTP] > [!UICONTROL Fazer uma solicitação]
    <td> <p> Informe o nome do usuário se quiser enviar uma solicitação usando a autorização básica.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Senha] </td> 
+   <td role="rowheader">[!UICONTROL Password] </td> 
    <td> <p>Digite a senha se quiser enviar uma solicitação usando a autorização básica.</p> </td> 
   </tr> 
   <tr> 
@@ -139,7 +144,7 @@ Ao configurar o módulo [!UICONTROL HTTP] > [!UICONTROL Fazer uma solicitação]
               <p>Selecione o arquivo que contém o certificado ou.</p>
             </li>
             <li value="4">
-              <p>Digite a senha do arquivo.</p>
+              <p>Insira a senha do arquivo.</p>
             </li>
             <li value="5">
               <p>Clique em <b>[!UICONTROL Salvar]</b> para extrair o arquivo e retornar à configuração do módulo.</p>

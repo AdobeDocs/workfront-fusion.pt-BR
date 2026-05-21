@@ -4,14 +4,21 @@ description: Os módulos do Adobe Workfront Fusion Google Slides permitem criar,
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 6f5f97b9-b06a-4336-b349-ee9e2606d4bf
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/ee8cyxX16UJF8UKtbLB-COA96ZlYFJK-jPNnGNYSrz0
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2037'
-ht-degree: 0%
+source-wordcount: 2045
+ht-degree: 16%
 
 ---
 
-# [!DNL Google Slides] módulos
+# Módulos do [!DNL Google Slides]
 
 Os módulos do Adobe Workfront Fusion [!DNL Google Slides] permitem criar, atualizar, listar e/ou excluir apresentações e carregar imagens para apresentações em sua conta do [!DNL Google Slides].
 
@@ -21,7 +28,7 @@ Você também precisa de [!DNL Google Slides] em seu [!DNL Google Drive].
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -29,37 +36,37 @@ Você também precisa de [!DNL Google Slides] em seu [!DNL Google Drive].
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion</td> 
    <td>
    <p>Baseado em operação: nenhum requisito de licença do Workfront Fusion</p>
-   <p>Baseado em conector (herdado): automação e integração do Workfront Fusion for Work </p>
+   <p>Baseado em conector (legado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Pré-requisitos
 
-Para usar módulos [!DNL Google Slides], você deve ter uma conta [!DNL Google].
+Para usar módulos [!DNL Google Slides], você deve ter uma conta do [!DNL Google].
 
 ## Informações da API de slides do Google
 
@@ -84,13 +91,13 @@ O conector de slides do Google usa o seguinte:
  </tbody> 
  </table>
 
-## [!DNL Google Slides] módulos e seus campos
+## Módulos do [!DNL Google Slides] e seus campos
 
-Ao configurar módulos do [!DNL Google Slides], o Workfront Fusion exibe os campos listados abaixo. Junto com esses, campos [!DNL Google Slides] adicionais podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
+Ao configurar módulos do [!DNL Google Slides], o Workfront Fusion exibe os campos listados abaixo. Junto com eles, outros campos do [!DNL Google Slides] podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Alternância de mapa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Botão de alternância Mapear](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Apresentação](#presentation)
 * [Outras](#other)
@@ -115,7 +122,7 @@ Este módulo de ação cria um slide ou exclui um slide existente na apresentaç
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google Slides] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -167,7 +174,7 @@ Este módulo de ação cria uma nova apresentação copiando uma apresentação 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google Slides] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -200,7 +207,7 @@ Este módulo de ação cria uma nova apresentação copiando uma apresentação 
    <td> <p> Selecione a apresentação ou insira ou mapeie a ID da Apresentação que você deseja usar como modelo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Valores] </td> 
+   <td role="rowheader">[!UICONTROL Values] </td> 
    <td> <p>Adicione os valores:</p> 
     <ul> 
      <li><strong>[!UICONTROL Marca]</strong>: Insira a marca que você deseja substituir na apresentação. Por exemplo, <code>&#123;&#123;Name&#125;&#125;</code></li> 
@@ -240,7 +247,7 @@ Esse módulo de ação obtém a versão mais recente da página especificada ou 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google Slides] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -271,7 +278,7 @@ Este módulo de ação obtém a versão mais recente de uma apresentação espec
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google Slides] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -299,7 +306,7 @@ Este módulo recupera uma lista de todas as apresentações no local determinado
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google Slides] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -312,11 +319,11 @@ Este módulo recupera uma lista de todas as apresentações no local determinado
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ID da Pasta]</td> 
+   <td role="rowheader">[!UICONTROL Folder ID]</td> 
    <td> <p>Escolha o local da pasta das apresentações que deseja listar.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limite]</td> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
    <td> <p>Insira ou mapeie o número máximo de apresentações que você deseja que o módulo retorne durante um ciclo de execução de cenário.</p> </td> 
   </tr> 
  </tbody> 
@@ -331,7 +338,7 @@ Este módulo de ação atualiza os dados do gráfico armazenados em uma apresent
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google Slides] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -367,7 +374,7 @@ Carrega uma imagem com os dados fornecidos.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google Slides] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -412,7 +419,7 @@ Esse módulo de acionamento inicia um cenário quando uma nova apresentação é
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google Slides] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -424,7 +431,7 @@ Esse módulo de acionamento inicia um cenário quando uma nova apresentação é
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limite]</td> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
    <td> <p>Insira ou mapeie o número máximo de apresentações que o Workfront Fusion deve retornar durante um ciclo de execução de cenário.</p> </td> 
   </tr> 
  </tbody> 
@@ -444,7 +451,7 @@ Esse módulo torna clicáveis todos os links em uma apresentação ou insere um 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google Slides] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -488,28 +495,28 @@ Executa uma chamada de API autorizada arbitrária.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google Slides] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
-   <td> <p>Insira um caminho relativo para <code>https://developers.google.com/slides/</code>. Por exemplo, Apresentação.</p> <p>Para obter a lista de pontos de extremidade disponíveis, consulte a <a href="https://developers.google.com/slides/reference/rest">[!DNL Google Slides] Documentação da API</a>.</p> </td> 
+   <td> <p>Insira um caminho relativo a <code>https://developers.google.com/slides/</code>. E.g. Apresentação.</p> <p>Para obter a lista de pontos de extremidade disponíveis, consulte a <a href="https://developers.google.com/slides/reference/rest">[!DNL Google Slides] Documentação da API</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Método]</td> 
+   <td role="rowheader">[!UICONTROL Method]</td> 
    <td> <p>Selecione o método de solicitação HTTP necessário para configurar a chamada de API. Para obter mais informações, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Métodos de solicitação HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Cabeçalhos]</td> 
+   <td role="rowheader">[!UICONTROL Headers]</td> 
    <td> <p>Insira os cabeçalhos de solicitação desejados. Você não precisa adicionar cabeçalhos de autorização.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Cadeia de Consulta]</td> 
+   <td role="rowheader">[!UICONTROL Query String]</td> 
    <td> <p> Insira a string de consulta da solicitação.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Corpo]</td> 
-   <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
+   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td> <p>Adicione o conteúdo do corpo para a chamada de API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais, como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 

@@ -4,16 +4,19 @@ description: Para a maioria dos aplicativos, é necessário criar uma conexão, 
 author: Becky
 feature: Workfront Fusion
 exl-id: 01132df7-4cc0-4ff3-b4d7-607a06558735
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
-workflow-type: ht
-source-wordcount: '315'
+TQID: https://experienceleague.adobe.com/WPX-TdEbhwv4bArOp6xwhVFZTmdHznLg4CMiZDeV70s
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+workflow-type: tm+mt
+source-wordcount: 318
 ht-degree: 100%
 
 ---
 
 # Visão geral da conexão
 
-O Workfront Fusion requer uma conexão para a maioria dos aplicativos. Ele usa essa conexão para se comunicar com o serviço de terceiros fornecido.
+O Workfront Fusion requer uma conexão para a maioria dos aplicativos.  Ele usa essa conexão para se comunicar com o serviço de terceiros fornecido.
 
 Por exemplo, se você quiser criar um cenário que recupere informações do Workfront, deverá conceder permissão para que o Workfront Fusion acesse sua conta do Workfront.
 

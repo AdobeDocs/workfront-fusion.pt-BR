@@ -1,19 +1,25 @@
 ---
-title: Módulos do Modelo do Microsoft Word
+title: Módulos de modelos do Microsoft Word
 description: Em um cenário do Adobe Workfront Fusion, é possível automatizar workflows que usam Modelos do Microsoft Word, bem como conectá-los a vários aplicativos e serviços de terceiros.
 author: Becky
 feature: Workfront Fusion
 exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/oP6roNkIFZJ3kCdRiE1MtmYuNQFRrcNJRPMESXP-2Sw
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 0%
+source-wordcount: 1363
+ht-degree: 13%
 
 ---
 
-# [!DNL Microsoft Word Template] módulos
+# Módulos do [!DNL Microsoft Word Template]
 
-Em um cenário do Adobe Workfront Fusion, é possível automatizar fluxos de trabalho que usam o [!DNL Microsoft Word Templates], bem como conectá-lo a vários aplicativos e serviços de terceiros.
+Em um cenário do Adobe Workfront Fusion, é possível automatizar fluxos de trabalho que usam [!DNL Microsoft Word Templates], bem como conectá-lo a vários aplicativos e serviços de terceiros.
 
 Para obter instruções sobre como criar um cenário, consulte os artigos em [Criar cenários: índice do artigo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -21,7 +27,7 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -29,31 +35,31 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion</td> 
    <td>
    <p>Baseado em operação: nenhum requisito de licença do Workfront Fusion</p>
-   <p>Baseado em conector (herdado): automação e integração do Workfront Fusion for Work </p>
+   <p>Baseado em conector (legado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -152,7 +158,7 @@ O módulo criaria o seguinte documento:
 > Eduard Salo, 4445552345
 ```
 
-## [!DNL Microsoft Word Template] módulos
+## Módulos do [!DNL Microsoft Word Template]
 
 Esses módulos não exigem uma conexão.
 
@@ -176,7 +182,7 @@ Esse módulo de transformador permite preencher um documento com os dados especi
    <td> <p>Insira o(s) caractere(s) que deseja marcar o final do texto que será substituído. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Exemplo: </b></span></span>Digite <code>&#93;&#93;</code> para substituir <code>[[replace_me]]</code></p>. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL arquivo Source]</td> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
    <td> <p> Selecione um arquivo de origem de um módulo anterior ou mapeie os dados do arquivo de origem.</p> </td> 
   </tr> 
   <tr> 
@@ -188,7 +194,7 @@ Esse módulo de transformador permite preencher um documento com os dados especi
    <td> <p>Selecione uma opção para indicar se os dados que você está usando são de um formulário ou de uma coleção de dados brutos (dados não processados do computador).</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Valores]</td> 
+   <td role="rowheader">[!UICONTROL Values]</td> 
    <td> <p>Deve ser uma matriz de coleções, em que:</p> 
     <ul> 
      <li>Cada coleção corresponde a uma entrada de dados e contém um item <code>entry</code></li> 
@@ -246,7 +252,7 @@ Esse módulo agregador é especialmente útil para criar listas ou relatórios.
    <td>Habilite esta opção para parar o processamento quando uma agregação não contiver pacotes.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL arquivo Source]</td> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
    <td> <p> Selecione um arquivo de origem de um módulo anterior ou mapeie os dados do arquivo de origem.</p> </td> 
   </tr> 
   <tr> 
@@ -254,7 +260,7 @@ Esse módulo agregador é especialmente útil para criar listas ou relatórios.
    <td>Insira um nome de arquivo (incluindo a extensão) para o arquivo de saída de destino.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Valores]</td> 
+   <td role="rowheader">[!UICONTROL Values]</td> 
    <td> <p>Deve ser uma matriz de coleções, em que:</p> 
     <ul> 
      <li>Cada coleção corresponde a uma entrada de dados e contém um item <code>entry</code></li> 

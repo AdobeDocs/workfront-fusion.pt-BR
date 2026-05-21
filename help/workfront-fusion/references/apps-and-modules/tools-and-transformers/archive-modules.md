@@ -1,13 +1,18 @@
 ---
-title: Módulos de arquivamento
+title: Módulos de arquivo
 description: Em um cenário do Adobe Workfront Fusion, é possível conectar um arquivo, como um arquivo compactado, a vários aplicativos e serviços de terceiros. Por exemplo, você pode configurar um cenário que
 author: Becky
 feature: Workfront Fusion
 exl-id: 4b5ff3d5-601c-4119-ad70-3612ad5ba1ab
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+TQID: https://experienceleague.adobe.com/hcfjBqNDF3zEVJMLmekD-O8lmzMLyKk6Xp9JKTXcVWc
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '650'
-ht-degree: 0%
+source-wordcount: 651
+ht-degree: 32%
 
 ---
 
@@ -19,7 +24,7 @@ Para obter instruções sobre como criar um cenário, consulte os artigos em [Cr
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -27,22 +32,22 @@ Para obter instruções sobre como criar um cenário, consulte os artigos em [Cr
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -54,7 +59,7 @@ Ao configurar módulos [!UICONTROL Arquivar], o Workfront Fusion exibe os campos
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Alternância de mapa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Botão de alternância Mapear](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Ações](#actions)
 * [Agregadores](#aggregators)
@@ -73,7 +78,7 @@ O módulo retorna a ID do arquivo e quaisquer campos associados, juntamente com 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL arquivo Source]</td> 
+   <td>[!UICONTROL Source file]</td> 
    <td> <p>  <p>Selecione um arquivo de origem de um módulo anterior ou mapeie os dados de origem.</p></p>  </td> 
   </tr> 
  </tbody> 
@@ -104,7 +109,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
    <td> <p> Selecione o módulo do qual deseja recuperar os arquivos.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Tipo] </td> 
+   <td>[!UICONTROL Type] </td> 
    <td> <p>Selecione se deseja adicionar arquivos a um arquivo ZIP , GZIP ou [!UICONTROL TAR].</p> </td> 
   </tr> 
   <tr> 
@@ -124,7 +129,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
    <td> <p> Insira um nome para o arquivo criado. Não adicione uma extensão.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL arquivo Source]</td> 
+   <td>[!UICONTROL Source file]</td> 
    <td> <p>Selecione um arquivo de origem de um módulo anterior ou mapeie o nome e os dados do arquivo de origem.</p> </td> 
   </tr> 
  </tbody> 

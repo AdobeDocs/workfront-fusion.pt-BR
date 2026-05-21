@@ -4,16 +4,24 @@ description: Em um cenário do Adobe Workfront Fusion, é possível automatizar 
 author: Becky
 feature: Workfront Fusion
 exl-id: c8c5f2e3-5af1-4957-bb6f-6c19c35102c5
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/DM-90ye4UKybFarHch-ubk4vOt4Ofh69EBXTmAO-Hmw
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '954'
-ht-degree: 1%
+source-wordcount: 959
+ht-degree: 47%
 
 ---
 
-# [!DNL Datadog] módulos
+# Módulos do [!DNL Datadog]
 
-Em um cenário do Adobe Workfront Fusion, é possível automatizar fluxos de trabalho que usam o [!DNL Datadog], bem como conectá-lo a vários aplicativos e serviços de terceiros.
+Em um cenário do Adobe Workfront Fusion, é possível automatizar fluxos de trabalho que usam [!DNL Datadog], bem como conectá-lo a vários aplicativos e serviços de terceiros.
 
 Para obter instruções sobre como criar um cenário, consulte os artigos em [Criar cenários: índice do artigo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -21,7 +29,7 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -29,37 +37,37 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion</td> 
    <td>
    <p>Baseado em operação: nenhum requisito de licença do Workfront Fusion</p>
-   <p>Baseado em conector (herdado): automação e integração do Workfront Fusion for Work </p>
+   <p>Baseado em conector (legado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Pré-requisitos
 
-Para usar módulos [!DNL Datadog], você deve ter uma conta [!DNL Datadog].
+Para usar módulos [!DNL Datadog], você deve ter uma conta do [!DNL Datadog].
 
 ## Informações da API Datadog
 
@@ -107,11 +115,11 @@ Você pode criar uma conexão com sua conta [!DNL Datadog] diretamente de dentro
       <td> <p> Insira um nome para a conexão.</p> </td> 
      </tr> 
         <tr>
-        <td role="rowheader">[!UICONTROL Ambiente]</td>
+        <td role="rowheader">[!UICONTROL Environment]</td>
         <td>Selecione se essa conexão é para um ambiente de produção ou não produção.</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Tipo]</td>
+        <td role="rowheader">[!UICONTROL Type]</td>
         <td>Selecione se você está se conectando a uma conta de serviço ou a uma conta pessoal.</td>
         </tr>
      <tr> 
@@ -131,13 +139,13 @@ Você pode criar uma conexão com sua conta [!DNL Datadog] diretamente de dentro
 
 1. Clique em **[!UICONTROL Continuar]** para criar a conexão e voltar para o módulo.
 
-## [!DNL Datadog] módulos e seus campos
+## Módulos do [!DNL Datadog] e seus campos
 
-Ao configurar módulos do [!DNL Datadog], o Workfront Fusion exibe os campos listados abaixo. Junto com esses, campos [!DNL Datadog] adicionais podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
+Ao configurar módulos do [!DNL Datadog], o Workfront Fusion exibe os campos listados abaixo. Junto com eles, outros campos do [!DNL Datadog] podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Alternância de mapa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Botão de alternância Mapear](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 ### Ações
 
@@ -153,7 +161,7 @@ Esse módulo de ação permite executar uma chamada de API personalizada.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Datadog] ao Workfront Fusion, consulte <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Datadog] ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -162,23 +170,23 @@ Esse módulo de ação permite executar uma chamada de API personalizada.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
-   <td>Insira um caminho relativo para <code>https://api.datadoghq.com/api/</code>. Exemplo:<code> /v1/org</code>.</td> 
+   <td>Insira um caminho relativo a <code>https://api.datadoghq.com/api/</code>. Exemplo:<code> /v1/org</code>.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Método]</td> 
+   <td role="rowheader">[!UICONTROL Method]</td> 
    <td> <p>Selecione o método de solicitação HTTP necessário para configurar a chamada de API. Para obter mais informações, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Métodos de solicitação HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Cabeçalhos]</td> 
+   <td role="rowheader">[!UICONTROL Headers]</td> 
    <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p> <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p> <p>O Workfront Fusion adiciona os cabeçalhos de autorização para você.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Cadeia de Consulta]</td> 
-   <td> <p>Adicione a consulta da chamada à API na forma de um objeto JSON padrão.</p> <p>Por exemplo: <code>{"name":"something-urgent"}</code></p> </td> 
+   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td> <p>Adicione a consulta para a chamada de API na forma de um objeto JSON padrão.</p> <p>Por exemplo: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Corpo]</td> 
-   <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
+   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td> <p>Adicione o conteúdo do corpo para a chamada de API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais, como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -211,11 +219,11 @@ O limite para payloads compactados é de 3,2 megabytes (3200000) e 62 megabytes 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Datadog] ao Workfront Fusion, consulte <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Datadog] ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Tipo]</td> 
+   <td role="rowheader">[!UICONTROL Type]</td> 
    <td> Selecione o tipo de métrica que deseja usar. 
    <ul>
    <li>Medidor</li>
@@ -236,7 +244,7 @@ O limite para payloads compactados é de 3,2 megabytes (3200000) e 62 megabytes 
    <td>Informe o nome do host que produziu a métrica. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Marcas]</td> 
+   <td role="rowheader">[!UICONTROL Tags]</td> 
    <td> Para cada marca que você deseja adicionar à métrica, clique em <b>Adicionar item</b> e insira o valor da marca.</td> 
   </tr> 
  </tbody> 

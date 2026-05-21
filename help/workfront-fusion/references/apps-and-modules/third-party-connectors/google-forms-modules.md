@@ -4,14 +4,19 @@ description: Os  [!DNL Adobe Workfront Fusion Google Forms] módulos permitem mo
 author: Becky
 feature: Workfront Fusion
 exl-id: dc017957-c0f8-4206-916f-21ccda346fb9
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/mH7rS7ZCyRcDWv0F6CFvhZ19FL-sNL0liLT53jeZy54
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1421'
-ht-degree: 0%
+source-wordcount: 1432
+ht-degree: 20%
 
 ---
 
-# [!DNL Google Forms] módulos
+# Módulos do [!DNL Google Forms]
 
 Os módulos do Adobe Workfront Fusion [!DNL Google Forms] permitem monitorar, selecionar, adicionar, atualizar ou excluir respostas no [!DNL Google Forms].
 
@@ -23,7 +28,7 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -31,37 +36,37 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion</td> 
    <td>
    <p>Baseado em operação: nenhum requisito de licença do Workfront Fusion</p>
-   <p>Baseado em conector (herdado): automação e integração do Workfront Fusion for Work </p>
+   <p>Baseado em conector (legado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Pré-requisitos
 
-Para usar módulos [!DNL Google Forms], você deve ter uma conta [!DNL Google].
+Para usar módulos [!DNL Google Forms], você deve ter uma conta do [!DNL Google].
 
 ## Informações da API do Google Forms
 
@@ -89,13 +94,13 @@ Para trabalhar com as respostas do formulário, primeiro crie a planilha de resp
 1. Selecione se deseja criar uma nova planilha ou uma planilha existente
 1. Clique em **[!UICONTROL Criar]**.
 
-## [!DNL Google Forms] módulos e seus campos
+## Módulos do [!DNL Google Forms] e seus campos
 
-Ao configurar módulos do [!DNL Google Forms], o Workfront Fusion exibe os campos listados abaixo. Junto com esses, campos [!DNL Google Forms] adicionais podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
+Ao configurar módulos do [!DNL Google Forms], o Workfront Fusion exibe os campos listados abaixo. Junto com eles, outros campos do [!DNL Google Forms] podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Alternância de mapa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Botão de alternância Mapear](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Acionadores](#triggers)
 * [Ações](#actions)
@@ -112,7 +117,7 @@ Verifica se há novas respostas no formulário.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -141,7 +146,7 @@ Verifica se há novas respostas no formulário.
    <td>Selecione como deseja que datas, horas e duração sejam representadas na saída. Este campo será ignorado se a [!UICONTROL Opção de Renderização de Valor] estiver definida como [!UICONTROL Valor Formatado].</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limite]</td> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
    <td> <p> Defina o número máximo de respostas com as quais o Workfront Fusion funciona durante um ciclo.</p> </td> 
   </tr> 
  </tbody> 
@@ -164,7 +169,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -176,7 +181,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
    <td> <p> Selecione a planilha que contém as respostas do formulário.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader"> <p>[!UICONTROL Valores]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Values]</p> </td> 
    <td> <p>Insira os valores desejados nas colunas da planilha. As colunas estão disponíveis com base na planilha.</p> <p>Na coluna [!UICONTROL Carimbo de data/hora], use o seguinte valor:</p><pre>formatDate(agora;DD/MM/AAAA HH:mm;UTC)</pre> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -207,7 +212,7 @@ Este módulo exclui uma resposta selecionada.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -236,7 +241,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -252,7 +257,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
    <td> <p>Informe ou mapeie o número da linha que deseja atualizar.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Valores]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Values]</p> </td> 
    <td> <p>Insira os novos valores para as colunas desejadas. As colunas estão disponíveis com base na planilha.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -295,7 +300,7 @@ Este módulo retorna respostas que correspondem aos critérios fornecidos.
    <td> <p> Selecione o intervalo de colunas que deseja pesquisar.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Filtro]</td> 
+   <td role="rowheader">[!UICONTROL Filter]</td> 
    <td> <p>Defina o filtro pelo qual deseja pesquisar respostas de respostas.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -335,7 +340,7 @@ Este módulo executa uma pesquisa usando o [[!DNL Google Charts Query Language]]
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-    <td>[!UICONTROL Conexão]</td>
+    <td>[!UICONTROL Connection]</td>
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Google] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Criar uma conexão - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr>

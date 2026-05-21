@@ -4,9 +4,16 @@ description: Você pode usar o conector de placas Adobe Workfront para automatiz
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+TQID: https://experienceleague.adobe.com/0yHy2mMpsOxPH-cphARzE3LmIlAmYLNQTpXxFgb6dvo
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2904'
+source-wordcount: 2906
 ht-degree: 15%
 
 ---
@@ -48,7 +55,7 @@ Você pode usar os módulos Quadros Adobe Workfront para ler ou atualizar regist
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações desta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -345,7 +352,7 @@ Este módulo de ação cria um quadro no Workfront. Você pode especificar o tip
    <td>Informe ou mapeie um nome para o novo quadro.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Modelo]</td> 
+   <td>[!UICONTROL Template]</td> 
    <td>Selecione o modelo para o tipo de quadro que deseja criar.</td> 
   </tr> 
  </tbody> 

@@ -4,10 +4,13 @@ description: Os seguintes tokens para formatação de data e hora estão dispon�
 author: Becky
 feature: Workfront Fusion
 exl-id: 4a7f288e-d563-4c37-a8bf-efc7e6b759d4
-source-git-commit: 24a6c1558fd6349c022df8a1847a7f39fafddd67
+TQID: https://experienceleague.adobe.com/PVtZkvmHsxtuAH7fXCoXB07zPRlHPJnG-j0M2lb-hGQ
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 11%
+source-wordcount: 253
+ht-degree: 16%
 
 ---
 
@@ -40,7 +43,7 @@ ht-degree: 11%
   <tr> 
    <td><code>Y</code> </td> 
    <td><code>1970 1971 ... 9999 +10000 +10001</code> </td> 
-   <td> <p>[!UICONTROL Year with any number of digits and sign]</p> </td> 
+   <td> <p>[!UICONTROL Year com qualquer número de dígitos e sinal]</p> </td> 
   </tr> 
   <tr> 
    <td><code>Q</code> </td> 
@@ -60,7 +63,7 @@ ht-degree: 11%
   <tr> 
    <td><code>Mo </code> </td> 
    <td><code>1st 2nd ... 11th 12th</code> </td> 
-   <td> <p>[!UICONTROL Month] com ordinal</p> </td> 
+   <td> <p>[!UICONTROL Mês] com ordinal</p> </td> 
   </tr> 
   <tr> 
    <td><code>MM</code> </td> 
@@ -100,7 +103,7 @@ ht-degree: 11%
   <tr> 
    <td><code>DDDo</code> </td> 
    <td><code>1st 2nd ... 364th 365th</code> </td> 
-   <td> <p>[!UICONTROL Day of year] com ordinal</p> </td> 
+   <td> <p>[!UICONTROL Dia do ano] com ordinal</p> </td> 
   </tr> 
   <tr> 
    <td><code>DDDD </code> </td> 
@@ -132,7 +135,7 @@ ht-degree: 11%
   <tr> 
    <td><code>do</code> </td> 
    <td><code>0th 1st ... 5th 6th </code> </td> 
-   <td> <p>[!UICONTROL Day of week with ordinal]</p> </td> 
+   <td> <p>[!UICONTROL Dia da semana com ordinal]</p> </td> 
   </tr> 
   <tr> 
    <td><code>dd </code> </td> 
@@ -162,7 +165,7 @@ ht-degree: 11%
   <tr> 
    <td><code>wo </code> </td> 
    <td><code>1st 2nd ... 52nd 53rd</code> </td> 
-   <td> <p>[!UICONTROL Week of year with ordinal]</p> </td> 
+   <td> <p>[!UICONTROL Semana do ano com ordinal]</p> </td> 
   </tr> 
   <tr> 
    <td><code>ww </code> </td> 
@@ -269,12 +272,12 @@ ht-degree: 11%
   <tr> 
    <td><code>mm</code> </td> 
    <td><code>00 01 ... 58 59</code> </td> 
-   <td> <p>[!UICONTROL Minutes with] zero à esquerda</p> </td> 
+   <td> <p>[!UICONTROL Minutos com] zero à esquerda</p> </td> 
   </tr> 
   <tr> 
    <td><code>s</code> </td> 
    <td><code>0 1 ... 58 59</code> </td> 
-   <td> <p> Segundos</p> </td> 
+   <td> <p> Seconds</p> </td> 
   </tr> 
   <tr> 
    <td><code>ss</code> </td> 

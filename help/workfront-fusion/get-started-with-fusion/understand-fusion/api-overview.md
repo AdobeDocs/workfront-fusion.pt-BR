@@ -3,10 +3,16 @@ title: Visão geral da API
 description: As APIs (Application Programming Interfaces, interfaces de programação de aplicativos) são uma maneira de aplicativos e serviços se comunicarem entre si. O Fusion usa APIs para se comunicar com o aplicativo ao qual você está se conectando. Cada aplicativo tem uma API separada.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 74308a6a43418296b29739f03683f23357d545bc
+exl-id: 2629ff6e-2b76-44cd-8030-465724cc04bf
+TQID: https://experienceleague.adobe.com/LTJpx90BlcSJp-l1JieuH8Tr2ulGpLujwt50-5IYttY
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 87%
+source-wordcount: 494
+ht-degree: 79%
 
 ---
 
@@ -32,7 +38,7 @@ O fato das APIs serem definidas por seus proprietários e não pelo Fusion leva 
 
   Para obter uma lista de conectores universais, consulte [Conectores universais](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors).
 
-* **As alterações feitas na API de um aplicativo pelo proprietário podem afetar a funcionalidade do Fusion.** Se as alterações forem graves o suficiente, o Fusion talvez precise atualizar módulos ou tipos de conexão ou, em casos extremos, criar um novo conector para o aplicativo.
+* **As alterações feitas na API de um aplicativo pelo proprietário podem afetar a funcionalidade do Fusion.** Se as alterações forem graves o suficiente, o Fusion pode precisar atualizar módulos ou tipos de conexão ou, em casos extremos, pode criar um novo conector para o aplicativo.
 
   Para obter mais informações sobre essas situações extremas, conhecidas como &quot;alterações drásticas&quot;, consulte [Alterações drásticas](#breaking-changes) neste artigo.
 

@@ -4,10 +4,15 @@ description: Em um cenário do Adobe Workfront Fusion, é possível automatizar 
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+TQID: https://experienceleague.adobe.com/PE6mgMsKjoQLz5JeXx6EN-xYsm-x1DpaIrtHBnRE1PY
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '3106'
-ht-degree: 22%
+source-wordcount: 3117
+ht-degree: 23%
 
 ---
 
@@ -433,7 +438,7 @@ Esse módulo de ação baixa o arquivo de origem de uma prova específica que vo
 
 Especifique a ID da prova.
 
-O módulo retorna o conteúdo do arquivo de origem usado para criar a prova. Você pode mapear essas informações nos módulos subsequentes no cenário.
+O módulo retorna o conteúdo do arquivo de origem usado para criar a prova.Você pode mapear essas informações em módulos subsequentes no cenário.
 
 Você deve ter permissões suficientes para acessar o registro em [!DNL Workfront Proof] para recuperar essas informações.
 
@@ -598,7 +603,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
    <td>Insira ou mapeie a ID da prova que deseja atualizar.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Nome da Prova]</td> 
+   <td>[!UICONTROL Proof Name]</td> 
    <td>Insira ou mapeie o nome da prova que deseja atualizar.</td> 
   </tr> 
   <tr> 
@@ -671,7 +676,7 @@ Este módulo de pesquisa lista todos os templates de workflow disponíveis.
 
 Este módulo de pesquisa procura registros em um objeto em [!DNL Workfront Proof] que correspondam à consulta de pesquisa especificada.
 
-O módulo retorna a ID da prova se estiver procurando uma prova. Ou retorna as IDs de usuário, emails, nomes, posições e aliases de email dos destinatários, se estiver procurando destinatários. Você pode mapear essas informações nos módulos subsequentes do cenário.
+O módulo retorna a ID da prova se estiver procurando uma prova. Ou retorna as IDs de usuário, emails, nomes, posições e aliases de email dos destinatários, se estiver procurando destinatários.Você pode mapear essas informações em módulos subsequentes no cenário.
 
 Você deve ter permissões suficientes para acessar o registro em [!DNL Workfront Proof] para recuperar essas informações.
 

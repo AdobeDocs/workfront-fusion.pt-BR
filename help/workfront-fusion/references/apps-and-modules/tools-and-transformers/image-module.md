@@ -4,10 +4,16 @@ description: Os módulos do Adobe Workfront Fusion Image permitem obter informa�
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: a7696c9d-002d-4bb4-ae10-1f69dc5e66fe
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+TQID: https://experienceleague.adobe.com/1YlCzSkD3MpRG6VcTPHk-sW0RXK1hexs6QPmQdN07Ps
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '737'
-ht-degree: 0%
+source-wordcount: 741
+ht-degree: 23%
 
 ---
 
@@ -17,7 +23,7 @@ Os módulos [!UICONTROL Image] do Adobe Workfront Fusion permitem obter informa�
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -25,22 +31,22 @@ Os módulos [!UICONTROL Image] do Adobe Workfront Fusion permitem obter informa�
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -70,7 +76,7 @@ O arquivo de origem e a saída devem estar em um desses formatos. Por exemplo, o
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL arquivo Source]</td> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
    <td> <p>Selecione um arquivo de origem de um módulo anterior ou mapeie o nome e os dados do arquivo de origem.</p> </td> 
   </tr> 
   <tr> 
@@ -89,7 +95,7 @@ Este módulo de transformador retorna informações básicas sobre um módulo.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL arquivo Source]</td> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
    <td> <p>Selecione um arquivo de origem de um módulo anterior ou mapeie o nome e os dados do arquivo de origem.</p> </td> 
   </tr> 
  </tbody> 
@@ -104,7 +110,7 @@ Esse módulo de transformador altera a altura e a largura de uma imagem de acord
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL arquivo Source]</td> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
    <td> <p>Selecione um arquivo de origem de um módulo anterior ou mapeie o nome e os dados do arquivo de origem.</p> </td> 
   </tr> 
   <tr> 
@@ -121,7 +127,7 @@ Esse módulo de transformador altera a altura e a largura de uma imagem de acord
      <li> <p>[!UICONTROL Largura mínima]</p> <p>Amplia uma imagem até a largura especificada. A altura é calculada automaticamente.</p> </li> 
      <li> <p>[!UICONTROL Altura mínima]</p> <p>Amplia uma imagem para uma altura especificada por você. A largura é calculada automaticamente.</p> </li> 
      <li> <p>[!UICONTROL Altura ou largura mínima]</p> <p>Amplia uma imagem de forma que sua altura e largura não sejam menores que os valores especificados. Como essa opção mantém a relação altura/largura, uma das dimensões pode ser maior do que o especificado. Por exemplo, se altura e largura forem especificadas como 300, uma imagem 40x30 será ampliada para 400X300.</p> </li> 
-     <li> <p>[!UICONTROL Porcentagem]</p> <p>Altera o tamanho da imagem em uma porcentagem com base no valor especificado. </p> </li> 
+     <li> <p>[!UICONTROL Percent]</p> <p>Altera o tamanho da imagem em uma porcentagem com base no valor especificado. </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 

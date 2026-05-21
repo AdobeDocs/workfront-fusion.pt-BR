@@ -4,9 +4,14 @@ description: O Adobe Workfront Fusion exige uma licença do Adobe Workfront Fusi
 author: Becky
 feature: Workfront Fusion
 exl-id: 3b445b50-5812-4ded-9788-f467991e0b52
-source-git-commit: 805e3e0d194d0f73caa1455ea1dadf1d799bdc7a
+TQID: https://experienceleague.adobe.com/Jm9c42LodUUcCVvGbXnQwS2lICMNY40y83Ju2SSmzHo
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: 1961
 ht-degree: 26%
 
 ---

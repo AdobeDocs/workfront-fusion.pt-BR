@@ -4,10 +4,13 @@ description: Este documento descreve como o Adobe Workfront Fusion se comporta e
 author: Becky
 feature: Workfront Fusion
 exl-id: a8bdd36d-c01f-4019-a3ea-fb185101500e
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+TQID: https://experienceleague.adobe.com/rqDQTI-IuOW95TbguHt-F2-4lugdaOfJf-7dcwXk5ZE
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '709'
-ht-degree: 5%
+source-wordcount: 709
+ht-degree: 9%
 
 ---
 
@@ -15,7 +18,7 @@ ht-degree: 5%
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 Você deve ter o seguinte acesso para usar a funcionalidade neste artigo:
 

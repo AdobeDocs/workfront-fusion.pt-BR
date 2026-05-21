@@ -4,10 +4,15 @@ description: A conta do  [!DNL Adobe Workfront Fusion Frame].io modules enable y
 author: Becky
 feature: Workfront Fusion
 exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/uL3krmkiGJ5VPBQRbd1ynAApZVNcEaMGVGPmVPXKVV4
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2663'
-ht-degree: 44%
+source-wordcount: 2662
+ht-degree: 45%
 
 ---
 
@@ -109,14 +114,14 @@ Você pode se conectar a [!DNL Frame.io] usando um token de API ou usando o OAut
 
 ### Conectar-se a [!DNL Frame.io] usando um token de API
 
-Para conectar sua conta do [!DNL Frame.io] ao Workfront Fusion usando um token de API, você deve criar o token de API em sua conta do [!DNL Frame.io] e inseri-lo na caixa de diálogo [!DNL Frame.io]Criar uma conexão[!UICONTROL &#x200B; do Workfront Fusion &#x200B;].
+Para conectar sua conta do [!DNL Frame.io] ao Workfront Fusion usando um token de API, você deve criar o token de API em sua conta do [!DNL Frame.io] e inseri-lo na caixa de diálogo [!UICONTROL Criar uma conexão] do Workfront Fusion [!DNL Frame.io].
 
 1. Faça logon em sua conta do [!DNL Frame.io].
 1. Vá para a página **[!UICONTROL Tokens]** no [!DNL Frame.io] Developer.
 1. Clique em **[!UICONTROL Novo]**.
 1. Insira o nome do token, selecione os escopos que deseja usar e clique em **[!UICONTROL Criar]**.
 1. Copie o token fornecido.
-1. Vá para o Workfront Fusion e abra a caixa de diálogo [!DNL Frame.io]Criar uma conexão **[!UICONTROL do módulo]**.
+1. Vá para o Workfront Fusion e abra a caixa de diálogo **[!UICONTROL Criar uma conexão]** do módulo [!DNL Frame.io].
 1. No campo **[!UICONTROL Tipo de conexão]**, selecione **[!DNL Frame.io]**.
 1. Insira o token copiado na etapa 5 para o campo **[!UICONTROL Sua [!DNL Frame.io] Chave de API]**
 1. Clique em **[!UICONTROL Continuar]** para estabelecer a conexão e retornar ao módulo.
@@ -130,7 +135,7 @@ Você pode criar uma conexão com [!DNL Frame.io] usando o PKCE OAuth 2.0 com um
 
 #### Conecte-se a [!DNL Frame.io] usando o PKCE do OAuth 2.0 (sem ID do cliente)
 
-1. Vá para o Workfront Fusion e abra a caixa de diálogo [!DNL Frame.io]Criar uma conexão **[!UICONTROL do módulo]**.
+1. Vá para o Workfront Fusion e abra a caixa de diálogo **[!UICONTROL Criar uma conexão]** do módulo [!DNL Frame.io].
 1. No campo **[!UICONTROL Tipo de conexão]**, selecione **[!UICONTROL [!DNL Frame.io]PKCE OAuth 2.0]**.
 1. Insira um nome para a nova conexão no campo **[!UICONTROL Nome da conexão]**.
 1. Clique em **[!UICONTROL Continuar]** para estabelecer a conexão e retornar ao módulo.
@@ -153,7 +158,7 @@ Você pode criar uma conexão com [!DNL Frame.io] usando o PKCE OAuth 2.0 com um
 
 
 1. Copie o `client_id` fornecido.
-1. Vá para o Workfront Fusion e abra a caixa de diálogo [!DNL Frame.io]Criar uma conexão **[!UICONTROL do módulo]**.
+1. Vá para o Workfront Fusion e abra a caixa de diálogo **[!UICONTROL Criar uma conexão]** do módulo [!DNL Frame.io].
 1. No campo **[!UICONTROL Tipo de conexão]**, selecione **[!UICONTROL [!DNL Frame.io]PKCE OAuth 2.0]**.
 1. Insira um nome para a nova conexão no campo **[!UICONTROL Nome da conexão]**.
 1. Clique em **[!UICONTROL Mostrar configurações avançadas]**.
@@ -166,7 +171,7 @@ Ao configurar módulos do [!DNL Frame.io], o Workfront Fusion exibe os campos li
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Botão Mapear](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Botão de alternância Mapear](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Ativos](#assets)
 * [Comentários](#comments)
@@ -735,7 +740,7 @@ Este módulo de pesquisa recupera todos os projetos da equipe especificada.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Insira ou mapeie o número máximo de projetos que você deseja que o módulo retorne durante cada ciclo de execução de cenário.</p> </td> 
+   <td> <p>Insira ou mapeie o número máximo de projetos que você deseja que o módulo retorne durante cada ciclo de execução do cenário.</p> </td> 
   </tr> 
  </tbody> 
 </table>
