@@ -5,9 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: a302a1d4-fddf-4a71-adda-6b87ff7dba4b
 TQID: https://experienceleague.adobe.com/ylQwzctWz1sE03eGhHWxjf48mKxHiuZVy-HN07Mtmh0
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 2371
@@ -126,7 +129,7 @@ Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Li
       <td role="rowheader"> <p>[!UICONTROL Tipo de fluxo]</p> </td> 
       <td> <p>Selecione o fluxo para obter tokens.</p> 
        <ul> 
-        <li><strong>[!Código de Autorização UICONTROL]</strong>: Insira o <code>[!UICONTROL Authorize URI]</code> e <code>[!UICONTROL Token URI]</code> da documentação de API do serviço.</li> 
+        <li><strong>[!UICONTROL Código de Autorização]</strong>: Insira o <code>[!UICONTROL Authorize URI]</code> e <code>[!UICONTROL Token URI]</code> da documentação de API do serviço.</li> 
         <li><strong>[!UICONTROL Implícito]</strong>: Insira o <code>[!UICONTROL Authorize URI]</code> da documentação da API do serviço.</li> 
        </ul> </td> 
      </tr> 
@@ -150,7 +153,7 @@ Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Li
       <td role="rowheader"> <p>[!UICONTROL Autorizar parâmetros]</p> </td> 
       <td> <p>Adicione os parâmetros que deseja incluir na chamada de autorização. Os seguintes parâmetros padrão são sempre incluídos automaticamente e não precisam ser adicionados.</p> <p>Parâmetros padrão:</p> 
        <ul> 
-        <li> <p><strong>[!UICONTROL tipo_resposta]</strong> </p> <p> <code>code </code>para o fluxo de Código de Autorização [!UICONTROL] e <code>token </code>para o fluxo Implícito [!UICONTROL]</p> </li> 
+        <li> <p><strong>[!UICONTROL tipo_resposta]</strong> </p> <p> <code>code </code>para o fluxo de Código de Autorização  e <code>token </code>para o fluxo Implícito </p> </li> 
         <li> <p><strong>[!UICONTROL redirect_uri]</strong> </p> 
          <table style="table-layout:auto">  
           <col> 

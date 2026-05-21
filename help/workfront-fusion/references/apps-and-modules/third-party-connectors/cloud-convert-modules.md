@@ -5,8 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 52c4d18a-8bee-44d6-9a2c-cc9e157e1dde
 TQID: https://experienceleague.adobe.com/jHKSttikcFb-V7D5gVCmet9WgnfvRrQGY8dNQhU6kNA
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 3224
@@ -182,7 +186,7 @@ Converte um arquivo em um formato de saída selecionado.
    <td role="rowheader">[!UICONTROL Importar um Arquivo da URL]</td> 
    <td> 
     <ul> 
-     <li> <p><strong>[!UICONTROL]</strong> </p> <p>Insira o URL do arquivo que você deseja converter.</p> </li> 
+     <li> <p><strong></strong> </p> <p>Insira o URL do arquivo que você deseja converter.</p> </li> 
      <li> <p><strong>[!UICONTROL Headers]</strong></p> <p>Definir cabeçalhos de solicitação (opcional). Isso é útil, por exemplo, quando o URL especificado requer a autorização.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -235,7 +239,7 @@ Permite adicionar um ou vários arquivos ao arquivo ZIP, RAR, 7Z, TAR, TAR.GZ ou
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Importar um arquivo da URL]</p> </td> 
-   <td> <p><strong>[!UICONTROL]</strong> </p> <p>Insira o URL do arquivo que deseja arquivar.</p> <p><strong>[!UICONTROL Cabeçalhos]</strong> </p> <p>Definir cabeçalhos de solicitação (opcional). Isso é útil, por exemplo, quando o URL especificado requer a autorização.</p> </td> 
+   <td> <p><strong></strong> </p> <p>Insira o URL do arquivo que deseja arquivar.</p> <p><strong>[!UICONTROL Cabeçalhos]</strong> </p> <p>Definir cabeçalhos de solicitação (opcional). Isso é útil, por exemplo, quando o URL especificado requer a autorização.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Output Format]</td> 
@@ -278,7 +282,7 @@ Mescla pelo menos dois arquivos em uma PDF. Se os arquivos de entrada não forem
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Importar um arquivo da URL]</p> </td> 
-   <td> <p><strong>[!UICONTROL]</strong> </p> <p>Insira o URL do arquivo que deseja arquivar.</p> <p><strong>[!UICONTROL Cabeçalhos]</strong> </p> <p>Definir cabeçalhos de solicitação (opcional). Isso é útil, por exemplo, quando o URL especificado requer a autorização.</p> </td> 
+   <td> <p><strong></strong> </p> <p>Insira o URL do arquivo que deseja arquivar.</p> <p><strong>[!UICONTROL Cabeçalhos]</strong> </p> <p>Definir cabeçalhos de solicitação (opcional). Isso é útil, por exemplo, quando o URL especificado requer a autorização.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Output Format]</td> 

@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 4b119efe-6762-445e-bbc7-c59437fd5060
 TQID: https://experienceleague.adobe.com/C4okceW3ZngBJrcDS-qymjR16GwTb3pFfdZpG-CoSwc
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 863
@@ -58,7 +59,7 @@ Para obter mais informações sobre chaves públicas e privadas, consulte o [glo
 
 Para obter mais informações sobre chaves, consulte [Chaves](/help/workfront-fusion/references/modules/keys.md).
 
-## [!UICONTROL Módulos {Encryptor] e seus campos
+## [!UICONTROL Módulos &lbrace;Encryptor] e seus campos
 
 Ao configurar os módulos do [!UICONTROL Encryptor], os campos a seguir são exibidos. Um título em negrito em um módulo indica um campo obrigatório.
 

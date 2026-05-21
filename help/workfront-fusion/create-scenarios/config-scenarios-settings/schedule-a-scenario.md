@@ -7,7 +7,8 @@ feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 9b74af0d-e7ff-4bf5-974e-0651d0d51f71
 TQID: https://experienceleague.adobe.com/jWWR3vbD-ShhjTws5p3Gx24C2YfL-qYKHXyssnR-dFM
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 575
@@ -71,7 +72,7 @@ Para obter mais detalhes sobre as informações contidas nesta tabela, consulte 
         <li> <p><strong>[!UICONTROL Em intervalos regulares]</strong> </p> <p>Insira o número de minutos entre execuções. O valor padrão é 15 minutos.</p> </li> 
         <li> <p><strong>[!UICONTROL Once]</strong> </p> <p>Insira a data e a hora em que deseja que o cenário seja executado. Use o formato <code>MM/DD/YYYY h:mm A</code>. Exemplo: <code>06/25/2019 11:00 PM</code>.</p> </li> 
         <li> <p><strong>[!UICONTROL Todo dia]</strong> </p> <p>Informe a hora em que deseja que o cenário seja executado. Use o formato <code>h:mm A</code>. Exemplo: <code>11:00 PM</code>.</p> </li> 
-        <li> <p><strong></strong>{UICONTROL Dias da semana </p> <p>Dias: Selecione os dias da semana em que deseja que o cenário seja executado. Você pode selecionar um ou mais dias.</p> <p>Hora: Informe a hora em que deseja que o cenário seja executado nos dias selecionados. Use o formato <code>h:mm A</code>. Exemplo: <code>11:00 PM</code></p> </li> 
+        <li> <p><strong></strong>&lbrace;UICONTROL Dias da semana </p> <p>Dias: Selecione os dias da semana em que deseja que o cenário seja executado. Você pode selecionar um ou mais dias.</p> <p>Hora: Informe a hora em que deseja que o cenário seja executado nos dias selecionados. Use o formato <code>h:mm A</code>. Exemplo: <code>11:00 PM</code></p> </li> 
         <li> <p><strong>[!UICONTROL Dias do mês]</strong> </p> <p>Dias: Selecione os dias do mês em que deseja que o cenário seja executado. Você pode selecionar um ou mais dias.</p> <p>Hora: Informe a hora em que deseja que o cenário seja executado nos dias selecionados. Use o formato <code>h:mm A</code>. Exemplo: <code>11:00 PM</code></p> </li> 
         <li> <p><strong>[!UICONTROL Datas Especificadas]</strong> </p> <p>Meses: Selecione os meses em que deseja executar o cenário. Você pode selecionar um ou mais meses.</p> <p>Dias: Selecione os dias do mês em que deseja que o cenário seja executado. Você pode selecionar um ou mais dias.</p> <p>Hora: Informe a hora em que deseja que o cenário seja executado nos dias selecionados. Use o formato <code>h:mm A</code>. Exemplo: <code>11:00 PM</code></p> </li> 
        </ul> <p>Nota: Uma data deve existir para que um cenário seja executado nessa data. Por exemplo, um cenário agendado para somente o dia 31 do mês não será executado em fevereiro, abril, junho, setembro ou novembro, pois esses meses não têm um dia 31.</p> </td> 
