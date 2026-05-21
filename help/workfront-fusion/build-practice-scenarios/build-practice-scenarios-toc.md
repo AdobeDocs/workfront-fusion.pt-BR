@@ -6,10 +6,12 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 8e2779c3-dd54-44f8-9b38-5b308fc26bed
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+TQID: https://experienceleague.adobe.com/2w6eHErImAgTHz9ZOX2ruiigVlHYyuQ1V1-SCmElImY
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '67'
-ht-degree: 5%
+source-wordcount: 67
+ht-degree: 64%
 
 ---
 
@@ -18,7 +20,7 @@ ht-degree: 5%
 Esta seção contém os seguintes artigos:
 
 * [Criar um cenário básico](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)
-* [Adicionar um módulo de acionamento a um cenário básico](/help/workfront-fusion/build-practice-scenarios/add-trigger-to-basic-scenario.md)
-* [Usar uma função para atualizar um projeto em um cenário básico](/help/workfront-fusion/build-practice-scenarios/use-function-to-build-practice-scenario.md)
-* [Adicionar um filtro a um cenário básico](/help/workfront-fusion/build-practice-scenarios/add-filter-basic-scenario.md)
-* [Adicionar um webhook a um cenário básico](/help/workfront-fusion/build-practice-scenarios/add-a-webhook-to-basic-scenario.md)
+* [Adicionar um módulo de acionador a um cenário básico](/help/workfront-fusion/build-practice-scenarios/add-trigger-to-basic-scenario.md)
+* [Usar função para atualizar um projeto em um cenário básico](/help/workfront-fusion/build-practice-scenarios/use-function-to-build-practice-scenario.md)
+* [Adicionar filtro a um cenário básico](/help/workfront-fusion/build-practice-scenarios/add-filter-basic-scenario.md)
+* [Adicionar webhook a um cenário básico](/help/workfront-fusion/build-practice-scenarios/add-a-webhook-to-basic-scenario.md)

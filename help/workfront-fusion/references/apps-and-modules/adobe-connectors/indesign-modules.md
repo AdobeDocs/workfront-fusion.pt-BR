@@ -7,13 +7,17 @@ navigation-topic: apps-and-their-modules
 title: Módulos do Adobe InDesign
 description: Em um cenário do Adobe Workfront Fusion, é possível automatizar workflows que usam o Adobe InDesign, bem como conectá-lo a vários aplicativos e serviços de terceiros.
 author: Becky
-source-git-commit: 30ddefa8519e6f2052308482137d0fa018676902
+exl-id: 8164487a-d114-4e31-9d1c-8404fc89a04b
+TQID: https://experienceleague.adobe.com/D2JdaOqvTA5SUsKm9U8Sjss6dJFMZv2Uo5RGk25QphQ
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 20%
+source-wordcount: 1702
+ht-degree: 22%
 
 ---
-
 
 # Módulos do Adobe InDesign
 
@@ -284,7 +288,7 @@ Este módulo de ação envia uma solicitação de execução para um script pers
 
 * [Obter detalhes do script personalizado](#get-custom-script-details)
 * [Obter tags de mesclagem de dados](#get-data-merge-tags)
-* [Obter informações do documento](#get-document-information)
+* [Obter informações de documentos](#get-document-information)
 * [Listar scripts personalizados](#list-custom-scripts)
 
 #### Obter detalhes do script personalizado
@@ -340,7 +344,7 @@ Esse módulo recupera as tags de mesclagem de dados de um documento.
   </tbody>
 </table>
 
-#### Obter informações do documento
+#### Obter informações de documentos
 
 Este módulo recupera informações abrangentes sobre documentos INDD/IDML e retorna dados com base nos tipos de informações ativadas especificados na solicitação.
 

@@ -1,19 +1,22 @@
 ---
 title: Módulos de Email
-description: Em um cenário do Adobe Workfront Fusion, é possível conectar sua conta de email a vários aplicativos e serviços de terceiros. Isso permite baixar emails via IMAP, enviar emails via SMTP, criar novos rascunhos, mover e copiar emails de uma pasta para outra pasta, marcar emails como lidos ou não lidos e excluir emails.
+description: Em um cenário do Adobe Workfront Fusion, é possível conectar sua conta de email do a vários aplicativos e serviços de terceiros.Isso permite baixar emails pelo IMAP, enviar emails pelo SMTP, criar novos rascunhos, mover e copiar emails de uma pasta para outra, marcar emails como lidos ou não lidos e excluir emails.
 author: Becky
 feature: Workfront Fusion
 exl-id: 28a04bad-d3ef-4f3a-be93-8b04761a75e4
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/rHcxYxYNQchgOxfpU1Y3jc-sOxHxG3FNAKmbIsp9Dl4
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2491'
+source-wordcount: 2507
 ht-degree: 11%
 
 ---
 
 # Módulos de Email
 
-Em um cenário do Adobe Workfront Fusion, é possível conectar sua conta de email a vários aplicativos e serviços de terceiros. Isso permite baixar emails via IMAP, enviar emails via SMTP, criar novos rascunhos, mover e copiar emails de uma pasta para outra pasta, marcar emails como lidos ou não lidos e excluir emails.
+Em um cenário do Adobe Workfront Fusion, é possível conectar sua conta de email do a vários aplicativos e serviços de terceiros.Isso permite baixar emails pelo IMAP, enviar emails pelo SMTP, criar novos rascunhos, mover e copiar emails de uma pasta para outra, marcar emails como lidos ou não lidos e excluir emails.
 
 ## Requisitos de acesso
 
@@ -480,7 +483,7 @@ Envia um novo email.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Tipo de Conteúdo]</p> </td> 
-   <td> <p>Selecione o tipo de conteúdo  para o email:</p> 
+   <td> <p>Selecione o tipo de conteúdo [!UICONTROL] para o email:</p> 
     <ul> 
      <li>HTML</li> 
      <li>[!UICONTROL Texto sem formatação]</li> 
@@ -542,7 +545,7 @@ Envia um novo email.
   </tr> 
 <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL De] </td> 
-   <td> <p>Insira ou mapeie o endereço de email (e o nome, se necessário) que aparece no campo [!UICONTROL From] no email. </p> <p>Importante: use a sintaxe correta: <code>name@email.com</code> ou <code>"Name" name@email.com</code>.</p> <p>Observação: normalmente, o Workfront Fusion usa o endereço de email inserido ao criar a conexão como o endereço do remetente. Se você inserir qualquer outro endereço de email, poderá ocorrer um erro ao enviar uma mensagem porque sua conta talvez não tenha permissão para enviar emails de um endereço diferente do seu. Por exemplo, <code>test@mail.com</code> ou "<code>John Bush" test@email.com</code>.</p> </td> 
+   <td> <p>Insira ou mapeie o endereço de email (e o nome, se necessário) que aparece no campo [!UICONTROL From] no email. </p> <p>Importante: use a sintaxe correta: <code>name@email.com</code> ou <code>"Name" name@email.com</code>.</p> <p>Observação: normalmente, o Workfront Fusion usa o endereço de email inserido ao criar a conexão como o endereço do remetente. Se você inserir qualquer outro endereço de email, poderá ocorrer um erro ao enviar uma mensagem porque sua conta talvez não tenha permissão para enviar emails de um endereço diferente do seu. E.g. <code>test@mail.com</code> ou "<code>John Bush" test@email.com</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>

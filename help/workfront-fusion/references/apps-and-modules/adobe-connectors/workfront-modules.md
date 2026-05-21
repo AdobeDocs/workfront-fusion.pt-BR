@@ -4,9 +4,14 @@ description: Você pode usar o conector do Adobe Workfront do Fusion para automa
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 35cbede1551bd8d158d2ef502b436bc2f760bcae
+TQID: https://experienceleague.adobe.com/CjzJP-U4P5bVop8ktivUH3pPOjVVgamqqc--cUsLm8U
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+subfeature_v2: id: ec8965fc-2f75-47f6-a9bb-730e8c2725f3
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '7298'
+source-wordcount: 7298
 ht-degree: 98%
 
 ---
@@ -245,7 +250,7 @@ O módulo retorna quaisquer campos padrão associados ao registro, juntamente co
      </tr> 
      <tr> 
       <td>[!UICONTROL Connection]</td> 
-      <td> <p>Para obter instruções sobre como conectar seu aplicativo do Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
+      <td> <p>Para obter instruções sobre como conectar o aplicativo Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
      </tr> 
      <tr> 
       <td>[!UICONTROL Record Type]</td> 
@@ -297,7 +302,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Para obter instruções sobre como conectar seu aplicativo do Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar o aplicativo Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
@@ -338,7 +343,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Para obter instruções sobre como conectar seu aplicativo Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar o aplicativo Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Filter]</td> 
@@ -409,7 +414,7 @@ Esse módulo de ação faz uma das seguintes conversões:
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Para obter instruções sobre como conectar seu aplicativo Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar o aplicativo Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Object type]</td> 
@@ -468,7 +473,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Para obter instruções sobre como conectar seu aplicativo do Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar o aplicativo Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
@@ -592,7 +597,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Para obter instruções sobre como conectar seu aplicativo Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar o aplicativo Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
@@ -747,7 +752,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Para obter instruções sobre como conectar seu aplicativo do Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar o aplicativo Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Record Type]</td> 
@@ -948,7 +953,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection]</td>
-    <td> <p>Para obter instruções sobre como conectar seu aplicativo do Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
+    <td> <p>Para obter instruções sobre como conectar o aplicativo Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Record Type]</td>
@@ -1047,7 +1052,7 @@ A Workfront lançou recentemente uma nova versão de seu serviço de assinatura 
 
 Para obter mais informações sobre a nova versão de assinatura do evento, consulte [Controle de versão de assinatura do evento](https://experienceleague.adobe.com/pt-br/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) na documentação do Workfront
 
-Para obter recursos sobre como preservar os cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservação de seus cenários do Fusion durante a atualização da V2 de assinaturas do evento](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=pt).
+Para obter recursos sobre como preservar os cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservação de seus cenários do Fusion durante a atualização da V2 de assinaturas do evento](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 <table style="table-layout:auto">
  <col> 
@@ -1278,7 +1283,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Para obter instruções sobre como conectar seu aplicativo do Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar o aplicativo Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Record Type]</td> 
@@ -1315,7 +1320,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Para obter instruções sobre como conectar seu aplicativo do Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar o aplicativo Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
@@ -1377,7 +1382,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Para obter instruções sobre como conectar seu aplicativo do Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar o aplicativo Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
@@ -2379,7 +2384,7 @@ Recomendamos que você verifique novamente para garantir que isso funcione da ma
 >
 >   Para obter mais informações sobre a nova versão de assinatura do evento, consulte [Controle de versão de assinatura do evento](https://experienceleague.adobe.com/pt-br/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) na documentação do Workfront
 >
->   Para obter recursos sobre como preservar os cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservação de seus cenários do Fusion durante a atualização da V2 de assinaturas de evento (https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=pt)].
+>   Para obter recursos sobre como preservar os cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservação de seus cenários do Fusion durante a atualização da V2 de assinaturas de evento (https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)].
 
 O módulo [!UICONTROL Monitorar eventos] do Workfront aciona cenários com base em um webhook que cria uma assinatura de evento na API do Workfront. A assinatura do evento é um conjunto de dados que determina quais eventos são enviados para o webhook. Por exemplo, se você configurar um módulo [!UICONTROL Monitorar eventos] que esteja observando problemas, a assinatura do evento enviará somente eventos relacionados a problemas.
 

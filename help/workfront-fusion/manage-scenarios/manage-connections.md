@@ -4,10 +4,12 @@ description: Você pode visualizar e gerenciar as conexões de equipes na área 
 author: Becky
 feature: Workfront Fusion
 exl-id: b7e4d3ac-ccbe-4ee2-ba73-b37032980696
-source-git-commit: 42be02d6a59a5d7b8faccdcfe40e8b967153c6eb
+TQID: https://experienceleague.adobe.com/xFZcmAmM-VcJnDeO36aeLzQQaYNN0vm1plXdhMs7u60
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 1%
+source-wordcount: 402
+ht-degree: 25%
 
 ---
 
@@ -17,7 +19,7 @@ Você pode visualizar e gerenciar as conexões de equipes na área Conexões.
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -25,22 +27,22 @@ Você pode visualizar e gerenciar as conexões de equipes na área Conexões.
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -50,7 +52,7 @@ Você pode gerenciar todas as conexões na área Conexões.
 
 >[!NOTE]
 >
->As conexões são de propriedade de equipes. Se não conseguir encontrar a conexão que você está procurando, verifique se você está vendo o grupo correto.
+>As conexões pertencem às equipes. Se não conseguir encontrar a conexão que você está procurando, verifique se você está vendo o grupo correto.
 >
 >Para selecionar uma nova equipe, clique na seta suspensa ao lado do nome da equipe, próximo à parte superior da página. Selecione uma nova equipe na lista.
 

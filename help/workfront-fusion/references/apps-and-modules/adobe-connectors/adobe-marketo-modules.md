@@ -4,9 +4,12 @@ description: Em um cenário do Adobe Workfront Fusion, é possível automatizar 
 author: Becky
 feature: Workfront Fusion
 exl-id: da417ac7-e532-45f7-86d9-3643b5f9f203
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
-workflow-type: ht
-source-wordcount: '2237'
+TQID: https://experienceleague.adobe.com/7slKvK8YZmGtubvR-n5D2jx7EDqh07td3Ow9n01PXo8
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+workflow-type: tm+mt
+source-wordcount: 2255
 ht-degree: 100%
 
 ---
@@ -136,7 +139,7 @@ Você pode criar uma conexão com sua conta do [!DNL Marketo] diretamente de den
 
 ## Módulos do [!DNL Marketo] e seus campos
 
-Ao configurar os módulos do [!DNL Marketo], o Workfront Fusion exibe os campos listados a seguir. Junto com eles, outros campos do [!DNL Marketo] podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
+Ao configurar módulos do [!DNL Marketo], o Workfront Fusion exibe os campos listados abaixo. Junto com eles, outros campos do [!DNL Marketo] podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 

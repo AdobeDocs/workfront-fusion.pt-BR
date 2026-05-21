@@ -4,9 +4,13 @@ description: Com o conector do Adobe Experience Manager Assets para Adobe Workfr
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
-source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
-workflow-type: ht
-source-wordcount: '3734'
+TQID: https://experienceleague.adobe.com/x0Sf-4GkVLQ2JkOXOPQdmwcVWVrM8b9JF3P6LV6BE6U
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+workflow-type: tm+mt
+source-wordcount: 3823
 ht-degree: 100%
 
 ---
@@ -51,7 +55,7 @@ Para obter um vídeo de introdução ao conector do Adobe Experience Manager Ass
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte os [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -208,7 +212,7 @@ Ao configurar módulos do Adobe Experience Manager Assets, o Workfront Fusion ex
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Botão Mapear](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Botão de alternância Mapear](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Operações de arquivos](#files-operations)
 * [Outras](#other)
@@ -494,7 +498,7 @@ Este módulo de ação faz uma chamada de API personalizada para a API do Adobe 
   </tr> 
   <tr> 
    <td role="rowheader">Corpo</td> 
-   <td> <p>Adicione o conteúdo do corpo para a chamada de API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais, como <code>if</code>, em seu JSON, coloque as aspas fora da instrução condicional.</p> 
+   <td> <p>Adicione o conteúdo do corpo para a chamada de API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais, como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 

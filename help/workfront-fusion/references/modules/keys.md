@@ -4,9 +4,11 @@ description: O chaveiro no Adobe Workfront Fusion ajudará você a administrar c
 author: Becky
 feature: Workfront Fusion
 exl-id: b92e54ed-fa03-4af7-be7b-436907b2bff9
-source-git-commit: 3ae274720ea2d7e4ee823a8467b750ad6f4d0c52
+TQID: https://experienceleague.adobe.com/EV5p7TwCCWVwujv8x2r5MxTc1sZMEhTJey8Xodp5HTA
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: 324
 ht-degree: 49%
 
 ---

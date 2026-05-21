@@ -4,10 +4,12 @@ description: Os módulos do Adobe Workfront Fusion Encryptor permitem criptograf
 author: Becky
 feature: Workfront Fusion
 exl-id: 4b119efe-6762-445e-bbc7-c59437fd5060
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+TQID: https://experienceleague.adobe.com/C4okceW3ZngBJrcDS-qymjR16GwTb3pFfdZpG-CoSwc
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 0%
+source-wordcount: 863
+ht-degree: 14%
 
 ---
 
@@ -19,7 +21,7 @@ Esses módulos exigem alguma familiaridade com processos de criptografia.
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -27,22 +29,22 @@ Esses módulos exigem alguma familiaridade com processos de criptografia.
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -56,7 +58,7 @@ Para obter mais informações sobre chaves públicas e privadas, consulte o [glo
 
 Para obter mais informações sobre chaves, consulte [Chaves](/help/workfront-fusion/references/modules/keys.md).
 
-## [!UICONTROL Módulos &lbrace;Encryptor] e seus campos
+## [!UICONTROL Módulos {Encryptor] e seus campos
 
 Ao configurar os módulos do [!UICONTROL Encryptor], os campos a seguir são exibidos. Um título em negrito em um módulo indica um campo obrigatório.
 
@@ -64,7 +66,7 @@ Ao configurar os módulos do [!UICONTROL Encryptor], os campos a seguir são exi
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL Chave]</td>
+        <td>[!UICONTROL Key]</td>
         <td>Selecione a chave que deseja que o módulo use. Para criar uma chave, clique em <b>Adicionar</b> e insira o nome, a chave e o tipo de codificação da chave.</td>
     </tr>
     <tr>
@@ -132,7 +134,7 @@ Ao configurar os módulos do [!UICONTROL Encryptor], os campos a seguir são exi
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL Chave]</td>
+        <td>[!UICONTROL Key]</td>
         <td>Selecione a chave que deseja que o módulo use. Para criar uma chave, clique em <b>Adicionar</b> e insira o nome, a chave e o tipo de codificação da chave.</td>
     </tr>
    <tr>
@@ -169,7 +171,7 @@ Ao configurar os módulos do [!UICONTROL Encryptor], os campos a seguir são exi
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL Chave]</td>
+        <td>[!UICONTROL Key]</td>
         <td>Selecione a chave que deseja que o módulo use. Para criar uma chave, clique em <b>Adicionar</b> e insira o nome, a chave e o tipo de codificação da chave.</td>
     </tr>
     <tr>
@@ -226,7 +228,7 @@ Ao configurar os módulos do [!UICONTROL Encryptor], os campos a seguir são exi
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL Chave]</td>
+        <td>[!UICONTROL Key]</td>
         <td>Selecione a chave que deseja que o módulo use. Para criar uma chave, clique em <b>Adicionar</b> e insira o nome, a chave e o tipo de codificação da chave.</td>
     </tr>
    <tr>
@@ -266,7 +268,7 @@ Este módulo permite descriptografar uma mensagem usando chaves públicas e priv
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL Chave privada]</td>
+        <td>[!UICONTROL Private key]</td>
         <td>Selecione a chave privada a ser usada para esta assinatura. Para adicionar uma chave privada, clique em <b>Adicionar</b> e insira o nome da chave, o texto da chave e a senha.</td>
     </tr>
     <tr>
@@ -304,7 +306,7 @@ Este módulo permite descriptografar uma mensagem usando chaves públicas e priv
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL Chave privada]</td>
+        <td>[!UICONTROL Private key]</td>
         <td>Selecione a chave privada do destinatário para usar nesta mensagem. Para adicionar uma chave privada, clique em <b>Adicionar</b> e insira o nome da chave, o texto da chave e a senha.</td>
     </tr>
     <tr>
@@ -323,7 +325,7 @@ Esse módulo permite criptografar uma mensagem usando chaves públicas e privada
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL Chave privada]</td>
+        <td>[!UICONTROL Private key]</td>
         <td>Insira a chave privada do remetente. Isso pode autenticar a identidade do remetente.</td>
     </tr>
     <tr>

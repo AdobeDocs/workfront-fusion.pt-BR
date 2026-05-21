@@ -1,17 +1,19 @@
 ---
-title: Perguntas frequentes sobre planejamento de cenário
+title: Perguntas frequentes sobre planejamento de cenários
 description: As informações neste artigo podem ser úteis quando você começar a criar cenários no Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 exl-id: 6a1d672d-0bd7-4a3a-b96d-6d8b4c97522d
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+TQID: https://experienceleague.adobe.com/PQablbYLDlXlY5mc7qMAXMrXnUeeHA6sSc-aMVHa6HY
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 1%
+source-wordcount: 554
+ht-degree: 5%
 
 ---
 
-# Perguntas frequentes sobre planejamento de cenário
+# Perguntas frequentes sobre planejamento de cenários
 
 As informações neste artigo podem ser úteis quando você começar a criar cenários no Workfront Fusion.
 
@@ -21,7 +23,7 @@ As informações neste artigo podem ser úteis quando você começar a criar cen
 
 Um cenário define uma sequência de etapas a serem executadas pelo Adobe Workfront Fusion. Para cada cenário, você especifica a fonte de dados, quais dados usar e como os dados devem ser processados. O Fusion permite criar cenários simples ou complexos, capazes de atender aos casos de uso da sua organização.
 
-Para obter mais informações sobre cenários, consulte [Visão geral do cenário](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md).
+Para obter mais informações sobre cenários, consulte [Visão geral de cenários](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md).
 
 ## Quantos módulos posso usar em um cenário?
 
@@ -71,7 +73,7 @@ Transferência de dados refere-se à quantidade de dados transferidos pelo seu c
 
 Uma conexão é o link entre sua conta do Workfront Fusion e o serviço de terceiros que você deseja usar. A conexão pode ser criada ao editar um cenário.
 
-Para obter mais informações, consulte [Visão geral da conexão](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md).
+Para obter mais informações, consulte [Visão geral de conexão](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md).
 
 ## O que são agregadores?
 

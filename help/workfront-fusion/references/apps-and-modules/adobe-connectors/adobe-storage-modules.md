@@ -3,19 +3,23 @@ content-type: reference
 product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: apps-and-their-modules
-title: Módulos de armazenamento da Adobe
+title: Módulos do Adobe Storage
 description: Em um cenário do Adobe Workfront Fusion, é necessário criar e gerenciar projetos no Adobe Admin Console.
 author: Becky
 feature: Workfront Fusion
 exl-id: 78ee905f-4713-44a4-bffb-c64cdb3665c2
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+TQID: https://experienceleague.adobe.com/sp6gMeEhVxN0QjviLXm9GnI7NSLEp93PnSQkH45zHXI
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1406'
-ht-degree: 3%
+source-wordcount: 1413
+ht-degree: 28%
 
 ---
 
-# Módulos de armazenamento da Adobe
+# Módulos do Adobe Storage
 
 Em um cenário do Adobe Workfront Fusion, é possível criar e gerenciar projetos no Adobe Admin Console.
 
@@ -25,7 +29,7 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -33,31 +37,31 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion</td> 
    <td>
    <p>Baseado em operação: nenhum requisito de licença do Workfront Fusion</p>
-   <p>Baseado em conector (herdado): automação e integração do Workfront Fusion for Work </p>
+   <p>Baseado em conector (legado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -84,13 +88,13 @@ Na página do Adobe Admin Console, selecione a guia Produtos na barra de navega�
 
 1. Localize e copie o endereço de email do usuário da conta técnica em sua organização.
 1. Se uma lista for exibida, selecione o link na parte superior.
-1. Essa é a instância de Produção na qual os usuários trabalham.
+1. Esta é a sua instância de produção, onde seus usuários trabalham.
 1. Na lista exibida, com a guia Perfis de produto selecionada, clique no nome do link Perfil de produto do Workfront.
 
-   Essa lista inclui todos os usuários que já estão atribuídos à sua instância de Produção do Workfront.
+   Esta lista inclui todos os usuários que já estão atribuídos à sua instância de produção do Workfront.
 
-1. Selecione a guia **Administradores** acima da lista de usuários.
-1. Selecione **Adicionar Administrador**.
+1. Selecione a aba **Administradores** acima da lista de usuários.
+1. Selecione **Adicionar administrador**.
 1. Na caixa Adicionar administradores de perfil de produto, digite os endereços de email da conta técnica e selecione **Salvar**.
 
    A conta técnica passa a ser de administrador.
@@ -99,7 +103,7 @@ Na página do Adobe Admin Console, selecione a guia Produtos na barra de navega�
 
 ### Criar a conexão no Workfront Fusion
 
-Para criar uma conexão para seus módulos do [!DNL Adobe Storage]:
+Para criar uma conexão para os módulos do [!DNL Adobe Storage]:
 
 1. Em qualquer módulo, clique em **[!UICONTROL Adicionar]** ao lado da caixa Conexão.
 
@@ -112,21 +116,21 @@ Para criar uma conexão para seus módulos do [!DNL Adobe Storage]:
       </col>
       <tbody>
         <tr>
-        <td role="rowheader">[!UICONTROL Tipo de conexão]</td>
+        <td role="rowheader">[!UICONTROL Connection type]</td>
         <td>Selecione <code>Server to server</code>.</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Nome da Conexão]</td>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
         <td>
-          <p>Insira um nome para esta conexão.</p>
+          <p>Insira um nome para essa conexão.</p>
         </td>
         </tr>
-        <td role="rowheader">[!UICONTROL ID do Cliente]</td>
+        <td role="rowheader">[!UICONTROL Client ID]</td>
         <td>Insira sua [!UICONTROL Adobe] [!UICONTROL ID do cliente]. Isso pode ser encontrado na seção [!UICONTROL Credential details] do projeto no [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Segredo do Cliente]</td>
-        <td>Insira seu [!DNL Adobe] [!UICONTROL Segredo do Cliente]. Isso pode ser encontrado na seção [!UICONTROL Credential details] do projeto no [!DNL Adobe Developer Console].</td>
+        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td>Insira o [!UICONTROL Client Secret] do [!DNL Adobe]. Isso pode ser encontrado na seção [!UICONTROL Credential details] do projeto no [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL IMS Organization ID]</td>
@@ -143,7 +147,7 @@ Ao configurar os módulos de Gerenciamento de Usuários do Adobe, o Workfront Fu
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Alternância de mapa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Botão de alternância Mapear](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Lojas ESM](#esm-stores)
 * [Convites](#invitations)
@@ -342,14 +346,14 @@ Esse módulo de ação faz uma solicitação HTTP personalizada para a API de ar
       </td>
     </tr>
     <tr>
-      <td role="rowheader">Sequência de consulta  </td>
+      <td role="rowheader">String de consulta  </td>
       <td>
         <p>Insira a string de consulta da solicitação.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">Corpo</td>
-   <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
+   <td> <p>Adicione o conteúdo do corpo para a chamada de API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais, como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>

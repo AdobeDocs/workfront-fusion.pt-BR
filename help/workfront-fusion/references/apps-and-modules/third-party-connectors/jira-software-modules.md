@@ -4,9 +4,12 @@ description: Em um cenário do Adobe Workfront Fusion, é possível automatizar 
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+TQID: https://experienceleague.adobe.com/MFz4BA1p4lfDWSft169C3GEMRY9vtO2TrkUcg35LPYE
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2466'
+source-wordcount: 2479
 ht-degree: 43%
 
 ---
@@ -87,8 +90,8 @@ O conector Jira usa o seguinte:
   </tr> 
   <tr> 
    <td role="rowheader">apiVersionAgile</td> 
-   <td> 1,0 </td> 
-   <td> 1,0</td> 
+   <td> 1.0 </td> 
+   <td> 1.0</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Tag da API</td> 

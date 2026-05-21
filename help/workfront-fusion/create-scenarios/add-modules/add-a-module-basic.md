@@ -4,10 +4,12 @@ description: Este artigo descreve o processo básico de adicionar um módulo a u
 author: Becky
 feature: Workfront Fusion
 exl-id: f3757468-3e11-4862-a83e-ed447805545b
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+TQID: https://experienceleague.adobe.com/R2JCX7aaYzmYHgiLqj1WDlVFHI-s-qanltoOrycQ5JU
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 14%
+source-wordcount: 684
+ht-degree: 18%
 
 ---
 

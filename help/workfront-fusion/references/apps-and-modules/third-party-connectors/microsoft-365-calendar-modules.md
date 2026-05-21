@@ -4,10 +4,13 @@ description: Em um cenário do Adobe Workfront Fusion, é possível automatizar 
 author: Becky
 feature: Workfront Fusion
 exl-id: fdecf740-e735-4569-b1a2-7c25c751ba42
-source-git-commit: 413736673426c1a77dac9f15defa43d4348638b5
+TQID: https://experienceleague.adobe.com/yq8DHWbrroXJ-Rc2j1LQqDejh6JuKOsffdd3bQaFAyA
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2047'
-ht-degree: 21%
+source-wordcount: 2053
+ht-degree: 22%
 
 ---
 
@@ -59,7 +62,7 @@ Para usar módulos [!DNL Microsoft Office 365 Calendar], você deve ter uma cont
 
 ## Informações de API do Calendário do Microsoft Office 365
 
-O conector de Calendário do Microsoft Office 365 usa o seguinte:
+O conector do Microsoft Office 365 Calendar usa o seguinte:
 
 <table style="table-layout:auto"> 
  <col> 
@@ -82,11 +85,11 @@ O conector de Calendário do Microsoft Office 365 usa o seguinte:
 
 ## Conectando o serviço [!DNL Office 365 Calendar] ao Workfront Fusion
 
-Para obter instruções sobre como conectar sua conta do [!DNL Office 365 Calendar] ao [!UICONTROL Workfront Fusion], consulte [Criar uma conexão com o [!UICONTROL Adobe Workfront Fusion] - instruções básicas](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
+Para obter instruções sobre como conectar sua conta do [!DNL Office 365 Calendar] ao [!UICONTROL Workfront Fusion], consulte [Criar uma conexão com o [!UICONTROL Adobe Workfront Fusion] - Instruções básicas](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
 >[!NOTE]
 >
->Alguns aplicativos da Microsoft usam a mesma conexão, que está vinculada a permissões de usuário individuais. Portanto, ao criar uma conexão, a tela de consentimento de permissões exibe todas as permissões que foram concedidas anteriormente à conexão deste usuário, além de todas as novas permissões necessárias para o aplicativo atual.
+>Alguns aplicativos do Microsoft usam a mesma conexão, que está vinculada a permissões de usuário individuais. Portanto, ao criar uma conexão, a tela de consentimento de permissões exibe todas as permissões que foram concedidas anteriormente à conexão deste usuário, além de todas as novas permissões necessárias para o aplicativo atual.
 >
 >Por exemplo, se um usuário tiver permissões de &quot;Tabela de leitura&quot; concedidas por meio do conector do Excel e criar uma conexão no conector do Outlook para ler emails, a tela de consentimento de permissões mostrará a permissão &quot;Tabela de leitura&quot; já concedida e a permissão &quot;Gravar email&quot; recém-necessária.
 
@@ -168,7 +171,7 @@ Este módulo de ação cria um novo evento.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Conteúdo do corpo]</td> 
-   <td>Informe ou mapeie o corpo da mensagem associada ao evento. Pode estar no formato de HTML ou texto (conforme especificado no campo [!UICONTROL Body Content Type] acima).</td> 
+   <td>Insira ou mapeie o corpo da mensagem associada ao evento. Pode estar no formato HTML ou de texto (conforme especificado no campo [!UICONTROL Body Content Type] acima).</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Local]</td> 
@@ -176,11 +179,11 @@ Este módulo de ação cria um novo evento.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resposta solicitada]</td> 
-   <td>Selecione <strong>[!UICONTROL Yes]</strong> para solicitar que o convidado envie uma resposta ao convite de evento.</td> 
+   <td>Selecione <strong>[!UICONTROL Sim]</strong> para solicitar que o convidado envie uma resposta ao convite de evento.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Mostrar como]</td> 
-   <td> <p>Selecione como você deseja que o evento seja exibido para as pessoas que exibem seu calendário.</p> 
+   <td> <p>Selecione como deseja que o evento seja exibido para as pessoas que visualizam seu calendário.</p> 
     <ul> 
      <li>[!UICONTROL Livre]</li> 
      <li>[!UICONTROL Provisório]</li> 
@@ -200,7 +203,7 @@ Este módulo de ação cria um novo evento.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Categorias]</td> 
-   <td>Para cada categoria que você deseja que o evento exiba no calendário, clique em <b>Adicionar item</b> e insira ou mapeie a categoria.</td> 
+   <td>Para cada categoria que você deseja que o evento exiba como no calendário, clique em <b>Adicionar item</b> e insira ou mapeie a categoria.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -336,8 +339,8 @@ Este módulo de ação atualiza um evento existente.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Sensibilidade] </td> 
-   <td> <p>Selecione a sensibilidade deste evento.</p> 
+   <td role="rowheader">[!UICONTROL Confidencialidade] </td> 
+   <td> <p>Selecione a sensibilidade desse evento.</p> 
     <ul> 
      <li><strong>[!UICONTROL Normal]</strong> </li> 
      <li> <p><strong>[!UICONTROL Pessoal]</strong> </p> <p>O destinatário vê uma mensagem "[!UICONTROL Trata isso como Pessoal]".</p> </li> 
@@ -355,11 +358,11 @@ Este módulo de ação atualiza um evento existente.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Local]</td> 
-   <td> <p>Informe os detalhes do local do evento.</p> </td> 
+   <td> <p>Insira os detalhes do local do evento.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Resposta de solicitada]</td> 
-   <td>Selecione <strong>[!UICONTROL Yes]</strong> para solicitar que o convidado envie uma resposta ao convite de evento.</td> 
+   <td role="rowheader">[!UICONTROL Resposta solicitada]</td> 
+   <td>Selecione <strong>[!UICONTROL Sim]</strong> para solicitar que o convidado envie uma resposta ao convite de evento.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Mostrar como]</td> 
@@ -444,7 +447,7 @@ Este módulo de acionador recupera detalhes de um evento quando ele é criado, a
 
 #### [!UICONTROL Criar um Calendário]
 
-Este módulo de ação cria um novo calendário na sua conta do Office 365.
+Este módulo de ação cria um novo calendário em sua conta do Office 365.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -455,7 +458,7 @@ Este módulo de ação cria um novo calendário na sua conta do Office 365.
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Office 365] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Nome do Calendário]</td> 
+   <td role="rowheader">[!UICONTROL Nome do calendário]</td> 
    <td> <p>Insira um nome para o novo calendário.</p> </td> 
   </tr> 
  </tbody> 

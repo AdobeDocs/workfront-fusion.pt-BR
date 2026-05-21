@@ -1,12 +1,15 @@
 ---
 title: XML
-description: O aplicativo XML permite analisar um texto XML formatado por meio do módulo XML &gt; Analisar XML e convertê-lo em um pacote para disponibilizar os dados para outros módulos. Também é possível converter um pacote em um texto XML formatado por meio do módulo XML &gt; Criar XML
+description: O aplicativo XML permite analisar um texto XML formatado por meio do módulo XML > Analisar XML e convertê-lo em um pacote para disponibilizar os dados para outros módulos. Você também pode converter um pacote em um texto XML formatado através do XML > Criar módulo XML
 author: Becky
 feature: Workfront Fusion
 exl-id: ab323361-cd04-4dcc-ab02-0fb468334fdb
-source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
+TQID: https://experienceleague.adobe.com/WAXpNvb43E4nAZ8lD4Ch55gwqdgRbG3bhPmZDSvnFx4
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: 1433
 ht-degree: 8%
 
 ---
@@ -40,7 +43,7 @@ O aplicativo [!UICONTROL XML] permite analisar um texto XML formatado por meio d
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações desta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -109,7 +112,7 @@ Um caso de uso típico é transformar dados de uma planilha [!DNL Google] em XML
    Um campo correspondente ao atributo de matriz raiz aparece como um campo mapeável na configuração do módulo JSON.
 1. Clique no botão **[!UICONTROL Mapear]** ao lado do campo e mapeie o item `Array[]` da saída do [!UICONTROL agregador de matriz] para ele:
 1. Clique em **[!UICONTROL OK]** para fechar a configuração do módulo XML.
-1. Abra a configuração do módulo [!UICONTROL Agregador de Matrizes]. Altere a **[!UICONTROL Estrutura de destino]** do campo Personalizado para um campo do módulo XML correspondente ao elemento XML pai.Mapeie os itens do módulo [!DNL Google Sheets] para os campos apropriados.
+1. Abra a configuração do módulo [!UICONTROL Agregador de Matrizes]. Altere a **[!UICONTROL Estrutura de destino]** de Personalizada para um campo do módulo XML correspondente ao elemento XML pai.Mapeie itens do módulo [!DNL Google Sheets] para os campos apropriados.
 1. Clique em **[!UICONTROL OK]** para fechar a configuração do módulo Agregador de Matriz.
 1. Execute o cenário.
 

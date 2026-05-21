@@ -4,9 +4,12 @@ description: Um módulo agregador é um tipo de módulo projetado para unir vár
 author: Becky
 feature: Workfront Fusion
 exl-id: 93cde0d0-4013-463a-b19c-d58180632739
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+TQID: https://experienceleague.adobe.com/O99Y6rWAQUUaO20Ts2T87ZaDUayi6I5ZWsyKKqOyONw
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: 810
 ht-degree: 11%
 
 ---
@@ -108,7 +111,7 @@ O cenário abaixo mostra como:
 
 * O terceiro módulo é o agregador. Ele agrega os pacotes gerados pelo módulo [!UICONTROL Email] >[!UICONTROL Iterar anexos]. [!UICONTROL Arquivar] >[!UICONTROL Criar um agregador de arquivamento] acumula todos os pacotes que recebe e gera um único pacote contendo o arquivo ZIP.
 
-* O último módulo carrega o arquivo ZIP resultante para [!DNL Dropbox].  [!DNL Dropbox] > [!UICONTROL Carregar um arquivo] obtém o arquivo ZIP do [!UICONTROL Arquivo morto] > [!UICONTROL Criar um arquivo morto] e o carrega no [!DNL Dropbox].
+* O último módulo carrega o arquivo ZIP resultante para [!DNL Dropbox]. [!DNL Dropbox] > [!UICONTROL Carregar um arquivo] obtém o arquivo ZIP do módulo [!UICONTROL Arquivar] > [!UICONTROL Criar um arquivo] e o carrega para [!DNL Dropbox].
 
 
 

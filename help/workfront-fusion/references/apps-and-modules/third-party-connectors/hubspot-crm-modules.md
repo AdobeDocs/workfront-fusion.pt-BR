@@ -4,10 +4,13 @@ description: Os módulos CRM do Adobe Workfront Fusion HubSpot permitem monitora
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: 27ff7374e5e2d6765a1bcbfae9d10fb8a8f77521
+TQID: https://experienceleague.adobe.com/F-jLL4aF0bSUiFpDjJr-DVBU8ZnbqNHKiFzjEjmalxw
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '7314'
-ht-degree: 9%
+source-wordcount: 7326
+ht-degree: 10%
 
 ---
 
@@ -107,7 +110,7 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 * [Redes sociais (transmissão)](#social-media-broadcast)
 * [Publicações do blog](#blog-posts)
   <!--* [Workflows]()-->
-* [Subscrições](#subscriptions)
+* [Assinaturas](#subscriptions)
   <!--* [Associations]()-->
 * [Outras](#other)
 
@@ -1618,7 +1621,7 @@ Este módulo de ação retorna todos os formulários que foram criados na conta 
 
 
 
-&lt;!—#### Assista aos envios para um formulário—É necessário encontrar uma conexão ativa>—>
+&lt;!—#### Assista aos envios de um formulário—É necessário encontrar uma conexão ativa>—>
 
 ### Redes sociais (transmissão)
 
@@ -2129,7 +2132,7 @@ Permite executar uma chamada de API personalizada.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Adicione o conteúdo do corpo para a chamada de API na forma de um objeto JSON padrão. Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.<img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"></p> </td> 
+   <td> <p>Adicione o conteúdo do corpo para a chamada de API na forma de um objeto JSON padrão.Ao usar instruções condicionais, como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.<img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"></p> </td> 
   </tr> 
  </tbody> 
 </table>

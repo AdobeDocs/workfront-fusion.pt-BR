@@ -7,9 +7,14 @@ description: Use esses modelos para automatizar workflows entre o Adobe Workfron
 author: Becky
 feature: Workfront Fusion
 exl-id: 7e30c105-54be-4499-b573-949137e6a5e6
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/1p8mg0HzgKs1U67uaAGxXshn5POSXIll9qTDfZmrzUM
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: d968a1bc-9a90-4926-a531-bcf272c32aadid: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+subfeature_v2: id: d87de1f9-8e24-4c4d-aa4c-a403075091a1
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '4171'
+source-wordcount: 4277
 ht-degree: 3%
 
 ---
@@ -47,7 +52,7 @@ O Adobe workfront Fusion oferece modelos que podem automatizar fluxos de trabalh
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações desta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -60,7 +65,7 @@ Para obter mais detalhes sobre as informações desta tabela, consulte [Requisit
   Para obter informações e instruções, consulte [Configuração da conta técnica](https://developer.adobe.com/cloud-storage/guides/getting-started/technical-account-setup) na documentação da Adobe.
 * Você deve aplicar permissões de Administrador do sistema à conta técnica na área Perfis de produto do Adobe Admin Console.
 
-  Para obter informações e instruções, consulte [Criar administradores do sistema no Workfront com a Adobe Admin Console](https://experienceleague.adobe.com/pt-br/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)
+  Para obter informações e instruções, consulte [Criar administradores do sistema no Workfront com a Adobe Admin Console](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)
 
 ### Jira
 
@@ -155,13 +160,13 @@ Para usar esses módulos, o seguinte deve ser criado no Workfront:
 
 1. No Workfront, crie um usuário de Integração do sistema. Esse usuário é usado somente pelo Workfront Fusion e não representa um usuário humano. As tarefas atribuídas a esse usuário acionarão o cenário que sincroniza o Workfront com o Jira.
 
-   Para obter instruções, consulte [Adicionar usuários](https://experienceleague.adobe.com/pt-br/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users) na documentação do Workfront.
+   Para obter instruções, consulte [Adicionar usuários](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users) na documentação do Workfront.
 
 #### Criar um formulário personalizado no Workfront
 
 1. No Workfront, comece criando um formulário personalizado.
 
-   Para obter instruções, consulte [Criar um formulário personalizado](https://experienceleague.adobe.com/pt-br/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form) na documentação do Workfront.
+   Para obter instruções, consulte [Criar um formulário personalizado](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form) na documentação do Workfront.
 1. Nomeie o formulário &quot;**JIRA Fields**&quot;.
 1. Incluir os seguintes campos no formulário personalizado:
 
@@ -178,7 +183,7 @@ Para usar esses módulos, o seguinte deve ser criado no Workfront:
 >
 >Recomendamos impedir que este formulário seja editado por outros usuários. Você pode fazer isso garantindo que todos os usuários adicionados ao formulário personalizado tenham acesso Somente visualização.
 >
->Para obter instruções, consulte [Compartilhar um formulário personalizado](https://experienceleague.adobe.com/pt-br/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form) na documentação do Workfront.
+>Para obter instruções, consulte [Compartilhar um formulário personalizado](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form) na documentação do Workfront.
 
 ### Configurar conexões no Workfront Fusion
 

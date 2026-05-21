@@ -4,9 +4,11 @@ description: Você pode exibir informações sobre os eventos ou execuções de 
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/V2lG2ns3rokHSCoYYsfjfZiRfsqqOUteLJTD52RcQdQ
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: 915
 ht-degree: 12%
 
 ---
@@ -48,7 +50,7 @@ Um evento de cenário é uma modificação no cenário, como edição, ativaçã
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações desta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 

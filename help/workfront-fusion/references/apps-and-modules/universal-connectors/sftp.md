@@ -4,10 +4,13 @@ description: Os  [!DNL Adobe Workfront Fusion SFTP] módulos permitem monitorar 
 author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
-source-git-commit: 54c368d335b30f55cab19595a5b4740dde6013a7
+TQID: https://experienceleague.adobe.com/rXKL5kNnj33GM1Bq89wBdFUlrh4CNh59j3CG-DaZ6Kc
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2222'
-ht-degree: 0%
+source-wordcount: 2238
+ht-degree: 14%
 
 ---
 
@@ -17,7 +20,7 @@ Os módulos SFTP do Adobe Workfront Fusion permitem monitorar as alterações de
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -25,31 +28,31 @@ Os módulos SFTP do Adobe Workfront Fusion permitem monitorar as alterações de
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion</td> 
    <td>
    <p>Baseado em operação: nenhum requisito de licença do Workfront Fusion</p>
-   <p>Baseado em conector (herdado): automação e integração do Workfront Fusion for Work </p>
+   <p>Baseado em conector (legado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -66,15 +69,15 @@ Para conectar sua conta SFTP ao Workfront Fusion, é necessário criar uma conex
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Nome da Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection name]</td> 
    <td> <p> Insira o nome da conexão SFTP.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader">[!UICONTROL Ambiente]</td>
+    <td role="rowheader">[!UICONTROL Environment]</td>
     <td>Selecione se você está se conectando a um ambiente de produção ou não produção.</td>
   </tr>
   <tr>
-    <td role="rowheader">[!UICONTROL Tipo]</td>
+    <td role="rowheader">[!UICONTROL Type]</td>
     <td>Selecione se você deseja se conectar a uma conta de serviço ou a uma conta pessoal.</td>
   </tr>
   <tr>
@@ -154,7 +157,7 @@ Ao configurar módulos [!UICONTROL SFTP], o Workfront Fusion exibe os campos lis
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Alternância de mapa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Botão de alternância Mapear](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 ### Acionadores
 
@@ -170,11 +173,11 @@ Retorna arquivos com detalhes quando um arquivo é criado ou alterado em uma pas
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão] </td>
+   <td>[!UICONTROL Connection] </td>
    <td> <p>Para obter instruções sobre como conectar sua conta SFTP ao Workfront Fusion, consulte <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Conectar SFTP ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Pasta] </td> 
+   <td>[!UICONTROL Folder] </td> 
    <td> <p>Insira a pasta que deseja observar. Você pode especificar um caminho absoluto, como <code>/home/user/</code>, ou pode especificar um caminho relativo apontando para uma pasta específica do usuário logado, como <code>./.</code></p> </td> 
   </tr> 
   <tr> 
@@ -197,11 +200,11 @@ Retorna pastas com detalhes quando uma pasta é criada ou alterada em uma pasta 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão] </td> 
+   <td>[!UICONTROL Connection] </td> 
    <td> <p>Para obter instruções sobre como conectar sua conta SFTP ao Workfront Fusion, consulte <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Conectar SFTP ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Pasta] </td> 
+   <td>[!UICONTROL Folder] </td> 
    <td> <p>Insira ou mapeie a pasta que deseja observar. Você pode especificar um caminho absoluto, como <code>/home/user/</code>. Ou você pode especificar um caminho relativo que aponte para uma pasta específica do usuário conectado, como <code>./.</code></p> </td> 
   </tr> 
   <tr> 
@@ -222,7 +225,7 @@ Retorna pastas com detalhes quando uma pasta é criada ou alterada em uma pasta 
 * [Mover um arquivo](#move-a-file)
 * [Renomear um arquivo](#rename-a-file)
 * [Atualizar permissões de arquivo](#update-file-permissions)
-* [Carregar um arquivo](#upload-a-file)
+* [Fazer upload de um arquivo](#upload-a-file)
 
 #### [!UICONTROL Criar uma pasta]
 
@@ -237,11 +240,11 @@ Este módulo de ação cria uma nova pasta no local especificado.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão] </td>
+   <td>[!UICONTROL Connection] </td>
    <td> <p>Para obter instruções sobre como conectar sua conta SFTP ao Workfront Fusion, consulte <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Conectar SFTP ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Pasta] </td> 
+   <td>[!UICONTROL Folder] </td> 
    <td> <p>Especifique uma pasta existente como local de armazenamento para a nova pasta. Você pode especificar um caminho absoluto, como <code>/home/user/file.txt</code>. Ou você pode especificar um caminho relativo que aponte para uma pasta específica do usuário logado, como <code>./</code>.</p> </td> 
   </tr> 
   <tr> 
@@ -249,7 +252,7 @@ Este módulo de ação cria uma nova pasta no local especificado.
    <td> <p> Insira o nome da pasta.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Permissões]</p> </td> 
+   <td> <p>[!UICONTROL Permissions]</p> </td> 
    <td> <p>Defina as permissões de pasta desejadas. Use parâmetros chmod. Por exemplo, <code>777</code> ou <code>-rwxrwxrwx</code>.</p> <p>Essas permissões devem corresponder ao padrão <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Para obter mais informações sobre chmod, consulte a <a href="https://ss64.com/bash/chmod.html">documentação de chmod</a>.</p> </td> 
   </tr> 
  </tbody> 
@@ -262,7 +265,7 @@ Este módulo de ação cria uma nova pasta no local especificado.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão] </td>
+   <td>[!UICONTROL Connection] </td>
    <td> <p>Para obter instruções sobre como conectar sua conta SFTP ao Workfront Fusion, consulte <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Conectar SFTP ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -279,7 +282,7 @@ Este módulo de ação cria uma nova pasta no local especificado.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão] </td>
+   <td>[!UICONTROL Connection] </td>
    <td> <p>Para obter instruções sobre como conectar sua conta SFTP ao Workfront Fusion, consulte <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Conectar SFTP ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -298,7 +301,7 @@ Este módulo recupera detalhes do arquivo, incluindo dados do arquivo.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão] </td>
+   <td>[!UICONTROL Connection] </td>
    <td> <p>Para obter instruções sobre como conectar sua conta SFTP ao Workfront Fusion, consulte <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Conectar SFTP ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -321,7 +324,7 @@ Este módulo retorna arquivos de uma pasta especificada.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão] </td>
+   <td>[!UICONTROL Connection] </td>
    <td> <p>Para obter instruções sobre como conectar sua conta SFTP ao Workfront Fusion, consulte <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Conectar SFTP ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -329,11 +332,11 @@ Este módulo retorna arquivos de uma pasta especificada.
    <td> <p> Insira o tamanho do buffer em bytes. O valor define o tamanho das partes transferidas do servidor. Alguns servidores podem causar problemas ou corromper arquivos quando o valor é muito alto.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Pasta] </td> 
+   <td>[!UICONTROL Folder] </td> 
    <td> <p>Insira ou mapeie a pasta que contém os arquivos ou pastas que deseja listar. Você pode especificar um caminho absoluto, como <code>/home/user/</code>. Ou você pode especificar um caminho relativo que aponte para uma pasta específica do usuário conectado, como <code>./.</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Pesquisar] </td> 
+   <td>[!UICONTROL Search] </td> 
    <td> <p>Insira ou mapeie o termo de pesquisa. Por exemplo, se você deseja procurar arquivos com a extensão .txt, digite <code>.txt</code>.Você também pode inserir ou mapear o nome do arquivo que deseja procurar.</p> </td> 
   </tr> 
   <tr> 
@@ -362,7 +365,7 @@ Este módulo retorna arquivos de uma pasta especificada.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão] </td>
+   <td>[!UICONTROL Connection] </td>
    <td> <p>Para obter instruções sobre como conectar sua conta SFTP ao Workfront Fusion, consulte <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Conectar SFTP ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -370,11 +373,11 @@ Este módulo retorna arquivos de uma pasta especificada.
    <td> <p>Selecione se deseja recuperar arquivos, pastas ou ambos.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Pasta] </td> 
+   <td>[!UICONTROL Folder] </td> 
    <td> <p>Insira ou mapeie a pasta que contém os arquivos ou pastas que deseja listar. Você pode especificar um caminho absoluto, como <code>/home/user/</code>. Ou você pode especificar um caminho relativo que aponte para uma pasta específica do usuário conectado, como <code>./.</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Pesquisar] </td> 
+   <td>[!UICONTROL Search] </td> 
    <td> <p>Insira ou mapeie o termo de pesquisa. Por exemplo, se você deseja procurar arquivos com a extensão .txt, digite <code>.txt</code>.Você também pode inserir ou mapear o nome do arquivo que deseja procurar.</p> </td> 
   </tr> 
   <tr> 
@@ -403,7 +406,7 @@ Este módulo retorna arquivos de uma pasta especificada.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão] </td>
+   <td>[!UICONTROL Connection] </td>
    <td> <p>Para obter instruções sobre como conectar sua conta SFTP ao Workfront Fusion, consulte <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Conectar SFTP ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -426,7 +429,7 @@ Renomeia um arquivo.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão] </td>
+   <td>[!UICONTROL Connection] </td>
    <td> <p>Para obter instruções sobre como conectar sua conta SFTP ao Workfront Fusion, consulte <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Conectar SFTP ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -449,7 +452,7 @@ Permite alterar as permissões do arquivo.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão] </td>
+   <td>[!UICONTROL Connection] </td>
    <td> <p>Para obter instruções sobre como conectar sua conta SFTP ao Workfront Fusion, consulte <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Conectar SFTP ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
@@ -457,13 +460,13 @@ Permite alterar as permissões do arquivo.
    <td> <p> Insira o caminho para o arquivo que deseja mover. Você pode especificar um caminho absoluto, como <code>/home/user/file.txt</code>. Ou você pode especificar um caminho relativo que aponte para uma pasta específica do usuário logado, como <code>./file.txt</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Permissões]</p> </td> 
+   <td> <p>[!UICONTROL Permissions]</p> </td> 
    <td> <p>Defina as permissões de arquivo desejadas. Use parâmetros chmod. Por exemplo, <code>777</code> ou <code>-rwxrwxrwx</code>.</p> <p>Essas permissões devem corresponder ao padrão <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Para obter mais informações sobre chmod, consulte a <a href="https://ss64.com/bash/chmod.html">documentação de chmod</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Carregar um arquivo]
+#### [!UICONTROL Fazer upload de um arquivo]
 
 Esse módulo permite fazer upload de um arquivo para o servidor SFTP.
 
@@ -472,19 +475,19 @@ Esse módulo permite fazer upload de um arquivo para o servidor SFTP.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Conexão] </td>
+   <td>[!UICONTROL Connection] </td>
    <td> <p>Para obter instruções sobre como conectar sua conta SFTP ao Workfront Fusion, consulte <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Conectar SFTP ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Pasta] </td> 
+   <td>[!UICONTROL Folder] </td> 
    <td> <p>Especifique uma pasta existente como local de armazenamento para o arquivo. Você pode especificar um caminho absoluto, como <code>/home/user/</code>. Ou você pode especificar um caminho relativo que aponte para uma pasta específica do usuário conectado, como <code>./.</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Arquivo Source]</td> 
+   <td>[!UICONTROL Source File]</td> 
    <td> <p> Selecione um arquivo de origem de um módulo anterior ou mapeie o nome e os dados do arquivo de origem.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Permissões]</p> </td> 
+   <td> <p>[!UICONTROL Permissions]</p> </td> 
    <td> <p>Defina as permissões desejadas para o arquivo ou pasta. Use parâmetros chmod. Por exemplo, <code>777</code> ou <code>-rwxrwxrwx</code>.</p> <p>Essas permissões devem corresponder ao padrão <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Para obter mais informações sobre chmod, consulte a <a href="https://ss64.com/bash/chmod.html">documentação de chmod</a>.</p> </td> 
   </tr> 
   <tr> 

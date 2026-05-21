@@ -4,9 +4,12 @@ description: Você pode usar a ferramenta Analisador de texto para analisar o te
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 5be274105bf13a48e7e76eaa6bd3b62c315f97a9
+TQID: https://experienceleague.adobe.com/0hUSiU9zD2vHGXsZkhcfuKYQJrdP6CAjjwEn06CDLNM
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: 1324
 ht-degree: 11%
 
 ---
@@ -40,7 +43,7 @@ Você pode usar a [!UICONTROL Ferramenta de análise de texto] para analisar o t
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações desta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -183,7 +186,7 @@ Uma discussão de expressões regulares está fora do escopo deste artigo. Recom
   </tr> 
   <tr> 
    <td>[!UICONTROL Linha Simples]</td> 
-   <td>Habilite esta opção para garantir que o ponto (.) corresponda aos caracteres de nova linha (<code>\n</code>).</td> 
+   <td>Habilite essa opção para garantir que o ponto (.) corresponde a caracteres de nova linha (<code>\n</code>).</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Continuar a execução da rota mesmo se o módulo não retornar resultados]</td> 
@@ -226,7 +229,7 @@ Pesquisa no texto inserido um valor especificado ou uma expressão regular e sub
   </tr> 
   <tr> 
    <td>[!UICONTROL Linha Simples]</td> 
-   <td>Habilite esta opção para garantir que o ponto (.) corresponda aos caracteres de nova linha (<code>\n</code>).</td> 
+   <td>Habilite essa opção para garantir que o ponto (.) corresponde a caracteres de nova linha (<code>\n</code>).</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Text] </td> 

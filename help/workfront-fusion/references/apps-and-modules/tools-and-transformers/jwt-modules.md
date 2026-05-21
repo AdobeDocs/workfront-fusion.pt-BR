@@ -4,10 +4,12 @@ description: O aplicativo Adobe Workfront Fusion [!UICONTROL JWT] fornece um mó
 author: Becky
 feature: Workfront Fusion
 exl-id: 380f60db-b2ec-411a-86ee-0d5699f19b41
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+TQID: https://experienceleague.adobe.com/90zhDiLzi34ES2MPE-hg26mmSHZ-XQIgZJIFeW4vwy4
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 0%
+source-wordcount: 528
+ht-degree: 18%
 
 ---
 
@@ -17,7 +19,7 @@ O aplicativo Adobe Workfront Fusion [!UICONTROL JWT] fornece um módulo que cria
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -25,22 +27,22 @@ O aplicativo Adobe Workfront Fusion [!UICONTROL JWT] fornece um módulo que cria
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -93,14 +95,14 @@ Esse módulo gera um JWT com base no algoritmo selecionado.
    <td> <p>Para cada item de carga que você deseja adicionar, clique em <b>Adicionar item</b> e insira a chave e o valor do item.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Opções] </td> 
+   <td role="rowheader">[!UICONTROL Options] </td> 
    <td> <p>Para cada item de opção que você deseja adicionar, clique em <b>Adicionar item</b> e insira a chave e o valor do item.</p> <p>As seguintes chaves estão disponíveis:
    <ul>
    <li><b>algoritmo</b>: (padrão: RS256)</li>
    <li><b>expiresIn</b>: expresso em segundos ou em uma cadeia de caracteres que descreve um período (por exemplo, 2 dias, 10h, 7d). Um valor numérico é interpretado como uma contagem de segundos. Se você usar uma sequência de caracteres, forneça as unidades de tempo (dias, horas etc.); caso contrário, a unidade de milissegundos será usada por padrão (120 é igual a 120 ms).</li>
    <li><b>notBefore</b>: expresso em segundos ou em uma sequência que descreve um período (por exemplo, 2 dias, 10h, 7d). Um valor numérico é interpretado como uma contagem de segundos. Se você usar uma sequência de caracteres, forneça as unidades de tempo (dias, horas etc.); caso contrário, a unidade de milissegundos será usada por padrão (120 é igual a 120 ms).
 </li>
-   <li><b>público</b></li>
+   <li><b>público-alvo</b></li>
    <li><b>emissor</b></li>
    <li><b>jwtid</b></li>
    <li><b>assunto</b></li>

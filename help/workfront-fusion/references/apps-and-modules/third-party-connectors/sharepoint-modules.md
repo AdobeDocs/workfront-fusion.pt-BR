@@ -4,9 +4,13 @@ description: Em um cenário do Adobe Workfront Fusion, é possível automatizar 
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/WmECfdPt-a3l2-WT9LMX2HB-7-p-BLIO4F2i3OAc7D0
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '4276'
+source-wordcount: 4303
 ht-degree: 13%
 
 ---
@@ -86,7 +90,7 @@ O conector do SharePoint usa o seguinte:
 
 ## Conectar o Microsoft SharePoint Online ao Workfront Fusion {#connect-microsoft-sharepoint-online-to-workfront-fusion}
 
-* [Conectar o Microsoft SharePoint Online ao Workfront Fusion usando uma conta  [!DNL Microsoft] &#x200B;](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
+* [Conectar o Microsoft SharePoint Online ao Workfront Fusion usando uma conta  [!DNL Microsoft] ](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [Conectar o Microsoft SharePoint Online ao Workfront Fusion usando configurações avançadas](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
 * [Conectar o Microsoft SharePoint Online ao Workfront Fusion usando a autorização de certificado](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
 
@@ -339,7 +343,7 @@ Este módulo recuperou detalhes sobre a pasta especificada
    <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Inserir Site, Unidade e Arquivo                IDs]</td> 
+   <td role="rowheader">[!UICONTROL Inserir Site, Unidade e IDs de Arquivo]</td> 
    <td> <p>Selecione como você deseja identificar o local do arquivo que deseja obter.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Inserir manualmente]</strong> </p> <p>Insira ou mapeie o <strong>[!UICONTROL ID do Site]</strong>, <strong>[!UICONTROL ID da Lista]</strong> e <strong>[!UICONTROL Caminho da Pasta]</strong> para a pasta que você deseja recuperar.</p> </li> 
@@ -362,7 +366,7 @@ Este módulo de ação atualiza os metadados de uma pasta ou arquivo
    <td> <p>Para obter instruções sobre como conectar sua conta do Microsoft SharePoint Online ao Workfront Fusion, consulte <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Conectar o Microsoft SharePoint Online ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Inserir Site, Unidade e Arquivo                IDs]</td> 
+   <td role="rowheader">[!UICONTROL Inserir Site, Unidade e IDs de Arquivo]</td> 
    <td> <p>Selecione como você deseja identificar o local do arquivo que deseja obter.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Inserir manualmente]</strong> </p> <p>Insira ou mapeie a <strong>[!UICONTROL ID do Site]</strong>, <strong>[!UICONTROL ID da Lista]</strong> e <strong>[!UICONTROL ID de Pasta ou item]</strong> para a pasta ou arquivo que você deseja recuperar.</p> </li> 

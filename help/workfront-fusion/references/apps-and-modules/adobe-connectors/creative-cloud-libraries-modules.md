@@ -1,13 +1,16 @@
 ---
-title: Módulos de bibliotecas do Adobe Creative Cloud
+title: Módulos de bibliotecas da Adobe Creative Cloud
 description: Com os módulos  [!DNL Adobe Workfront Fusion Adobe Creative Cloud] Bibliotecas, você pode iniciar um cenário quando um elemento ou biblioteca for criado ou atualizado. Você também pode carregar, recuperar, arquivar ou listar elementos ou fazer uma chamada para a API  [!DNL Adobe Creative Cloud Libraries] .
 author: Becky
 feature: Workfront Fusion
 exl-id: 85607e4e-538a-427f-8a99-a0ab65a75ac2
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+TQID: https://experienceleague.adobe.com/uVGhNEE-KiHbnVa2ZbP5h2rsg5GO2b1uuAkfj8BIJRw
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1410'
-ht-degree: 1%
+source-wordcount: 1416
+ht-degree: 34%
 
 ---
 
@@ -25,7 +28,7 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -33,31 +36,31 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion</td> 
    <td>
    <p>Baseado em operação: nenhum requisito de licença do Workfront Fusion</p>
-   <p>Baseado em conector (herdado): automação e integração do Workfront Fusion for Work </p>
+   <p>Baseado em conector (legado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -86,11 +89,11 @@ O conector de bibliotecas Adobe Creative Cloud usa o seguinte:
 
 ## [!UICONTROL Módulos de bibliotecas do Adobe Creative Cloud] e seus campos
 
-Ao configurar módulos do [!UICONTROL Adobe Creative Cloud Libraries], o Workfront Fusion exibe os campos listados abaixo. Junto com esses, campos [!DNL Adobe Creative Cloud Libraries] adicionais podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
+Ao configurar módulos do [!UICONTROL Adobe Creative Cloud Libraries], o Workfront Fusion exibe os campos listados abaixo. Junto com eles, outros campos do [!DNL Adobe Creative Cloud Libraries] podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Alternância de mapa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Botão de alternância Mapear](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 
 * [Elementos](#elements)
@@ -110,7 +113,7 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 
 * [[!UICONTROL Carregar um Elemento]](#upload-an-element)
 
-* [[!UICONTROL [Observar novo elemento na biblioteca]]](#watch-new-element-in-library)
+* [!UICONTROL [Observar novo elemento na biblioteca]](#watch-new-element-in-library)
 
 * [[!UICONTROL Observar elementos atualizados]](#watch-updated-elements)
 
@@ -124,7 +127,7 @@ Este módulo de ação arquiva um elemento de uma biblioteca.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Conexão]</td>
+      <td role="rowheader">[!UICONTROL Connection]</td>
       <td>Selecione uma conexão existente com o Creative Cloud Libraries. No momento, a criação de conexão não está disponível no conector do Creative Cloud Libraries. As conexões existentes funcionam conforme esperado.</td>
     </tr>
     <tr>
@@ -147,7 +150,7 @@ Esse módulo de ação retorna um único elemento de uma biblioteca.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Conexão]</td>
+      <td role="rowheader">[!UICONTROL Connection]</td>
       <td>Selecione uma conexão existente com o Creative Cloud Libraries. No momento, a criação de conexão não está disponível no conector do Creative Cloud Libraries. As conexões existentes funcionam conforme esperado.</td>
     </tr>
     <tr>
@@ -193,7 +196,7 @@ Este módulo de ação recupera uma lista de elementos em uma biblioteca.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Conexão]</td>
+      <td role="rowheader">[!UICONTROL Connection]</td>
       <td>Selecione uma conexão existente com o Creative Cloud Libraries. No momento, a criação de conexão não está disponível no conector do Creative Cloud Libraries. As conexões existentes funcionam conforme esperado.</td>
     </tr>
     <tr>
@@ -205,7 +208,7 @@ Este módulo de ação recupera uma lista de elementos em uma biblioteca.
       <td>Selecione se deseja ordenar os resultados por nome ou pela última data em que o elemento foi modificado.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Tipo]</td>
+      <td role="rowheader">[!UICONTROL Type]</td>
       <td >Insira ou mapeie um tipo MIME para limitar os resultados aos elementos identificados com o tipo MIME especificado. Exemplo: <code>string</code>.</td>
     </tr>
     <tr>
@@ -232,7 +235,7 @@ Este módulo de ação recupera uma lista de elementos em uma biblioteca.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Limite]</td>
+      <td role="rowheader">[!UICONTROL Limit]</td>
       <td>Insira ou mapeie o número máximo de registros que deseja que o módulo retorne durante cada ciclo de execução de cenário.</td>
     </tr>
   </tbody>
@@ -247,7 +250,7 @@ Esse módulo de acionamento inicia um cenário quando um elemento é adicionado 
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Conexão]</td>
+      <td role="rowheader">[!UICONTROL Connection]</td>
       <td>Selecione uma conexão existente com o Creative Cloud Libraries. No momento, a criação de conexão não está disponível no conector do Creative Cloud Libraries. As conexões existentes funcionam conforme esperado.</td>
     </tr>
     <tr>
@@ -255,7 +258,7 @@ Esse módulo de acionamento inicia um cenário quando um elemento é adicionado 
       <td >Selecione a biblioteca que deseja observar por elementos atualizados.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Limite]</td>
+      <td role="rowheader">[!UICONTROL Limit]</td>
       <td>Insira ou mapeie o número máximo de registros que deseja que o módulo retorne durante cada ciclo de execução de cenário.</td>
     </tr>
   </tbody>
@@ -271,7 +274,7 @@ Esse módulo de acionamento inicia um cenário quando um elemento em uma bibliot
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Conexão]</td>
+      <td role="rowheader">[!UICONTROL Connection]</td>
       <td>Selecione uma conexão existente com o Creative Cloud Libraries. No momento, a criação de conexão não está disponível no conector do Creative Cloud Libraries. As conexões existentes funcionam conforme esperado.</td>
     </tr>
     <tr>
@@ -279,7 +282,7 @@ Esse módulo de acionamento inicia um cenário quando um elemento em uma bibliot
       <td >Selecione a biblioteca que deseja observar para novos elementos.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Limite]</td>
+      <td role="rowheader">[!UICONTROL Limit]</td>
       <td>Insira ou mapeie o número máximo de registros que deseja que o módulo retorne durante cada ciclo de execução de cenário.</td>
     </tr>
   </tbody>
@@ -301,11 +304,11 @@ Esse módulo de acionamento inicia um cenário quando uma nova biblioteca é cri
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Conexão]</td>
+      <td role="rowheader">[!UICONTROL Connection]</td>
       <td>Selecione uma conexão existente com o Creative Cloud Libraries. No momento, a criação de conexão não está disponível no conector do Creative Cloud Libraries. As conexões existentes funcionam conforme esperado.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Limite]</td>
+      <td role="rowheader">[!UICONTROL Limit]</td>
       <td>Insira ou mapeie o número máximo de registros que deseja que o módulo retorne durante cada ciclo de execução de cenário.</td>
     </tr>
   </tbody>
@@ -320,11 +323,11 @@ Esse módulo de acionamento inicia um cenário quando uma biblioteca existente �
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Conexão]</td>
+      <td role="rowheader">[!UICONTROL Connection]</td>
       <td>Selecione uma conexão existente com o Creative Cloud Libraries. No momento, a criação de conexão não está disponível no conector do Creative Cloud Libraries. As conexões existentes funcionam conforme esperado.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Limite]</td>
+      <td role="rowheader">[!UICONTROL Limit]</td>
       <td>Insira ou mapeie o número máximo de registros que deseja que o módulo retorne durante cada ciclo de execução de cenário.</td>
     </tr>
   </tbody>
@@ -344,13 +347,13 @@ Este módulo faz uma chamada de API personalizada para a API [!DNL Adobe Creativ
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Conexão]</td>
+      <td role="rowheader">[!UICONTROL Connection]</td>
       <td> <p>Para obter instruções sobre como conectar sua conta do Adobe Creative Cloud ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas.</a></p>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL URL]</td>
       <td>
-        <p>Insira um caminho relativo para <code>https://cc-libraries.adobe.io/api</code>.</p>
+        <p>Insira um caminho relativo a <code>https://cc-libraries.adobe.io/api</code>.</p>
     <p>Por exemplo <code>/v1/libraries</code>.</p>
       </td>
     </tr>
@@ -360,11 +363,11 @@ Este módulo faz uma chamada de API personalizada para a API [!DNL Adobe Creativ
         <p>Selecione a versão da API [!DNL Adobe Analytics] à qual você deseja se conectar.</p>
       </td>
     </tr>    <tr>
-      <td role="rowheader">[!UICONTROL Método]</td>
+      <td role="rowheader">[!UICONTROL Method]</td>
       <td> <p>Selecione o método de solicitação HTTP necessário para configurar a chamada de API. Para obter mais informações, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Métodos de solicitação HTTP</a>.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Cabeçalhos]</td>
+      <td role="rowheader">[!UICONTROL Headers]</td>
       <td>
         <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p>
         <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p>
@@ -372,15 +375,15 @@ Este módulo faz uma chamada de API personalizada para a API [!DNL Adobe Creativ
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Cadeia de Consulta]</td>
+      <td role="rowheader">[!UICONTROL Query String]</td>
       <td>
-        <p>Adicione a consulta da chamada à API na forma de um objeto JSON padrão.</p>
+        <p>Adicione a consulta para a chamada de API na forma de um objeto JSON padrão.</p>
         <p>Por exemplo: <code>{"name":"something-urgent"}</code></p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Corpo]</td>
-   <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
+      <td role="rowheader">[!UICONTROL Body]</td>
+   <td> <p>Adicione o conteúdo do corpo para a chamada de API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais, como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
@@ -404,7 +407,7 @@ Esse módulo de ação faz upload de um pequeno ativo de arquivo para uma biblio
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Conexão]</td>
+      <td role="rowheader">[!UICONTROL Connection]</td>
       <td>Selecione uma conexão existente com o Creative Cloud Libraries. No momento, a criação de conexão não está disponível no conector do Creative Cloud Libraries. As conexões existentes funcionam conforme esperado.</td>
     </tr>
     <tr>
@@ -442,7 +445,7 @@ Esse módulo de ação faz upload de um pequeno ativo de arquivo para uma biblio
       <td >Insira ou mapeie o tipo MIME do arquivo carregado.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Arquivo Source]</td>
+      <td role="rowheader">[!UICONTROL Source File]</td>
       <td>
         <p>Selecione um arquivo de origem de um módulo anterior ou mapeie o nome e os dados do arquivo de origem.</p>
       </td>

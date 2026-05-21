@@ -4,20 +4,23 @@ description: Em um cenário do Adobe Workfront Fusion, é possível automatizar 
 author: Becky
 feature: Workfront Fusion
 exl-id: d9e6c26c-8770-40bc-a83a-8c05f86e4a3f
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/oGM3EGtQVFeEvQ1PPJQEsu9BI4-blE73oz3BR51eUWs
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1959'
-ht-degree: 0%
+source-wordcount: 1976
+ht-degree: 13%
 
 ---
 
-# [!DNL GitHub] módulos
+# Módulos do [!DNL GitHub]
 
 Em um cenário do Adobe Workfront Fusion, você pode automatizar fluxos de trabalho que usam o [!UICONTROL GitHub], bem como conectá-lo a vários aplicativos e serviços de terceiros.
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -25,31 +28,31 @@ Em um cenário do Adobe Workfront Fusion, você pode automatizar fluxos de traba
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion</td> 
    <td>
    <p>Baseado em operação: nenhum requisito de licença do Workfront Fusion</p>
-   <p>Baseado em conector (herdado): automação e integração do Workfront Fusion for Work </p>
+   <p>Baseado em conector (legado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -63,11 +66,11 @@ Para obter instruções sobre como conectar sua conta do [!DNL GitHub] ao [!UICO
 
 ## [!DNL GitHub] módulos e seus campos.
 
-Ao configurar módulos do [!DNL GitHub], o Workfront Fusion exibe os campos listados abaixo. Junto com esses, campos [!DNL GitHub] adicionais podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
+Ao configurar módulos do [!DNL GitHub], o Workfront Fusion exibe os campos listados abaixo. Junto com eles, outros campos do [!DNL GitHub] podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Alternância de mapa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Botão de alternância Mapear](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Acionadores](#triggers)
 * [Ações](#actions)
@@ -89,7 +92,7 @@ Esse módulo de acionamento inicia um cenário quando um novo comentário é adi
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL GitHub] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -120,7 +123,7 @@ Este módulo de acionamento inicia um cenário quando uma nova bifurcação é c
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL GitHub] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -143,7 +146,7 @@ Esse módulo de acionamento inicia um cenário quando um novo problema é adicio
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL GitHub] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -163,7 +166,7 @@ Esse módulo de acionamento inicia um cenário quando um novo problema é adicio
    <td>Selecione se deseja observar somente novos problemas ou novos problemas e todas as alterações.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Filtro]</td> 
+   <td role="rowheader">[!UICONTROL Filter]</td> 
    <td> <p>Você pode filtrar os problemas que deseja observar pela maneira como está associado a eles.</p> 
     <ul> 
      <li>[!UICONTROL Todos os problemas]</li> 
@@ -174,7 +177,7 @@ Esse módulo de acionamento inicia um cenário quando um novo problema é adicio
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Estado]</td> 
+   <td role="rowheader">[!UICONTROL State]</td> 
    <td>Selecione se você deseja assistir somente a problemas abertos ou somente a problemas fechados. </td> 
   </tr> 
   <tr> 
@@ -193,7 +196,7 @@ Este módulo dispara quando uma nova solicitação de pull é adicionada ou uma 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL GitHub] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -205,7 +208,7 @@ Este módulo dispara quando uma nova solicitação de pull é adicionada ou uma 
    <td> <p> Defina o número máximo de solicitações de pull que o Workfront Fusion retorna durante um ciclo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Estado]</td> 
+   <td role="rowheader">[!UICONTROL State]</td> 
    <td>Selecione se deseja observar solicitações [!UICONTROL somente abertura de pull], [!UICONTROL somente fechadas] ou todas as solicitações de pull. </td> 
   </tr> 
   <tr> 
@@ -224,7 +227,7 @@ Esse módulo de acionador inicia um cenário quando um repositório é criado ou
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL GitHub] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -260,7 +263,7 @@ Este módulo adiciona responsáveis ao problema especificado
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL GitHub] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -287,7 +290,7 @@ Este módulo adiciona rótulos a um problema. Os rótulos são definidos no nív
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL GitHub] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -314,7 +317,7 @@ Este módulo cria um comentário sobre o problema especificado.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL GitHub] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -326,7 +329,7 @@ Este módulo cria um comentário sobre o problema especificado.
    <td>Insira ou mapeie o número do problema no qual deseja criar um comentário.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Corpo]</td> 
+   <td role="rowheader">[!UICONTROL Body]</td> 
    <td>Insira ou mapeie o conteúdo do comentário.</td> 
   </tr> 
  </tbody> 
@@ -341,7 +344,7 @@ Este módulo cria um novo problema no repositório selecionado.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL GitHub] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -353,7 +356,7 @@ Este módulo cria um novo problema no repositório selecionado.
    <td>Selecione as pessoas que você deseja atribuir à ocorrência. Os designados disponíveis incluem qualquer pessoa com permissões de gravação no repositório e membros da organização com permissões de leitura no repositório. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Etapa]</td> 
+   <td role="rowheader">[!UICONTROL Milestone]</td> 
    <td>Selecione a etapa que você deseja associar à nova ocorrência. </td> 
   </tr> 
   <tr> 
@@ -365,7 +368,7 @@ Este módulo cria um novo problema no repositório selecionado.
    <td>Insira ou mapeie um título para o novo problema.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Corpo]</td> 
+   <td role="rowheader">[!UICONTROL Body]</td> 
    <td>Insira ou mapeie o corpo do problema, como uma descrição ou informações adicionais</td> 
   </tr> 
  </tbody> 
@@ -380,7 +383,7 @@ Este módulo recupera detalhes sobre o problema especificado
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL GitHub] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -403,7 +406,7 @@ Este módulo lista todos os comentários sobre o problema especificado.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL GitHub] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -434,7 +437,7 @@ Este módulo remove um único rótulo de um problema.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL GitHub] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -461,7 +464,7 @@ Este módulo remove os atribuídos do problema especificado.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL GitHub] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -488,7 +491,7 @@ Este módulo procura por problemas que correspondam aos seus critérios de busca
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL GitHub] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -525,7 +528,7 @@ Este módulo atualiza um problema [!DNL GitHub] existente.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL GitHub] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -537,7 +540,7 @@ Este módulo atualiza um problema [!DNL GitHub] existente.
    <td>Selecione as pessoas que você deseja atribuir à ocorrência. Os designados disponíveis incluem qualquer pessoa com permissões de gravação no repositório e membros da organização com permissões de leitura no repositório. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Etapa]</td> 
+   <td role="rowheader">[!UICONTROL Milestone]</td> 
    <td>Selecione a etapa que você deseja associar à ocorrência. </td> 
   </tr> 
   <tr> 
@@ -549,7 +552,7 @@ Este módulo atualiza um problema [!DNL GitHub] existente.
    <td>Insira ou mapeie o número do problema que você deseja atualizar. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Estado]</td> 
+   <td role="rowheader">[!UICONTROL State]</td> 
    <td>Selecione o estado para o qual você deseja atualizar o problema.</td> 
   </tr> 
   <tr> 
@@ -557,7 +560,7 @@ Este módulo atualiza um problema [!DNL GitHub] existente.
    <td>Insira ou mapeie um novo título para o problema.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Corpo]</td> 
+   <td role="rowheader">[!UICONTROL Body]</td> 
    <td>Informe ou mapeie um novo corpo para a ocorrência, como uma descrição ou informações adicionais</td> 
   </tr> 
  </tbody> 

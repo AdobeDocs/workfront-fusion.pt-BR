@@ -8,9 +8,12 @@ description: Você pode adicionar um usuário ao Adobe Admin Console e atribuí-
 author: Becky
 feature: Workfront Fusion
 exl-id: 7cb1c1a7-3c7a-459a-818f-d9cefcb9988b
-source-git-commit: 6762806f17a0fc55531b647a84901b8ca572a997
+TQID: https://experienceleague.adobe.com/jo9dNX5czLlg7Wi4iFBR6FlOM-fmM-i3zoEhh5sgsqc
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: 607
 ht-degree: 21%
 
 ---
@@ -58,7 +61,7 @@ Para assistir a um vídeo que descreve o Workfront Fusion no [!DNL Adobe Admin C
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações desta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 

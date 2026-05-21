@@ -4,9 +4,12 @@ description: As seguintes funções de data e hora estão disponíveis no painel
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: fc7f98c128f73a60d75750c6bd57ec8ddc31954c
+TQID: https://experienceleague.adobe.com/E77KZbLpHtYJ-D7haukgux3AnmhfkIh-xqh0j6NbNiU
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: 2375
 ht-degree: 3%
 
 ---
@@ -514,7 +517,7 @@ Esta função retorna uma nova data com os segundos especificados em parâmetros
 
 Especifique um número de 0 a 59. Se o número estiver fora desse intervalo, a função retornará um segundo do minuto anterior (para um número negativo) ou do minuto subsequente (para um número positivo).
 
-Se você precisar especificar um número fora do intervalo, recomendamos usar [!UICONTROL &#x200B; addSeconds], conforme descrito acima na seção [addSeconds (date; number)](#addseconds-date-number).
+Se você precisar especificar um número fora do intervalo, recomendamos usar [!UICONTROL  addSeconds], conforme descrito acima na seção [addSeconds (date; number)](#addseconds-date-number).
 
 >[!BEGINSHADEBOX]
 
@@ -886,7 +889,7 @@ Caso queira calcular apenas um caso específico, por exemplo, a cada segunda qua
 * `1.dow` = `3`
 * `1.date` = `now`
 
-![Valor da variável de dia &#x200B;](assets/nth-day-variable-value-350x33.png)
+![Valor da variável de dia ](assets/nth-day-variable-value-350x33.png)
 
 #### Explicação:
 

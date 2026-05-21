@@ -5,9 +5,13 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: e6fbbc20-4315-4668-9e11-af7cfa82ae66
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
-workflow-type: ht
-source-wordcount: '4151'
+TQID: https://experienceleague.adobe.com/IMoZJbCBhHsko7g3MA5otzXcWUfkTPLQVhgWbpBdSyQ
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: cc72dcf1-72e1-48cc-b434-e7c27d62d67cid: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+workflow-type: tm+mt
+source-wordcount: 4312
 ht-degree: 100%
 
 ---
@@ -120,19 +124,19 @@ Para criar uma conexão para os módulos do [!DNL Adobe PDF Services]:
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client ID]</td>
-          <td>Insira sua [!UICONTROL Client ID] do [!DNL Adobe]. Isso pode ser encontrado na seção [!UICONTROL Credentials details] do [!DNL Adobe Developer Console].<p>Para obter instruções sobre como localizar as credenciais, consulte <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Credenciais</a> na documentação do desenvolvedor da Adobe.</p></td>
+          <td>Insira sua [!UICONTROL Client ID] do [!DNL Adobe]. Essa informação pode ser encontrada na seção [!UICONTROL Credentials details] do [!DNL Adobe Developer Console].<p>Para obter instruções sobre como localizar as credenciais, consulte <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Credenciais</a> na documentação do desenvolvedor da Adobe.</p></td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client Secret]</td>
-          <td>Insira seu [!UICONTROL Client Secret] do [!DNL Adobe]. Isso pode ser encontrado na seção [!UICONTROL Credentials details] do [!DNL Adobe Developer Console].<p>Para obter instruções sobre como localizar as credenciais, consulte <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Credenciais</a> na documentação do desenvolvedor da Adobe.</p>
+          <td>Insira o [!UICONTROL Client Secret] do [!DNL Adobe]. Essa informação pode ser encontrada na seção [!UICONTROL Credentials details] do [!DNL Adobe Developer Console].<p>Para obter instruções sobre como localizar as credenciais, consulte <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Credenciais</a> na documentação do desenvolvedor da Adobe.</p>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Technical account ID] (somente JWT)</td>
-          <td>Insira sua [!UICONTROL Technical account ID] do [!DNL Adobe]. Isso pode ser encontrado na seção [!UICONTROL Credentials details] do [!DNL Adobe Developer Console].<p>Para obter instruções sobre como localizar as credenciais, consulte <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Credenciais</a> na documentação do desenvolvedor da Adobe.</p>
+          <td>Insira sua [!UICONTROL Technical account ID] do [!DNL Adobe]. Essa informação pode ser encontrada na seção [!UICONTROL Credentials details] do [!DNL Adobe Developer Console].<p>Para obter instruções sobre como localizar as credenciais, consulte <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Credenciais</a> na documentação do desenvolvedor da Adobe.</p>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Organization ID] (somente JWT)</td>
-          <td>Insira sua [!UICONTROL Organization ID] do [!DNL Adobe]. Isso pode ser encontrado na seção [!UICONTROL Credentials details] do [!DNL Adobe Developer Console].<p>Para obter instruções sobre como localizar as credenciais, consulte <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Credenciais</a> na documentação do desenvolvedor da Adobe.</p>
+          <td>Insira sua [!UICONTROL Organization ID] do [!DNL Adobe]. Essa informação pode ser encontrada na seção [!UICONTROL Credentials details] do [!DNL Adobe Developer Console].<p>Para obter instruções sobre como localizar as credenciais, consulte <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Credenciais</a> na documentação do desenvolvedor da Adobe.</p>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Meta scopes] (somente JWT)</td>
@@ -169,7 +173,7 @@ Para criar uma conexão para os módulos do [!DNL Adobe PDF Services]:
 1. Clique em **[!UICONTROL Continuar]** para salvar a conexão e retornar ao módulo.
 
 
-## Módulos e campos do [!DNL Adobe PDF Services]
+## Módulos do [!DNL Adobe PDF Services] e seus campos
 
 Ao configurar o [!DNL PDF Services], o Workfront Fusion exibe os campos listados abaixo. Junto com eles, outros campos podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
 
@@ -676,7 +680,7 @@ Este módulo de ação cria uma solicitação HTTP personalizada para a API dos 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Fields]</td> 
-   <td> <p>Para cada campo que você deseja adicionar à chamada de API, clique em <b>Adicionar item</b> e insira a chave do campo e o valor opcional.</p> <p>Observação:  <p>Ao usar instruções condicionais, como <code>if</code>, no JSON, coloque as aspas fora da instrução condicional.</p> 
+   <td> <p>Para cada campo que você deseja adicionar à chamada de API, clique em <b>Adicionar item</b> e insira a chave do campo e o valor opcional.</p> <p>Observação:  <p>Ao usar instruções condicionais, como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 

@@ -4,9 +4,12 @@ description: A Google introduziu restrições sobre como os usuários podem usar
 author: Becky
 feature: Workfront Fusion
 exl-id: eac7ba26-664e-464c-b05c-8c2ebf407fb3
-source-git-commit: bbd1ec27e52127c8814188612a1e8d5cfab0cd25
+TQID: https://experienceleague.adobe.com/R2hPx1AF2Vul-mQFWYiZLOm63-o6QIhgW1Azn9AMOIg
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: 804
 ht-degree: 18%
 
 ---
@@ -77,41 +80,41 @@ O Workfront Fusion usa a exceção de Instalação em todo o domínio. A instala
 
 ### Google Workspace com outro cliente OAuth
 
-Google Workspace users that prefer to use their own OAuth client instead of using the Workfront Fusion OAuth client can connect to Google Services through the Internal Use approach. This option is intended for advanced users. For instructions, see [Connect Adobe Workfront Fusion to Google Services using a custom OAuth client](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
+Os usuários do Google Workspace que preferem usar seu próprio cliente OAuth em vez de usar o cliente OAuth do Workfront Fusion podem se conectar aos Serviços da Google por meio da abordagem de uso interno. Essa opção destina-se a usuários avançados. Para obter instruções, consulte [Conectar o Adobe Workfront Fusion ao Google Services usando um cliente OAuth personalizado](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
 
 ### @gmail.com e @googlemail.com {#gmailcom-and-googlemailcom}
 
-Users that access Google Services through @gmail.com or @googlemail.com can connect to Google Services through the Personal Use approach. This option is intended for advanced users. For instructions, see [Connect Adobe Workfront Fusion to Google Services using a custom OAuth client](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
+Os usuários que acessam os Serviços da Google por meio de @gmail.com ou @googlemail.com podem se conectar aos Serviços da Google por meio da abordagem de Uso pessoal. Essa opção destina-se a usuários avançados. Para obter instruções, consulte [Conectar o Adobe Workfront Fusion ao Google Services usando um cliente OAuth personalizado](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
 
 ## Perguntas frequentes
 
-* [What apps in Adobe Workfront Fusion are affected?](#what-apps-in-adobe-workfront-fusion-are-affected)
-* [Do I have a Google Workspace account?](#do-i-have-a-g-suite-account)
-* [What should I do if I&#39;m a @gmail.com or @googlemail.com user?](#what-should-i-do-if-im-gmailcom-or-googlemailcom-user)
-* [What should I do if I&#39;m a Google Workspace user?](#what-should-i-do-if-im-a-g-suite-user)
+* [Quais aplicativos no Adobe Workfront Fusion são afetados?](#what-apps-in-adobe-workfront-fusion-are-affected)
+* [Eu tenho uma conta do Google Workspace?](#do-i-have-a-g-suite-account)
+* [O que devo fazer se sou um usuário @gmail.com ou @googlemail.com?](#what-should-i-do-if-im-gmailcom-or-googlemailcom-user)
+* [O que devo fazer se sou um usuário do Google Workspace?](#what-should-i-do-if-im-a-g-suite-user)
 
-### What apps in Adobe Workfront Fusion are affected? {#what-apps-in-adobe-workfront-fusion-are-affected}
+### Quais aplicativos no Adobe Workfront Fusion são afetados? {#what-apps-in-adobe-workfront-fusion-are-affected}
 
-Google Drive, Gmail, and Email (connected to Gmail account).
+Google Drive, Gmail e Email (conectado à conta do Gmail).
 
-### Do I have a Google Workspace account? {#do-i-have-a-g-suite-account}
+### Eu tenho uma conta do Google Workspace? {#do-i-have-a-g-suite-account}
 
-If your email address ends with @gmail.com or @googlemail.com, your account is not a Google Workspace account. If your Google account ends with a custom domain such as @my-company.com, then it is a Google Workspace account.
+Se o seu endereço de email termina com @gmail.com ou @googlemail.com, sua conta não é uma conta do Google Workspace. Se sua conta do Google terminar com um domínio personalizado, como @my-company.com, ela será uma conta do Google Workspace.
 
-### What should I do if I&#39;m @gmail.com or @googlemail.com user? {#what-should-i-do-if-im-gmailcom-or-googlemailcom-user}
+### O que devo fazer se for um usuário @gmail.com ou @googlemail.com? {#what-should-i-do-if-im-gmailcom-or-googlemailcom-user}
 
-These new restrictions only apply if you are integrating Google Drive or Gmail. If you want to connect to Google Drive or Gmail, you can
+Essas novas restrições só se aplicam se você estiver integrando o Google Drive ou o Gmail. Se quiser se conectar ao Google Drive ou Gmail, você poderá
 
-* Switch to Google Workspace.
+* Mude para o Google Workspace.
 
   ou
 
-* Create a custom OAuth client. This option is intended for advanced users.
+* Crie um cliente OAuth personalizado. Essa opção destina-se a usuários avançados.
 
-  For instructions, see [Connect Adobe Workfront Fusion to Google Services using a custom OAuth client](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
+  Para obter instruções, consulte [Conectar o Adobe Workfront Fusion ao Google Services usando um cliente OAuth personalizado](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
 
-If you want to integrate any other service than Google Drive or Gmail, these restrictions do not apply.
+Se você quiser integrar qualquer serviço diferente do Google Drive ou Gmail, essas restrições não se aplicam.
 
-### What should I do if I&#39;m a Google Workspace user? {#what-should-i-do-if-im-a-g-suite-user}
+### O que devo fazer se sou um usuário do Google Workspace? {#what-should-i-do-if-im-a-g-suite-user}
 
 Não há nenhuma ação necessária.

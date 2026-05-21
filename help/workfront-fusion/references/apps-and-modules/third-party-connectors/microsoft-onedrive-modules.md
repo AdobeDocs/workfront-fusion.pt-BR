@@ -4,16 +4,19 @@ description: Em um cenário do Adobe Workfront Fusion, é possível automatizar 
 author: Becky
 feature: Workfront Fusion
 exl-id: d21eafad-9c67-4f42-b718-0aa4223846e6
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/YscMl6qY47zJvwOieRmWg5rW-RaMnQ69R-b0tjB-FA4
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '4165'
-ht-degree: 0%
+source-wordcount: 4184
+ht-degree: 11%
 
 ---
 
-# [!DNL Microsoft OneDrive] módulos
+# Módulos do [!DNL Microsoft OneDrive]
 
-Em um cenário do Adobe Workfront Fusion, é possível automatizar fluxos de trabalho que usam o [!DNL OneDrive], bem como conectá-lo a vários aplicativos e serviços de terceiros.
+Em um cenário do Adobe Workfront Fusion, é possível automatizar fluxos de trabalho que usam [!DNL OneDrive], bem como conectá-lo a vários aplicativos e serviços de terceiros.
 
 Para obter instruções sobre como criar um cenário, consulte os artigos em [Criar cenários: índice do artigo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -21,7 +24,7 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
 
 ## Requisitos de acesso
 
-+++ Expanda para visualizar os requisitos de acesso para a funcionalidade neste artigo.
++++ Expanda para visualizar os requisitos de acesso da funcionalidade neste artigo.
 
 <table style="table-layout:auto">
  <col> 
@@ -29,37 +32,37 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
  <tbody> 
   <tr> 
    <td role="rowheader">Pacote do Adobe Workfront</td> 
-   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote de Automação e Integração do Adobe Workfront</p><p>Workfront Ultimate</p><p>Workfront Prime e pacotes Select, com uma compra adicional do Workfront Fusion.</p> </td> 
+   <td> <p>Qualquer pacote de fluxo de trabalho do Adobe Workfront e qualquer pacote do Adobe Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Os pacotes Workfront Prime e Select, com uma compra adicional do Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenças do Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Trabalhar ou superior</p> </td> 
+   <td> <p>Padrão</p><p>Trabalho ou maior</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion</td> 
    <td>
    <p>Baseado em operação: nenhum requisito de licença do Workfront Fusion</p>
-   <p>Baseado em conector (herdado): automação e integração do Workfront Fusion for Work </p>
+   <p>Baseado em conector (legado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produto</td> 
    <td>
-   <p>Se sua organização tiver um pacote Select ou Prime Workfront que não inclua a Automação e Integração do Workfront, ela deverá comprar o Adobe Workfront Fusion.</li></ul>
+   <p>Se sua organização tiver um pacote Workfront Select ou Prime, ele não inclui o Workfront Automation and Integration. É necessário comprar o Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Para obter mais detalhes sobre as informações nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Pré-requisitos
 
-Para usar módulos [!DNL OneDrive], você deve ter uma conta [!DNL Microsoft OneDrive].
+Para usar módulos [!DNL OneDrive], você deve ter uma conta do [!DNL Microsoft OneDrive].
 
 
 
@@ -97,13 +100,13 @@ Para obter instruções sobre como conectar sua conta do [!DNL OneDrive] ao [!UI
 >
 >Por exemplo, se um usuário tiver permissões de &quot;Tabela de leitura&quot; concedidas por meio do conector do Excel e criar uma conexão no conector do Outlook para ler emails, a tela de consentimento de permissões mostrará a permissão &quot;Tabela de leitura&quot; já concedida e a permissão &quot;Gravar email&quot; recém-necessária.
 
-## [!DNL Microsoft OneDrive] módulos e seus campos
+## Módulos do [!DNL Microsoft OneDrive] e seus campos
 
-Ao configurar módulos do [!DNL OneDrive], o Workfront Fusion exibe os campos listados abaixo. Junto com esses, campos [!DNL OneDrive] adicionais podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
+Ao configurar módulos do [!DNL OneDrive], o Workfront Fusion exibe os campos listados abaixo. Junto com eles, outros campos do [!DNL OneDrive] podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Alternância de mapa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Botão de alternância Mapear](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Arquivo/Pasta](#filefolder)
 * [Outras](#other)
@@ -118,7 +121,7 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 * [[!UICONTROL Obter um Link de Compartilhamento]](#get-a-share-link)
 * [[!UICONTROL Mover um Arquivo/Pasta]](#move-a-filefolder)
 * [[!UICONTROL Pesquisar Arquivos/Pastas]](#search-filesfolders)
-* [[!UICONTROL Carregar um arquivo]](#upload-a-file)
+* [[!UICONTROL Fazer upload de um arquivo]](#upload-a-file)
 * [[!UICONTROL Observar arquivos/pastas]](#watch-filesfolders)
 
 #### [!UICONTROL Copiar um Arquivo]
@@ -130,7 +133,7 @@ Este módulo de ação copia um arquivo em um novo local de pasta
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>Para obter instruções sobre como conectar sua conta do [!DNL OneDrive] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a></td> 
   </tr> 
   <tr> 
@@ -192,7 +195,7 @@ Este módulo de ação copia um arquivo em um novo local de pasta
    <td> <p>Selecione ou mapeie a unidade que contém a pasta para a qual você deseja copiar o arquivo. Este campo não estará disponível se você tiver selecionado [!UICONTROL Não] no campo [!UICONTROL Habilitar para Inserir uma ID de Unidade].</p> <p>Se você deixar isso em branco, o arquivo ou pasta só poderá ser copiado no mesmo [!UICONTROL OneDrive].</p> <p>Você pode copiar arquivos e pastas da [!UICONTROL Minha Unidade] para uma [!UICONTROL Unidade do Site] ou para uma [!UICONTROL Unidade do Grupo]. </p> <p>Você pode copiar arquivos de uma unidade do [!UICONTROL Site's Drive] somente para a mesma unidade no mesmo site.</p> <p>Você pode copiar arquivos de uma [!UICONTROL Group's Drive] somente para a mesma unidade no mesmo grupo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Pasta]</td> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
    <td>Insira ou mapeie a pasta para onde deseja mover a cópia ou pasta.</td> 
   </tr> 
   <tr> 
@@ -211,7 +214,7 @@ Este módulo de ação cria uma nova pasta na unidade especificada.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>Para obter instruções sobre como conectar sua conta do [!DNL OneDrive] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a></td> 
   </tr> 
   <tr> 
@@ -232,7 +235,7 @@ Este módulo de ação cria uma nova pasta na unidade especificada.
    <td> <p>Selecione a unidade na qual deseja criar uma pasta. Este campo não estará disponível se você tiver selecionado [!UICONTROL Não] no campo [!UICONTROL Habilitar para Inserir uma ID de Unidade].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Pasta]</td> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
    <td>Se quiser que a nova pasta seja uma subpasta, navegue até a pasta na qual você deseja que ela seja uma subpasta.</td> 
   </tr> 
   <tr> 
@@ -255,7 +258,7 @@ Este módulo de ação exclui o arquivo ou pasta selecionada.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>Para obter instruções sobre como conectar sua conta do [!DNL OneDrive] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a></td> 
   </tr> 
   <tr> 
@@ -307,7 +310,7 @@ Este módulo de ação baixa o arquivo especificado.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>Para obter instruções sobre como conectar sua conta do [!DNL OneDrive] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a></td> 
   </tr> 
   <tr> 
@@ -395,7 +398,7 @@ Esse módulo de ação obtém os metadados de um arquivo especificado.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>Para obter instruções sobre como conectar sua conta do [!DNL OneDrive] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a></td> 
   </tr> 
   <tr> 
@@ -443,7 +446,7 @@ Este módulo de ação retorna um link de compartilhamento para o arquivo especi
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>Para obter instruções sobre como conectar sua conta do [!DNL OneDrive] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a></td> 
   </tr> 
   <tr> 
@@ -499,7 +502,7 @@ Este módulo de ação move um arquivo ou pasta para um novo local de pasta
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>Para obter instruções sobre como conectar sua conta do [!DNL OneDrive] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a></td> 
   </tr> 
   <tr> 
@@ -565,7 +568,7 @@ Este módulo de ação move um arquivo ou pasta para um novo local de pasta
    <td> <p>Selecione ou mapeie a unidade que contém a pasta para a qual você deseja mover o arquivo ou pasta. Este campo não estará disponível se você tiver selecionado [!UICONTROL Não] no campo [!UICONTROL Habilitar para Inserir uma ID de Unidade].</p> <p>Se você deixar isso em branco, o arquivo ou pasta só poderá ser movido dentro do mesmo [!DNL OneDrive].</p> <p>Você pode mover arquivos e pastas da [!UICONTROL Minha Unidade] para uma [!UICONTROL Unidade do Site] ou uma [!UICONTROL Unidade do Grupo]. </p> <p>Você pode mover arquivos de uma unidade do [!UICONTROL Site's Drive] somente para a mesma unidade no mesmo site.</p> <p>Você pode mover arquivos de uma [!UICONTROL Group's Drive] somente para a mesma unidade no mesmo grupo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Pasta]</td> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
    <td>Insira ou mapeie a pasta para onde deseja mover o arquivo ou pasta.</td> 
   </tr> 
  </tbody> 
@@ -580,7 +583,7 @@ Este módulo de pesquisa retorna arquivos e pastas com base nos critérios defin
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>Para obter instruções sobre como conectar sua conta do [!DNL OneDrive] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a></td> 
   </tr> 
   <tr> 
@@ -602,13 +605,13 @@ Este módulo de pesquisa retorna arquivos e pastas com base nos critérios defin
    <td> <p>Selecione se deseja pesquisar arquivos, pastas ou ambos.</p> <p>Observação: não é possível pesquisar pastas em uma unidade [!UICONTROL Compartilhado Comigo].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limite]</td> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
    <td> <p>Insira ou mapeie o número máximo de registros que deseja que o módulo retorne durante cada ciclo de execução de cenário.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Carregar um arquivo]
+#### [!UICONTROL Fazer upload de um arquivo]
 
 Este módulo de ação faz upload de um arquivo para a pasta especificada.
 
@@ -617,7 +620,7 @@ Este módulo de ação faz upload de um arquivo para a pasta especificada.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>Para obter instruções sobre como conectar sua conta do [!DNL OneDrive] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a></td> 
   </tr> 
   <tr> 
@@ -642,7 +645,7 @@ Este módulo de ação faz upload de um arquivo para a pasta especificada.
    <td> <p>Selecione a unidade que contém a pasta na qual você deseja fazer upload de um arquivo. Este campo não estará disponível se você tiver selecionado [!UICONTROL Não] no campo [!UICONTROL Habilitar para Inserir uma ID de Unidade].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL arquivo Source]</td> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
    <td> <p>Selecione um arquivo de origem de um módulo anterior ou mapeie o nome e os dados do arquivo de origem.</p> </td> 
   </tr> 
   <tr> 
@@ -650,7 +653,7 @@ Este módulo de ação faz upload de um arquivo para a pasta especificada.
    <td>Selecione como proceder se um arquivo com o mesmo nome já existir.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Descrição]</td> 
+   <td role="rowheader">[!UICONTROL Description]</td> 
    <td>Adicione uma descrição ao arquivo carregado.</td> 
   </tr> 
  </tbody> 
@@ -665,7 +668,7 @@ Este módulo de acionamento inicia um cenário quando um arquivo ou pasta é cri
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>Para obter instruções sobre como conectar sua conta do [!DNL OneDrive] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a></td> 
   </tr> 
   <tr> 
@@ -695,7 +698,7 @@ Este módulo de acionamento inicia um cenário quando um arquivo ou pasta é cri
    <td> <p>Selecione se deseja observar arquivos, pastas ou ambos.</p> <p>Observação: não é possível procurar pastas em uma unidade [!UICONTROL Compartilhado Comigo].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limite]</td> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
    <td> <p>Insira ou mapeie o número máximo de registros que deseja que o módulo retorne durante cada ciclo de execução de cenário.</p> </td> 
   </tr> 
  </tbody> 
@@ -714,28 +717,28 @@ Este módulo executa uma chamada de API personalizada.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conexão]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>Para obter instruções sobre como conectar sua conta do [!DNL OneDrive] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
-   <td>Insira um caminho relativo para <code>https://graph.microsoft.com</code>. Exemplo:<code> /v1.0/me/drive/root/children</code></td> 
+   <td>Insira um caminho relativo a <code>https://graph.microsoft.com</code>. Exemplo:<code> /v1.0/me/drive/root/children</code></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Método]</td> 
+   <td role="rowheader">[!UICONTROL Method]</td> 
    <td> <p>Selecione o método de solicitação HTTP necessário para configurar a chamada de API. Para obter mais informações, consulte <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Métodos de solicitação HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Cabeçalhos]</td> 
+   <td role="rowheader">[!UICONTROL Headers]</td> 
    <td> <p>Adicione os cabeçalhos da solicitação no formulário de um objeto JSON padrão.</p> <p>Por exemplo, <code>{"Content-type":"application/json"}</code></p> <p>O Workfront Fusion adiciona os cabeçalhos de autorização para você.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Cadeia de Consulta]</td> 
-   <td> <p>Adicione a consulta da chamada à API na forma de um objeto JSON padrão.</p> <p>Por exemplo: <code>{"name":"something-urgent"}</code></p> </td> 
+   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td> <p>Adicione a consulta para a chamada de API na forma de um objeto JSON padrão.</p> <p>Por exemplo: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Corpo]</td> 
-   <td> <p>Adicione o conteúdo do corpo para a chamada à API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
+   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td> <p>Adicione o conteúdo do corpo para a chamada de API na forma de um objeto JSON padrão.</p> <p>Observação:  <p>Ao usar instruções condicionais, como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
