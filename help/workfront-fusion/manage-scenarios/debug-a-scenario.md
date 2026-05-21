@@ -28,7 +28,7 @@ O Adobe Workfront Fusion Devtool ajuda você a entender e solucionar problemas d
 Para obter uma introdução em vídeo e uma apresentação do Fusion Devtool, consulte
 
 * [Ferramenta de Desenvolvimento Fusion](https://video.tv.adobe.com/v/3427031/){target=_blank}
-* [Apresentação do Devtool](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=en)
+* [Apresentação do Devtool](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=pt-BR)
 
 ## Requisitos de acesso
 
