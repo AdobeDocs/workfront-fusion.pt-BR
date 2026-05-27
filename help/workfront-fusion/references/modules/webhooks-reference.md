@@ -7,9 +7,9 @@ exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
 TQID: https://experienceleague.adobe.com/-z2vSjTR1JJTQl--BHM23CbnlaN9TSS6puFTzqLRAEk
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 99a5a892469814f450832dbc4f137fb2c5aa71ee
 workflow-type: tm+mt
-source-wordcount: 1272
+source-wordcount: 1300
 ht-degree: 10%
 
 ---
@@ -82,6 +82,10 @@ Para obter mais detalhes sobre as informações contidas nesta tabela, consulte 
 1. Para definir a prioridade de um webhook, clique na lista suspensa na coluna Prioridade e selecione a nova prioridade.
 
    Webhooks com maior prioridade serão tratados primeiro, o que pode ser benéfico se um pool de trabalhadores tiver muitas automações competindo por recursos.
+
+   >[!NOTE]
+   >
+   >Somente usuários com a função de [!UICONTROL Administrador da Equipe], ou com a função de [!UICONTROL Administrador] ou [!UICONTROL Proprietário] da organização, podem alterar a prioridade de um webhook. Para outros usuários, a lista suspensa Prioridade está desativada.
 1. Para desativar ou ativar um webhook, desative ou ative a alternância na coluna Status na linha desse webhook.
 1. Para ver se uma fila de webhooks está cheia, verifique a coluna Fila cheia. O número nesta coluna é o número de itens atualmente na fila.
 1. Para exibir operações tratadas por um webhook, clique em **Operações** na coluna Fila Completa desse webhook.
