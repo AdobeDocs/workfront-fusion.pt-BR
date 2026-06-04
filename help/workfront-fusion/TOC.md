@@ -2,10 +2,10 @@
 user-guide-title: Documentação do Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Use os documentos, tutoriais e recursos adicionais para saber como implementar e usar efetivamente o Adobe Workfront Fusion em sua organização.
-source-git-commit: 207cda01f5207e0906ddfc20a5d1c50b75e689ea
+source-git-commit: 9c05aa1111fd571ea6f0ff86943b2849a39e4973
 workflow-type: tm+mt
-source-wordcount: '2425'
-ht-degree: 55%
+source-wordcount: '2445'
+ht-degree: 54%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 55%
 * Atividade de lançamento do Fusion {#fusion-release-activity}
    * [Atividade de lançamento do Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Versões do Fusion - 2026 {#fusion-releases-2026}
+      * [Atividade de lançamento do Workfront Fusion: semana de 1 de junho de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-6-1.md)
       * [Atividade de lançamento do Workfront Fusion: semana de 25 de maio de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-5-25.md)
       * [Atividade de lançamento do Workfront Fusion: semana de 11 de maio de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-5-11.md)
       * [Atividade de lançamento do Workfront Fusion: semana de 4 de maio de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-5-4.md)
@@ -279,6 +280,8 @@ ht-degree: 55%
    * [Excluir elementos do cenário](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
    * [Gerenciar cenários na área Cenários](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
    * [Editar Webhooks](/help/workfront-fusion/manage-scenarios/edit-webhooks.md)
+   * [Acionar novamente a execução de um cenário](/help/workfront-fusion/manage-scenarios/retrigger-specific-execution.md)
+   * [Usar Executar uma vez para testar um cenário](/help/workfront-fusion/manage-scenarios/run-once.md)
 * Criar cenários de prática {#build-practice-scenarios}
    * [Criar cenários de prática](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)
    * [Criar um cenário básico](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)
