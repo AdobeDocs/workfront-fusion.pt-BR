@@ -5,7 +5,7 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 9c05aa1111fd571ea6f0ff86943b2849a39e4973
+source-git-commit: 0c732add9c1ec75d7aed43bb7097bb1c95aa6408
 workflow-type: tm+mt
 source-wordcount: 332
 ht-degree: 0%
@@ -53,3 +53,6 @@ O recurso Executar uma vez é encontrado no editor de cenários.
    * **Fornecer entrada manualmente**: você deve fornecer a carga do webhook para a entrada do cenário. Deve estar no formato JSON.
 
      Para fornecer a entrada, insira o texto na caixa **Conteúdo do Webhook** e clique em **Executar**.
+
+
+
