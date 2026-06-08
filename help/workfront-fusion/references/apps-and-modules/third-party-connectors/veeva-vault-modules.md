@@ -10,7 +10,7 @@ product_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
 source-wordcount: 4125
 ht-degree: 13%
@@ -590,7 +590,7 @@ Este módulo exporta documentos que você especificar, incluindo origens, repres
    <td> <p>Selecione se deseja excluir um documento, um binder ou um modelo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"><p>Origem</p> </td> 
+   <td role="rowheader"><p>Fonte</p> </td> 
    <td> <p>Habilite essa opção para incluir arquivos de origem na exportação.</p></td> 
   </tr> 
   <tr> 

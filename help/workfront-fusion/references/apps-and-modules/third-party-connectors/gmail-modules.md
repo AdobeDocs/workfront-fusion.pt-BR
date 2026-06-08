@@ -11,7 +11,7 @@ feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
 source-wordcount: 1871
 ht-degree: 25%
@@ -170,7 +170,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
 
 Esse módulo de ação copia um email ou rascunho de email para uma pasta especificada por você.
 
-Você especifica a pasta, a pasta de destino e a ID do email.
+Especifique a pasta, a pasta de destino e a ID do email.
 
 O módulo retorna a ID do email e quaisquer campos associados, juntamente com quaisquer campos e valores personalizados que a conexão acessa. Você pode mapear essas informações em módulos subsequentes no cenário.
 
@@ -370,7 +370,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
 
 Esse módulo de ação move um email ou rascunho de email para uma pasta especificada por você.
 
-Você especifica a pasta, a pasta de destino e a ID do email.
+Especifique a pasta, a pasta de destino e a ID do email.
 
 O módulo retorna a ID do email e quaisquer campos associados, juntamente com quaisquer campos e valores personalizados que a conexão acessa. Você pode mapear essas informações em módulos subsequentes no cenário.
 

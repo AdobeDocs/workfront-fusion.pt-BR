@@ -4,14 +4,22 @@ description: Você pode criar um mapa dos relacionamentos entre cenários pai e 
 author: Becky
 feature: Workfront Fusion
 exl-id: 0782c6b1-42a5-48de-bfa0-3ced6ed2bf7f
-source-git-commit: aee2b35919e240cce5346df6d94a610c34b26e88
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 18%
+source-wordcount: '557'
+ht-degree: 16%
 
 ---
 
 # Exibir e gerenciar relacionamentos de cenário encadeados
+
+>[!IMPORTANT]
+>
+>Esse recurso está no Beta e não é recomendado para fluxos de trabalho de produção de missão crítica. Como um recurso do Beta, o comportamento pode mudar e os casos de borda podem não ser totalmente tratados.
+>
+>Para integrações estáveis, considere acionar um segundo cenário por meio de um webhook usando um módulo de Solicitação HTTP — esse padrão usa primitivos totalmente compatíveis e fornece a cada cenário um controle de execução independente.
+>
+>Se você optar por usar cenários encadeados, revise [Vários cenários encadeados](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md) para obter orientação sobre design.
 
 Você pode criar um mapa dos relacionamentos entre cenários pai e filho. Você também pode usar o mapa para saltar para diferentes cenários na cadeia.
 

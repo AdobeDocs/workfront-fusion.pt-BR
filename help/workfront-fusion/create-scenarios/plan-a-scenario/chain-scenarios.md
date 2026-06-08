@@ -7,18 +7,22 @@ exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
 TQID: https://experienceleague.adobe.com/ypbKUSaT72N2r75oYX9tZsJaj6H39cUCumApjMw69j0
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
-source-wordcount: 1266
-ht-degree: 12%
+source-wordcount: 1705
+ht-degree: 9%
 
 ---
 
 # Encadear vários cenários juntos
 
->[!NOTE]
+>[!IMPORTANT]
 >
->Este recurso atualmente está no Beta.
+>Esse recurso está no Beta e não é recomendado para fluxos de trabalho de produção de missão crítica. Como um recurso do Beta, o comportamento pode mudar e os casos de borda podem não ser totalmente tratados.
+>
+>Para integrações estáveis, considere acionar um segundo cenário por meio de um webhook usando um módulo de Solicitação HTTP — esse padrão usa primitivos totalmente compatíveis e fornece a cada cenário um controle de execução independente.
+>
+>Se você optar por usar cenários encadeados, revise cuidadosamente as orientações e restrições de design neste artigo, especialmente a seção [Práticas recomendadas](#best-practices).
 
 É possível encadear cenários, permitindo que um cenário acione outro e retornando a saída de dados pelo segundo cenário para o primeiro. Isso permite a criação de cenários mais modulares, em que você não precisa duplicar seções de cenário em vários cenários.
 
@@ -63,7 +67,9 @@ Considere os seguintes exemplos de casos de uso para cenários de encadeamento:
 
 * **Tratamento de erros**: é comum que as organizações tenham as mesmas ações de tratamento de erros em vários cenários, como uma rota de tratamento de erros que envia um log de erros para um armazenamento de dados e cria uma notificação do Slack. Você pode criar um cenário filho com essas ações e encadear esse cenário nas rotas de tratamento de erros em vários cenários.
 
-* **Tempo de extensão**: você pode usar o encadeamento para operações em lotes grandes com ações de longa execução, como quando exportar e importar arquivos. Essa operação leva algum tempo se houver muitos arquivos. Como os cenários filho não contam com o tempo limite do cenário pai, você pode exceder o tempo de execução usando vários cenários filho para exportar ou importar os arquivos.
+* **Tempo de extensão**: você pode usar o encadeamento para operações em lotes grandes em que o tempo total de processamento excederia o limite de execução de 40 minutos de um único cenário. No entanto, trate esse padrão com cuidado: um cenário principal que é vinculado a vários cenários secundários de longa duração não tem limite de tempo limite geral. Se qualquer cenário filho travar ou ocorrer um problema de plataforma, o pai aguardará indefinidamente sem encontrar um erro.
+
+  Antes de usar encadeamento para estender o tempo de execução, considere se o tamanho do lote pode ser reduzido, a frequência aumentada ou o design reestruturado para evitar longas cadeias sequenciais. Consulte [Práticas recomendadas](#best-practices) abaixo.
 
 * **Substituir iteradores** Substituir iteradores por cenários filho pode reduzir o uso de memória, como em operações complexas em uma iteração que causa erro de falta de memória. Você pode criar um cenário separado para a operação complexa e substituir o iterador por um módulo de cenário Chamar um filho
 
@@ -111,3 +117,39 @@ Ao encadear cenários, siga estas práticas para evitar recursão:
 ### Use o tratamento de erros para garantir uma resposta
 
 Como o cenário pai está aguardando uma resposta do cenário filho antes de poder continuar, você deve garantir que o cenário filho seja criado para que ele forneça uma resposta mesmo se encontrar um erro.
+
+### Não use a configuração &quot;Confirmar Acionador Último (CTL)&quot;
+
+Não recomendamos usar a configuração de cenário &quot;Confirmar acionador por último (CTL)&quot; com cenários encadeados. Se você precisar de comportamento de repetição em um cenário que usa encadeamento, implemente-o explicitamente usando uma rota de tratamento de erros com uma contagem máxima de repetição definida.
+
+### Limitar profundidade de aninhamento
+
+Limitar redes de cenário encadeadas a dois níveis de profundidade (pai → filho). Cenários aninhados com três ou mais níveis de profundidade (pai → filho → neto) aumentam significativamente a complexidade, reduzem a observabilidade e dificultam o diagnóstico de falhas sem suporte de engenharia.
+
+Se o design exigir um aninhamento mais profundo, documente o mapa de cadeia completo e certifique-se de que o monitoramento esteja em vigor antes de implantar na produção.
+
+### Use Fogo e esqueça com cuidado
+
+Quando **Acionar e Ignorar** está habilitado no módulo Chamar um cenário filho, o cenário pai despacha o filho e continua imediatamente sem esperar uma resposta. O pai não tem visibilidade sobre se o cenário filho foi executado, bem-sucedido ou falhou.
+
+Use Acionar e esquecer somente quando:
+
+* O cenário filho executa registros, notificações ou gravações de auditoria que não afetam a lógica do cenário pai
+* Você tem um monitoramento independente em vigor para detectar falhas secundárias silenciosas
+
+Não use Acionar e esquecer quando:
+
+* O cenário filho executa gravações das quais o pai depende
+* Você precisa saber se o cenário filho teve êxito antes que o pai continue
+* O workflow é transacional ou requer garantias de processamento de exatamente uma vez
+
+### Evite chamar cenários filho dentro de iteradores em alto volume
+
+Colocar um módulo Chamar cenário filho em um BasicFeeder ou outro iterador despacha um cenário filho para cada item processado. No alto número de itens (centenas ou mais por execução), isso gera uma sobrecarga significativa de despacho e aumenta a exposição a problemas de confiabilidade da plataforma.
+
+Antes de usar este padrão:
+
+* Considere se a lógica do cenário filho pode ser embutida diretamente no cenário pai como módulos
+* Pré-calcular quaisquer pesquisas que retornam o mesmo valor para cada iteração fora do iterador, em vez de despachar uma chamada em cadeia por item
+* Confirme a contagem máxima de itens realista e analise com o administrador antes de implantar na produção
+

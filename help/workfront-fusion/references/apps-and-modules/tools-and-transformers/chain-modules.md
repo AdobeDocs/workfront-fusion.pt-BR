@@ -7,18 +7,22 @@ exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
 TQID: https://experienceleague.adobe.com/AlHUrliXikCc3OVHiBTjLNQFndCf5qLzOLuBvnDTUfA
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
-source-wordcount: 625
-ht-degree: 15%
+source-wordcount: 883
+ht-degree: 10%
 
 ---
 
 # Módulos de cadeia
 
->[!NOTE]
+>[!IMPORTANT]
 >
->Este recurso atualmente está no Beta.
+>Esse recurso está no Beta e não é recomendado para fluxos de trabalho de produção de missão crítica. Como um recurso do Beta, o comportamento pode mudar e os casos de borda podem não ser totalmente tratados.
+>
+>Para integrações estáveis, considere acionar um segundo cenário por meio de um webhook usando um módulo de Solicitação HTTP — esse padrão usa primitivos totalmente compatíveis e fornece a cada cenário um controle de execução independente.
+>
+>Se você optar por usar cenários encadeados, revise [Vários cenários encadeados](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md) para obter orientação sobre design.
 
 Usando os módulos de Cadeia, você pode conectar um cenário a outro.
 
@@ -84,6 +88,16 @@ Para configurar os dados de Recebimento do módulo pai:
 
 Esse módulo está localizado no cenário principal. Os campos refletem a estrutura de dados definida em Receber dados do módulo pai no cenário filho.
 
+>[!IMPORTANT]
+>
+> Revise o seguinte antes de configurar esse módulo em um cenário de produção:
+>
+> * **Não habilitar o CTL (Gatilho de Confirmação Último)** neste cenário quando a opção Acionar e Ignorar estiver desabilitada. A lista de certificados confiáveis repetirá o cenário quando suspender a espera por uma resposta secundária, criando um loop de repetição não vinculado.
+> * **Tenha cuidado ao colocar este módulo dentro de um iterador.** O envio de um cenário filho para cada item em um iterador grande cria uma carga de plataforma significativa. Considere embutir a lógica do cenário filho ou realizar pesquisas compartilhadas de pré-computação fora do iterador.
+> * **Disparar e Esquecer** significa que o pai não tem visibilidade sobre se o filho foi executado ou bem-sucedido. Use somente quando as falhas secundárias forem monitoradas independentemente.
+>
+> Para obter orientações completas sobre design, consulte [Cadear vários cenários](https://experienceleague.adobe.com/pt-br/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios).
+
 >[!NOTE]
 >
 >* Você pode selecionar um cenário filho existente ou criar um novo por meio desse módulo.
@@ -112,7 +126,11 @@ Para configurar o módulo Chamar um cenário filho
 
 Isso está no cenário filho e envia dados na estrutura selecionada para o cenário pai. Você pode mapear esses dados em módulos posteriores no cenário principal.
 
-Se o cenário filho tiver várias rotas, recomendamos adicionar esse módulo a uma rota que sempre é executada e executada após qualquer outra rota.
+>[!IMPORTANT]
+>
+> Se o cenário filho tiver várias rotas, você **deve** garantir que a resposta de Retorno para o módulo pai possa ser acessada de cada caminho de execução. Se o módulo Retornar resposta estiver em uma rota que é ignorada ou não executada, o cenário pai aguardará indefinidamente por uma resposta que nunca chega.
+>
+> Adicione a resposta Return ao módulo pai depois do roteador, em uma rota que sempre é executada independentemente do resultado do roteador, ou adicione o tratamento de erros para garantir que uma resposta seja sempre retornada mesmo quando ocorrer um erro.
 
 Para configurar o módulo Adicionar respondente:
 
