@@ -5,9 +5,12 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 80965570-2937-4ac8-97c0-54f7a813ec50
 TQID: https://experienceleague.adobe.com/jotAS2NHIZV4NNM0tvhGFlTnT-owWSKo8zo7cV4J7dM
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
 source-wordcount: 4067
@@ -746,7 +749,7 @@ Aqui, &quot;E&quot; é a coluna e &quot;é nulo&quot; é a condição. Você pod
 1. Execute o cenário.
 1. No Google Sheets, escolha **[!UICONTROL Inserir]** > **[!UICONTROL Desenho]**... na barra de menu principal.
 
-1. Na janela [!UICONTROL Desenho], clique no ícone ![Caixa de texto ]****[!UICONTROL  Caixa de texto](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) próximo à parte superior da janela.
+1. Na janela [!UICONTROL Desenho], clique no ícone [Caixa de texto ]&#x200B;**&#x200B;**![[!UICONTROL &#x200B; Caixa de texto]](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) próximo à parte superior da janela.
 1. Crie um botão e clique no botão **[!UICONTROL Salvar e Fechar]** no canto superior direito:
 1. O botão é colocado em sua planilha. Clique nos três pontos verticais no canto superior direito do botão:
 1. Escolha **[!UICONTROL Atribuir script..].** no menu.
