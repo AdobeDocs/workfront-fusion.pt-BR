@@ -5,11 +5,9 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
 TQID: https://experienceleague.adobe.com/P-GPOboH09jZI9dQ5wBfFNV3NNOk-lpSPs7SI4rXHE4
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
 source-wordcount: 3032
 ht-degree: 35%
@@ -189,7 +187,7 @@ Este módulo de acionador inicia um cenário quando um campo é atualizado em [!
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type] </td> 
-   <td> <p>Selecione o tipo de registro que contém o campo que o módulo deve observar. Você deve escolher um tipo de registro que tenha o [!UICONTROL Field History] ativado na configuração [!DNL Salesforce]. Para obter mais informações, consulte <a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&type=5">Rastreamento do histórico do campo</a> na documentação [!DNL Salesforce]. </p> </td> 
+   <td> <p>Selecione o tipo de registro que contém o campo que o módulo deve observar. Você deve escolher um tipo de registro que tenha o [!UICONTROL Field History] ativado na configuração [!DNL Salesforce]. Para obter mais informações, consulte <a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&amp;type=5">Rastreamento do histórico do campo</a> na documentação [!DNL Salesforce]. </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Field]</td> 
@@ -256,7 +254,7 @@ Este módulo requer configuração extra. Deve haver um Fluxo configurado para m
 1. Set a rule name, evaluation criteria, and rule criteria, then click **[!UICONTROL Save]** and **[!UICONTROL Next]**.
 
 1. Click **[!UICONTROL Done]**.
-1. From the newly created Workflow rule, click **[!UICONTROL Edit]**..
+1. From the newly created Workflow rule, click **[!UICONTROL Edit]**.
 1. From the **[!UICONTROL Add Workflow Action]** drop-down list, select **[!UICONTROL New Outbound Message]**.
 
 1. Specify name, description, Endpoint URL, and fields you want to include in the new outbound message, then click **[!UICONTROL Save]**.
@@ -577,7 +575,7 @@ Esse módulo de ação faz upload de um único arquivo para o Salesforce.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o[!DNL &#x200B; Adobe Workfront Fusion] - Instruções básicas</a></td> 
+   <td>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o[!DNL  Adobe Workfront Fusion] - Instruções básicas</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
@@ -617,7 +615,7 @@ Este módulo de ação recupera todos os registros que atendem a um determinado 
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o[!DNL &#x200B; Adobe Workfront Fusion] - Instruções básicas</a></td> 
+   <td>Para obter instruções sobre como conectar sua conta do [!DNL Salesforce] ao Workfront Fusion, consulte <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Criar uma conexão com o[!DNL  Adobe Workfront Fusion] - Instruções básicas</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Type]</td> 
