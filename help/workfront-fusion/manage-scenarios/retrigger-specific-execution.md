@@ -3,9 +3,8 @@ title: Acionar novamente a execução de um cenário específico
 description: É possível acionar novamente uma execução de cenário específica para processar os dados usando um blueprint de cenário atualizado ou para exibir seu fluxo de dados.
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 0c732add9c1ec75d7aed43bb7097bb1c95aa6408
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 5859bbef4f45fd4741d89ba1795df8a67fa5beaa
 workflow-type: tm+mt
 source-wordcount: 523
 ht-degree: 18%
@@ -18,7 +17,7 @@ ht-degree: 18%
 
 Por exemplo, se você atualizar um cenário para adicionar uma ação como criar um problema, será possível acionar novamente uma execução que ocorreu antes da atualização. O cenário atualizado será executado usando o evento de acionamento do cenário original, mas incluirá a ação atualizada. Neste exemplo, o cenário cria um problema como parte da nova execução.
 
-O reacionamento está disponível para cenários que têm acionadores de webhook e para cenários secundários.
+O reacionamento está disponível para cenários que têm acionadores de webhook e para cenários encadeados.
 
 Ao acionar novamente um cenário que usa um webhook, o evento do webhook original pode ser usado novamente, para que você não precise recriar o evento para acionar novamente o cenário.
 
