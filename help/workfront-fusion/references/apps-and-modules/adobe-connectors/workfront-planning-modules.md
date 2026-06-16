@@ -11,10 +11,10 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 9f736464e38e7885ff528ff114008175ff2db82e
 workflow-type: tm+mt
-source-wordcount: 2101
-ht-degree: 50%
+source-wordcount: 2236
+ht-degree: 47%
 
 ---
 
@@ -277,6 +277,8 @@ Este módulo de acionamento inicia um cenário quando um registro, tipo de regis
       </tr>
   </tbody>
 </table>
+
+Para obter um exemplo de uso da lógica avançada neste módulo, consulte [Exemplo de lógica avançada no módulo Eventos observados](#example-of-advanced-logic-in-the-watch-events-module).
 
 ### Ações
 
@@ -571,3 +573,40 @@ A expressão JSONata a seguir cria uma saída legível da consulta do Planning q
 
 Para obter informações sobre o uso de módulos JSONata, consulte [módulos JSONata](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md).
 
+## Exemplo de lógica avançada no módulo Eventos observados
+
+Este é um exemplo do formato usado pela lógica avançada ao usar o módulo Workfront Planning > Eventos de observação.
+
+```
+[
+  {
+    "fieldName": "recordTypeId",
+    "fieldValue": "Rt68c886502d4b5554ee80896b",
+    "comparison": "eq",
+    "state": "newState"
+  },
+  {
+    "fieldName": "data",
+    "fieldValue": {
+      "F68c886502d4b5554ee808975": "planning"
+    },
+    "comparison": "eq",
+    "state": "newState"
+  },
+  {
+    "fieldName": "data",
+    "fieldValue": {
+      "F68c886502d4b5554ee808975": "active"
+    },
+    "comparison": "eq",
+    "state": "newState"
+  }
+]
+```
+
+Considere o seguinte ao usar a lógica avançada no módulo Evento de observação:
+
+* A primeira entrada `"fieldvalue":` é a ID de Tipo de Registro de Planejamento extraída da URL. Neste exemplo, a ID do Tipo de Registro de Planejamento é `Rt68c886502d4b5554ee80896b`.
+* Os dados de planejamento são retornados dentro de uma matriz chamada `data `, que aparece neste exemplo como `"fieldName": "data"`.
+* FieldNames do Planning são retornados como IDs que começam com `F`.
+* Como este exemplo está avaliando em relação a um conector de filtro `OR`, ele tem duas entradas para o mesmo campo (`F68c886502d4b5554eec808975`).  As duas opções suspensas que o módulo está filtrando são `"planning"` e `"active"`.
