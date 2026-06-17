@@ -15,10 +15,10 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 18401e01219383f86e1553e16b21057497d24cc0
 workflow-type: tm+mt
-source-wordcount: 1702
-ht-degree: 22%
+source-wordcount: 2240
+ht-degree: 17%
 
 ---
 
@@ -452,3 +452,121 @@ Este módulo faz uma chamada de API personalizada para a API do Adobe InDesign
   </tr> 
   </tbody>
 </table>
+
+### Sem categoria
+
+#### Converter PDF para InDesign
+
+Este módulo converte o documento do PDF para o formato editável InDesign (INDD ou IDML). A saída é um arquivo ZIP (nome padrão &quot;output.zip&quot;) contendo subpastas nomeadas após cada PDF de entrada, com o documento convertido e os ativos associados. Se a opção Incorporar links for falsa, os ativos serão fornecidos em uma pasta separada no ZIP. Se for verdadeiro, todos os links serão incorporados ao arquivo InDesign.
+
+
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Conexão</td>
+      <td>Para obter instruções sobre como criar uma conexão com o Adobe InDesign, consulte <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Criar uma conexão com o Adobe InDesign</a> neste artigo.</td>
+      </tr>
+    <tr>
+      <td role="rowheader">Ativos de entrada</td>
+      <td>Para cada ativo que você deseja converter, clique em <b>Adicionar item</b>, insira a URL do ativo e atribua um nome de arquivo local. O nome do arquivo será referenciado posteriormente no módulo.</td>
+    </tr>
+  <tr> 
+   <td>Documentos de destino</td> 
+   <td>Para cada documento que você deseja converter, clique em <b>Adicionar item</b> e insira o nome de arquivo atribuído no campo Ativos de entrada.</td> 
+  </tr> 
+  <tr> 
+   <td>Formato de saída</td> 
+   <td>Selecione se deseja converter os arquivos em arquivos INDD ou IDML.</td> 
+  </tr> 
+  <tr> 
+   <td>Links incorporados</td> 
+   <td>Selecione Sim se quiser que todos os links de imagem e ativo sejam incorporados diretamente no arquivo INDD ou IDML. Selecione Não para colocar esses ativos em uma pasta separada no arquivo ZIP.</td> 
+  </tr> 
+  <tr> 
+   <td>Nome de arquivo ZIP de saída</td> 
+   <td>Insira ou nomeie um nome para o arquivo ZIP de saída.</td> 
+  </tr> 
+  <tr> 
+   <td>Saídas</td> 
+   <td>Para cada arquivo que deseja gerar saída, selecione o tipo de armazenamento e insira os detalhes de armazenamento.</td> 
+  </tr> 
+  <tr> 
+   <td>Número máximo de resultados retornados</td> 
+   <td>Insira o número máximo de resultados que você deseja que o módulo retorne para cada ciclo de execução.</td> 
+  </tr> 
+  </tbody>
+</table>
+
+#### Enviar um script personalizado
+
+Este módulo envia pacotes de script personalizados para registro e retorna um URL para publicar solicitações de execução para o script registrado.
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Conexão</td>
+      <td>Para obter instruções sobre como criar uma conexão com o Adobe InDesign, consulte <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Criar uma conexão com o Adobe InDesign</a> neste artigo.</td>
+      </tr>
+    <tr>
+      <td role="rowheader">Conjunto de scripts</td>
+      <td>Mapeie o arquivo de origem de um módulo anterior, como um módulo Baixar um documento. Deve ser um arquivo ZIP.</td>
+    </tr>
+  <tr> 
+   <td>Nome do arquivo</td> 
+   <td>Insira ou mapeie o nome do arquivo carregado que contém o pacote de scripts.</td> 
+  </tr> 
+  </tbody>
+</table>
+
+#### Atualizar versão do aplicativo de script personalizado
+
+Esse módulo atualiza a configuração da versão do aplicativo InDesign de um script personalizado registrado. Isso permite especificar estratégias de versão, incluindo o uso da versão mais recente, a correção de uma versão principal ou a correção de uma versão principal e secundária específica.
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Conexão</td>
+      <td>Para obter instruções sobre como criar uma conexão com o Adobe InDesign, consulte <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Criar uma conexão com o Adobe InDesign</a> neste artigo.</td>
+      </tr>
+    <tr>
+      <td role="rowheader">Nome do script</td>
+      <td>Insira ou mapeie o nome do script personalizado a ser atualizado. Este é o valor <code>capability</code> retornado quando o script foi registrado.</td>
+    </tr>
+  <tr> 
+   <td>Estratégia de versão do aplicativo</td> 
+   <td>Selecione a estratégia de versão do aplicativo que deseja usar.
+   <ul>
+   <li><b>Sempre usar a versão mais recente</b></li>
+   <li><b>Fixar em uma versão principal</b><p>Insira ou mapeie o número da versão principal à qual você deseja aplicar isso.</p></li>
+   <li><b>Fixar em uma versão principal e secundária</b><p>Insira as versões principal e secundária às quais deseja aplicar isso.</p></li>
+   </ul></td> 
+  </tr> 
+  </tbody>
+</table>
+
+#### Obter versões atuais do aplicativo
+
+Este módulo recupera informações sobre todas as versões do aplicativo InDesign disponíveis, incluindo a versão principal, a versão secundária e o status de cada versão do aplicativo registrada.
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Conexão</td>
+      <td>Para obter instruções sobre como criar uma conexão com o Adobe InDesign, consulte <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Criar uma conexão com o Adobe InDesign</a> neste artigo.</td>
+      </tr>
+  <tr> 
+   <td>Número máximo de resultados retornados</td> 
+   <td>Insira o número máximo de resultados que você deseja que o módulo retorne para cada ciclo de execução.</td> 
+  </tr> 
+  </tbody>
+</table>
+
