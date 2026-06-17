@@ -11,10 +11,10 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 9f736464e38e7885ff528ff114008175ff2db82e
+source-git-commit: 28b8a270f6cb0e7a42c81153493b983d5b9e428b
 workflow-type: tm+mt
-source-wordcount: 2236
-ht-degree: 47%
+source-wordcount: 2237
+ht-degree: 46%
 
 ---
 
@@ -204,7 +204,7 @@ Você pode criar uma conexão com sua conta do Workfront Planning diretamente de
 
 ## Módulos do [!DNL Adobe Workfront Planning] e seus campos
 
-Ao configurar módulos do Workfront, o Workfront Fusion exibe os campos listados abaixo. Junto com esses campos, podem ser exibidos campos adicionais do Workfront, dependendo de fatores como nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
+Ao configurar módulos do Workfront Planning, o Workfront Fusion exibe os campos listados abaixo. Junto com esses campos, podem ser exibidos campos adicionais do Workfront, dependendo de fatores como nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
 
 Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo para definir variáveis e funções para esse campo. Para obter mais informações, consulte [Mapear informações de um módulo para outro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
