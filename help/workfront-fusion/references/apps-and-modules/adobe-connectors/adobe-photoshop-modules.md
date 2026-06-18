@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
 TQID: https://experienceleague.adobe.com/RratZmko93V0LMxJ6qTy6cNvRqgPNvNgHTflRngE6BI
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: ce3fb5604ac4ed85af1bcc51143732499dfb0404
 workflow-type: tm+mt
 source-wordcount: 7285
@@ -679,7 +681,7 @@ Este módulo de ação identifica o assunto principal da imagem e remove o plano
 >[!NOTE]
 >
 >Este módulo foi substituído e não funcionará mais após 30 de julho de 2026.
->Atualize este módulo para o [Crie ou edite um módulo ](#create-or-edit-a-composite) composto.
+>Atualize este módulo para o [Crie ou edite um módulo &#x200B;](#create-or-edit-a-composite) composto.
 
 Esse módulo de ação aplica uma variedade de edições de documento e nível de camada.
 
@@ -866,7 +868,7 @@ Essa cor automática do módulo de ação corrige a imagem especificada.
 >[!NOTE]
 >
 >Este módulo foi substituído e não funcionará mais após 30 de julho de 2026.
->Atualize este módulo para o [Crie ou edite um módulo ](#create-or-edit-a-composite) composto.
+>Atualize este módulo para o [Crie ou edite um módulo &#x200B;](#create-or-edit-a-composite) composto.
 
 Esse módulo de ação converte um arquivo em JPEG, PNG, PSD ou TIFF.
 
@@ -1003,7 +1005,7 @@ Este módulo de ação retorna um arquivo PNG com uma máscara aplicada ao redor
 >[!NOTE]
 >
 >Este módulo foi substituído e não funcionará mais após 30 de julho de 2026.
->Atualize este módulo para o [Crie ou edite um módulo ](#create-or-edit-a-composite) composto.
+>Atualize este módulo para o [Crie ou edite um módulo &#x200B;](#create-or-edit-a-composite) composto.
 
 Esse módulo de ação cria uma nova PSD com camadas opcionais e gera representações ou salva como um PSD.
 
@@ -1730,12 +1732,12 @@ Esse módulo de ação faz uma chamada personalizada para a API do Photoshop.
 >[!NOTE]
 >
 >Este módulo foi substituído e não funcionará mais após 30 de julho de 2026.
->Atualize este módulo para o [Crie ou edite um módulo ](#create-or-edit-a-composite) composto.
+>Atualize este módulo para o [Crie ou edite um módulo &#x200B;](#create-or-edit-a-composite) composto.
 
 >[!NOTE]
 >
 >Este módulo foi substituído e não funcionará mais após 30 de julho de 2026.
->Atualize este módulo para o [Crie ou edite um módulo ](#create-or-edit-a-composite) composto.
+>Atualize este módulo para o [Crie ou edite um módulo &#x200B;](#create-or-edit-a-composite) composto.
 
 Esse módulo de ação substitui um Objeto inteligente em uma camada do PSD e gera novas representações.
 
@@ -1869,7 +1871,7 @@ Este módulo usa a versão herdada dos Objetos Inteligentes.
 >[!NOTE]
 >
 >Este módulo foi substituído e não funcionará mais após 30 de julho de 2026.
->Atualize este módulo para o [Crie ou edite um módulo ](#create-or-edit-a-composite) composto.
+>Atualize este módulo para o [Crie ou edite um módulo &#x200B;](#create-or-edit-a-composite) composto.
 
 Essa ação redimensiona uma imagem usando a mesma proporção.
 
@@ -1944,7 +1946,7 @@ Essa ação redimensiona uma imagem usando a mesma proporção.
 >[!NOTE]
 >
 >Este módulo foi substituído e não funcionará mais após 30 de julho de 2026.
->Atualize este módulo para o [Crie ou edite um módulo ](#create-or-edit-a-composite) composto.
+>Atualize este módulo para o [Crie ou edite um módulo &#x200B;](#create-or-edit-a-composite) composto.
 
 Esse módulo de ação adiciona uma marca d&#39;água à imagem selecionada.
 
