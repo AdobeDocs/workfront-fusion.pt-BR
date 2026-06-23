@@ -3,10 +3,11 @@ title: Módulo App Builder do Adobe
 description: O conector App Builder do Adobe permite usar funções personalizadas em seus cenários.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 8250d4fdad8ed7ffe63cd003f6e0cb325cbbfa8d
+exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
+source-git-commit: 4392b9d13c49d3d64b2b694bf23cfc227ae36d02
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 31%
+source-wordcount: '365'
+ht-degree: 26%
 
 ---
 
@@ -45,15 +46,32 @@ Para obter mais detalhes sobre as informações contidas nesta tabela, consulte 
 
 +++
 
-## Módulo App Builder do Adobe
+## Módulos do Adobe App Builder
 
-O único módulo do Adobe App Builder disponível no momento é Executar uma ação, que permite usar uma função personalizada do JavaScript configurada anteriormente.
+### Executar um bloco de código personalizado
+
+Esse módulo permite executar um bloco de código. Você configura o bloco de código ao configurar o módulo e ele é executado quando o módulo é executado durante uma execução de cenário.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td>
+   <td>Selecione a conexão que contém a função personalizada que você deseja executar. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Bloco de código]</td> 
+   <td>Insira o bloco de código que você deseja que o módulo execute.<p>Para formatar o código e facilitar sua leitura, clique no ícone <b>Formatar código</b>.</td> 
+  </tr> 
+   </tbody> 
+</table>
+
+### Executar uma função personalizada
+
+Esse módulo permite usar uma função personalizada do JavaScript configurada anteriormente armazenada na área Funções.
 
 Para obter instruções sobre como configurar uma função personalizada, consulte [Mapear dados usando funções personalizadas](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md).
-
-### Executar uma ação
-
-Este módulo executa uma função personalizada configurada anteriormente.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -73,5 +91,3 @@ Este módulo executa uma função personalizada configurada anteriormente.
   </tr> 
    </tbody> 
 </table>
-
-
