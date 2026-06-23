@@ -4,10 +4,10 @@ description: O conector App Builder do Adobe permite usar funções personalizad
 author: Becky
 feature: Workfront Fusion
 exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
-source-git-commit: 4392b9d13c49d3d64b2b694bf23cfc227ae36d02
+source-git-commit: 73fd05c383efe0dd618e90cc7ddb0062d01086ef
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 26%
+source-wordcount: '289'
+ht-degree: 32%
 
 ---
 
@@ -48,9 +48,11 @@ Para obter mais detalhes sobre as informações contidas nesta tabela, consulte 
 
 ## Módulos do Adobe App Builder
 
-### Executar um bloco de código personalizado
+<!--
 
-Esse módulo permite executar um bloco de código. Você configura o bloco de código ao configurar o módulo e ele é executado quando o módulo é executado durante uma execução de cenário.
+### Run a custom code block
+
+This module allows you to run a code block. You configure the code block when you set up the module, and it is run when the module runs during a scenario execution.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -58,16 +60,18 @@ Esse módulo permite executar um bloco de código. Você configura o bloco de c�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td>
-   <td>Selecione a conexão que contém a função personalizada que você deseja executar. </td> 
+   <td>Select the connection that contains the custom function that you want to run. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Bloco de código]</td> 
-   <td>Insira o bloco de código que você deseja que o módulo execute.<p>Para formatar o código e facilitar sua leitura, clique no ícone <b>Formatar código</b>.</td> 
+   <td role="rowheader">[!UICONTROL Code block]</td> 
+   <td>Enter the block of code that you want the module to run.<p>To format the code for easier reading, click the <b>Format code</b> icon.</td> 
   </tr> 
    </tbody> 
 </table>
 
-### Executar uma função personalizada
+-->
+
+### Executar uma função personalizada ou um bloco de código
 
 Esse módulo permite usar uma função personalizada do JavaScript configurada anteriormente armazenada na área Funções.
 
