@@ -130,4 +130,4 @@ Se a estrutura for ambígua (sem paralelo claro), **pare** e mostre ambos os can
 
 ## Referências
 
-- Corresponder ao **[estilo de documentação do Workfront](https://experienceleague.adobe.com/?lang=pt-BR)** e às convenções de repositório (regras de confirmação/PR se o usuário estiver confirmando).
+- Corresponder ao **[estilo de documentação do Workfront](https://experienceleague.adobe.com/pt-br?lang=pt-BR)** e às convenções de repositório (regras de confirmação/PR se o usuário estiver confirmando).
