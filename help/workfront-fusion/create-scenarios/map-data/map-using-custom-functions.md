@@ -4,10 +4,10 @@ description: Ao mapear itens, você pode usar funções para criar fórmulas sim
 author: Becky
 feature: Workfront Fusion
 exl-id: dc4e697a-a65c-48bc-99de-8e26fbeb7ba7
-source-git-commit: bf8274d9a80af75022fd600aee99c511b2e2d9e5
+source-git-commit: cf686d3b04eadfa7aea314bdd995c25cdea370a5
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 16%
+source-wordcount: '665'
+ht-degree: 15%
 
 ---
 
@@ -18,6 +18,10 @@ ht-degree: 16%
 Como as funções personalizadas funcionam por meio do Adobe App Builder, sua organização deve ter uma licença do Adobe App Builder para usá-las.
 
 As funções personalizadas, como a maioria dos elementos de cenário, são de propriedade de equipes.
+
+As funções são funções simples do JavaScript. Para incluir variáveis ou dependências na lógica da função, use pacotes.
+
+Para obter informações sobre pacotes, consulte [Usar pacotes de função personalizada](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md).
 
 O Workfront Fusion também inclui funções integradas que permitem criar fórmulas simples ou complexas. Essas funções cobrem uma grande variedade de casos de uso, incluindo funções para matrizes, sequências, números e dados de módulos anteriores.
 
