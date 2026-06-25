@@ -4,10 +4,10 @@ description: O conector App Builder do Adobe permite usar funções personalizad
 author: Becky
 feature: Workfront Fusion
 exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
-source-git-commit: 73fd05c383efe0dd618e90cc7ddb0062d01086ef
+source-git-commit: 042f32f35e630ec76a7356fa750f5238f74a6f25
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 32%
+source-wordcount: '409'
+ht-degree: 23%
 
 ---
 
@@ -70,6 +70,56 @@ This module allows you to run a code block. You configure the code block when yo
 </table>
 
 -->
+
+### Executar uma função personalizada do pacote
+
+Este módulo executa uma função de um pacote.
+
+<!--For information on packages, see []().-->
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td>
+   <td>Selecione a conexão que contém a função personalizada que você deseja executar. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Pacote]</td> 
+   <td>Selecione o pacote que inclui a função que você deseja executar no cenário.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Variável] </td> 
+   <td>Selecione a função que deseja executar no cenário.</p></td> 
+  </tr> 
+   </tbody> 
+</table>
+
+### Usar variável do pacote
+
+Esse módulo traz uma variável configurada em um pacote para o seu cenário.
+
+<!--For information on packages, see []().-->
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td>
+   <td>Selecione a conexão que contém a função personalizada que você deseja executar. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Pacote]</td> 
+   <td>Selecione o pacote que inclui a variável que você deseja trazer para o cenário.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Variável] </td> 
+   <td>Selecione a variável que deseja trazer para o cenário.</p></td> 
+  </tr> 
+   </tbody> 
+</table>
 
 ### Executar uma função personalizada ou um bloco de código
 
