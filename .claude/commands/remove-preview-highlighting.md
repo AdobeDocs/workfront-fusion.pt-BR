@@ -118,7 +118,7 @@ Se a estrutura for ambígua (sem paralelo claro), **pare** e mostre ambos os can
 - Não execute este fluxo de trabalho em caminhos em **`product-announcements`** (notas de versão e relacionadas); o inventário deve excluí-los.
 - Não faça o inventário ou edite os caminhos listados em **[Caminhos excluídos](#excluded-paths)**, a menos que o usuário solicite explicitamente a inclusão de um.
 - **Não** remove ou edita automaticamente **blocos comentados** (`<!-- … -->`); siga as **seções comentadas** acima.
-- Não remova &quot;Visualização&quot; quando for **não** sobre este padrão de disponibilidade de recursos (por exemplo, [Visualizar ambiente de Sandbox](·) como um **nome do produto** em um contexto não relacionado). Use o julgamento e pergunte se não tem certeza.
+- Não remova &quot;Visualização&quot; quando for **não** sobre este padrão de disponibilidade de recursos (por exemplo, [Visualizar ambiente de Sandbox] (·) como um **nome do produto** em um contexto não relacionado). Use o julgamento e pergunte se não tem certeza.
 - Não altere `author:` ou o assunto principal não relacionado, a menos que o usuário solicite.
 - Não ignore a etapa **mostrar → aprovar**.
 

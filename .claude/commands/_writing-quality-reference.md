@@ -9,7 +9,7 @@ ht-degree: 3%
 
 Regras detalhadas para a habilidade `writing-quality`. O arquivo SKILL.md abrange as regras mais comuns; esse arquivo fornece a referência completa para pontuação, terminologia, exemplos de uso de maiúsculas e minúsculas e formatação de procedimento.
 
----
+&#x200B;---
 
 ## Pontuação
 
@@ -85,7 +85,7 @@ Use com moderação. Considere reestruturar a sentença em vez disso.
 - Uso para combinações: interruptor liga/desliga
 - Usar para endereços de Internet e frações
 
----
+&#x200B;---
 
 ## Exemplos de uso de maiúsculas
 
@@ -117,7 +117,7 @@ Use com moderação. Considere reestruturar a sentença em vez disso.
 - Seguir capitalização da interface
 - Se o botão for all-caps na interface do usuário, escreva-o em maiúsculas e minúsculas
 
----
+&#x200B;---
 
 ## Terminologia
 
@@ -147,7 +147,7 @@ Estas são palavras diferentes, com significados diferentes - use a correta para
 
 Sempre use a extensão de arquivo, não a sigla: &quot;Carregar um arquivo .pdf&quot; (não &quot;Carregar um PDF&quot;).
 
----
+&#x200B;---
 
 ## Formatação do Procedimento
 
@@ -210,7 +210,7 @@ Documente a maneira mais simples primeiro:
 - Espaços ao redor de colchetes
 - Não usar para menu principal — use o trecho do menu principal
 
----
+&#x200B;---
 
 ## Referência em Negrito e Itálico
 
@@ -230,7 +230,7 @@ Documente a maneira mais simples primeiro:
 - O texto que o usuário deve digitar: &quot;Digite *my.workfront.com* na caixa de URL&quot;
 - Nunca por ênfase — reestruturar a frase em vez disso
 
----
+&#x200B;---
 
 ## Notas, Dicas, Avisos — Orientação detalhada
 
@@ -258,15 +258,15 @@ Documente a maneira mais simples primeiro:
 - Combinar notas relacionadas em uma com uma lista com marcadores
 - Não usar anotações para anunciar novos recursos — retrabalhe o texto do artigo
 
----
+&#x200B;---
 
 ## Padrões de referência cruzada
 
 | Situação | Padrão |
 |-----------|---------|
-| Depois de dar as informações | &quot;Para obter mais informações, consulte [Nome do artigo](link).&quot; |
-| Sem informação prévia | &quot;Para obter informações, consulte [Nome do artigo](link).&quot; |
-| Para uma seção em outro artigo | &quot;Para obter mais informações, consulte [Seção] em [Nome do artigo](link).&quot; |
+| Depois de dar as informações | &quot;Para obter mais informações, consulte [Nome do artigo] (link).&quot; |
+| Sem informação prévia | &quot;Para obter informações, consulte [Nome do artigo] (link).&quot; |
+| Para uma seção em outro artigo | &quot;Para obter mais informações, consulte [Seção] em [Nome do artigo] (link).&quot; |
 | Para uma seção no mesmo artigo | &quot;Para obter mais informações, consulte a [Seção] neste artigo.&quot; |
 
 Posicionamento:
@@ -274,7 +274,7 @@ Posicionamento:
 - Em etapas do procedimento: nova linha após a etapa
 - Várias referências: lista com marcadores
 
----
+&#x200B;---
 
 ## Características de qualidade do DQTI
 
@@ -302,7 +302,7 @@ Posicionamento:
 | Capacidade de recuperação | Um leitor pode digitalizar cabeçalhos e entender o conteúdo? Os links são fornecidos? |
 | Eficácia visual | Listas para mais de 3 itens? Tabelas para comparações? Não há parágrafos na parede de texto? |
 
----
+&#x200B;---
 
 ## Correções comuns
 
