@@ -3,9 +3,9 @@ title: Usar Pacotes de Função Personalizados
 description: Ao mapear itens, você pode usar funções para criar fórmulas simples ou complexas.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: ac7190293e7c4b3bb9bfd48d73cd59ad687690e6
+source-git-commit: 4ec81401b5a76edd620b9779414ee578966b4315
 workflow-type: tm+mt
-source-wordcount: '1992'
+source-wordcount: '2042'
 ht-degree: 5%
 
 ---
@@ -127,17 +127,26 @@ Se não houver espaço, recomendamos remover dependências, variáveis ou versõ
 Para voltar para a lista de pacotes, selecione a seta para trás ao lado do nome do pacote.
 
 <!--Create toc here-->
+* [Funções](#functions)
+* [Variáveis](#variables)
+* [Dependências](#dependencies)
+* [Histórico](#history)
 
 ### Funções
 
 A área **Funções** exibe uma lista de funções no pacote, incluindo o nome da função, seu status, seu tamanho e quantas entradas ele espera.
 
-Para filtrar a lista de funções:
+* [Exibir e gerenciar a lista de Funções](#view-and-manage-the-functions-list)
+* [Crie ou edite uma função na área Pacotes](#create-or-edit-a-function-in-the-packages-area)
+* [Fazer alterações em uma função ativa](#make-changes-to-a-live-function)
+* [Excluir uma função](#delete-a-function)
+
+#### Exibir e gerenciar a lista de Funções
+
+Para filtrar a lista Funções:
 
 1. Filtre por status clicando em **Todos**, **Rascunhos** ou **Publicados**.
 1. Use a barra de pesquisa para procurar funções específicas.
-
-#### Status da função
 
 Uma função pode ter o status de rascunho ou publicada.
 
@@ -191,6 +200,9 @@ Usar rascunhos permite fazer alterações com segurança. Você pode refinar um 
    >[!NOTE]
    >
    >A publicação de uma função limpa seu histórico de versões. A versão publicada se torna o ponto de partida atual e as versões de rascunho anteriores não são mais mantidas.
+
+* [Definir entradas](#define-inputs)
+* [Testar uma função](#test-a-function)
 
 ##### Definir entradas
 
@@ -256,11 +268,14 @@ Depois que uma função é publicada, o botão **Publicar** se torna um menu:
 >
 >Excluir uma função a remove completamente, juntamente com seu histórico. Qualquer cenário ou função que o use deixará de funcionar.
 
-## Variáveis
+### Variáveis
 
 As variáveis são valores reutilizáveis que suas funções podem usar, como um URL de base, uma ID de conta ou uma chave de API. Armazená-los como variáveis significa definir um valor uma vez e atualizá-lo em um local, em vez de atualizá-lo em várias funções.
 
-### Criar ou editar uma variável
+* [Criar ou editar uma variável](#create-or-edit-a-variable)
+* [Excluir uma variável](#delete-a-variable)
+
+#### Criar ou editar uma variável
 
 1. Clique na guia **Pacotes** ![Pacotes](assets/packages-icon.png) no painel de navegação esquerdo.
 1. Na guia **Variáveis**, selecione **Nova variável**.
@@ -283,7 +298,7 @@ As variáveis são valores reutilizáveis que suas funções podem usar, como um
 
 1. Selecione **Criar variável** ou **Salvar alterações**.
 
-### Excluir uma variável
+#### Excluir uma variável
 
 1. Clique na guia **Pacotes** ![Pacotes](assets/packages-icon.png) no painel de navegação esquerdo.
 1. Na guia **Variáveis**, clique no ícone **Excluir** ao lado da variável que você deseja excluir.
@@ -292,18 +307,21 @@ As variáveis são valores reutilizáveis que suas funções podem usar, como um
 >
 >As funções que usam uma variável excluída deixarão de funcionar.
 
-## Dependências
+### Dependências
 
 Algumas funções exigem bibliotecas extras para fazer seu trabalho. A guia **Dependências** é onde você adiciona e gerencia essas bibliotecas.
 
-### Adicionar bibliotecas
+* [Adicionar bibliotecas](#add-libraries)
+* [Remover uma biblioteca](#remove-a-library)
+
+#### Adicionar bibliotecas
 
 1. Clique na guia **Pacotes** ![Pacotes](assets/packages-icon.png) no painel de navegação esquerdo.
 1. Na guia **Dependências**, digite um ou mais nomes de biblioteca, separados por vírgulas. Você pode solicitar uma versão específica adicionando-a depois do nome (por exemplo, `axios, lodash@4.17.21`).
 
 1. Clique em **Instalar**.
 
-### Remover uma biblioteca
+#### Remover uma biblioteca
 
 1. Clique na guia **Pacotes** ![Pacotes](assets/packages-icon.png) no painel de navegação esquerdo.
 1. Na guia **Dependências**, clique no ícone **Excluir** ao lado da biblioteca que você deseja remover.
@@ -312,7 +330,7 @@ Algumas funções exigem bibliotecas extras para fazer seu trabalho. A guia **De
 >
 >As funções que dependem de uma biblioteca removida podem parar de funcionar.
 
-## Histórico
+### Histórico
 
 Toda vez que você salva um rascunho de uma função, o Fusion mantém uma cópia. A guia **Histórico** permite exibir e restaurar versões anteriores.
 
