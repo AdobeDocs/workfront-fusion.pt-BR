@@ -5,13 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 8e415378-e9c1-4b49-874b-6d38aba0c303
 TQID: https://experienceleague.adobe.com/VuJQ4w3kfMUJ4H-m1PdN-F8242KOJRPz1holJRxSE0Y
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 754e6eee17449c4b58632702d94941f30efb1d81
 workflow-type: tm+mt
-source-wordcount: 1535
+source-wordcount: 1571
 ht-degree: 13%
 
 ---
@@ -78,7 +76,8 @@ Para usar um webhook para conectar um aplicativo ao Workfront Fusion:
 1. Para validar os dados de entrada, no campo **Estrutura de dados**, selecione ou adicione a estrutura de dados que deseja usar.
 
    Para obter informações sobre estruturas de dados, consulte [Estruturas de dados](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
-1. No campo **Credenciais**, você pode inserir credenciais a serem usadas para autorização. Para inserir credenciais, clique em **Adicionar** e insira as informações de credencial.
+1. No campo **Tipo de autorização**, selecione se este webhook usa autorização básica ou um certificado de cliente.
+1. No campo **Credenciais**, você pode inserir credenciais a serem usadas para autorização. Para inserir credenciais, clique em **Adicionar** e insira as informações de credencial. Pode ser o nome de usuário e a senha para autenticação básica ou o certificado do cliente e a chave pública para autenticação de certificado.
 1. Ative outras configurações conforme desejado.
 1. Clique em **[!UICONTROL Salvar]**
 
@@ -294,27 +293,27 @@ O tempo limite para enviar uma resposta é de 5 minutos. Se a resposta não esti
 >Configure o módulo [!UICONTROL Resposta do Webhook] da seguinte maneira:
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
->&gt;   <td> <p>Código de status HTTP de sucesso 2xx, por exemplo, 200</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
->&gt;   <td> <p>código HTML</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL Cabeçalhos personalizados]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>Chave</strong>: Tipo de conteúdo</li> 
->&gt;     <li><strong>Valor</strong>: texto/html</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
+&gt;   <td> <p>Código de status HTTP de sucesso 2xx, por exemplo, 200</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
+&gt;   <td> <p>código HTML</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL Cabeçalhos personalizados]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>Chave</strong>: Tipo de conteúdo</li> 
+&gt;     <li><strong>Valor</strong>: texto/html</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![Cabeçalhos personalizados](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
@@ -329,23 +328,23 @@ O tempo limite para enviar uma resposta é de 5 minutos. Se a resposta não esti
 >**Exemplo:** Configure o módulo [!UICONTROL Resposta do Webhook] da seguinte maneira:
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
->&gt;   <td> <p>Código de status HTTP de redirecionamento 3xx, por exemplo, 303</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL Cabeçalhos personalizados]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>[!UICONTROL Chave]</strong>: Localização</li> 
->&gt;     <li><strong>[!UICONTROL Valor]</strong>: A URL para a qual você deseja redirecionar.</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
+&gt;   <td> <p>Código de status HTTP de redirecionamento 3xx, por exemplo, 303</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL Cabeçalhos personalizados]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>[!UICONTROL Chave]</strong>: Localização</li> 
+&gt;     <li><strong>[!UICONTROL Valor]</strong>: A URL para a qual você deseja redirecionar.</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![Resposta do Webhook](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 
