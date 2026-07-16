@@ -3,7 +3,8 @@ title: Usar Executar uma vez para testar um cenário
 description: Você pode testar um cenário sem um acionador externo usando o botão Executar uma vez.
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 74faab448149276b8d769dfde0260c96d4b0712a
 workflow-type: tm+mt
 source-wordcount: 332
