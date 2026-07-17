@@ -5,14 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 8e415378-e9c1-4b49-874b-6d38aba0c303
 TQID: https://experienceleague.adobe.com/VuJQ4w3kfMUJ4H-m1PdN-F8242KOJRPz1holJRxSE0Y
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 754e6eee17449c4b58632702d94941f30efb1d81
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 8af4c12773be538823d252f5022e1613e5629d2d
 workflow-type: tm+mt
-source-wordcount: 1571
-ht-degree: 13%
+source-wordcount: 1909
+ht-degree: 10%
 
 ---
 
@@ -68,7 +66,16 @@ Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Li
 >
 >Para chamar um webhook de terceiros (um webhook de saída), use um dos módulos HTTP. Para obter mais informações, consulte [Módulos HTTP](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors).
 
-Para usar um webhook para conectar um aplicativo ao Workfront Fusion:
+Para usar um webhook para conectar um aplicativo ao Workfront Fusion, você pode configurar o webhook para autenticar usando um certificado de cliente (mTLS) ou uma autenticação básica.
+
+* [Usar um webhook com um certificado de cliente (mTLS)](#use-a-webhook-with-a-client-certificate-mtls)
+* [Usar um webhook com autenticação básica](#use-a-webhook-with-basic-authentication)
+
+### Usar um webhook com um certificado de cliente (mTLS)
+
+Com o mTLS, você fornece um certificado de cliente e uma chave privada. O Fusion usa o certificado e a chave para se autenticar no serviço de destino ao chamar o webhook. Essa autenticação bidirecional permite que o webhook seja mais seguro do que a autenticação básica.
+
+Para obter mais informações sobre mTLS, consulte [Visão geral do TLS mútuo](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md#mutual-tls-overview) no artigo Usar mTLS em módulos HTTP.
 
 1. Adicione o módulo de gatilho instantâneo **[!UICONTROL Webhooks]** > **[!UICONTROL Webhook personalizado]** ao seu cenário.
 
@@ -78,8 +85,42 @@ Para usar um webhook para conectar um aplicativo ao Workfront Fusion:
 1. Para validar os dados de entrada, no campo **Estrutura de dados**, selecione ou adicione a estrutura de dados que deseja usar.
 
    Para obter informações sobre estruturas de dados, consulte [Estruturas de dados](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
-1. No campo **Tipo de autorização**, selecione se este webhook usa autorização básica ou um certificado de cliente.
-1. No campo **Credenciais**, você pode inserir credenciais a serem usadas para autorização. Para inserir credenciais, clique em **Adicionar** e insira as informações de credencial. Pode ser o nome de usuário e a senha para autenticação básica ou o certificado do cliente e a chave pública para autenticação de certificado.
+1. No campo **Tipo de autorização**, selecione **[!UICONTROL Certificado de cliente]**.
+1. No campo **Credenciais**, selecione as credenciais a serem usadas para autorização ou adicione novas credenciais.
+1. (Condicional) Para adicionar credenciais:
+   1. Clique em **Adicionar**
+   1. Insira um nome para a nova chave de credenciais
+   1. No campo **Certificado**, cole seu certificado.
+   1. No campo **Chave privada**, cole sua chave privada.
+
+      >[!TIP]
+      >
+      >Se precisar extrair o certificado ou a chave privada de um arquivo combinado, clique em **Extrair** ao lado desse campo, selecione o que você está extraindo e forneça o arquivo e a senha.
+   1. Clique em **Criar uma chave**.
+   1. De volta ao painel do webhook, no campo **Credenciais**, selecione a nova chave.
+1. Ative outras configurações conforme desejado.
+1. Clique em **[!UICONTROL Salvar]**
+
+Depois de criar um webhook, um URL exclusivo é exibido. Esse é o endereço para o qual o webhook envia dados. O Workfront Fusion valida os dados enviados para esse endereço e, em seguida, os transmite para processamento no cenário.
+
+>[!NOTE]
+>
+>Depois de criar um webhook, você pode usá-lo em mais de um cenário por vez.
+
+### Usar um webhook com autenticação básica
+
+A autenticação básica usa um nome de usuário e uma senha para autenticar no serviço ao qual você está se conectando.
+
+1. Adicione o módulo de gatilho instantâneo **[!UICONTROL Webhooks]** > **[!UICONTROL Webhook personalizado]** ao seu cenário.
+
+1. Clique em **[!UICONTROL Adicionar]** ao lado do campo Webhook e insira um nome para o novo webhook.
+1. (Opcional) Clique Em **[!UICONTROL Configurações Avançadas]**.
+1. No campo **[!UICONTROL Restrições de IP]**, insira uma lista separada por vírgulas dos endereços IP dos quais o módulo pode aceitar dados.
+1. Para validar os dados de entrada, no campo **Estrutura de dados**, selecione ou adicione a estrutura de dados que deseja usar.
+
+   Para obter informações sobre estruturas de dados, consulte [Estruturas de dados](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
+1. No campo **Tipo de autorização**, selecione **[!UICONTROL Autenticação básica]**.
+1. No campo **Credenciais**, digite as credenciais a serem usadas para autorização. Para inserir credenciais, clique em **Adicionar** e insira o nome de usuário e a senha para autenticação básica.
 1. Ative outras configurações conforme desejado.
 1. Clique em **[!UICONTROL Salvar]**
 
@@ -295,27 +336,27 @@ O tempo limite para enviar uma resposta é de 5 minutos. Se a resposta não esti
 >Configure o módulo [!UICONTROL Resposta do Webhook] da seguinte maneira:
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
->&gt;   <td> <p>Código de status HTTP de sucesso 2xx, por exemplo, 200</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
->&gt;   <td> <p>código HTML</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL Cabeçalhos personalizados]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>Chave</strong>: Tipo de conteúdo</li> 
->&gt;     <li><strong>Valor</strong>: texto/html</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
+&gt;   <td> <p>Código de status HTTP de sucesso 2xx, por exemplo, 200</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
+&gt;   <td> <p>código HTML</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL Cabeçalhos personalizados]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>Chave</strong>: Tipo de conteúdo</li> 
+&gt;     <li><strong>Valor</strong>: texto/html</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![Cabeçalhos personalizados](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
@@ -330,23 +371,23 @@ O tempo limite para enviar uma resposta é de 5 minutos. Se a resposta não esti
 >**Exemplo:** Configure o módulo [!UICONTROL Resposta do Webhook] da seguinte maneira:
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
->&gt;   <td> <p>Código de status HTTP de redirecionamento 3xx, por exemplo, 303</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL Cabeçalhos personalizados]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>[!UICONTROL Chave]</strong>: Localização</li> 
->&gt;     <li><strong>[!UICONTROL Valor]</strong>: A URL para a qual você deseja redirecionar.</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
+&gt;   <td> <p>Código de status HTTP de redirecionamento 3xx, por exemplo, 303</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL Cabeçalhos personalizados]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>[!UICONTROL Chave]</strong>: Localização</li> 
+&gt;     <li><strong>[!UICONTROL Valor]</strong>: A URL para a qual você deseja redirecionar.</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![Resposta do Webhook](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 
