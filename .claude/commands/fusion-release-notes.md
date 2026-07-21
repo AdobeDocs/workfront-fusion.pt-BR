@@ -97,6 +97,7 @@ Notas:
   
   {Regular description paragraph(s).}
   ```
+
 - Todos os recursos devem terminar com um &quot;Para obter mais informações, consulte [...]&quot; para o artigo de ajuda relevante. Verifique se o destino do link existe no repositório.
 
 ## Etapa 4: adicionar a página ao índice de visão geral
@@ -111,6 +112,7 @@ Editar `help/workfront-fusion/fusion-product-releases/fusion-release-activity.md
   ```markdown
   * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
+
 - Se esta for a primeira versão de um novo ano, adicione um novo cabeçalho `## Fusion releases in {YYYY}` acima do cabeçalho do ano anterior e envolva a seção do ano *anterior* em um bloco recolhível `+++ **Click to open**` / `+++` se ainda não estiver (somente o ano atual permanece expandido).
 
 ## Etapa 5: adicionar a página ao índice
@@ -123,6 +125,7 @@ Editar `help/workfront-fusion/TOC.md`:
   ```markdown
         * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
+
 - Se o título do ano atual ainda não existir, adicione `* Fusion releases - {YYYY} {#fusion-releases-{YYYY}}` acima do título do ano anterior.
 - **Não** adicione o prefixo `{hide-from-toc}` a novas entradas — isso só é usado em entradas mais antigas quando elas envelhecem fora da navegação visível (consulte Inconsistências conhecidas abaixo).
 
