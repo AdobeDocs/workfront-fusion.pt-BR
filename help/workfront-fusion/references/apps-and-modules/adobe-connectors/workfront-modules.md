@@ -5,20 +5,14 @@ author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
 TQID: https://experienceleague.adobe.com/CjzJP-U4P5bVop8ktivUH3pPOjVVgamqqc--cUsLm8U
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-subfeature_v2:
-  - id: ec8965fc-2f75-47f6-a9bb-730e8c2725f3
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+subfeature_v2: id: ec8965fc-2f75-47f6-a9bb-730e8c2725f3
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 86ecf8da00cbae38b4ae48f616ac37e759f84494
 workflow-type: tm+mt
-source-wordcount: 7298
-ht-degree: 98%
+source-wordcount: 7518
+ht-degree: 95%
 
 ---
 
@@ -256,7 +250,7 @@ O módulo retorna quaisquer campos padrão associados ao registro, juntamente co
      </tr> 
      <tr> 
       <td>[!UICONTROL Connection]</td> 
-      <td> <p>Para obter instruções sobre como conectar o aplicativo Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
+      <td> <p>Para obter instruções sobre como conectar seu aplicativo do Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
      </tr> 
      <tr> 
       <td>[!UICONTROL Record Type]</td> 
@@ -308,7 +302,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Para obter instruções sobre como conectar o aplicativo Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar seu aplicativo do Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
@@ -349,7 +343,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Para obter instruções sobre como conectar o aplicativo Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar seu aplicativo Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Filter]</td> 
@@ -420,7 +414,7 @@ Esse módulo de ação faz uma das seguintes conversões:
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Para obter instruções sobre como conectar o aplicativo Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar seu aplicativo Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Object type]</td> 
@@ -479,7 +473,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Para obter instruções sobre como conectar o aplicativo Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar seu aplicativo do Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
@@ -603,7 +597,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Para obter instruções sobre como conectar o aplicativo Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar seu aplicativo Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
@@ -758,7 +752,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Para obter instruções sobre como conectar o aplicativo Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar seu aplicativo do Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Record Type]</td> 
@@ -790,6 +784,10 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
 Veja uma lista dos tipos de objeto do Workfront para os quais é possível usar este módulo em [Tipos de objeto do Workfront disponíveis para cada módulo do Workfront](#workfront-object-types-available-for-each-workfront-module).
 
 #### Opções de ações diversas
+
+* [Tarefa](#task)
+* [Problema](#issue)
+* [Projeto](#project)
 
 ##### Tarefa
 
@@ -959,7 +957,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection]</td>
-    <td> <p>Para obter instruções sobre como conectar o aplicativo Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
+    <td> <p>Para obter instruções sobre como conectar seu aplicativo do Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Record Type]</td>
@@ -1058,7 +1056,7 @@ A Workfront lançou recentemente uma nova versão de seu serviço de assinatura 
 
 Para obter mais informações sobre a nova versão de assinatura do evento, consulte [Controle de versão de assinatura do evento](https://experienceleague.adobe.com/pt-br/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) na documentação do Workfront
 
-Para obter recursos sobre como preservar os cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservação de seus cenários do Fusion durante a atualização da V2 de assinaturas do evento](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=pt).
+Para obter recursos sobre como preservar os cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservação de seus cenários do Fusion durante a atualização da V2 de assinaturas do evento](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 <table style="table-layout:auto">
  <col> 
@@ -1289,7 +1287,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Para obter instruções sobre como conectar o aplicativo Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar seu aplicativo do Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Record Type]</td> 
@@ -1326,7 +1324,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Para obter instruções sobre como conectar o aplicativo Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar seu aplicativo do Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
@@ -1373,8 +1371,8 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
 
 >[!IMPORTANT]
 >
->Esse módulo foi substituído pelo módulo Pesquisar registros. Recomendamos o uso desse módulo em novos cenários.
->Os cenários existentes que usam esse módulo continuarão funcionando conforme esperado. Esse módulo será removido do seletor de módulos em maio de 2025.
+>Esse módulo foi substituído pelo módulo Search records. Recomendamos o uso desse módulo em novos cenários.
+>Os cenários existentes que usam este módulo continuarão a funcionar conforme esperado. Este módulo será removido do seletor de módulos em maio de 2025.
 
 Esse módulo de pesquisa procura registros em um objeto no Workfront que correspondam à consulta de pesquisa especificada.
 
@@ -1388,7 +1386,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Para obter instruções sobre como conectar o aplicativo Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar seu aplicativo do Workfront ao Fusion, consulte <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Conectar o Workfront ao Workfront Fusion</a> neste artigo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
@@ -2382,6 +2380,13 @@ Recomendamos que você verifique novamente para garantir que isso funcione da ma
 
 ## Filtros de assinatura de evento no Workfront > módulos [!UICONTROL Monitorar eventos]
 
+Os filtros nas assinaturas de evento permitem garantir que seus cenários sejam executados somente quando determinados parâmetros forem atendidos.
+
+* [Práticas recomendadas do filtro de assinatura de evento](#event-subscription-filter-best-practices)
+* [Utilização de filtros avançados](#using-advanced-filters)
+
+### Práticas recomendadas do filtro de assinatura de evento
+
 >[!NOTE]
 >
 >* É altamente recomendável usar filtros de assinatura de evento em seus módulos [!UICONTROL Monitorar eventos].
@@ -2390,7 +2395,7 @@ Recomendamos que você verifique novamente para garantir que isso funcione da ma
 >
 >   Para obter mais informações sobre a nova versão de assinatura do evento, consulte [Controle de versão de assinatura do evento](https://experienceleague.adobe.com/pt-br/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) na documentação do Workfront
 >
->   Para obter recursos sobre como preservar os cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservação de seus cenários do Fusion durante a atualização da V2 de assinaturas de evento (https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=pt)].
+>   Para obter recursos sobre como preservar os cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservação de seus cenários do Fusion durante a atualização da V2 de assinaturas do evento](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 O módulo [!UICONTROL Monitorar eventos] do Workfront aciona cenários com base em um webhook que cria uma assinatura de evento na API do Workfront. A assinatura do evento é um conjunto de dados que determina quais eventos são enviados para o webhook. Por exemplo, se você configurar um módulo [!UICONTROL Monitorar eventos] que esteja observando problemas, a assinatura do evento enviará somente eventos relacionados a problemas.
 
@@ -2408,13 +2413,13 @@ Os seguintes operadores estão disponíveis no filtro Workfront > Monitorar even
 * Menor ou igual a
 * Contém
 * Existe
-   * Esse operador não requer um valor e o campo de valor está ausente.
+  * Esse operador não requer um valor e o campo de valor está ausente.
 * Não existe
-   * Esse operador não requer um valor e o campo de valor está ausente.
+  * Esse operador não requer um valor e o campo de valor está ausente.
 * Alterado
-   * Esse operador não requer um valor e o campo de valor está ausente.
-   * Esse operador ignora o campo Estado.
-   * Ao usar `Changed`, selecione **Somente eventos atualizados** no campo **Origem do registro**.
+  * Esse operador não requer um valor e o campo de valor está ausente.
+  * Esse operador ignora o campo Estado.
+  * Ao usar `Changed`, selecione **Somente eventos atualizados** no campo **Origem do registro**.
 
 >[!IMPORTANT]
 >
@@ -2424,7 +2429,7 @@ Os seguintes operadores estão disponíveis no filtro Workfront > Monitorar even
 >
 >**Exemplo:** considere um cenário que processa novos problemas atribuídos a um usuário específico, Ana.
 >
->### Filtrar eventos usando um filtro de assinatura de evento (recomendado)
+>#### Filtrar eventos usando um filtro de assinatura de evento (recomendado)
 >
 >Usando o filtro de eventos, você pode configurar o webhook para acionar o cenário quando um problema é atribuído a Ana, assim que ele é criado. Ana tem a userID b378489d8f7cd3cee0539260720a84b7.
 >
@@ -2432,7 +2437,7 @@ Os seguintes operadores estão disponíveis no filtro Workfront > Monitorar even
 >
 >Se forem criados 100 problemas em um dia, mas apenas dois deles forem atribuídos a Ana, o cenário será executado duas vezes.
 >
->### Filtrar eventos dentro do cenário (não recomendado)
+>#### Filtrar eventos dentro do cenário (não recomendado)
 >
 >Para filtrar eventos de modo que somente problemas atribuídos a Ana sejam processados, você pode criar um filtro após o módulo [!UICONTROL Monitorar eventos].
 >
@@ -2445,3 +2450,26 @@ Para obter mais informações sobre assinaturas de eventos do Workfront, consult
 Para obter mais informações sobre webhooks, consulte [Acionadores instantâneos (webhooks) no Adobe Workfront Fusion](/help/workfront-fusion/references/modules/webhooks-reference.md)
 
 Para obter mais informações sobre filtros em cenários, consulte [Adicionar um filtro a um cenário](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).
+
+### Utilização de filtros avançados
+
+O módulo Workfront > Eventos de observação oferece dois tipos de filtros.
+
+* **Simples**: esse filtro fornece uma interface que permite selecionar campos, operadores e valores, além dos operadores AND e OR para criar um filtro.
+* **Avançado**: este filtro permite carregar JSON que representa seu filtro.
+
+#### Filtros simples vs. avançados
+
+A principal diferença entre os dois tipos é o Estado do filtro.
+
+* **Simples**: ao configurar um filtro simples, você seleciona se deseja filtrar pelo estado antigo ou novo de um campo. Ou seja, você decide se deseja ativar o cenário quando o campo alterar **de** um determinado valor ou se deseja ativar quando alterar **para** um determinado valor. Usar AND e OR permite incluir vários campos e valores, mas eles devem compartilhar o mesmo estado. Não é possível usar o estado antigo para alguns campos e o novo estado para outros.
+* **Avançado**: você pode configurar o JSON em um filtro avançado para especificar valores para estados antigos e novos no mesmo filtro. Por exemplo, você pode especificar que deseja acionar um cenário quando um projeto mudar de um status de Planejamento para um status Atual. Isso excluiria projetos que migram do Planejamento para Inativo, ou que migram do Em espera para Atual.
+
+<!--
+
+#### Advanced filter examples
+
+-->
+
+<!--CHECK ON EDITING FILTERS-->
+
