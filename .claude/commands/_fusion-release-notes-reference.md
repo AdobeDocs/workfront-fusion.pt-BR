@@ -1,7 +1,7 @@
 ---
-source-git-commit: 59a8d8ee83906bc16fc627bd348accc4e588cf9b
+source-git-commit: 67301a4e3c16eaed28f92a1be7556c5574308429
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
@@ -98,6 +98,28 @@ For more information on routes, see [Add a Router module and configure routes](/
 
 &#x200B;---
 
+## Exemplo 3: nova inicialização do conector
+
+Baseado em `fusion-2026-7-27.md`.
+
+```markdown
+## Adobe Content Tagger connector and modules now available
+
+You can now use Workfront Fusion to tag content in Adobe documents.
+
+With the Adobe Content Tagger modules, you can:
+
+* Tag colors in an image, returning the percentage covered by different pixel colors
+* Tag keywords or key phrases that best describe the subject of a document
+* Tag text in an image, indicating whether text is present and returning it if so
+
+For more information, see [Adobe Content Tagger modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/content-tagging-modules.md).
+```
+
+Para uma inicialização de conector como essa, sempre pergunte (de acordo com a Etapa 1 da habilidade) se o usuário deseja um redirecionamento configurado para ela.
+
+&#x200B;---
+
 ## Padrão de atualização da página de visão geral (`fusion-release-activity.md`)
 
 Adicionar a semana de 20 de julho de 2026 a uma seção existente de mês de julho de 2026:
@@ -143,6 +165,21 @@ Adicionando a semana de 20 de julho de 2026 como a entrada mais recente:
         * [Workfront Fusion release activity: Week of July 13 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-13.md)
         ...
 ```
+
+&#x200B;---
+
+## Redireciona a referência do repositório (para a Etapa 7)
+
+O irmão `redirects` repo (`Adobe-Enterprise-Docs/redirects`) contém redirecionamentos 1:1 em arquivos CSV em `redirects/`, um por ambiente: `redirects-dev.csv`, `redirects-stage.csv`, `redirects-prod.csv`.
+
+Regras de linha (do README desse repositório):
+
+- `source` deve começar com `/en` (as variações de idioma são criadas automaticamente) e não devem conter espaços.
+- `destination` pode ser um caminho relativo começando com `/en` ou uma URL completa começando com `https` e não deve conter espaços.
+- Nenhum par `source` duplicado ou `source`/`destination` duplicado.
+- Um redirecionamento não deve causar um loop de redirecionamento.
+
+Depois de adicionar uma linha, uma PR ainda precisa ser acionada no repositório `redirects` e mesclada antes de entrar em vigor (aproximadamente 5 minutos após a mesclagem para redirecionamentos 1:1). Essa habilidade só adiciona a linha depois que o usuário confirma — não aumenta a PR.
 
 &#x200B;---
 
