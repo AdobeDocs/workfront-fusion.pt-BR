@@ -3,10 +3,10 @@ user-guide-title: Documentação do Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Use os documentos, tutoriais e recursos adicionais para saber como implementar e usar efetivamente o Adobe Workfront Fusion em sua organização.
 nudge: true
-source-git-commit: 2f14ef21d36e4307363386563c9861c9306e9cb1
+source-git-commit: 4d018e92863fa3461ea73defe6b83991a7e2083d
 workflow-type: tm+mt
-source-wordcount: '2508'
-ht-degree: 52%
+source-wordcount: '2512'
+ht-degree: 53%
 
 ---
 
@@ -368,6 +368,7 @@ ht-degree: 52%
       * [Módulos do Adobe Acrobat Sign](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-sign-modules.md)
       * [Módulo do Adobe Authenticator](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md)
       * [Módulos do Adobe Campaign](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-campaign-classic-connector.md)
+      * [Módulos do Adobe Content Tagger](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/content-tagging-modules.md)
       * [Módulos de bibliotecas da Adobe Creative Cloud](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
       * [Módulos do Adobe Experience Manager Assets](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
       * [Módulos do Adobe Experience Manager Forms](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
@@ -389,7 +390,8 @@ ht-degree: 52%
       * [Módulos do Adobe Target](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
       * [Módulos do Gerenciamento de Usuários da Adobe](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
       * [Módulos do Adobe Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
-      * [Módulos de planejamento do Adobe Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)* [Módulos de Revisão e Aprovações Unificadas do Adobe Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-review-and-approvals-modules.md)
+      * [Módulos do Adobe Workfront Planning](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
+      * [Módulos de revisão e aprovação unificados do Adobe Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-review-and-approvals-modules.md)
       * [Módulos dos Quadros do Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
       * [Módulos do Workfront Proof](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-proof-modules.md)
     * Conectores para aplicativos de terceiros {#third-party-app-connectors}
