@@ -5,16 +5,13 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 6f5f97b9-b06a-4336-b349-ee9e2606d4bf
 TQID: https://experienceleague.adobe.com/ee8cyxX16UJF8UKtbLB-COA96ZlYFJK-jPNnGNYSrz0
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 2045
-ht-degree: 16%
+source-wordcount: 2047
+ht-degree: 15%
 
 ---
 
@@ -45,7 +42,7 @@ Você também precisa de [!DNL Google Slides] em seu [!DNL Google Drive].
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion</td> 
    <td>
-   <p>Baseado em operação: nenhum requisito de licença do Workfront Fusion</p>
+   <p>Baseado em operação: disponível para organizações com licenças baseadas em operação</p>
    <p>Baseado em conector (legado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 

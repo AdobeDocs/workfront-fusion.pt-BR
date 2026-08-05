@@ -5,13 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 4c14fa36-8333-40d6-bd0a-fc6b0d9f4410
 TQID: https://experienceleague.adobe.com/fHIb5n3hU15APXxrrQiEmT-KS9aIlN-4hjUByFfpG-I
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 4620
+source-wordcount: 4623
 ht-degree: 12%
 
 ---
@@ -49,7 +47,7 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion</td> 
    <td>
-   <p>Baseado em operação: nenhum requisito de licença do Workfront Fusion</p>
+   <p>Baseado em operação: disponível para organizações com licenças baseadas em operação</p>
    <p>Baseado em conector (legado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -72,8 +70,8 @@ Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Li
 
 * Para usar módulos [!DNL Slack], você deve ter uma conta do [!DNL Slack].
 * Se você estiver criando conexões OAuth@, será necessário adicionar os seguintes URLs ao incluo na lista de permissões de sua organização:
-   * token de bot: `https://oauth.app.workfrontfusion.com/oauth/cb/slack3`
-   * token de usuário:` https://oauth.app.workfrontfusion.com/oauth/cb/slack2`
+  * token de bot: `https://oauth.app.workfrontfusion.com/oauth/cb/slack3`
+  * token de usuário:` https://oauth.app.workfrontfusion.com/oauth/cb/slack2`
 
 ## Informações da API do Slack
 

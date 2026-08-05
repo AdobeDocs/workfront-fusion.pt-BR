@@ -5,14 +5,12 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
 TQID: https://experienceleague.adobe.com/RratZmko93V0LMxJ6qTy6cNvRqgPNvNgHTflRngE6BI
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: ce3fb5604ac4ed85af1bcc51143732499dfb0404
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 7285
-ht-degree: 12%
+source-wordcount: 7501
+ht-degree: 11%
 
 ---
 
@@ -55,7 +53,7 @@ Para obter informações sobre módulos, consulte os artigos em [Módulos: índi
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion</td> 
    <td>
-   <p>Baseado em operação: nenhum requisito de licença do Workfront Fusion</p>
+   <p>Baseado em operação: disponível para organizações com licenças baseadas em operação</p>
    <p>Baseado em conector (legado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -681,7 +679,7 @@ Este módulo de ação identifica o assunto principal da imagem e remove o plano
 >[!NOTE]
 >
 >Este módulo foi substituído e não funcionará mais após 30 de julho de 2026.
->Atualize este módulo para o [Crie ou edite um módulo &#x200B;](#create-or-edit-a-composite) composto.
+>Atualize este módulo para o módulo [Criar ou editar um composto](#create-or-edit-a-composite).
 
 Esse módulo de ação aplica uma variedade de edições de documento e nível de camada.
 
@@ -868,7 +866,7 @@ Essa cor automática do módulo de ação corrige a imagem especificada.
 >[!NOTE]
 >
 >Este módulo foi substituído e não funcionará mais após 30 de julho de 2026.
->Atualize este módulo para o [Crie ou edite um módulo &#x200B;](#create-or-edit-a-composite) composto.
+>Atualize este módulo para o módulo [Criar ou editar um composto](#create-or-edit-a-composite).
 
 Esse módulo de ação converte um arquivo em JPEG, PNG, PSD ou TIFF.
 
@@ -1005,7 +1003,7 @@ Este módulo de ação retorna um arquivo PNG com uma máscara aplicada ao redor
 >[!NOTE]
 >
 >Este módulo foi substituído e não funcionará mais após 30 de julho de 2026.
->Atualize este módulo para o [Crie ou edite um módulo &#x200B;](#create-or-edit-a-composite) composto.
+>Atualize este módulo para o módulo [Criar ou editar um composto](#create-or-edit-a-composite).
 
 Esse módulo de ação cria uma nova PSD com camadas opcionais e gera representações ou salva como um PSD.
 
@@ -1732,12 +1730,12 @@ Esse módulo de ação faz uma chamada personalizada para a API do Photoshop.
 >[!NOTE]
 >
 >Este módulo foi substituído e não funcionará mais após 30 de julho de 2026.
->Atualize este módulo para o [Crie ou edite um módulo &#x200B;](#create-or-edit-a-composite) composto.
+>Atualize este módulo para o módulo [Criar ou editar um composto](#create-or-edit-a-composite).
 
 >[!NOTE]
 >
 >Este módulo foi substituído e não funcionará mais após 30 de julho de 2026.
->Atualize este módulo para o [Crie ou edite um módulo &#x200B;](#create-or-edit-a-composite) composto.
+>Atualize este módulo para o módulo [Criar ou editar um composto](#create-or-edit-a-composite).
 
 Esse módulo de ação substitui um Objeto inteligente em uma camada do PSD e gera novas representações.
 
@@ -1871,7 +1869,7 @@ Este módulo usa a versão herdada dos Objetos Inteligentes.
 >[!NOTE]
 >
 >Este módulo foi substituído e não funcionará mais após 30 de julho de 2026.
->Atualize este módulo para o [Crie ou edite um módulo &#x200B;](#create-or-edit-a-composite) composto.
+>Atualize este módulo para o módulo [Criar ou editar um composto](#create-or-edit-a-composite).
 
 Essa ação redimensiona uma imagem usando a mesma proporção.
 
@@ -1946,7 +1944,7 @@ Essa ação redimensiona uma imagem usando a mesma proporção.
 >[!NOTE]
 >
 >Este módulo foi substituído e não funcionará mais após 30 de julho de 2026.
->Atualize este módulo para o [Crie ou edite um módulo &#x200B;](#create-or-edit-a-composite) composto.
+>Atualize este módulo para o módulo [Criar ou editar um composto](#create-or-edit-a-composite).
 
 Esse módulo de ação adiciona uma marca d&#39;água à imagem selecionada.
 

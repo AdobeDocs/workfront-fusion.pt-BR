@@ -5,14 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
 TQID: https://experienceleague.adobe.com/F-jLL4aF0bSUiFpDjJr-DVBU8ZnbqNHKiFzjEjmalxw
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 7326
+source-wordcount: 7331
 ht-degree: 10%
 
 ---
@@ -40,7 +37,7 @@ Os módulos do Adobe Workfront Fusion [!DNL HubSpot CRM] permitem monitorar even
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion</td> 
    <td>
-   <p>Baseado em operação: nenhum requisito de licença do Workfront Fusion</p>
+   <p>Baseado em operação: disponível para organizações com licenças baseadas em operação</p>
    <p>Baseado em conector (legado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -113,7 +110,7 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 * [Redes sociais (transmissão)](#social-media-broadcast)
 * [Publicações do blog](#blog-posts)
   <!--* [Workflows]()-->
-* [Subscrições](#subscriptions)
+* [Assinaturas](#subscriptions)
   <!--* [Associations]()-->
 * [Outras](#other)
 
