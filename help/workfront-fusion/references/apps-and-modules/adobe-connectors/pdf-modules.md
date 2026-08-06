@@ -15,10 +15,10 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 4312
-ht-degree: 100%
+source-wordcount: 4314
+ht-degree: 99%
 
 ---
 
@@ -58,7 +58,7 @@ Os [!DNL Adobe PDF Services] podem ler, converter ou modificar os arquivos, mas 
   <tr> 
    <td role="rowheader">Licença do Adobe Workfront Fusion</td> 
    <td>
-   <p>Baseado em operação: nenhum requisito de licença do Workfront Fusion</p>
+   <p>Baseado em operação: disponível para organizações com licenças baseadas em operação</p>
    <p>Baseado em conector (legado): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -555,7 +555,7 @@ O módulo [!UICONTROL Gerar documento] é uma maneira poderosa de criar um PDF q
 
 Para obter mais informações sobre a funcionalidade Gerar documento do [!UICONTROL [!DNL Adobe PDF Services]], consulte a seção [Visão geral da geração de documento](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html) na documentação do [!DNL Adobe Document Services].
 
-* [Usar o módulo [!UICONTROL Gerar documento] com um modelo do  [!DNL Microsoft Word] ](#use-the-generate-document-module-with-a-microsoft-word-template)
+* [Usar o módulo [!UICONTROL Gerar documento] com um modelo do  [!DNL Microsoft Word] &#x200B;](#use-the-generate-document-module-with-a-microsoft-word-template)
 * [Usar o módulo [!UICONTROL Gerar documento] com JSON](#use-the-generate-document-module-with-json)
 
 #### Usar o módulo [!UICONTROL Gerar documento] com um modelo do [!DNL Microsoft Word]
