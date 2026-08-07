@@ -9,9 +9,9 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 050fb237c489859fa0ffacf2afeb665b8503598b
 workflow-type: tm+mt
-source-wordcount: 2375
+source-wordcount: 2392
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 ### now
 
-Obtém a hora atual no formato AAAA-MM-DD-hh:mm:ss.
+Obtém a hora atual no formato ` YYYY-MM-DD-hh:mm:ss`.
 
 ### carimbo de data e hora
 
@@ -721,7 +721,7 @@ A função `formatDate` retorna uma representação de texto do valor de Data es
 
 * `formatDate(1. Date created; YYYY-MM-DD hh:mm A)`
 
-  Retorna 01/10/2018 9:32 AM
+  Devoluções 2018-10-01 09:32 AM
 
 * `formatDate(1. Date created;DD.MM.YYYY HH:mm;UTC)`
 
