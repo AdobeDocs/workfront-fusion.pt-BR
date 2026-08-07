@@ -6,11 +6,9 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d7b0141f-d99d-4ab7-a60f-ed552a76f05d
 TQID: https://experienceleague.adobe.com/4vL9oj7UXeRWQuSzDZP7GJU30oHUg1m75gWGVUkfCfA
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 5daf7bb8e2912744df6f37ec45110d179875bcb2
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: e6873ab923b73175d1889b44df5d7c1baf9d42fb
 workflow-type: tm+mt
 source-wordcount: 529
 ht-degree: 34%
@@ -101,3 +99,4 @@ As seguintes diretivas de manipulação de erros estão disponíveis no Workfron
 
 * Para obter informações sobre a reversão e a fase de reversão, consulte [Reversão](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#rollback) no artigo Execução de cenário, ciclos e fases.
 * Para obter informações sobre a fase de Confirmação, consulte [Confirmar](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#commit) no artigo Execução de cenário, ciclos e fases.
+
