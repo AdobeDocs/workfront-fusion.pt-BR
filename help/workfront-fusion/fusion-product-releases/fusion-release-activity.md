@@ -14,10 +14,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: 2f14ef21d36e4307363386563c9861c9306e9cb1
+source-git-commit: 73f52ca232e84750fb67ad7ea8e11d7cb00822dd
 workflow-type: tm+mt
-source-wordcount: 1549
-ht-degree: 87%
+source-wordcount: 1560
+ht-degree: 86%
 
 ---
 
@@ -26,6 +26,10 @@ ht-degree: 87%
 O Adobe Workfront Fusion conecta perfeitamente aplicativos e serviços da Web para que você possa se concentrar em novas tarefas, em vez de repetir aquelas que já concluiu.
 
 ## Versões do Fusion em 2026
+
+### Agosto de 2026
+
+* [Atividade de lançamento do Workfront Fusion: semana de 10 de agosto de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-8-10.md)
 
 ### Julho de 2026
 

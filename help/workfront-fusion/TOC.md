@@ -3,10 +3,10 @@ user-guide-title: Documentação do Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Use os documentos, tutoriais e recursos adicionais para saber como implementar e usar efetivamente o Adobe Workfront Fusion em sua organização.
 nudge: true
-source-git-commit: 4d018e92863fa3461ea73defe6b83991a7e2083d
+source-git-commit: 4d8599c771c76ee9b6713fd7c8e1b2907fe9599f
 workflow-type: tm+mt
-source-wordcount: '2512'
-ht-degree: 53%
+source-wordcount: '2521'
+ht-degree: 52%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 53%
 * Atividade de lançamento do Fusion {#fusion-release-activity}
   * [Atividade de lançamento do Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
   * Versões do Fusion - 2026 {#fusion-releases-2026}
+    * [Atividade de lançamento do Workfront Fusion: semana de 10 de agosto de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-8-10.md)
     * [Atividade de lançamento do Workfront Fusion: semana de 27 de julho de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-27.md)
     * [Atividade de lançamento do Workfront Fusion: semana de 20 de julho de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-20.md)
     * [Atividade de lançamento do Workfront Fusion: semana de 13 de julho de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-13.md)
@@ -203,7 +204,7 @@ ht-degree: 53%
       * [Criar uma equipe](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/create-a-team.md)
       * [Adicionar usuários ao Adobe Workfront Fusion por meio do Adobe Admin Console](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-fusion-users-admin-console.md)
       * [Adicionar usuário a uma equipe](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md)
-      * [Definir opções de notificação da equipe](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md)
+      * [Definir opções de notificação](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md)
       * [Exibir log de atividades de uma organização](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-activity-logs-for-an-org.md)
       * [Exibir o painel de desempenho de uma organização](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-performance-dashboard.md)
     * Gerenciar usuários e equipes {#manage-users-and-teams}
@@ -466,7 +467,7 @@ ht-degree: 53%
       * [Módulos de Markdown](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
       * [Módulo de Matemática](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
       * [Módulos MIME](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)
-      * {hide-from-toc}[Módulo do Protocolo de Contexto de Modelo (MCP)](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
+      * [Módulo Agente MCP (Protocolo de Contexto de Modelo)](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
       * [Módulos do analisador de texto](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md)
       * [Módulos de ferramentas](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)
       * [Módulos XML](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/xml-modules.md)

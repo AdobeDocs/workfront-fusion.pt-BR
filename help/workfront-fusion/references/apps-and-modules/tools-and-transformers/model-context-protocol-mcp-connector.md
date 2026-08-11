@@ -8,16 +8,14 @@ exl-id: 748055ad-d305-4513-9a5c-9c970b74a96e
 TQID: https://experienceleague.adobe.com/KC5YvcNC-EQG4bnPA5pOVbGWZHdqa0XKYHKPMLwY-24
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 4d8599c771c76ee9b6713fd7c8e1b2907fe9599f
 workflow-type: tm+mt
-source-wordcount: 488
+source-wordcount: 490
 ht-degree: 18%
 
 ---
 
 # Módulo do agente MCP
-
-<!--SET UP REDIRECTS-->
 
 O protocolo de contexto de modelo (MCP) é uma maneira de conectar com segurança modelos de idioma de IA a outros aplicativos. Você configura servidores MCP, que permitem que o modelo de IA acesse o aplicativo. Em seguida, você pode enviar um prompt para o modelo de IA, que pode retornar informações do aplicativo.
 
@@ -83,7 +81,7 @@ Esse módulo de ação processa um prompt, usando o modelo de idioma e os servid
        <li><b>LLM</b>: selecione o modelo de idioma grande ao qual esta chave está associada.</li>
        <li><b>Chave</b>: insira ou mapeie sua chave de API para o modelo selecionado.</li>
        <li><b>Modelo</b>: selecione o modelo LLM que a chave usará.</li>
-       <li><b>Máximo de Tokens</b>: insira ou mapeie o número máximo de tokens que o LLM pode gerar em sua resposta.<p>Um token geralmente equivale a quatro caracteres, ou 0,75 de uma palavra em inglês. "Olá, mundo" seria igual a dois tokens e "Autenticação" seria igual a um ou dois tokens.</li>
+       <li><b>Número máximo de tokens</b>: insira ou mapeie o número máximo de tokens que o LLM pode gerar em sua resposta.<p>Um token geralmente equivale a quatro caracteres, ou 0,75 de uma palavra em inglês. "Olá, mundo" seria igual a dois tokens e "Autenticação" seria igual a um ou dois tokens.</li>
       </ul>
     </td> 
   </tr> 
