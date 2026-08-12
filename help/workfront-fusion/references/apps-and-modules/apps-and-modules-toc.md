@@ -11,10 +11,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 4d8599c771c76ee9b6713fd7c8e1b2907fe9599f
+source-git-commit: 79ead2c1fd03403e8e18ecfd7a346be3b1ff890f
 workflow-type: tm+mt
-source-wordcount: 517
-ht-degree: 93%
+source-wordcount: 511
+ht-degree: 94%
 
 ---
 
@@ -153,7 +153,6 @@ Esses módulos permitem executar ações em seus dados, mas não exigem conexão
 * [Módulos do Lexical](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/lexical-modules.md)
 * [Módulos de Markdown](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
 * [Módulo de Matemática](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
-* [Módulo Agente MCP (Protocolo de Contexto de Modelo)](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
 * [Módulos MIME](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)
 * [Módulos do analisador de texto](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md)
 * [Módulos de ferramentas](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)
