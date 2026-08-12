@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 47ccecf0-751c-4026-96a9-329c33cb6801
 TQID: https://experienceleague.adobe.com/0NhWgeBcqYtVJ7XKqZ30O1lg3fKSs7YijEhhYBQ-jfg
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 93887116991b505676f5c51762b47829dae9bb7a
 workflow-type: tm+mt
-source-wordcount: 629
-ht-degree: 18%
+source-wordcount: 659
+ht-degree: 16%
 
 ---
 
@@ -80,7 +79,7 @@ Talvez seja necessário clicar no ícone de três pontos na área Controles para
 
 | Ação | Detalhes |
 | ---------- | ---------- |
-| Salvar <p>![Ícone Salvar](assets/save-icon.png)</p> | Depois de salvar o cenário, uma nova versão estará disponível no menu de três pontos, caso você precise acessá-lo no futuro. As versões de cenários salvas anteriormente ficam disponíveis somente por 60 dias. |
+| Salvar <p>![Ícone Salvar](assets/save-icon.png)</p> | <p>Depois de salvar o cenário, uma nova versão estará disponível no menu de três pontos, caso você precise acessá-lo no futuro. As versões de cenários salvas anteriormente estão disponíveis por 60 dias após a criação da próxima versão de cenário. </p><p>Para manter o histórico de versão do cenário além de 60 dias para fins de auditoria, recomendamos salvar e arquivar um blueprint do cenário em outro local.</p> |
 | Configurações de cenário <p>![Ícone de configurações do cenário](assets/scenario-settings-icon.png)</p> | O painel Configurações de cenário contém configurações avançadas para o cenário. Para obter mais informações sobre as configurações disponíveis, consulte [Definir configurações de cenário](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md). |
 | Notas  <p>![Ícone de Notas](assets/notes-icon.png)</p> | Faça observações sobre o cenário. Outros usuários podem exibir essas notas quando estão no cenário. |
 | Alinhamento automático <p>![Ícone de alinhamento automático](assets/auto-align-icon.png)</p> | Alinhe automaticamente os módulos no seu cenário. |

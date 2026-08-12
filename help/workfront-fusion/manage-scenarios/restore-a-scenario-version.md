@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
 TQID: https://experienceleague.adobe.com/xVihxZH-fwPCIkryQAQEOWgeShtPTMXth4jEl5OLdbo
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: e24fc726107fcfa34e9288e9a35af445fc0cc765
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 93887116991b505676f5c51762b47829dae9bb7a
 workflow-type: tm+mt
-source-wordcount: 713
-ht-degree: 12%
+source-wordcount: 754
+ht-degree: 11%
 
 ---
 
@@ -19,6 +18,11 @@ ht-degree: 12%
 O Adobe Workfront Fusion salva uma versão do cenário sempre que ele é alterado.
 
 Você pode exibir, restaurar, renomear ou baixar blueprints de versões anteriores de um cenário.
+
+>[!NOTE]
+>
+>As versões de cenários salvas anteriormente estão disponíveis por 60 dias após a criação da próxima versão de cenário.
+>Para manter o histórico de versões do cenário além desse período para fins de auditoria, recomendamos salvar e arquivar um blueprint do cenário em outro local.
 
 ## Requisitos de acesso
 
@@ -80,7 +84,7 @@ A funcionalidade Exibir alterações mostra o que é diferente entre duas versõ
 1. Clique no ícone [!UICONTROL Mais] ![Mais ícone](assets/more-icon.png) na parte inferior da tela e em **[!UICONTROL Versões Anteriores]**.
 
    Uma lista de versões anteriores é exibida.
-&#x200B;
+   &#x200B;
 1. Clique em **Exibir alterações** para a versão do cenário que você deseja exibir.
 1. A exibição **Revisar alterações** é aberta e compara essa versão com seu cenário atual.
 
@@ -102,7 +106,7 @@ A funcionalidade Exibir alterações mostra o que é diferente entre duas versõ
 
 ### Examinar alterações
 
-
+&#x200B;
 Cada alteração é mostrada no lado a que pertence e colorida pelo que a restauração faria
 faça:
 
@@ -110,7 +114,9 @@ faça:
 * Verde (direita): essa alteração está na versão à direita e será adicionada se a versão for restaurada.
 
 Se algo foi alterado, em vez de removido ou adicionado, o valor é exibido em vermelho à esquerda e em verde à direita.
+&#x200B;
 As alterações são agrupadas em seções:
+&#x200B;
 
 * **Cenário**: nome, descrição e tipo.
 * **Configurações de cenário**: opções de agendamento e processamento.
@@ -119,5 +125,7 @@ As alterações são agrupadas em seções:
 * **Rotas do roteador**: rotas e seu conteúdo.
 * **Manipuladores de erros**: ramificações de tratamento de erros.
 * **Grupos órfãos**: módulos desconectados na tela.
+&#x200B;
 Se as duas versões forem idênticas, será exibida a mensagem/ **Nenhuma diferença encontrada**.
+&#x200B;
 
