@@ -5,20 +5,14 @@ author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
 TQID: https://experienceleague.adobe.com/CjzJP-U4P5bVop8ktivUH3pPOjVVgamqqc--cUsLm8U
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-subfeature_v2:
-  - id: ec8965fc-2f75-47f6-a9bb-730e8c2725f3
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 86ecf8da00cbae38b4ae48f616ac37e759f84494
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+subfeature_v2: id: ec8965fc-2f75-47f6-a9bb-730e8c2725f3
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 997d5af3ff9fe9354976552bbd30edf530da3beb
 workflow-type: tm+mt
-source-wordcount: 7518
-ht-degree: 95%
+source-wordcount: 7626
+ht-degree: 94%
 
 ---
 
@@ -217,13 +211,11 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 
 ### Acionadores
 
-<!--
-* [Watch Events](#watch-events) 
-* [Watch Record](#watch-record) 
-* [Watch Field](#watch-field)
--->
+* [Monitorar eventos](#watch-events)
+* [Campo de observação](#watch-field)
+* [Assistir ao registro](#watch-record)
 
-+++ **[!UICONTROL Monitorar eventos]**
+#### [!UICONTROL Monitorar eventos]
 
 Este módulo de acionador executa um cenário em tempo real quando objetos de um tipo específico são adicionados, atualizados ou excluídos no Workfront.
 
@@ -294,9 +286,7 @@ Para obter mais informações, consulte a seção [Exemplos de conteúdo de even
 
 Veja uma lista dos tipos de objeto do Workfront para os quais você pode usar este módulo em [tipos de objeto do Workfront disponíveis para cada módulo do Workfront](#workfront-object-types-available-for-each-workfront-module).
 
-+++
-
-+++ **[!UICONTROL Campo de monitoramento]**
+#### [!UICONTROL Campo de monitoramento]
 
 Esse módulo de acionador executa um cenário quando um campo especificado é atualizado. O módulo retorna o valor antigo e o novo do campo especificado. Você pode mapear essas informações em módulos subsequentes no cenário.
 
@@ -331,9 +321,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
 
 Veja uma lista dos tipos de objeto do Workfront para os quais você pode usar este módulo em [Tipos de objeto do Workfront disponíveis para cada módulo do Workfront](#workfront-object-types-available-for-each-workfront-module).
 
-+++
-
-+++ **[!UICONTROL Monitorar registros]**
+#### [!UICONTROL Monitorar registros]
 
 Esse módulo de acionador executa um cenário quando objetos de um tipo específico são adicionados, atualizados ou ambos. O módulo retorna todos os campos padrão associados a um ou mais registros, juntamente com quaisquer campos e valores personalizados que a conexão acessa. Você pode mapear essas informações em módulos subsequentes no cenário.
 
@@ -384,25 +372,21 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
 
 Veja uma lista dos tipos de objeto do Workfront para os quais você pode usar este módulo em [Tipos de objeto do Workfront disponíveis para cada módulo do Workfront](#workfront-object-types-available-for-each-workfront-module).
 
-+++
-
-
 ### Ações
 
-<!--
-* [Convert object](#convert-object) 
-* [Create a record (attaching custom forms)](#create-a-record-attaching-custom-forms) 
-* [Create a record](#create-a-record) 
-* [Custom API Call](#custom-api-call) 
-* [Delete Record](#delete-record) 
-* [Download Document](#download-document) 
-* [Misc Action](#misc-action) 
-* [Read a Record](#read-a-record) 
-* [Update Record](#update-record) 
-* [Upload Document](#upload-document)
--->
+* [Converter objeto](#convert-object)
+* [Criar um registro](#create-a-record)
+* [Chamada de API personalizada](#custom-api-call)
+* [Excluir registro](#delete-record)
+* [Baixar Documento](#download-document)
+* [Obter um URL de arquivo pré-assinado](#get-a-presigned-file-url)
+* [Ação Diversa](#misc-action)
+* [Ler um Registro](#read-a-record)
+* [Atualizar versão de carga dos eventos](#update-events-payload-version)
+* [Atualizar um registro](#update-a-record)
+* [Carregar documento](#upload-document)
 
-+++ **[!UICONTROL Converter objeto]**
+#### [!UICONTROL Converter objeto]
 
 Esse módulo de ação faz uma das seguintes conversões:
 
@@ -457,9 +441,7 @@ Esse módulo de ação faz uma das seguintes conversões:
  </tbody> 
 </table>
 
-+++
-
-+++ **[!UICONTROL Criar um registro]** 
+#### [!UICONTROL Criar um registro]
 
 Este módulo de ação cria um objeto, como um projeto, uma tarefa ou um problema no Workfront, e permite adicionar um formulário personalizado ao novo objeto. O módulo permite selecionar quais dos campos do objeto estão disponíveis no módulo.
 
@@ -525,8 +507,6 @@ Veja uma lista dos tipos de objeto do Workfront para os quais você pode usar es
 >
 >   Para obter instruções, consulte [Gerenciar vários usuários | Upload em massa de CSV](https://helpx.adobe.com/br/enterprise/using/bulk-upload-users.html) na documentação da Adobe.
 
-+++
-
 <!--
 
 +++ **[!UICONTROL Create Record (Legacy)]**
@@ -580,7 +560,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 -->
 
-+++ **[!UICONTROL Chamada de API personalizada]**
+#### [!UICONTROL Chamada de API personalizada]
 
 Esse módulo de ação permite fazer uma chamada autenticada personalizada para a API do Workfront. Dessa forma, você pode criar uma automação de fluxo de dados que não pode ser realizada pelos outros módulos do Workfront.
 
@@ -637,9 +617,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
 
 Veja uma lista dos tipos de objeto do Workfront para os quais você pode usar este módulo em [Tipos de objeto do Workfront disponíveis para cada módulo do Workfront](#workfront-object-types-available-for-each-workfront-module).
 
-+++
-
-+++ **[!UICONTROL Excluir registro]**
+#### [!UICONTROL Excluir registro]
 
 Este módulo de ação exclui um objeto, por exemplo, projeto, tarefa ou problema no Workfront.
 
@@ -686,9 +664,7 @@ Veja uma lista dos tipos de objeto do Workfront para os quais você pode usar es
 >1. Adicione a manipulação de erros ao módulo Excluir registro para ignorar o erro causado pelo tempo-limite de 40 segundos.
 
 
-+++
-
-+++ **[!UICONTROL Baixar documento]**
+#### [!UICONTROL Baixar documento]
 
 Este módulo de ação baixa um documento do Workfront.
 
@@ -715,9 +691,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
 
 Veja uma lista dos tipos de objeto do Workfront para os quais você pode usar este módulo em [Tipos de objeto do Workfront disponíveis para cada módulo do Workfront](#workfront-object-types-available-for-each-workfront-module).
 
-+++
-
-+++ **Obter um URL de arquivo pré-assinado**
+#### Obter um URL de arquivo pré-assinado
 
 Esse módulo de ação obtém URLs de arquivos pré-assinados que podem ser usados posteriormente por outras APIs.
 
@@ -740,9 +714,7 @@ Esse módulo de ação obtém URLs de arquivos pré-assinados que podem ser usad
  </tbody> 
 </table>
 
-+++
-
-+++ **[!UICONTROL Ações diversas]**
+#### [!UICONTROL Ações diversas]
 
 Esse módulo de ação permite executar ações na API.
 
@@ -789,13 +761,13 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
 
 Veja uma lista dos tipos de objeto do Workfront para os quais é possível usar este módulo em [Tipos de objeto do Workfront disponíveis para cada módulo do Workfront](#workfront-object-types-available-for-each-workfront-module).
 
-#### Opções de ações diversas
+##### Opções de ações diversas
 
 * [Tarefa](#task)
 * [Problema](#issue)
 * [Projeto](#project)
 
-##### Tarefa
+###### Tarefa
 
 <table style="table-layout:auto">
  <col> 
@@ -843,7 +815,7 @@ Veja uma lista dos tipos de objeto do Workfront para os quais é possível usar 
  </tbody> 
 </table>
 
-##### Problema
+###### Problema
 
 <table style="table-layout:auto">
  <col> 
@@ -890,7 +862,7 @@ Veja uma lista dos tipos de objeto do Workfront para os quais é possível usar 
 
 
 
-##### Projeto
+###### Projeto
 
 <table style="table-layout:auto">
  <col> 
@@ -943,9 +915,7 @@ Veja uma lista dos tipos de objeto do Workfront para os quais é possível usar 
 
 
 
-+++
-
-+++ **[!UICONTROL Ler um registro]**
+#### [!UICONTROL Ler um registro]
 
 Esse módulo de ação recupera dados de um único registro.
 
@@ -995,8 +965,6 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
 </table>
 
 Veja uma lista dos tipos de objeto do Workfront para os quais você pode usar este módulo em [Tipos de objeto do Workfront disponíveis para cada módulo do Workfront](#workfront-object-types-available-for-each-workfront-module).
-
-+++
 
 <!--
 
@@ -1052,17 +1020,15 @@ When you are configuring this module, the following fields display.
 
 See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
-+++
-
 -->
 
-+++ **Atualizar versão de conteúdo dos eventos**
+#### Atualizar versão de carga dos eventos
 
 A Workfront lançou recentemente uma nova versão de seu serviço de assinatura de eventos. A nova versão não é uma alteração na API do Workfront, mas uma alteração na funcionalidade de assinatura do evento. Este módulo de ação atualiza a versão de conteúdo do evento usada para este cenário.
 
 Para obter mais informações sobre a nova versão de assinatura do evento, consulte [Controle de versão de assinatura do evento](https://experienceleague.adobe.com/pt-br/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) na documentação do Workfront
 
-Para obter recursos sobre como preservar os cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservação de seus cenários do Fusion durante a atualização da V2 de assinaturas do evento](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=pt).
+Para obter recursos sobre como preservar os cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservação de seus cenários do Fusion durante a atualização da V2 de assinaturas do evento](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 <table style="table-layout:auto">
  <col> 
@@ -1080,9 +1046,7 @@ Para obter recursos sobre como preservar os cenários do Workfront Fusion durant
 </table>
 
 
-+++
-
-+++ **Atualizar um registro**
+#### Atualizar um registro
 
 
 Esse módulo de ação atualiza um objeto, por exemplo, projeto, tarefa ou problema. O módulo permite selecionar quais dos campos do objeto estão disponíveis no módulo.
@@ -1128,8 +1092,6 @@ Veja uma lista dos tipos de objeto do Workfront para os quais você pode usar es
 >
 > Ao inserir o texto para um campo personalizado ou um objeto [!UICONTROL Nota] (Comentário ou resposta), você pode usar as tags HTML no campo [!UICONTROL Texto da nota] para criar um rich text, como texto em negrito ou itálico.
 
-
-+++
 
 <!--
 
@@ -1180,11 +1142,9 @@ See a list of the Workfront object types for which you can use this module in [W
 >* When entering the ID of an object, you can begin typing the name of the object, then select it from the list. The module then enters the appropriate ID into the field.
 >* When entering the text for a custom field or a [!UICONTROL Note] object (Comment or reply), you can use HTML tags in the [!UICONTROL Note Text] field to create rich text, such as bold or italic text.
 
-+++
-
 -->
 
-+++ **[!UICONTROL Fazer upload de documento]**
+#### [!UICONTROL Fazer upload de documento]
 
 Esse módulo de ação faz o upload de um documento para um objeto do Workfront, por exemplo, projeto, tarefa ou problema. Esse módulo faz o upload do documento em partes, tornando o processo de upload mais suave para o Workfront.
 
@@ -1224,8 +1184,6 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
 </table>
 
 Veja uma lista dos tipos de objeto do Workfront para os quais você pode usar este módulo em [Tipos de objeto do Workfront disponíveis para cada módulo do Workfront](#workfront-object-types-available-for-each-workfront-module).
-
-+++
 
 <!--
 
@@ -1274,12 +1232,11 @@ See a list of the Workfront object types for which you can use this module in [W
 
 ### Pesquisas
 
-<!--
-* [Read Related Records](#read-related-records) 
-* [Search](#search)
--->
+* [Ler registros relacionados](#read-related-records)
+* [Pesquisar](#search)
+* [Pesquisar (Herdado)](#search-legacy)
 
-+++ **[!UICONTROL Ler registros relacionados]**
+#### [!UICONTROL Ler registros relacionados]
 
 Esse módulo de pesquisa lê registros que correspondem à consulta de pesquisa especificada em determinado objeto principal.
 
@@ -1314,9 +1271,7 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  </tbody> 
 </table>
 
-+++
-
-+++ **[!UICONTROL Pesquisa]**
+#### [!UICONTROL Pesquisa]
 
 Esse módulo de pesquisa procura registros em um objeto no Workfront que correspondam à consulta de pesquisa especificada.
 
@@ -1371,14 +1326,12 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
  </tbody> 
 </table>
 
-+++
-
-+++ **[!UICONTROL Pesquisa (legado)]**
+#### [!UICONTROL Pesquisa (legado)]
 
 >[!IMPORTANT]
 >
->Esse módulo foi substituído pelo módulo Search records. Recomendamos o uso desse módulo em novos cenários.
->Os cenários existentes que usam este módulo continuarão a funcionar conforme esperado. Este módulo será removido do seletor de módulos em maio de 2025.
+>Esse módulo foi substituído pelo módulo Pesquisar registros. Recomendamos o uso desse módulo em novos cenários.
+>Os cenários existentes que usam esse módulo continuarão funcionando conforme esperado. Esse módulo será removido do seletor de módulos em maio de 2025.
 
 Esse módulo de pesquisa procura registros em um objeto no Workfront que correspondam à consulta de pesquisa especificada.
 
@@ -1428,8 +1381,6 @@ Ao configurar esse módulo, os campos a seguir são exibidos.
   </tr> 
  </tbody> 
 </table>
-
-+++
 
 <!--
 not visible Jan 6, 2025
@@ -1488,13 +1439,11 @@ See a list of the Workfront object types for which you can use this module in [W
 
 ## Tipos de objeto do Workfront disponíveis para cada módulo do Workfront
 
-<!--
-[Object types available for each Workfront trigger module](#object-types-available-for-each-workfront-trigger-module)
-* [Object types available for each Workfront action module](#object-types-available-for-each-workfront-action-module) 
-* [Object types available for each Workfront search module](#object-types-available-for-each-workfront-search-module)
--->
+* [Tipos de objeto disponíveis para cada módulo de acionador do Workfront](#object-types-available-for-each-workfront-trigger-module)
+* [Tipos de objeto disponíveis para cada módulo de ação do Workfront](#object-types-available-for-each-workfront-action-module)
+* [Tipos de objeto disponíveis para cada módulo de pesquisa do Workfront](#object-types-available-for-each-workfront-search-module)
 
-+++**Tipos de objeto disponíveis para cada módulo de acionador do Workfront**
+### Tipos de objeto disponíveis para cada módulo de acionador do Workfront
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1758,9 +1707,7 @@ See a list of the Workfront object types for which you can use this module in [W
  </tbody> 
 </table>
 
-+++
-
-+++**Tipos de objeto disponíveis para cada módulo de ação do Workfront**
+### Tipos de objeto disponíveis para cada módulo de ação do Workfront
 
 >[!NOTE]
 >
@@ -2181,9 +2128,7 @@ See a list of the Workfront object types for which you can use this module in [W
  </tbody> 
 </table>
 
-+++
-
-+++**Tipos de objeto disponíveis para cada módulo de pesquisa do Workfront**
+### Tipos de objeto disponíveis para cada módulo de pesquisa do Workfront
 
 <table style="table-layout:auto"> 
  <col> 
@@ -2382,8 +2327,6 @@ See a list of the Workfront object types for which you can use this module in [W
 
 Recomendamos que você verifique novamente para garantir que isso funcione da maneira esperada.
 
-+++
-
 ## Filtros de assinatura de evento no Workfront > módulos [!UICONTROL Monitorar eventos]
 
 Os filtros nas assinaturas de evento permitem garantir que seus cenários sejam executados somente quando determinados parâmetros forem atendidos.
@@ -2401,7 +2344,7 @@ Os filtros nas assinaturas de evento permitem garantir que seus cenários sejam 
 >
 >   Para obter mais informações sobre a nova versão de assinatura do evento, consulte [Controle de versão de assinatura do evento](https://experienceleague.adobe.com/pt-br/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) na documentação do Workfront
 >
->   Para obter recursos sobre como preservar os cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservação de seus cenários do Fusion durante a atualização da V2 de assinaturas do evento](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=pt).
+>   Para obter recursos sobre como preservar os cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservação de seus cenários do Fusion durante a atualização da V2 de assinaturas do evento](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 O módulo [!UICONTROL Monitorar eventos] do Workfront aciona cenários com base em um webhook que cria uma assinatura de evento na API do Workfront. A assinatura do evento é um conjunto de dados que determina quais eventos são enviados para o webhook. Por exemplo, se você configurar um módulo [!UICONTROL Monitorar eventos] que esteja observando problemas, a assinatura do evento enviará somente eventos relacionados a problemas.
 
