@@ -5,15 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
 TQID: https://experienceleague.adobe.com/QHOFWDOT-18-c0b3wLXsRV5cjGVxlcyLhvZdkev3GFg
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: f0e185778e01b71a91837531a082e88485e97ca2
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: b7d7ae3c0a4ce47428ca993fd173f21994a58653
 workflow-type: tm+mt
-source-wordcount: 6075
+source-wordcount: 6097
 ht-degree: 35%
 
 ---
@@ -206,7 +203,8 @@ Você pode criar uma conexão com sua conta do Workfront Planning diretamente de
 
 >[!IMPORTANT]
 >
->Os módulos desta seção pertencem ao conector do Workfront Planning V2.Para módulos no conector do Workfront Planning V1, consulte [[!DNL Adobe Workfront Planning] Módulos da Versão 1 e seus campos](#adobe-workfront-planning-version-1-modules-and-their-fields).
+>Os módulos desta seção pertencem ao conector do Workfront Planning V2.
+>Para módulos no conector do Workfront Planning V1, consulte [[!DNL Adobe Workfront Planning] Módulos da Versão 1 e seus campos](#adobe-workfront-planning-version-1-modules-and-their-fields).
 
 Ao configurar módulos do Workfront Planning, o Workfront Fusion exibe os campos listados abaixo. Junto com esses campos, podem ser exibidos campos adicionais do Workfront, dependendo de fatores como nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
 
@@ -1467,6 +1465,11 @@ Este módulo de acionamento inicia um cenário quando um registro, tipo de regis
 >
 >Para obter mais informações sobre edição de webhooks, consulte [Editar webhooks](/help/workfront-fusion/manage-scenarios/edit-webhooks.md).
 
+>[!NOTE]
+>
+>Após 23 de agosto de 2026, o Fusion ativará a segurança baseada em authToken por padrão para todos os módulos Workfront Planning > Assistir evento, incluindo os existentes.
+
+
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -1531,7 +1534,8 @@ Para obter um exemplo de uso da lógica avançada neste módulo, consulte [Exemp
 
 >[!IMPORTANT]
 >
->Os módulos desta seção pertencem ao conector do Workfront Planning V1.Para módulos no conector do Workfront Planning V2, consulte [[!DNL Adobe Workfront Planning] Módulos da versão 2 e seus campos](#adobe-workfront-planning-version-2-modules-and-their-fields).
+>Os módulos desta seção pertencem ao conector do Workfront Planning V1.
+>Para módulos no conector do Workfront Planning V2, consulte [[!DNL Adobe Workfront Planning] Módulos da versão 2 e seus campos](#adobe-workfront-planning-version-2-modules-and-their-fields).
 
 Ao configurar módulos do Workfront Planning, o Workfront Fusion exibe os campos listados abaixo. Junto com esses campos, podem ser exibidos campos adicionais do Workfront, dependendo de fatores como nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
 
