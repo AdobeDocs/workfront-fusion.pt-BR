@@ -15,10 +15,10 @@ subfeature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 997d5af3ff9fe9354976552bbd30edf530da3beb
+source-git-commit: b7d7ae3c0a4ce47428ca993fd173f21994a58653
 workflow-type: tm+mt
-source-wordcount: 7626
-ht-degree: 94%
+source-wordcount: 7689
+ht-degree: 93%
 
 ---
 
@@ -277,6 +277,13 @@ O módulo retorna quaisquer campos padrão associados ao registro, juntamente co
       <td>
        <p>Escolha se deseja que o cenário monitore [!UICONTROL New Records Only], [!UICONTROL Updated Records Only], [!UICONTROL New and Updated Records] ou [!DNL Deleted Records Only].</p>
        <p><b>OBSERVAÇÃO</b>: se você escolher [!UICONTROL New and Updated Records], a criação do webhook criará duas assinaturas de evento (para o mesmo endereço do webhook).</p>
+       </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Habilitar ganchos seguros]</td> 
+      <td>
+       <p>Escolha se você deseja ativar a segurança baseada em authToken para este webhook.</p><p>
+       <b>OBSERVAÇÃO</b>: após 23 de agosto de 2026, o Fusion habilitará a segurança baseada em authToken por padrão para todos os módulos Workfront &gt; Assistir Evento, incluindo os existentes. Se um webhooks específico falhar ou você precisar desativá-lo por motivos de compatibilidade, é possível desativar a opção Ativar webhooks protegidos antes de 23 de agosto de 2026.</p>
        </td> 
      </tr> 
     </tbody> 
