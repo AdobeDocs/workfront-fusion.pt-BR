@@ -3,12 +3,11 @@ title: Acionar novamente a execução de um cenário específico
 description: É possível acionar novamente uma execução de cenário específica para processar os dados usando um blueprint de cenário atualizado ou para exibir seu fluxo de dados.
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 5859bbef4f45fd4741d89ba1795df8a67fa5beaa
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: a078120f0c16d7c2f2084c95a6129844489cfdb6
 workflow-type: tm+mt
-source-wordcount: 523
-ht-degree: 18%
+source-wordcount: 561
+ht-degree: 17%
 
 ---
 
@@ -58,6 +57,10 @@ Para obter mais detalhes sobre as informações contidas nesta tabela, consulte 
 +++
 
 ## Acionar novamente uma execução
+
+>[!NOTE]
+>
+>Somente até 256 KB de dados são retidos no histórico de execução. Como resultado, as execuções com dados de entrada excedendo 256 KB não podem ser acionadas novamente. Qualquer tentativa de reacionar essa execução falha com uma mensagem de erro.
 
 Você pode reacionar a execução de um cenário a partir do Diagrama do cenário, da área Histórico do cenário ou da página de execução do cenário específico.
 
