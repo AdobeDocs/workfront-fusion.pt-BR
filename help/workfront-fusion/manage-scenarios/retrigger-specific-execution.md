@@ -3,12 +3,11 @@ title: Acionar novamente a execução de um cenário específico
 description: É possível acionar novamente uma execução de cenário específica para processar os dados usando um blueprint de cenário atualizado ou para exibir seu fluxo de dados.
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: a078120f0c16d7c2f2084c95a6129844489cfdb6
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: a7b9f754dfc987330e3a446830f37b004f7b2e4e
 workflow-type: tm+mt
-source-wordcount: 561
-ht-degree: 17%
+source-wordcount: 599
+ht-degree: 16%
 
 ---
 
@@ -27,6 +26,12 @@ Ao usar cenários encadeados, o reacionamento também pode ser aplicado a um cen
 Para mais informações sobre webhooks, consulte [Acionadores instantâneos (webhooks)](/help/workfront-fusion/references/modules/webhooks-reference.md).
 
 Para obter mais informações sobre cenários de encadeamento, consulte [Encadear vários cenários juntos](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md).
+
+
+
+>[!NOTE]
+>
+>Somente até 256 KB de dados são retidos no histórico de execução. Como resultado, as execuções com dados de entrada excedendo 256 KB não podem ser acionadas novamente. Qualquer tentativa de reacionar essa execução falha com uma mensagem de erro.
 
 ## Requisitos de acesso
 
