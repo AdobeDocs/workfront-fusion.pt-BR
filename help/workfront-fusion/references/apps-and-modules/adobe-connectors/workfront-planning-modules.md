@@ -11,10 +11,10 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: b7d7ae3c0a4ce47428ca993fd173f21994a58653
+source-git-commit: 6a90d388cc362b24cc9313a000aa5170f015cbf8
 workflow-type: tm+mt
-source-wordcount: 6097
-ht-degree: 35%
+source-wordcount: 6620
+ht-degree: 33%
 
 ---
 
@@ -642,17 +642,61 @@ Este módulo atualiza um tipo de registro.
 
 ### Registros (V2)
 
-* [Criar um registro](#create-a-record-v2)
+* [Criar um registro (V2)](#create-a-record-v2)
+* [Criar um registro (herdado)](#create-a-record-legacy)
 * [Excluir um registro](#delete-a-record-v2)
 * [Obter um registro](#get-a-record-v2)
 * [Obter registros por tipo de registro](#get-records-by-record-type-v2)
 * [Mover registros](#move-records-v2)
-* [Pesquisar registros](#search-records-v2)
-* [Atualizar um registro](#update-a-record-v2)
+* [Pesquisar registros (V2)](#search-records-v2)
+* [Pesquisar registros (Herdados)](#search-records-legacy)
+* [Atualizar um registro (V2)](#update-a-record-v2)
+* [Atualizar um registro (herdado)](#update-a-record-legacy)
 
 #### Criar um registro (V2)
 
+Essa ação cria um único registro no Workfront Planning. Essa versão do módulo permite selecionar os campos para os quais deseja fornecer valores, o que cria uma carga menor e mais eficiente ao criar o registro.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Para obter instruções sobre como criar uma conexão com o [!DNL Adobe Workfront Planning], consulte <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Criar uma conexão com o [!DNL Adobe Workfront Planning]</a> neste artigo.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Espaço de trabalho]</p>
+      </td>
+      <td>Selecione o espaço de trabalho no qual deseja criar um registro.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type]</p>
+      </td>
+      <td>Selecione o tipo de registro que deseja criar.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Selecionar campos a serem mapeados</p>
+      </td>
+      <td>Selecione os campos para os quais deseja fornecer valores ao criar o módulo.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Outros campos</p>
+      </td>
+      <td>Insira os valores que você deseja que o novo registro tenha. Esses campos são baseados no tipo de registro e nos campos selecionados e são exclusivos de sua organização do Workfront Planning.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Criar um registro (herdado)
+
 Essa ação cria um único registro no Workfront Planning.
+
+Recomendamos usar o novo módulo Criar um registro, que permite selecionar os campos para os quais deseja fornecer valores. Selecionar campos cria uma carga menor e mais eficiente ao criar o registro.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -799,7 +843,48 @@ Este módulo reorganiza um ou mais registros em um tipo de registro especificand
 
 #### Pesquisar registros (V2)
 
+Retornar registros com base nos critérios especificados.Essa versão do módulo permite selecionar os campos para os quais deseja fornecer valores, o que cria uma carga menor e mais eficiente ao pesquisar os registros.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Para obter instruções sobre como criar uma conexão com o [!DNL Adobe Workfront Planning], consulte <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Criar uma conexão com o [!DNL Adobe Workfront Planning]</a> neste artigo.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Espaço de trabalho]</p>
+      </td>
+      <td>Selecione o espaço de trabalho que contém os registros que você deseja recuperar.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type]</p>
+      </td>
+      <td>Selecione o tipo de registro que contém os registros que você deseja recuperar.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Selecionar campos a serem mapeados</p>
+      </td>
+      <td>Selecione os campos para os quais deseja atualizar valores.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Outros campos]</p>
+      </td>
+      <td>Para cada campo que deseja filtrar, insira o operador e o valor desse campo. Esses campos são baseados no tipo de registro e nos campos selecionados e são exclusivos de sua organização do Workfront Planning.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Pesquisar registros (Herdados)
+
 Retornar registros com base nos critérios especificados
+
+Recomendamos usar o novo módulo Atualizar um registro, que permite selecionar os campos para os quais deseja fornecer valores. Selecionar campos cria uma carga menor e mais eficiente ao atualizar o registro.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -832,8 +917,56 @@ Retornar registros com base nos critérios especificados
 
 #### Atualizar um registro (V2)
 
+Este módulo atualiza o registro especificado. Essa versão do módulo permite selecionar os campos para os quais deseja fornecer valores, o que cria uma carga menor e mais eficiente ao atualizar o registro.
+
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Para obter instruções sobre como criar uma conexão com o [!DNL Adobe Workfront Planning], consulte <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Criar uma conexão com o [!DNL Adobe Workfront Planning]</a> neste artigo.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Espaço de trabalho]</p>
+      </td>
+      <td>Selecione o espaço de trabalho que contém o registro que você deseja atualizar.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL ID de tipo de registro]</p>
+      </td>
+      <td>Selecione o tipo de registro que deseja atualizar.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL ID de Registro]</p>
+      </td>
+      <td>Insira ou mapeie a ID do registro que você deseja atualizar.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Selecionar campos a serem mapeados</p>
+      </td>
+      <td>Selecione os campos para os quais deseja atualizar valores.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Outros campos]</p>
+      </td>
+      <td>Insira valores para outros campos. Os campos disponíveis dependem do registro e dos campos selecionados.</td> 
+    </tr>
+  </tbody>
+</table>
+
+
+#### Atualizar um registro (herdado)
+
 Este módulo atualiza o registro especificado.
 
+Recomendamos usar o novo módulo Atualizar um registro, que permite selecionar os campos para os quais deseja fornecer valores. Selecionar campos cria uma carga menor e mais eficiente ao atualizar o registro.
 
 
 <table style="table-layout:auto"> 
@@ -870,7 +1003,6 @@ Este módulo atualiza o registro especificado.
     </tr>
   </tbody>
 </table>
-
 
 ### Campos (V2)
 
