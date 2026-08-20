@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
 TQID: https://experienceleague.adobe.com/rXKL5kNnj33GM1Bq89wBdFUlrh4CNh59j3CG-DaZ6Kc
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
 workflow-type: tm+mt
 source-wordcount: 2240
@@ -253,7 +255,7 @@ Este módulo de ação cria uma nova pasta no local especificado.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Permissions]</p> </td> 
-   <td> <p>Defina as permissões de pasta desejadas. Use parâmetros chmod. Por exemplo, <code>777</code> ou <code>-rwxrwxrwx</code>.</p> <p>Essas permissões devem corresponder ao padrão <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Para obter mais informações sobre chmod, consulte a <a href="https://ss64.com/bash/chmod.html">documentação de chmod</a>.</p> </td> 
+   <td> <p>Defina as permissões de pasta desejadas. Use parâmetros chmod. Por exemplo, <code>777</code> ou <code>-rwxrwxrwx</code>.</p> <p>Essas permissões devem corresponder ao padrão <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>Para obter mais informações sobre chmod, consulte a <a href="https://ss64.com/bash/chmod.html">documentação de chmod</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -461,7 +463,7 @@ Permite alterar as permissões do arquivo.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Permissions]</p> </td> 
-   <td> <p>Defina as permissões de arquivo desejadas. Use parâmetros chmod. Por exemplo, <code>777</code> ou <code>-rwxrwxrwx</code>.</p> <p>Essas permissões devem corresponder ao padrão <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Para obter mais informações sobre chmod, consulte a <a href="https://ss64.com/bash/chmod.html">documentação de chmod</a>.</p> </td> 
+   <td> <p>Defina as permissões de arquivo desejadas. Use parâmetros chmod. Por exemplo, <code>777</code> ou <code>-rwxrwxrwx</code>.</p> <p>Essas permissões devem corresponder ao padrão <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>Para obter mais informações sobre chmod, consulte a <a href="https://ss64.com/bash/chmod.html">documentação de chmod</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -488,7 +490,7 @@ Esse módulo permite fazer upload de um arquivo para o servidor SFTP.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Permissions]</p> </td> 
-   <td> <p>Defina as permissões desejadas para o arquivo ou pasta. Use parâmetros chmod. Por exemplo, <code>777</code> ou <code>-rwxrwxrwx</code>.</p> <p>Essas permissões devem corresponder ao padrão <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Para obter mais informações sobre chmod, consulte a <a href="https://ss64.com/bash/chmod.html">documentação de chmod</a>.</p> </td> 
+   <td> <p>Defina as permissões desejadas para o arquivo ou pasta. Use parâmetros chmod. Por exemplo, <code>777</code> ou <code>-rwxrwxrwx</code>.</p> <p>Essas permissões devem corresponder ao padrão <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>Para obter mais informações sobre chmod, consulte a <a href="https://ss64.com/bash/chmod.html">documentação de chmod</a>.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Tamanho do buffer (B)]</p> </td> 
