@@ -3,11 +3,10 @@ title: Módulos MCP do Adobe Workfront
 description: Com o módulo MCP do Adobe Workfront, você pode enviar um prompt em inglês simples para o servidor MCP do Adobe Workfront e permitir que um modelo de IA execute a solicitação.
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 71573ee33f852111d4541ee61567a51b137c7df5
 workflow-type: tm+mt
-source-wordcount: 841
+source-wordcount: 871
 ht-degree: 17%
 
 ---
@@ -19,6 +18,8 @@ O conector MCP do Adobe Workfront é uma integração dedicada do Fusion para o 
 Por exemplo, você pode entrar no prompt &quot;Encontrar todos os meus projetos ativos que estão atrasados no cronograma e resumir seu status&quot;, e o módulo retorna uma resposta sintetizada, em vez de ter que encadear vários módulos Get e Filter.
 
 Você pode restringir quais ações do Workfront a IA pode realizar, de modo que mesmo um cenário autônomo possa garantir que nenhuma ação destrutiva inesperada seja executada.
+
+Por padrão, esse módulo usa o Adobe Managed AI, que usa o modelo `claude-sonnet-5`. Você pode configurar o módulo para usar um LLM diferente, usando uma chave e outras credenciais fornecidas.
 
 Para obter mais informações sobre o MCP em cenários do Fusion, consulte [Adicionar um prompt de IA ao seu cenário](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md).
 
@@ -133,7 +134,7 @@ Esse módulo de ação processa um prompt em inglês simples no servidor MCP do 
   </tr>  </tbody> 
 </table>
 
-Para obter uma lista das ferramentas que você pode selecionar para os campos Ferramentas somente leitura e Ferramentas de gravação/exclusão, consulte [Ferramentas do servidor MCP do Adobe Workfront](https://experienceleague.adobe.com/pt-br/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools) na documentação do Workfront.
+Para obter uma lista das ferramentas que você pode selecionar para os campos Ferramentas somente leitura e Ferramentas de gravação/exclusão, consulte [Ferramentas do servidor MCP do Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools) na documentação do Workfront.
 
 O módulo retorna as seguintes informações, que você pode mapear nos módulos subsequentes no cenário:
 
