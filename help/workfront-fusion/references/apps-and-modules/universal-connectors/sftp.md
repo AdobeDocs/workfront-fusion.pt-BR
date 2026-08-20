@@ -9,10 +9,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
 workflow-type: tm+mt
 source-wordcount: 2240
-ht-degree: 14%
+ht-degree: 15%
 
 ---
 
@@ -80,7 +80,7 @@ Para conectar sua conta SFTP ao Workfront Fusion, é necessário criar uma conex
   </tr>
   <tr>
     <td role="rowheader">[!UICONTROL Type]</td>
-    <td>Selecione se você deseja se conectar a uma conta de serviço ou a uma conta pessoal.</td>
+    <td>Selecione se você está se conectando a uma conta de serviço ou a uma conta pessoal.</td>
   </tr>
   <tr>
    <td role="rowheader"> <p>[!UICONTROL Host]</p> </td> 
@@ -255,7 +255,7 @@ Este módulo de ação cria uma nova pasta no local especificado.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Permissions]</p> </td> 
-   <td> <p>Defina as permissões de pasta desejadas. Use parâmetros chmod. Por exemplo, <code>777</code> ou <code>-rwxrwxrwx</code>.</p> <p>Essas permissões devem corresponder ao padrão <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Para obter mais informações sobre chmod, consulte a <a href="https://ss64.com/bash/chmod.html">documentação de chmod</a>.</p> </td> 
+   <td> <p>Defina as permissões de pasta desejadas. Use parâmetros chmod. Por exemplo, <code>777</code> ou <code>-rwxrwxrwx</code>.</p> <p>Essas permissões devem corresponder ao padrão <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>Para obter mais informações sobre chmod, consulte a <a href="https://ss64.com/bash/chmod.html">documentação de chmod</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -463,7 +463,7 @@ Permite alterar as permissões do arquivo.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Permissions]</p> </td> 
-   <td> <p>Defina as permissões de arquivo desejadas. Use parâmetros chmod. Por exemplo, <code>777</code> ou <code>-rwxrwxrwx</code>.</p> <p>Essas permissões devem corresponder ao padrão <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Para obter mais informações sobre chmod, consulte a <a href="https://ss64.com/bash/chmod.html">documentação de chmod</a>.</p> </td> 
+   <td> <p>Defina as permissões de arquivo desejadas. Use parâmetros chmod. Por exemplo, <code>777</code> ou <code>-rwxrwxrwx</code>.</p> <p>Essas permissões devem corresponder ao padrão <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>Para obter mais informações sobre chmod, consulte a <a href="https://ss64.com/bash/chmod.html">documentação de chmod</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -490,7 +490,7 @@ Esse módulo permite fazer upload de um arquivo para o servidor SFTP.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Permissions]</p> </td> 
-   <td> <p>Defina as permissões desejadas para o arquivo ou pasta. Use parâmetros chmod. Por exemplo, <code>777</code> ou <code>-rwxrwxrwx</code>.</p> <p>Essas permissões devem corresponder ao padrão <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Para obter mais informações sobre chmod, consulte a <a href="https://ss64.com/bash/chmod.html">documentação de chmod</a>.</p> </td> 
+   <td> <p>Defina as permissões desejadas para o arquivo ou pasta. Use parâmetros chmod. Por exemplo, <code>777</code> ou <code>-rwxrwxrwx</code>.</p> <p>Essas permissões devem corresponder ao padrão <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>Para obter mais informações sobre chmod, consulte a <a href="https://ss64.com/bash/chmod.html">documentação de chmod</a>.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Tamanho do buffer (B)]</p> </td> 

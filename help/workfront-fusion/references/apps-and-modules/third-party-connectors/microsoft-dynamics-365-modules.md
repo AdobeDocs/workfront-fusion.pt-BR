@@ -12,7 +12,7 @@ feature_v2:
 topic_v2:
   - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
 workflow-type: tm+mt
 source-wordcount: 1886
 ht-degree: 44%
@@ -108,7 +108,7 @@ Você pode criar uma conexão com sua conta do [!DNL Microsoft Dynamics 365] dir
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Type]</td>
-          <td>Selecione se você deseja se conectar a uma conta de serviço ou a uma conta pessoal.</td>
+          <td>Selecione se você está se conectando a uma conta de serviço ou a uma conta pessoal.</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client ID]<p>(Opcional)</p></td>

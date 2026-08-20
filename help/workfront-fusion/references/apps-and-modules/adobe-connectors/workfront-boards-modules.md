@@ -11,10 +11,10 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
 workflow-type: tm+mt
 source-wordcount: 2906
-ht-degree: 15%
+ht-degree: 16%
 
 ---
 
@@ -108,7 +108,7 @@ Para criar uma conexão com Workfront Boards:
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Type]</td>
-          <td>Selecione se você deseja se conectar a uma conta de serviço ou a uma conta pessoal.</td>
+          <td>Selecione se você está se conectando a uma conta de serviço ou a uma conta pessoal.</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client ID]<p>(Opcional)</p></td>
@@ -602,7 +602,7 @@ Esse módulo de ação faz uma chamada personalizada para a API de placas do Wor
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Adicione o conteúdo do corpo para a chamada de API na forma de um Graphql incorporado JSON </p> <p>Exemplo:</p><p>Este exemplo atualiza um nome de coluna. Você pode incluir o <code>boardId</code> e <code>columnId</code> como GUIDs codificados ou mapeados de um módulo anterior.<p><pre>{<br> "query": "mutation { updateColumn(boardId: \"\", columnId: \"\", updateColumnInput: { name: \"\" }) { id name }}"<br>}</pre><p>Observação:  <p>Ao usar instruções condicionais, como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
+   <td> <p>Adicione o conteúdo do corpo para a chamada de API na forma de um Graphql incorporado JSON </p> <p>Exemplo:</p><p>Este exemplo atualiza um nome de coluna. Você pode incluir o <code>boardId</code> e <code>columnId</code> como GUIDs codificados ou mapeados de um módulo anterior.<p><pre>{<br> "query": "mutation { updateColumn(boardId: \"\", columnId: \"\", updateColumnInput: { name: \"\" }) { id name }&#x200B;}"<br>}</pre><p>Observação:  <p>Ao usar instruções condicionais, como <code>if</code> em seu JSON, coloque as aspas fora da instrução condicional.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 

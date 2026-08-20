@@ -1,10 +1,10 @@
 ---
 name: fusion-release-notes
 description: Crie uma nova página de nota de versão semanal do Workfront Fusion e conecte-a à página de visão geral da atividade de lançamento e ao índice. Use quando o usuário quiser gravar, adicionar ou rascunhar uma nova nota de versão do Fusion ou página de lançamento semanal, ou solicitar o documento de novos recursos do Fusion para uma versão. Não use para notas de versão do Workfront (Quicksilver) em anúncios de produtos/versões de produtos — use o formatador de notas de versão para eles.
-source-git-commit: 59a8d8ee83906bc16fc627bd348accc4e588cf9b
+source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 1%
+source-wordcount: '1042'
+ht-degree: 0%
 
 ---
 
@@ -30,6 +30,7 @@ Solicite ao usuário (se ainda não tiver sido fornecido) a lista de recursos/al
 - Uma descrição simples do que mudou e por que é importante
 - Os artigos de ajuda aos quais ele se vincula (verifique se o caminho existe — não adivinhe)
 - Se requer ação de usuário/administrador ou se é uma descontinuação (precisa de uma chamada `>[!IMPORTANT]`)
+- **Seja uma nova inicialização de conector** (um conector/aplicativo totalmente novo está se tornando disponível, não apenas novos módulos adicionados a um conector existente). Em caso afirmativo, isso acionará a **Etapa 7**. Não ignore a pergunta sobre um redirecionamento apenas porque a nota de versão propriamente dita foi concluída.
 
 ## Etapa 2: determine o nome e a data do arquivo
 
@@ -134,7 +135,23 @@ Editar `help/workfront-fusion/TOC.md`:
 - Várias entradas do índice inicial de 2026 são aninhadas sob o cabeçalho `Fusion releases - 2025` por engano, mesmo que as próprias páginas sejam versões de 2026. Ao adicionar uma nova entrada, sempre verifique se ela aparece sob o título correspondente a **seu próprio ano**, não onde a entrada anterior estiver.
 - Alguns títulos de página/H1 mais antigos omitem a vírgula antes do ano (`July 13 2026` em vez de `July 13, 2026`). Sempre use a vírgula em novas páginas.
 
-## Etapa 6: lista de verificação final
+## Etapa 7: Novas inicializações do conector — pergunte sobre um redirecionamento (não ignore)
+
+**Esta etapa se aplica sempre que a Etapa 1 identificar uma nova inicialização de conector.** É fácil considerar a nota de versão &quot;concluída&quot; após a Etapa 5 e esquecer isso: trate um novo recurso de conector como incompleto até que essa etapa tenha sido abordada de uma maneira ou de outra.
+
+Pergunte ao usuário: *&quot;Deseja configurar um redirecionamento para o novo artigo de conector?&quot;*
+
+- Se **não**, observe isso e siga em frente — nada mais a fazer.
+- Se **sim**, colete:
+  - O **caminho de origem** (deve começar com `/en`, sem espaços)
+  - O **destino** — um caminho relativo começando com `/en` ou uma URL `https` completa (sem espaços)
+- Adicione a linha ao repositório irmão `Adobe-Enterprise-Docs/redirects`, em `redirects/`, um arquivo por ambiente (`redirects-dev.csv`, `redirects-stage.csv`, `redirects-prod.csv`).
+- Regras de linha (do README desse repositório):
+  - Nenhum par `source` duplicado ou `source`/`destination` duplicado.
+  - O redirecionamento não deve causar um loop de redirecionamento.
+- **Esta habilidade só adiciona a linha CSV depois que o usuário a confirma.** Elevar a PR no repositório `redirects` é uma etapa separada que essa habilidade não faz — informe ao usuário que uma PR ainda precisa ser aberta e mesclada lá antes que o redirecionamento entre em vigor (~5 minutos após a mesclagem para redirecionamentos 1:1).
+
+## Etapa 8: lista de verificação final
 
 - [ ] Arquivo criado no caminho correto sem zeros à esquerda na data
 - [ O Frontmatter ] usa o `hidefromtoc: true`, mas não inventou o `exl-id`/`TQID`
@@ -144,6 +161,7 @@ Editar `help/workfront-fusion/TOC.md`:
 - [ ] Nova página adicionada como a entrada mais recente em `fusion-release-activity.md`, no ano/mês correto
 - [ ] Nova página adicionada como a entrada mais recente em `TOC.md`, sob o cabeçalho de ano correto
 - [ ] Novos cabeçalhos de ano/mês criados, se necessário, com o ano anterior recolhido em `fusion-release-activity.md`
+- [ ] **Se algum recurso era uma nova inicialização de conector: perguntado sobre um redirecionamento (Etapa 7), configure-o ou recuse-o explicitamente**
 
 ## Recursos adicionais
 
