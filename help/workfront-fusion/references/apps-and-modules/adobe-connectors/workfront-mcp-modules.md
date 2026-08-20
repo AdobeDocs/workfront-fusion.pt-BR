@@ -133,7 +133,7 @@ Esse módulo de ação processa um prompt em inglês simples no servidor MCP do 
   </tr>  </tbody> 
 </table>
 
-Para obter uma lista das ferramentas que você pode selecionar para os campos Ferramentas somente leitura e Ferramentas de gravação/exclusão, consulte [Ferramentas do servidor MCP do Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools) na documentação do Workfront.
+Para obter uma lista das ferramentas que você pode selecionar para os campos Ferramentas somente leitura e Ferramentas de gravação/exclusão, consulte [Ferramentas do servidor MCP do Adobe Workfront](https://experienceleague.adobe.com/pt-br/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools) na documentação do Workfront.
 
 O módulo retorna as seguintes informações, que você pode mapear nos módulos subsequentes no cenário:
 
