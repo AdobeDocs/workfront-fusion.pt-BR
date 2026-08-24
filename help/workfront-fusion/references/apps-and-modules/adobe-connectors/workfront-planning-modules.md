@@ -11,9 +11,9 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 6a90d388cc362b24cc9313a000aa5170f015cbf8
+source-git-commit: 39436d53fd350158b8ee95061b7b9b49ae8f6d63
 workflow-type: tm+mt
-source-wordcount: 6620
+source-wordcount: 6660
 ht-degree: 33%
 
 ---
@@ -1600,11 +1600,6 @@ Este módulo de acionamento inicia um cenário quando um registro, tipo de regis
 >
 >Para obter mais informações sobre edição de webhooks, consulte [Editar webhooks](/help/workfront-fusion/manage-scenarios/edit-webhooks.md).
 
->[!NOTE]
->
->Após 23 de agosto de 2026, o Fusion ativará a segurança baseada em authToken por padrão para todos os módulos Workfront Planning > Assistir evento, incluindo os existentes.
-
-
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -1654,6 +1649,13 @@ Este módulo de acionamento inicia um cenário quando um registro, tipo de regis
         <p>[!UICONTROL Excluir atualizações feitas por esta conexão]</p>
       </td>
       <td>Habilite esta opção para impedir que o cenário seja acionado quando uma alteração for feita pela conexão usada por este módulo. Isso impede que outra instância do cenário seja acionada se esse cenário executar uma ação de acionamento.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Habilitar ganchos seguros]</td>
+      <td>
+       <p>Escolha se você deseja habilitar a segurança baseada em authToken para este webhook.</p><p>
+       <b>OBSERVAÇÃO</b>: a partir de 23 de agosto de 2026, o Fusion habilita a segurança baseada em authToken por padrão para todos os módulos Workfront Planning &gt; Assistir Evento, incluindo os existentes. Se um webhook específico falhar ou você precisar desabilitá-lo por motivos de compatibilidade, desative a opção Habilitar ganchos protegidos.</p>
+      </td>
     </tr>
   </tbody>
 </table>
