@@ -5,16 +5,13 @@ author: Becky
 feature: Workfront Fusion
 exl-id: c0919a9a-ce99-485c-9627-45353741f6d8
 TQID: https://experienceleague.adobe.com/RFI6MFgF-C1Cnn0bvjOLVf3qahyRblEp4dtypNrxqzE
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 0b7298ce53bf59695ce52cb46cb8d25b6ede5fc8
 workflow-type: tm+mt
-source-wordcount: 1899
-ht-degree: 32%
+source-wordcount: 2646
+ht-degree: 23%
 
 ---
 
@@ -89,6 +86,11 @@ O conector DevOps do Azure usa o seguinte:
 
 ## Conectar o [!DNL Azure DevOps] ao Workfront Fusion {#connect-azure-devops-to-workfront-fusion}
 
+* [Conectar o Azure DevOps ao Workfront Fusion usando o EntraApp](#connect-azure-devops-to-workfront-fusion-using-entraapp)
+* [Conectar o Azure DevOps ao Workfront Fusion usando uma entidade de serviço](#connect-azure-devops-to-workfront-fusion-using-a-service-principal)
+
+### Conectar o Azure DevOps ao Workfront Fusion usando o EntraApp
+
 1. Adicione um módulo [!DNL Azure DevOps] ao seu cenário.
 1. Clique em **[!UICONTROL Adicionar]** ao lado do campo [!UICONTROL Conexão].
 1. No campo [!UICONTROL Tipo de Conexão], selecione o tipo de conexão que deseja usar.
@@ -124,6 +126,112 @@ O conector DevOps do Azure usa o seguinte:
 
 1. Para inserir uma ID de Aplicativo DevOps da Azure ou um Segredo do Cliente, clique em <b>Mostrar configurações avançadas</b> e insira-as nos campos abertos.
 1. Clique em **[!UICONTROL Continuar]** para concluir a configuração da conexão e continuar criando seu cenário.
+
+### Conectar o Azure DevOps ao Workfront Fusion usando uma entidade de serviço
+
+Você pode criar uma conexão que use uma entidade de serviço (uma conexão da API do aplicativo) em vez de uma conta pessoal. Isso é útil quando você deseja que a conexão seja executada como uma identidade de aplicativo ou serviço, em vez de uma pessoa específica. Isso pode ser útil para que a integração não seja interrompida se, por exemplo, essa pessoa sair da empresa ou alterar a senha.
+
+Esse tipo de conexão está disponível para todos os módulos DevOps do Azure.
+
+>[!NOTE]
+>
+>A autenticação da entidade de serviço não dá suporte a todos os recursos DevOps do Azure. Um pequeno número de ações de nível administrativo, como o gerenciamento de licenças de usuário, ainda requer uma conexão com a conta pessoal. Use a autenticação da entidade de serviço se você só precisar dela para itens de trabalho, quadros, repositórios ou pipelines.
+
+* [Pré-requisitos para conectar o Azure DevOps ao Workfront Fusion usando uma entidade de serviço](#prerequisites-to-connecting-azure-devops-to-workfront-fusion-using-a-service-principal)
+* [Criar o registro do aplicativo na Microsoft Entra ID](#create-the-app-registration-in-microsoft-entra-id)
+* [Criar um segredo do cliente](#create-a-client-secret)
+* [Coletar detalhes da conexão](#collect-your-connection-details)
+* [Adicionar a entidade de serviço à sua organização de DevOps da Azure](#add-the-service-principal-to-your-azure-devops-organization)
+* [Criar a conexão](#create-the-connection)
+
+#### Pré-requisitos para conectar o Azure DevOps ao Workfront Fusion usando uma entidade de serviço
+
+Para criar essa conexão, você precisa do seguinte:
+
+* Acesso de **Administrador Global** ou **Administrador de Aplicativos** na Microsoft Entra ID para registrar o aplicativo. Se você não tiver esse acesso, peça a alguém da sua equipe de TI ou de identidade para concluir essa etapa para você.
+* Acesso de **Administrador da Coleção de Projetos** na sua organização de DevOps da Azure, para adicionar a entidade de serviço como membro. Geralmente, essa é uma pessoa diferente da que gerencia a Microsoft Entra ID.
+* O nome da sua organização DevOps da Azure. Você pode encontrar isso na URL do Azure DevOps: `dev.azure.com/<your organization name>`.
+
+#### Criar o registro do aplicativo na Microsoft Entra ID
+
+1. Entre no centro de administração [!DNL Microsoft Entra].
+1. Ir para **[!UICONTROL Registros de aplicativo]** > **[!UICONTROL Novo registro]**.
+1. Dê ao aplicativo um nome claro e reconhecível. Por exemplo, `Workfront Fusion Azure DevOps Integration`.
+1. Deixe **[!UICONTROL URI de redirecionamento]** em branco. Essa conexão não envolve fazer logon por meio de um navegador.
+1. Selecione **[!UICONTROL Registrar]**.
+1. Continue em [Criar um segredo de cliente](#create-a-client-secret).
+
+#### Criar um segredo do cliente
+
+1. No novo registro do aplicativo, acesse **[!UICONTROL Certificados e segredos]**.
+1. Selecione **[!UICONTROL Novo segredo do cliente]**, adicione uma descrição e escolha um período de expiração.
+1. Selecione **[!UICONTROL Adicionar]**.
+1. Copie o **[!UICONTROL Valor]** do segredo imediatamente. É exibido apenas uma vez. Se você navegar para fora antes de copiá-lo, deverá criar um novo.
+1. Prossiga para [Coletar detalhes da conexão](#collect-your-connection-details).
+
+#### Coletar detalhes da conexão
+
+1. Na página **[!UICONTROL Visão geral]** do registro do aplicativo, observe os seguintes valores. Você os insere ao criar a conexão no módulo.
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL ID de Locatário]</td>
+      <td>Na página Visão Geral, rotulada <b>ID do Diretório (locatário)</b>.</td>
+      </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Client ID]</td>
+      <td>Na página Visão Geral, rotulada <b>ID do Aplicativo (cliente)</b>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Client Secret]</td>
+      <td>O valor copiado em <a href="#create-a-client-secret" class="MCXref xref">Criar um segredo de cliente</a>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Organização]</td>
+      <td>O nome de sua organização Azure DevOps. Por exemplo, se a URL for <code>dev.azure.com/yourorg</code>, digite <code>yourorg</code>.</td>
+     </tr>
+    </tbody>
+   </table>
+
+   >[!NOTE]
+   >
+   >Você pode ignorar a área **Permissões de API** do registro de aplicativo. Se você adicionar Azure DevOps lá, somente **Permissões delegadas** estarão disponíveis. **Permissões de aplicativo** aparecem esmaecidas. Isso é esperado, pois o Azure DevOps não oferece suporte à concessão de acesso dessa maneira. Em vez disso, o acesso é concedido diretamente no Azure DevOps, na próxima parte.
+
+1. Continue em [Adicionar a entidade de serviço à sua organização de DevOps da Azure](#add-the-service-principal-to-your-azure-devops-organization).
+
+#### Adicionar a entidade de serviço à sua organização de DevOps da Azure
+
+Registrar o aplicativo na Microsoft Entra ID cria apenas sua identidade. Ele ainda não dá ao aplicativo acesso aos dados de DevOps do Azure. Esse procedimento concede esse acesso.
+
+1. Faça logon na sua organização Azure DevOps, em `dev.azure.com/<your organization name>`.
+1. Selecione **[!UICONTROL Configurações da organização]** no canto inferior esquerdo e selecione **[!UICONTROL Usuários]**.
+1. Selecione **[!UICONTROL Adicionar usuários]**.
+1. Na caixa de pesquisa, pesquise pelo nome de exibição do aplicativo, que é o nome que você deu a ele ao registrar o aplicativo. Não pesquise pela ID do cliente.
+1. Selecione um nível de acesso:
+
+   * **[!UICONTROL Básico]** geralmente é suficiente para ler e gravar itens de trabalho, quadros e repositórios.
+   * Se o fluxo de trabalho precisar procurar processos disponíveis, como modelos Agile, Scrum ou personalizados, como parte da configuração, adicione a entidade de serviço ao grupo **[!UICONTROL Administradores da Coleção de Projetos]**. Esse é um nível mais amplo de acesso, portanto, conceda-o somente se você precisar desse recurso.
+
+1. Atribua o principal de serviço ao projeto ou projetos específicos de que ele precisa, seguindo as práticas de acesso comuns da sua organização.
+1. Selecione **[!UICONTROL Adicionar]**.
+1. Continue em [Criar a conexão](#create-the-connection).
+
+#### Criar a conexão
+
+1. Na tela de configuração de conexão do módulo, selecione o tipo de conexão **[!UICONTROL Entidade de Serviço]**.
+1. Insira o seguinte:
+
+   * [!UICONTROL ID do inquilino]
+   * [!UICONTROL ID do cliente]
+   * [!UICONTROL Segredo do cliente]
+   * [!UICONTROL Organização]
+
+1. Salve a conexão.
+
+   Se tudo estiver configurado corretamente, a conexão será validada com êxito.
 
 ## [!UICONTROL Azure DevOps] módulos e seus campos
 
@@ -192,7 +300,7 @@ O módulo gera a ID do objeto para o item de trabalho recém-criado ou o URL e o
        <li> <p><strong>[!UICONTROL Descrição]</strong>: Insira ou mapeie uma descrição para o novo projeto. </p> </li> 
        <li> <p><strong>[!UICONTROL Visibility]</strong>: Selecione se você deseja que seu projeto seja público ou privado. Os usuários devem estar conectados à sua organização e ter acesso ao projeto para interagir com um projeto privado. Os projetos públicos estão visíveis para usuários que não estão conectados à sua organização.</p> </li> 
        <li> <p><strong>[!UICONTROL Controle de Versão]</strong>: Selecione se você deseja que o projeto use [!DNL Git] ou [!UICONTROL Controle de Versão do Team Foundation (TFCV)] para controle de versão.</p> </li> 
-       <li> <p><strong>[!UICONTROL Processo de item de trabalho]</strong>: selecione o processo de trabalho que deseja usar para o projeto. As opções são [!UICONTROL Básico], [!UICONTROL Scrum], [!UICONTROL Integração de Modelo de Maturidade de Recursos (CMMI)] e [!UICONTROL Agile].</p> <p>Para obter mais informações sobre [!DNL Azure DevOps] processos, consulte <a href="https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&tabs=basic-process">Processos e modelos de processo padrão</a> na Documentação [!DNL Azure DevOps].</p> </li> 
+       <li> <p><strong>[!UICONTROL Processo de item de trabalho]</strong>: selecione o processo de trabalho que deseja usar para o projeto. As opções são [!UICONTROL Básico], [!UICONTROL Scrum], [!UICONTROL Integração de Modelo de Maturidade de Recursos (CMMI)] e [!UICONTROL Agile].</p> <p>Para obter mais informações sobre [!DNL Azure DevOps] processos, consulte <a href="https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&amp;tabs=basic-process">Processos e modelos de processo padrão</a> na Documentação [!DNL Azure DevOps].</p> </li> 
       </ul> </li> 
      <li> <p><strong>[!UICONTROL Item de trabalho]</strong> </p> <p>Preencha os seguintes campos:</p> 
       <ul> 
