@@ -5,10 +5,10 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 71573ee33f852111d4541ee61567a51b137c7df5
+source-git-commit: 88515edc81bafe2d1a81df627fd51dd4ed674c02
 workflow-type: tm+mt
-source-wordcount: 871
-ht-degree: 17%
+source-wordcount: 884
+ht-degree: 16%
 
 ---
 
@@ -21,6 +21,10 @@ Por exemplo, você pode entrar no prompt &quot;Encontrar todos os meus projetos 
 Você pode restringir quais ações do Workfront a IA pode realizar, de modo que mesmo um cenário autônomo possa garantir que nenhuma ação destrutiva inesperada seja executada.
 
 Por padrão, esse módulo usa o Adobe Managed AI, que usa o modelo `claude-sonnet-5`. Você pode configurar o módulo para usar um LLM diferente, usando uma chave e outras credenciais fornecidas.
+
+>[!NOTE]
+>
+>O uso do Adobe Managed AI é limitado a US$ 25 por organização, por mês.
 
 Para obter mais informações sobre o MCP em cenários do Fusion, consulte [Adicionar um prompt de IA ao seu cenário](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md).
 

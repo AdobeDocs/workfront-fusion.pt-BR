@@ -12,10 +12,10 @@ feature_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+source-git-commit: 0b7298ce53bf59695ce52cb46cb8d25b6ede5fc8
 workflow-type: tm+mt
-source-wordcount: 4305
-ht-degree: 13%
+source-wordcount: 4846
+ht-degree: 12%
 
 ---
 
@@ -97,6 +97,7 @@ O conector do SharePoint usa o seguinte:
 * [Conectar o Microsoft SharePoint Online ao Workfront Fusion usando uma conta  [!DNL Microsoft] &#x200B;](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [Conectar o Microsoft SharePoint Online ao Workfront Fusion usando configurações avançadas](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
 * [Conectar o Microsoft SharePoint Online ao Workfront Fusion usando a autorização de certificado](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
+* [Conectar o Microsoft SharePoint Online ao Workfront Fusion usando uma entidade de serviço](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-service-principal)
 
 ### Conecte o Microsoft SharePoint Online ao Workfront Fusion usando uma conta [!DNL Microsoft]
 
@@ -204,6 +205,97 @@ Você pode usar a autorização de certificado para se conectar ao SharePoint.
 
 1. Clique em **Continuar** para salvar a conexão e retornar ao módulo.
 
+### Conectar o Microsoft SharePoint Online ao Workfront Fusion usando uma entidade de serviço
+
+Você pode criar uma conexão que use uma entidade de serviço (uma conexão da API do aplicativo) em vez de uma conta pessoal. Isso é útil quando você deseja que a conexão seja executada como uma identidade de aplicativo ou serviço, em vez de uma pessoa específica — por exemplo, para que a integração não seja interrompida se essa pessoa sair da empresa ou alterar sua senha.
+
+>[!IMPORTANT]
+>
+>Este tipo de conexão está disponível somente para o módulo [Fazer uma Chamada de API](#make-an-api-call). Outros módulos do SharePoint exigem um dos outros tipos de conexão descritos neste artigo.
+
+* [Pré-requisitos para conectar o Microsoft SharePoint Online ao Workfront Fusion usando uma entidade de serviço](#prerequisites-to-connecting-microsoft-sharepoint-online-to-workfront-fusion-using-a-service-principal)
+* [Criar o registro do aplicativo na Microsoft Entra ID](#create-the-app-registration-in-microsoft-entra-id)
+* [Criar um segredo do cliente](#create-a-client-secret)
+* [Conceder permissões de API](#grant-api-permissions)
+* [Coletar detalhes da conexão](#collect-your-connection-details)
+* [Criar a conexão](#create-the-connection)
+
+#### Pré-requisitos para conectar o Microsoft SharePoint Online ao Workfront Fusion usando uma entidade de serviço
+
+Você precisa de acesso de **Administrador Global**, **Administrador de Aplicativos** ou **Administrador de Função Privilegiada** à Microsoft Entra ID para registrar o aplicativo e conceder permissões. Se você não tiver esse acesso, peça a alguém da sua equipe de TI ou de identidade que conclua essas etapas para você.
+
+Prossiga para [Criar o registro do aplicativo na Microsoft Entra ID](#create-the-app-registration-in-microsoft-entra-id).
+
+#### Criar o registro do aplicativo na Microsoft Entra ID
+
+1. Entre no centro de administração [!DNL Microsoft Entra].
+1. Ir para **[!UICONTROL Registros de aplicativo]** > **[!UICONTROL Novo registro]**.
+1. Dê ao aplicativo um nome claro e reconhecível. Por exemplo, `Make - SharePoint Integration`.
+1. Deixe **[!UICONTROL URI de redirecionamento]** em branco. Essa conexão não envolve ninguém que faça logon por meio de um navegador.
+1. Selecione **[!UICONTROL Registrar]**.
+1. Continue em [Criar um segredo de cliente](#create-a-client-secret).
+
+#### Criar um segredo do cliente
+
+1. No novo registro do aplicativo, acesse **[!UICONTROL Certificados e segredos]**.
+1. Selecione **[!UICONTROL Novo segredo do cliente]**, adicione uma descrição e escolha um período de expiração.
+1. Selecione **[!UICONTROL Adicionar]**.
+1. Copie o **[!UICONTROL Valor]** do segredo imediatamente. É exibido apenas uma vez. Se você navegar para fora antes de copiá-lo, deverá criar um novo.
+1. Continue em [Conceder permissões de API](#grant-api-permissions).
+
+#### Conceder permissões de API
+
+>[!IMPORTANT]
+>
+>BECKY CHECK ME: diferente do Azure DevOps, o Microsoft Graph oferece suporte às permissões de aplicativo diretamente nesta etapa. Confirme as permissões exatas que o módulo Fazer uma chamada de API precisa (por exemplo, um escopo de permissão Sites) antes de publicar esta seção e atualize as etapas abaixo de acordo.
+
+1. No registro do seu aplicativo, acesse **[!UICONTROL Permissões de API]**.
+1. Selecione **[!UICONTROL Adicionar uma permissão]** e **[!UICONTROL Gráfico do Microsoft]**.
+1. Selecione **[!UICONTROL Permissões do aplicativo]**.
+1. Selecione a(s) permissão(ões) necessária(s) para suas chamadas de API e **[!UICONTROL Adicionar permissões]**.
+1. Selecione **[!UICONTROL Conceder consentimento administrativo]** à sua organização e, em seguida, confirme.
+1. Prossiga para [Coletar detalhes da conexão](#collect-your-connection-details).
+
+#### Coletar detalhes da conexão
+
+Na página **[!UICONTROL Visão geral]** do registro do aplicativo, observe os seguintes valores. Você os insere ao criar a conexão no módulo.
+
+<table style="table-layout:auto">
+ <col>
+ <col>
+ <tbody>
+  <tr>
+   <td role="rowheader">[!UICONTROL ID de Locatário]</td>
+   <td>Na página Visão Geral, rotulada <b>ID do Diretório (locatário)</b>.</td>
+  </tr>
+  <tr>
+   <td role="rowheader">[!UICONTROL Client ID]</td>
+   <td>Na página Visão Geral, rotulada <b>ID do Aplicativo (cliente)</b>.</td>
+  </tr>
+  <tr>
+   <td role="rowheader">[!UICONTROL Client Secret]</td>
+   <td>O valor copiado em <a href="#create-a-client-secret" class="MCXref xref">Criar um segredo de cliente</a>.</td>
+  </tr>
+ </tbody>
+</table>
+
+Continue em [Criar a conexão](#create-the-connection).
+
+#### Criar a conexão
+
+1. No módulo [!UICONTROL Fazer uma Chamada de API], clique em **[!UICONTROL Adicionar]** próximo ao campo Conexão para abrir a caixa **[!UICONTROL Criar uma conexão]**.
+1. Clique em **[!UICONTROL Mostrar configurações avançadas]**.
+1. No campo [!UICONTROL Tipo de conexão], selecione **[!UICONTROL Entidade de Serviço]**.
+1. Insira o seguinte:
+
+   * [!UICONTROL ID do inquilino]
+   * [!UICONTROL ID do cliente]
+   * [!UICONTROL Segredo do cliente]
+
+1. Clique em **Continuar** para salvar a conexão e retornar ao módulo.
+
+   Se tudo estiver configurado corretamente, a conexão será validada com êxito.
+
 ## Módulos do Microsoft SharePoint e seus campos
 
 Ao configurar módulos do Microsoft SharePoint Online, o Workfront Fusion exibe os campos listados abaixo. Junto com esses, campos adicionais do Microsoft SharePoint Online podem ser exibidos, dependendo de fatores como nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
@@ -222,6 +314,7 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 ### Item da unidade
 
 * [Criar um arquivo](#create-a-file)
+* [Criar um arquivo (herdado)](#create-a-file-legacy)
 * [Criar uma pasta](#create-a-folder)
 * [Obter um arquivo](#get-a-file)
 * [Obter uma pasta](#get-a-folder)
@@ -413,14 +506,14 @@ Este módulo de acionamento inicia um cenário quando um item é atualizado em u
 
 ### Item
 
-* [[!UICONTROL Copiar um item]](#copy-an-item)
+* [[!UICONTROL Copiar um Item]](#copy-an-item)
 * [[!UICONTROL Criar um item]](#create-an-item)
 * [[!UICONTROL Excluir um item]](#delete-an-item)
 * [[!UICONTROL Obter um Item]](#get-an-item)
 * [Obter detalhes](#get-details)
 * [[!UICONTROL Listar itens]](#list-items)
 * [[!UICONTROL Mover um Item]](#move-an-item)
-* [[!UICONTROL Atualizar um Item]](#update-an-item)
+* [[!UICONTROL Atualizar um item]](#update-an-item)
 * [[!UICONTROL Itens de observação] (Agendados)](#watch-items-scheduled)
 
 
