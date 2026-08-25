@@ -5,11 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
 TQID: https://experienceleague.adobe.com/AlHUrliXikCc3OVHiBTjLNQFndCf5qLzOLuBvnDTUfA
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 936fc6b4d5688e42ad6d762d4f43abf8be47e5af
 workflow-type: tm+mt
-source-wordcount: 883
+source-wordcount: 913
 ht-degree: 10%
 
 ---
@@ -29,6 +28,10 @@ Usando os módulos de Cadeia, você pode conectar um cenário a outro.
 <!--This article will be about the specific module configuration-->
 
 Para obter instruções sobre como planejar cenários encadeados, consulte [Cadear vários cenários juntos](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md).
+
+>[!NOTE]
+>
+>Em vez de configurar esses módulos manualmente, você pode selecionar módulos existentes em um cenário e movê-los para um novo cenário secundário. Para obter instruções, consulte [Mover módulos para uma cadeia](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md).
 
 
 ## Requisitos de acesso
@@ -96,7 +99,7 @@ Esse módulo está localizado no cenário principal. Os campos refletem a estrut
 > * **Tenha cuidado ao colocar este módulo dentro de um iterador.** O envio de um cenário filho para cada item em um iterador grande cria uma carga de plataforma significativa. Considere embutir a lógica do cenário filho ou realizar pesquisas compartilhadas de pré-computação fora do iterador.
 > * **Disparar e Esquecer** significa que o pai não tem visibilidade sobre se o filho foi executado ou bem-sucedido. Use somente quando as falhas secundárias forem monitoradas independentemente.
 >
-> Para obter orientações completas sobre design, consulte [Cadear vários cenários](https://experienceleague.adobe.com/pt-br/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios).
+> Para obter orientações completas sobre design, consulte [Cadear vários cenários](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios).
 
 >[!NOTE]
 >

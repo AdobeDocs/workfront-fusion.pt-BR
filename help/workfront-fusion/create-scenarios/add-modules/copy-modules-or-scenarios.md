@@ -5,14 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 5cece7d4-b2c7-4276-8a6f-f65bad799c7a
 TQID: https://experienceleague.adobe.com/JLouqKhRBefW2RU5BnwYQfapJz-SWcSmtqAqg--kOjo
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 936fc6b4d5688e42ad6d762d4f43abf8be47e5af
 workflow-type: tm+mt
-source-wordcount: 914
-ht-degree: 11%
+source-wordcount: 941
+ht-degree: 10%
 
 ---
 
@@ -83,6 +81,10 @@ Copiar um grupo de módulos é semelhante a copiar um único módulo.
 1. Conecte os módulos colados ao cenário arrastando-os para o local apropriado no cenário.
 
    Você também pode usar atalhos de teclado para copiar e colar.
+
+>[!NOTE]
+>
+>Em vez de copiar um grupo de módulos, você pode mover um grupo de módulos para um novo cenário encadeado. Para obter instruções, consulte [Mover módulos para uma cadeia](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md).
 
 ## Copiar um cenário por clonagem
 
