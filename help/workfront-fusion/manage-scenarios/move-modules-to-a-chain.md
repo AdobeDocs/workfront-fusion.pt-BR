@@ -3,7 +3,8 @@ title: Mover módulos para uma cadeia
 description: Você pode selecionar um grupo de módulos em um cenário e movê-los para um novo cenário encadeado, sem recriar manualmente mapeamentos ou estruturas de dados.
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: f1a80f64edc410ae76bfbba1280df7232e2d09c5
 workflow-type: tm+mt
 source-wordcount: 513
