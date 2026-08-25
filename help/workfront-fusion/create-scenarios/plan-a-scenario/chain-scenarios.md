@@ -7,9 +7,9 @@ exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
 TQID: https://experienceleague.adobe.com/ypbKUSaT72N2r75oYX9tZsJaj6H39cUCumApjMw69j0
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+source-git-commit: 936fc6b4d5688e42ad6d762d4f43abf8be47e5af
 workflow-type: tm+mt
-source-wordcount: 1705
+source-wordcount: 1744
 ht-degree: 9%
 
 ---
@@ -33,6 +33,8 @@ Quando um cenário pai está aguardando que um cenário filho retorne dados, ess
 Para obter mais informações sobre as medidas de proteção de desempenho do Fusion, incluindo tempos limite, consulte [Medidas de proteção de desempenho do Fusion](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md).
 
 Para obter instruções sobre como configurar módulos de Cadeia, consulte [Módulos de Cadeia](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md).
+
+Para obter instruções sobre como selecionar módulos existentes em um cenário e movê-los para um novo cenário filho, consulte [Mover módulos para uma cadeia](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md).
 
 ## Cenários pai e filho
 
