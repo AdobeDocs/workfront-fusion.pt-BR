@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
 TQID: https://experienceleague.adobe.com/95RrU217DFpxtEVaO3FyIx0wNR6p-sJw9J4ZDaqPkXw
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: fac09ae8c8b2e248ef9c0731c38a4be58cea2994
 workflow-type: tm+mt
-source-wordcount: 775
-ht-degree: 94%
+source-wordcount: 895
+ht-degree: 82%
 
 ---
 
@@ -23,6 +22,7 @@ Este artigo apresenta essas áreas e fornece links para mais informações sobre
 | Área | Descrição | Para obter mais informações, consulte |
 | --- | --- | --- |
 | Visão geral da organização <br> ![Ícone Organização](assets/org-icon.png) | Aqui, você pode ver informações sobre sua organização do Fusion. Você pode exibir o número de operações executadas por cenários nesta organização, bem como uma lista de cenários ativos. Você também pode exibir listas de equipes, usuários e ambientes dessa organização.<br>A organização selecionada no momento é exibida acima desse ícone. | [Organizações e equipes](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
+| Insights <br> ![Ícone do Insights](assets/insights-icon.png) | Aqui, você pode ver um painel de métricas de execução para sua organização, como quais cenários estão sendo mais executados, onde estão ocorrendo atrasos e com que eficiência seus pools de trabalhadores estão operando. | [Exibir o painel de Insights de uma organização](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-insights-dashboard.md) |
 | Visão geral da equipe <br> ![Ícone Equipe](assets/team-icon.png) | Aqui, você pode ver informações sobre as equipes do Fusion, como o número de operações executadas por cenários nessa equipe e uma lista de cenários ativos. Você também pode exibir e gerenciar os usuários nesta equipe. Ao visualizar uma equipe, você pode selecionar uma equipe diferente em uma lista suspensa na parte superior desta página.<br>A equipe selecionada no momento aparece acima desse ícone.<br>Talvez seja necessário criar uma equipe para que você possa ver a visão geral da equipe ou qualquer uma das seções de equipe listadas neste artigo. | [Organizações e equipes](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
 | Cenários  <br> ![Ícone Cenários](assets/scenarios-icon.png) | Um cenário no Fusion representa um fluxo de trabalho automatizado. Por exemplo, um cenário pode monitorar as solicitações recebidas do Workfront e convertê-las em projetos, enquanto outro pode gerar imagens, fazer seu upload para um provedor de documentos e adicionar tarefas de aprovação ao Workfront. Grande parte do seu trabalho no Fusion é configurar e gerenciar cenários. Na área Cenários, você pode exibir e organizar uma lista de cenários da equipe, selecionar cenários individuais para exibir ou modificar ou começar a criar um novo cenário. | [Visão geral do cenário](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md) |
 | Modelos  <br> ![Ícone Modelos](assets/templates-icon.png) | Os modelos são cenários pré-criados que você pode configurar para seus próprios casos de uso. Aqui, você pode ver cenários públicos fornecidos pelo Workfront Fusion, bem como modelos criados por sua equipe. | [Criar e gerenciar modelos: índice do artigo](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md) |
@@ -32,6 +32,8 @@ Este artigo apresenta essas áreas e fornece links para mais informações sobre
 | Armazenamentos de dados  <br> ![Ícone Armazenamentos de dados](assets/data-store-icon.png) | Armazenamentos de dados são bancos de dados pequenos que existem fora dos cenários. Os armazenamentos de dados permitem transferir dados entre cenários ou entre execuções separadas de um cenário. Na área Armazenamentos de dados, você pode visualizar e gerenciar armazenamentos de dados que pertencem à sua equipe. | [Armazenamentos de dados](/help/workfront-fusion/create-scenarios/map-data/data-stores.md) |
 | Estruturas de dados <br> ![Ícone Estruturas de dados](assets/data-structure-icon.png) | As estruturas de dados descrevem o formato dos dados que estão sendo transferidos para o Fusion e são normalmente usadas para serializar ou analisar formatos, como JSON, XML e CSV. Nas Estruturas de dados, você pode visualizar e gerenciar as estruturas de dados que pertencem à sua equipe. | [Estruturas de dados](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md) |
 | Funções <br> ![Ícone de funções](assets/functions-icon.png) | As funções personalizadas são funções do JavaScript que podem ser adicionadas a cenários para manipular e transformar dados. <br>Sua organização deve ter uma licença do Adobe App Builder para criar e usar funções personalizadas. | [Mapear dados usando funções personalizadas](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md) |
+| Pacotes <br> ![Ícone de pacotes](assets/packages-icon.png) | Os pacotes permitem criar e executar sua própria lógica personalizada no Fusion, sem sair da interface do Fusion. Na área Pacotes, você pode visualizar e gerenciar os pacotes de propriedade da sua equipe. | [Usar pacotes de função personalizados](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md) |
+| Armazenamento <br> ![Ícone de armazenamento](assets/storage-icon.png) | O armazenamento fornece à sua equipe acesso direto aos repositórios ESM (Enterprise Storage Management, gerenciamento de armazenamento corporativo) da Adobe. Você pode procurar pastas, fazer upload e download de arquivos, visualizar o histórico de versões de arquivos e criar cenários de automação, tudo sem sair do Fusion. | [Visão geral do armazenamento](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md) |
 
 >[!NOTE]
 >
