@@ -1,5 +1,5 @@
 ---
-title: Exibir o painel de desempenho de uma organização
+title: Exibir o painel de Insights de uma organização
 description: Os administradores do Fusion podem visualizar um painel que mostra as métricas de execução de uma organização.
 author: Becky
 feature: Workfront Fusion
@@ -7,16 +7,16 @@ exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
 TQID: https://experienceleague.adobe.com/tBZCbpImQxY42gOE8e04aQwCJC8EKgrDTIAt6Sw1KaU
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: fac09ae8c8b2e248ef9c0731c38a4be58cea2994
 workflow-type: tm+mt
 source-wordcount: 694
-ht-degree: 7%
+ht-degree: 5%
 
 ---
 
-# Exibir o painel de desempenho de uma organização
+# Exibir o painel de Insights de uma organização
 
-O Painel de Desempenho do Fusion permite que você veja rapidamente quais cenários estão sendo mais executados, onde os atrasos estão ocorrendo e com que eficiência seus pools de trabalhadores estão operando. Isso proporciona visibilidade em tempo real dos volumes de execução, profundidade da fila, utilização do pool e desempenho em nível de cenário.
+O Painel do Fusion Insights permite ver rapidamente quais cenários estão sendo mais executados, onde os atrasos estão ocorrendo e com que eficiência seus pools de trabalhadores estão operando. Isso proporciona visibilidade em tempo real dos volumes de execução, profundidade da fila, utilização do pool e desempenho em nível de cenário.
 
 ## Requisitos de acesso
 
@@ -47,7 +47,7 @@ Para obter mais detalhes sobre as informações desta tabela, consulte [Requisit
 
 +++
 
-## Componentes do painel de desempenho
+## Componentes do painel do Insights
 
 >[!NOTE]
 >
@@ -61,7 +61,7 @@ Para obter mais detalhes sobre as informações desta tabela, consulte [Requisit
 
 -->
 
-No painel de desempenho do Fusion, é possível ver as seguintes métricas.
+No painel do Fusion Insights, é possível ver as seguintes métricas.
 
 * **Execuções aguardando para serem processadas**
 Este gráfico mostra o número de execuções aguardando para serem processadas (também conhecido como backlog de execução) em um determinado momento.
@@ -80,9 +80,9 @@ Este gráfico exibe execuções por cenário. Cores diferentes representam cená
 
   Você pode usar este gráfico para identificar cenários que estão demorando mais do que o normal, incluindo aqueles afetados por problemas com um aplicativo ou serviço conectado.
 
-## Exibir o Painel de Desempenho do Fusion
+## Exibir o Painel do Fusion Insights
 
-1. No Fusion, clique em **Desempenho** na navegação à esquerda.
+1. No Fusion, clique em **Insights** na navegação à esquerda.
 
    O Painel é aberto.
 
