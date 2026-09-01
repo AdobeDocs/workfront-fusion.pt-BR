@@ -3,7 +3,8 @@ title: Visão geral de armazenamento
 description: Armazenamento é uma página no Workfront Fusion que fornece às equipes acesso direto aos repositórios do Adobe Enterprise Storage Management (ESM), permitindo que os usuários naveguem em pastas, façam upload e download de arquivos, visualizem o histórico de versões e criem cenários de automação.
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: d5568479d43bd5518adae5b66b132b4075e7f356
 workflow-type: tm+mt
 source-wordcount: 279
