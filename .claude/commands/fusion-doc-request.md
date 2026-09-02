@@ -25,11 +25,11 @@ As conexões do Slack neste ambiente são irregulares (tokens expirados, descone
 
 O modelo de solicitação tem estes campos - extraia cada um:
 
-* **Título do recurso**
-* **Descrição**
-* **Pontos a serem adicionados à documentação** *(às vezes presente - seções/detalhes específicos que o solicitante deseja cobrir; trate-os como obrigatórios, não opcionais, se fornecidos)*
-* **Data de lançamento esperada**
-* **Precisa de notificação** *(Sim/Não - apenas informativo; consulte a observação acima. Não atue neste campo.)*
+&#x200B;* **Título do recurso**
+&#x200B;* **Descrição**
+&#x200B;* **Pontos a serem adicionados à documentação** *(às vezes presente - seções/detalhes específicos que o solicitante deseja cobrir; trate-os como obrigatórios, não opcionais, se fornecidos)*
+&#x200B;* **Data de lançamento esperada**
+&#x200B;* **Precisa de notificação** *(Sim/Não - apenas informativo; consulte a observação acima. Não atue neste campo.)*
 
 Se a solicitação for vinculada a uma página wiki Confluence com a especificação completa, busque (`get_wiki_content`) antes de gravar a documentação. Não dependa apenas do resumo do Slack para obter detalhes técnicos (nomes exatos de campo, etapas, rótulos de interface do usuário), extraia-os da especificação do wiki quando um estiver vinculado.
 
@@ -37,8 +37,8 @@ Se a solicitação for vinculada a uma página wiki Confluence com a especifica�
 
 Encontre os artigos relevantes existentes neste repositório (grep para nomes de módulo relacionados, rótulos de interface do usuário ou nomes de configurações - não adivinhe o arquivo). Atualize-os para refletir a alteração, seguindo a estrutura existente, o nível do título e o estilo da casa desse artigo.
 
-* Não invente detalhes técnicos (nomes de campos exatos, escopos de permissão, etapas de configuração) que não estejam na solicitação do Slack ou na especificação da wiki vinculada. Se algo não for confirmado, marque-o como um comentário do HTML (por exemplo, `<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`), em vez de adivinhar - nunca como uma chamada visível. Ela não deve ser renderizada na página publicada.
-* Se isso exigir um arquivo de artigo totalmente novo (não apenas uma edição para um existente), siga as convenções permanentes deste repositório: nenhum `exl-id`/`TQID` fabricado na frente, conecte a nova página ao índice relevante e converta o arquivo para CRLF/sem BOM após criá-lo (a ferramenta `Write` usa LF como padrão).
+&#x200B;* Não invente detalhes técnicos (nomes de campos exatos, escopos de permissão, etapas de configuração) que não estejam na solicitação do Slack ou na especificação da wiki vinculada. Se algo não for confirmado, marque-o como um comentário do HTML (por exemplo, `<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`), em vez de adivinhar - nunca como uma chamada visível. Ela não deve ser renderizada na página publicada.
+&#x200B;* Se isso exigir um arquivo de artigo totalmente novo (não apenas uma edição para um existente), siga as convenções permanentes deste repositório: nenhum `exl-id`/`TQID` fabricado na frente, conecte a nova página ao índice relevante e converta o arquivo para CRLF/sem BOM após criá-lo (a ferramenta `Write` usa LF como padrão).
 
 ## Etapa 3: criar a tarefa do Workfront
 
@@ -78,15 +78,15 @@ Antes de criar a chamada, chame `read_workflow_docs` com `workfront://tools/crea
 
 Relatar claramente:
 
-* Quais arquivos de documento você alterou e o que adicionou.
-* O nome da tarefa e o URL.
-* Os valores exatos do campo definidos, incluindo os campos de data de visualização.
-* Qualquer coisa com a qual você não tivesse total confiança, por exemplo, o Slack estava inacessível e você trabalhava somente com texto colado, o artigo de documento de destino era ambíguo ou um detalhe técnico não estava no material de origem e foi sinalizado em vez de adivinhado.
+&#x200B;* Quais arquivos de documento você alterou e o que adicionou.
+&#x200B;* O nome da tarefa e o URL.
+&#x200B;* Os valores exatos do campo definidos, incluindo os campos de data de visualização.
+&#x200B;* Qualquer coisa com a qual você não tivesse total confiança, por exemplo, o Slack estava inacessível e você trabalhava somente com texto colado, o artigo de documento de destino era ambíguo ou um detalhe técnico não estava no material de origem e foi sinalizado em vez de adivinhado.
 
 ## Valores conhecidos (de execuções anteriores)
 
 Confirme se eles ainda estão resolvidos, em vez de supor que sejam permanentes:
 
-* O projeto &quot;Tarefas de documentação do produto - para problemas de desenvolvimento que exigem mensagens&quot; mapeia para a ID `5e69583f00236b9f767c3e3944100ee4`
-* O formulário personalizado (`categoryID`) da Documentação do produto é `5d7275b9000514604bd969d418725843`
-* Campos personalizados usados: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
+&#x200B;* O projeto &quot;Tarefas de documentação do produto - para problemas de desenvolvimento que exigem mensagens&quot; mapeia para a ID `5e69583f00236b9f767c3e3944100ee4`
+&#x200B;* O formulário personalizado (`categoryID`) da Documentação do produto é `5d7275b9000514604bd969d418725843`
+&#x200B;* Campos personalizados usados: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
