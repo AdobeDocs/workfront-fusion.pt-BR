@@ -11,9 +11,9 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 39436d53fd350158b8ee95061b7b9b49ae8f6d63
+source-git-commit: 9521866c29e4e08eaf815080162735f0f70299a5
 workflow-type: tm+mt
-source-wordcount: 6660
+source-wordcount: 6739
 ht-degree: 33%
 
 ---
@@ -408,6 +408,7 @@ Este módulo de ação atualiza um novo espaço de trabalho no Planning.
 * [Obter tipos de registro global](#get-global-record-types-v2)
 * [Obter um tipo de registro](#get-a-record-type-v2)
 * [Obter tipos de registro](#get-record-types-v2)
+* [Configuração do tipo de registro reformulado](#recast-record-type-configuration-v2)
 * [Atualizar um tipo de registro](#update-a-record-type-v2)
 
 #### Criar um tipo de registro (V2)
@@ -553,6 +554,27 @@ Este módulo recupera uma lista de tipos de registros disponíveis em um determi
         <p>[!UICONTROL Número máximo de tipos de registros retornados]</p>
       </td>
       <td>Insira ou mapeie o número máximo de tipos de registros que o módulo retornará durante um ciclo de execução.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Configuração do tipo de registro reformulado (V2)
+
+Este módulo recupera todos os tipos de registros no espaço de trabalho, agrupados por sua seção, juntamente com cada campo do tipo de registro e cada opção de seleção de campo. A saída é estruturada como seção > tipo de registro > campos.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Para obter instruções sobre como criar uma conexão com o [!DNL Adobe Workfront Planning], consulte <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Criar uma conexão com o [!DNL Adobe Workfront Planning]</a> neste artigo.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace ID]</p>
+      </td>
+      <td>Insira ou mapeie a ID do espaço de trabalho para o qual você deseja recuperar a configuração do tipo de registro.</td> 
     </tr>
   </tbody>
 </table>
