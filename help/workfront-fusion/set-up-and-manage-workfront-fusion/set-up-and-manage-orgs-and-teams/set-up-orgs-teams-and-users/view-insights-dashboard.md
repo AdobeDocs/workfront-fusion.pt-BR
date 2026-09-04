@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
 TQID: https://experienceleague.adobe.com/tBZCbpImQxY42gOE8e04aQwCJC8EKgrDTIAt6Sw1KaU
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: fac09ae8c8b2e248ef9c0731c38a4be58cea2994
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 557ec6de4ccf0753005fed3e4772d2eb9317537d
 workflow-type: tm+mt
-source-wordcount: 694
-ht-degree: 5%
+source-wordcount: 848
+ht-degree: 4%
 
 ---
 
@@ -79,6 +78,8 @@ Este gráfico exibe execuções por cenário. Cores diferentes representam cená
 Este gráfico exibe execuções por cenário. Cores diferentes representam cenários diferentes. Quando você passa o mouse sobre o gráfico, é exibida uma janela mostrando qual cor é qual cenário.
 
   Você pode usar este gráfico para identificar cenários que estão demorando mais do que o normal, incluindo aqueles afetados por problemas com um aplicativo ou serviço conectado.
+* **Log de execução**
+Essa tabela lista cada execução de cenário de falha ou aviso em sua organização para que você possa encontrar e solucionar problemas sem sair do painel.
 
 ## Exibir o Painel do Fusion Insights
 
@@ -95,3 +96,25 @@ Este gráfico exibe execuções por cenário. Cores diferentes representam cená
 1. Para alterar o intervalo de tempo do painel, abra o campo Intervalo de tempo no canto superior direito do painel e selecione um novo intervalo de tempo. O período mais longo disponível é de 24 horas e o mais curto é de 15 minutos.
 1. Para atualizar os gráficos, clique no ícone Atualizar próximo ao canto superior direito do painel.
 1. Para exibir um pool de trabalhadores diferente, clique no campo Pool próximo ao canto superior esquerdo do painel e selecione o pool que deseja exibir.
+
+## Filtrar e filtrar execuções no Log de execução
+
+Use o Log de execução para localizar execuções de cenário que falharam ou retornaram um aviso em sua organização e reativar todos os cenários que foram desativados automaticamente após falhas repetidas.
+
+1. No Log de execução, filtre as execuções por qualquer um dos seguintes itens:
+
+   * [!UICONTROL Equipe]
+   * [!UICONTROL Cenário]
+   * [!UICONTROL Tipo de execução]
+   * [!UICONTROL Intervalo de datas]
+   * [!UICONTROL Estado de desativação]
+   * [!UICONTROL Mensagem de erro]
+
+   Para a maioria dos filtros, é possível optar por corresponder apenas aos valores selecionados ou a tudo, exceto eles.
+
+1. Clique em uma execução para exibir mais detalhes sobre o erro.
+1. Para reativar um ou mais cenários que foram desativados automaticamente após falhas repetidas, selecione as execuções e clique em **Ativar**.
+
+   <!-- BECKY CHECK ME: confirm this button's exact label against the live UI. The Slack feature request calls it "Activate," but a related community post describes the same action as "Reactivate." -->
+
+   Antes de reativar um cenário, investigue a causa das falhas, como credenciais expiradas ou um problema de conector, para que o cenário não falhe imediatamente novamente.
