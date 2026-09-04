@@ -3,9 +3,9 @@ user-guide-title: Documentação do Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Use os documentos, tutoriais e recursos adicionais para saber como implementar e usar efetivamente o Adobe Workfront Fusion em sua organização.
 nudge: true
-source-git-commit: fac09ae8c8b2e248ef9c0731c38a4be58cea2994
+source-git-commit: b2d2634c72b044898b656852e57ef36a8b5f2fe9
 workflow-type: tm+mt
-source-wordcount: '2652'
+source-wordcount: '2655'
 ht-degree: 49%
 
 ---
@@ -420,6 +420,7 @@ ht-degree: 49%
       * [Módulos do Adobe Workfront Planning](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
       * [Módulos de revisão e aprovação unificados do Adobe Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-review-and-approvals-modules.md)
       * [Módulos dos Quadros do Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
+      * [Módulos do Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-fusion-modules.md)
       * [Módulos do Workfront Proof](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-proof-modules.md)
     * Conectores para aplicativos de terceiros {#third-party-app-connectors}
       * [Módulos do Airtable](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/airtable-modules.md)

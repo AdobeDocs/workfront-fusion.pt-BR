@@ -7,10 +7,10 @@ exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
 TQID: https://experienceleague.adobe.com/tBZCbpImQxY42gOE8e04aQwCJC8EKgrDTIAt6Sw1KaU
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: fac09ae8c8b2e248ef9c0731c38a4be58cea2994
+source-git-commit: 069ab0fd3d72da3b67d50e4f8e62823c825ef934
 workflow-type: tm+mt
-source-wordcount: 694
-ht-degree: 5%
+source-wordcount: 849
+ht-degree: 4%
 
 ---
 
@@ -63,6 +63,9 @@ Para obter mais detalhes sobre as informações desta tabela, consulte [Requisit
 
 No painel do Fusion Insights, é possível ver as seguintes métricas.
 
+* **Logs de Execuções com Falha**
+Essa tabela lista cada execução de cenário de falha ou aviso em sua organização para que você possa encontrar e solucionar problemas sem sair do painel.
+
 * **Execuções aguardando para serem processadas**
 Este gráfico mostra o número de execuções aguardando para serem processadas (também conhecido como backlog de execução) em um determinado momento.
 
@@ -95,3 +98,25 @@ Este gráfico exibe execuções por cenário. Cores diferentes representam cená
 1. Para alterar o intervalo de tempo do painel, abra o campo Intervalo de tempo no canto superior direito do painel e selecione um novo intervalo de tempo. O período mais longo disponível é de 24 horas e o mais curto é de 15 minutos.
 1. Para atualizar os gráficos, clique no ícone Atualizar próximo ao canto superior direito do painel.
 1. Para exibir um pool de trabalhadores diferente, clique no campo Pool próximo ao canto superior esquerdo do painel e selecione o pool que deseja exibir.
+
+## Filtrar e filtrar execuções no Log de execução
+
+Use o Log de execução para localizar execuções de cenário que falharam ou retornaram um aviso em sua organização e reativar todos os cenários que foram desativados automaticamente após falhas repetidas.
+
+1. No Log de execução, filtre as execuções por qualquer um dos seguintes itens:
+
+   * [!UICONTROL Equipe]
+   * [!UICONTROL Cenário]
+   * [!UICONTROL Tipo de execução]
+   * [!UICONTROL Intervalo de datas]
+   * [!UICONTROL Estado de desativação]
+   * [!UICONTROL Mensagem de erro]
+
+   Para a maioria dos filtros, é possível optar por corresponder apenas aos valores selecionados ou a tudo, exceto eles.
+
+1. Clique em uma execução para exibir mais detalhes sobre o erro.
+1. Para reativar um ou mais cenários que foram desativados automaticamente após falhas repetidas, selecione as execuções e clique em **Ativar**.
+
+   >[!NOTE]
+   >
+   >Antes de reativar um cenário, investigue a causa das falhas, como credenciais expiradas ou um problema de conector, para que o cenário não falhe imediatamente novamente.
