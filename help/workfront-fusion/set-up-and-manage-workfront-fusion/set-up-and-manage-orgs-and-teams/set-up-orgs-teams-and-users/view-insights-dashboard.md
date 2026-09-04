@@ -5,11 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
 TQID: https://experienceleague.adobe.com/tBZCbpImQxY42gOE8e04aQwCJC8EKgrDTIAt6Sw1KaU
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 557ec6de4ccf0753005fed3e4772d2eb9317537d
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 069ab0fd3d72da3b67d50e4f8e62823c825ef934
 workflow-type: tm+mt
-source-wordcount: 848
+source-wordcount: 849
 ht-degree: 4%
 
 ---
@@ -63,6 +62,9 @@ Para obter mais detalhes sobre as informações desta tabela, consulte [Requisit
 
 No painel do Fusion Insights, é possível ver as seguintes métricas.
 
+* **Logs de Execuções com Falha**
+Essa tabela lista cada execução de cenário de falha ou aviso em sua organização para que você possa encontrar e solucionar problemas sem sair do painel.
+
 * **Execuções aguardando para serem processadas**
 Este gráfico mostra o número de execuções aguardando para serem processadas (também conhecido como backlog de execução) em um determinado momento.
 
@@ -79,8 +81,6 @@ Este gráfico exibe execuções por cenário. Cores diferentes representam cená
 Este gráfico exibe execuções por cenário. Cores diferentes representam cenários diferentes. Quando você passa o mouse sobre o gráfico, é exibida uma janela mostrando qual cor é qual cenário.
 
   Você pode usar este gráfico para identificar cenários que estão demorando mais do que o normal, incluindo aqueles afetados por problemas com um aplicativo ou serviço conectado.
-* **Log de execução**
-Essa tabela lista cada execução de cenário de falha ou aviso em sua organização para que você possa encontrar e solucionar problemas sem sair do painel.
 
 ## Exibir o Painel do Fusion Insights
 
@@ -116,6 +116,6 @@ Use o Log de execução para localizar execuções de cenário que falharam ou r
 1. Clique em uma execução para exibir mais detalhes sobre o erro.
 1. Para reativar um ou mais cenários que foram desativados automaticamente após falhas repetidas, selecione as execuções e clique em **Ativar**.
 
-   <!-- BECKY CHECK ME: confirm this button's exact label against the live UI. The Slack feature request calls it "Activate," but a related community post describes the same action as "Reactivate." -->
-
-   Antes de reativar um cenário, investigue a causa das falhas, como credenciais expiradas ou um problema de conector, para que o cenário não falhe imediatamente novamente.
+   >[!NOTE]
+   >
+   >Antes de reativar um cenário, investigue a causa das falhas, como credenciais expiradas ou um problema de conector, para que o cenário não falhe imediatamente novamente.
