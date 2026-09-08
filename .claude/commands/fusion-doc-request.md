@@ -1,9 +1,9 @@
 ---
 name: fusion-doc-request
 description: Lide com uma solicitação de documentação do Fusion a partir do modelo
-source-git-commit: 6726c582294758de0bbab19d6014ad80bb66e553
+source-git-commit: 2b1e8c3281334ac0846bd7cc6297f972dc1bad61
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1215'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Este fluxo de trabalho é diferente da habilidade `fusion-release-notes`. Essa h
 
 ## Etapa 1: obter os detalhes da solicitação
 
-Se receber um link do Slack, analise `channel_id` e `message_ts` da URL e busque o thread (`slack_get_thread_replies` ou `slack_read_thread`, dependendo da ferramenta MCP do Slack conectada - tente ambos se um falhar). Mantenha o link/URL permanente do thread - ele é necessário na Etapa 3.
+Se receber um link do Slack, analise `channel_id` e `message_ts` da URL e busque o thread (`slack_get_thread_replies` ou `slack_read_thread`, dependendo da ferramenta MCP do Slack conectada - tente ambos se um falhar). Mantenha o link/URL permanente do thread - ele é necessário na Etapa 4.
 
 As conexões do Slack neste ambiente são irregulares (tokens expirados, desconexões no meio da sessão). Se uma busca falhar:
 - Tente novamente uma vez.
@@ -33,9 +33,17 @@ O modelo de solicitação tem estes campos - extraia cada um:
 
 Se a solicitação for vinculada a uma página wiki Confluence com a especificação completa, busque (`get_wiki_content`) antes de gravar a documentação. Não dependa apenas do resumo do Slack para obter detalhes técnicos (nomes exatos de campo, etapas, rótulos de interface do usuário), extraia-os da especificação do wiki quando um estiver vinculado.
 
-Se, em vez disso, a solicitação for vinculada a uma fonte secundária de não Confluência (por exemplo, uma publicação da Experience League Community, um artigo de suporte, um resumo gerado por IA) em vez de uma especificação autoritativa, você poderá usá-la para preencher detalhes técnicos que o texto do Slack não contiver, mas tratá-la como menos confiável do que a própria solicitação do Slack. Quando estiver em conflito com ou for adicionado ao texto do Slack (um nome diferente para o mesmo botão/campo, um detalhe não mencionado no Slack), não escolha silenciosamente um - escreva o documento usando o texto da solicitação do Slack como fonte principal e sinalize a discrepância em linha com um comentário do HTML (por exemplo, `<!-- BECKY CHECK ME: Slack calls this "Activate," but the linked community post calls it "Reactivate" - confirm against the live UI. -->`) de acordo com as orientações da Etapa 2.
+Se, em vez disso, a solicitação for vinculada a uma fonte secundária de não Confluência (por exemplo, uma publicação da Experience League Community, um artigo de suporte, um resumo gerado por IA) em vez de uma especificação autoritativa, você poderá usá-la para preencher detalhes técnicos que o texto do Slack não contiver, mas tratá-la como menos confiável do que a própria solicitação do Slack. Quando estiver em conflito com ou for adicionado ao texto do Slack (um nome diferente para o mesmo botão/campo, um detalhe não mencionado no Slack), não escolha silenciosamente um - escreva o documento usando o texto da solicitação do Slack como fonte principal e sinalize a discrepância em linha com um comentário do HTML (por exemplo, `<!-- BECKY CHECK ME: Slack calls this "Activate," but the linked community post calls it "Reactivate" - confirm against the live UI. -->`) de acordo com as orientações da Etapa 3.
 
-## Etapa 2: atualizar a documentação
+## Etapa 2: criar uma ramificação para a solicitação
+
+Antes de tocar em qualquer arquivo, crie uma nova ramificação Git para essa solicitação e faça o check-out dela. Ramificação da ramificação padrão atual (`main`), não de qualquer ramificação cujo check-out seja feito.
+
+Nomeie a ramificação `becky-{short-kebab-case-description}`, derivada do **Título do Recurso** - a primeira palavra deve ser `becky`, correspondendo à convenção de ramificação existente do repositório (por exemplo, `becky-webhook-update`, `becky-storage-beta-sos`). Mantenha-o curto - algumas palavras, não o título completo textual.
+
+Se a árvore de trabalho não estiver limpa (alterações não confirmadas de trabalho não relacionado), pare e informe ao usuário em vez de ramificar-se sobre ela.
+
+## Etapa 3: atualizar a documentação
 
 Encontre os artigos relevantes existentes neste repositório (grep para nomes de módulo relacionados, rótulos de interface do usuário ou nomes de configurações - não adivinhe o arquivo). Atualize-os para refletir a alteração, seguindo a estrutura existente, o nível do título e o estilo da casa desse artigo.
 
@@ -46,7 +54,7 @@ Encontre os artigos relevantes existentes neste repositório (grep para nomes de
   - Qualquer subíndice do conteúdo interno/página de aterrissagem que também vincule a artigos desse tipo (por exemplo, `apps-and-modules-toc.md` para uma nova página de módulos do conector).
     Verifique explicitamente e confirme se a nova entrada está na mesma lista, no mesmo nível de aninhamento, já que seus artigos semelhantes mais próximos em cada arquivo - não suponha que adicioná-la a uma cubra a outra.
 
-## Etapa 3: criar a tarefa do Workfront
+## Etapa 4: criar a tarefa do Workfront
 
 Projeto: **Tarefas de documentação do produto - para problemas de desenvolvimento que exigem mensagens**. Resolva sua ID com `insights_find_id_by_name` (entidade `project`) em vez de codificá-la, caso ela mude - consulte Valores conhecidos abaixo para obter a última ID resolvida.
 
@@ -81,10 +89,11 @@ For more information, see [{Article title}](/help/workfront-fusion/{path-to-arti
 
 Antes de criar a chamada, chame `read_workflow_docs` com `workfront://tools/create-any-object`. Essa chamada define campos personalizados e um valor de enumeração (`DE:Preview Date Known`), o que exige isso de acordo com as regras do servidor MCP.
 
-## Etapa 4: Confirmar ao usuário
+## Etapa 5: Confirmar ao usuário
 
 Relatar claramente:
 
+&#x200B;* A ramificação criada.
 &#x200B;* Quais arquivos de documento você alterou e o que adicionou.
 &#x200B;* O nome da tarefa e o URL.
 &#x200B;* Os valores exatos do campo definidos, incluindo os campos de data de visualização.
