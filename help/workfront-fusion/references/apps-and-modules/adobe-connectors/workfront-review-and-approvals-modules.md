@@ -21,7 +21,7 @@ ht-degree: 15%
 
 Com os módulos Unified Review and Approvals da Adobe Workfront, você pode obter detalhes de aprovação, tomar uma decisão sobre um ativo, adicionar ou excluir participantes de aprovação, adicionar ou atualizar estágios de aprovação, bloquear ou desbloquear estágios e fazer chamadas de API personalizadas.
 
-Para obter informações sobre a revisão e as aprovações unificadas da Workfront, consulte [Visão geral da revisão e aprovação unificadas](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview) na documentação da Workfront.
+Para obter informações sobre a revisão e as aprovações unificadas da Workfront, consulte [Visão geral da revisão e aprovação unificadas](https://experienceleague.adobe.com/pt-br/docs/workfront/using/review-and-approve-work/document-approvals-overview) na documentação da Workfront.
 
 ## Requisitos de acesso
 
