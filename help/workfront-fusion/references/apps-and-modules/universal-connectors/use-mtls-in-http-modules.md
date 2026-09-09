@@ -5,9 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
 TQID: https://experienceleague.adobe.com/L-0fyqwvahM--LXM15no9APxcFNkAsoYqHwAqO1bAno
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: ffd91f83940f37b15229b79fa04b5a3596bd97fb
 workflow-type: tm+mt
 source-wordcount: 901
 ht-degree: 15%
@@ -95,12 +94,12 @@ Você pode usar os links a seguir para baixar os certificados públicos do Workf
 
 Baixe o arquivo zip a seguir e use o arquivo PEM para o seu data center.
 
-[Baixar certificados do Workfront Fusion 2026](assets/2026-certs/fusion-prod-mtls-certificate-2026.zip)
+[Baixar certificados do Workfront Fusion 2026](assets/fusion-prod-mtls-certificate-2026-updated.zip)
 
 | Data center | Link de download | Data válida |
 | --- | --- | --- |
 | AWS Datacenter EUA | `fusion-prod-us-mtls-certificate-2026.pem` | 29 de janeiro de 2026 a 2 de março de 2027 |
-| Cluster Azure dos EUA | `fusion-prod-az-mtls-certificate.pem` | 21 de setembro de 2025 a 23 de outubro de 2026 |
+| Cluster Azure dos EUA | `fusion-prod-az-mtls-certificate-2026-sept.pem` | 19 de agosto de 2026 a 6 de março de 2027 |
 | Centro de dados AWS da UE | `fusion-prod-eu-mtls-certificate-2026.pem` | 29 de janeiro de 2026 a 2 de março de 2027 |
 | Cluster EU Azure | `fusion-prod-eu-az-mtls-certificate-2026.pem` | 4 de fevereiro de 2026 a 8 de março de 2027 |
 

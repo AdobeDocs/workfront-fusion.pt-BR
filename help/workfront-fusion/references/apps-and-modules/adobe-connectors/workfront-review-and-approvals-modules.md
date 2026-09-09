@@ -4,16 +4,13 @@ description: Com os módulos de Conteúdo e Aprovações do Adobe Workfront, voc
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: e9ea91840c9be594e98b97202cb46dfa009349a9
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 68b973fd27c2c5a40000096a29b38b46481ae190
 workflow-type: tm+mt
-source-wordcount: 3743
-ht-degree: 15%
+source-wordcount: 4194
+ht-degree: 14%
 
 ---
 
@@ -21,7 +18,7 @@ ht-degree: 15%
 
 Com os módulos Unified Review and Approvals da Adobe Workfront, você pode obter detalhes de aprovação, tomar uma decisão sobre um ativo, adicionar ou excluir participantes de aprovação, adicionar ou atualizar estágios de aprovação, bloquear ou desbloquear estágios e fazer chamadas de API personalizadas.
 
-Para obter informações sobre a revisão e as aprovações unificadas da Workfront, consulte [Visão geral da revisão e aprovação unificadas](https://experienceleague.adobe.com/pt-br/docs/workfront/using/review-and-approve-work/document-approvals-overview) na documentação da Workfront.
+Para obter informações sobre a revisão e as aprovações unificadas da Workfront, consulte [Visão geral da revisão e aprovação unificadas](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview) na documentação da Workfront.
 
 ## Requisitos de acesso
 
@@ -136,16 +133,21 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 * [Modelos de exclusão em massa](#bulk-delete-templates)
 * [Criar um modelo](#create-a-template)
 * [Criar uma aprovação](#create-an-approval)
+* [Criar Aprovação Agrupada](#create-grouped-approval)
 * [Criar estágios](#create-stages)
 * [Excluir uma decisão em um estágio](#delete-a-decision-on-a-stage)
 * [Excluir um estágio](#delete-a-stage)
 * [Excluir um modelo](#delete-a-template)
 * [Excluir uma aprovação](#delete-an-approval)
 * [Excluir decisões](#delete-decisions)
+* [Excluir Aprovação Agrupada](#delete-grouped-approval)
 * [Excluir participantes](#delete-participants)
 * [Bloquear um estágio](#lock-a-stage)
 * [Tomar uma decisão](#make-a-decision)
 * [Tomar uma decisão em um estágio](#make-a-decision-on-a-stage)
+* [Gerenciar o Assets em uma aprovação agrupada](#manage-assets-on-a-grouped-approval)
+* [Gerenciar participantes do estágio](#manage-stage-participants)
+* [Gerenciar estágios em uma aprovação agrupada](#manage-stages-on-a-grouped-approval)
 * [Lembrar um participante de um estágio](#remind-a-participant-on-a-stage)
 * [Lembrar participante](#remind-participant)
 * [Lembrar participantes indecisos](#remind-undecided-participants)
@@ -154,6 +156,7 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 * [Atualizar um estágio](#update-a-stage)
 * [Atualizar um modelo](#update-a-template)
 * [Atualizar todos os estágios](#update-all-stages)
+* [Atualizar aprovação agrupada (estado completo)](#update-grouped-approval-full-state)
 
 
 #### Adicionar ou atualizar participantes
@@ -269,6 +272,23 @@ Este módulo de ação cria uma aprovação para um documento no armazenamento e
       </tr>
   </tbody>
 </table>
+
+#### Criar Aprovação Agrupada
+
+Este módulo de ação cria uma aprovação agrupada.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Conexão</td>
+      <td>Para obter instruções sobre como criar uma conexão com a Revisão e Aprovações Unificadas do Adobe Workfront, consulte <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Conectar-se à Revisão e Aprovações Unificadas do Adobe Workfront</a> neste artigo.</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Create Grouped Approval"), without field detail. -->
 
 #### Criar estágios
 
@@ -404,6 +424,23 @@ Este módulo remove a decisão do usuário atual do estágio especificado. O usu
   </tbody>
 </table>
 
+#### Excluir Aprovação Agrupada
+
+Este módulo de ação exclui a aprovação agrupada especificada.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Conexão</td>
+      <td>Para obter instruções sobre como criar uma conexão com a Revisão e Aprovações Unificadas do Adobe Workfront, consulte <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Conectar-se à Revisão e Aprovações Unificadas do Adobe Workfront</a> neste artigo.</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Delete Grouped Approval"), without field detail. -->
+
 #### Excluir participantes
 
 Este módulo de ação exclui os participantes de uma aprovação.
@@ -515,6 +552,57 @@ Este módulo aplica uma decisão ao estágio especificado.
       </tr>
   </tbody>
 </table>
+
+#### Gerenciar o Assets em uma aprovação agrupada
+
+Esse módulo de ação gerencia quais ativos estão incluídos em uma aprovação agrupada.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Conexão</td>
+      <td>Para obter instruções sobre como criar uma conexão com a Revisão e Aprovações Unificadas do Adobe Workfront, consulte <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Conectar-se à Revisão e Aprovações Unificadas do Adobe Workfront</a> neste artigo.</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Manage Assets on a Grouped Approval"), without field detail. -->
+
+#### Gerenciar participantes do estágio
+
+Este módulo de ação gerencia os participantes em um estágio.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Conexão</td>
+      <td>Para obter instruções sobre como criar uma conexão com a Revisão e Aprovações Unificadas do Adobe Workfront, consulte <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Conectar-se à Revisão e Aprovações Unificadas do Adobe Workfront</a> neste artigo.</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Manage Stage Participants"), without field detail. -->
+
+#### Gerenciar estágios em uma aprovação agrupada
+
+Este módulo de ação gerencia os estágios em uma aprovação agrupada.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Conexão</td>
+      <td>Para obter instruções sobre como criar uma conexão com a Revisão e Aprovações Unificadas do Adobe Workfront, consulte <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Conectar-se à Revisão e Aprovações Unificadas do Adobe Workfront</a> neste artigo.</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Manage Stages on a Grouped Approval"), without field detail. -->
 
 #### Lembrar um participante de um estágio
 
@@ -755,16 +843,37 @@ Este módulo substitui todos os estágios em uma aprovação existente pelos dad
   </tbody>
 </table>
 
+#### Atualizar aprovação agrupada (estado completo)
+
+Este módulo de ação substitui o estado completo da aprovação agrupada especificada.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Conexão</td>
+      <td>Para obter instruções sobre como criar uma conexão com a Revisão e Aprovações Unificadas do Adobe Workfront, consulte <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Conectar-se à Revisão e Aprovações Unificadas do Adobe Workfront</a> neste artigo.</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Update Grouped Approval (Full State)"), without field detail. -->
+
 ### Pesquisas
 
 * [Obter um modelo](#get-a-template)
 * [Obter detalhes da aprovação](#get-approval-details)
+* [Obter aprovações em uma aprovação agrupada](#get-approvals-in-a-grouped-approval)
+* [Detalhes de Obter Aprovação Agrupada](#get-grouped-approval-details)
 * [Obter várias aprovações](#get-multiple-approvals)
 * [Obter aprovações sugeridas](#get-suggested-approvals)
 * [Obter participantes sugeridos](#get-suggested-participants)
 * [Listar bots](#list-bots)
+* [Listar aprovações agrupadas por responsável](#list-grouped-approvals-by-parent)
 * [Modelos de lista](#list-templates)
 * [Pesquisar revisores de marca de IA](#search-ai-brand-reviews)
+* [Pesquisar aprovações agrupadas](#search-grouped-approvals)
 
 
 #### Obter um modelo
@@ -816,6 +925,40 @@ Este módulo de pesquisa recupera detalhes de aprovação de um ativo.
       </tr>
   </tbody>
 </table>
+
+#### Obter aprovações em uma aprovação agrupada
+
+Este módulo de pesquisa retorna as aprovações individuais contidas em uma aprovação agrupada.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Conexão</td>
+      <td>Para obter instruções sobre como criar uma conexão com a Revisão e Aprovações Unificadas do Adobe Workfront, consulte <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Conectar-se à Revisão e Aprovações Unificadas do Adobe Workfront</a> neste artigo.</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Get Approvals in a Grouped Approval"), without field detail. -->
+
+#### Detalhes de Obter Aprovação Agrupada
+
+Este módulo de pesquisa recupera detalhes para a aprovação agrupada especificada.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Conexão</td>
+      <td>Para obter instruções sobre como criar uma conexão com a Revisão e Aprovações Unificadas do Adobe Workfront, consulte <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Conectar-se à Revisão e Aprovações Unificadas do Adobe Workfront</a> neste artigo.</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Get Grouped Approval Details"), without field detail. -->
 
 #### Obter várias aprovações
 
@@ -925,6 +1068,23 @@ Este módulo retorna uma lista paginada de contas de bot.
   </tbody>
 </table>
 
+#### Listar aprovações agrupadas por responsável
+
+Este módulo de pesquisa retorna uma lista de aprovações agrupadas para o pai especificado.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Conexão</td>
+      <td>Para obter instruções sobre como criar uma conexão com a Revisão e Aprovações Unificadas do Adobe Workfront, consulte <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Conectar-se à Revisão e Aprovações Unificadas do Adobe Workfront</a> neste artigo.</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("List Grouped Approvals by Parent"), without field detail. -->
+
 #### Listar Modelos
 
 Este módulo retorna uma lista de todos os modelos de aprovação disponíveis para o usuário atual. O usuário atual é o usuário cujas credenciais são usadas na conexão usada neste módulo.
@@ -984,6 +1144,23 @@ Este módulo retorna os resultados da análise de marca de IA produzidos para um
        </tr>
   </tbody>
 </table>
+
+#### Pesquisar aprovações agrupadas
+
+Este módulo de pesquisa procura aprovações agrupadas que correspondam aos critérios especificados.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Conexão</td>
+      <td>Para obter instruções sobre como criar uma conexão com a Revisão e Aprovações Unificadas do Adobe Workfront, consulte <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Conectar-se à Revisão e Aprovações Unificadas do Adobe Workfront</a> neste artigo.</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Search Grouped Approvals"), without field detail. -->
 
 ### Outras
 
