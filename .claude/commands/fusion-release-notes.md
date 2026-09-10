@@ -1,9 +1,9 @@
 ---
 name: fusion-release-notes
 description: Crie uma nova página de nota de versão semanal do Workfront Fusion e conecte-a à página de visão geral da atividade de lançamento e ao índice. Use quando o usuário quiser gravar, adicionar ou rascunhar uma nova nota de versão do Fusion ou página de lançamento semanal, ou solicitar o documento de novos recursos do Fusion para uma versão. Não use para notas de versão do Workfront (Quicksilver) em anúncios de produtos/versões de produtos — use o formatador de notas de versão para eles.
-source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
+source-git-commit: 6610b43b1f313e29654acd8cfcd339240a718f5d
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1090'
 ht-degree: 0%
 
 ---
@@ -145,10 +145,11 @@ Pergunte ao usuário: *&quot;Deseja configurar um redirecionamento para o novo a
 - Se **sim**, colete:
   - O **caminho de origem** (deve começar com `/en`, sem espaços)
   - O **destino** — um caminho relativo começando com `/en` ou uma URL `https` completa (sem espaços)
-- Adicione a linha ao repositório irmão `Adobe-Enterprise-Docs/redirects`, em `redirects/`, um arquivo por ambiente (`redirects-dev.csv`, `redirects-stage.csv`, `redirects-prod.csv`).
+- Adicione a linha ao repositório irmão `Adobe-Enterprise-Docs/redirects`, a `redirects/redirects-prod.csv` **e a nenhum outro arquivo**. Nunca adicione-o a `redirects-dev.csv`, `redirects-stage.csv`, ou qualquer outro arquivo nesse repositório — prod é o único ambiente que essa habilidade já tocou, e a ramificação deve conter apenas a alteração desse arquivo.
 - Regras de linha (do README desse repositório):
   - Nenhum par `source` duplicado ou `source`/`destination` duplicado.
   - O redirecionamento não deve causar um loop de redirecionamento.
+- Faça a alteração em uma nova ramificação no repositório `redirects`, chamada `workfront-{month}-{day}-{year}-{topic}` (minúsculas, por exemplo, `workfront-sep-10-2026-aem-mcp-redirect`) — nunca confirme diretamente para `main` lá.
 - **Esta habilidade só adiciona a linha CSV depois que o usuário a confirma.** Elevar a PR no repositório `redirects` é uma etapa separada que essa habilidade não faz — informe ao usuário que uma PR ainda precisa ser aberta e mesclada lá antes que o redirecionamento entre em vigor (~5 minutos após a mesclagem para redirecionamentos 1:1).
 
 ## Etapa 8: lista de verificação final

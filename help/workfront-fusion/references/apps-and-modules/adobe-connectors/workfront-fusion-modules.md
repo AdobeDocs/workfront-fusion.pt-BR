@@ -5,10 +5,10 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 557ec6de4ccf0753005fed3e4772d2eb9317537d
+source-git-commit: 7606f1b15aac0f2baef1b4ef16e3bcaa39dad27c
 workflow-type: tm+mt
-source-wordcount: 1374
-ht-degree: 21%
+source-wordcount: 1430
+ht-degree: 20%
 
 ---
 
@@ -276,6 +276,9 @@ Atualiza um registro especificado.
 
 ### Exportar
 
+* [Exportar logs de atividades](#export-activity-logs)
+* [Exportar cenários](#export-scenarios)
+
 #### Exportar logs de atividades
 
 Esse módulo exporta logs de atividades.
@@ -311,6 +314,25 @@ Esse módulo exporta logs de atividades.
   <tr> 
    <td role="rowheader">Direção</td> 
    <td>Selecione se deseja ordenar os resultados em ordem crescente ou decrescente.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Exportar cenários
+
+Este módulo exporta blueprints do Fusion para um ou mais cenários.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Para obter instruções sobre como conectar o Workfront Fusion ao Workfront Fusion, consulte <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Conectar o Workfront Fusion ao Workfront Fusion</a> neste artigo.</p> </td> 
+  <tr> 
+   <td role="rowheader">IDs de cenário</td> 
+   <td>Para cada cenário que deseja exportar, clique em <b>Adicionar item</b> e insira a ID do cenário.</td> 
+  </tr> 
   </tr> 
  </tbody> 
 </table>
