@@ -3,9 +3,8 @@ title: Módulos MCP do Adobe Experience Manager
 description: Com o módulo MCP do Adobe Experience Manager, você pode enviar um prompt em inglês simples para o servidor MCP do Adobe Experience Manager e permitir que um modelo de IA execute a solicitação.
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 4c23409465b4be9fd10ff6938a750bc662ba2fe4
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 06271bbe8dd3c5eb7e3c6b45b71e7e0f7fd4d444
 workflow-type: tm+mt
 source-wordcount: 1020
 ht-degree: 11%
@@ -136,3 +135,4 @@ Para obter informações sobre Repositórios de Dados, consulte [Repositório de
 </table>
 
 O módulo retorna a resposta final da IA, como texto, juntamente com um registro do que aconteceu ao produzir essa resposta, incluindo quais ferramentas foram chamadas, se cada chamada teve êxito e quanto tempo o processamento levou.
+
