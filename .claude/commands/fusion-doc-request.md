@@ -1,9 +1,9 @@
 ---
 name: fusion-doc-request
 description: Lide com uma solicitação de documentação do Fusion a partir do modelo
-source-git-commit: 2b1e8c3281334ac0846bd7cc6297f972dc1bad61
+source-git-commit: ac9a22b254b591ccf55270df62a85d158bb03697
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,11 @@ As conexões do Slack neste ambiente são irregulares (tokens expirados, descone
 
 O modelo de solicitação tem estes campos - extraia cada um:
 
-&#x200B;* **Título do recurso**
-&#x200B;* **Descrição**
-&#x200B;* **Pontos a serem adicionados à documentação** *(às vezes presente - seções/detalhes específicos que o solicitante deseja cobrir; trate-os como obrigatórios, não opcionais, se fornecidos)*
-&#x200B;* **Data de lançamento esperada**
-&#x200B;* **Precisa de notificação** *(Sim/Não - apenas informativo; consulte a observação acima. Não atue neste campo.)*
+* **Título do recurso**
+* **Descrição**
+* **Pontos a serem adicionados à documentação** *(às vezes presente - seções/detalhes específicos que o solicitante deseja cobrir; trate-os como obrigatórios, não opcionais, se fornecidos)*
+* **Data de lançamento esperada**
+* **Precisa de notificação** *(Sim/Não - apenas informativo; consulte a observação acima. Não atue neste campo.)*
 
 Se a solicitação for vinculada a uma página wiki Confluence com a especificação completa, busque (`get_wiki_content`) antes de gravar a documentação. Não dependa apenas do resumo do Slack para obter detalhes técnicos (nomes exatos de campo, etapas, rótulos de interface do usuário), extraia-os da especificação do wiki quando um estiver vinculado.
 
@@ -47,9 +47,9 @@ Se a árvore de trabalho não estiver limpa (alterações não confirmadas de tr
 
 Encontre os artigos relevantes existentes neste repositório (grep para nomes de módulo relacionados, rótulos de interface do usuário ou nomes de configurações - não adivinhe o arquivo). Atualize-os para refletir a alteração, seguindo a estrutura existente, o nível do título e o estilo da casa desse artigo.
 
-&#x200B;* Não invente detalhes técnicos (nomes de campos exatos, escopos de permissão, etapas de configuração) que não estejam na solicitação do Slack ou na especificação da wiki vinculada. Se algo não for confirmado, marque-o como um comentário do HTML (por exemplo, `<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`), em vez de adivinhar - nunca como uma chamada visível. Ela não deve ser renderizada na página publicada.
-&#x200B;* Se isso exigir um arquivo de artigo totalmente novo (não apenas uma edição para um existente), siga as convenções permanentes deste repositório: nenhum `exl-id`/`TQID` fabricado na frente e converta o arquivo para CRLF/sem BOM após criá-lo (o padrão da ferramenta `Write` é LF).
-&#x200B;* Conectar uma nova página ao &quot;índice&quot; significa AMBOS, não apenas um. Uma página pode ser vinculada a partir de um subíndice, mas ainda ser invisível para os leitores:
+* Não invente detalhes técnicos (nomes de campos exatos, escopos de permissão, etapas de configuração) que não estejam na solicitação do Slack ou na especificação da wiki vinculada. Se algo não for confirmado, marque-o como um comentário do HTML (por exemplo, `<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`), em vez de adivinhar - nunca como uma chamada visível. Ela não deve ser renderizada na página publicada.
+* Se isso exigir um arquivo de artigo totalmente novo (não apenas uma edição para um existente), siga as convenções permanentes deste repositório: nenhum `exl-id`/`TQID` fabricado na frente e converta o arquivo para CRLF/sem BOM após criá-lo (o padrão da ferramenta `Write` é LF).
+* Conectar uma nova página ao &quot;índice&quot; significa AMBOS, não apenas um. Uma página pode ser vinculada a partir de um subíndice, mas ainda ser invisível para os leitores:
   - O arquivo de navegação mestre da área do produto (por exemplo, `help/workfront-fusion/TOC.md`). Ele é o que realmente direciona a árvore de navegação publicada.
   - Qualquer subíndice do conteúdo interno/página de aterrissagem que também vincule a artigos desse tipo (por exemplo, `apps-and-modules-toc.md` para uma nova página de módulos do conector).
     Verifique explicitamente e confirme se a nova entrada está na mesma lista, no mesmo nível de aninhamento, já que seus artigos semelhantes mais próximos em cada arquivo - não suponha que adicioná-la a uma cubra a outra.
@@ -70,10 +70,13 @@ Campos de tarefa:
 | `description` | o **texto completo da mensagem do Slack** (todos os campos do modelo de solicitação, não uma paráfrase), seguido de um link para a conversa do Slack |
 | `DE:Release notes` | uma nota de versão formatada, consulte o formato abaixo |
 | `DE:Preview Date Known` | `Yes`, por padrão |
-| `DE:Preview Date` | a **data de lançamento esperada** da solicitação, por padrão |
+| `DE:Preview Date` | a data citada na mensagem original do Slack (a **data de lançamento esperada** da solicitação), por padrão |
+| `taskConstraint` + `constraintDate` | Defina `taskConstraint` como `MFO` (Deve terminar em) com `constraintDate` = a data citada na mensagem original do Slack (a **data de lançamento esperada** da solicitação), de modo que a data planejada de conclusão da tarefa também corresponda a ela. |
 | Produto/Área | selecionar `Fusion` (um campo de enumeração no formulário Documentação do produto; confirme o nome exato do campo com `insights_search_fields` se ele nunca estiver claro) |
 
-Defina os campos de data de visualização como parte dessa mesma chamada de criação - não os deixe para depois ou aguarde para ser solicitado. Se o usuário fornecer uma data diferente posteriormente ou se disser que a data ainda não é realmente conhecida, atualize de acordo, mas use o padrão para preenchê-las sempre.
+Defina os campos de data de visualização e a data de conclusão planejada como parte dessa mesma chamada de criação - não os deixe para depois ou aguarde para ser perguntado. Se o usuário fornecer uma data diferente posteriormente ou se disser que a data ainda não é realmente conhecida, atualize de acordo, mas use o padrão para preenchê-las sempre.
+
+Novas tarefas assumem como padrão uma restrição O Mais Breve Possível com duração 0, sob a qual `plannedStartDate`/`plannedCompletionDate` são derivados do agendador e uma gravação direta em ambos é descartada silenciosamente (sem erro, a data simplesmente não muda). Configurar `taskConstraint: "MFO"` com `constraintDate` é uma maneira confiável de fixar a data de conclusão planejada na data citada na mensagem do Slack. Leia `workfront://knowledge/task/update` antes desta gravação - é um campo de agendamento/data de acordo com as regras do servidor MCP.
 
 Formato da nota de versão para o campo `DE:Release notes`. Sempre comece com `***FUSION***` em sua própria linha, em seguida, uma linha em branco e, em seguida, o título. Isso marca a nota como pertencente ao Fusion (em vez do Core Workfront) rapidamente:
 
@@ -93,17 +96,17 @@ Antes de criar a chamada, chame `read_workflow_docs` com `workfront://tools/crea
 
 Relatar claramente:
 
-&#x200B;* A ramificação criada.
-&#x200B;* Quais arquivos de documento você alterou e o que adicionou.
-&#x200B;* O nome da tarefa e o URL.
-&#x200B;* Os valores exatos do campo definidos, incluindo os campos de data de visualização.
-&#x200B;* Qualquer coisa com a qual você não tivesse total confiança, por exemplo, o Slack estava inacessível e você trabalhava somente com texto colado, o artigo de documento de destino era ambíguo ou um detalhe técnico não estava no material de origem e foi sinalizado em vez de adivinhado.
+* A ramificação criada.
+* Quais arquivos de documento você alterou e o que adicionou.
+* O nome da tarefa e o URL.
+* Os valores exatos do campo definidos, incluindo os campos de data de visualização.
+* Qualquer coisa com a qual você não tivesse total confiança, por exemplo, o Slack estava inacessível e você trabalhava somente com texto colado, o artigo de documento de destino era ambíguo ou um detalhe técnico não estava no material de origem e foi sinalizado em vez de adivinhado.
 
 ## Valores conhecidos (de execuções anteriores)
 
 Confirme se eles ainda estão resolvidos, em vez de supor que sejam permanentes:
 
-&#x200B;* O projeto &quot;Tarefas de documentação do produto - para problemas de desenvolvimento que exigem mensagens&quot; mapeia para a ID `5e69583f00236b9f767c3e3944100ee4`
-&#x200B;* A tarefa pai &quot;Becky - Tarefas do canal Fusion-Documentation&quot; mapeia para a ID `6a9b065100003a7554832780c2015e93` (no mesmo projeto) - resolver com `insights_find_id_by_name` (entidade `task`) em vez de codificar, caso seja alterada
-&#x200B;* O formulário personalizado (`categoryID`) da Documentação do produto é `5d7275b9000514604bd969d418725843`
-&#x200B;* Campos personalizados usados: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
+* O projeto &quot;Tarefas de documentação do produto - para problemas de desenvolvimento que exigem mensagens&quot; mapeia para a ID `5e69583f00236b9f767c3e3944100ee4`
+* A tarefa pai &quot;Becky - Tarefas do canal Fusion-Documentation&quot; mapeia para a ID `6a9b065100003a7554832780c2015e93` (no mesmo projeto) - resolver com `insights_find_id_by_name` (entidade `task`) em vez de codificar, caso seja alterada
+* O formulário personalizado (`categoryID`) da Documentação do produto é `5d7275b9000514604bd969d418725843`
+* Campos personalizados usados: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
