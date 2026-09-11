@@ -15,10 +15,10 @@ subfeature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 39436d53fd350158b8ee95061b7b9b49ae8f6d63
+source-git-commit: 77d29cea134abe6e048fd744151acffe256f5992
 workflow-type: tm+mt
-source-wordcount: 7687
-ht-degree: 93%
+source-wordcount: 7725
+ht-degree: 92%
 
 ---
 
@@ -284,6 +284,12 @@ O módulo retorna quaisquer campos padrão associados ao registro, juntamente co
       <td>
        <p>Escolha se você deseja habilitar a segurança baseada em authToken para este webhook.</p><p>
        <b>OBSERVAÇÃO</b>: a partir de 23 de agosto de 2026, o Fusion habilita a segurança baseada em authToken por padrão para todos os módulos Workfront &gt; Assistir Evento, incluindo os existentes. Se um webhook específico falhar ou você precisar desabilitá-lo por motivos de compatibilidade, desative a opção Habilitar ganchos protegidos.</p>
+       </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Token personalizado]</td> 
+      <td>
+       <p>(Opcional) Se a opção [!UICONTROL Habilitar ganchos protegidos] estiver definida como [!UICONTROL Sim], você poderá inserir seu próprio valor de token para proteger o webhook. Se você deixar esse campo em branco, o Fusion gerará automaticamente um token para você.</p>
        </td> 
      </tr> 
     </tbody> 

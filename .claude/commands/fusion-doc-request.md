@@ -1,9 +1,9 @@
 ---
 name: fusion-doc-request
 description: Lide com uma solicitação de documentação do Fusion a partir do modelo
-source-git-commit: 2b1e8c3281334ac0846bd7cc6297f972dc1bad61
+source-git-commit: ac9a22b254b591ccf55270df62a85d158bb03697
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -70,10 +70,13 @@ Campos de tarefa:
 | `description` | o **texto completo da mensagem do Slack** (todos os campos do modelo de solicitação, não uma paráfrase), seguido de um link para a conversa do Slack |
 | `DE:Release notes` | uma nota de versão formatada, consulte o formato abaixo |
 | `DE:Preview Date Known` | `Yes`, por padrão |
-| `DE:Preview Date` | a **data de lançamento esperada** da solicitação, por padrão |
+| `DE:Preview Date` | a data citada na mensagem original do Slack (a **data de lançamento esperada** da solicitação), por padrão |
+| `taskConstraint` + `constraintDate` | Defina `taskConstraint` como `MFO` (Deve terminar em) com `constraintDate` = a data citada na mensagem original do Slack (a **data de lançamento esperada** da solicitação), de modo que a data planejada de conclusão da tarefa também corresponda a ela. |
 | Produto/Área | selecionar `Fusion` (um campo de enumeração no formulário Documentação do produto; confirme o nome exato do campo com `insights_search_fields` se ele nunca estiver claro) |
 
-Defina os campos de data de visualização como parte dessa mesma chamada de criação - não os deixe para depois ou aguarde para ser solicitado. Se o usuário fornecer uma data diferente posteriormente ou se disser que a data ainda não é realmente conhecida, atualize de acordo, mas use o padrão para preenchê-las sempre.
+Defina os campos de data de visualização e a data de conclusão planejada como parte dessa mesma chamada de criação - não os deixe para depois ou aguarde para ser perguntado. Se o usuário fornecer uma data diferente posteriormente ou se disser que a data ainda não é realmente conhecida, atualize de acordo, mas use o padrão para preenchê-las sempre.
+
+Novas tarefas assumem como padrão uma restrição O Mais Breve Possível com duração 0, sob a qual `plannedStartDate`/`plannedCompletionDate` são derivados do agendador e uma gravação direta em ambos é descartada silenciosamente (sem erro, a data simplesmente não muda). Configurar `taskConstraint: "MFO"` com `constraintDate` é uma maneira confiável de fixar a data de conclusão planejada na data citada na mensagem do Slack. Leia `workfront://knowledge/task/update` antes desta gravação - é um campo de agendamento/data de acordo com as regras do servidor MCP.
 
 Formato da nota de versão para o campo `DE:Release notes`. Sempre comece com `***FUSION***` em sua própria linha, em seguida, uma linha em branco e, em seguida, o título. Isso marca a nota como pertencente ao Fusion (em vez do Core Workfront) rapidamente:
 
