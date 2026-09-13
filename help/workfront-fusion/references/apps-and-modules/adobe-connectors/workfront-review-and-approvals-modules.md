@@ -4,16 +4,13 @@ description: Com os módulos de Conteúdo e Aprovações do Adobe Workfront, voc
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: edf962333554869d75f0956dfceccce04dd36ec6
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: bb6db3153c3c85ef1df1a0d49d127c3e712dbc3c
 workflow-type: tm+mt
-source-wordcount: 3743
-ht-degree: 15%
+source-wordcount: 3631
+ht-degree: 16%
 
 ---
 
@@ -21,7 +18,7 @@ ht-degree: 15%
 
 Com os módulos Unified Review and Approvals da Adobe Workfront, você pode obter detalhes de aprovação, tomar uma decisão sobre um ativo, adicionar ou excluir participantes de aprovação, adicionar ou atualizar estágios de aprovação, bloquear ou desbloquear estágios e fazer chamadas de API personalizadas.
 
-Para obter informações sobre a revisão e as aprovações unificadas da Workfront, consulte [Visão geral da revisão e aprovação unificadas](https://experienceleague.adobe.com/pt-br/docs/workfront/using/review-and-approve-work/document-approvals-overview) na documentação da Workfront.
+Para obter informações sobre a revisão e as aprovações unificadas da Workfront, consulte [Visão geral da revisão e aprovação unificadas](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview) na documentação da Workfront.
 
 ## Requisitos de acesso
 
@@ -135,7 +132,6 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 * [Adicionar ou atualizar participantes](#add-or-update-participants)
 * [Modelos de exclusão em massa](#bulk-delete-templates)
 * [Criar um modelo](#create-a-template)
-* [Criar uma aprovação](#create-an-approval)
 * [Criar estágios](#create-stages)
 * [Excluir uma decisão em um estágio](#delete-a-decision-on-a-stage)
 * [Excluir um estágio](#delete-a-stage)
@@ -237,35 +233,6 @@ Este módulo de ação cria um modelo de aprovação
     <tr>
       <td role="rowheader"><p>Compartilhado com</p></td>
       <td>Para cada usuário com o qual você deseja compartilhar o modelo, clique em <b>Adicionar item</b>, na ID do usuário e no nível de acesso desejado.</td> 
-      </tr>
-  </tbody>
-</table>
-
-#### Criar uma aprovação
-
-Este módulo de ação cria uma aprovação para um documento no armazenamento em nuvem do Adobe, incluindo dados de preparo ou um modelo.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Conexão</td>
-      <td>Para obter instruções sobre como criar uma conexão com a Revisão e Aprovações Unificadas do Adobe Workfront, consulte <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Conectar-se à Revisão e Aprovações Unificadas do Adobe Workfront</a> neste artigo.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>ID do Documento</p></td>
-      <td>Insira ou mapeie a ID do ativo para o qual deseja criar uma aprovação.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader">
-        <p>Estágios</p>
-      </td>
-      <td>Para cada estágio que você deseja adicionar, clique em <b>Adicionar item</b> e insira os dados do estágio.<p>Para obter informações específicas, consulte <a href="#stages-fields" class="MCXref xref" >Campos de estágios</a> neste artigo. </p> </td> 
-      </tr>
-    <tr>
-      <td role="rowheader"><p>ID do Modelo</p></td>
-      <td>Insira ou mapeie a ID do modelo que você deseja usar para esta aprovação.</td> 
       </tr>
   </tbody>
 </table>
