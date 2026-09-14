@@ -7,13 +7,12 @@ exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
 TQID: https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: c9c182d6c6acc34295970f9138067a6cb6c2ba2a
+    internal-label: Workfront
+source-git-commit: e9450b468ff8df80286ebd8a0c1aa4070b6cb01b
 workflow-type: tm+mt
-source-wordcount: 1360
-ht-degree: 76%
-
+source-wordcount: '1445'
+ht-degree: 72%
 ---
-
 # Medidas de proteção do desempenho do Fusion
 
 A automação do trabalho requer processamento rápido, por isso o Adobe Workfront Fusion foi projetado para alto desempenho. Como cenários de longa duração podem diminuir o ritmo do trabalho, o Workfront Fusion foi projetado com medidas de proteção que preservam o desempenho e limitam o tempo de execução, o tamanho dos dados e outros parâmetros do cenário. Os designers do Workfront Fusion devem estar cientes dessas medidas de proteção e devem incorporá-las às suas práticas de design.
@@ -32,13 +31,13 @@ A automação do trabalho requer processamento rápido, por isso o Adobe Workfro
   >
   > Embora a encadeamento permita que os workflows sejam executados além de 40 minutos, isso deve ser tratado como um sinal de risco de design, não como uma solução alternativa compatível. Os cenários principais que abrangem vários cenários secundários de longa duração não têm limite de tempo limite geral. Se um cenário filho travar ou encontrar um problema de plataforma, o pai aguardará indefinidamente sem erro e sem recuperação automática.
   >
-  > Se o design do cenário exigir encadeamento para evitar o limite de 40 minutos, revise a arquitetura antes de implantar na produção. Consulte [Encadear vários cenários](https://experienceleague.adobe.com/pt-br/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios) para obter orientação sobre design.
+  > Se o design do cenário exigir encadeamento para evitar o limite de 40 minutos, revise a arquitetura antes de implantar na produção. Consulte [Encadear vários cenários](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios) para obter orientação sobre design.
 * O tamanho máximo de um blueprint do cenário é **5 MB**, mas recomendamos manter o tamanho do cenário abaixo de **3 MB**.
 
   Os módulos do aplicativo que criam ou atualizam dados com um número elevado de campos podem causar blueprints muito grandes.
 
-   * Ao usar o aplicativo Workfront, selecione apenas os campos necessários para criar ou atualizar casos de uso.
-   * Ao usar outros aplicativos, use módulos de API personalizados para interagir com qualquer tipo de registro que tenha um número elevado de campos.
+  * Ao usar o aplicativo Workfront, selecione apenas os campos necessários para criar ou atualizar casos de uso.
+  * Ao usar outros aplicativos, use módulos de API personalizados para interagir com qualquer tipo de registro que tenha um número elevado de campos.
 
 * Embora não haja limite para o número de módulos em um cenário, cenários com mais de 150 módulos afetam negativamente o desempenho do sistema Workfront Fusion. Por esse motivo, não recomendamos criar cenários com mais de 150 módulos.
 * Os nomes de cenários não podem ter mais de 120 caracteres.
@@ -79,10 +78,14 @@ Para obter mais informações, consulte [Como trabalhar com arquivos grandes](/h
 * O tamanho máximo padrão de um conteúdo é **5 MB**.
 * Os webhooks são limitados a **100 solicitações por segundo**. Quando esse limite é atingido, o Workfront Fusion envia um status 429 ([!UICONTROL Solicitações demais]).
 * O Workfront Fusion armazena conteúdo do webhook por 30 dias. O acesso a um conteúdo de webhook por mais de 30 dias após seu recebimento resulta no erro &quot;[!UICONTROL Falha ao ler o arquivo do armazenamento]&quot;.
+* A fila de um webhook pode conter até **100.000** eventos em fila. A fila é preenchida quando um cenário que usa o webhook é desativado ou definido para execução de acordo com um agendamento em vez de instantaneamente. Quando a fila atinge 100.000 eventos, os novos eventos são rejeitados com um erro &quot;A fila está cheia&quot; e um código de status 400.
+
+  Para eventos do Workfront e do Planning, se a fila permanecer cheia por um período estendido, a assinatura do evento será desabilitada, congelada e o Workfront Fusion deixará de receber eventos para essa assinatura.
+
 * Os webhooks são desativados automaticamente se qualquer uma das seguintes situações se aplicar:
 
-   * O webhook não foi conectado a nenhum cenário por mais de 5 dias
-   * O webhook é usado somente em cenários inativos, que ficaram assim por mais de 30 dias.
+  * O webhook não foi conectado a nenhum cenário por mais de 5 dias
+  * O webhook é usado somente em cenários inativos, que ficaram assim por mais de 30 dias.
 
 * Os webhooks desativados serão excluídos e removidos do registro automaticamente se não estiverem conectados a nenhum cenário e estiverem com o status desativado por mais de 30 dias.
 * O tempo-limite para uma resposta do webhook é 5 minutos.
