@@ -1,13 +1,11 @@
 ---
 name: fusion-doc-request
-description: Lide com uma solicitação de documentação do Fusion a partir do modelo
-source-git-commit: ac9a22b254b591ccf55270df62a85d158bb03697
+description: Lidar com uma solicitação de documentação do Fusion do #fusion-documentation Slack template - update the relevant Fusion docs article(s) in this repo, then create a matching task in the Product Documentation Workfront project with the feature description and a formatted release note filled in on the custom form. Use when the user shares a Slack documentation-request thread/message for a Fusion feature, or says something like "please update and create a task" for one.
+source-git-commit: faa0716f7e0a8ce496f8f65085de32288a4b6066
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1454'
 ht-degree: 0%
-
 ---
-
 
 # Solicitação de documentação do Fusion
 
@@ -25,11 +23,11 @@ As conexões do Slack neste ambiente são irregulares (tokens expirados, descone
 
 O modelo de solicitação tem estes campos - extraia cada um:
 
-&#x200B;* **Título do recurso**
-&#x200B;* **Descrição**
-&#x200B;* **Pontos a serem adicionados à documentação** *(às vezes presente - seções/detalhes específicos que o solicitante deseja cobrir; trate-os como obrigatórios, não opcionais, se fornecidos)*
-&#x200B;* **Data de lançamento esperada**
-&#x200B;* **Precisa de notificação** *(Sim/Não - apenas informativo; consulte a observação acima. Não atue neste campo.)*
+* **Título do recurso**
+* **Descrição**
+* **Pontos a serem adicionados à documentação** *(às vezes presente - seções/detalhes específicos que o solicitante deseja cobrir; trate-os como obrigatórios, não opcionais, se fornecidos)*
+* **Data de lançamento esperada**
+* **Precisa de notificação** *(Sim/Não - apenas informativo; consulte a observação acima. Não atue neste campo.)*
 
 Se a solicitação for vinculada a uma página wiki Confluence com a especificação completa, busque (`get_wiki_content`) antes de gravar a documentação. Não dependa apenas do resumo do Slack para obter detalhes técnicos (nomes exatos de campo, etapas, rótulos de interface do usuário), extraia-os da especificação do wiki quando um estiver vinculado.
 
@@ -43,16 +41,19 @@ Nomeie a ramificação `becky-{short-kebab-case-description}`, derivada do **Tí
 
 Se a árvore de trabalho não estiver limpa (alterações não confirmadas de trabalho não relacionado), pare e informe ao usuário em vez de ramificar-se sobre ela.
 
+Essa habilidade cria e confirma a ramificação, mas não a envia nem abre uma solicitação de pull; deixe isso para o usuário, a menos que ele solicite a você separadamente.
+
 ## Etapa 3: atualizar a documentação
 
 Encontre os artigos relevantes existentes neste repositório (grep para nomes de módulo relacionados, rótulos de interface do usuário ou nomes de configurações - não adivinhe o arquivo). Atualize-os para refletir a alteração, seguindo a estrutura existente, o nível do título e o estilo da casa desse artigo.
 
-&#x200B;* Não invente detalhes técnicos (nomes de campos exatos, escopos de permissão, etapas de configuração) que não estejam na solicitação do Slack ou na especificação da wiki vinculada. Se algo não for confirmado, marque-o como um comentário do HTML (por exemplo, `<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`), em vez de adivinhar - nunca como uma chamada visível. Ela não deve ser renderizada na página publicada.
-&#x200B;* Se isso exigir um arquivo de artigo totalmente novo (não apenas uma edição para um existente), siga as convenções permanentes deste repositório: nenhum `exl-id`/`TQID` fabricado na frente e converta o arquivo para CRLF/sem BOM após criá-lo (o padrão da ferramenta `Write` é LF).
-&#x200B;* Conectar uma nova página ao &quot;índice&quot; significa AMBOS, não apenas um. Uma página pode ser vinculada a partir de um subíndice, mas ainda ser invisível para os leitores:
+* Não invente detalhes técnicos (nomes de campos exatos, escopos de permissão, etapas de configuração) que não estejam na solicitação do Slack ou na especificação da wiki vinculada. Se algo não for confirmado, marque-o como um comentário do HTML (por exemplo, `<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`), em vez de adivinhar - nunca como uma chamada visível. Ela não deve ser renderizada na página publicada.
+* Se isso exigir um arquivo de artigo totalmente novo (não apenas uma edição para um existente), siga as convenções permanentes deste repositório: nenhum `exl-id`/`TQID` fabricado na frente e converta o arquivo para CRLF/sem BOM após criá-lo (o padrão da ferramenta `Write` é LF).
+* Conectar uma nova página ao &quot;índice&quot; significa AMBOS, não apenas um. Uma página pode ser vinculada a partir de um subíndice, mas ainda ser invisível para os leitores:
   - O arquivo de navegação mestre da área do produto (por exemplo, `help/workfront-fusion/TOC.md`). Ele é o que realmente direciona a árvore de navegação publicada.
   - Qualquer subíndice do conteúdo interno/página de aterrissagem que também vincule a artigos desse tipo (por exemplo, `apps-and-modules-toc.md` para uma nova página de módulos do conector).
     Verifique explicitamente e confirme se a nova entrada está na mesma lista, no mesmo nível de aninhamento, já que seus artigos semelhantes mais próximos em cada arquivo - não suponha que adicioná-la a uma cubra a outra.
+* Deixe as alterações do documento não confirmadas na ramificação. Não execute `git commit` (ou `git add`) como parte dessa habilidade - o usuário confirma quando está pronto, depois de revisar as alterações. Confirme somente se o usuário solicitar explicitamente.
 
 ## Etapa 4: criar a tarefa do Workfront
 
@@ -78,6 +79,11 @@ Defina os campos de data de visualização e a data de conclusão planejada como
 
 Novas tarefas assumem como padrão uma restrição O Mais Breve Possível com duração 0, sob a qual `plannedStartDate`/`plannedCompletionDate` são derivados do agendador e uma gravação direta em ambos é descartada silenciosamente (sem erro, a data simplesmente não muda). Configurar `taskConstraint: "MFO"` com `constraintDate` é uma maneira confiável de fixar a data de conclusão planejada na data citada na mensagem do Slack. Leia `workfront://knowledge/task/update` antes desta gravação - é um campo de agendamento/data de acordo com as regras do servidor MCP.
 
+O campo `description` tem um limite rígido de 4.000 caracteres. Se o texto completo da mensagem do Slack não couber:
+
+1. Em vez disso, crie a tarefa primeiro com um curto `description`: Título do recurso, Data de lançamento esperada, Anúncio de necessidades, um resumo em uma linha da solicitação, uma observação de que o texto completo da solicitação é postado como o primeiro comentário na tarefa e o link do thread do Slack.
+1. Em seguida, poste o texto completo e textual da mensagem do Slack (todos os campos de modelo, não uma paráfrase) como um comentário na tarefa recém-criada, via `comment-stream_create_comment` (`objectCode` `task`, `objectID` a ID da nova tarefa) - esta ferramenta não tem limite de comprimento comparável. Incluir `content` (texto sem formatação) e `contentHTML` (estruturado com títulos/listas, não apenas marcas `<p>` puras).
+
 Formato da nota de versão para o campo `DE:Release notes`. Sempre comece com `***FUSION***` em sua própria linha, em seguida, uma linha em branco e, em seguida, o título. Isso marca a nota como pertencente ao Fusion (em vez do Core Workfront) rapidamente:
 
 ```markdown
@@ -96,17 +102,18 @@ Antes de criar a chamada, chame `read_workflow_docs` com `workfront://tools/crea
 
 Relatar claramente:
 
-&#x200B;* A ramificação criada.
-&#x200B;* Quais arquivos de documento você alterou e o que adicionou.
-&#x200B;* O nome da tarefa e o URL.
-&#x200B;* Os valores exatos do campo definidos, incluindo os campos de data de visualização.
-&#x200B;* Qualquer coisa com a qual você não tivesse total confiança, por exemplo, o Slack estava inacessível e você trabalhava somente com texto colado, o artigo de documento de destino era ambíguo ou um detalhe técnico não estava no material de origem e foi sinalizado em vez de adivinhado.
+* A ramificação criada (confirmada localmente, não enviada e nenhuma solicitação de recepção aberta - de acordo com a Etapa 2).
+* Quais arquivos de documento você alterou e o que adicionou.
+* Que as alterações não foram confirmadas na ramificação, aguardando a revisão do usuário.
+* O nome da tarefa e o URL.
+* Os valores exatos do campo definidos, incluindo os campos de data de visualização.
+* Qualquer coisa com a qual você não tivesse total confiança, por exemplo, o Slack estava inacessível e você trabalhava somente com texto colado, o artigo de documento de destino era ambíguo ou um detalhe técnico não estava no material de origem e foi sinalizado em vez de adivinhado.
 
 ## Valores conhecidos (de execuções anteriores)
 
 Confirme se eles ainda estão resolvidos, em vez de supor que sejam permanentes:
 
-&#x200B;* O projeto &quot;Tarefas de documentação do produto - para problemas de desenvolvimento que exigem mensagens&quot; mapeia para a ID `5e69583f00236b9f767c3e3944100ee4`
-&#x200B;* A tarefa pai &quot;Becky - Tarefas do canal Fusion-Documentation&quot; mapeia para a ID `6a9b065100003a7554832780c2015e93` (no mesmo projeto) - resolver com `insights_find_id_by_name` (entidade `task`) em vez de codificar, caso seja alterada
-&#x200B;* O formulário personalizado (`categoryID`) da Documentação do produto é `5d7275b9000514604bd969d418725843`
-&#x200B;* Campos personalizados usados: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
+* O projeto &quot;Tarefas de documentação do produto - para problemas de desenvolvimento que exigem mensagens&quot; mapeia para a ID `5e69583f00236b9f767c3e3944100ee4`
+* A tarefa pai &quot;Becky - Tarefas do canal Fusion-Documentation&quot; mapeia para a ID `6a9b065100003a7554832780c2015e93` (no mesmo projeto) - resolver com `insights_find_id_by_name` (entidade `task`) em vez de codificar, caso seja alterada
+* O formulário personalizado (`categoryID`) da Documentação do produto é `5d7275b9000514604bd969d418725843`
+* Campos personalizados usados: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
