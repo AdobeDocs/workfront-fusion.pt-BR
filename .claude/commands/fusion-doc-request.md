@@ -1,13 +1,11 @@
 ---
 name: fusion-doc-request
-description: Lide com uma solicitação de documentação do Fusion a partir do modelo
-source-git-commit: ac9a22b254b591ccf55270df62a85d158bb03697
+description: Lidar com uma solicitação de documentação do Fusion do #fusion-documentation Slack template - update the relevant Fusion docs article(s) in this repo, then create a matching task in the Product Documentation Workfront project with the feature description and a formatted release note filled in on the custom form. Use when the user shares a Slack documentation-request thread/message for a Fusion feature, or says something like "please update and create a task" for one.
+source-git-commit: faa0716f7e0a8ce496f8f65085de32288a4b6066
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1454'
 ht-degree: 0%
-
 ---
-
 
 # Solicitação de documentação do Fusion
 
@@ -43,6 +41,8 @@ Nomeie a ramificação `becky-{short-kebab-case-description}`, derivada do **Tí
 
 Se a árvore de trabalho não estiver limpa (alterações não confirmadas de trabalho não relacionado), pare e informe ao usuário em vez de ramificar-se sobre ela.
 
+Essa habilidade cria e confirma a ramificação, mas não a envia nem abre uma solicitação de pull; deixe isso para o usuário, a menos que ele solicite a você separadamente.
+
 ## Etapa 3: atualizar a documentação
 
 Encontre os artigos relevantes existentes neste repositório (grep para nomes de módulo relacionados, rótulos de interface do usuário ou nomes de configurações - não adivinhe o arquivo). Atualize-os para refletir a alteração, seguindo a estrutura existente, o nível do título e o estilo da casa desse artigo.
@@ -53,6 +53,7 @@ Encontre os artigos relevantes existentes neste repositório (grep para nomes de
   - O arquivo de navegação mestre da área do produto (por exemplo, `help/workfront-fusion/TOC.md`). Ele é o que realmente direciona a árvore de navegação publicada.
   - Qualquer subíndice do conteúdo interno/página de aterrissagem que também vincule a artigos desse tipo (por exemplo, `apps-and-modules-toc.md` para uma nova página de módulos do conector).
     Verifique explicitamente e confirme se a nova entrada está na mesma lista, no mesmo nível de aninhamento, já que seus artigos semelhantes mais próximos em cada arquivo - não suponha que adicioná-la a uma cubra a outra.
+&#x200B;* Deixe as alterações do documento não confirmadas na ramificação. Não execute `git commit` (ou `git add`) como parte dessa habilidade - o usuário confirma quando está pronto, depois de revisar as alterações. Confirme somente se o usuário solicitar explicitamente.
 
 ## Etapa 4: criar a tarefa do Workfront
 
@@ -78,6 +79,11 @@ Defina os campos de data de visualização e a data de conclusão planejada como
 
 Novas tarefas assumem como padrão uma restrição O Mais Breve Possível com duração 0, sob a qual `plannedStartDate`/`plannedCompletionDate` são derivados do agendador e uma gravação direta em ambos é descartada silenciosamente (sem erro, a data simplesmente não muda). Configurar `taskConstraint: "MFO"` com `constraintDate` é uma maneira confiável de fixar a data de conclusão planejada na data citada na mensagem do Slack. Leia `workfront://knowledge/task/update` antes desta gravação - é um campo de agendamento/data de acordo com as regras do servidor MCP.
 
+O campo `description` tem um limite rígido de 4.000 caracteres. Se o texto completo da mensagem do Slack não couber:
+
+1. Em vez disso, crie a tarefa primeiro com um curto `description`: Título do recurso, Data de lançamento esperada, Anúncio de necessidades, um resumo em uma linha da solicitação, uma observação de que o texto completo da solicitação é postado como o primeiro comentário na tarefa e o link do thread do Slack.
+1. Em seguida, poste o texto completo e textual da mensagem do Slack (todos os campos de modelo, não uma paráfrase) como um comentário na tarefa recém-criada, via `comment-stream_create_comment` (`objectCode` `task`, `objectID` a ID da nova tarefa) - esta ferramenta não tem limite de comprimento comparável. Incluir `content` (texto sem formatação) e `contentHTML` (estruturado com títulos/listas, não apenas marcas `<p>` puras).
+
 Formato da nota de versão para o campo `DE:Release notes`. Sempre comece com `***FUSION***` em sua própria linha, em seguida, uma linha em branco e, em seguida, o título. Isso marca a nota como pertencente ao Fusion (em vez do Core Workfront) rapidamente:
 
 ```markdown
@@ -96,8 +102,9 @@ Antes de criar a chamada, chame `read_workflow_docs` com `workfront://tools/crea
 
 Relatar claramente:
 
-&#x200B;* A ramificação criada.
+&#x200B;* A ramificação criada (confirmada localmente, não enviada e nenhuma solicitação de recepção aberta - de acordo com a Etapa 2).
 &#x200B;* Quais arquivos de documento você alterou e o que adicionou.
+&#x200B;* Que as alterações não foram confirmadas na ramificação, aguardando a revisão do usuário.
 &#x200B;* O nome da tarefa e o URL.
 &#x200B;* Os valores exatos do campo definidos, incluindo os campos de data de visualização.
 &#x200B;* Qualquer coisa com a qual você não tivesse total confiança, por exemplo, o Slack estava inacessível e você trabalhava somente com texto colado, o artigo de documento de destino era ambíguo ou um detalhe técnico não estava no material de origem e foi sinalizado em vez de adivinhado.
