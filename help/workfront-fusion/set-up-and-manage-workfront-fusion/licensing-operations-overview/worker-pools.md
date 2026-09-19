@@ -3,13 +3,12 @@ title: Pools de Trabalhadores
 description: Um pool de trabalhadores é uma quantidade de recursos de processamento do Workfront Fusion dedicados a uma ou mais organizações específicas. Todas as operações e o processamento do Fusion ocorrem no contexto de um pool de trabalhadores atribuído de uma organização.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: bb94083eb9f58dc3ae9f94a59288da43317b567b
+exl-id: 8bf508a8-d1f9-455f-af89-62f688289137
+source-git-commit: b95974d19c3dcb2fea0d6323c2b747665216a2e7
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '219'
 ht-degree: 0%
-
 ---
-
 # Pools de trabalhadores
 
 Um pool de trabalhadores é uma quantidade de recursos de processamento do Workfront Fusion dedicados a uma organização específica. Todas as operações e o processamento do Fusion ocorrem no contexto de um pool de trabalhadores atribuído de uma organização.

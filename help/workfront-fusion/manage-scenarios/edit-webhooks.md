@@ -3,13 +3,12 @@ title: Editar Webhooks
 description: É possível editar webhooks existentes para os conectores do Workfront e do Workfront Planning.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 2561c911b9b542a7b143fae745baf4e1de45be38
+exl-id: 86849d21-5a74-43f7-9ccf-dff4421cc981
+source-git-commit: 25ba44b8ab1aab8ad6e2d6a989f55366d48a0575
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 4%
-
 ---
-
 # Editar webhooks
 
 É possível editar webhooks existentes. Os cenários que usam esses webhooks usarão a nova configuração a partir de agora, o que elimina a necessidade de criar um novo webhook e atribuí-lo manualmente a todos os cenários afetados.
@@ -17,7 +16,7 @@ ht-degree: 4%
 Os webhooks podem ser editados somente para os seguintes conectores:
 
 * Workfront
-* Workfront Planning
+* Planejamento do Workfront
 
 >[!IMPORTANT]
 >
@@ -51,4 +50,3 @@ Os webhooks podem ser editados somente para os seguintes conectores:
 1. No banner azul na parte inferior da tela, clique em **Editar**.
 1. Faça as edições desejadas no webhook.
 1. Clique em **Salvar** para salvar o webhook e retornar à lista de Webhooks.
-
