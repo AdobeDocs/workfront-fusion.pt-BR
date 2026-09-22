@@ -7,16 +7,21 @@ exl-id: 6e2df1a0-c1f9-4833-b1c2-65efb3be9657
 TQID: https://experienceleague.adobe.com/t3FcOEcjniaGfX9Ag25kYrcU6-2LKwaIdnRojHRpI5Q
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+source-git-commit: ed2fc06e4c43fe84b5f88792cc24115468059431
 workflow-type: tm+mt
-source-wordcount: 767
-ht-degree: 2%
-
+source-wordcount: '801'
+ht-degree: 3%
 ---
-
 # Licenças do Adobe Workfront Fusion
 
 O Workfront Fusion tem dois modelos de licenciamento, um novo modelo baseado em operações e um modelo herdado baseado em conector.
+
+>[!NOTE]
+>
+>O suporte a arquivos grandes em cenários do Workfront Fusion está disponível somente para organizações no pacote do Workfront Ultimate, independentemente do modelo de licenciamento do Fusion usado por sua organização.
+>
+>Para obter mais informações, consulte [Como trabalhar com arquivos grandes](/help/workfront-fusion/references/scenarios/fusion-large-files.md).
 
 ## Modelo de licenciamento baseado em operações (Novo)
 
@@ -60,14 +65,14 @@ Com a licença do Workfront Fusion for Work Automation, você tem acesso ao segu
 * Webhooks
 * Módulos de ferramentas e transformadores, como:
 
-   * Arquivo
-   * CSV
-   * Armazenamentos de dados
-   * Imagem
-   * JSON
-   * Matemática
-   * MIME
-   * XML
+  * Arquivo
+  * CSV
+  * Armazenamentos de dados
+  * Imagem
+  * JSON
+  * Matemática
+  * MIME
+  * XML
 
 #### Exemplo de Workfront Fusion para Automação de Trabalho
 
