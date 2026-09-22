@@ -8,9 +8,9 @@ TQID: https://experienceleague.adobe.com/t3FcOEcjniaGfX9Ag25kYrcU6-2LKwaIdnRojHR
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
-source-git-commit: 1feb4fce42c7759ca8fc91d4270dd00c0a59da24
+source-git-commit: ed2fc06e4c43fe84b5f88792cc24115468059431
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '801'
 ht-degree: 3%
 ---
 # Licenças do Adobe Workfront Fusion
@@ -19,7 +19,7 @@ O Workfront Fusion tem dois modelos de licenciamento, um novo modelo baseado em 
 
 >[!NOTE]
 >
->O suporte a arquivos grandes em cenários do Workfront Fusion está disponível somente para organizações no pacote Workfront Ultimate, independentemente do modelo de licenciamento Fusion usado.
+>O suporte a arquivos grandes em cenários do Workfront Fusion está disponível somente para organizações no pacote do Workfront Ultimate, independentemente do modelo de licenciamento do Fusion usado por sua organização.
 >
 >Para obter mais informações, consulte [Como trabalhar com arquivos grandes](/help/workfront-fusion/references/scenarios/fusion-large-files.md).
 
