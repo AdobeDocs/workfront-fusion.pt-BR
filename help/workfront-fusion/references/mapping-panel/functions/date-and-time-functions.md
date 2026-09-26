@@ -4,18 +4,21 @@ description: As seguintes funções de data e hora estão disponíveis no painel
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-TQID: https://experienceleague.adobe.com/E77KZbLpHtYJ-D7haukgux3AnmhfkIh-xqh0j6NbNiU
+TQID: 'https://experienceleague.adobe.com/E77KZbLpHtYJ-D7haukgux3AnmhfkIh-xqh0j6NbNiU'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: e6873ab923b73175d1889b44df5d7c1baf9d42fb
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 2392
+source-wordcount: '2392'
 ht-degree: 3%
-
 ---
-
 # Funções de data e hora
 
 ## Variáveis
@@ -519,7 +522,7 @@ Esta função retorna uma nova data com os segundos especificados em parâmetros
 
 Especifique um número de 0 a 59. Se o número estiver fora desse intervalo, a função retornará um segundo do minuto anterior (para um número negativo) ou do minuto subsequente (para um número positivo).
 
-Se você precisar especificar um número fora do intervalo, recomendamos usar [!UICONTROL &#x200B; addSeconds], conforme descrito acima na seção [addSeconds (date; number)](#addseconds-date-number).
+Se você precisar especificar um número fora do intervalo, recomendamos usar [!UICONTROL  addSeconds], conforme descrito acima na seção [addSeconds (date; number)](#addseconds-date-number).
 
 >[!BEGINSHADEBOX]
 
@@ -891,7 +894,7 @@ Caso queira calcular apenas um caso específico, por exemplo, a cada segunda qua
 * `1.dow` = `3`
 * `1.date` = `now`
 
-![Valor da variável de dia &#x200B;](assets/nth-day-variable-value-350x33.png)
+![Valor da variável de dia ](assets/nth-day-variable-value-350x33.png)
 
 #### Explicação:
 

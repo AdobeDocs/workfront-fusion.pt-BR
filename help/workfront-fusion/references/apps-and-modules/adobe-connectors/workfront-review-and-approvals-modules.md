@@ -10,10 +10,12 @@ product_v2:
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
     internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 4f637dcb9d7865f73b41faa5b0acf397944bb559
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
 source-wordcount: '5202'
 ht-degree: 11%
@@ -22,7 +24,7 @@ ht-degree: 11%
 
 Com os módulos Unified Review and Approvals da Adobe Workfront, você pode obter detalhes de aprovação, tomar uma decisão sobre um ativo, adicionar ou excluir participantes de aprovação, adicionar ou atualizar estágios de aprovação, bloquear ou desbloquear estágios e fazer chamadas de API personalizadas.
 
-Para obter informações sobre a revisão e as aprovações unificadas da Workfront, consulte [Visão geral da revisão e aprovação unificadas](https://experienceleague.adobe.com/pt-br/docs/workfront/using/review-and-approve-work/document-approvals-overview) na documentação da Workfront.
+Para obter informações sobre a revisão e as aprovações unificadas da Workfront, consulte [Visão geral da revisão e aprovação unificadas](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview) na documentação da Workfront.
 
 ## Requisitos de acesso
 

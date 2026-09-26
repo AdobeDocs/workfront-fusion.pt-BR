@@ -4,16 +4,18 @@ description: Com esses módulos, é possível encadear cenários, fazendo com qu
 author: Becky
 feature: Workfront Fusion
 exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
-TQID: https://experienceleague.adobe.com/AlHUrliXikCc3OVHiBTjLNQFndCf5qLzOLuBvnDTUfA
+TQID: 'https://experienceleague.adobe.com/AlHUrliXikCc3OVHiBTjLNQFndCf5qLzOLuBvnDTUfA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 936fc6b4d5688e42ad6d762d4f43abf8be47e5af
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 913
+source-wordcount: '913'
 ht-degree: 10%
-
 ---
-
 # Módulos de cadeia
 
 >[!IMPORTANT]
@@ -100,7 +102,7 @@ Esse módulo está localizado no cenário principal. Os campos refletem a estrut
 > * **Tenha cuidado ao colocar este módulo dentro de um iterador.** O envio de um cenário filho para cada item em um iterador grande cria uma carga de plataforma significativa. Considere embutir a lógica do cenário filho ou realizar pesquisas compartilhadas de pré-computação fora do iterador.
 > * **Disparar e Esquecer** significa que o pai não tem visibilidade sobre se o filho foi executado ou bem-sucedido. Use somente quando as falhas secundárias forem monitoradas independentemente.
 >
-> Para obter orientações completas sobre design, consulte [Cadear vários cenários](https://experienceleague.adobe.com/pt-br/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios).
+> Para obter orientações completas sobre design, consulte [Cadear vários cenários](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios).
 
 >[!NOTE]
 >

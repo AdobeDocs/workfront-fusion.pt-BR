@@ -1,24 +1,35 @@
 ---
 title: Módulos do Adobe Acrobat Sign
-description: Com os  [!DNL Adobe Acrobat Sign] módulos, você pode iniciar um cenário do Adobe Workfront Fusion com base em eventos na sua conta da  [!DNL Adobe] Acrobat Sign, criar, ler ou atualizar contratos e outros registros, pesquisar registros usando os critérios definidos e carregar documentos.
+description: Com os módulos do [!DNL Adobe Acrobat Sign], você pode iniciar um cenário do Adobe Workfront Fusion com base em eventos na sua conta do Acrobat Sign [!DNL Adobe], criar, ler ou atualizar contratos e outros registros, pesquisar registros usando os critérios definidos e carregar documentos.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
-TQID: https://experienceleague.adobe.com/bIhgpTsd4d1GOHARM2tYljUIJTt1JNRA-8JslmAuMRk
+TQID: 'https://experienceleague.adobe.com/bIhgpTsd4d1GOHARM2tYljUIJTt1JNRA-8JslmAuMRk'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+  - id: e14a7f57-c82c-4874-a495-5d036cbbdc3d
+    internal-label: Resource management
+subfeature_v2:
+  - id: b70a979b-965d-47a9-a360-e7ec2a19b8c1
+    internal-label: Digital content and documents
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Personalization
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 6798
+source-wordcount: '6800'
 ht-degree: 11%
-
 ---
-
 # Módulos do [!DNL Adobe Acrobat Sign]
 
 Com os módulos do [!DNL Adobe Acrobat Sign], você pode iniciar um cenário do Adobe Workfront Fusion com base em eventos na sua conta do [!DNL Adobe Acrobat Sign], criar, ler ou atualizar contratos e outros registros, pesquisar registros usando os critérios definidos e carregar documentos.
@@ -263,7 +274,7 @@ Este módulo de ação cria um novo registro do tipo selecionado.
         <ul> 
          <li> <p><b>[!UICONTROL Mime-Type]</b> </p> <p>Insira o tipo MIME do arquivo original. Os tipos MIME (Multipurpose Internet Mail Extension) são rótulos que permitem que o software identifique diferentes tipos de dados compartilhados na Internet. Servidores da Web e navegadores usam o tipo MIME para determinar o que deve ser feito com um arquivo. Por exemplo, um arquivo com o tipo MIME <code>text/html</code> será processado em um navegador de forma diferente de um arquivo com o tipo MIME <code>image/jpeg</code>.</p> </li> 
          <li> <p><b>[!UICONTROL Nome]</b> </p> <p>Insira um nome para o arquivo.</p> </li> 
-         <li> <p><b></b> </p> <p>Insira o URL do arquivo que deseja enviar.</p> </li> 
+         <li> <p><b>[!UICONTROL]</b> </p> <p>Insira o URL do arquivo que deseja enviar.</p> </li> 
         </ul> </li> 
        <li> <p><b>[!UICONTROL Notarize]</b> </p> <p>Selecione se este documento precisa ser notariado.</p> </li> 
       </ul> </li> 
@@ -272,7 +283,7 @@ Este módulo de ação cria um novo registro do tipo selecionado.
      <li> <p><b>[!UICONTROL Estado do documento da biblioteca]</b> </p> <p>Selecione se o documento está no estado de criação ou ativo.</p> </li> 
      <li> <p><b>[!UICONTROL Tipo de modelo de biblioteca]</b> </p> <p>Para cada tipo de modelo de biblioteca que você deseja usar, clique em <b>[!UICONTROL Adicionar item]</b> e selecione o tipo de modelo.</p> </li> 
      <li> <p><b>[!UICONTROL Data do último evento]</b> </p> <p>Insira a última data em que um evento ocorreu no documento da biblioteca.</p> <p>Para obter uma lista de formatos de data e hora compatíveis, consulte <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coerção de tipo</a>.</p> </li> 
-     <li> <p><b>[!UICONTROL Status do documento da biblioteca]</b> </p> <p>Selecione o status do documento de biblioteca.</p> </li> 
+     <li> <p><b>[!Status do documento da biblioteca UICONTROL]</b> </p> <p>Selecione o status do documento de biblioteca.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -328,14 +339,14 @@ Este módulo de ação cria um novo registro do tipo selecionado.
       </ul> </li> 
      <li> <p><b>[!UICONTROL Informações de falha de autenticação]</b> </p> <p>Para fornecer uma página de erro ou falha para seus usuários, selecione <b>[!UICONTROL Sim]</b> e preencha os seguintes campos:</p> 
       <ul> 
-       <li> <p><b></b> </p> <p>Insira o URL da página de erro</p> </li> 
+       <li> <p><b>[!UICONTROL]</b> </p> <p>Insira o URL da página de erro</p> </li> 
        <li> <p><b>[!UICONTROL Desframe]</b> </p> <p>Ative esta opção se desejar que a página de erro apareça dentro do formulário web</p> </li> 
        <li> <p><b>[!UICONTROL Retardo]</b> </p> <p>Insira o atraso, em segundos, antes que o usuário seja redirecionado para a página de erro.</p> </li> 
       </ul> </li> 
      <li> <p><b>[!UICONTROL informações CC]</b> </p> <p>Para cada endereço de email no qual você deseja receber um email quando o contrato final no formulário da Web for assinado, clique em <b>[!UICONTROL Adicionar item]</b> e insira o endereço de email.</p> </li> 
      <li> <p><b>[!UICONTROL Informações de conclusão]</b> </p> <p style="font-style: normal;">Para fornecer uma página de sucesso aos seus usuários, selecione <b>[!UICONTROL Sim]</b> e preencha os seguintes campos:</p> 
       <ul> 
-       <li> <p><b></b> </p> <p>Insira o URL da página de sucesso</p> </li> 
+       <li> <p><b>[!UICONTROL]</b> </p> <p>Insira o URL da página de sucesso</p> </li> 
        <li> <p><b>[!UICONTROL Desframe]</b> </p> <p>Ative esta opção se desejar que a página de sucesso apareça dentro do formulário web</p> </li> 
        <li> <p><b>[!UICONTROL Retardo]</b> </p> <p>Insira o atraso, em segundos, antes que o usuário seja redirecionado para a página de sucesso.</p> </li> 
       </ul> </li> 
@@ -391,7 +402,7 @@ Este módulo de ação cria um contrato, o envia para assinatura e retorna a ID 
         <ul> 
          <li> <p><b>[!UICONTROL Mime-Type]</b> </p> <p>Insira o tipo MIME do arquivo original. Os tipos MIME (Multipurpose Internet Mail Extension) são rótulos que permitem que o software identifique diferentes tipos de dados compartilhados na Internet. Servidores da Web e navegadores usam o tipo MIME para determinar o que deve ser feito com um arquivo. Por exemplo, um arquivo com o tipo MIME <code>text/html</code> será processado em um navegador de forma diferente de um arquivo com o tipo MIME <code>image/jpeg</code>.</p> </li> 
          <li> <p><b>[!UICONTROL Nome]</b> </p> <p>Insira um nome para o arquivo.</p> </li> 
-         <li> <p><b></b> </p> <p>Insira o URL do arquivo que deseja enviar.</p> </li> 
+         <li> <p><b>[!UICONTROL]</b> </p> <p>Insira o URL do arquivo que deseja enviar.</p> </li> 
         </ul> </li> 
       </ul> </li> 
      <li> <p><b>[!UICONTROL RÓTULO]</b> </p> <p>Insira um rótulo para o arquivo.</p> </li> 

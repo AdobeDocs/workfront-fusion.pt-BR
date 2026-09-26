@@ -1,21 +1,24 @@
 ---
 title: Módulos do Google Team Drive
-description: Os  [!DNL Adobe Workfront Fusion Google Team Drive] módulos permitem que você monitore, carregue, atualize, copie, exclua ou recupere arquivos e crie pastas em sua  [!DNL Google Shared] unidade.
+description: Os módulos do [!DNL Adobe Workfront Fusion Google Team Drive] permitem monitorar, carregar, atualizar, copiar, excluir ou recuperar arquivos e criar pastas na unidade [!DNL Google Shared].
 author: Becky
 feature: Workfront Fusion
 exl-id: 95dd9d23-1df9-40da-8fd0-646cc697bfc8
-TQID: https://experienceleague.adobe.com/NRXOXLNBdwj3Xxf1SiHHyQ-6-DkqYGFexJnyoseVjpk
+TQID: 'https://experienceleague.adobe.com/NRXOXLNBdwj3Xxf1SiHHyQ-6-DkqYGFexJnyoseVjpk'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1384
+source-wordcount: '1386'
 ht-degree: 24%
-
 ---
-
 # Módulos do [!DNL Google Team Drive]
 
 Os módulos [!DNL Google Team Drive] do Adobe Workfront Fusion permitem monitorar, carregar, atualizar, copiar, excluir ou recuperar arquivos e criar pastas em seu [!DNL Google Shared Drive].

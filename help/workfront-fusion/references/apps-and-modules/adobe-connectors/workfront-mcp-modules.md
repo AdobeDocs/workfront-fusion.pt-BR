@@ -5,13 +5,15 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 88515edc81bafe2d1a81df627fd51dd4ed674c02
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 884
+source-wordcount: '884'
 ht-degree: 16%
-
 ---
-
 # Módulos MCP do Adobe Workfront
 
 O conector MCP do Adobe Workfront é uma integração dedicada do Fusion para o próprio servidor MCP (Model Context Protocol) da Adobe Workfront. Ao contrário de um conector típico, em que cada módulo executa uma ação fixa, esse conector tem um único módulo que aceita uma instrução em inglês simples e aberta e permite que um modelo de IA decida quais operações do Workfront são necessárias para cumpri-la.
@@ -139,7 +141,7 @@ Esse módulo de ação processa um prompt em inglês simples no servidor MCP do 
   </tr>  </tbody> 
 </table>
 
-Para obter uma lista das ferramentas que você pode selecionar para os campos Ferramentas somente leitura e Ferramentas de gravação/exclusão, consulte [Ferramentas do servidor MCP do Adobe Workfront](https://experienceleague.adobe.com/pt-br/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools) na documentação do Workfront.
+Para obter uma lista das ferramentas que você pode selecionar para os campos Ferramentas somente leitura e Ferramentas de gravação/exclusão, consulte [Ferramentas do servidor MCP do Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools) na documentação do Workfront.
 
 O módulo retorna as seguintes informações, que você pode mapear nos módulos subsequentes no cenário:
 

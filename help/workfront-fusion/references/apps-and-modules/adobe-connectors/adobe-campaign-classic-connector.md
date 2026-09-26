@@ -1,22 +1,26 @@
 ---
 title: Módulos do Adobe Campaign v7/v8
-description: Com os  [!DNL Adobe Campaign] módulos, você pode iniciar um cenário do Adobe Workfront Fusion com base em eventos na sua conta [!DNL Adobe Campaign] criar, ler ou atualizar contratos e outros registros, pesquisar registros usando os critérios definidos e carregar documentos.
+description: Com os módulos do [!DNL Adobe Campaign], você pode iniciar um cenário do Adobe Workfront Fusion com base em eventos na sua conta do [!DNL Adobe Campaign], criar, ler ou atualizar contratos e outros registros, pesquisar registros usando os critérios definidos e carregar documentos.
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
-TQID: https://experienceleague.adobe.com/XOlUFhvSj8JNu8MS5Kgm0VEwEPmrpVwbTggi6rU4jfk
+TQID: 'https://experienceleague.adobe.com/XOlUFhvSj8JNu8MS5Kgm0VEwEPmrpVwbTggi6rU4jfk'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Security
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1451
+source-wordcount: '1453'
 ht-degree: 34%
-
 ---
-
 # Módulos do [!DNL Adobe Campaign]
 
 Com os módulos do [!DNL Adobe Campaign], você pode iniciar um cenário do Adobe Workfront Fusion com base em eventos na sua conta do [!DNL Adobe Campaign v7/v8], criar, ler ou atualizar registros, pesquisar registros usando os critérios definidos e executar chamadas de API personalizadas.
@@ -63,7 +67,7 @@ Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Li
 
 Você deve adicionar os endereços IP do Fusion a [!DNL Adobe Campaign].
 
-* Para obter instruções sobre como adicionar endereços IP ao incluo na lista de permissões do Campaign, consulte [Adicionar endereços IP ao incluo na lista de permissões](https://experienceleague.adobe.com/pt-br/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list) na documentação do Adobe Campaign.
+* Para obter instruções sobre como adicionar endereços IP ao incluo na lista de permissões do Campaign, consulte [Adicionar endereços IP ao incluo na lista de permissões](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list) na documentação do Adobe Campaign.
 * Para obter uma lista de endereços IP a serem adicionados ao incluo na lista de permissões, consulte [Configurar Endereços IP para Fusion no incluo na lista de permissões de sua organização](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md).
 
 ## Informações da API do Adobe Campaign
@@ -87,7 +91,7 @@ O conector do Adobe Campaign usa o seguinte:
 >
 >É altamente recomendável criar uma conexão de servidor para servidor. A Adobe Campaign atualizou a API para aceitar somente conexões servidor para servidor. Se você estiver se conectando ao Campaign versão 8 ou superior, **deverá** criar uma conexão servidor a servidor.
 >
->Para obter mais informações sobre os novos requisitos de conexão do Campaign, consulte [Migração de operadores técnicos do Campaign para o Adobe Developer Console](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/ims-migration.html?lang=pt-BR) na documentação do Campaign.
+>Para obter mais informações sobre os novos requisitos de conexão do Campaign, consulte [Migração de operadores técnicos do Campaign para o Adobe Developer Console](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/ims-migration.html) na documentação do Campaign.
 
 1. Em qualquer módulo [!DNL Adobe Campaign], clique em **[!UICONTROL Adicionar]** ao lado do campo [!UICONTROL Conexão].
 1. Preencha os seguintes campos:
@@ -288,7 +292,7 @@ Este módulo faz uma chamada de API personalizada para a API [!DNL Adobe Campaig
 
 Este módulo de ação executa uma ação selecionada em um objeto na API [!DNL Adobe Campaign].
 
-Para obter informações sobre ações e campos específicos, consulte [[!DNL Adobe Campaign] - Documentação da API](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=pt-BR).
+Para obter informações sobre ações e campos específicos, consulte [[!DNL Adobe Campaign] - Documentação da API](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html).
 
 <table style="table-layout:auto"> 
  <col> 

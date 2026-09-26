@@ -4,18 +4,21 @@ description: O aplicativo HTTP do Adobe Workfront Fusion fornece vários módulo
 author: Becky
 feature: Workfront Fusion
 exl-id: 7db97e6e-262d-4be2-823b-423f56a7d886
-TQID: https://experienceleague.adobe.com/OMMUuYStE-zaML4-bBkPQmq9jTprC-GKYx-yt3tiFzQ
+TQID: 'https://experienceleague.adobe.com/OMMUuYStE-zaML4-bBkPQmq9jTprC-GKYx-yt3tiFzQ'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 633
+source-wordcount: '633'
 ht-degree: 24%
-
 ---
-
 # HTTP > Outros módulos
 
 O aplicativo Adobe Workfront Fusion [!UICONTROL HTTP] fornece vários módulos para comunicação com base no protocolo HTTP (Hypertext Transfer Protocol). HTTP é a base da comunicação de dados para a World Wide Web. Você pode usar os módulos do para baixar páginas e arquivos da Web, chamar webhooks e endpoints de API e assim por diante.

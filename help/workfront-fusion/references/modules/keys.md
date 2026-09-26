@@ -4,16 +4,18 @@ description: O chaveiro no Adobe Workfront Fusion ajudará você a administrar c
 author: Becky
 feature: Workfront Fusion
 exl-id: b92e54ed-fa03-4af7-be7b-436907b2bff9
-TQID: https://experienceleague.adobe.com/EV5p7TwCCWVwujv8x2r5MxTc1sZMEhTJey8Xodp5HTA
+TQID: 'https://experienceleague.adobe.com/EV5p7TwCCWVwujv8x2r5MxTc1sZMEhTJey8Xodp5HTA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 324
+source-wordcount: '324'
 ht-degree: 49%
-
 ---
-
 # Chaves
 
 As chaves públicas e privadas são usadas para criptografar e descriptografar dados. A chave pública pode ser distribuída e qualquer pessoa com ela pode criptografar dados, mas somente a chave privada pode descriptografá-los. De maneira similar, um usuário com uma chave privada pode criptografar dados que qualquer pessoa com a chave pública pode descriptografar. Na área Chaves, você pode visualizar e gerenciar as chaves que pertencem à sua equipe.

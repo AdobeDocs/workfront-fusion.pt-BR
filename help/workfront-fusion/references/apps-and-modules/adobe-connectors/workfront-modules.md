@@ -4,24 +4,32 @@ description: Você pode usar o conector do Adobe Workfront do Fusion para automa
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-TQID: https://experienceleague.adobe.com/CjzJP-U4P5bVop8ktivUH3pPOjVVgamqqc--cUsLm8U
+TQID: 'https://experienceleague.adobe.com/CjzJP-U4P5bVop8ktivUH3pPOjVVgamqqc--cUsLm8U'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+    internal-label: APIs
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+    internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+  - id: a1f87682-0525-5459-aa06-3560bb4c3b2a
+    internal-label: Workfront Integrations and Apps
 subfeature_v2:
   - id: ec8965fc-2f75-47f6-a9bb-730e8c2725f3
+    internal-label: Event Subscription API
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 77d29cea134abe6e048fd744151acffe256f5992
+    internal-label: Troubleshooting
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 7725
+source-wordcount: '7725'
 ht-degree: 92%
-
 ---
-
 # Módulos do Adobe Workfront
 
 >[!IMPORTANT]
@@ -1047,7 +1055,7 @@ A Workfront lançou recentemente uma nova versão de seu serviço de assinatura 
 
 Para obter mais informações sobre a nova versão de assinatura do evento, consulte [Controle de versão de assinatura do evento](https://experienceleague.adobe.com/pt-br/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) na documentação do Workfront
 
-Para obter recursos sobre como preservar os cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservação de seus cenários do Fusion durante a atualização da V2 de assinaturas do evento](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=pt).
+Para obter recursos sobre como preservar os cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservação de seus cenários do Fusion durante a atualização da V2 de assinaturas do evento](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 <table style="table-layout:auto">
  <col> 
@@ -2363,7 +2371,7 @@ Os filtros nas assinaturas de evento permitem garantir que seus cenários sejam 
 >
 >   Para obter mais informações sobre a nova versão de assinatura do evento, consulte [Controle de versão de assinatura do evento](https://experienceleague.adobe.com/pt-br/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) na documentação do Workfront
 >
->   Para obter recursos sobre como preservar os cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservação de seus cenários do Fusion durante a atualização da V2 de assinaturas do evento](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=pt).
+>   Para obter recursos sobre como preservar os cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservação de seus cenários do Fusion durante a atualização da V2 de assinaturas do evento](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 O módulo [!UICONTROL Monitorar eventos] do Workfront aciona cenários com base em um webhook que cria uma assinatura de evento na API do Workfront. A assinatura do evento é um conjunto de dados que determina quais eventos são enviados para o webhook. Por exemplo, se você configurar um módulo [!UICONTROL Monitorar eventos] que esteja observando problemas, a assinatura do evento enviará somente eventos relacionados a problemas.
 

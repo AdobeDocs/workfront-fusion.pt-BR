@@ -4,11 +4,14 @@ description: A automação do trabalho requer processamento rápido, por isso o 
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-TQID: https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U
+TQID: 'https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
-source-git-commit: e9450b468ff8df80286ebd8a0c1aa4070b6cb01b
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
 source-wordcount: '1445'
 ht-degree: 72%
@@ -31,7 +34,7 @@ A automação do trabalho requer processamento rápido, por isso o Adobe Workfro
   >
   > Embora a encadeamento permita que os workflows sejam executados além de 40 minutos, isso deve ser tratado como um sinal de risco de design, não como uma solução alternativa compatível. Os cenários principais que abrangem vários cenários secundários de longa duração não têm limite de tempo limite geral. Se um cenário filho travar ou encontrar um problema de plataforma, o pai aguardará indefinidamente sem erro e sem recuperação automática.
   >
-  > Se o design do cenário exigir encadeamento para evitar o limite de 40 minutos, revise a arquitetura antes de implantar na produção. Consulte [Encadear vários cenários](https://experienceleague.adobe.com/pt-br/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios) para obter orientação sobre design.
+  > Se o design do cenário exigir encadeamento para evitar o limite de 40 minutos, revise a arquitetura antes de implantar na produção. Consulte [Encadear vários cenários](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios) para obter orientação sobre design.
 * O tamanho máximo de um blueprint do cenário é **5 MB**, mas recomendamos manter o tamanho do cenário abaixo de **3 MB**.
 
   Os módulos do aplicativo que criam ou atualizam dados com um número elevado de campos podem causar blueprints muito grandes.

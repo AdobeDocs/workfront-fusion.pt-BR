@@ -4,18 +4,21 @@ description: Você pode mapear uma matriz ou elementos de matriz individuais par
 author: Becky
 feature: Workfront Fusion
 exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
-TQID: https://experienceleague.adobe.com/4C5kCTIb-pX7zlMxx0tMHn-0UeMPkunWAlkov-lEqPQ
+TQID: 'https://experienceleague.adobe.com/4C5kCTIb-pX7zlMxx0tMHn-0UeMPkunWAlkov-lEqPQ'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Metadata
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 898
+source-wordcount: '898'
 ht-degree: 10%
-
 ---
-
 # Mapear uma matriz ou elemento de matriz
 
 Uma matriz é um item do pacote que pode conter o seguinte:
@@ -141,28 +144,28 @@ A fórmula pode ser explicada da seguinte maneira:
 
 * `map`
 
-   1. O primeiro parâmetro da função `map()` é o item de matriz inteiro.
-   1. O segundo parâmetro é o nome bruto do item de valor. Para obter o nome bruto, passe o mouse sobre o item no painel [!UICONTROL mapeamento]:
+  1. O primeiro parâmetro da função `map()` é o item de matriz inteiro.
+  1. O segundo parâmetro é o nome bruto do item de valor. Para obter o nome bruto, passe o mouse sobre o item no painel [!UICONTROL mapeamento]:
 
-      ![Obter nome bruto](assets/obtain-raw-name-350x124.png)
+     ![Obter nome bruto](assets/obtain-raw-name-350x124.png)
 
-      >[!NOTE]
-      >
-      >Todos os parâmetros diferenciam maiúsculas de minúsculas. Mesmo que neste exemplo em particular o rótulo do item difira de seu nome bruto apenas em maiúsculas, é necessário usar o nome bruto.
+     >[!NOTE]
+     >
+     >Todos os parâmetros diferenciam maiúsculas de minúsculas. Mesmo que neste exemplo em particular o rótulo do item difira de seu nome bruto apenas em maiúsculas, é necessário usar o nome bruto.
 
-   1. O terceiro parâmetro é o nome bruto do item-chave:
+  1. O terceiro parâmetro é o nome bruto do item-chave:
 
-      ![Terceiro parâmetro](assets/3rd-parameter-350x166.png)
+     ![Terceiro parâmetro](assets/3rd-parameter-350x166.png)
 
-   1. O quarto parâmetro é o valor de chave fornecido.
+  1. O quarto parâmetro é o valor de chave fornecido.
 
   Como a função `map()` retorna uma matriz (já que poderia haver mais elementos com o valor de chave fornecido), é necessário aplicar a função `get()` para obter seu primeiro elemento:
 
 * `get`
 
-   1. O primeiro parâmetro da função `get()` é o resultado da função `map()`.
+  1. O primeiro parâmetro da função `get()` é o resultado da função `map()`.
 
-   1. O segundo parâmetro é o índice do elemento. Neste exemplo, o índice é `1`.
+  1. O segundo parâmetro é o índice do elemento. Neste exemplo, o índice é `1`.
 
 Esse exemplo gera a seguinte saída:
 

@@ -4,16 +4,18 @@ description: Uma estrutura de dados é um documento que descreve em detalhes o f
 author: Becky
 feature: Workfront Fusion
 exl-id: 93abf8a5-a3a1-448e-834b-1cc81b88036b
-TQID: https://experienceleague.adobe.com/e8cGFEEP3-wxExVZNNRG8bf-6CbpN56xGTGbHSV6MVg
+TQID: 'https://experienceleague.adobe.com/e8cGFEEP3-wxExVZNNRG8bf-6CbpN56xGTGbHSV6MVg'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 242
+source-wordcount: '242'
 ht-degree: 1%
-
 ---
-
 # Estruturas de dados
 
 Uma estrutura de dados é um documento ou padrão que descreve em detalhes o formato dos dados que estão sendo processados no Adobe Workfront Fusion. Com base nesse documento, o editor de cenários pode descobrir qual módulo retorna ou recebe qual tipo de dados. Os documentos de estrutura de dados são usados com mais frequência para serializar/analisar formatos de dados, como JSON, XML, CSV e outros.

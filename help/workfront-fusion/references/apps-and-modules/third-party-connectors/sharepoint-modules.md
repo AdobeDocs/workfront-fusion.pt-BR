@@ -4,21 +4,25 @@ description: Em um cenário do Adobe Workfront Fusion, é possível automatizar 
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-TQID: https://experienceleague.adobe.com/WmECfdPt-a3l2-WT9LMX2HB-7-p-BLIO4F2i3OAc7D0
+TQID: 'https://experienceleague.adobe.com/WmECfdPt-a3l2-WT9LMX2HB-7-p-BLIO4F2i3OAc7D0'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+    internal-label: APIs
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 0b7298ce53bf59695ce52cb46cb8d25b6ede5fc8
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 4846
+source-wordcount: '4846'
 ht-degree: 12%
-
 ---
-
 # Módulos do Microsoft SharePoint Online
 
 Em um cenário do Adobe Workfront Fusion, é possível automatizar workflows que usam o Microsoft SharePoint Online, bem como conectá-lo a vários aplicativos e serviços de terceiros.
@@ -94,7 +98,7 @@ O conector do SharePoint usa o seguinte:
 
 ## Conectar o Microsoft SharePoint Online ao Workfront Fusion {#connect-microsoft-sharepoint-online-to-workfront-fusion}
 
-* [Conectar o Microsoft SharePoint Online ao Workfront Fusion usando uma conta  [!DNL Microsoft] &#x200B;](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
+* [Conectar o Microsoft SharePoint Online ao Workfront Fusion usando uma conta  [!DNL Microsoft] ](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [Conectar o Microsoft SharePoint Online ao Workfront Fusion usando configurações avançadas](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
 * [Conectar o Microsoft SharePoint Online ao Workfront Fusion usando a autorização de certificado](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
 * [Conectar o Microsoft SharePoint Online ao Workfront Fusion usando uma entidade de serviço](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-service-principal)
@@ -1129,7 +1133,7 @@ Esse módulo de acionador instantâneo inicia um cenário quando um item é adic
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>For instructions about connecting your Microsoft SharePoint Online account to Workfront Fusion, see <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connect Microsoft SharePoint Online to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
-  -->
+-->
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
    <td> <p>Selecione um webhook existente ou clique em Adicionar e insira a conexão para criar um novo webhook.</p> 
