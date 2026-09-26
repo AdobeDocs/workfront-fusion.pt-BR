@@ -4,16 +4,18 @@ description: O Adobe Workfront Fusion exige uma licença do Adobe Workfront Fusi
 author: Becky
 feature: Workfront Fusion
 exl-id: de81ad4c-27e5-4b6c-acf0-f01a8c85922e
-TQID: https://experienceleague.adobe.com/3bzje0OOFp4aA6KeWzSGU-hIUHSCBhAerh8GIX3GNWc
+TQID: 'https://experienceleague.adobe.com/3bzje0OOFp4aA6KeWzSGU-hIUHSCBhAerh8GIX3GNWc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 705
+source-wordcount: '705'
 ht-degree: 100%
-
 ---
-
 # Visão geral do cenário
 
 A função do Adobe Workfront Fusion é automatizar seus processos para que os usuários não precisem gastar muito tempo em tarefas de rotina. Ele trabalha vinculando ações em vários aplicativos e serviços para criar um cenário que transfere e transforma seus dados automaticamente. O cenário que você cria monitora dados em um aplicativo ou serviço e processa esses dados para fornecer o resultado desejado.
@@ -111,5 +113,5 @@ Para obter uma lista de conectores dedicados, consulte [Aplicativos Fusion e seu
 * Para obter um glossário de termos usados no Workfront Fusion, consulte [Glossário do Adobe Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md).
 * Para começar a criar um cenário de prática, consulte [Criar um cenário básico](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md).
 * Para obter informações sobre como criar e gerenciar cenários, consulte os artigos listados em:
-   * [Criar cenários](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
-   * [Gerenciar cenários](/help/workfront-fusion/manage-scenarios/manage-scenarios-toc.md)
+  * [Criar cenários](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
+  * [Gerenciar cenários](/help/workfront-fusion/manage-scenarios/manage-scenarios-toc.md)

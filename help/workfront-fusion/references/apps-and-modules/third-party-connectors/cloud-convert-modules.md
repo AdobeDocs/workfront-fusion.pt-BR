@@ -4,20 +4,25 @@ description: Módulos do CloudConvert
 author: Becky
 feature: Workfront Fusion
 exl-id: 52c4d18a-8bee-44d6-9a2c-cc9e157e1dde
-TQID: https://experienceleague.adobe.com/jHKSttikcFb-V7D5gVCmet9WgnfvRrQGY8dNQhU6kNA
+TQID: 'https://experienceleague.adobe.com/jHKSttikcFb-V7D5gVCmet9WgnfvRrQGY8dNQhU6kNA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Optimization
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 3226
+source-wordcount: '3226'
 ht-degree: 25%
-
 ---
-
 # Módulos do [!DNL CloudConvert]
 
 Em um cenário do Adobe Workfront Fusion, é possível automatizar workflows que usam o CloudConvert, bem como conectá-lo a vários aplicativos e serviços de terceiros. Os módulos do [!DNL CloudConvert] permitem monitorar e gerenciar trabalhos, tarefas e importar e exportar arquivos na sua conta do [!DNL CloudConvert].

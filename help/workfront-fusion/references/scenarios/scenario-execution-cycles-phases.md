@@ -4,31 +4,33 @@ description: Este artigo descreve os eventos que ocorrem enquanto um cenário do
 author: Becky
 feature: Workfront Fusion
 exl-id: abf41be5-df32-4eaf-b3f4-93ddf005bfe3
-TQID: https://experienceleague.adobe.com/QiQVO7jFPtqkI-ZcsG-Cl7slbYmKlY9HHnTW7MyrO7c
+TQID: 'https://experienceleague.adobe.com/QiQVO7jFPtqkI-ZcsG-Cl7slbYmKlY9HHnTW7MyrO7c'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 482
+source-wordcount: '482'
 ht-degree: 2%
-
 ---
-
 # Execução, ciclos e fases de um cenário
 
 Cada execução de cenário começa com a fase de inicialização, continua com pelo menos um ciclo composto pelas fases de operação e confirmação/reversão e termina com a fase de finalização
 
 * Inicialização
 * Ciclo #1
-   * Operação (leitura ou gravação)
-   * Confirmar ou reverter
+  * Operação (leitura ou gravação)
+  * Confirmar ou reverter
 * Ciclo #2
-   * Operação (leitura ou gravação)
-   * Confirmar ou reverter
+  * Operação (leitura ou gravação)
+  * Confirmar ou reverter
 * ...
 * Ciclo #n
-   * Operação (leitura ou gravação)
-   * Confirmar ou reverter
+  * Operação (leitura ou gravação)
+  * Confirmar ou reverter
 * Finalização
 
 Em uma escala menor, cada módulo também segue essas fases. As informações sobre as fases do módulo podem ser encontradas nas informações do pacote processado, encontradas na bolha numerada na parte superior direita de cada módulo após a execução do cenário. Para obter mais informações sobre a localização de informações de pacotes processados, consulte [Informações sobre pacotes processados](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md#information-about-processed-bundles) no artigo Fluxo de execução de cenário.

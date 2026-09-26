@@ -5,20 +5,23 @@ description: Às vezes, um erro pode ocorrer durante a execução de um cenário
 author: Becky
 feature: Workfront Fusion
 exl-id: abf5f844-d13b-416e-a8b8-2d4ee1786262
-TQID: https://experienceleague.adobe.com/t5chLg0xd7CSUyitvH-NCc-YUbMAEXu111sU497Uspc
+TQID: 'https://experienceleague.adobe.com/t5chLg0xd7CSUyitvH-NCc-YUbMAEXu111sU497Uspc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: d968a1bc-9a90-4926-a531-bcf272c32aad
+    internal-label: Administration
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Administration
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1214
+source-wordcount: '1227'
 ht-degree: 8%
-
 ---
-
 # Tipos de erro
 
 Às vezes, um erro pode ocorrer durante a execução de um cenário. Isso geralmente acontece se um serviço estiver indisponível devido a uma falha de conexão com o serviço ou se uma validação falhar.
@@ -63,10 +66,10 @@ Erros de conexão são um dos erros mais comuns. Normalmente, elas são causadas
 * Se o erro ocorrer no primeiro módulo, a execução do cenário será encerrada com uma mensagem de aviso. Em seguida, o Workfront Fusion tenta executar novamente o cenário em intervalos de tempo crescentes. Se todas as tentativas falharem, o Workfront Fusion desativará o cenário.
 * Se o erro de conexão ocorrer em outro módulo que não o primeiro, as etapas subsequentes dependerão da opção Permitir armazenamento de execuções incompletas nas configurações avançadas do cenário:
 
-   * Se essa opção estiver habilitada, a execução do cenário será movida para a pasta [!UICONTROL Execuções incompletas], onde o Workfront Fusion tentará executar novamente o cenário em intervalos de tempo crescentes. Se todas as tentativas falharem, a execução permanecerá na pasta Incomplete executions aguardando resolução manual pelo usuário.
+  * Se essa opção estiver habilitada, a execução do cenário será movida para a pasta [!UICONTROL Execuções incompletas], onde o Workfront Fusion tentará executar novamente o cenário em intervalos de tempo crescentes. Se todas as tentativas falharem, a execução permanecerá na pasta Incomplete executions aguardando resolução manual pelo usuário.
 
-     Para obter mais informações sobre execuções incompletas, consulte [Exibir e resolver execuções incompletas](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
-   * Se essa opção estiver desativada, a execução do cenário terminará com um erro seguido de uma fase de reversão. Em seguida, o Workfront Fusion tenta executar novamente o cenário em intervalos de tempo crescentes. Se todas as tentativas falharem, o Workfront Fusion desativará o cenário.
+    Para obter mais informações sobre execuções incompletas, consulte [Exibir e resolver execuções incompletas](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
+  * Se essa opção estiver desativada, a execução do cenário terminará com um erro seguido de uma fase de reversão. Em seguida, o Workfront Fusion tenta executar novamente o cenário em intervalos de tempo crescentes. Se todas as tentativas falharem, o Workfront Fusion desativará o cenário.
 
   Para obter mais informações sobre a configuração Permitir o armazenamento de execuções incompletas, consulte [Permitir o armazenamento de execuções incompletas](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions) no artigo Definir configurações de cenário.
 

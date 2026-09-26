@@ -4,16 +4,18 @@ description: Gerenciar usuários do Adobe Workfront Fusion na sua organização
 author: Becky
 feature: Workfront Fusion
 exl-id: 0eeed98c-0c87-4e34-9efe-027f3f03af1b
-TQID: https://experienceleague.adobe.com/UCFBSGkCJGq9p9uNPUstsf9ftH6tJ35bcPxOSI3HtNw
+TQID: 'https://experienceleague.adobe.com/UCFBSGkCJGq9p9uNPUstsf9ftH6tJ35bcPxOSI3HtNw'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 251
+source-wordcount: '251'
 ht-degree: 43%
-
 ---
-
 # Exibir ou editar detalhes do usuário
 
 Os administradores do Adobe Workfront Fusion podem gerenciar os detalhes do usuário no Workfront Fusion.

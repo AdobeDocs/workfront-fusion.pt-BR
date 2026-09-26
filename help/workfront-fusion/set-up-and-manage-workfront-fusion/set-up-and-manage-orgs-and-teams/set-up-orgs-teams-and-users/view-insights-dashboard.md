@@ -4,16 +4,18 @@ description: Os administradores do Fusion podem visualizar um painel que mostra 
 author: Becky
 feature: Workfront Fusion
 exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
-TQID: https://experienceleague.adobe.com/tBZCbpImQxY42gOE8e04aQwCJC8EKgrDTIAt6Sw1KaU
+TQID: 'https://experienceleague.adobe.com/tBZCbpImQxY42gOE8e04aQwCJC8EKgrDTIAt6Sw1KaU'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 069ab0fd3d72da3b67d50e4f8e62823c825ef934
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 849
+source-wordcount: '849'
 ht-degree: 4%
-
 ---
-
 # Exibir o painel de Insights de uma organização
 
 O Painel do Fusion Insights permite ver rapidamente quais cenários estão sendo mais executados, onde os atrasos estão ocorrendo e com que eficiência seus pools de trabalhadores estão operando. Isso proporciona visibilidade em tempo real dos volumes de execução, profundidade da fila, utilização do pool e desempenho em nível de cenário.

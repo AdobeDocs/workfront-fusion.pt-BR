@@ -1,19 +1,21 @@
 ---
 title: Tokens para análise de data e hora
-description: Os seguintes tokens para análise de data e hora estão disponíveis no painel  [!DNL Adobe Workfront Fusion mapping] .
+description: Os seguintes tokens para análise de data e hora estão disponíveis no painel [!DNL Adobe Workfront Fusion mapping].
 author: Becky
 feature: Workfront Fusion
 exl-id: d3242af3-89e8-45ae-81a1-3b4dadf824fd
-TQID: https://experienceleague.adobe.com/ZU2fO6cE2nEceklQoIj6TrpETBbssJe3FuCpcXHZepI
+TQID: 'https://experienceleague.adobe.com/ZU2fO6cE2nEceklQoIj6TrpETBbssJe3FuCpcXHZepI'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 164
+source-wordcount: '165'
 ht-degree: 17%
-
 ---
-
 # Tokens para análise de data e hora
 
 ## Tokens de ano, mês e dia
@@ -167,7 +169,7 @@ ht-degree: 17%
   <tr> 
    <td><code>m mm</code> </td> 
    <td><code>0..59</code> </td> 
-   <td> <p> Minutos</p> </td> 
+   <td> <p> Minutes</p> </td> 
   </tr> 
   <tr> 
    <td><code>s ss</code> </td> 
