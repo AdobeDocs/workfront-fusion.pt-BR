@@ -196,7 +196,7 @@ Este módulo de ação altera as configurações de permissão de um arquivo ou 
             <td>[!UICONTROL Permissions]</td>
             <td>
                <p>Defina as permissões desejadas para arquivos ou pastas. Use os parâmetros chmod. Por exemplo: <code>777 </code>ou <code>-rwxrwxrwx</code>.</p>
-               <p>As permissões devem corresponder ao padrão <code> /(.?([r-][w-][x-]){3})|[0-7]{3,4}/</code>.</p>
+               <p>As permissões devem corresponder ao padrão <code> /(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3,4}/</code>.</p>
             </td>
          </tr>
    </tbody>

@@ -566,7 +566,7 @@ O módulo [!UICONTROL Gerar documento] é uma maneira poderosa de criar um PDF q
 
 Para obter mais informações sobre a funcionalidade Gerar documento do [!UICONTROL [!DNL Adobe PDF Services]], consulte a seção [Visão geral da geração de documento](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html) na documentação do [!DNL Adobe Document Services].
 
-* [Usar o módulo [!UICONTROL Gerar documento] com um modelo do  [!DNL Microsoft Word] ](#use-the-generate-document-module-with-a-microsoft-word-template)
+* [Usar o módulo [!UICONTROL Gerar documento] com um modelo do  [!DNL Microsoft Word] &#x200B;](#use-the-generate-document-module-with-a-microsoft-word-template)
 * [Usar o módulo [!UICONTROL Gerar documento] com JSON](#use-the-generate-document-module-with-json)
 
 #### Usar o módulo [!UICONTROL Gerar documento] com um modelo do [!DNL Microsoft Word]

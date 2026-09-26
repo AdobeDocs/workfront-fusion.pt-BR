@@ -252,9 +252,9 @@ Para obter mais informações sobre a integração Workfront-Anaplan, consulte [
 
 ### Workflows de otimização de gastos
 
-* [Enviar atualizações de projeto do Adobe Workfront para um item de lista  [!DNL Anaplan] ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
-* [Enviar despesas do Adobe Workfront para um item de lista [!DNL Anaplan] ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
-* [Enviar atualizações de horas reais do Adobe Workfront para um item de lista  [!DNL Anaplan] ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
+* [Enviar atualizações de projeto do Adobe Workfront para um item de lista  [!DNL Anaplan] &#x200B;](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
+* [Enviar despesas do Adobe Workfront para um item de lista [!DNL Anaplan] &#x200B;](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
+* [Enviar atualizações de horas reais do Adobe Workfront para um item de lista  [!DNL Anaplan] &#x200B;](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
 
 ### Fluxos de trabalho para vincular solicitações de orçamento
 

@@ -103,11 +103,11 @@ Para criar uma conexão para os módulos de Finanças e Operações do Microsoft
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Insira sua ID de cliente do Dynamics Finance and Operations [!UICONTROL].</td>
+        <td>Insira sua ID de cliente do Dynamics Finance and Operations .</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Insira seu Segredo do Cliente do Dynamics Finance e Operations [!UICONTROL]. </td>
+        <td>Insira seu Segredo do Cliente do Dynamics Finance e Operations . </td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL ID de Locatário]</td>
