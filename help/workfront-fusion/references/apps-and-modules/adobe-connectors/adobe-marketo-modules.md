@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: e84d0b7b77dd55c6f045c0b8d4d13aa16bfd29e6
 workflow-type: tm+mt
-source-wordcount: '2257'
-ht-degree: 99%
+source-wordcount: '2657'
+ht-degree: 86%
 ---
 # Módulos do [!DNL Marketo]
 
@@ -214,9 +214,12 @@ Este módulo de acionador inicia um cenário quando um registro é criado ou atu
 
 * [[!UICONTROL Adicionar leads a uma lista]](#add-leads-to-a-list)
 * [[!UICONTROL Clonar um programa]](#clone-a-program)
+* [[!UICONTROL Criar um Trabalho de Extração em Massa]](#create-a-bulk-extract-job)
 * [[!UICONTROL Criar um registro]](#create-a-record)
 * [[!UICONTROL Chamada de API personalizada]](#custom-api-call)
+* [[!UICONTROL Baixar um Arquivo de Extração em Massa]](#download-a-bulk-extract-file)
 * [[!UICONTROL Baixar um arquivo]](#download-a-file)
+* [[!UICONTROL Obter Status do Trabalho de Extração em Massa]](#get-bulk-extract-job-status)
 * [[!UICONTROL Ler um registro]](#read-a-record)
 * [[!UICONTROL Remover leads de uma lista]](#remove-leads-from-a-list)
 * [[!UICONTROL Agendar uma campanha]](#schedule-a-campaign)
@@ -269,6 +272,45 @@ Este módulo de ação faz uma cópia de um programa usando a ID do programa.
   <tr> 
    <td role="rowheader">[!UICONTROL Folder ID]</td> 
    <td>Insira ou mapeie a ID da pasta em que deseja que o novo programa esteja localizado.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Criar um Trabalho de Extração em Massa]
+
+Esse módulo de ação cria um trabalho de extração em massa para registros de Cliente Potencial e Pessoa. Use [!UICONTROL Obter Status do Trabalho de Extração em Massa] para verificar o trabalho e [!UICONTROL Baixe um Arquivo de Extração em Massa] para recuperar a exportação concluída. Este módulo retorna a ID de exportação usada pelos módulos de status e download.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Marketo] ao Workfront Fusion, consulte <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Marketo] ao Workfront Fusion</a> neste artigo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Fields]</td> 
+   <td> <p>Para cada campo que você deseja adicionar ao trabalho de extração em massa, clique em <b>Adicionar item</b> e insira o nome da API do campo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Formato de saída]</td> 
+   <td> <p>Selecione o formato de arquivo para a extração: CSV, TSV ou SSV.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Filtrar por]</td> 
+   <td> <p>Selecione o filtro para este módulo e insira as informações solicitadas nos campos exibidos:</p>
+   <ul> 
+    <li> <p><strong>[!UICONTROL Lista Inteligente]</strong> </p> <p>Insira ou mapeie o ID da Smart List.</p> </li> 
+    <li> <p><strong>[!UICONTROL Criou intervalo de datas]</strong> </p> <p>Selecione as datas de início e término para as quais deseja pesquisar.</p> </li> 
+   </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Cabeçalhos de coluna personalizados]</td> 
+   <td> <p>Para cada cabeçalho de coluna personalizado que você deseja incluir no trabalho de extração, clique em <b>Adicionar item</b> e insira o nome da API do campo e o texto do cabeçalho da coluna.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Colocar tarefa em fila imediatamente]</td> 
+   <td> <p>Selecione Sim para enfileirar o job a ser executado imediatamente após a criação. Selecione Não para enfileirar a tarefa mais tarde com uma etapa separada.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -362,6 +404,33 @@ Este módulo de ação permite fazer uma chamada autenticada personalizada para 
    <td role="rowheader">[!UICONTROL Fields]</td> 
    <td> <p>Para cada campo que você deseja adicionar à chamada de API, clique em <b>Adicionar item</b> e insira a chave e o valor do campo.</td> 
   </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Tipo de Corpo]</td> 
+   <td> <p>Selecione o formato do corpo da solicitação: <b>[!UICONTROL URL-encoded (Fields)]</b> ou <b>[!UICONTROL JSON]</b>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Corpo da solicitação (JSON)]</td> 
+   <td> <p>Usado apenas quando [!UICONTROL Tipo de Corpo] está definido como [!UICONTROL JSON]. Insira um corpo JSON bruto.</p> <p>Importante: ao usar JSON, altere o cabeçalho [!UICONTROL Content-Type] acima de <code>application/x-www-form-urlencoded</code> para <code>application/json</code>; caso contrário, a Marketo poderá rejeitar a solicitação.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Baixar um Arquivo de Extração em Massa]
+
+Este módulo de ação recupera o arquivo para um trabalho de extração em massa concluído.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Marketo] ao Workfront Fusion, consulte <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Marketo] ao Workfront Fusion</a> neste artigo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de Exportação]</td> 
+   <td>Insira ou mapeie a ID do trabalho de extração em massa para o qual você deseja baixar o arquivo.</td> 
+  </tr> 
  </tbody> 
 </table>
 
@@ -380,6 +449,25 @@ Este módulo de ação baixa um arquivo usando sua ID.
   <tr> 
    <td role="rowheader">[!UICONTROL File ID]</td> 
    <td>Insira ou mapeie a ID do arquivo que deseja baixar.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Obter Status do Trabalho de Extração em Massa]
+
+Este módulo de ação recupera o status de um trabalho de extração em massa usando sua ID de trabalho.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Para obter instruções sobre como conectar sua conta do [!DNL Marketo] ao Workfront Fusion, consulte <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Conectar [!DNL Marketo] ao Workfront Fusion</a> neste artigo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID de Exportação]</td> 
+   <td>Insira ou mapeie a ID do trabalho de extração em massa do qual você deseja verificar o status.</td> 
   </tr> 
  </tbody> 
 </table>
