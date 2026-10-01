@@ -1,7 +1,7 @@
 ---
 title: Configurar o servidor MCP do Adobe Workfront Fusion
 description: Conecte o Adobe Workfront Fusion a uma plataforma de agente de IA compatível com MCP ou ao Co-worker (independente ou no painel direito do Fusion).
-source-git-commit: 6d447c16d199c69ae670f59bb56cf79464cbe057
+source-git-commit: 5f3bd6b7b8837632af245ea2c172205625e4ecba
 workflow-type: tm+mt
 source-wordcount: '1177'
 ht-degree: 0%
@@ -178,3 +178,4 @@ O agente atua como você, usando suas permissões de função e equipe do Fusion
 ### O agente vê meus segredos de conexão?
 
 Não. A conexão e as ferramentas de chave retornam metadados (nome, tipo, escopos, expiração), não credenciais ou valores secretos.
+

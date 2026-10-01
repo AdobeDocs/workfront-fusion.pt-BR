@@ -1,7 +1,7 @@
 ---
 title: Ferramentas de servidor do Adobe Workfront Fusion MCP
 description: Lista de referência das ferramentas que o servidor MCP do Adobe Workfront Fusion expõe às plataformas de agente de IA e ao Colaborador.
-source-git-commit: 322a34df48a5218bc045e6cac6a5a8b3837e8c2e
+source-git-commit: 5f3bd6b7b8837632af245ea2c172205625e4ecba
 workflow-type: tm+mt
 source-wordcount: '1183'
 ht-degree: 7%
@@ -175,4 +175,5 @@ Todas as ferramentas deste artigo estão disponíveis no Co-worker, independente
 ## Como as ferramentas são atualizadas
 
 Quando o Adobe lança uma nova versão do servidor Fusion MCP, os agentes conectados selecionam automaticamente o conjunto de ferramentas atualizado. Você não precisa se reconectar.
+
 
