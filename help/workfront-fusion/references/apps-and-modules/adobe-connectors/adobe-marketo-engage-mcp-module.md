@@ -243,6 +243,6 @@ Você pode usar prompts como os seguintes:
 ## Reference links used while compiling this
 
 * Adobe Marketo Engage MCP server (developer documentation):
-  https://experienceleague.adobe.com/en/docs/marketo-developer/marketo/mcp-server
+  https://experienceleague.adobe.com/pt-br/docs/marketo-developer/marketo/mcp-server
 
   -->
