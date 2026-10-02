@@ -10,9 +10,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 5168f8b0baae4201773899f418bdf0c8b5bf3ef1
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '405'
 ht-degree: 0%
 ---
 # Adicionar um prompt de IA ao seu cenário
@@ -44,4 +44,9 @@ O uso do MCP em seus cenários oferece os seguintes benefícios:
 
 Você pode adicionar um prompt de IA ao cenário usando o módulo Agente MCP.
 
-Para obter instruções, consulte [Módulo do agente MCP](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md).
+Para obter instruções, consulte os seguintes artigos para servidores específicos:
+
+* [Módulos MCP do Adobe Experience Manager](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-mcp-modules.md).
+* [Módulo MCP do Adobe Marketo Engage](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-engage-mcp-module.md).
+* [Módulos MCP do Adobe Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-mcp-modules.md).
+* [Módulo Agente MCP](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md).
