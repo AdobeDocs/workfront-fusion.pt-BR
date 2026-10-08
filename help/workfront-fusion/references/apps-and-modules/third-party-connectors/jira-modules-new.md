@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 818b14eb26bab6d81f95daf1c8c7ee831402c879
 workflow-type: tm+mt
-source-wordcount: '2406'
-ht-degree: 25%
+source-wordcount: '2675'
+ht-degree: 22%
 ---
 # Módulos do Jira
 
@@ -78,10 +78,14 @@ Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Li
 
 ## Conectar o Jira ao Workfront Fusion
 
-O procedimento para criar uma conexão com o Jira é diferente conforme você cria uma conexão básica ou uma conexão OAuth2.
+O procedimento para criar uma conexão com o Jira depende do tipo de conta e do método de autenticação que você está usando. Use uma conexão de conta pessoal quando uma conexão estiver associada a um usuário individual do Jira. Use uma conexão de conta de serviço quando a conexão precisar ser executada usando uma automação dedicada ou identidade de não usuário.
+
+No campo **Tipo de conexão**, selecione o método de autenticação apropriado para sua conta Jira:
 
 * [Criar uma conexão OAuth2 com Jira](#create-an-oauth2-connection-to-jira)
 * [Criar uma conexão básica com o Jira](#create-a-basic-connection-to-jira)
+* [Criar uma conexão de token de API de conta de serviço com o Jira](#create-a-service-account-api-token-connection-to-jira)
+* [Criar uma conexão OAuth2 de conta de serviço com o Jira](#create-a-service-account-oauth2-connection-to-jira)
 
 ### Criar uma conexão OAuth2 com Jira
 
@@ -195,7 +199,7 @@ A criação de uma conexão básica com o Jira difere dependendo se você está 
     <tbody> 
      <tr> 
       <td role="rowheader"> <p>Tipo de conexão</p> </td> 
-      <td> <p>Selecione se você está criando uma conexão básica ou uma conexão OAuth 2.</p> </td> 
+      <td> <p>Selecione <b>Básico</b> para esta conexão.</p></td>
      </tr> 
      <tr> 
       <td role="rowheader"> <p>Nome da conexão</p> </td> 
@@ -243,7 +247,7 @@ A criação de uma conexão básica com o Jira difere dependendo se você está 
     <tbody> 
      <tr> 
       <td role="rowheader"> <p>Tipo de conexão</p> </td> 
-      <td> <p>Selecione se você está criando uma conexão básica ou uma conexão OAuth 2.</p> </td> 
+      <td> <p>Selecione <b>Básico</b> para esta conexão.</p></td>
      </tr> 
      <tr> 
       <td role="rowheader"> <p>Nome da conexão</p> </td> 
@@ -294,6 +298,33 @@ Para usar um PAT, você deve habilitar o seguinte nos arquivos `jira/bin/WEB-INF
 * `jira.rest.csrf.disabled = true`
 
 Se este arquivo não existir, você deve criá-lo.
+
+### Criar uma conexão de token de API de conta de serviço com o Jira
+
+Use esta opção para uma conta de serviço Jira autenticada com um token de API. No campo **Tipo de conexão**, selecione **Token de API de conta de serviço**.
+
+1. Em qualquer módulo Jira, clique em **Adicionar** ao lado do campo **Conexão**.
+1. No campo **Tipo de conexão**, selecione **Token de API de conta de serviço**.
+1. Insira um **Nome da conexão**.
+1. Insira a **URL do serviço** para sua instância do Jira.
+1. Selecione o **tipo de conta Jira** apropriado.
+1. Insira o token da API para a conta de serviço Jira.
+1. Selecione a **versão da API** que você deseja que esta conexão use.
+1. Clique em **Continuar** para criar a conexão e retornar ao módulo.
+
+### Criar uma conexão OAuth2 de conta de serviço com o Jira
+
+Use esta opção para uma conta de serviço Jira autenticada com OAuth 2. No campo **Tipo de conexão**, selecione **OAuth 2** da conta de serviço.
+
+1. Em qualquer módulo Jira, clique em **Adicionar** ao lado do campo **Conexão**.
+1. No campo **Tipo de conexão**, selecione **OAuth 2** da conta de serviço.
+1. Insira um **Nome da conexão**.
+1. Insira a **URL do serviço** para sua instância do Jira.
+1. Selecione o **tipo de conta Jira** apropriado.
+1. Insira a **ID do cliente** e o **Segredo do cliente** para o aplicativo Jira OAuth 2 associado à conta de serviço.
+1. Opcionalmente, insira os **escopos adicionais** necessários para a conexão.
+1. Selecione a **versão da API** que você deseja que esta conexão use.
+1. Clique em **Continuar** para criar a conexão e retornar ao módulo.
 
 ## Módulos Jira e seus campos
 
