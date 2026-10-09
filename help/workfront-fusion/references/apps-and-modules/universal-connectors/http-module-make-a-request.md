@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: e3b9a5e08e78c9ddd4829ab288c353a058409a5c
 workflow-type: tm+mt
-source-wordcount: '991'
-ht-degree: 19%
+source-wordcount: '1194'
+ht-degree: 16%
 ---
 # [!UICONTROL HTTP] > [!UICONTROL Fazer uma solicitação] para o módulo
 
@@ -128,6 +128,14 @@ Ao configurar o módulo [!UICONTROL HTTP] > [!UICONTROL Fazer uma solicitação]
   <tr> 
    <td role="rowheader">[!UICONTROL Tempo Limite] </td> 
    <td> <p>Especifique o tempo limite da solicitação em segundos (1-300). O padrão é 40 segundos.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Contagem de Repetições]</td> 
+   <td> <p>Especifique o número de vezes para repetir a solicitação em caso de erros de conexão (ETIMEDOUT, ECONNRESET, EPROTO). O padrão é 3. Defina como 0 para desativar novas tentativas.</p> <p>Esta configuração só tem efeito quando [!UICONTROL Avaliar todos os estados como erros] está habilitado.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Códigos de Status de Novas Tentativas Adicionais]</td> 
+   <td> <p>Especifique códigos de status HTTP adicionais que devem ser tratados como repetíveis quando o [!UICONTROL Avaliar todos os estados como erros] estiver habilitado. Por padrão, somente 408, 429 e todos os códigos 5xx são repetidos.</p> <p>Quando você adiciona um código de status a esse campo, ele se torna um erro de conexão com nova tentativa e dispara novas tentativas de acordo com a configuração [!UICONTROL Contagem de novas tentativas]. Os códigos de status não listados aqui mantêm seu comportamento padrão. Códigos que geralmente não são repetidos, como 404 ou 422, podem ser tornados repetidos adicionando-os aqui.</p> <p><b>Exemplo:</b> se você habilitar [!UICONTROL Avaliar todos os estados como erros], definir [!UICONTROL Contagem de Repetições] como 4 e adicionar 422 a esse campo, uma resposta HTTP 422 será tratada como de nova tentativa e repetida como outras falhas de tipo de conexão.</p> <p><b>Observação:</b> a configuração [!UICONTROL Timeout] controla por quanto tempo cada tentativa pode esperar. Não define uma pausa entre tentativas. Esta configuração só tem efeito quando [!UICONTROL Avaliar todos os estados como erros] está habilitado.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Compartilhar cookies com outros módulos HTTP]</td> 

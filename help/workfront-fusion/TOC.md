@@ -3,9 +3,9 @@ user-guide-title: Documentação do Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Use os documentos, tutoriais e recursos adicionais para saber como implementar e usar efetivamente o Adobe Workfront Fusion em sua organização.
 nudge: true
-source-git-commit: 1f81819f3752e48bd4b070b3b3f192dc73c3a499
+source-git-commit: 6fa2ee67919a381e44f703ff29a353585904bf7c
 workflow-type: tm+mt
-source-wordcount: '2724'
+source-wordcount: '2730'
 ht-degree: 48%
 ---
 
@@ -385,6 +385,7 @@ ht-degree: 48%
     * [Aplicativos e seus módulos](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)
     * Conectores universais {#universal-connectors}
       * [HTTP > módulo [!UICONTROL Fazer uma solicitação]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+      * [[!UICONTROL HTTP] > [!UICONTROL Fazer uma solicitação JWT] para o módulo](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-jwt-request.md)
       * [[!UICONTROL HTTP] > módulo [!UICONTROL Fazer uma solicitação de autorização básica]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
       * [[!UICONTROL HTTP] > módulo [!UICONTROL Fazer uma solicitação do OAuth 2.0]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
       * [[!UICONTROL HTTP] > módulo [!UICONTROL Fazer uma solicitação de autorização de certificado de cliente]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
