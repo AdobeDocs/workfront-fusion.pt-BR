@@ -18,10 +18,10 @@ topic_v2:
     internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: c9bf5c68e4977027944114c35414fa5f46ea8751
 workflow-type: tm+mt
-source-wordcount: '4846'
-ht-degree: 12%
+source-wordcount: '5853'
+ht-degree: 10%
 ---
 # Módulos do Microsoft SharePoint Online
 
@@ -98,16 +98,22 @@ O conector do SharePoint usa o seguinte:
 
 ## Conectar o Microsoft SharePoint Online ao Workfront Fusion {#connect-microsoft-sharepoint-online-to-workfront-fusion}
 
-* [Conectar o Microsoft SharePoint Online ao Workfront Fusion usando uma conta  [!DNL Microsoft] &#x200B;](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
+* [Conectar o Microsoft SharePoint Online ao Workfront Fusion usando uma conta  [!DNL Microsoft] ](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [Conectar o Microsoft SharePoint Online ao Workfront Fusion usando configurações avançadas](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
 * [Conectar o Microsoft SharePoint Online ao Workfront Fusion usando a autorização de certificado](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
 * [Conectar o Microsoft SharePoint Online ao Workfront Fusion usando uma entidade de serviço](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-service-principal)
 
 ### Conecte o Microsoft SharePoint Online ao Workfront Fusion usando uma conta [!DNL Microsoft]
 
-Você pode usar sua conta do [!DNL Microsoft] para criar uma conexão com o Microsoft SharePoint Online. Para obter instruções sobre como conectar sua conta do [!DNL Sharepoint] ao Workfront Fusion, consulte [Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
++++ Expanda para exibir instruções para conectar o Microsoft SharePoint Online ao Workfront Fusion usando uma conta do Microsoft.
+
+Você pode usar sua conta do [!DNL Microsoft] para criar uma conexão com o Microsoft SharePoint Online. Para obter instruções sobre como conectar sua conta do [!DNL Sharepoint] ao Workfront Fusion, consulte [Criar uma conexão com o Adobe Workfront Fusion - Instruções básicas](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md).
+
++++
 
 ### Conectar o Microsoft SharePoint Online ao Workfront Fusion usando configurações avançadas
+
++++ Expanda para exibir instruções para conectar o Microsoft SharePoint Online ao Workfront Fusion usando configurações avançadas.
 
 Para incluir credenciais na conexão, habilite a opção Mostrar configurações avançadas. Para esse tipo de conexão, você precisa de uma ID do cliente, um Segredo do cliente e uma ID do locatário.
 
@@ -144,7 +150,11 @@ Para incluir credenciais na conexão, habilite a opção Mostrar configurações
 
 1. Clique em **Continuar** para salvar a conexão e retornar ao módulo.
 
++++
+
 ### Conectar o Microsoft SharePoint Online ao Workfront Fusion usando a autorização de certificado
+
++++ Expanda para exibir instruções para conectar o Microsoft SharePoint Online ao Workfront Fusion usando a autorização de certificado.
 
 Você pode usar a autorização de certificado para se conectar ao SharePoint.
 
@@ -209,7 +219,11 @@ Você pode usar a autorização de certificado para se conectar ao SharePoint.
 
 1. Clique em **Continuar** para salvar a conexão e retornar ao módulo.
 
++++
+
 ### Conectar o Microsoft SharePoint Online ao Workfront Fusion usando uma entidade de serviço
+
++++ Expanda para exibir instruções para conectar o Microsoft SharePoint Online ao Workfront Fusion usando uma entidade de serviço.
 
 Você pode criar uma conexão que use uma entidade de serviço (uma conexão da API do aplicativo) em vez de uma conta pessoal. Isso é útil quando você deseja que a conexão seja executada como uma identidade de aplicativo ou serviço, em vez de uma pessoa específica — por exemplo, para que a integração não seja interrompida se essa pessoa sair da empresa ou alterar sua senha.
 
@@ -230,7 +244,7 @@ Você precisa de acesso de **Administrador Global**, **Administrador de Aplicati
 
 Prossiga para [Criar o registro do aplicativo na Microsoft Entra ID](#create-the-app-registration-in-microsoft-entra-id).
 
-#### Criar o registro do aplicativo na Microsoft Entra ID
+#### Criar o registro do aplicativo na Microsoft Entra ID (Entidade de serviço)
 
 1. Entre no centro de administração [!DNL Microsoft Entra].
 1. Ir para **[!UICONTROL Registros de aplicativo]** > **[!UICONTROL Novo registro]**.
@@ -239,7 +253,7 @@ Prossiga para [Criar o registro do aplicativo na Microsoft Entra ID](#create-the
 1. Selecione **[!UICONTROL Registrar]**.
 1. Continue em [Criar um segredo de cliente](#create-a-client-secret).
 
-#### Criar um segredo do cliente
+#### Criar um segredo do cliente (Entidade de serviço)
 
 1. No novo registro do aplicativo, acesse **[!UICONTROL Certificados e segredos]**.
 1. Selecione **[!UICONTROL Novo segredo do cliente]**, adicione uma descrição e escolha um período de expiração.
@@ -247,7 +261,7 @@ Prossiga para [Criar o registro do aplicativo na Microsoft Entra ID](#create-the
 1. Copie o **[!UICONTROL Valor]** do segredo imediatamente. É exibido apenas uma vez. Se você navegar para fora antes de copiá-lo, deverá criar um novo.
 1. Continue em [Conceder permissões de API](#grant-api-permissions).
 
-#### Conceder permissões de API
+#### Conceder permissões de API (Entidade de serviço)
 
 >[!IMPORTANT]
 >
@@ -260,7 +274,7 @@ Prossiga para [Criar o registro do aplicativo na Microsoft Entra ID](#create-the
 1. Selecione **[!UICONTROL Conceder consentimento administrativo]** à sua organização e, em seguida, confirme.
 1. Prossiga para [Coletar detalhes da conexão](#collect-your-connection-details).
 
-#### Coletar detalhes da conexão
+#### Coletar seus detalhes de conexão (Entidade de serviço)
 
 Na página **[!UICONTROL Visão geral]** do registro do aplicativo, observe os seguintes valores. Você os insere ao criar a conexão no módulo.
 
@@ -285,7 +299,7 @@ Na página **[!UICONTROL Visão geral]** do registro do aplicativo, observe os s
 
 Continue em [Criar a conexão](#create-the-connection).
 
-#### Criar a conexão
+#### Criar a conexão (Entidade de serviço)
 
 1. No módulo [!UICONTROL Fazer uma Chamada de API], clique em **[!UICONTROL Adicionar]** próximo ao campo Conexão para abrir a caixa **[!UICONTROL Criar uma conexão]**.
 1. Clique em **[!UICONTROL Mostrar configurações avançadas]**.
@@ -299,6 +313,186 @@ Continue em [Criar a conexão](#create-the-connection).
 1. Clique em **Continuar** para salvar a conexão e retornar ao módulo.
 
    Se tudo estiver configurado corretamente, a conexão será validada com êxito.
+
++++
+
+### Conectar o Microsoft SharePoint Online ao Adobe Workfront Fusion usando uma conexão federada
+
++++ Expanda para exibir instruções para conectar o Microsoft SharePoint Online ao Adobe Workfront Fusion usando uma conexão federada.
+
+Uma conexão federada funciona como a conexão principal de serviço, exceto por não usar um segredo de cliente.
+Em vez de armazenar um segredo, você informa ao Microsoft Entra ID para confiar em tokens que o Workfront Fusion emite para uma conexão específica. Quando a conexão é executada, o Fusion apresenta uma prova de identidade de curta duração e o Microsoft Entra ID retorna um token de acesso. Como não há segredo do cliente, não há nada que expire e nenhum segredo para girar ou armazenar.
+
+>[!NOTE]
+>
+>A configuração dessa conexão leva duas visitas ao centro de administração do Microsoft Entra. Registre o aplicativo primeiro, crie a conexão no Workfront Fusion e retorne ao Microsoft Entra ID para adicionar a credencial federada. Isso ocorre porque a credencial federada identifica uma conexão específica e esse identificador não existe até que a conexão seja criada.
+
+* [Pré-requisitos para conectar o Microsoft SharePoint Online ao Workfront Fusion usando uma conexão federada](#prerequisites-to-connecting-microsoft-sharepoint-online-to-workfront-fusion-using-a-federated-connection)
+* [Criar o registro do aplicativo na Microsoft Entra ID (Federated connection)](#create-the-app-registration-in-microsoft-entra-id-federated-connection)
+* [Conceder permissões de API (conexão Federada)](#grant-api-permissions-federated-connection)
+* [Coletar detalhes da conexão (Conexão federada)](#collect-your-connection-details-federated-connection)
+* [Criar a conexão no Workfront Fusion (conexão Federada)](#create-the-connection-in-workfront-fusion-federated-connection)
+* [Adicionar a credencial federada na Microsoft Entra ID (conexão Federada)](#add-the-federated-credential-in-microsoft-entra-id-federated-connection)
+* [Verificar a conexão (Conexão federada)](#verify-the-connection-federated-connection)
+* [Solução de problemas](#troubleshooting)
+
+#### Pré-requisitos para conectar o Microsoft SharePoint Online ao Workfront Fusion usando uma conexão federada
+
+Você precisa de acesso de Administrador Global, Administrador de Aplicativos ou Administrador de Função Privilegiada no Microsoft Entra ID para registrar o aplicativo, conceder permissões e adicionar a credencial federada. Se você não tiver esse acesso, peça a alguém da sua equipe de TI ou de identidade que conclua essas etapas para você.
+
+#### Criar o registro do aplicativo na Microsoft Entra ID (Federated connection)
+
+1. Faça logon no centro de administração do Microsoft Entra.
+1. Acesse Registros do aplicativo > Novo registro.
+1. Dê ao aplicativo um nome claro e reconhecível. Por exemplo, `Workfront Fusion SharePoint Integration`.
+1. Deixe o URL de redirecionamento em branco. Essa conexão não envolve ninguém que faça logon por meio de um navegador.
+1. Selecione **Registrar**.
+Não crie um segredo de cliente. Uma conexão federada não usa uma.
+1. Continue para Conceder permissões de API.
+
+
+#### Conceder permissões de API (conexão Federada)
+
+1. No registro do seu aplicativo, acesse **Permissões de API**.
+1. Selecione **Adicionar uma permissão** e **Gráfico do Microsoft**.
+1. Selecione **Permissões do aplicativo**.
+1. Selecione a(s) permissão(ões) necessária(s) para suas chamadas de API e **Adicionar permissões**.
+1. Selecione **Dar consentimento administrativo** para sua organização e confirme.
+1. Prossiga para [Coletar detalhes da conexão](#collect-your-connection-details-federated-connection).
+
+
+#### Coletar detalhes da conexão (Conexão federada)
+
+1. Na página Visão geral do registro do aplicativo, observe os seguintes valores. Você os insere ao criar a conexão no módulo.
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL ID de Locatário]</td>
+      <td>Na página Visão Geral, rotulada <b>ID do Diretório (locatário)</b>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Client ID]</td>
+      <td>Na página Visão Geral, rotulada <b>ID do Aplicativo (cliente)</b>.</td>
+     </tr>
+    </tbody>
+   </table>
+
+1. Continue em [Criar a conexão no Workfront Fusion](#create-the-connection-in-workfront-fusion-federated-connection).
+
+#### Criar a conexão no Workfront Fusion (conexão Federada)
+
+1. No módulo Fazer uma chamada de API, clique em b próximo ao campo Conexão para abrir a caixa Criar uma conexão.
+1. Clique em (Federated connection).
+1. No campo Tipo de conexão, selecione o tipo de conexão federada.
+1. Insira o seguinte:
+
+   * ID do inquilino
+   * ID do cliente
+
+1. Selecione **Criar**.
+O Workfront Fusion exibe três valores. Você as usa no próximo procedimento.
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL Emissor]</td>
+      <td>Sempre <code>https://oidc.automations.adobe.com</code>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Assunto]</td>
+      <td>Identifica esta conexão. Parece com <code>fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:28964</code>. É diferente para cada conexão criada.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Público-alvo]</td>
+      <td>Sempre <code>api://AzureADTokenExchange</code>.</td>
+     </tr>
+    </tbody>
+   </table>
+
+
+1. Deixe este painel aberto e copie o valor de **Assunto**.
+
+   >[!NOTE]
+   >
+   >Não feche o painel nem selecione Cancelar. A conexão não será concluída até que você conclua os procedimentos restantes. Se fechar o painel, você deverá excluir a conexão e iniciar novamente, pois uma nova conexão recebe um novo Assunto.
+
+
+1. Continue para [Adicionar a credencial federada na Microsoft Entra ID](#add-the-federated-credential-in-microsoft-entra-id-federated-connection).
+
+#### Adicionar a credencial federada na Microsoft Entra ID (conexão Federada)
+
+Esse procedimento substitui o segredo do cliente. Ele instrui o Microsoft Entra ID a aceitar tokens que o Workfront Fusion emite para essa conexão única.
+
+1. Em uma nova guia do navegador, retorne ao centro de administração do Microsoft Entra e abra o registro do aplicativo.
+1. Vá para **Certificados e segredos** > **Credenciais federadas**.
+1. Selecione **Adicionar credencial**.
+1. Em Cenário de credencial federada, selecione **Outro emissor**.
+1. Insira o seguinte:
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL Emissor]</td>
+      <td><code>https://oidc.automations.adobe.com</code>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Identificador de Assunto]</td>
+      <td>O Assunto copiado do Workfront Fusion. Cole exatamente, sem espaços adicionados.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Name]</td>
+      <td>Um nome que identifica esta conexão, para que você possa localizá-la posteriormente. Por exemplo, <code>workfront-fusion-connection-28964</code>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Público-alvo]</td>
+      <td><code>api://AzureADTokenExchange</code>. Isso geralmente é preenchido para você. Deixe o valor padrão.</td>
+     </tr>
+    </tbody>
+   </table>
+
+1. Selecione **Adicionar**.
+1. Continue em [Verificar a conexão](#verify-the-connection-federated-connection).
+
+
+#### Verificar a conexão (Conexão federada)
+
+1. Retorne à guia do navegador Workfront Fusion, onde o painel de conexão ainda está aberto.
+2. Selecione **Salvar**.
+
+   * Se tudo estiver configurado corretamente, a conexão será validada com êxito e você poderá continuar a configuração do módulo.
+   * Se a verificação falhar, o painel permanecerá aberto e exibirá o erro. Corrija o problema na Microsoft Entra ID e selecione Salvar novamente. Não é necessário recriar a conexão, e o Assunto não é alterado.
+
+
+#### Solução de problemas
+
+
+<table style="table-layout:auto">
+ <col>
+ <col>
+ <tbody>
+  <tr>
+   <td role="rowheader">Falha na verificação da conexão com um cliente inválido ou erro de solicitação inválido</td>
+   <td>A Microsoft Entra ID não pôde corresponder o token a uma credencial federada. Verifique se o Emissor é exatamente <code>https://oidc.automations.adobe.com</code> sem barra à direita e se o identificador de Assunto é idêntico caractere por caractere ao Assunto mostrado no Workfront Fusion. Um Assunto copiado de uma conexão diferente é a causa mais comum.</td>
+  </tr>
+  <tr>
+   <td role="rowheader">A conexão é verificada, mas as chamadas de API retornam 403</td>
+   <td>A identidade é confiável, mas o aplicativo não tem as permissões do Gráfico do Microsoft necessárias para sua chamada. Retorne para Conceder permissões de API, adicionar a permissão de aplicativo necessária e conceder consentimento administrativo.</td>
+  </tr>
+  <tr>
+   <td role="rowheader">Não é possível adicionar outra credencial federada</td>
+   <td>Você atingiu o limite de 20 credenciais federadas para esse registro de aplicativo. Registre um aplicativo adicional e crie outras conexões com ele.</td>
+  </tr>
+ </tbody>
+</table>
+
++++
 
 ## Módulos do Microsoft SharePoint e seus campos
 
@@ -1133,7 +1327,7 @@ Esse módulo de acionador instantâneo inicia um cenário quando um item é adic
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>For instructions about connecting your Microsoft SharePoint Online account to Workfront Fusion, see <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connect Microsoft SharePoint Online to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
-  -->
+-->
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
    <td> <p>Selecione um webhook existente ou clique em Adicionar e insira a conexão para criar um novo webhook.</p> 
