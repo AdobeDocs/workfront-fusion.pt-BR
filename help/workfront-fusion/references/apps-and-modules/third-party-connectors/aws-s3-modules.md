@@ -16,10 +16,10 @@ topic_v2:
     internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 7c25013f7a94000651e8331199ad985d40651ae3
 workflow-type: tm+mt
-source-wordcount: '1564'
-ht-degree: 26%
+source-wordcount: '2637'
+ht-degree: 16%
 ---
 # Módulos do AWS S3
 
@@ -88,6 +88,195 @@ O conector AWS S3 usa o seguinte:
 
 ## Conectar o [!DNL AWS] ao Workfront Fusion {#connect-aws-to-workfront-fusion}
 
+* [Conectar o AWS ao Workfront Fusion usando uma conexão federada](#connect-aws-to-workfront-fusion-using-a-federated-connection)
+* [Conectar o AWS ao Workfront Fusion usando um usuário da API](#connect-aws-to-workfront-fusion-using-an-api-user)
+
+### Conectar o AWS ao Workfront Fusion usando uma conexão federada
+
++++ Expanda para exibir instruções desse tipo de conexão.
+
+* [Pré-requisitos para conectar o AWS ao Workfront Fusion usando uma conexão federada](#prerequisites-to-connecting-aws-to-workfront-fusion-using-a-federated-connection)
+* [Adicionar o Workfront Fusion como um provedor de identidade no AWS](#add-workfront-fusion-as-an-identity-provider-in-aws)
+* [Criar a função IAM](#create-the-iam-role)
+* [Criar a conexão no Workfront Fusion](#create-the-connection-in-workfront-fusion)
+* [Adicionar a conexão à diretiva de confiança da função](#add-the-connection-to-the-roles-trust-policy)
+* [Verifique a conexão](#verify-the-connection)
+* [Solução de problemas](#troubleshooting)
+
+Uma conexão federada permite que o Workfront Fusion acesse sua conta da AWS sem criar um usuário do IAM ou armazenar uma chave de acesso no Fusion.
+Em vez disso, você registra o Workfront Fusion como um provedor de identidade confiável em sua conta do AWS e configura qual conexão única do Fusion tem permissão para usar uma função específica do IAM. Quando a conexão é executada, o Fusion apresenta uma prova de identidade de curta duração e o AWS retorna credenciais temporárias que expiram por conta própria. Nenhuma chave de vida longa é criada, armazenada ou girada.
+
+>[!NOTE]
+>
+>A configuração dessa conexão leva duas visitas ao console do AWS. Primeiro, você cria a função, depois cria a conexão no Workfront Fusion e, em seguida, retorna ao AWS para concluir a diretiva de confiança. Isso ocorre porque parte da diretiva de confiança identifica uma conexão específica e esse identificador não existe até que a conexão seja criada.
+
+#### Pré-requisitos para conectar o AWS ao Workfront Fusion usando uma conexão federada
+
+Para criar essa conexão, você precisa do seguinte:
+
+* Permissão no AWS IAM para criar um provedor de identidade e criar e editar funções. Isso geralmente significa a política ou equivalente. Se você não tiver esse acesso, pergunte a alguém na sua nuvem ou
+para concluir as etapas do AWS para você.
+* A capacidade de criar conexões no Workfront Fusion.
+
+
+#### Adicionar o Workfront Fusion como um provedor de identidade no AWS
+
+Essa etapa informa ao AWS que os tokens emitidos pelo Workfront Fusion podem ser confiáveis. Você faz isso uma vez por conta da AWS. Se alguém em sua organização já tiver adicionado esse provedor, pule para [Criar a função IAM](#create-the-iam-role).
+
+1. Faça logon no console do AWS e acesse **IAM** > **Provedores de identidade**.
+1. Selecione **Adicionar provedor**.
+1. Para o tipo de Provedor, selecione **OpenID Connect**.
+1. Na URL do Provedor, insira o seguinte e selecione **Obter impressão digital**:
+
+   ```
+   https://oidc.automations.adobe.com
+   ```
+
+1. Em Público-alvo, insira o seguinte:
+
+   ```
+   sts.amazonaws.com
+   ```
+
+1. Selecione **Adicionar provedor**.
+1. Continue para [Criar a função IAM](#create-the-iam-role).
+
+#### Criar a função IAM
+
+A função define o que a conexão tem permissão para fazer em sua conta da AWS. Você cria uma atribuição por conexão, para que cada acesso da conexão possa ser concedido e revogado independentemente.
+
+1. No IAM, vá para **Funções** e selecione **Criar função**.
+1. Para o tipo de entidade Confiável, selecione **Identidade da Web**.
+1. Em Provedor de identidade, selecione `oidc.automations.adobe.com`.
+1. Em Público, selecione `sts.amazonaws.com`.
+1. Selecione **Avançar** e anexe as políticas de permissões necessárias para esta conexão.
+Conceda somente as permissões que a conexão realmente usa. Por exemplo, uma conexão que só lê de
+um bucket não precisa de `AmazonS3FullAccess`.
+1. Dê à função um nome claro e reconhecível. Por exemplo, `WorkfrontFusionFederatedConnection`.
+1. Selecione **Criar função**.
+1. Abra a função que acabou de criar e copie seu ARN da área Resumo. Ela tem a seguinte aparência: `arn:aws:iam::123456789012:role/WorkfrontFusionFederatedConnection`
+
+1. Continue em [Criar a conexão no Workfront Fusion](#create-the-connection-in-workfront-fusion).
+
+#### Criar a conexão no Workfront Fusion
+
+1. Na tela de configuração de conexão do módulo, selecione o tipo de conexão federada.
+1. Insira o ARN de Função que você copiou em [Criar a função IAM](#create-the-iam-role).
+1. Selecione **Criar**.
+O Workfront Fusion exibe três valores. Você as usa no próximo procedimento.
+
+<table>
+  <tr>
+    <td>Central de Problemas</td>
+    <td>Sempre <code>https://oidc.automations.adobe.com</code>. Corresponde ao provedor de identidade adicionado no AWS.</td>
+  </tr>
+  <tr>
+    <td>Assunto</td>
+    <td>Identifica esta conexão. Parece com <code>fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:28964</code>. É diferente para cada conexão criada.</td>
+  </tr>
+  <tr>
+    <td>Público-alvo</td>
+    <td>Sempre <code>sts.amazonaws.com</code>.</td>
+  </tr>
+</table>
+
+1. Deixe esse painel aberto e copie o valor Subject.
+
+   >[!NOTE]
+   >
+   >Não feche o painel nem selecione Cancelar. A conexão não será concluída até que você conclua os procedimentos restantes. Se fechar o painel, você deverá excluir a conexão e iniciar novamente, pois uma nova conexão recebe um novo Assunto.
+
+1. Continue em [Adicionar a conexão à diretiva de confiança da função](#add-the-connection-to-the-roles-trust-policy).
+
+#### Adicionar a conexão à diretiva de confiança da função
+
+Até que você conclua esse procedimento, a função confia no Workfront Fusion em geral, mas ainda não permite que essa conexão específica a use.
+
+1. Em uma nova guia do navegador, retorne ao console AWS e abra a função criada.
+1. Selecione a guia **Relações de confiança** e selecione **Editar diretiva de confiança**.
+1. Substitua a política pelo seguinte, substituindo seus próprios valores:
+
+   * Substituir `123456789012` pela ID de conta da AWS
+   * Substitua o valor `sub` pelo Assunto copiado do Workfront Fusion.
+
+
+   ```
+   {
+     "Version": "2012-10-17",
+     "Statement": [
+       {
+         "Effect": "Allow", 
+         "Principal": {
+           "Federated": "arn:aws:iam::123456789012:oidc-provider/oidc.automations.adobe.com"
+       },
+       "Action": "sts:AssumeRoleWithWebIdentity", "Condition": {
+        "StringEquals": {
+          "oidc.automations.adobe.com:sub": "fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:28964", 
+          "oidc.automations.adobe.com:aud": "sts.amazonaws.com"
+        }
+       }
+      }
+    ]
+   }
+   ```
+
+1. Selecione **Atualizar política**.
+1. Continue em [Verificar a conexão](#verify-the-connection).
+
+>[!TIP]
+>
+>Para permitir que mais de uma conexão use a mesma função, liste os assuntos como uma matriz. O AWS permite que a função seja usada se o token corresponder a qualquer valor na lista:
+>
+>```
+>"oidc.automations.adobe.com:sub": [ "fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:28964", "fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:29011"
+>]
+>```
+>
+>Não substitua o subvalor por um curinga. Isso permite que qualquer conexão em sua organização use a função, incluindo conexões criadas posteriormente por outras pessoas
+
+
+#### Verifique a conexão
+
+1. Retorne à guia do navegador Workfront Fusion, onde o painel de conexão ainda está aberto.
+1. Clique em **Salvar**.
+
+   O Workfront Fusion entra em contato com a AWS, que verifica a diretiva de confiança e retorna credenciais temporárias. Se tudo estiver configurado corretamente, a conexão será validada com êxito e você poderá continuar a configuração do módulo.
+   Se a verificação falhar, o painel permanecerá aberto e exibirá o erro. Corrija o problema no AWS e selecione Salvar novamente. Não é necessário recriar a conexão, e o Assunto não é alterado.
+
+A partir desse ponto, a conexão renova suas próprias credenciais. Não há chave para girar e nada expira que você precise manter.
+
+#### Solução de problemas
+
+
+<table>
+  <tr>
+    <th>Erro</th>
+    <th>O que significa</th>
+    <th>O que verificar</th>
+  </tr>
+  <tr>
+    <td>InvalidIdentityToken</td>
+    <td>O AWS não pôde corresponder o token a um provedor de identidade registrado.</td>
+    <td>Verifique se você adicionou o provedor de identidade descrito em Adicionar o Workfront Fusion como um provedor de identidade no AWS e se o URL é exatamente https://oidc.automations.adobe.com, sem a barra à direita.</td>
+  </tr>
+  <tr>
+    <td>Acesso Negado ao assumir a função</td>
+    <td>O provedor de identidade está registrado, mas a diretiva de confiança não corresponde a esta conexão.</td>
+    <td>Verifique se o subvalor na política de confiança é caractere por caractere idêntico ao Assunto mostrado no Workfront Fusion e se aud é sts.amazonaws.com. Um Assunto copiado de uma conexão diferente é a causa mais comum.</td>
+  </tr>
+  <tr>
+    <td>A conexão funciona, e depois falha</td>
+    <td> </td>
+    <td>Verifique se as políticas de permissões da função foram alteradas ou se a função foi excluída e recriada. Recriar uma função não altera seu ARN, mas redefine sua diretiva de confiança.</td>
+  </tr>
+</table>
+
++++
+
+### Conectar o AWS ao Workfront Fusion usando um usuário da API
+
++++ Expanda para exibir instruções desse tipo de conexão.
+
 Para conectar o [!DNL AWS S3] ao Workfront Fusion, você deve conectar sua conta do [!DNL AWS] ao Workfront Fusion. Para fazer isso, primeiro será necessário criar um usuário de API no [!DNL AWS] [!UICONTROL IAM].
 
 1. Entre na sua conta do [!DNL AWS] [!UICONTROL IAM].
@@ -105,7 +294,12 @@ Para conectar o [!DNL AWS S3] ao Workfront Fusion, você deve conectar sua conta
 
 A conexão foi estabelecida. Você pode prosseguir com a configuração do módulo.
 
++++
+
 ## Módulos do [!DNL AWS S3] e seus campos
+
+* [Ações](#actions)
+* [Pesquisas](#searches)
 
 Ao configurar módulos do [!DNL AWS S3], o Workfront Fusion exibe os campos listados abaixo. Junto com eles, outros campos do [!DNL AWS S3] podem ser exibidos, dependendo de fatores como seu nível de acesso no aplicativo ou serviço. Um título em negrito em um módulo indica um campo obrigatório.
 

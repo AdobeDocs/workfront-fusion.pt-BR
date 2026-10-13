@@ -16,10 +16,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 0922a5503bbeded91ae116849465d0f898ef4686
 workflow-type: tm+mt
-source-wordcount: '2647'
-ht-degree: 23%
+source-wordcount: '3789'
+ht-degree: 17%
 ---
 # Módulos do [!DNL Azure DevOps]
 
@@ -92,10 +92,200 @@ O conector DevOps do Azure usa o seguinte:
 
 ## Conectar o [!DNL Azure DevOps] ao Workfront Fusion {#connect-azure-devops-to-workfront-fusion}
 
+* [Conectar o Azure DevOps ao Workfront Fusion usando uma conexão federada](#connect-azure-devops-to-workfront-fusion-using-a-federated-connection)
 * [Conectar o Azure DevOps ao Workfront Fusion usando o EntraApp](#connect-azure-devops-to-workfront-fusion-using-entraapp)
 * [Conectar o Azure DevOps ao Workfront Fusion usando uma entidade de serviço](#connect-azure-devops-to-workfront-fusion-using-a-service-principal)
 
+### Conectar o Azure DevOps ao Adobe Workfront Fusion usando uma conexão federada
+
+Uma conexão federada funciona como a conexão principal de serviço, exceto por não usar um segredo de cliente.
+
+Em vez de armazenar um segredo, você informa ao Microsoft Entra ID para confiar em tokens que o Workfront Fusion emite para uma conexão específica. Quando a conexão é executada, o Fusion apresenta uma prova de identidade de curta duração e o Microsoft Entra ID retorna um token de acesso. Como não há segredo do cliente, não há nada que expire e nenhum segredo para girar ou armazenar.
+
++++ Expanda para exibir instruções para conectar o Azure DevOps ao Adobe Workfront Fusion usando uma conexão federada.
+
+>[!NOTE]
+>
+>* A configuração dessa conexão requer duas visitas ao centro de administração do Microsoft Entra. Registre o aplicativo primeiro e, em seguida, crie a conexão no Workfront Fusion, depois retorne à Microsoft Entra ID para adicionar a credencial federada. Isso ocorre porque a credencial federada identificou uma conexão específica e esse identificador não existe até que a conexão seja criada.
+>* Os mesmos limites se aplicam a essa conexão que a conexão principal de serviço. Um pequeno número de ações de nível administrativo, como o gerenciamento de licenças de usuário, ainda requer uma conexão com a conta pessoal.
+
+* [Pré-requisitos para conectar o Azure DevOps ao Workfront Fusion usando uma conexão federada](#prerequisites-to-connecting-azure-devops-to-workfront-fusion-using-a-federated-connection)
+* [Criar o registro do aplicativo na Microsoft Entra ID (Federated connection)](#create-the-app-registration-in-microsoft-entra-id-federated-connection)
+* [Coletar detalhes da conexão (Conexão federada)](#collect-your-connection-details-federated-connection)
+* [Criar a conexão no Workfront Fusion (conexão Federada)](#create-the-connection-in-workfront-fusion-federated-connection)
+* [Adicionar a credencial federada na Microsoft Entra ID](#add-the-federated-credential-in-microsoft-entra-id)
+* [Verificar a conexão (Conexão federada)](#verify-the-connection-federated-connection)
+
+#### Pré-requisitos para conectar o Azure DevOps ao Workfront Fusion usando uma conexão federada
+
+
+Para criar essa conexão, você precisa do seguinte:
+
+* Acesso de Administrador Global ou Administrador de Aplicativos no Microsoft Entra ID, para registrar o aplicativo e adicionar a credencial federada. Se você não tiver esse acesso, peça a alguém da sua equipe de TI ou de identidade que conclua essas etapas para você.
+* Acesso de Administrador da Coleção de Projetos na sua organização de DevOps da Azure para adicionar a entidade de serviço como membro. Geralmente, essa é uma pessoa diferente da que gerencia a Microsoft Entra ID.
+* O nome da sua organização DevOps da Azure. Você pode encontrar isso na URL do Azure DevOps: `dev.azure.com/<your organization name>`.
+
+#### Criar o registro do aplicativo na Microsoft Entra ID (Federated connection)
+
+1. Faça logon no centro de administração do Microsoft Entra.
+1. Acesse Registros do aplicativo > Novo registro.
+1. Dê ao aplicativo um nome claro e reconhecível. Por exemplo, `Workfront Fusion Azure DevOps Integration`.
+1. Deixe o URL de redirecionamento em branco. Essa conexão não envolve fazer logon por meio de um navegador.
+1. Selecione Registrar.
+1. Não crie um segredo de cliente. Uma conexão federada não usa uma.
+1. Prossiga para [Coletar detalhes da conexão](#collect-your-connection-details-federated-connection).
+
+
+#### Coletar detalhes da conexão (Conexão federada)
+
+1. Na página Visão geral do registro do aplicativo, observe os seguintes valores. Você os insere ao criar a conexão no módulo.
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL ID de Locatário]</td>
+      <td>Na página Visão Geral, rotulada <b>ID do Diretório (locatário)</b>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Client ID]</td>
+      <td>Na página Visão Geral, rotulada <b>ID do Aplicativo (cliente)</b>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Organização]</td>
+      <td>O nome de sua organização Azure DevOps. Por exemplo, se a URL for <code>dev.azure.com/yourorg</code>, digite <code>yourorg</code>.</td>
+     </tr>
+    </tbody>
+   </table>
+
+1. Continue em [Criar a conexão no Workfront Fusion](#create-the-connection-in-workfront-fusion-federated-connection).
+
+>[!NOTE]
+>
+>Assim como na conexão da entidade de serviço, você pode ignorar a área de permissões da API do registro do aplicativo. O acesso ao Azure DevOps é concedido dentro do Azure DevOps, no próximo procedimento.
+
+#### Criar a conexão no Workfront Fusion (conexão Federada)
+
+1. Na tela de configuração de conexão do módulo, selecione o tipo de conexão federada.
+1. Insira o seguinte:
+
+   * ID do inquilino
+   * ID do cliente
+   * Organização
+
+1. Selecione **Criar**.
+
+   O Workfront Fusion exibe três valores. Deixe esta página aberta, pois esses valores serão necessários posteriormente no processo de criação da conexão.
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL Emissor]</td>
+      <td><code>https://oidc.automations.adobe.com</code>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Assunto]</td>
+      <td>Isso identifica essa conexão. Parece com <code>fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:28964</code>. É diferente para cada conexão criada.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Público-alvo]</td>
+      <td><code>api://AzureADTokenExchange</code>.</td>
+     </tr>
+    </tbody>
+   </table>
+
+   >[!IMPORTANT]
+   >
+   >Não feche o painel nem selecione Cancelar. A conexão não é concluída até que você conclua o resto do procedimento. Se fechar o painel, você deverá excluir a conexão e iniciar novamente, pois uma nova conexão recebe um novo Assunto.
+
+1. Copie o valor **Assunto**.
+1. Continue para [Adicionar a credencial federada na Microsoft Entra ID](#add-the-federated-credential-in-microsoft-entra-id).
+
+#### Adicionar a credencial federada na Microsoft Entra ID
+
+Esse procedimento substitui o segredo do cliente. Ele instrui o Microsoft Entra ID a aceitar tokens que o Workfront Fusion emite para essa conexão única.
+
+1. Em uma nova guia do navegador, retorne ao centro de administração do Microsoft Entra e abra o registro do aplicativo.
+1. Acesse Certificados e segredos > Credenciais federadas.
+1. Selecione Adicionar credencial.
+1. No cenário de Credencial federada, selecione Outro emissor.
+1. Insira o seguinte:
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL Emissor]</td>
+      <td><code>https://oidc.automations.adobe.com</code></td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Identificador de Assunto]</td>
+      <td>O Assunto copiado do Workfront Fusion. Cole exatamente, sem espaços adicionados.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Name]</td>
+      <td>Um nome que identifica esta conexão, para que você possa localizá-la posteriormente. Por exemplo, <code>workfront-fusion-connection-28964</code>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Público-alvo]</td>
+      <td><code>api://AzureADTokenExchange</code>. Isso geralmente é preenchido para você. Deixe o valor padrão.</td>
+     </tr>
+    </tbody>
+   </table>
+
+1. Clique em **Adicionar**.
+1. Continue em [Verificar a conexão](#verify-the-connection-federated-connection).
+
+>[!NOTE]
+>
+>A Entra ID da Microsoft permite no máximo 20 credenciais federadas em um único registro de aplicativo, e o identificador de Assunto deve corresponder exatamente. Curingas não são aceitos. Como cada conexão do Workfront Fusion tem seu próprio Subject, cada conexão precisa de sua própria credencial federada. Se você espera mais de 20 conexões, registre mais de um aplicativo e espalhe as conexões entre eles.
+
+
+#### Verificar a conexão (Conexão federada)
+
+1. Retorne à guia do navegador Workfront Fusion, onde o painel de conexão ainda está aberto.
+1. Clique em **Salvar**.
+
+   * Se tudo estiver configurado corretamente, a conexão será validada com êxito e você poderá continuar a configuração do módulo.
+   * Se a verificação falhar, o painel permanecerá aberto e exibirá o erro. Corrija o problema no Microsoft Entra ID ou no Azure DevOps e selecione Salvar novamente. Não é necessário recriar a conexão, e o Assunto não é alterado.
+
+>[!NOTE]
+>
+>Uma credencial federada adicionada na Microsoft Entra ID pode levar algum tempo para se tornar ativa. Se a verificação falhar imediatamente após adicionar a credencial, aguarde um minuto e selecione Salvar novamente antes de investigar mais.
+
+
+Solução de problemas
+
+<table style="table-layout:auto">
+ <col>
+ <col>
+ <tbody>
+  <tr>
+   <td role="rowheader">Falha na verificação da conexão com um cliente inválido ou erro de solicitação inválido</td>
+   <td>A Microsoft Entra ID não pôde corresponder o token a uma credencial federada. Verifique se o Emissor é exatamente <code>https://oidc.automations.adobe.com</code> sem barra à direita e se o identificador de Assunto é idêntico caractere por caractere ao Assunto mostrado no Workfront Fusion. Um Assunto copiado de uma conexão diferente é a causa mais comum.</td>
+  </tr>
+  <tr>
+   <td role="rowheader">A conexão é verificada, mas os módulos retornam 401 ou 403 do Azure DevOps</td>
+   <td>A identidade é confiável, mas não tem acesso aos dados DevOps do Azure. Confirme que você concluiu <a href="#add-the-service-principal-to-your-azure-devops-organization">Adicionar a entidade de serviço à sua organização de DevOps da Azure</a> e que ela está atribuída ao projeto específico que o módulo usa.</td>
+  </tr>
+  <tr>
+   <td role="rowheader">Não é possível adicionar outra credencial federada</td>
+   <td>Você atingiu o limite de 20 credenciais federadas para esse registro de aplicativo. Registre um aplicativo adicional e crie outras conexões com ele.</td>
+  </tr>
+ </tbody>
+</table>
+
++++
+
 ### Conectar o Azure DevOps ao Workfront Fusion usando o EntraApp
+
+É possível conectar o Azure DevOps ao Workfront Fusion usando o EntraApp.
+
++++ Expanda para exibir instruções para conectar o Azure DevOps ao Workfront Fusion usando o EntraApp
 
 1. Adicione um módulo [!DNL Azure DevOps] ao seu cenário.
 1. Clique em **[!UICONTROL Adicionar]** ao lado do campo [!UICONTROL Conexão].
@@ -133,20 +323,25 @@ O conector DevOps do Azure usa o seguinte:
 1. Para inserir uma ID de Aplicativo DevOps da Azure ou um Segredo do Cliente, clique em <b>Mostrar configurações avançadas</b> e insira-as nos campos abertos.
 1. Clique em **[!UICONTROL Continuar]** para concluir a configuração da conexão e continuar criando seu cenário.
 
++++
+
 ### Conectar o Azure DevOps ao Workfront Fusion usando uma entidade de serviço
 
 Você pode criar uma conexão que use uma entidade de serviço (uma conexão da API do aplicativo) em vez de uma conta pessoal. Isso é útil quando você deseja que a conexão seja executada como uma identidade de aplicativo ou serviço, em vez de uma pessoa específica. Isso pode ser útil para que a integração não seja interrompida se, por exemplo, essa pessoa sair da empresa ou alterar a senha.
 
 Esse tipo de conexão está disponível para todos os módulos DevOps do Azure.
 
++++ Expanda para exibir instruções para conectar o Azure DevOps ao Adobe Workfront Fusion usando uma entidade de serviço.
+
+
 >[!NOTE]
 >
 >A autenticação da entidade de serviço não dá suporte a todos os recursos DevOps do Azure. Um pequeno número de ações de nível administrativo, como o gerenciamento de licenças de usuário, ainda requer uma conexão com a conta pessoal. Use a autenticação da entidade de serviço se você só precisar dela para itens de trabalho, quadros, repositórios ou pipelines.
 
 * [Pré-requisitos para conectar o Azure DevOps ao Workfront Fusion usando uma entidade de serviço](#prerequisites-to-connecting-azure-devops-to-workfront-fusion-using-a-service-principal)
-* [Criar o registro do aplicativo na Microsoft Entra ID](#create-the-app-registration-in-microsoft-entra-id)
+* [Criar o registro do aplicativo na Microsoft Entra ID](#create-the-app-registration-in-microsoft-entra-id-service-principal)
 * [Criar um segredo do cliente](#create-a-client-secret)
-* [Coletar detalhes da conexão](#collect-your-connection-details)
+* [Coletar detalhes da conexão](#collect-your-connection-details-service-principal)
 * [Adicionar a entidade de serviço à sua organização de DevOps da Azure](#add-the-service-principal-to-your-azure-devops-organization)
 * [Criar a conexão](#create-the-connection)
 
@@ -158,7 +353,7 @@ Para criar essa conexão, você precisa do seguinte:
 * Acesso de **Administrador da Coleção de Projetos** na sua organização de DevOps da Azure, para adicionar a entidade de serviço como membro. Geralmente, essa é uma pessoa diferente da que gerencia a Microsoft Entra ID.
 * O nome da sua organização DevOps da Azure. Você pode encontrar isso na URL do Azure DevOps: `dev.azure.com/<your organization name>`.
 
-#### Criar o registro do aplicativo na Microsoft Entra ID
+#### Criar o registro do aplicativo na Microsoft Entra ID (Entidade de serviço)
 
 1. Entre no centro de administração [!DNL Microsoft Entra].
 1. Ir para **[!UICONTROL Registros de aplicativo]** > **[!UICONTROL Novo registro]**.
@@ -175,7 +370,7 @@ Para criar essa conexão, você precisa do seguinte:
 1. Copie o **[!UICONTROL Valor]** do segredo imediatamente. É exibido apenas uma vez. Se você navegar para fora antes de copiá-lo, deverá criar um novo.
 1. Prossiga para [Coletar detalhes da conexão](#collect-your-connection-details).
 
-#### Coletar detalhes da conexão
+#### Coletar seus detalhes de conexão (Entidade de serviço)
 
 1. Na página **[!UICONTROL Visão geral]** do registro do aplicativo, observe os seguintes valores. Você os insere ao criar a conexão no módulo.
 
@@ -223,9 +418,9 @@ Registrar o aplicativo na Microsoft Entra ID cria apenas sua identidade. Ele ain
 
 1. Atribua o principal de serviço ao projeto ou projetos específicos de que ele precisa, seguindo as práticas de acesso comuns da sua organização.
 1. Selecione **[!UICONTROL Adicionar]**.
-1. Continue em [Criar a conexão](#create-the-connection).
+1. Continue em [Criar a conexão no Workfront Fusion](#create-the-connection-in-workfront-fusion-service-principal).
 
-#### Criar a conexão
+#### Criar a conexão no Workfront Fusion (Entidade de serviço)
 
 1. Na tela de configuração de conexão do módulo, selecione o tipo de conexão **[!UICONTROL Entidade de Serviço]**.
 1. Insira o seguinte:
@@ -238,6 +433,8 @@ Registrar o aplicativo na Microsoft Entra ID cria apenas sua identidade. Ele ain
 1. Salve a conexão.
 
    Se tudo estiver configurado corretamente, a conexão será validada com êxito.
+
++++
 
 ## [!UICONTROL Azure DevOps] módulos e seus campos
 
