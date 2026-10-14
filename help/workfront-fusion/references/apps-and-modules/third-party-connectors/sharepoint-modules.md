@@ -18,9 +18,9 @@ topic_v2:
     internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: c9bf5c68e4977027944114c35414fa5f46ea8751
+source-git-commit: be0cf391e02e3f8c2547494aeac0de5b7296c85d
 workflow-type: tm+mt
-source-wordcount: '5853'
+source-wordcount: '5810'
 ht-degree: 10%
 ---
 # Módulos do Microsoft SharePoint Online
@@ -262,10 +262,6 @@ Prossiga para [Criar o registro do aplicativo na Microsoft Entra ID](#create-the
 1. Continue em [Conceder permissões de API](#grant-api-permissions).
 
 #### Conceder permissões de API (Entidade de serviço)
-
->[!IMPORTANT]
->
->BECKY CHECK ME: diferente do Azure DevOps, o Microsoft Graph oferece suporte às permissões de aplicativo diretamente nesta etapa. Confirme as permissões exatas que o módulo Fazer uma chamada de API precisa (por exemplo, um escopo de permissão Sites) antes de publicar esta seção e atualize as etapas abaixo de acordo.
 
 1. No registro do seu aplicativo, acesse **[!UICONTROL Permissões de API]**.
 1. Selecione **[!UICONTROL Adicionar uma permissão]** e **[!UICONTROL Gráfico do Microsoft]**.
