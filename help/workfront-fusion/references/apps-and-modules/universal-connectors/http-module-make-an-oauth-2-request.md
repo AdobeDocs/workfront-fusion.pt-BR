@@ -16,7 +16,7 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 3cd582ee1b763897cbbaba7f2c040897e3581742
 workflow-type: tm+mt
 source-wordcount: '2373'
 ht-degree: 11%
@@ -95,7 +95,7 @@ Para obter informações sobre licenças do Adobe Workfront Fusion, consulte [Li
    1. Ao criar um cliente, insira a URL apropriada no campo `[!UICONTROL Redirect URL]` ou `[!UICONTROL Callback URL]`:
 
       | Américas / APAC | `https://app.workfrontfusion.com/oauth/cb/oauth2` |
-      |---|---|
+      | --- | --- |
       | **EMEA** | `https://app-eu.workfrontfusion.com/oauth/cb/oauth2` |
 
    1. Após a criação do cliente, o serviço fornecido exibe duas chaves: `[!UICONTROL Client ID]` e `[!UICONTROL Client Secret]`. Alguns serviços chamam estes `[!UICONTROL App Key]` e `[!UICONTROL App Secret]`. Salve a chave e o segredo em um local seguro, para que você possa fornecê-los ao criar a conexão no Workfront Fusion.

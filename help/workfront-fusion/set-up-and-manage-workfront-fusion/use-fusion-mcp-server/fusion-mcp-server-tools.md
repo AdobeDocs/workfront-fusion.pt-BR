@@ -1,9 +1,9 @@
 ---
 title: Ferramentas de servidor do Adobe Workfront Fusion MCP
 description: Lista de referência das ferramentas que o servidor MCP do Adobe Workfront Fusion expõe às plataformas de agente de IA e ao Colaborador.
-source-git-commit: 5f3bd6b7b8837632af245ea2c172205625e4ecba
+source-git-commit: 1bfcdb6abe42eca27d2f3ae5a1a1d2cfd3901d33
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1546'
 ht-degree: 7%
 ---
 
@@ -31,6 +31,25 @@ A organização ativa se aplica a todas as outras ferramentas na sessão atual.
 | --- | --- | --- | --- |
 | Listar organizações | `fusion_orgs_list` | Ler | Lista as organizações do Fusion que você pode acessar, com ID, região (zona) e rótulo. |
 | Definir organização ativa | `fusion_orgs_set` | Session | Alterna a organização ativa para a sessão atual. Não altera nenhum dado do Fusion. |
+| Obter organização atual | `fusion_organizations_get` | Ler | Retorna a organização atual. |
+| Listar organizações | `fusion_organizations_list` | Ler | Lista todas as organizações que você pode visualizar. |
+
+## Equipes
+
+| Ferramenta | Nome | Ação | Descrição |
+| --- | --- | --- | --- |
+| Listar equipes | `fusion_teams_list` | Ler | Lista as equipes da organização que você pode visualizar. |
+| Obter equipe | `fusion_teams_get` | Ler | Retorna uma única equipe em uma organização. |
+| Excluir equipe | `fusion_teams_delete` | Gravar | Exclui uma equipe. Isso também interrompe os cenários e remove as permissões. Essa ação não pode ser desfeita por meio da API e requer confirmação. |
+
+## Usuários
+
+| Ferramenta | Nome | Ação | Descrição |
+| --- | --- | --- | --- |
+| Obter regiões do Fusion | `fusion_users_get_regions` | Ler | Retorna as regiões e organizações do Fusion que você pode acessar. Use-a para localizar IDs de organização válidas. |
+| Obter usuário atual | `fusion_users_get_me` | Ler | Retorna seu perfil com as funções de organização e equipe. |
+| Listar usuários | `fusion_users_list` | Ler | Lista os usuários da organização. |
+| Obter usuário | `fusion_users_get` | Ler | Retorna um único usuário em uma organização. |
 
 ## Ferramentas de Cenário
 
@@ -40,6 +59,7 @@ A organização ativa se aplica a todas as outras ferramentas na sessão atual.
 | --- | --- | --- | --- |
 | Listar cenários | `fusion_scenarios_list` | Ler | Lista cenários na organização. |
 | Obter cenário | `fusion_scenarios_get` | Ler | Retorna um cenário, incluindo seu blueprint completo. |
+| Obter link do cenário | `fusion_scenarios_get_link` | Ler | Retorna o link da interface do usuário do Fusion para abrir um cenário no navegador. |
 | Obter dependências de cenário | `fusion_scenarios_getDependencies` | Ler | Retorna as conexões, as chaves, os armazenamentos de dados, as estruturas de dados e os webhooks das referências de blueprint do cenário. |
 | Localizar cenários dependentes | `fusion_scenarios_dependents` | Ler | Localiza cenários que fazem referência a um determinado webhook, armazenamento de dados, estrutura de dados, conexão, chave ou cenário. Útil para análise de impacto antes de alterar ou excluir um recurso. |
 | Validar blueprint | `fusion_scenarios_validate_blueprint` | Ler | Valida estruturalmente um blueprint em relação a uma equipe (referências de módulo, conexões, campos obrigatórios) sem salvar nada. |
@@ -63,6 +83,7 @@ Exemplo de prompts:
 | --- | --- | --- | --- |
 | Listar versões de cenário | `fusion_scenario_versions_list` | Ler | Lista as versões salvas de um cenário. Filtrar por `version`, `createdAt`, `comment`. |
 | Obter versão do cenário | `fusion_scenario_versions_get` | Ler | Retorna o blueprint e os metadados de uma versão específica. |
+| Criar versão do cenário | `fusion_scenario_versions_create` | Gravar | Publica um blueprint como uma nova versão do cenário, que se torna o blueprint em tempo real. As versões anteriores são mantidas e a publicação de um blueprint idêntico não faz nada. |
 
 Exemplo de prompts:
 
@@ -109,8 +130,10 @@ Essas ferramentas retornam somente metadados. Eles não retornam credenciais, to
 | --- | --- | --- | --- |
 | Pesquisar conexões | `fusion_connections_search` | Ler | Lista conexões. Filtrar por `name`, `accountName`, `accountType`, `expire`, `teamId`, `scopesCount`, `editable`, `environmentType`, `authenticationType`. |
 | Obter conexão | `fusion_connections_get` | Ler | Retorna detalhes de uma única conexão. |
+| Excluir conexão | `fusion_connections_delete` | Gravar | Exclui uma conexão. Falha se um webhook ainda depender dele. Os cenários que o usam são desanexados em vez de bloquear a exclusão. |
 | Pesquisar chaves | `fusion_keys_search` | Ler | Lista as chaves. Filtrar por `name`, `typeName`, `teamId`. |
 | Obter chave | `fusion_keys_get` | Ler | Retorna detalhes de uma única chave. |
+| Excluir chave | `fusion_keys_delete` | Gravar | Exclui uma chave. Os cenários que o usam não bloqueiam a exclusão. |
 
 Exemplo de prompts:
 
@@ -124,6 +147,9 @@ Exemplo de prompts:
 | --- | --- | --- | --- |
 | Listar webhooks | `fusion_hooks_list` | Ler | Lista os webhooks (ganchos). Filtrar por `name`, `teamId`, `type`, `enabled`, `gone`, `typeName`, `scenarioId`, `priority`, `detached` e muito mais. |
 | Obter webhook | `fusion_hooks_get` | Ler | Retorna a configuração de um webhook, a associação do proprietário e as referências externas. |
+| Obter dependências de webhook | `fusion_hooks_dependencies` | Ler | Lista a conexão, a estrutura de dados e a chave à qual um webhook faz referência. Execute-o antes de clonar. |
+| Clonar webhook | `fusion_hooks_clone` | Gravar | Copia um webhook com um novo URL, opcionalmente em outra equipe. Pode substituir sua conexão, estrutura de dados ou chave. |
+| Excluir webhook | `fusion_hooks_delete` | Gravar | Exclui um webhook e seus eventos em fila. Somente o criador do webhook pode excluí-lo. |
 | Localizar webhooks dependentes | `fusion_hooks_dependents` | Ler | Localiza webhooks que fazem referência a uma determinada conexão. |
 
 ### Fila do Webhook
@@ -133,7 +159,7 @@ Exemplo de prompts:
 | Obter estatísticas da fila | `fusion_queue_stats` | Ler | Retorna o número de eventos na fila, o limite da fila e se o webhook está habilitado. |
 | Listar fila | `fusion_queue_list` | Ler | Lista eventos de webhook recebidos aguardando para serem processados. |
 | Obter item da fila | `fusion_queue_get` | Ler | Retorna um único evento na fila, incluindo sua carga decodificada. |
-| Excluir itens da fila | `fusion_queue_delete` | Gravar | Exclui eventos enfileirados específicos (até 50) ou limpa a fila, excluindo alguns eventos opcionalmente. Os eventos que estão sendo processados não podem ser excluídos. |
+| Excluir itens da fila | `fusion_hook_queue_delete` | Gravar | Exclui eventos de webhook enfileirados por ID (até 50), ou todos eles com exclusões opcionais. O nome da ferramenta conectada é `fusion_hook_queue_delete` e não corresponde ao nome `fusion_queue_delete` mais antigo. |
 
 Exemplo de prompts:
 
@@ -146,10 +172,14 @@ Exemplo de prompts:
 | --- | --- | --- | --- |
 | Listar armazenamentos de dados | `fusion_datastores_list` | Ler | Lista os armazenamentos de dados com a contagem, o tamanho e o tamanho máximo do registro. |
 | Obter armazenamento de dados | `fusion_datastores_get` | Ler | Retorna os metadados e o uso de um armazenamento de dados, a estrutura de dados vinculada e a configuração de validação estrita. |
+| Excluir armazenamento de dados | `fusion_datastores_delete` | Gravar | Exclui um armazenamento de dados e todos os seus registros. Falha se um cenário ainda usá-lo. |
 | Listar registros de armazenamento de dados | `fusion_data_list` | Ler | Lê registros (chave + dados JSON) de um armazenamento de dados, com paginação de deslocamento. |
+| Excluir registros de armazenamento de dados | `fusion_data_stores_data_delete` | Gravar | Exclui vários registros por chave ou todos os registros com exclusões opcionais. |
+| Excluir registro de armazenamento de dados | `fusion_data_stores_data_key_delete` | Gravar | Exclui um registro por chave. É bem-sucedido mesmo se a chave não existir. |
 | Localizar armazenamentos de dados dependentes | `fusion_datastores_dependents` | Ler | Localiza armazenamentos de dados que usam uma determinada estrutura de dados. |
 | Pesquisar estruturas de dados | `fusion_data_structures_search` | Ler | Lista as estruturas de dados. Filtrar por `name`, `strict`, `teamId`. |
 | Obter estrutura de dados | `fusion_data_structures_get` | Ler | Retorna uma estrutura de dados, incluindo a especificação de campo completa. |
+| Excluir estrutura de dados | `fusion_data_structures_delete` | Gravar | Exclui uma estrutura de dados. Falha se um armazenamento de dados ainda o utilizar. |
 
 Exemplo de prompts:
 
@@ -167,6 +197,12 @@ Exemplo de prompts:
 
 * _Quem excluiu cenários nos últimos 7 dias?_
 * _Exportar todas as alterações de conexão deste trimestre para o Excel._
+
+## Feedback
+
+| Ferramenta | Nome | Ação | Descrição |
+| --- | --- | --- | --- |
+| Enviar feedback | `fusion_feedback_submit` | Gravar | Envia seu feedback (erro, resultado incorreto, solicitação de recurso, elogio ou outro) para a equipe do Fusion. |
 
 ## Colaborador
 

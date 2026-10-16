@@ -14,9 +14,9 @@ feature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 983b7ab013c49747760da4a22a47715c68555ec0
 workflow-type: tm+mt
-source-wordcount: '3236'
+source-wordcount: '3219'
 ht-degree: 6%
 ---
 # Webhooks
@@ -126,10 +126,6 @@ Para obter mais informações sobre mTLS, consulte [Visão geral do TLS mútuo](
 1. Clique em **[!UICONTROL Salvar]**
 
 Depois de criar um webhook, um URL exclusivo é exibido. Esse é o endereço para o qual o webhook envia dados. O Workfront Fusion valida os dados enviados para esse endereço e, em seguida, os transmite para processamento no cenário.
-
->[!NOTE]
->
->Depois de criar um webhook, você pode usá-lo em mais de um cenário por vez.
 
 #### Usar um webhook com autenticação básica
 
@@ -551,3 +547,4 @@ Se alguns itens estiverem ausentes no painel de mapeamento na configuração dos
 ![Redeterminar a estrutura de dados](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
 
 Siga as etapas descritas na seção [Configurar a estrutura de dados do webhook](#configure-the-webhook-s-data-structure) neste artigo.
+
