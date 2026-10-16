@@ -14,9 +14,9 @@ feature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 983b7ab013c49747760da4a22a47715c68555ec0
 workflow-type: tm+mt
-source-wordcount: '3236'
+source-wordcount: '3219'
 ht-degree: 6%
 ---
 # Webhooks
@@ -126,10 +126,6 @@ Para obter mais informações sobre mTLS, consulte [Visão geral do TLS mútuo](
 1. Clique em **[!UICONTROL Salvar]**
 
 Depois de criar um webhook, um URL exclusivo é exibido. Esse é o endereço para o qual o webhook envia dados. O Workfront Fusion valida os dados enviados para esse endereço e, em seguida, os transmite para processamento no cenário.
-
->[!NOTE]
->
->Depois de criar um webhook, você pode usá-lo em mais de um cenário por vez.
 
 #### Usar um webhook com autenticação básica
 
@@ -477,27 +473,27 @@ O tempo limite para enviar uma resposta é de 5 minutos. Se a resposta não esti
 >Configure o módulo [!UICONTROL Resposta do Webhook] da seguinte maneira:
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
->&gt;   <td> <p>Código de status HTTP de sucesso 2xx, por exemplo, 200</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
->&gt;   <td> <p>código HTML</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL Cabeçalhos personalizados]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>Chave</strong>: Tipo de conteúdo</li> 
->&gt;     <li><strong>Valor</strong>: texto/html</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
+&gt;   <td> <p>Código de status HTTP de sucesso 2xx, por exemplo, 200</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
+&gt;   <td> <p>código HTML</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL Cabeçalhos personalizados]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>Chave</strong>: Tipo de conteúdo</li> 
+&gt;     <li><strong>Valor</strong>: texto/html</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![Cabeçalhos personalizados](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
@@ -512,23 +508,23 @@ O tempo limite para enviar uma resposta é de 5 minutos. Se a resposta não esti
 >**Exemplo:** Configure o módulo [!UICONTROL Resposta do Webhook] da seguinte maneira:
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
->&gt;   <td> <p>Código de status HTTP de redirecionamento 3xx, por exemplo, 303</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL Cabeçalhos personalizados]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>[!UICONTROL Chave]</strong>: Localização</li> 
->&gt;     <li><strong>[!UICONTROL Valor]</strong>: A URL para a qual você deseja redirecionar.</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
+&gt;   <td> <p>Código de status HTTP de redirecionamento 3xx, por exemplo, 303</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL Cabeçalhos personalizados]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>[!UICONTROL Chave]</strong>: Localização</li> 
+&gt;     <li><strong>[!UICONTROL Valor]</strong>: A URL para a qual você deseja redirecionar.</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![Resposta do Webhook](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 
@@ -551,3 +547,4 @@ Se alguns itens estiverem ausentes no painel de mapeamento na configuração dos
 ![Redeterminar a estrutura de dados](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
 
 Siga as etapas descritas na seção [Configurar a estrutura de dados do webhook](#configure-the-webhook-s-data-structure) neste artigo.
+
