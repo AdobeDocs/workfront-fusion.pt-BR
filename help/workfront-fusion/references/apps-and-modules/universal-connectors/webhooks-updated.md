@@ -14,9 +14,9 @@ feature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 983b7ab013c49747760da4a22a47715c68555ec0
+source-git-commit: c0d5bb30cb41d9ad8db07c1ea13a533df10bcb43
 workflow-type: tm+mt
-source-wordcount: '3219'
+source-wordcount: '3193'
 ht-degree: 6%
 ---
 # Webhooks
@@ -325,10 +325,6 @@ Ao criar ou editar um webhook personalizado no Fusion, o campo Origens permitida
 ## A fila de webhook
 
 Se um webhook receber dados e não houver um cenário ativo esperando esses dados, os dados serão armazenados na fila. Depois que você ativa o cenário, ele processa todos os pacotes aguardando na fila sequencialmente.
-
->[!IMPORTANT]
->
->As filas de webhook são compartilhadas entre cenários que utilizam o mesmo webhook. Se um dos cenários for desativado, todos os dados recebidos serão mantidos na fila.
 
 ## Formatos de dados de entrada compatíveis
 
