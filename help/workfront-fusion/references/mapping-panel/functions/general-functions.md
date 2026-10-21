@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 8ea986eb6573bb49accfad312bb0796faa2642ab
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 8%
+source-wordcount: '750'
+ht-degree: 5%
 ---
 # Funções gerais
 
@@ -22,11 +22,39 @@ ht-degree: 8%
 
 Você pode usar essas variáveis gerais para identificar detalhes sobre uma execução:
 
-* `executionID`: a ID de execução deste cenário
-* `triggerTimestamp`: a hora em que essa execução foi disparada
-* `scenarioID`: o ID do cenário em execução no momento
+* `executionId`: a ID de execução deste cenário
+* `scenarioId`: o ID do cenário em execução no momento
 * `scenarioName`: o nome do cenário em execução
+* `scenarioUrl`: um link para o cenário atual na interface do usuário do Fusion
+* `executionUrl`: um link para a execução do cenário atual na interface do usuário do Fusion
+* `scenarioApiUrl`: a URL da API Fusion para o cenário atual
+* `executionApiUrl`: a URL da API Fusion para os detalhes da execução atual
+* `teamId`: a ID da equipe do Fusion proprietária do cenário atual
+* `organizationId`: a ID da organização do Fusion associada à execução atual. Esta não é uma Adobe IMS Organization ID.
+* `triggerTimestamp`: a hora em que essa execução foi disparada
 * `operationsConsumed`: o número de operações usadas nesse ponto do cenário.
+
+Os nomes de variáveis fazem distinção entre maiúsculas e minúsculas. Por exemplo, use `scenarioUrl`, não `scenarioURL`.
+
+Você pode usar essas variáveis em campos mapeados sem criar URLs ou codificar IDs de equipe e organização. Por exemplo, você pode incluir o seguinte em um campo de texto mapeado em uma notificação:
+
+<pre><code>
+Scenario: &#123;&#123;scenarioName&#125;&#125;
+Open scenario: &#123;&#123;scenarioUrl&#125;&#125;
+Open execution: &#123;&#123;executionUrl&#125;&#125;
+Team: &#123;&#123;teamId&#125;&#125;
+Organization: &#123;&#123;organizationId&#125;&#125;
+</code></pre>
+
+Lembre-se do seguinte ao usar essas variáveis:
+
+* Os valores são resolvidos quando o cenário é executado. O painel de mapeamento lista as variáveis, mas não visualiza os valores.
+* `scenarioUrl` e `executionUrl` vinculados ao cenário e à execução na interface do usuário do Fusion. `scenarioApiUrl` e `executionApiUrl` são URLs de ponto de extremidade de API, não links para páginas do Fusion.
+* As variáveis de URL da API retornam somente texto. Eles não fazem uma solicitação ou não fornecem credenciais de autenticação. A autenticação e as permissões normais da API ainda se aplicam.
+* Os links não concedem acesso adicional. Permissões normais do Fusion se aplicam.
+* `executionUrl` não é gerado para execuções que não são salvas no histórico de execução, como execuções de sandbox ou execuções com a sincronização de histórico desativada. Um link gerado não garante que os detalhes da execução estejam disponíveis no momento em que você o usa.
+* `scenarioUrl` não pode ser gerado para um modelo ou um cenário não salvo.
+* Se um URL não puder ser gerado, a variável não terá valor.
 
 ## [!UICONTROL obter (objeto ou matriz; caminho)]
 
