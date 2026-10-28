@@ -3,10 +3,10 @@ user-guide-title: Documentação do Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Use os documentos, tutoriais e recursos adicionais para saber como implementar e usar efetivamente o Adobe Workfront Fusion em sua organização.
 nudge: true
-source-git-commit: d31db4d825746ac3e7b19cd8f7efcc593bc03bf7
+source-git-commit: e4bc75f0536c96896254f97d276a88b7a1aa18ce
 workflow-type: tm+mt
-source-wordcount: '2752'
-ht-degree: 48%
+source-wordcount: '2791'
+ht-degree: 47%
 ---
 
 # Documentação do Adobe Workfront Fusion {#using}
@@ -15,6 +15,7 @@ ht-degree: 48%
 * Atividade de lançamento do Fusion {#fusion-release-activity}
   * [Atividade de lançamento do Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
   * Versões do Fusion - 2026 {#fusion-releases-2026}
+    * [Atividade de lançamento do Workfront Fusion: semana de 26 de outubro de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-26.md)
     * [Atividade de lançamento do Workfront Fusion: semana de 19 de outubro de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-19.md)
     * [Atividade de lançamento do Workfront Fusion: semana de 12 de outubro de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-12.md)
     * [Atividade de lançamento do Workfront Fusion: semana de 5 de outubro de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-5.md)
@@ -265,6 +266,7 @@ ht-degree: 48%
     * [Adicionar um prompt de IA ao seu cenário](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)
     * {hide-from-toc}[Gerar um segmento de cenário usando a IA](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md)
     * [Copiar módulos ou cenários](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md)
+    * [Salvar e reutilizar seções de cenário com trechos](/help/workfront-fusion/create-scenarios/add-modules/use-snippets.md)
     * [Criar cenários com modelos do Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md)
     * [Usar cURL para adicionar um módulo HTTP](/help/workfront-fusion/create-scenarios/add-modules/use-curl-create-http.md)
     * [Configurar um webhook para um serviço da Web sem conectores](/help/workfront-fusion/create-scenarios/add-modules/receive-a-webhook-from-a-web-service.md)
@@ -306,6 +308,8 @@ ht-degree: 48%
   * [Gerenciar conexões](/help/workfront-fusion/manage-scenarios/manage-connections.md)
   * [Ativar ou desativar um cenário](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md)
   * [Depurar um cenário](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)
+  * [Usar trilha dinâmica para revisar uma execução de cenário](/help/workfront-fusion/manage-scenarios/live-trail.md)
+  * [Localizar e substituir variáveis, fontes e conexões em um cenário](/help/workfront-fusion/manage-scenarios/find-and-replace.md)
   * [Restaurar uma versão de cenário](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md)
   * [Atualizar um módulo para uma nova versão](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md)
   * [Gerenciar cenários bloqueados](/help/workfront-fusion/manage-scenarios/view-manage-locked-scenario.md)
@@ -405,6 +409,7 @@ ht-degree: 48%
       * [Módulos do Adobe Campaign](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-campaign-classic-connector.md)
       * [Módulos do Adobe Content Tagger](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/content-tagging-modules.md)
       * [Módulos de bibliotecas da Adobe Creative Cloud](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
+      * [Módulos do Adobe CX Enterprise Coworker](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-cx-coworker-modules.md)
       * [Módulos do Adobe Experience Manager Assets](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
       * [Módulos do Adobe Experience Manager Forms](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
       * [Módulos MCP do Adobe Experience Manager](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-mcp-modules.md)

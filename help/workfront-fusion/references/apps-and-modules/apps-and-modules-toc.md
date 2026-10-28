@@ -16,10 +16,10 @@ feature_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: d1a3b44e3b96a7b54a96f96dec9869ae5d928e77
+source-git-commit: 6efe84af0487893a3c33ba2bf6e3db5200f25446
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 89%
+source-wordcount: '543'
+ht-degree: 88%
 ---
 # Referências de aplicativos do Fusion e seus módulos: índice do artigo
 
@@ -53,6 +53,7 @@ O Fusion oferece conectores para muitos dos produtos e serviços da Adobe.
 * [Módulos do Adobe Campaign](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-campaign-classic-connector.md)
 * [Módulos do Adobe Content Tagger](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/content-tagging-modules.md)
 * [Módulos de bibliotecas da Adobe Creative Cloud](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
+* [Módulos do Adobe CX Enterprise Coworker](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-cx-coworker-modules.md)
 * [Módulos do Adobe Experience Manager Assets](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
 * [Módulos do Adobe Experience Manager Forms](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
 * [Módulos MCP do Adobe Experience Manager](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-mcp-modules.md)
