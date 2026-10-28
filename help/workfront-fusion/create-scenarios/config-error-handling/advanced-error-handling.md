@@ -11,14 +11,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 12%
+source-wordcount: '950'
+ht-degree: 11%
 ---
 # Adicionar filtragem e aninhamento a rotas de tratamento de erros
 
 É possível adicionar técnicas avançadas de tratamento de erros à sua rota de tratamento de erros, incluindo filtragem e aninhamento.
+
+>[!NOTE]
+>
+>O Workfront Fusion está fazendo a transição do editor de cenários para uma nova experiência. Durante essa transição, as experiências clássicas e novas estão disponíveis e você pode alternar entre elas a qualquer momento. Recomendamos usar a nova experiência. Para obter mais informações, consulte [Experiências novas e clássicas](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) no artigo Editor de cenários.
 
 ## Requisitos de acesso
 
@@ -74,7 +78,13 @@ Para obter informações sobre como o Fusion avalia e processa vários tipos de 
 
 ### Exemplo: tratamento de erros com filtros
 
+<!-- BECKY CHECK ME: this example scenario (through the end of the Nesting example below) is built and illustrated entirely in the classic experience. It needs a new example scenario built in the new experience (recommend using Workfront modules instead of Dropbox, consistent with other rebuilt articles) - not just new screenshots of this same Dropbox scenario. Flagging only, not editing - see tracking spreadsheet. -->
+
 >[!BEGINSHADEBOX]
+
+>[!NOTE]
+>
+>Este exemplo usa o editor de cenário clássico.
 
 Este exemplo de cenário mostra como esses filtros funcionam para a manipulação de erros.
 
@@ -122,7 +132,13 @@ A diretiva Retomar fornece o caminho da pasta como saída para o módulo com fal
 
 As rotas do manipulador de erros podem ser criadas e configuradas em todos os módulos, exceto roteadores. Portanto, você pode criar uma rota de manipulador de erros para um módulo que já faz parte de uma rota de manipulador de erros existente.
 
+<!-- BECKY CHECK ME: this example scenario is built and illustrated entirely in the classic experience. It needs a new example scenario built in the new experience - see the flag on the "Example: Error handling with filters" example above. -->
+
 >[!BEGINSHADEBOX]
+
+>[!NOTE]
+>
+>Este exemplo usa o editor de cenário clássico.
 
 Exemplo:
 

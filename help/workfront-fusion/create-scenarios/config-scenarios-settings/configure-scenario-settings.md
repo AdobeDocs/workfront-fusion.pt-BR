@@ -12,14 +12,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 850372a59529141a31a1a55035c55a3e506e69fb
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '1389'
-ht-degree: 6%
+source-wordcount: '1757'
+ht-degree: 5%
 ---
 # Definir configurações do cenário
 
 Você pode definir configurações específicas para cenários no painel configurações de cenário.
+
+>[!NOTE]
+>
+>O Workfront Fusion está fazendo a transição do editor de cenários para uma nova experiência. Durante essa transição, as experiências clássicas e novas estão disponíveis e você pode alternar entre elas a qualquer momento. Recomendamos usar a nova experiência. Para obter mais informações, consulte [Experiências novas e clássicas](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) no artigo Editor de cenários.
 
 ## Requisitos de acesso
 
@@ -51,6 +55,23 @@ Para obter mais detalhes sobre as informações contidas nesta tabela, consulte 
 +++
 
 ## Abrir as configurações do cenário
+
+* [Abrir as configurações do cenário na nova experiência (Recomendado)](#open-the-scenario-settings-in-the-new-experience-recommended)
+* [Abrir as configurações de cenário na experiência clássica](#open-the-scenario-settings-in-the-classic-experience)
+
+### Abrir as configurações do cenário na nova experiência (Recomendado)
+
+1. Clique em **Cenários** no painel esquerdo.
+1. Localize o cenário desejado e clique no nome.
+1. Clique em qualquer lugar no cenário para entrar no editor de cenários.
+1. Clique no ícone **Configurações de cenário** ![Ícone de configurações de cenário](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scenario-settings-icon-new.png) na área Controles.
+
+   Talvez seja necessário clicar no ícone de três pontos na área Controles primeiro para visualizá-lo.
+
+   No painel [!UICONTROL Configurações de cenário] que é exibido, você pode definir várias configurações avançadas para o cenário.
+1. Ative ou desative as configurações de Cenário conforme necessário. Consulte [Opções de configurações do cenário](#scenario-settings-options) abaixo.
+
+### Abrir as configurações de cenário na experiência clássica
 
 1. Clique em **Cenários** no painel esquerdo.
 1. Localize o cenário desejado e clique no nome.
@@ -150,13 +171,13 @@ Definir mais ciclos pode ser útil quando você deseja impedir a interrupção d
 
 **Exemplos:** Workfront > [!UICONTROL Observar registro] verifica novos problemas que entram, e Workfront >[!UICONTROL Converter objeto] converte a nova solicitação em um projeto e atribui a ela o modelo apropriado.
 
-![Configurações de cenário](assets/scenario-settings-ex-1-350x157.png)
+![Configurações de cenário](assets/new-scenario-settings-ex-1.png)
 
 Uma configuração de [!UICONTROL mais ciclos] é aplicada somente quando você agenda a execução do cenário. Ao usar o botão [!UICONTROL Executar uma vez], as configurações de ciclo são consideradas.
 
 #### O número máximo de ciclos é definido como 1 (padrão)
 
-![Número máximo de ciclos](assets/max-number-cycles-1-350x201.png)
+![Número máximo de ciclos](assets/new-max-number-cycles.png)
 
 O número máximo de ciclos no módulo Workfront > Registros de observação está definido como `10`.
 Se 100 solicitações forem enviadas ao Workfront e o campo Número máximo de ciclos for definido como 10, 90 arquivos serão deixados sem processamento após a execução de um cenário. Os próximos 10 arquivos são processados na próxima execução de cenário agendada.
@@ -169,9 +190,7 @@ Se 100 arquivos forem adicionados à pasta do Dropbox e a opção Número máxim
 
 Todos os arquivos são processados em 1 execução de cenário.
 
-Você pode ver os ciclos já executados nos detalhes do Cenário:
-
-![Detalhes do cenário](assets/scenario-detail-350x207.png)
+Você pode ver os ciclos já executados na área Histórico da página Detalhes do Cenário.
 
 Para obter mais informações sobre esta página, consulte [Detalhes do cenário](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md).
 
@@ -192,6 +211,34 @@ Para obter mais informações sobre erros, consulte [Tipos de erro](/help/workfr
 Para definir uma sobreposição em nível de cenário para um tipo de notificação, marque ou desmarque a caixa ao lado do tipo de notificação.
 
 Para obter informações sobre configurações de notificação, incluindo substituições no nível do cenário, consulte [Definir opções de notificação](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md).
+
+### Logs de depuração temporários
+
+>[!NOTE]
+>
+>* Os logs de depuração temporários estarão disponíveis somente no novo designer de cenário e somente se o recurso estiver habilitado para sua organização.
+>* A alteração da configuração requer permissão para editar o cenário.
+
+Os detalhes da solicitação e da resposta não são mantidos para cada execução programada ou acionada, pois ocupam muito espaço de armazenamento. Executar uma vez sempre as mantém.
+
+Para coletar detalhes de solicitação e resposta para as execuções regulares do cenário, escolha por quanto tempo coletá-los:
+
+* Para a próxima hora
+* Para o próximo dia 1
+* Para a próxima execução
+* Para as próximas 10 execuções
+
+A alteração se aplica imediatamente. Não é necessário salvar o cenário.
+
+Enquanto os logs de depuração temporários estiverem ativados, a configuração mostrará quando eles permanecerão ativados ou quantas execuções permanecerão. Para interromper a coleta dos detalhes da solicitação e da resposta antes de então, clique em **Desativar**.
+
+Os logs de depuração desligam automaticamente quando o tempo ou o número de execuções é esgotado. Cada execução conta, incluindo execuções programadas que não encontram novos dados.
+
+>[!NOTE]
+>
+>Os logs de depuração temporários estão disponíveis somente na nova experiência do e somente se o recurso estiver ativado para sua organização. Para alterar essa configuração, você deve ter permissão para editar o cenário.
+
+<!-- BECKY CHECK ME: section added from the 10/23/26 release notes. Confirm the exact option labels, where the setting sits in the panel (I placed it before Worker pool), and the access requirement wording. Add a screenshot. -->
 
 ### Pool de trabalhadores
 

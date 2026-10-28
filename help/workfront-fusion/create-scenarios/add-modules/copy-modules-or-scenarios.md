@@ -14,9 +14,9 @@ feature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: f11394266811578664228f44a6202bc6621a75a0
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '966'
 ht-degree: 10%
 ---
 # Copiar módulos ou cenários
@@ -69,18 +69,19 @@ Considere o seguinte ao colar módulos em um cenário diferente:
 
 ### Copiar módulos
 
-Copiar um grupo de módulos é semelhante a copiar um único módulo.
+Você pode copiar um único módulo ou um grupo de módulos.
+
+
+>[!NOTE]
+>
+>Você pode selecionar mais de um módulo, mantendo pressionado o [!UICONTROL shift] e clicando nos módulos que deseja copiar. Copiar um grupo de módulos também copia quaisquer linhas de conexão, filtros ou lógica de roteamento entre eles.
 
 1. Clique na guia **[!UICONTROL Cenários]** no painel esquerdo.
 1. Selecione o cenário em que deseja copiar um módulo.
 1. Clique em qualquer lugar no cenário para entrar no editor de cenários.
-1. Clique com o botão direito do mouse no módulo que deseja copiar.
-
-   >[!NOTE]
-   >
-   >Você pode selecionar mais de um módulo, mantendo pressionado o [!UICONTROL shift] e clicando nos módulos que deseja copiar. Copiar um grupo de módulos também copia quaisquer linhas de conexão, filtros ou lógica de roteamento entre eles.
-
-1. Selecione **[!UICONTROL Copiar módulo]**.
+1. Se você estiver copiando vários módulos, mantenha a tecla Shift pressionada e clique nos módulos que deseja copiar.
+1. Clique com o botão direito do mouse no módulo, ou em um dos módulos, que você deseja copiar.
+1. Selecione **[!UICONTROL Copiar módulo]** ou **[!UICONTROL Copiar módulos]**.
 1. Mova o cursor para a área do cenário em que deseja copiar o cenário.
 1. Clique com o botão direito e selecione **[!UICONTROL Colar]**.
 1. Conecte os módulos colados ao cenário arrastando-os para o local apropriado no cenário.
@@ -101,7 +102,7 @@ A clonagem de um cenário cria uma cópia do cenário, que pode ser editada.
 
       Ou
 
-      Se você estiver trabalhando no cenário no editor de cenários, clique na seta para a esquerda ![Seta para edição de saída](assets/exit-editing-arrow.png) próxima ao canto superior esquerdo da janela.
+      Se você estiver trabalhando no cenário no editor de cenários, clique na seta para a esquerda ![Seta para edição de saída](assets/new-exit-editing-arrow.png) próxima ao canto superior esquerdo da janela.
 
 1. Clique com o botão direito do mouse em **[!UICONTROL Opções]** no canto superior direito da página.
 1. Selecione **[!UICONTROL Clone]**.

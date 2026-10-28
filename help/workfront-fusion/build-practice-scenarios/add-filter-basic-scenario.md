@@ -10,15 +10,15 @@ exl-id: 78ab27fe-e2dd-4b52-b986-77b4b7ea3b5e
 TQID: https://experienceleague.adobe.com/KEVVlHp7OzsV6SJHNdJaUgI6GGiBX9abWqD6U6fiiB0
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Integrations
+source-git-commit: 4cd8b43e9ce9a16aca16397ce140cdd2467bf7d4
 workflow-type: tm+mt
-source-wordcount: 617
-ht-degree: 17%
-
+source-wordcount: '1072'
+ht-degree: 9%
 ---
-
 # Adicionar filtro a um cenário básico
 
 Os filtros permitem garantir que o cenário avance somente se determinadas condições forem atendidas.
@@ -29,7 +29,8 @@ Este exemplo modifica o cenário criado em [Criar um cenário básico](/help/wor
 
 >[!NOTE]
 >
->Os módulos de acionamento do Workfront incluem filtros que permitem que um cenário seja iniciado somente se determinadas condições forem atendidas. No entanto, como os filtros entre módulos são usados para todos os casos de uso que não são de acionador ou que não são do Workfront, é importante saber como usar filtros entre módulos. Esse exemplo usa um filtro entre módulos para uma funcionalidade que pode ser atendida com um filtro no módulo.
+>* O Workfront Fusion está fazendo a transição do editor de cenários para uma nova experiência. Durante essa transição, as experiências clássicas e novas estão disponíveis e você pode alternar entre elas a qualquer momento. Recomendamos usar a nova experiência. Para obter mais informações, consulte [Experiências novas e clássicas](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) no artigo Editor de cenários.
+>* Os módulos de acionamento do Workfront incluem filtros que permitem que um cenário seja iniciado somente se determinadas condições forem atendidas. No entanto, como os filtros entre módulos são usados para todos os casos de uso que não são de acionador ou que não são do Workfront, é importante saber como usar filtros entre módulos. Esse exemplo usa um filtro entre módulos para uma funcionalidade que pode ser atendida com um filtro no módulo.
 
 ## Requisitos de acesso
 
@@ -64,7 +65,11 @@ Para obter mais detalhes sobre as informações contidas nesta tabela, consulte 
 
 Você deve criar o cenário descrito em [Criar um cenário básico](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) antes de seguir este procedimento.
 
-## Adicionar um filtro
+## Adicionar um filtro na nova experiência do (recomendado)
+
+* [Preparar para adicionar o filtro](#prepare-to-add-the-filter)
+* [Adicionar e configurar o filtro](#add-and-configure-the-filter)
+* [Testar e ativar](#test-and-activate)
 
 ### Preparar para adicionar o filtro
 
@@ -85,16 +90,78 @@ Agora você deve ter `ID`, `Name` e `Project` selecionados.
 ### Adicionar e configurar o filtro
 
 1. Retorne ao cenário no editor de cenários.
+1. Clique com o botão esquerdo do mouse no caminho entre o primeiro e o segundo módulo.
+
+   A janela **[!UICONTROL Configurar um filtro]** é aberta.
+
+1. No campo Rótulo, digite um rótulo para esse filtro, como &quot;Filtro para fila de solicitações&quot;.
+1. Na área **Condição**, no campo superior, mapeie o `projectID` do primeiro módulo.
+
+   ![Mapear ID do projeto](assets/new-map-in-filter.png)
+
+1. Deixe o operador **Condição** como Igual a.
+1. No campo inferior da área **Condição**, cole a ID do projeto que você anotou da URL do projeto em [Preparar para adicionar o filtro](#prepare-to-add-the-filter).
+1. Clique em **OK** para salvar as configurações de filtro.
+
+### Testar e ativar
+
+1. Vá para o ambiente do Workfront ao qual o Fusion está se conectando e adicione um problema ao projeto especificado no filtro. Adicione outro problema a um projeto diferente.
+1. Clique no ícone **[!UICONTROL Executar uma vez]**.
+
+   Executar uma vez é somente para ícones na nova experiência do. Passe o mouse sobre o ícone para ver a dica de ferramenta **[!UICONTROL Executar uma vez]**.
+
+   ![botão executar cenário](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/run-once-new.png)
+
+1. Examine a saída para garantir que o cenário seja executado conforme esperado.
+
+   Ambos os problemas devem aparecer na saída do primeiro módulo, mas somente o problema no projeto especificado deve aparecer como entrada no segundo módulo.
+1. Quando estiver satisfeito com o funcionamento do cenário, clique no botão **Agendamento** para **Ligado**.
+
+   Isso ativa o cenário.
+
+   ![Alternância de agendamento](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scheduling-new.png)
+
+1. Clique no ícone **Salvar** ![Salvar ícone](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/save-icon-new.png) na área Controles para salvar seu progresso no cenário.
+
+   >[!IMPORTANT]
+   >
+   >Salve com frequência à medida que você aprimora e testa um cenário. Talvez seja necessário criar um novo problema em sua conta da Workfront para acionar o cenário.
+
+## Adicionar um filtro na experiência clássica
+
+* [Preparar para adicionar o filtro (Clássico)](#prepare-to-add-the-filter-classic)
+* [Adicionar e configurar o filtro (Clássico)](#add-and-configure-the-filter-classic)
+* [Testar e ativar (Clássico)](#test-and-activate-classic)
+
+### Preparar para adicionar o filtro (Clássico)
+
+1. Abra o cenário.
+1. Clique no primeiro módulo para abri-lo.
+1. Na área **Saídas**, selecione `Project`.
+Agora você deve ter `ID`, `Name` e `Project` selecionados.
+1. Clique em OK para salvar as configurações do módulo.
+1. Abra o Workfront.
+1. No Workfront, localize o projeto que representa a fila de solicitações com a qual o cenário do Fusion funcionará.
+
+   Esse projeto deve estar na mesma conta do Workfront para a qual a conexão do Fusion está configurada.
+
+1. Anote a ID do projeto no URL.
+
+   Exemplo: https://\&lt;MyDomain\>.my.workfront.com/project/\&lt;ProjectID\>/tasks
+
+### Adicionar e configurar o filtro (Clássico)
+
+1. Retorne ao cenário no editor de cenários.
 1. Clique no ícone de chave inglesa ![Ícone de chave inglesa](assets/wrench-icon.png) entre o primeiro e o segundo módulo e selecione **Configurar um filtro**.
 1. No campo Rótulo, digite um rótulo para esse filtro, como &quot;Filtro para fila de solicitações&quot;.
 1. Na área **Condição**, no campo superior, mapeie o `projectID` do primeiro módulo.
 
    ![Mapear ID do projeto](assets/map-proj-id.png)
 1. Deixe o operador **Condição** como Igual a.
-1. No campo inferior da área **Condição**, cole a ID do projeto que você anotou da URL do projeto em [Preparar para adicionar o filtro](#prepare-to-add-the-filter).
+1. No campo inferior da área **Condição**, cole a ID do projeto que você anotou da URL do projeto em [Preparar para adicionar o filtro (Clássico)](#prepare-to-add-the-filter-classic).
 1. Clique em **OK** para salvar as configurações de filtro.
 
-### Testar e ativar
+### Testar e ativar (Clássico)
 
 1. Vá para o ambiente do Workfront ao qual o Fusion está se conectando e adicione um problema ao projeto especificado no filtro. Adicione outro problema a um projeto diferente.
 1. Clique em **[!UICONTROL Executar uma vez]** no canto inferior esquerdo do editor de cenários.

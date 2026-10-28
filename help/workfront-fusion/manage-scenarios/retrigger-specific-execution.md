@@ -9,7 +9,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 16%
@@ -82,7 +82,7 @@ Você pode reacionar a execução de um cenário a partir do Diagrama do cenári
 1. Localize a execução que deseja acionar novamente na lista Execuções no lado direito da página.
 1. Clique em **Acionar novamente** para esse cenário.
 
-![Acionar novamente do diagrama](assets/retrigger-from-diagram.png)
+![Acionar novamente do diagrama](assets/new-retrigger-from-diagram.png)
 
 ### Acionar novamente uma execução do Histórico de Cenários
 
@@ -95,7 +95,7 @@ Você pode reacionar a execução de um cenário a partir do Diagrama do cenári
 1. Localize a execução que deseja acionar novamente. Você pode usar a pesquisa de texto completo para localizá-la, se necessário.
 1. Clique em **Acionar novamente** para esse cenário.
 
-![Acionar novamente do histórico](assets/retrigger-from-history.png)
+![Acionar novamente do histórico](assets/new-retrigger-from-history.png)
 
 ### Acionar novamente um cenário na página de execução de cenário
 
@@ -108,7 +108,7 @@ Você pode reacionar a execução de um cenário a partir do Diagrama do cenári
 1. Na página de execução, clique em **Acionar novamente**.
 
 
-![Acionar novamente da execução](assets/retrigger-from-execution.png)
+![Acionar novamente da execução](assets/new-retrigger-from-execution.png)
 
 
 

@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 9%
+source-wordcount: '1677'
+ht-degree: 6%
 ---
 # Adicionar tratamento de erros
 
@@ -39,6 +39,10 @@ Para obter mais informações sobre diretivas de tratamento de erros, consulte [
 >
 >O Workfront Fusion é compatível com o tratamento de erros em nível de rota, permitindo definir a lógica de tratamento de erros uma vez por rota, em vez de anexar manipuladores de erros a cada módulo individual.
 >Como o tratamento de erros no nível da rota é uma maneira mais escalável, consistente e arquitetonicamente limpa de gerenciar erros, especialmente em automações avançadas de várias ramificações, recomendamos usar o tratamento de erros no nível da rota como prática recomendada.
+
+>[!NOTE]
+>
+>O Workfront Fusion está fazendo a transição do editor de cenários para uma nova experiência. Durante essa transição, as experiências clássicas e novas estão disponíveis e você pode alternar entre elas a qualquer momento. Recomendamos usar a nova experiência. Para obter mais informações, consulte [Experiências novas e clássicas](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) no artigo Editor de cenários.
 
 ## Requisitos de acesso
 
@@ -88,9 +92,9 @@ Os erros são tratados pela seguinte hierarquia:
 
 ### Exemplo
 
-Considere o exemplo de cenário a seguir:
+Considere o exemplo de cenário a seguir, mostrado aqui na exibição compacta para facilitar a leitura:
 
-![Exemplo de cenário mostrando rotas e manipuladores de erro](assets/error-handling-route-example-with-numbers.png)
+![Exemplo de cenário mostrando rotas e manipuladores de erro](assets/new-error-handler-examples-with-numbers.png)
 
 1. Este módulo tem um manipulador de erros. Qualquer erro neste módulo é tratado pela diretiva Commit.
 1. Este módulo não tem um manipulador de erros. Se este módulo encontrar um erro, o erro será tratado pelo manipulador no roteador que criou a rota do módulo. Qualquer erro nesse módulo é tratado pela diretiva de reversão.
@@ -113,7 +117,41 @@ Você pode adicionar um manipulador de erros a um módulo ou roteador.
 
 ### Adicionar um manipulador de erros a um módulo
 
-Para adicionar um manipulador de erros a um módulo:
+* [Adicionar um manipulador de erros a um módulo na nova experiência do (recomendado)](#add-an-error-handler-to-a-module-in-the-new-experience-recommended)
+* [Adicionar um manipulador de erros a um módulo na experiência clássica](#add-an-error-handler-to-a-module-in-the-classic-experience)
+
+#### Adicionar um manipulador de erros a um módulo na nova experiência do (recomendado)
+
+1. Clique na guia **[!UICONTROL Cenários]** no painel esquerdo.
+1. Selecione o cenário em que deseja adicionar uma rota de tratamento de erros.
+1. Clique em qualquer lugar no cenário para entrar no editor de cenários.
+1. Clique com o botão direito do mouse no módulo após o qual deseja adicionar uma rota de manipulador de erros e selecione **[!UICONTROL Adicionar manipulador de erros]**:
+
+   ![Adicionar manipulador de erros no menu](assets/new-add-error-handler-in-menu.png)
+
+   Uma rota de manipulador de erros foi adicionada ao módulo. Se o módulo for o último em uma rota, o manipulador de erros seguirá diretamente o módulo. Se o módulo tiver mais módulos depois dele, uma rota de manipulador de erros separada será adicionada.
+
+   O módulo de manipulação de erros mostra uma lista de Diretivas, bem como os aplicativos que estão sendo usados em seu cenário.
+
+   ![Diretivas de manipulação de erros](assets/new-error-handling-directives.png)
+
+1. Selecione uma das diretivas.
+
+   Ou
+
+   Adicione um ou mais módulos à rota do manipulador de erros.
+
+   Se você adicionar mais módulos à rota, a diretiva Ignore será aplicada por padrão. Se houver um erro, os módulos subsequentes nessa rota serão processados.
+
+   Para obter mais informações sobre diretivas, consulte [Diretivas de tratamento de erros](#error-handling-directives) neste artigo.
+
+1. (Opcional) Adicione um filtro à rota de tratamento de erros. Para obter instruções, consulte [Adicionar filtragem e aninhamento a rotas de tratamento de erros](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md).
+
+>[!NOTE]
+>
+>Uma rota de manipulador de erros está marcada por uma linha pontilhada com um rótulo **[!UICONTROL Manipulador de erros]** vermelho.
+
+#### Adicionar um manipulador de erros a um módulo na experiência clássica
 
 1. Clique na guia **[!UICONTROL Cenários]** no painel esquerdo.
 1. Selecione o cenário em que deseja adicionar uma rota de tratamento de erros.
@@ -145,6 +183,40 @@ Para adicionar um manipulador de erros a um módulo:
 >Observe que uma rota de manipulador de erros é composta de círculos transparentes, enquanto uma rota regular é composta de círculos sólidos.
 
 ### Adicionar um manipulador de erros a um roteador
+
+* [Adicionar um manipulador de erros a um roteador na nova experiência do (recomendado)](#add-an-error-handler-to-a-router-in-the-new-experience-recommended)
+* [Adicionar um manipulador de erros a um roteador na experiência clássica](#add-an-error-handler-to-a-router-in-the-classic-experience)
+
+#### Adicionar um manipulador de erros a um roteador na nova experiência do (recomendado)
+
+1. Clique na guia **[!UICONTROL Cenários]** no painel esquerdo.
+1. Selecione o cenário em que deseja adicionar uma rota de tratamento de erros.
+1. Clique em qualquer lugar no cenário para entrar no editor de cenários.
+1. Clique com o botão direito do mouse no roteador onde deseja adicionar uma rota de manipulador de erros e selecione **[!UICONTROL Adicionar manipulador de erros]**.
+
+   Uma rota de manipulador de erro é adicionada ao roteador.
+
+   O módulo de manipulação de erros mostra uma lista de Diretivas, bem como os aplicativos que estão sendo usados em seu cenário.
+
+   ![Diretivas de manipulação de erros](assets/new-error-handling-directives.png)
+
+1. Selecione uma das diretivas.
+
+   Ou
+
+   Adicione um ou mais módulos à rota do manipulador de erros.
+
+   Se você adicionar mais módulos à rota, a diretiva Ignore será aplicada por padrão. Se houver um erro, os módulos subsequentes nessa rota serão processados.
+
+   Para obter mais informações sobre diretivas, consulte [Diretivas de tratamento de erros](#error-handling-directives) neste artigo.
+
+1. (Opcional) Adicione um filtro à rota de tratamento de erros. Para obter instruções, consulte [Adicionar filtragem e aninhamento a rotas de tratamento de erros](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md).
+
+>[!NOTE]
+>
+>Uma rota de manipulador de erros está marcada por uma linha pontilhada com um rótulo **[!UICONTROL Manipulador de erros]** vermelho.
+
+#### Adicionar um manipulador de erros a um roteador na experiência clássica
 
 1. Clique na guia **[!UICONTROL Cenários]** no painel esquerdo.
 1. Selecione o cenário em que deseja adicionar uma rota de tratamento de erros.

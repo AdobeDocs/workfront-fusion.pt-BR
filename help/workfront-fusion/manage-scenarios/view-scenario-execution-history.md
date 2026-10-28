@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 12%
+source-wordcount: '987'
+ht-degree: 11%
 ---
 # Exibir histórico de execuções de um cenário
 
@@ -26,7 +26,13 @@ Um evento de cenário é uma modificação no cenário, como edição, ativaçã
 
 >[!NOTE]
 >
->O histórico de um cenário exibe todas as execuções de um cenário nos últimos 30 dias.
+>* O histórico de um cenário exibe todas as execuções de um cenário nos últimos 30 dias.
+>* Na nova experiência do, o editor de cenários também tem um painel Histórico de execução. Ele mostra o status, a duração, as operações e o tamanho dos dados de cada execução. Aqui, você pode:
+>
+>   * Filtrar por status
+>   * Pesquisar eventos
+>   * Use **Anterior** e **Próximo** para mover entre execuções sem retornar à lista de execução
+>   * Selecione um evento para centralizar e realçar o módulo correspondente na tela. Quando os detalhes da operação estiverem disponíveis, o painel de solicitação e resposta será aberto para esse evento.
 
 ## Requisitos de acesso
 
@@ -72,7 +78,7 @@ A guia [!UICONTROL Histórico] mostra mais detalhes do que o disponível na pág
 
    Ou
 
-   Se você estiver trabalhando no cenário no Editor de cenários, clique na seta para a esquerda ![Sair da seta de edição](assets/exit-editing-arrow.png) próximo ao canto superior esquerdo da janela.
+   Se você estiver trabalhando no cenário no Editor de cenários, clique na seta para a esquerda ![Sair da seta de edição](assets/new-exit-editing-arrow.png) próximo ao canto superior esquerdo da janela.
 
 1. Clique em **Histórico** próximo ao nome do cenário.
    ![guia Histórico](assets/history-tab.png)
@@ -103,7 +109,7 @@ A guia [!UICONTROL Histórico] mostra mais detalhes do que o disponível na pág
 
    Ou
 
-   Se você estiver trabalhando no cenário no Editor de cenários, clique na seta para a esquerda ![Sair da seta de edição](assets/exit-editing-arrow.png) próximo ao canto superior esquerdo da janela.
+   Se você estiver trabalhando no cenário no Editor de cenários, clique na seta para a esquerda ![Sair da seta de edição](assets/new-exit-editing-arrow.png) próximo ao canto superior esquerdo da janela.
 
 1. Clique na guia **[!UICONTROL Histórico]** no painel direito.
 1. (Opcional) Para obter informações detalhadas sobre uma execução de cenário selecionada, clique na execução no painel direito.

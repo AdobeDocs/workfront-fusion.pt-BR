@@ -10,9 +10,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '554'
 ht-degree: 16%
 ---
 # Exibir e gerenciar relacionamentos de cenário encadeados
@@ -64,21 +64,17 @@ Para obter mais detalhes sobre as informações contidas nesta tabela, consulte 
 
 Você pode exibir um mapa do cenário atual e seus cenários pai ou filho. O mapa exibe um diagrama do fluxo de dados nos cenários encadeados.
 
-![Relacionamentos de cenário encadeados](assets/chained-scenario-relationships-2.png)
-
-<!--get a better picture-->
-
 Para exibir o mapa de relacionamento de um cenário encadeado:
 
 1. Clique na guia **[!UICONTROL Cenário]** no painel esquerdo e clique no cenário.
 
    Ou
 
-   Se você estiver trabalhando no cenário no Editor de cenários, clique na seta para a esquerda ![Sair da seta de edição](assets/exit-editing-arrow.png) próximo ao canto superior esquerdo da janela.
+   Se você estiver trabalhando no cenário no Editor de cenários, clique na seta para a esquerda ![Sair da seta de edição](/help/workfront-fusion/manage-scenarios/assets/new-exit-editing-arrow.png) próximo ao canto superior esquerdo da janela.
 
 1. Clique na guia **Relações**.
 
-   ![Guia Relações](assets/relations-tab.png)
+   ![Guia Relações](assets/new-relationships-tab.png)
 
 1. Para obter detalhes gerais sobre cada cenário encadeado, verifique as tags.
 

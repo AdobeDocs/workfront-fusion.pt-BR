@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 11%
+source-wordcount: '1869'
+ht-degree: 6%
 ---
 # Adicionar um módulo Roteador e configurar rotas
 
@@ -22,6 +22,9 @@ O módulo de Roteador permite ramificar seu cenário em várias rotas e processa
 
 As rotas são processadas sequencialmente, não em paralelo. Um pacote não é enviado para a próxima rota até que tenha sido completamente processado pela rota anterior.
 
+>[!NOTE]
+>
+>O Workfront Fusion está fazendo a transição do editor de cenários para uma nova experiência. Durante essa transição, as experiências clássicas e novas estão disponíveis e você pode alternar entre elas a qualquer momento. Recomendamos usar a nova experiência. Para obter mais informações, consulte [Experiências novas e clássicas](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) no artigo Editor de cenários.
 
 ## Requisitos de acesso
 
@@ -55,6 +58,45 @@ Para obter mais detalhes sobre as informações contidas nesta tabela, consulte 
 ## Adicionar um módulo de Roteador a um cenário
 
 Você deve adicionar um módulo de roteador antes de configurar rotas.
+
+* [Adicionar um módulo de roteador a um cenário na nova experiência (Recomendado)](#add-a-router-module-to-a-scenario-in-the-new-experience-recommended)
+* [Adicione um módulo de Roteador a um cenário na experiência clássica](#add-a-router-module-to-a-scenario-in-the-classic-experience)
+
+### Adicionar um módulo de roteador a um cenário na nova experiência (Recomendado)
+
+1. Clique na guia **[!UICONTROL Cenários]** no painel esquerdo.
+1. Selecione o cenário em que deseja adicionar um roteador.
+1. Clique em qualquer lugar no cenário para entrar no editor de cenários.
+1. Passe o mouse sobre a borda direita do módulo após o qual deseja adicionar o roteador, em seguida, clique em **[!UICONTROL Adicionar outro módulo]** quando ele aparecer. Na lista que abre, selecione a categoria **[!UICONTROL Integrada]** e selecione **[!UICONTROL Controle de Fluxo]** > **[!UICONTROL Roteador]**.
+
+   Ou
+
+   Para inserir o módulo Roteador entre dois módulos, clique com o botão direito do mouse no caminho que conecta os dois módulos e selecione **[!UICONTROL Adicionar um roteador]**.
+
+   ![Adicionar um roteador entre dois módulos](assets/add-a-module-between-modules.png)
+
+1. Adicione a primeira rota ao roteador, passando o cursor do mouse sobre a borda direita do roteador e adicionando um módulo, semelhante à adição de qualquer módulo.
+1. Para adicionar outra rota, clique no módulo do roteador. Uma rota é exibida. Adicione módulos a essa rota conforme desejado.
+
+   Você pode adicionar quantas rotas desejar.
+
+1. Para verificar a ordem das rotas, verifique o rótulo de cada rota. A Rota 1 é executada primeiro, depois a Rota 2 e assim por diante.
+
+   Ou
+
+   Clique no ícone **Alinhamento automático** ![Ícone de alinhamento automático](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/auto-align-icon-new.png) na área Controles.
+
+   As rotas são organizadas na ordem em que são executadas. A rota superior é executada primeiro.
+
+1. (Opcional) Para alterar a ordem da rota, clique com o botão direito do mouse no módulo Roteador e selecione **Order route**. Arraste e solte as rotas na ordem em que deseja que elas sejam executadas. As rotas são marcadas pelo primeiro módulo que segue o roteador (o primeiro módulo da rota).
+1. (Opcional) Para desativar uma rota, clique com o botão direito do mouse no caminho que leva do roteador a essa rota e selecione **Desativar rota**.
+
+   Rotas desabilitadas exibem pontos cinzas levando do roteador para o primeiro módulo na rota e mostram o ícone de rota desabilitado ![Ícone de rota desabilitado](assets/disabled-route-icon.png) no rótulo.
+
+1. (Opcional e condicional) Para habilitar uma rota desabilitada, clique no ícone de rota desabilitada ![Ícone de rota desabilitada](assets/disabled-route-icon.png) no rótulo da rota.
+1. Continue em [Adicionar um filtro a uma rota na nova experiência](#add-a-filter-to-a-route-in-the-new-experience-recommended).
+
+### Adicione um módulo de Roteador a um cenário na experiência clássica
 
 1. Clique na guia **[!UICONTROL Cenários]** no painel esquerdo.
 1. Selecione o cenário em que deseja adicionar um roteador.
@@ -90,7 +132,7 @@ Você deve adicionar um módulo de roteador antes de configurar rotas.
    Rotas desabilitadas exibem pontos cinzas levando do roteador para o primeiro módulo na rota e mostram o ícone de rota desabilitado ![Ícone de rota desabilitado](assets/disabled-route-icon.png) no rótulo.
 
 1. (Opcional e condicional) Para habilitar uma rota desabilitada, clique no ícone de rota desabilitada ![Ícone de rota desabilitada](assets/disabled-route-icon.png) no rótulo da rota.
-1. Continue em [Adicionar um filtro a uma rota](#add-a-filter-to-a-route).
+1. Continue em [Adicionar um filtro a uma rota na experiência clássica](#add-a-filter-to-a-route-in-the-classic-experience).
 
 ## Adicionar um filtro a uma rota
 
@@ -99,6 +141,32 @@ Você pode colocar um filtro em uma rota após o módulo de roteador para filtra
 Se os dados passarem pelo filtro de mais de uma rota, os dados serão tratados por ambas as rotas. A rota superior manipula os dados primeiro.
 
 Roteadores com filtros exibem o ícone de filtro ![Ícone de filtro](assets/fusion-scenario-filter-icon.png) no rótulo da rota.
+
+* [Adicionar um filtro a uma rota na nova experiência (Recomendado)](#add-a-filter-to-a-route-in-the-new-experience-recommended)
+* [Adicionar um filtro a uma rota na experiência clássica](#add-a-filter-to-a-route-in-the-classic-experience)
+
+### Adicionar um filtro a uma rota na nova experiência (Recomendado)
+
+1. Clique na guia **[!UICONTROL Cenários]** no painel esquerdo.
+1. Selecione o cenário ao qual deseja adicionar um filtro.
+1. Clique em qualquer lugar no cenário para entrar no editor de cenários.
+1. Clique com o botão esquerdo do mouse no caminho em que deseja definir um filtro. Esse é o caminho entre o módulo do roteador e o primeiro módulo da rota.
+
+   A janela **[!UICONTROL Configurar um filtro]** é aberta diretamente.
+
+1. No campo de rótulo do painel que é exibido, adicione um rótulo. Esse rótulo é exibido no cenário.
+1. Configurar condições de filtro.
+
+   Para obter mais informações, consulte [Adicionar filtro a um cenário](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).
+
+   ![Configurar um filtro em uma rota](assets/new-filter-specific-user.png)
+
+1. Clique em **[!UICONTROL OK]** para salvar a configuração do filtro.
+1. (Condicional) Se o nome do filtro for muito longo para caber no rótulo, passe o mouse sobre o rótulo para exibir o nome inteiro.
+
+1. Continue para [Configurar uma rota de fallback na nova experiência](#configure-a-fallback-route-in-the-new-experience-recommended).
+
+### Adicionar um filtro a uma rota na experiência clássica
 
 1. Clique na guia **[!UICONTROL Cenários]** no painel esquerdo.
 1. Selecione o cenário ao qual deseja adicionar um filtro.
@@ -113,7 +181,7 @@ Roteadores com filtros exibem o ícone de filtro ![Ícone de filtro](assets/fusi
 1. Clique em **[!UICONTROL OK]** para salvar a configuração do filtro.
 1. (Condicional) Se o nome do filtro for muito longo para caber no rótulo, passe o mouse sobre o rótulo para exibir o nome inteiro.
 
-1. Continue em [Configurar uma rota de fallback](#configure-a-fallback-route).
+1. Continue em [Configurar uma rota de fallback na experiência clássica](#configure-a-fallback-route-in-the-classic-experience).
 
 ## Configurar uma rota de fallback
 
@@ -122,6 +190,29 @@ A rota de fallback é a rota que é executada em qualquer conjunto que não pass
 As rotas de fallback exibem &quot;Fallback&quot; no rótulo.
 
 Você pode ativar uma rota de fallback no painel de filtro.
+
+* [Configurar uma rota de fallback na nova experiência (recomendado)](#configure-a-fallback-route-in-the-new-experience-recommended)
+* [Configurar uma rota de fallback na experiência clássica](#configure-a-fallback-route-in-the-classic-experience)
+
+### Configurar uma rota de fallback na nova experiência (recomendado)
+
+1. Clique na guia **[!UICONTROL Cenários]** no painel esquerdo.
+1. Selecione o cenário em que deseja adicionar uma rota de fallback.
+1. Clique em qualquer lugar no cenário para entrar no editor de cenários.
+1. Clique com o botão esquerdo do mouse no caminho em que deseja definir um filtro. Esse é o caminho entre o módulo do roteador e o primeiro módulo da rota.
+
+   A janela **[!UICONTROL Configurar um filtro]** é aberta diretamente.
+
+1. No campo de rótulo do painel que é exibido, adicione um rótulo. Esse rótulo é exibido no cenário.
+1. Ative a caixa de seleção de rota de fallback.
+
+   ![Rota de fallback](assets/fallback-route-new.png)
+
+1. Clique em **[!UICONTROL OK]** para salvar a configuração do filtro.
+
+O rótulo da rota de fallback exibe **Fallback** em verde.
+
+### Configurar uma rota de fallback na experiência clássica
 
 1. Clique na guia **[!UICONTROL Cenários]** no painel esquerdo.
 1. Selecione o cenário em que deseja adicionar uma rota de fallback.
@@ -139,6 +230,25 @@ A rota de Fallback está marcada com uma seta diferente no módulo do Roteador:
 
 ![Seta de entrada no roteador](assets/arrow-sign-in-router-module-350x361.png)
 
+## Dobrar um roteador
+
+>[!NOTE]
+>
+>Esse recurso só está disponível na nova experiência do editor de cenários.
+
+Na nova experiência, é possível dobrar um roteador para ocultar temporariamente suas rotas. Isso é útil em grandes cenários.
+
+1. Abra o cenário no editor de cenários, no modo de edição.
+1. Clique com o botão direito do mouse no roteador que você deseja dobrar e selecione **Dobrar rotas**
+
+O roteador dobrado mostra quantas rotas e módulos estão ocultos, incluindo a severidade de quaisquer avisos ou erros ocultos.
+
+![Roteador dobrado](assets/fold-router.png)
+
+Dobrar um roteador não remove nem desativa nada. A pesquisa, a validação, o Live Trail e o histórico de execução expandem automaticamente um roteador dobrado quando precisam mostrar um módulo que está dentro dele.
+
+O estado dobrado é salvo com o cenário e funciona com desfazer e refazer. Quando você revisa uma execução de cenário, o cenário completo sempre é exibido.
+
 ## Exemplo: caso de uso `if/else`
 
 >[!BEGINSHADEBOX]
@@ -147,10 +257,10 @@ Um caso de uso típico da rota de fallback é continuar o fluxo com uma rota se 
 
 Neste exemplo, a primeira rota é configurada com um filtro. Isso representa o componente `if`.
 
-![Configurar um filtro no roteiro](assets/set-up-a-filter-2-350x242.png)
+![Configurar um filtro no roteiro](assets/new-filter-specific-user-unmarked.png)
 
 A segunda rota é configurada como uma rota de fallback. Isso representa o componente `else`.
 
-![Habilitar opção de fallback](assets/enable-fallback-route-option-350x238.png)
+![Habilitar opção de fallback](assets/new-not-specific-user-unmarked.png)
 
 >[!ENDSHADEBOX]

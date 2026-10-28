@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cd90795caaf835de238b52e30fddbcc6da9e9443
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 23%
+source-wordcount: '695'
+ht-degree: 15%
 ---
 # Exibir execução de um cenário específico
 
@@ -74,7 +74,7 @@ Você pode exibir uma execução no histórico de cenários do cenário.
 
 1. Para visualizar a saída de um módulo, clique na bolha de detalhes da saída próximo ao módulo. O número na bolha representa o número de pacotes gerados pelo módulo.
 
-   ![Bolha de saída próxima a um módulo](assets/output-bubble.png)
+   ![Bolha de saída próxima a um módulo](assets/new-output-bubble.png)
 
 1. Para exibir os pacotes que passaram por um filtro, clique no filtro. O número próximo ao filtro representa o número de pacotes que passaram pelo filtro.
 1. Para procurar um módulo ou evento específico no painel de execução, insira o termo de pesquisa na caixa **Pesquisar eventos de execução**. Os resultados são exibidos conforme você digita.
@@ -93,3 +93,21 @@ Você pode exibir uma execução no histórico de cenários do cenário.
 >`<module-id>` refere-se ao número ao lado do rótulo do módulo ao visualizar o cenário.
 >
 >Isso pode ser útil ao depurar cenários ou copiar a configuração do módulo.
+
+## Revisar uma execução no novo editor de cenários
+
+Na nova experiência do, ao abrir uma execução do histórico de execução, os controles próximos ao lado direito da tela ajudam a encontrar o que deu errado sem editar o cenário:
+
+![Revisar uma execução](assets/review-an-execution.png)
+
+| Controle | Detalhes |
+| ---------- | ---------- |
+| Ir para o próximo erro ou aviso | Mostra quantos módulos tiveram um problema no ciclo atual. Cada clique é movido para o próximo, primeiro os erros e, em seguida, os avisos, da esquerda para a direita. Ele centraliza o módulo e abre a primeira operação com falha. O botão fica oculto quando a execução não tem erros ou avisos. |
+| Módulos de pesquisa | Encontre um módulo pelo nome e centralize-o na tela. Pressione Ctrl+K (Windows) ou Command+K (Mac). |
+| Notas | Mostrar ou ocultar as anotações do cenário. Esse controle é exibido somente quando o cenário tem notas e elas são somente leitura aqui. |
+| Explicar fluxo | Animar a ordem em que os módulos do cenário são executados. Clique novamente ou pressione Esc para parar. |
+| Mais zoom, Menos zoom, Foco e minimapa | Funciona da mesma forma que no modo de edição. |
+
+A opção **Exibição compacta** também está disponível no canto superior direito. Quando você revisa uma execução, ela altera o layout somente enquanto você observa essa execução. Isso não altera a configuração de exibição Compacta para edição e nada é salvo no cenário.
+
+Selecione um evento na execução para centralizar e realçar o módulo correspondente. Quando os detalhes da operação estiverem disponíveis, o painel de solicitação e resposta será aberto. Se o painel não tiver dados, os detalhes da solicitação e da resposta não serão mantidos para essa execução. Para coletá-los para execuções futuras, consulte [Logs de depuração temporários](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#temporary-debug-logs).

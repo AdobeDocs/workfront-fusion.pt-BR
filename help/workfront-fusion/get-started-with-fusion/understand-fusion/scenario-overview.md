@@ -11,16 +11,20 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 100%
+source-wordcount: '756'
+ht-degree: 91%
 ---
 # Visão geral do cenário
 
 A função do Adobe Workfront Fusion é automatizar seus processos para que os usuários não precisem gastar muito tempo em tarefas de rotina. Ele trabalha vinculando ações em vários aplicativos e serviços para criar um cenário que transfere e transforma seus dados automaticamente. O cenário que você cria monitora dados em um aplicativo ou serviço e processa esses dados para fornecer o resultado desejado.
 
 Um cenário é composto de uma série de módulos que indicam como os dados devem ser transformados em um aplicativo ou transferidos entre aplicativos e serviços da Web.
+
+>[!NOTE]
+>
+>O Workfront Fusion está fazendo a transição do editor de cenários para uma nova experiência. Durante essa transição, as experiências clássicas e novas estão disponíveis e você pode alternar entre elas a qualquer momento. Recomendamos usar a nova experiência. Para obter mais informações, consulte [Experiências novas e clássicas](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) no artigo Editor de cenários.
 
 ## Visão geral de elementos do cenário
 
@@ -37,37 +41,37 @@ Um cenário é criado com elementos diferentes. Entender a terminologia desses e
 
 Um **cenário** é uma série de etapas automatizadas criadas pelo usuário para mover e manipular dados. O termo “cenário” se refere a todo o grupo de etapas conectadas.
 
-![Cenário](assets/entire-scenario-scenario.png)
+![Cenário](assets/new-entire-scenario-scenario.png)
 
 ### Acionador
 
 Um cenário começa com um **acionador**. O acionador monitora dados novos e atualizados e inicia o cenário quando determinadas condições configuradas no módulo são aplicadas. Os acionadores podem ser configurados para iniciar um cenário em uma programação (sondagem) ou sempre que ocorrerem alterações de dados (instantâneo).
 
-![Acionador](assets/scenario-trigger.png)
+![Acionador](assets/new-scenario-trigger.png)
 
 ### Módulo
 
 O acionador é seguido por um número de **módulos**. Um módulo representa uma única etapa em um cenário que executa uma ação específica. Os módulos são configurados e encadeados para criar cenários.
 
-![Módulo](assets/scenario-module.png)
+![Módulo](assets/new-scenario-module.png)
 
 ### Rota
 
 Um cenário pode ser dividido em **rotas**. Uma rota é uma seção do cenário que pode ou não ser usada para determinado pacote de dados. As rotas são configuradas usando um módulo de roteador e filtros.
 
-![Rota](assets/scenario-route.png)
+![Rota](assets/new-scenario-route.png)
 
 ### Segmento de cenário
 
 Um segmento de cenário é uma seção de um cenário que consiste em uma série de módulos contíguos que se conectam ao mesmo aplicativo. Os segmentos de cenário geralmente representam um fluxo de trabalho curto no aplicativo.
 
-![Segmento do cenário](assets/scenario-segment.png)
+![Segmento do cenário](assets/new-scenario-segment.png)
 
 ### Conector
 
 Um conector é o conjunto de módulos de determinado aplicativo. O Workfront Fusion oferece conectores para muitos aplicativos de trabalho comuns, como Workfront, Salesforce e Jira, bem como conectores genéricos que podem ser usados para qualquer serviço da Web.
 
-![Conectores](assets/scenario-connectors.png)
+![Conectores](assets/new-scenario-connectors.png)
 
 ## Exemplos
 
@@ -79,7 +83,7 @@ O Workfront Fusion permite automatizar fluxos de trabalho simples ou complexos n
 
 Neste exemplo, o cenário é acionado quando um campo especificado é alterado em uma tarefa ou um problema no Workfront. Quando acionado, o cenário obtém informações no projeto relacionado e cria uma atualização personalizada para uma pessoa atribuída a uma função específica no projeto.
 
-![Exemplo de modelo](assets/fusion-template-example.png)
+![Exemplo de modelo](assets/new-fusion-automation-example.png)
 
 +++
 
@@ -95,7 +99,7 @@ Muitos aplicativos têm conectores dedicados do Workfront Fusion. Se não há um
 
 Neste exemplo, o cenário é acionado quando um usuário é adicionado a uma planilha do [!DNL Excel]. O cenário verifica se o usuário está no Workfront. Caso contrário, o cenário cria o usuário no Workfront e adiciona sua ID de usuário do Workfront de volta à planilha.
 
-![Exemplo de integração](assets/fusion-integration-example.png)
+![Exemplo de integração](assets/new-scenario-example-unmarked.png)
 
 Para obter uma lista de conectores dedicados, consulte [Aplicativos Fusion e seus módulos de referências: índice do artigo](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
 
