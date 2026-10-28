@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '583'
 ht-degree: 18%
 ---
 # Visão geral de detalhes do cenário
@@ -59,11 +59,11 @@ Para obter mais detalhes sobre as informações contidas nesta tabela, consulte 
 
    Ou
 
-   Se você estiver trabalhando no cenário no editor de cenários, clique na seta para a esquerda ![Sair da seta de edição](assets/exit-editing-arrow.png) próximo ao canto superior esquerdo da janela.
+   Se você estiver trabalhando no cenário no editor de cenários, clique na seta para a esquerda ![Sair da seta de edição](/help/workfront-fusion/manage-scenarios/assets/new-exit-editing-arrow.png) próximo ao canto superior esquerdo da janela.
 
 1. Na página exibida, é possível revisar os elementos listados na tabela abaixo:
 
-   ![Detalhes do cenário](assets/scenario-detail-350x207.png)
+   ![Detalhes do cenário](assets/new-scenario-detail.png)
 
    <table style="table-layout:auto"> 
     <col> 
@@ -111,9 +111,11 @@ Para obter mais detalhes sobre as informações contidas nesta tabela, consulte 
       <td role="rowheader">[!UICONTROL Options]</td> 
       <td> <p>Esse menu fornece opções adicionais sem precisar abrir o editor de cenários. As melhorias incluem:</p> 
        <ul> 
+        <li>[!UICONTROL Desbloquear execução]</li> 
         <li>[!UICONTROL Agendamento]</li> 
         <li>[!UICONTROL Renomear]</li> 
         <li>[!UICONTROL Clonar]</li> 
+        <li>[!UICONTROL Clonar como modelo]</li> 
         <li>[!UICONTROL Excluir]</li> 
        </ul> </td> 
      </tr> 

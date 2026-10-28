@@ -17,7 +17,7 @@ feature_v2:
     internal-label: Integrations
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 25%
@@ -67,7 +67,7 @@ Para obter mais detalhes sobre as informações contidas nesta tabela, consulte 
 
 Para emitir um erro condicionalmente, você pode configurar um módulo para que ele falhe propositalmente durante sua operação. Uma possibilidade é empregar o módulo [!UICONTROL JSON] > [!UICONTROL Parse JSON], configurado para emitir opcionalmente um erro (`BundleValidationError` neste caso):
 
-![Erro de JSON](assets/json-parse-json.png)
+![Erro de JSON](assets/new-json-parse-json.png)
 
 Em seguida, você pode anexar uma das diretivas de tratamento de erros à rota de tratamento de erros:
 
@@ -78,4 +78,4 @@ Em seguida, você pode anexar uma das diretivas de tratamento de erros à rota d
 
 O exemplo a seguir mostra o uso da diretiva [!DNL Rollback]:
 
-![Diretiva de reversão](assets/rollback-directive.png)
+![Diretiva de reversão](assets/new-rollback-directive.png)

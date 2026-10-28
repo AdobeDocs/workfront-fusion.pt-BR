@@ -12,14 +12,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 1%
+source-wordcount: '821'
+ht-degree: 0%
 ---
 # Fluxo de execução de cenário
 
 Este artigo explica como um cenário é executado, como os dados fluem por ele e como visualizar os dados processados por cada módulo.
+
+>[!NOTE]
+>
+>O Workfront Fusion está fazendo a transição do editor de cenários para uma nova experiência. Durante essa transição, as experiências clássicas e novas estão disponíveis e você pode alternar entre elas a qualquer momento. Recomendamos usar a nova experiência. Para obter mais informações, consulte [Experiências novas e clássicas](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) no artigo Editor de cenários.
 
 Para exibir como os dados estão fluindo em um cenário ativo, consulte [Exibir fluxo de dados em um cenário em execução](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md).
 
@@ -43,7 +47,7 @@ O primeiro passo do cenário, executado pelo primeiro módulo, é observar as so
 
 Se o primeiro módulo retornar um pacote, ele passará pelo restante do cenário. Neste exemplo, o pacote iria para o segundo módulo, que converte a solicitação em um projeto.
 
-![Fluxo de execução do cenário do Workfront](assets/example-execution-flow-wf-only.png)
+![Fluxo de execução do cenário do Workfront](assets/new-example-execution-flow-wf-only.png)
 
 >[!ENDSHADEBOX]
 
@@ -51,13 +55,13 @@ Se o primeiro módulo retornar um pacote, ele passará pelo restante do cenário
 
 >[!BEGINSHADEBOX]
 
-**Exemplo:** Neste cenário, que baixa documentos do Adobe Workfront e os envia para uma pasta em [!DNL Dropbox], os dados fluiriam da seguinte maneira:
+**Exemplo:** neste cenário, que baixa documentos do Adobe Workfront e os envia para uma pasta em [!DNL Dropbox], os dados fluiriam da seguinte maneira:
 
 O primeiro passo do cenário, realizado pelo primeiro módulo, é observar documentos no Workfront. Cada documento encontrado é considerado um pacote. Se o módulo for executado sem encontrar nenhum pacote, o cenário terminará após o primeiro módulo.
 
 Se um pacote for retornado, ele passará pelo restante do cenário. Neste exemplo, o restante do cenário consiste no segundo módulo, que carrega o pacote para a pasta [!DNL Dropbox].
 
-![Fluxo de execução do cenário de integração](assets/example-execution-flow-wf-dropbox.png)
+![Fluxo de execução do cenário de integração](assets/new-example-execution-flow-wf-dropbox.png)
 
 Se o primeiro módulo retornar vários pacotes, o primeiro pacote será carregado para [!DNL Dropbox] antes que o segundo pacote seja carregado. O segundo pacote é carregado, o terceiro e assim por diante.
 
@@ -78,7 +82,7 @@ Para cada módulo, o pacote passa por um processo de quatro etapas antes de pass
 
 Após a conclusão de uma execução de cenário, cada módulo exibe um ícone mostrando o número de operações realizadas. Você pode clicar nesse ícone para exibir as informações detalhadas sobre os pacotes processados para cada etapa do processo. Você pode ver quais configurações de módulo foram usadas e quais pacotes foram retornados por cada módulo.
 
-![Pacotes processados](assets/Info-processed-bundles.png)
+![Pacotes processados](assets/new-Info-processed-bundles.png)
 
 Neste exemplo, o módulo recebeu informações de entrada como:
 

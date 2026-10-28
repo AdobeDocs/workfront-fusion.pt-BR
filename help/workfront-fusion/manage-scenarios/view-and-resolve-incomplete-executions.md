@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '580'
 ht-degree: 7%
 ---
 # Exibir e resolver execuções incompletas
@@ -26,9 +26,11 @@ A pasta [!UICONTROL Execuções incompletas] armazena execuções de cenário qu
 >
 >Para obter mais informações sobre configurações de cenário, consulte [Definir configurações de cenário](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md).
 
-## Visualização realçada do artigo completo {#highlighted-preview-article-level}
+Visualização realçada do artigo completo {#highlighted-preview-article-level}
 
-<span class="preview">As informações nesta página se referem a funcionalidades que ainda não estão disponíveis. Ele está disponível somente no ambiente Visualização da sandbox.</span>## Exibir execuções incompletas
+<span class="preview">As informações nesta página se referem a funcionalidades que ainda não estão disponíveis. Ele está disponível somente no ambiente de Pré-visualização da Sandbox.</span>
+
+## Exibir execuções incompletas
 
 Se um módulo encontrar um erro durante sua operação, uma nova execução incompleta será adicionada à pasta Incomplete executions. Cada execução incompleta contém o blueprint do cenário e todos os pacotes que podem ser mapeados no módulo com falha. É possível abrir a lista de execuções incompletas clicando na guia [!UICONTROL Execuções Incompletas] na página de detalhes do cenário.
 
@@ -61,7 +63,7 @@ Quando uma nova execução incompleta é armazenada, você pode resolvê-la da s
 1. Abra o registro do módulo em que todas as operações do módulo são exibidas.
 1. Localize a operação com falha e clique em **[!UICONTROL Resolver]**:
 
-   ![Botão Resolver](assets/resolve-btn-350x188.png)
+   <!--![Resolve button](assets/resolve-btn-350x188.png)-->
 
 
 
@@ -75,7 +77,7 @@ Se quiser ver o log de todas as operações do módulo antes de tentar resolver 
 1. Abra o registro do módulo em que todas as operações do módulo são exibidas.
 1. Localize a operação com falha e clique em **[!UICONTROL Resolver]**:
 
-   ![Botão Resolver](assets/resolve-btn-350x188.png)
+   <!--![Resolve button](assets/resolve-btn-350x188.png)-->
 
 ## Opções relacionadas a execuções incompletas
 

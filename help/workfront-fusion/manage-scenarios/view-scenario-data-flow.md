@@ -11,22 +11,38 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 36%
+source-wordcount: '392'
+ht-degree: 26%
 ---
 # Exibir fluxo de dados em um cenário em execução
 
 Você pode assistir a um cenário em execução para ver como os dados fluem por ele.
 
-Enquanto um cenário é executado, o módulo ativo é marcado por um anel crescente ao redor do módulo. O anel mostra apenas que o módulo está em execução, não seu progresso. Os módulos executados rapidamente podem exibir apenas uma pequena parte do anel.
+>[!NOTE]
+>
+>O Workfront Fusion está fazendo a transição do editor de cenários para uma nova experiência. Durante essa transição, as experiências clássicas e novas estão disponíveis e você pode alternar entre elas a qualquer momento. Recomendamos usar a nova experiência. Para obter mais informações, consulte [Experiências novas e clássicas](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) no artigo Editor de cenários.
 
-![Anel ao redor do módulo](assets/ring-around-module.png)
+Enquanto um cenário é executado, o módulo ativo é marcado por um anel giratório no ícone do módulo na nova experiência do ou por um anel crescente ao redor do módulo na experiência clássica. O anel mostra apenas que o módulo está em execução, não seu progresso. Os módulos executados rapidamente podem exibir apenas uma pequena parte do anel.
+
+Nova experiência
+
+![Anel giratório no ícone do módulo na nova experiência](assets/new-spinning-icon.png)
+
+Experiência clássica
+
+![Tocar ao redor do módulo na experiência clássica](assets/ring-around-module.png)
 
 Depois que o módulo for executado, um indicador de saída será exibido.
 
-![Indicador de saída](assets/data-flow-output.png)
+Nova experiência
+
+![Indicador de saída na nova experiência](assets/new-output-indicator.png)
+
+Experiência clássica
+
+![Indicador de saída na experiência clássica](assets/data-flow-output.png)
 
 Se o módulo processar mais de um pacote, o anel aparecerá para cada pacote processado e o indicador de saída contará para cada pacote gerado.
 
@@ -65,6 +81,7 @@ Para obter mais detalhes sobre as informações contidas nesta tabela, consulte 
 
 1. Clique na guia **[!UICONTROL Cenários]** no painel esquerdo.
 1. Selecione o cenário em que deseja exibir o fluxo de dados.
+1. Clique em qualquer lugar no cenário para entrar no editor de cenários.
 1. Se o cenário não estiver em execução, ative-o ou clique em **Executar uma vez** para iniciar a execução do cenário.
 1. Selecione a execução que deseja exibir na seção Atualmente em execução do painel de histórico de execução.
 
