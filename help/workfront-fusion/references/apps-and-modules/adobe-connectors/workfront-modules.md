@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 36bcfdbb0e88a4c742f7c3d0a6c9295a8e64b99a
 workflow-type: tm+mt
-source-wordcount: '7725'
-ht-degree: 92%
+source-wordcount: '7804'
+ht-degree: 91%
 ---
 # Módulos do Adobe Workfront
 
@@ -312,6 +312,13 @@ Depois que o webhook for criado, você poderá exibir o endereço do ponto de ac
 Para obter mais informações, consulte a seção [Exemplos de conteúdo de evento](https://experienceleague.adobe.com/pt-br/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) no artigo “API de assinatura de evento” na documentação do Workfront.
 
 Veja uma lista dos tipos de objeto do Workfront para os quais você pode usar este módulo em [tipos de objeto do Workfront disponíveis para cada módulo do Workfront](#workfront-object-types-available-for-each-workfront-module).
+
+>[!NOTE]
+>
+>A detecção de duplicatas se aplica a notificações que incluem um cabeçalho `x-event-id` e identificam `User-Agent` como `Workfront Event Subscription`.
+>
+>Quando o Fusion recebe uma notificação qualificada, ele registra a ID de evento desse webhook por **uma hora**. Se outra notificação com a mesma ID de evento chegar no mesmo webhook durante esse período, o Fusion a confirmará sem encaminhá-la para o processamento do cenário.
+>A detecção de duplicatas é específica para cada webhook. O mesmo evento pode ser processado independentemente por webhooks diferentes. O recebimento de uma duplicata não reinicia o período de uma hora.
 
 #### [!UICONTROL Campo de monitoramento]
 
@@ -1055,7 +1062,7 @@ A Workfront lançou recentemente uma nova versão de seu serviço de assinatura 
 
 Para obter mais informações sobre a nova versão de assinatura do evento, consulte [Controle de versão de assinatura do evento](https://experienceleague.adobe.com/pt-br/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) na documentação do Workfront
 
-Para obter recursos sobre como preservar os cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservação de seus cenários do Fusion durante a atualização da V2 de assinaturas do evento](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=pt).
+Para obter recursos sobre como preservar os cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservação de seus cenários do Fusion durante a atualização da V2 de assinaturas do evento](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 <table style="table-layout:auto">
  <col> 
@@ -2371,7 +2378,7 @@ Os filtros nas assinaturas de evento permitem garantir que seus cenários sejam 
 >
 >   Para obter mais informações sobre a nova versão de assinatura do evento, consulte [Controle de versão de assinatura do evento](https://experienceleague.adobe.com/pt-br/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) na documentação do Workfront
 >
->   Para obter recursos sobre como preservar os cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservação de seus cenários do Fusion durante a atualização da V2 de assinaturas do evento](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=pt).
+>   Para obter recursos sobre como preservar os cenários do Workfront Fusion durante a atualização da assinatura do evento, incluindo uma gravação de webinário, consulte [Preservação de seus cenários do Fusion durante a atualização da V2 de assinaturas do evento](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 O módulo [!UICONTROL Monitorar eventos] do Workfront aciona cenários com base em um webhook que cria uma assinatura de evento na API do Workfront. A assinatura do evento é um conjunto de dados que determina quais eventos são enviados para o webhook. Por exemplo, se você configurar um módulo [!UICONTROL Monitorar eventos] que esteja observando problemas, a assinatura do evento enviará somente eventos relacionados a problemas.
 
