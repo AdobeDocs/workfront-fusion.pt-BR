@@ -11,14 +11,16 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 6e900ea61e12b9e5adfd6bc374479aeeff0408d5
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 15%
+source-wordcount: '953'
+ht-degree: 11%
 ---
 # Exibir execução de um cenário específico
 
 Você pode exibir detalhes da execução de um cenário específico, incluindo filtragem e pesquisa de eventos de cenário.
+
+Você também pode exibir os detalhes de execução do cenário para cada módulo e filtro.
 
 ## Requisitos de acesso
 
@@ -74,9 +76,13 @@ Você pode exibir uma execução no histórico de cenários do cenário.
 
 1. Para visualizar a saída de um módulo, clique na bolha de detalhes da saída próximo ao módulo. O número na bolha representa o número de pacotes gerados pelo módulo.
 
+   Para visualizar pacotes específicos na saída do módulo, você pode usar a barra de pesquisa do painel de saída ou filtrar por pacotes com um status específico (como Sucesso, Aviso ou Falha).
+
    ![Bolha de saída próxima a um módulo](assets/new-output-bubble.png)
 
 1. Para exibir os pacotes que passaram por um filtro, clique no filtro. O número próximo ao filtro representa o número de pacotes que passaram pelo filtro.
+
+   Para exibir pacotes específicos manipulados pelo filtro, use a barra de pesquisa do filtro ou o filtro para pacotes com um status específico (como Aprovado ou Falha).
 1. Para procurar um módulo ou evento específico no painel de execução, insira o termo de pesquisa na caixa **Pesquisar eventos de execução**. Os resultados são exibidos conforme você digita.
 1. Para limitar os resultados da pesquisa do painel de execução por status, como Sucesso ou Aviso, clique na lista suspensa **Filtro de Status** e selecione o status.
 
@@ -93,6 +99,23 @@ Você pode exibir uma execução no histórico de cenários do cenário.
 >`<module-id>` refere-se ao número ao lado do rótulo do módulo ao visualizar o cenário.
 >
 >Isso pode ser útil ao depurar cenários ou copiar a configuração do módulo.
+
+
+## Examinar a saída de módulos e filtros
+
+Você pode examinar a saída do cenário para ver se o cenário se comportou como esperado.
+
+1. Para visualizar a saída de um módulo, clique na bolha de detalhes da saída próximo ao módulo. O número na bolha representa o número de pacotes gerados pelo módulo.
+
+   Para visualizar pacotes específicos na saída do módulo, você pode usar a barra de pesquisa do painel de saída ou filtrar por pacotes com um status específico (como Sucesso, Aviso ou Falha).
+
+   ![Bolha de saída próxima a um módulo](assets/output-bubble.png)
+
+1. Para exibir os pacotes que passaram por um filtro, clique no filtro. O número próximo ao filtro representa o número de pacotes que passaram pelo filtro.
+
+   Para exibir pacotes específicos manipulados pelo filtro, use a barra de pesquisa do filtro ou o filtro para pacotes com um status específico (como Aprovado ou Falha).
+1. Para procurar um módulo ou evento específico no painel de execução, insira o termo de pesquisa na caixa **Pesquisar eventos de execução**. Os resultados são exibidos conforme você digita.
+1. Para limitar os resultados da pesquisa do painel de execução por status, como Sucesso ou Aviso, clique na lista suspensa **Filtro de Status** e selecione o status.
 
 ## Revisar uma execução no novo editor de cenários
 
