@@ -19,15 +19,16 @@ feature_v2:
     internal-label: Integrations
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 740f7e0e96d0eb4e6290f42f52b75eb64de791dc
+source-git-commit: 8f8ecad04a66f3859bba69460b316e8ba20984e6
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 63%
+source-wordcount: '77'
+ht-degree: 59%
 ---
 # Configurar e gerenciar o Workfront Fusion: índice do artigo
 
 * [Visões gerais de licenciamento e operações](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/licensing-operations-overviews.md)
 * [Configurar e gerenciar organizações e equipes](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
+* [Exibir e gerenciar fusos horários](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/view-and-manage-time-zones.md)
 * [Configurar extensões personalizadas da interface do usuário](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-00-readme.md)
 * [Gerenciar modelos](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/manage-templates-toc.md)
 * [Usar Servidor MCP Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-fusion-mcp-server/use-fusion-mcp-server-toc.md)

@@ -14,12 +14,14 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 8f8ecad04a66f3859bba69460b316e8ba20984e6
 workflow-type: tm+mt
-source-wordcount: '2392'
+source-wordcount: '2413'
 ht-degree: 3%
 ---
 # Funções de data e hora
+
+Para obter informações sobre como exibir e gerenciar as configurações de fuso horário usadas pelo seu perfil do Fusion, consulte [Exibir e gerenciar fusos horários](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/view-and-manage-time-zones.md).
 
 ## Variáveis
 
@@ -522,7 +524,7 @@ Esta função retorna uma nova data com os segundos especificados em parâmetros
 
 Especifique um número de 0 a 59. Se o número estiver fora desse intervalo, a função retornará um segundo do minuto anterior (para um número negativo) ou do minuto subsequente (para um número positivo).
 
-Se você precisar especificar um número fora do intervalo, recomendamos usar [!UICONTROL &#x200B; addSeconds], conforme descrito acima na seção [addSeconds (date; number)](#addseconds-date-number).
+Se você precisar especificar um número fora do intervalo, recomendamos usar [!UICONTROL  addSeconds], conforme descrito acima na seção [addSeconds (date; number)](#addseconds-date-number).
 
 >[!BEGINSHADEBOX]
 
@@ -894,7 +896,7 @@ Caso queira calcular apenas um caso específico, por exemplo, a cada segunda qua
 * `1.dow` = `3`
 * `1.date` = `now`
 
-![Valor da variável de dia &#x200B;](assets/nth-day-variable-value-350x33.png)
+![Valor da variável de dia ](assets/nth-day-variable-value-350x33.png)
 
 #### Explicação:
 
