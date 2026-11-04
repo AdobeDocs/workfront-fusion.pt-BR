@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 78612057a0bfc76a7c9bf9d0efd6fc632a152369
 workflow-type: tm+mt
-source-wordcount: '2357'
+source-wordcount: '2755'
 ht-degree: 5%
 ---
 # O editor de cenários
@@ -72,6 +72,7 @@ A nova experiência inclui:
 * [Trilha em tempo real](/help/workfront-fusion/manage-scenarios/live-trail.md), um painel que mostra um cenário a ser executado à medida que ocorre.
 * Várias Ferramentas de desenvolvedor que agora estão integradas ao editor de cenários.
 * Logs de depuração temporários, que podem ser ativados nas configurações do cenário.
+* Uma Pesquisa que encontra nomes de módulo, valores mapeados, configurações de módulo e condições de filtro, além de atalhos de teclado para ações comuns do painel.
 
 Para alternar entre as experiências clássica e nova:
 
@@ -110,6 +111,7 @@ Se você não vir o botão de alternância, a nova experiência pode ainda não 
 * [Solicitar IA](#ask-ai)
 * [Navegação da tela de desenho](#canvas-navigation)
 * [Exibição da tela](#canvas-display)
+* [Atalhos de teclado](#keyboard-shortcuts)
 
 #### Edição de ações
 
@@ -148,7 +150,7 @@ Talvez seja necessário clicar no ícone de três pontos na área Controles para
 | Configurações de cenário <p>![Ícone de configurações do cenário](assets/scenario-settings-icon-new.png)</p> | O painel Configurações de cenário contém configurações avançadas para o cenário. Para obter mais informações sobre as configurações disponíveis, consulte [Definir configurações de cenário](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md). Os detalhes da solicitação e da resposta não são mantidos para cada execução. Para coletá-los para as execuções regulares do cenário, ative os Logs de depuração temporários. Para obter mais informações, consulte [Logs de depuração temporários](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#temporary-debug-logs). |
 | Notas <p>![Ícone de Notas](assets/notes-icon-new.png)</p> | Faça observações sobre o cenário. Outros usuários podem exibir essas notas quando estão no cenário. Para obter mais informações, consulte [Adicionar observações a um cenário](/help/workfront-fusion/create-scenarios/config-scenarios-settings/add-notes-to-scenario.md). |
 | Alinhamento automático <p>![Ícone de alinhamento automático](assets/auto-align-icon-new.png)</p> | Alinhe automaticamente os módulos no seu cenário. |
-| Módulos de pesquisa <p>![Ícone de módulos de pesquisa](assets/search-modules-icon-new.png)</p> | Selecione um módulo dessa lista para ir para esse módulo no cenário ou insira um termo de pesquisa para localizar um módulo e, em seguida, clique nos resultados da pesquisa a serem levados para esse módulo. Você pode pesquisar por nome do módulo, ID, tipo ou aplicativo. |
+| Pesquisar <p>![Ícone de pesquisa](assets/search-modules-icon-new.png)</p> | Abra a Pesquisa (pressione **Ctrl + K** no Windows ou **⌘K** no Mac). A pesquisa encontra módulos por nome ou ID. Ele também encontra cada valor mapeado, cada configuração de módulo e cada condição de filtro no cenário. Cada resultado mostra onde a correspondência foi encontrada, por exemplo _Mapeador · ID de Aprovação_, com o texto correspondente destacado. Os filtros são listados em sua própria seção. Para localizar todos os locais que usam um valor, cole uma referência como `{{1.name}}`. A pesquisa encontra exatamente essa referência, mas não `{{21.name}}` ou `{{1.names}}`. Clique em um resultado para abrir o módulo ou filtro. O campo correspondente é brevemente destacado e rolado para a exibição. À medida que você percorre os resultados do filtro com as teclas de seta, a tela de desenho mostra o filtro e os dois módulos conectados. <!-- BECKY CHECK ME: Search row rewritten from the 11/2/26 release note (fusion-2026-11-2.md) (renamed from 'Search modules' to 'Search'). The old text also said you can search by module type or application; the release note does not mention that, so I removed it. Confirm, and confirm the icon and the tool tip label. --> |
 | Localizar e substituir <p>![Ícone Localizar e substituir](assets/find-and-replace-icon-new.png)</p> | <p>Procure e substitua variáveis, fontes de valor mapeadas ou conexões nos módulos do cenário. Use as guias para:</p><ul><li>Substitua uma variável mapeada em todo o cenário ou em um módulo.</li><li>Remapeie as referências de um módulo de origem para outro.</li><li>Copie uma conexão para um ou todos os módulos compatíveis do mesmo aplicativo.</li></ul><p>O painel pré-visualiza os módulos que serão afetados antes que você faça a alteração. Selecione uma linha na visualização para ir para esse módulo na tela.</p> <p>Para obter mais informações, consulte [Localizar e substituir variáveis, fontes e conexões em um cenário](/help/workfront-fusion/manage-scenarios/find-and-replace.md).</p> |
 | Trechos <p>![Ícone de trechos](assets/snippets-icon-new.png)</p> | <p>Os trechos são seções de cenário salvas como uma unidade. Para criar um, selecione os módulos e salve-os como um snippet. No painel Snippets, você pode pesquisar, marcar, visualizar, fixar, classificar e arrastar e soltar trechos, importá-los e exportá-los. Você pode compartilhar trechos com equipes ou organizações ou enviar uma cópia diretamente para outro usuário. Os trechos compartilhados são exibidos em sua própria guia.</p> <p>Para obter mais informações, consulte [Salvar e reutilizar seções de cenário com trechos](/help/workfront-fusion/create-scenarios/add-modules/use-snippets.md).</p> |
 | Explicar fluxo <p>![Ícone de fluxo de explicação](assets/explain-flow-icon-new.png)</p> | Exibir uma animação em que os pontos móveis mostram como os dados fluem pelo cenário. |
@@ -208,7 +210,25 @@ A nova tela também altera a aparência dos cenários à medida que você trabal
 | Detalhes do zoom | Os detalhes do cartão são exibidos à medida que você amplia. Ao reduzir o zoom, os módulos são simplificados para ícones, para que você ainda possa ver todo o cenário. |
 | Dobrar um roteador | No modo de edição, é possível dobrar um roteador para ocultar suas rotas. Para obter mais informações, consulte [Dobrar um roteador](/help/workfront-fusion/create-scenarios/add-modules/router-module.md#fold-a-router). |
 | Modo escuro | A tela de desenho segue sua configuração de aparência escura em suas preferências do Adobe, incluindo cartões de módulo, links, painéis, controles e informações de status. |
-| Painel direito | Configuração do módulo, inspeção do módulo, navegador do módulo, Localizar e substituir, Trechos, [Trilha em tempo real](/help/workfront-fusion/manage-scenarios/live-trail.md) e detalhes de solicitação e resposta abertos no mesmo painel do lado direito da tela. |
+| Abrir módulo ou filtro | Ao abrir um módulo, a tela de desenho não se move mais. Em vez disso, o módulo obtém um contorno tracejado em movimento. Quando você abre um filtro, seu rótulo na conexão recebe o mesmo outline. A cor do contorno corresponde à cor do módulo e se ajusta automaticamente para que permaneça visível no modo claro e escuro. |
+| Painel direito | Configuração do módulo, inspeção do módulo, navegador do módulo, Localizar e substituir, Trechos, [Trilha em tempo real](/help/workfront-fusion/manage-scenarios/live-trail.md) e detalhes de solicitação e resposta abertos no mesmo painel do lado direito da tela. </br>Para redimensionar o painel, arraste sua borda esquerda para aumentá-lo ou estreitá-lo, ou clique duas vezes na borda para retornar à largura padrão. Sua largura é lembrada, inclusive quando você entra de outro navegador. Em uma tela menor, o painel se ajusta automaticamente à janela. Embora um painel seja maximizado, não é possível alterar sua largura. |
+
+#### Atalhos de teclado
+
+Esses atalhos ajudam você a trabalhar em painéis sem mover o mouse.
+
+| Atalho (Mac / Windows) | O que faz |
+| ---------- | ---------- |
+| **⌘Enter** / **Ctrl + Enter** | Confirma o painel aberto (igual a **OK**). Funciona enquanto você digita. Sem nenhum painel aberto, o executa o cenário uma vez. |
+| **Esc** | Fecha o painel aberto sem salvar. Se o painel de mapeamento estiver aberto, fecha somente esse painel. |
+| **⌥←** / **⌥→** (Mac), **Alt + ←** / **Alt + →** (Windows) | Confirma o painel e abre o módulo anterior ou seguinte. Também disponível como os botões **›** no cabeçalho do painel. Funciona quando o cursor não está em um campo de texto. |
+| **⌘Shift + Enter** / **Ctrl + Shift + Enter** | Confirma o painel aberto e executa o cenário uma vez. Nada é executado se o painel tiver erros. |
+| **⌘K** / **Ctrl + K** | Abre a Pesquisa. |
+| **?** | Mostra a lista de todos os atalhos do designer de cenário. Também disponível no menu de três pontos, em **Atalhos de teclado**. |
+
+* Painéis largos mostram um lembrete dos atalhos confirmar e cancelar na parte inferior.
+* Os botões **Executar uma vez** e **Salvar** mostram os atalhos nas dicas de ferramentas.
+* Quando você move para o módulo seguinte ou anterior e ele está oculto atrás do painel ou fora da tela, a tela se move o suficiente para mostrá-lo.
 
 ## Usar o editor de cenários na experiência clássica
 
