@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 11%
+source-wordcount: '1012'
+ht-degree: 10%
 ---
 # Adicionar filtro a um cenário
 
@@ -77,6 +77,10 @@ Você deve adicionar ambos os módulos a um cenário antes de poder adicionar um
 1. Clique com o botão esquerdo do mouse no caminho entre os módulos em que deseja adicionar um filtro.
 
    A janela **[!UICONTROL Configurar um filtro]** é aberta diretamente. (Clicar com o botão direito do mouse no caminho abre um menu diferente.)
+
+   O painel de filtro mostra entre dois módulos. Ao lado do título do painel, você verá as IDs do módulo, por exemplo **#12 → #13**. Acima das configurações de filtro, uma linha, como **Entre o Roteador ● #12 → ● HTTP #13**, mostra a cor e o nome de cada módulo. Passe o mouse sobre o nome de um módulo para ver sua ação. Enquanto o painel está aberto, o rótulo do filtro na conexão tem um contorno tracejado móvel.
+
+   ![Painel de filtros](/help/workfront-fusion/fusion-product-releases/assets/04-filter-panel-light.png)
 
 1. Na caixa que é exibida, digite um **[!UICONTROL Rótulo]** para o filtro.
 1. Defina o filtro **[!UICONTROL Condição]**.

@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '810'
 ht-degree: 3%
 ---
 # Fluxo de trabalho para criar um cenário
@@ -185,6 +185,10 @@ Você pode usar os seguintes atalhos de teclado ao criar ou editar um cenário:
   </tr> 
  </tbody> 
 </table>
+
+>[!NOTE]
+>
+>O novo editor de cenários tem atalhos de teclado adicionais, incluindo atalhos para confirmar ou fechar painéis, mover entre módulos e abrir uma lista de todos os atalhos. Para obter mais informações, consulte [Atalhos de teclado](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#keyboard-shortcuts) no artigo Editor de cenários.
 
 
 

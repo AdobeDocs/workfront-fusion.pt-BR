@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 628fb65a2bd3aa7ed434cde26a55077d176f67f6
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '981'
 ht-degree: 10%
 ---
 # Exibir execução de um cenário específico
@@ -127,7 +127,7 @@ Na nova experiência do, ao abrir uma execução do histórico de execução, os
 | Controle | Detalhes |
 | ---------- | ---------- |
 | Ir para o próximo erro ou aviso | Mostra quantos módulos tiveram um problema no ciclo atual. Cada clique é movido para o próximo, primeiro os erros e, em seguida, os avisos, da esquerda para a direita. Ele centraliza o módulo e abre a primeira operação com falha. O botão fica oculto quando a execução não tem erros ou avisos. |
-| Módulos de pesquisa | Encontre um módulo pelo nome e centralize-o na tela. Pressione Ctrl+K (Windows) ou Command+K (Mac). |
+| Pesquisar | Localize um módulo por nome ou ID e centralize-o na tela. Pressione Ctrl+K (Windows) ou Command+K (Mac). |
 | Notas | Mostrar ou ocultar as anotações do cenário. Esse controle é exibido somente quando o cenário tem notas e elas são somente leitura aqui. |
 | Explicar fluxo | Animar a ordem em que os módulos do cenário são executados. Clique novamente ou pressione Esc para parar. |
 | Mais zoom, Menos zoom, Foco e minimapa | Funciona da mesma forma que no modo de edição. |
