@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 45c755a2f6152b6e230864e4c840d0334705bd22
+source-git-commit: 628fb65a2bd3aa7ed434cde26a55077d176f67f6
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1334'
 ht-degree: 3%
 ---
 # Exibir o painel de Insights de uma organização
@@ -208,6 +208,7 @@ Use o Log de execução para localizar execuções de cenário que falharam ou r
    Para a maioria dos filtros, é possível optar por corresponder apenas aos valores selecionados ou a tudo, exceto eles.
 
 1. Clique em uma execução para exibir mais detalhes sobre o erro.
+1. Para obter uma explicação em linguagem simples de um erro, passe o mouse sobre a execução com falha e clique em **[!UICONTROL Explicar]**. Para obter mais informações, consulte [Explicar um erro de cenário com IA](/help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md).
 1. Para reativar um ou mais cenários que foram desativados automaticamente após falhas repetidas, selecione as execuções e clique em **Ativar**.
 
    >[!NOTE]

@@ -1,9 +1,9 @@
 ---
 name: fusion-doc-request
 description: Lidar com uma solicitação de documentação do Fusion do #fusion-documentation Slack template - update the relevant Fusion docs article(s) in this repo, then create a matching task in the Product Documentation Workfront project with the feature description and a formatted release note filled in on the custom form. Use when the user shares a Slack documentation-request thread/message for a Fusion feature, or says something like "please update and create a task" for one.
-source-git-commit: faa0716f7e0a8ce496f8f65085de32288a4b6066
+source-git-commit: 535a10407766d054b00d31869e511753bf07a9b7
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1572'
 ht-degree: 0%
 ---
 
@@ -23,11 +23,11 @@ As conexões do Slack neste ambiente são irregulares (tokens expirados, descone
 
 O modelo de solicitação tem estes campos - extraia cada um:
 
-&#x200B;* **Título do recurso**
-&#x200B;* **Descrição**
-&#x200B;* **Pontos a serem adicionados à documentação** *(às vezes presente - seções/detalhes específicos que o solicitante deseja cobrir; trate-os como obrigatórios, não opcionais, se fornecidos)*
-&#x200B;* **Data de lançamento esperada**
-&#x200B;* **Precisa de notificação** *(Sim/Não - apenas informativo; consulte a observação acima. Não atue neste campo.)*
+* **Título do recurso**
+* **Descrição**
+* **Pontos a serem adicionados à documentação** *(às vezes presente - seções/detalhes específicos que o solicitante deseja cobrir; trate-os como obrigatórios, não opcionais, se fornecidos)*
+* **Data de lançamento esperada**
+* **Precisa de notificação** *(Sim/Não - apenas informativo; consulte a observação acima. Não atue neste campo.)*
 
 Se a solicitação for vinculada a uma página wiki Confluence com a especificação completa, busque (`get_wiki_content`) antes de gravar a documentação. Não dependa apenas do resumo do Slack para obter detalhes técnicos (nomes exatos de campo, etapas, rótulos de interface do usuário), extraia-os da especificação do wiki quando um estiver vinculado.
 
@@ -47,13 +47,13 @@ Essa habilidade cria e confirma a ramificação, mas não a envia nem abre uma s
 
 Encontre os artigos relevantes existentes neste repositório (grep para nomes de módulo relacionados, rótulos de interface do usuário ou nomes de configurações - não adivinhe o arquivo). Atualize-os para refletir a alteração, seguindo a estrutura existente, o nível do título e o estilo da casa desse artigo.
 
-&#x200B;* Não invente detalhes técnicos (nomes de campos exatos, escopos de permissão, etapas de configuração) que não estejam na solicitação do Slack ou na especificação da wiki vinculada. Se algo não for confirmado, marque-o como um comentário do HTML (por exemplo, `<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`), em vez de adivinhar - nunca como uma chamada visível. Ela não deve ser renderizada na página publicada.
-&#x200B;* Se isso exigir um arquivo de artigo totalmente novo (não apenas uma edição para um existente), siga as convenções permanentes deste repositório: nenhum `exl-id`/`TQID` fabricado na frente e converta o arquivo para CRLF/sem BOM após criá-lo (o padrão da ferramenta `Write` é LF).
-&#x200B;* Conectar uma nova página ao &quot;índice&quot; significa AMBOS, não apenas um. Uma página pode ser vinculada a partir de um subíndice, mas ainda ser invisível para os leitores:
+* Não invente detalhes técnicos (nomes de campos exatos, escopos de permissão, etapas de configuração) que não estejam na solicitação do Slack ou na especificação da wiki vinculada. Se algo não for confirmado, marque-o como um comentário do HTML (por exemplo, `<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`), em vez de adivinhar - nunca como uma chamada visível. Ela não deve ser renderizada na página publicada.
+* Se isso exigir um arquivo de artigo totalmente novo (não apenas uma edição para um existente), siga as convenções permanentes deste repositório: nenhum `exl-id`/`TQID` fabricado na frente e converta o arquivo para CRLF/sem BOM após criá-lo (o padrão da ferramenta `Write` é LF).
+* Conectar uma nova página ao &quot;índice&quot; significa AMBOS, não apenas um. Uma página pode ser vinculada a partir de um subíndice, mas ainda ser invisível para os leitores:
   - O arquivo de navegação mestre da área do produto (por exemplo, `help/workfront-fusion/TOC.md`). Ele é o que realmente direciona a árvore de navegação publicada.
   - Qualquer subíndice do conteúdo interno/página de aterrissagem que também vincule a artigos desse tipo (por exemplo, `apps-and-modules-toc.md` para uma nova página de módulos do conector).
     Verifique explicitamente e confirme se a nova entrada está na mesma lista, no mesmo nível de aninhamento, já que seus artigos semelhantes mais próximos em cada arquivo - não suponha que adicioná-la a uma cubra a outra.
-&#x200B;* Deixe as alterações do documento não confirmadas na ramificação. Não execute `git commit` (ou `git add`) como parte dessa habilidade - o usuário confirma quando está pronto, depois de revisar as alterações. Confirme somente se o usuário solicitar explicitamente.
+* Deixe as alterações do documento não confirmadas na ramificação. Não execute `git commit` (ou `git add`) como parte dessa habilidade - o usuário confirma quando está pronto, depois de revisar as alterações. Confirme somente se o usuário solicitar explicitamente.
 
 ## Etapa 4: criar a tarefa do Workfront
 
@@ -73,7 +73,10 @@ Campos de tarefa:
 | `DE:Preview Date Known` | `Yes`, por padrão |
 | `DE:Preview Date` | a data citada na mensagem original do Slack (a **data de lançamento esperada** da solicitação), por padrão |
 | `taskConstraint` + `constraintDate` | Defina `taskConstraint` como `MFO` (Deve terminar em) com `constraintDate` = a data citada na mensagem original do Slack (a **data de lançamento esperada** da solicitação), de modo que a data planejada de conclusão da tarefa também corresponda a ela. |
+| `DE:Articles to update` | a lista de artigos que você criou ou atualizou para esta solicitação (veja abaixo) |
 | Produto/Área | selecionar `Fusion` (um campo de enumeração no formulário Documentação do produto; confirme o nome exato do campo com `insights_search_fields` se ele nunca estiver claro) |
+
+`DE:Articles to update` (um campo de texto no formulário Documentação do produto) lista cada arquivo de artigo criado ou alterado na Etapa 3, um caminho relativo de repositório por linha (por exemplo `help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md`). Inclua novos artigos (adicione `(new)` após o caminho) e qualquer arquivo de índice ou índice editado. Como as edições de doc ocorrem na Etapa 3, a lista é conhecida pelo momento em que a tarefa é criada, portanto, defina-a na mesma chamada de criação. Se o usuário solicitar que você crie a tarefa sem fazer edições de documento, deixe o campo vazio e atualize-o posteriormente, se forem feitas edições de documento.
 
 Defina os campos de data de visualização e a data de conclusão planejada como parte dessa mesma chamada de criação - não os deixe para depois ou aguarde para ser perguntado. Se o usuário fornecer uma data diferente posteriormente ou se disser que a data ainda não é realmente conhecida, atualize de acordo, mas use o padrão para preenchê-las sempre.
 
@@ -102,18 +105,19 @@ Antes de criar a chamada, chame `read_workflow_docs` com `workfront://tools/crea
 
 Relatar claramente:
 
-&#x200B;* A ramificação criada (confirmada localmente, não enviada e nenhuma solicitação de recepção aberta - de acordo com a Etapa 2).
-&#x200B;* Quais arquivos de documento você alterou e o que adicionou.
-&#x200B;* Que as alterações não foram confirmadas na ramificação, aguardando a revisão do usuário.
-&#x200B;* O nome da tarefa e o URL.
-&#x200B;* Os valores exatos do campo definidos, incluindo os campos de data de visualização.
-&#x200B;* Qualquer coisa com a qual você não tivesse total confiança, por exemplo, o Slack estava inacessível e você trabalhava somente com texto colado, o artigo de documento de destino era ambíguo ou um detalhe técnico não estava no material de origem e foi sinalizado em vez de adivinhado.
+* A ramificação criada (confirmada localmente, não enviada e nenhuma solicitação de recepção aberta - de acordo com a Etapa 2).
+* Quais arquivos de documento você alterou e o que adicionou.
+* Que os artigos alterados estão listados no campo `Articles to update` da tarefa.
+* Que as alterações não foram confirmadas na ramificação, aguardando a revisão do usuário.
+* O nome da tarefa e o URL.
+* Os valores exatos do campo definidos, incluindo os campos de data de visualização.
+* Qualquer coisa com a qual você não tivesse total confiança, por exemplo, o Slack estava inacessível e você trabalhava somente com texto colado, o artigo de documento de destino era ambíguo ou um detalhe técnico não estava no material de origem e foi sinalizado em vez de adivinhado.
 
 ## Valores conhecidos (de execuções anteriores)
 
 Confirme se eles ainda estão resolvidos, em vez de supor que sejam permanentes:
 
-&#x200B;* O projeto &quot;Tarefas de documentação do produto - para problemas de desenvolvimento que exigem mensagens&quot; mapeia para a ID `5e69583f00236b9f767c3e3944100ee4`
-&#x200B;* A tarefa pai &quot;Becky - Tarefas do canal Fusion-Documentation&quot; mapeia para a ID `6a9b065100003a7554832780c2015e93` (no mesmo projeto) - resolver com `insights_find_id_by_name` (entidade `task`) em vez de codificar, caso seja alterada
-&#x200B;* O formulário personalizado (`categoryID`) da Documentação do produto é `5d7275b9000514604bd969d418725843`
-&#x200B;* Campos personalizados usados: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
+* O projeto &quot;Tarefas de documentação do produto - para problemas de desenvolvimento que exigem mensagens&quot; mapeia para a ID `5e69583f00236b9f767c3e3944100ee4`
+* A tarefa pai &quot;Becky - Tarefas do canal Fusion-Documentation&quot; mapeia para a ID `6a9b065100003a7554832780c2015e93` (no mesmo projeto) - resolver com `insights_find_id_by_name` (entidade `task`) em vez de codificar, caso seja alterada
+* O formulário personalizado (`categoryID`) da Documentação do produto é `5d7275b9000514604bd969d418725843`
+* Campos personalizados usados: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`

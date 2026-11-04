@@ -3,10 +3,10 @@ user-guide-title: Documentação do Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Use os documentos, tutoriais e recursos adicionais para saber como implementar e usar efetivamente o Adobe Workfront Fusion em sua organização.
 nudge: true
-source-git-commit: e4bc75f0536c96896254f97d276a88b7a1aa18ce
+source-git-commit: 41ba069a36eeddbadbd993602a3b5f7ede60cefa
 workflow-type: tm+mt
-source-wordcount: '2791'
-ht-degree: 47%
+source-wordcount: '2821'
+ht-degree: 46%
 ---
 
 # Documentação do Adobe Workfront Fusion {#using}
@@ -15,6 +15,7 @@ ht-degree: 47%
 * Atividade de lançamento do Fusion {#fusion-release-activity}
   * [Atividade de lançamento do Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
   * Versões do Fusion - 2026 {#fusion-releases-2026}
+    * [Atividade de lançamento do Workfront Fusion: semana de 2 de novembro de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-11-2.md)
     * [Atividade de lançamento do Workfront Fusion: semana de 26 de outubro de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-26.md)
     * [Atividade de lançamento do Workfront Fusion: semana de 19 de outubro de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-19.md)
     * [Atividade de lançamento do Workfront Fusion: semana de 12 de outubro de 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-12.md)
@@ -195,7 +196,6 @@ ht-degree: 47%
     * [Visão geral do editor de cenários](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)
     * [Visão geral de detalhes do cenário](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md)
     * [Alternar entre organizações ou equipes](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/switch-orgs-or-teams.md)
-    * [Alterar configurações de perfil](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/change-profile-settings.md)
 * Configurar e gerenciar o Workfront Fusion {#set-up-and-manage-fusion}
   * [Configurar e gerenciar o Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-workfront-fusion-toc.md)
   * Visões gerais de licenciamento e operações {#licensing-and-operations-overviews}
@@ -203,6 +203,10 @@ ht-degree: 47%
     * [Licenças do Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
     * [Operações](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
     * [Pools de trabalhadores](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)
+  * Configurar a conta do Fusion {#configure-fusion-account}
+    * [Configuração da conta do Fusion: índice de artigos](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/configure-fusion-account-toc.md)
+    * [Alterar configurações de perfil](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/change-profile-settings.md)
+    * [Exibir e gerenciar fusos horários](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/view-and-manage-time-zones.md)
   * Configurar e gerenciar organizações e equipes {#set-up-and-manage-orgs-and-teams}
     * [Configurar e gerenciar organizações e equipes: índice do artigo](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
     * Configurar organizações e equipes {#set-up-orgs-teams-and-users}
@@ -308,6 +312,7 @@ ht-degree: 47%
   * [Gerenciar conexões](/help/workfront-fusion/manage-scenarios/manage-connections.md)
   * [Ativar ou desativar um cenário](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md)
   * [Depurar um cenário](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)
+  * [Explicar um erro de cenário com a IA](/help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md)
   * [Usar trilha dinâmica para revisar uma execução de cenário](/help/workfront-fusion/manage-scenarios/live-trail.md)
   * [Localizar e substituir variáveis, fontes e conexões em um cenário](/help/workfront-fusion/manage-scenarios/find-and-replace.md)
   * [Restaurar uma versão de cenário](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md)

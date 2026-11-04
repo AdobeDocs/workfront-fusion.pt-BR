@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 6e900ea61e12b9e5adfd6bc374479aeeff0408d5
+source-git-commit: 628fb65a2bd3aa7ed434cde26a55077d176f67f6
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 11%
+source-wordcount: '980'
+ht-degree: 10%
 ---
 # Exibir execução de um cenário específico
 
@@ -85,6 +85,7 @@ Você pode exibir uma execução no histórico de cenários do cenário.
    Para exibir pacotes específicos manipulados pelo filtro, use a barra de pesquisa do filtro ou o filtro para pacotes com um status específico (como Aprovado ou Falha).
 1. Para procurar um módulo ou evento específico no painel de execução, insira o termo de pesquisa na caixa **Pesquisar eventos de execução**. Os resultados são exibidos conforme você digita.
 1. Para limitar os resultados da pesquisa do painel de execução por status, como Sucesso ou Aviso, clique na lista suspensa **Filtro de Status** e selecione o status.
+1. Para obter uma explicação em linguagem simples de um erro na execução, clique em **[!UICONTROL Explicar]** sob o erro. Para obter mais informações, consulte [Explicar um erro de cenário com IA](/help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md).
 
 
 

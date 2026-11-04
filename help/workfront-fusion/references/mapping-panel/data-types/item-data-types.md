@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 8f8ecad04a66f3859bba69460b316e8ba20984e6
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 2%
+source-wordcount: '616'
+ht-degree: 1%
 ---
 # Tipos de dados de item
 
@@ -47,7 +47,7 @@ Para obter informações sobre quais tipos de itens o Workfront Fusion permite a
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Data</p> </td> 
-   <td> <p>As datas são inseridas no formato de data ISO 8601, por exemplo, <code>2015-09-18T11:58Z</code>. Você pode alterar o fuso horário nas configurações do perfil. </p> <p>Se você clicar em um campo que requer uma data, um calendário pop-up será exibido nas configurações do módulo. O tempo não é necessário para alguns itens.</p> <p>Os valores dos itens de Data são formatados usando o fuso horário local e da Web selecionado no seu perfil. É possível exibir a versão ISO 8601 do valor de um item de data, passando o mouse sobre o item.</p> <p>Observação: se o valor ISO não for exibido, o item provavelmente é um texto, não uma data.</p> <p>A hora é inserida no formato <code>hours:minutes:seconds</code>, por exemplo, <code>14:03:52</code>.</p> </td> 
+   <td> <p>As datas são inseridas no formato de data ISO 8601, por exemplo, <code>2015-09-18T11:58Z</code>. Você pode alterar o fuso horário nas configurações do perfil. </p> <p>Se você clicar em um campo que requer uma data, um calendário pop-up será exibido nas configurações do módulo. O tempo não é necessário para alguns itens.</p> <p>Os valores dos itens de Data são formatados usando o fuso horário local e da Web selecionado no seu perfil. É possível exibir a versão ISO 8601 do valor de um item de data, passando o mouse sobre o item.</p> <p>Para obter informações sobre como exibir e gerenciar configurações de fuso horário no seu perfil do Fusion, consulte [Exibir e gerenciar fusos horários](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/view-and-manage-time-zones.md).</p> <p>Observação: se o valor ISO não for exibido, o item provavelmente é um texto, não uma data.</p> <p>A hora é inserida no formato <code>hours:minutes:seconds</code>, por exemplo, <code>14:03:52</code>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Buffer (dados binários)</p> </td> 
