@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 36bcfdbb0e88a4c742f7c3d0a6c9295a8e64b99a
+source-git-commit: 4d64f865dd3e826daef02abaaf3c68daa7ed363e
 workflow-type: tm+mt
-source-wordcount: '7804'
-ht-degree: 91%
+source-wordcount: '7761'
+ht-degree: 90%
 ---
 # Módulos do Adobe Workfront
 
@@ -84,14 +84,15 @@ Para obter mais detalhes sobre as informações contidas nesta tabela, consulte 
 
 ## Conectar o Workfront ao Workfront Fusion
 
-O conector Workfront usa o OAuth 2.0 para se conectar ao Workfront.
-
 Você pode criar uma conexão com sua conta do Workfront diretamente de dentro de um módulo do Workfront Fusion.
 
-* [Conectar-se ao Workfront usando a ID do cliente e o segredo do cliente](#connect-to-workfront-using-client-id-and-client-secret)
+Novas conexões e conexões que você reautoriza, faça logon com sua conta da Adobe (logon no Adobe IMS ou na Experience Cloud). Eles não usam um aplicativo OAuth2 do Workfront.
+
+* [Conectar-se ao Workfront usando sua conta da Adobe](#connect-to-workfront-using-your-adobe-account)
+* [Reautorizar uma conexão existente](#reauthorize-an-existing-connection)
 * [Conectar-se ao Workfront usando uma conexão de servidor para servidor](#connect-to-workfront-using-a-server-to-server-connection)
 
-### Conectar-se ao Workfront usando a ID do cliente e o segredo do cliente
+### Conectar-se ao Workfront usando sua conta da Adobe
 
 1. Em qualquer módulo do Adobe Workfront, clique em **Adicionar** ao lado do campo Conexão.
 1. Preencha os seguintes campos:
@@ -115,32 +116,38 @@ Você pode criar uma conexão com sua conta do Workfront diretamente de dentro d
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Insira sua ID de cliente do Workfront. Isso pode ser encontrado na área Aplicativos OAuth2 da área Configuração no Workfront. Abra o aplicativo específico ao qual você está se conectando para ver a ID de cliente.</td>
+        <td role="rowheader">[!UICONTROL Instance name]</td>
+        <td>
+          <p>Insira o nome da instância, também conhecido como domínio.</p><p>Exemplo: se a URL for <code>https://example.my.workfront.com</code>, insira <code>example</code>.</p>
+        </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Insira o segredo do cliente do Workfront. Isso pode ser encontrado na área Aplicativos OAuth2 da área Configuração no Workfront. Se não tiver um segredo do cliente para o aplicativo OAuth2 no Workfront, você poderá gerar outro. Para obter instruções, consulte a documentação do Workfront.</td>
+        <td role="rowheader">[!UICONTROL Instance lane]</td>
+        <td>
+          <p>Insira o tipo de ambiente ao qual esta conexão será feita.</p><p>Exemplo: se a URL for <code>https://example.my.workfront.com</code>, insira <code>my</code>.</p>
+        </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Authentication URL]</td>
-        <td>Isso pode permanecer como o valor padrão, ou você pode inserir o URL da sua instância do Workfront, seguido por <code>/integrations/oauth2</code>. <p>Exemplo: <code>https://mydomain.my.workfront.com/integrations/oauth2</code></p></td>
+        <td role="rowheader">[!UICONTROL Escopos] <i>(Opcional)</i></td>
+        <td>Insira quaisquer escopos adicionais para esta conexão. Deixe este campo vazio para usar os escopos padrão.</td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Host prefix]</td>
-        <td>Na maioria dos casos, esse valor deve ser <code>origin</code>.
+        <td>Na maioria dos casos, esse valor deve ser <code>origin</code>.</td>
       </tr>
     </tbody>
     </table>
 
 1. Clique em **[!UICONTROL Continuar]** para salvar a conexão e retornar ao módulo.
 
-   Se você não estiver conectado ao Workfront, será direcionado para uma tela de logon. Depois de fazer logon, é possível permitir a conexão.
+   Se você não estiver conectado à sua conta da Adobe, será direcionado para a página de logon da Adobe. Depois de fazer logon, você pode permitir a conexão.
 
 >[!NOTE]
 >
->* As conexões do OAuth 2.0 com a API do Workfront não dependem mais das chaves de API.
->* Para criar uma conexão com um ambiente de Sandbox do Workfront, crie um aplicativo OAuth2 nesse ambiente e use a ID do cliente e o segredo do cliente gerados por esse aplicativo em sua conexão.
+>As conexões criadas antes de 5 de novembro de 2026 continuam a funcionar. Para alternar uma conexão existente para o logon da Adobe, reautorize-a.
+
+Para autorizar novamente uma conexão, consulte [Gerenciar conexões](/help/workfront-fusion/manage-scenarios/manage-connections.md).
+
 
 ### Conectar-se ao Workfront usando uma conexão de servidor para servidor
 
