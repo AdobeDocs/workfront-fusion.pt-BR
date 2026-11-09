@@ -11,7 +11,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 1eeb0f543b77b52c18c45ebc773e0322391d2042
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 27%
@@ -22,7 +22,7 @@ Como os aplicativos aos quais o Workfront Fusion se conecta podem atualizar ou l
 
 Se você vir um ícone verde do módulo de Atualização em um módulo em um cenário, o Workfront Fusion lançou uma nova versão desse módulo.
 
-![Ícone Atualizar](assets/update-indicator-workfront.png)
+![Ícone Atualizar](assets/new-update-indicator-workfront.png)
 
 Você pode atualizar o módulo sem criar um novo cenário.
 
@@ -57,8 +57,8 @@ Para obter mais detalhes sobre as informações contidas nesta tabela, consulte 
 
 ## Atualizar um módulo do Workfront para uma nova versão
 
-1. Clique no ícone **Atualizar módulo** ![Atualizar ícone](assets/upgrade-icon.png) no módulo que você deseja atualizar para uma nova versão.
-   ![Ícone Atualizar](assets/update-indicator-workfront.png)
+1. Clique no ícone **Atualizar módulo** ![Atualizar ícone](assets/new-upgrade-icon.png) no módulo que você deseja atualizar para uma nova versão.
+   ![Ícone Atualizar](assets/new-update-indicator-workfront.png)
 1. Escolha uma das seguintes opções:
 
    * Para selecionar um novo módulo para substituir este módulo (em vez de atualizar o módulo), clique em **Escolher novo** e prossiga conforme descrito em [Atualizar um módulo que não seja da Workfront para uma nova versão](#upgrade-a-non-workfront-module-to-a-new-version).
@@ -73,7 +73,7 @@ Para obter mais detalhes sobre as informações contidas nesta tabela, consulte 
 
 ## Atualizar um módulo que não seja do Workfront para uma nova versão
 
-1. Clique no ícone **Atualizar módulo** ![Atualizar ícone](assets/upgrade-icon.png) no módulo que você deseja atualizar para uma nova versão.
+1. Clique no ícone **Atualizar módulo** ![Atualizar ícone](assets/new-upgrade-icon.png) no módulo que você deseja atualizar para uma nova versão.
    <!--![Update icon](assets/update-indicator.png)-->
 1. Clique em **Escolher novo**.
 1. Selecione o módulo que você deseja substituir o módulo anterior.

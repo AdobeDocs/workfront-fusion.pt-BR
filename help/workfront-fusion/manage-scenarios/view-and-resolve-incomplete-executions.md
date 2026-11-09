@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: ddf7d3e48a5aee72d8f39b5b6746d1e3e884a7d0
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '554'
 ht-degree: 7%
 ---
 # Exibir e resolver execuções incompletas
@@ -25,10 +25,6 @@ A pasta [!UICONTROL Execuções incompletas] armazena execuções de cenário qu
 >Por padrão, o armazenamento de execuções incompletas é desativado. Para habilitá-lo, habilite a opção [!UICONTROL Permitir o armazenamento de execuções incompletas] nas configurações avançadas de cenário.
 >
 >Para obter mais informações sobre configurações de cenário, consulte [Definir configurações de cenário](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md).
-
-Visualização realçada do artigo completo {#highlighted-preview-article-level}
-
-<span class="preview">As informações nesta página se referem a funcionalidades que ainda não estão disponíveis. Ele está disponível somente no ambiente de Pré-visualização da Sandbox.</span>
 
 ## Exibir execuções incompletas
 
