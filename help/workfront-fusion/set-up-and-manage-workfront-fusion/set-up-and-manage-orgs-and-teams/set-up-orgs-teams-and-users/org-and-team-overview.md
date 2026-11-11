@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: f9cdbcf936fc6b022f6513f47b9b377424731419
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 2%
+source-wordcount: '795'
+ht-degree: 1%
 ---
 # Visão geral das organizações e equipes do Adobe Workfront Fusion
 
@@ -87,3 +87,25 @@ Um usuário tem uma das seguintes funções em cada uma de suas equipes:
 * **[!UICONTROL Membro Restrito à Equipe]**: a funcionalidade para esta função está indisponível no momento e será disponibilizada em breve. Não é recomendável atribuir usuários a essa função no momento.
 
 Para obter informações sobre ações específicas disponíveis para usuários em cada função de equipe, consulte [Funções de organização e equipe](/help/workfront-fusion/references/licenses-and-roles/organization-roles.md).
+
+### Funções personalizadas da equipe
+
+<!-- BECKY CHECK ME: The source material (the Slack announcement) says flexible permissions are live in QA and for internal customers, with a limited pilot with paid customers next, then general availability. Confirm availability at the 2026-11-12 release before publishing, and whether this section should say that the feature is available only to some organizations. -->
+
+Além das funções de equipe predefinidas, cada equipe tem uma guia **[!UICONTROL Funções]**, na qual você pode criar suas próprias funções. Você pode criar, atualizar e excluir funções e escolher exatamente quais permissões cada função inclui. Você não está mais limitado a um conjunto fixo de funções.
+
+Para obter instruções, consulte [Exibir e gerenciar funções de equipe](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md).
+
+Com funções personalizadas, é possível:
+
+* Dê a cada pessoa somente o acesso de que sua tarefa precisa, o que reduz o risco de alterações acidentais em cenários críticos.
+* Configure o acesso para corresponder ao funcionamento de sua organização, em vez de ajustar suas equipes às funções predefinidas.
+* Gerencie o acesso sozinho, sem entrar em contato com o suporte.
+
+Qualquer pessoa com a permissão **[!UICONTROL Gerenciar membros]** em uma equipe pode criar, atualizar, excluir e atribuir usuários a funções nessa equipe. Nas funções predefinidas, essa permissão está incluída nas funções de Administrador de equipe e Proprietário da organização.
+
+* Os Proprietários da organização podem criar e gerenciar funções em todas as equipes.
+* Os Administradores da Organização podem gerenciar funções somente nas equipes das quais são membros e onde têm a permissão **[!UICONTROL Gerenciar membros]**.
+* Os administradores de equipe podem gerenciar funções em suas equipes.
+
+<!-- BECKY CHECK ME: The source does not describe the steps in the Roles tab, the list of permissions that you can choose from, or whether you can edit or delete the predefined roles. Add the steps and permissions list once confirmed. Also confirm that Team Admins can manage roles (the source says the Manage members permission was previously given to Team Admin and Org Owner roles, and that team and org admins can create roles only in the teams where they are admins). -->

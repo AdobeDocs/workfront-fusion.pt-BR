@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 62dff65d6de1c2301ca8e99f5aaeda05e6a34ffe
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '542'
 ht-degree: 18%
 ---
 # Exibir ou editar funções de usuário
@@ -87,7 +87,12 @@ Ao atribuir um usuário para ou a partir de uma função de Proprietário, consi
 
 Os administradores do Adobe Workfront Fusion e os administradores de equipe podem exibir e atualizar funções de usuário.
 
+>[!NOTE]
+>
+>Além das funções predefinidas, uma equipe pode ter funções personalizadas. Para obter informações sobre como criar e gerenciar funções personalizadas, consulte [Exibir e gerenciar funções de equipe](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md).
+
 1. Enquanto estiver conectado como administrador do Workfront Fusion, selecione **[!UICONTROL Todos os usuários]** na navegação à esquerda.
 1. Clique em **[!UICONTROL Detalhes]** na linha do usuário que você deseja exibir.
 1. Clique no ícone Equipes na coluna **[!DNL Role]** na linha da organização que contém a equipe na qual você deseja exibir ou editar a função do usuário.
 1. (Opcional) Para atualizar a função do usuário em uma equipe, clique na lista suspensa na coluna **[!DNL Role]** na linha da equipe em que você deseja alterar a função do usuário e, em seguida, selecione a nova função.
+

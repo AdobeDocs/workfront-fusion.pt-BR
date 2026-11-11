@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: f9cdbcf936fc6b022f6513f47b9b377424731419
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 31%
+source-wordcount: '347'
+ht-degree: 29%
 ---
 # Adicionar usuário a uma equipe
 
@@ -66,3 +66,7 @@ A adição de um usuário a uma equipe é tratada na página da equipe.
 1. Clique em **Nenhum** à direita do nome do usuário e selecione a função que você deseja que eles tenham na equipe.
 
    O usuário é adicionado à equipe, com a função selecionada.
+
+   >[!NOTE]
+   >
+   >Além das funções predefinidas, uma equipe pode ter funções personalizadas. Para obter informações sobre como criar funções personalizadas, consulte [Exibir e gerenciar funções de equipe](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md).

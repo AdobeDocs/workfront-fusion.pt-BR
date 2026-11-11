@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: f9cdbcf936fc6b022f6513f47b9b377424731419
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 35%
+source-wordcount: '323'
+ht-degree: 33%
 ---
 # Exibir e gerenciar equipes
 
@@ -29,6 +29,8 @@ Equipes são grupos de usuários que compartilham acesso a recursos específicos
 * Configurações de notificação por email
 
 Você pode exibir uma lista de equipes da sua organização e editar os nomes das equipes.
+
+Para criar e gerenciar as funções em uma equipe, consulte [Exibir e gerenciar funções de equipe](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md).
 
 Para adicionar usuários a equipes, consulte [Adicionar um usuário a uma equipe](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md).
 
