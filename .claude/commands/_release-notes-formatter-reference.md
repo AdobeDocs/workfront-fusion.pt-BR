@@ -1,9 +1,8 @@
 ---
-source-git-commit: 4d32e8aab5b3b8a12dbc23e61f517fc4fd6dc9e5
+source-git-commit: 873d91ff9db954bfad835ccb4d8f423ea7f46102
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '295'
 ht-degree: 0%
-
 ---
 # Modelos de referência das notas de versão
 
@@ -144,8 +143,7 @@ Cada seção da área de produto H3 contém uma tabela do HTML. Use esta estrutu
 - Célula de recurso: marca `<a>` com `class="MCXref xref" xrefformat="{para}"` seguida de descrição `<p>`
 - O `href` vincula à página da área do produto (não é uma âncora específica)
 - Células de data: encapsuladas em `<p>` marcas
-- Para itens fora do cronograma, adicione `<p>[!BADGE Off schedule]{type=Neutral}</p>` após o link
-- `<p></p>` vazio após o link ser aceitável quando nenhuma medalha for necessária
+- Para itens fora do cronograma, adicione `<p>[!BADGE Off schedule]{type=Neutral}</p>` como seu próprio parágrafo diretamente no parágrafo de link, antes do parágrafo de descrição - `<p></p>` vazio após o link ser aceitável quando nenhum selo for necessário
 - Manter o recuo do HTML consistente com os arquivos existentes
 
 ### Visão geral das seções finais
