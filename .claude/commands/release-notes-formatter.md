@@ -71,7 +71,7 @@ Regras:
 >Production for everyone: {Month Day, Year}
 ```
 
-5. **Corpo**: descrição do recurso e, em seguida, link para a documentação de ajuda
+&#x200B;5. **Corpo**: descrição do recurso e, em seguida, link para a documentação de ajuda
 
 #### Páginas de visão geral
 
@@ -90,11 +90,11 @@ Regras:
 
 - Se uma seção da área do produto for comentada, remova totalmente o link dessa lista. Não comente o link.
 
-5. **H3 por área de produto** com a tabela de recursos do HTML (consulte .claude/commands/_release-notes-formatter-reference.md#overview-feature-table)
+&#x200B;5. **H3 por área de produto** com a tabela de recursos do HTML (consulte .claude/commands/_release-notes-formatter-reference.md#overview-feature-table)
    - Em cada tabela, **os recursos mais recentes primeiro** — a linha mais recente aparece na parte superior da tabela (após a linha de cabeçalho)
    - Se um recurso tiver uma medalha (como `[!BADGE Off schedule]{type=Neutral}`), coloque-o em seu próprio `<p>` diretamente sob o parágrafo do link de recurso, antes do parágrafo de descrição.
 
-6. **Seções finais** (H2): Notas de versão para outras áreas, atualizações do visualizador de provas de desktop, Avisos, versão da API, Atualizações de manutenção, Atualizações de treinamento
+&#x200B;6. **Seções finais** (H2): Notas de versão para outras áreas, atualizações do visualizador de provas de desktop, Avisos, versão da API, Atualizações de manutenção, Atualizações de treinamento
 
 ### Etapa 3: Validar links
 
