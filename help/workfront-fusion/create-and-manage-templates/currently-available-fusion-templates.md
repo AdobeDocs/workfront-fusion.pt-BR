@@ -16,9 +16,9 @@ feature_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 29913d8252c39b66cfe4688d760bffb074dbf56c
 workflow-type: tm+mt
-source-wordcount: '2436'
+source-wordcount: '2732'
 ht-degree: 0%
 ---
 # Modelos do Adobe Workfront Fusion disponíveis no momento
@@ -34,8 +34,6 @@ Para exibir os modelos disponíveis, clique no ícone **Modelos** ![Ícone Model
 Esses modelos automatizam processos e fluxos de trabalho do Workfront.
 
 ### Workfront - Ajusta Automaticamente A Linha Do Tempo Do Projeto Quando As Tarefas Forem Concluídas Com Antecedência
-
-<!--New June 10, 2025-->
 
 Esse modelo foi projetado para oferecer suporte a organizações que seguem uma abordagem mais flexível, baseada no planejamento conforme o uso, em vez de uma metodologia rigorosa, baseada em PMI, para o gerenciamento de projetos.
 
@@ -165,13 +163,41 @@ Esse modelo numera os projetos sequencialmente. Ele pressupõe que você criou u
 
 Esse modelo numera seus problemas sequencialmente. Ele pressupõe que você criou um formulário e um campo personalizados usando o Workfront - Série de numeração sequencial: Criar formulário personalizado de objeto e modelo de campo, mas é possível usar um formulário e um campo existentes.
 
+### Workfront - Criar projeto com o fluxo de trabalho do AEM
+
+[!BADGE Novo!]{type=Informative}
+
+<!--New November 11, 2026-->
+
+<!-- BECKY CHECK ME: The request is titled "Automation New Templates" and lists the fields of two templates, "Create project with AEM workflow" and "Create multiple records". It does not give the exact template names, the trigger, or a description of what each template does. I wrote the descriptions from the field list. Confirm the template names as they appear in the Templates area, the trigger for each template, and the descriptions. -->
+
+Esse modelo cria um projeto a partir de um modelo de projeto e pode criar as pastas vinculadas do AEM que estão configuradas para o modelo de projeto e vinculá-las ao novo projeto.
+
+>[!TIP]
+>
+>* As pastas vinculadas do AEM são criadas somente quando o modelo de projeto selecionado tem um [fluxo de trabalho do AEM](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/configure-integrations/configure-aacs-integration#set-up-workflows-optional) habilitado com pelo menos uma árvore de pastas. Caso contrário, o projeto será criado sem pastas vinculadas.
+>* As árvores de pastas são obtidas do modelo do projeto quando você salva a automação. Se posteriormente você adicionar ou remover árvores de pastas no modelo do projeto, deverá editar e salvar a automação novamente para incluir as alterações.
+
+### Workfront - Criar vários registros
+
+[!BADGE Novo!]{type=Informative}
+
+<!--New November 11, 2026-->
+
+Este modelo cria um ou mais registros em um tipo de registro, com base nas opções de um campo no registro atual.
+
+>[!TIP]
+>
+>* Um registro é criado para cada opção que está presente no registro atual e tem um mapeamento de campo. Opções sem mapeamento são ignoradas e nenhum registro é criado para elas.
+>* Para nomear os registros criados, mapeie um campo de origem para o campo principal (nome) do novo tipo de registro. Cada registro é nomeado como *[nome do registro atual] valor da opção*. Se você não mapear o campo principal, o nome do registro será deixado vazio.
+>* Se nenhum dos registros selecionados contiver uma opção mapeada no campo escolhido, nenhum registro será criado e uma mensagem informará qual campo está vazio.
+>* As opções de campo e os mapeamentos são lidos a partir do tipo de registro atual quando você salva a automação. Se adicionar ou alterar campos ou opções posteriormente, você deverá editar e salvar a automação novamente para incluir as alterações.
+
 ## Workfront - Modelos do Workfront Proof
 
 Esses modelos automatizam fluxos de trabalho que combinam o Workfront com o Workfront Proof.
 
 ### Workfront > Workfront Proof - Alterar a função de usuário de prova para Somente leitura e bloquear a prova no fechamento do projeto
-
-<!--New March 12, 2025-->
 
 Este modelo procura projetos que estejam atualizados com status que são rejeitados, concluídos ou inativos. Em seguida, altera todos os usuários com decisões de Prova pendente para Somente leitura. Por fim, ele bloqueia as Provas e envia uma atualização para os documentos.
 
@@ -244,7 +270,7 @@ Esse modelo permite ver se há uma alteração em uma pasta do SharePoint.
 
 Esses modelos suportam a integração Workfront-Anaplan e esperam uma configuração específica em Anaplan no Workfront. Para obter informações sobre esses modelos e as configurações necessárias, consulte os artigos para os modelos individuais.
 
-Para obter mais informações sobre a integração Workfront-Anaplan, consulte [Adobe Workfront com Anaplan](https://experienceleague.adobe.com/pt-br/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration) na documentação do Workfront.
+Para obter mais informações sobre a integração Workfront-Anaplan, consulte [Adobe Workfront com Anaplan](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration) na documentação do Workfront.
 
 >[!NOTE]
 >
@@ -252,19 +278,19 @@ Para obter mais informações sobre a integração Workfront-Anaplan, consulte [
 
 ### Workflows de otimização de gastos
 
-* [Enviar atualizações de projeto do Adobe Workfront para um item de lista  [!DNL Anaplan] &#x200B;](https://experienceleague.adobe.com/pt-br/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
-* [Enviar despesas do Adobe Workfront para um item de lista [!DNL Anaplan] &#x200B;](https://experienceleague.adobe.com/pt-br/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
-* [Enviar atualizações de horas reais do Adobe Workfront para um item de lista  [!DNL Anaplan] &#x200B;](https://experienceleague.adobe.com/pt-br/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
+* [Enviar atualizações de projeto do Adobe Workfront para um item de lista  [!DNL Anaplan] ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
+* [Enviar despesas do Adobe Workfront para um item de lista [!DNL Anaplan] ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
+* [Enviar atualizações de horas reais do Adobe Workfront para um item de lista  [!DNL Anaplan] ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
 
 ### Fluxos de trabalho para vincular solicitações de orçamento
 
-* [Criar um item de lista  [!DNL Anaplan]  a partir de uma solicitação de orçamento do Adobe Workfront](https://experienceleague.adobe.com/pt-br/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
-* [Aplicar uma alocação de orçamento  [!DNL Anaplan]  a um projeto do Adobe Workfront](https://experienceleague.adobe.com/pt-br/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
+* [Criar um item de lista  [!DNL Anaplan]  a partir de uma solicitação de orçamento do Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
+* [Aplicar uma alocação de orçamento  [!DNL Anaplan]  a um projeto do Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
 
 ### Fluxos de trabalho para vincular solicitações de campanha
 
-* [Criar um item de lista  [!DNL Anaplan]  a partir de uma solicitação do Adobe Workfront Campaign](https://experienceleague.adobe.com/pt-br/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
-* [Aplicar uma alocação de orçamento  [!DNL Anaplan]  a uma solicitação de campanha ou a um projeto de campanha do Adobe Workfront](https://experienceleague.adobe.com/pt-br/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
+* [Criar um item de lista  [!DNL Anaplan]  a partir de uma solicitação do Adobe Workfront Campaign](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
+* [Aplicar uma alocação de orçamento  [!DNL Anaplan]  a uma solicitação de campanha ou a um projeto de campanha do Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
 
 ## Workfront - Modelos Jira
 

@@ -1,9 +1,8 @@
 ---
-source-git-commit: 4d32e8aab5b3b8a12dbc23e61f517fc4fd6dc9e5
+source-git-commit: 873d91ff9db954bfad835ccb4d8f423ea7f46102
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '295'
 ht-degree: 0%
-
 ---
 # Modelos de referência das notas de versão
 
@@ -11,7 +10,7 @@ Modelos detalhados para cada tipo de página da nota de versão. Elas se baseiam
 `help/quicksilver/product-announcements/product-releases/release-note-templates/` e
 a formatação real usada em versões trimestrais recentes.
 
-&#x200B;---
+---
 
 ## Modelo de página de área de produto
 
@@ -57,17 +56,15 @@ For more information, see [Help article title](/help/quicksilver/path/to/article
   >Production fast release: {date}
   >Production for everyone: {date}
   ```
-
 - Se um recurso foi removido temporariamente, adicione uma linha após a data:
 
   ```
   >
   >This feature has been temporarily removed from the Production environment on {date}.
   ```
-
 - Os links de ajuda usam caminhos absolutos que começam com `/help/quicksilver/`
 
-&#x200B;---
+---
 
 ## Modelo da página de visão geral
 
@@ -144,8 +141,7 @@ Cada seção da área de produto H3 contém uma tabela do HTML. Use esta estrutu
 - Célula de recurso: marca `<a>` com `class="MCXref xref" xrefformat="{para}"` seguida de descrição `<p>`
 - O `href` vincula à página da área do produto (não é uma âncora específica)
 - Células de data: encapsuladas em `<p>` marcas
-- Para itens fora do cronograma, adicione `<p>[!BADGE Off schedule]{type=Neutral}</p>` após o link
-- `<p></p>` vazio após o link ser aceitável quando nenhuma medalha for necessária
+- Para itens fora do cronograma, adicione `<p>[!BADGE Off schedule]{type=Neutral}</p>` como seu próprio parágrafo diretamente no parágrafo de link, antes do parágrafo de descrição - `<p></p>` vazio após o link ser aceitável quando nenhum selo for necessário
 - Manter o recuo do HTML consistente com os arquivos existentes
 
 ### Visão geral das seções finais
@@ -157,7 +153,7 @@ Depois de todas as tabelas de área de produto:
 
 ### Workfront Fusion enhancements
 
-New features in Workfront Fusion are available in Production at a cadence outside of the standard release schedule. For more information about the latest features, see [Adobe Workfront Fusion release activity](https://experienceleague.adobe.com/pt-br/docs/workfront-fusion/using/fusion-release-activity/fusion-release-activity).
+New features in Workfront Fusion are available in Production at a cadence outside of the standard release schedule. For more information about the latest features, see [Adobe Workfront Fusion release activity](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/fusion-release-activity/fusion-release-activity).
 
 ### Workfront Planning enhancements
 
@@ -183,14 +179,14 @@ There are no updates for the following at this point in the release:
 
 ### Workfront Maintenance Updates
 
-For information about the maintenance updates made during the {Written Quarter} {Year} release, see [Workfront Maintenance Updates](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=pt-BR).
+For information about the maintenance updates made during the {Written Quarter} {Year} release, see [Workfront Maintenance Updates](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html).
 
 ### Training updates
 
-Explore the latest updates made to learning programs, learning paths, videos, and guides for each Adobe Workfront product release. For more information, see the "What's New" section of the [Workfront Tutorials page](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/home.html?lang=pt-BR).
+Explore the latest updates made to learning programs, learning paths, videos, and guides for each Adobe Workfront product release. For more information, see the "What's New" section of the [Workfront Tutorials page](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/home.html).
 ```
 
-&#x200B;---
+---
 
 ## Modelo de página de aparência
 
@@ -219,7 +215,7 @@ For a list of all changes available with the {Written Quarter} {Year} release, s
 Description of the look-and-feel change.
 ```
 
-&#x200B;---
+---
 
 ## Formatos de Texto Explicativo de Data
 
@@ -249,7 +245,7 @@ Description of the look-and-feel change.
 >Preview release: February 9, 2023; Planned Production release: February 23, 2023
 ```
 
-&#x200B;---
+---
 
 ## Inconsistências conhecidas a serem observadas
 

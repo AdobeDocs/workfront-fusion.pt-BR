@@ -1,13 +1,11 @@
 ---
 name: release-notes-formatter
 description: Formatar e validar as notas de versão do Workfront para fins de consistência, estrutura correta e vinculação adequada. Use somente para arquivos de notas de versão em diretórios de versões de produtos, ou quando o usuário mencionar notas de versão, versões de produtos ou versões trimestrais. Não se aplique a artigos explicativos ou documentação geral.
-source-git-commit: 4d32e8aab5b3b8a12dbc23e61f517fc4fd6dc9e5
+source-git-commit: 873d91ff9db954bfad835ccb4d8f423ea7f46102
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 2%
-
+source-wordcount: '1013'
+ht-degree: 1%
 ---
-
 
 # Formatador das notas de versão
 
@@ -73,7 +71,7 @@ Regras:
 >Production for everyone: {Month Day, Year}
 ```
 
-&#x200B;5. **Corpo**: descrição do recurso e, em seguida, link para a documentação de ajuda
+5. **Corpo**: descrição do recurso e, em seguida, link para a documentação de ajuda
 
 #### Páginas de visão geral
 
@@ -90,16 +88,19 @@ Regras:
 * [Document enhancements](#document-enhancements)
 ```
 
-&#x200B;5. **H3 por área de produto** com a tabela de recursos do HTML (consulte .claude/commands/_release-notes-formatter-reference.md#overview-feature-table)
-   - Em cada tabela, **os recursos mais recentes primeiro** — a linha mais recente aparece na parte superior da tabela (após a linha de cabeçalho)
+- Se uma seção da área do produto for comentada, remova totalmente o link dessa lista. Não comente o link.
 
-&#x200B;6. **Seções finais** (H2): Notas de versão para outras áreas, atualizações do visualizador de provas de desktop, Avisos, versão da API, Atualizações de manutenção, Atualizações de treinamento
+5. **H3 por área de produto** com a tabela de recursos do HTML (consulte .claude/commands/_release-notes-formatter-reference.md#overview-feature-table)
+   - Em cada tabela, **os recursos mais recentes primeiro** — a linha mais recente aparece na parte superior da tabela (após a linha de cabeçalho)
+   - Se um recurso tiver uma medalha (como `[!BADGE Off schedule]{type=Neutral}`), coloque-o em seu próprio `<p>` diretamente sob o parágrafo do link de recurso, antes do parágrafo de descrição.
+
+6. **Seções finais** (H2): Notas de versão para outras áreas, atualizações do visualizador de provas de desktop, Avisos, versão da API, Atualizações de manutenção, Atualizações de treinamento
 
 ### Etapa 3: Validar links
 
 - **Link de visão geral nas páginas de área de produto**: deve apontar para o mesmo trimestre
-   - Correto: `26-q2-release-activity/26-q2-release-overview.md`
-   - Errado: `26-q1-release-activity/26-q1-release-overview.md`
+  - Correto: `26-q2-release-activity/26-q2-release-overview.md`
+  - Errado: `26-q1-release-activity/26-q1-release-overview.md`
 - **Ancorar links na visão geral**: deve corresponder às IDs H3 (minúsculas, hifens)
 - **Links de recursos em tabelas de visão geral**: deve usar `class="MCXref xref" xrefformat="{para}"`
 - **Links de documentos de ajuda**: deve começar com `/help/quicksilver/`
@@ -124,6 +125,9 @@ Aplicar essas correções ao formatar:
 | Espaços adicionais em linhas de texto explicativo | Cortar espaço em branco à direita |
 | HTML nas páginas de área de produto | Manter como marcação (o HTML é somente para tabelas de visão geral) |
 | `exl-id` ausente | Deixe-o fora — não gere um |
+| Medalha colocada após a descrição em uma tabela de visão geral | Mova-o para seu próprio `<p>` diretamente no link de recurso |
+| Link do mini sumário para uma seção comentada | Remover o link da lista; não comente-o |
+| Tabela de aprimoramento na visão geral sem link miniTOC | Adicione um link à lista de aprimoramentos do Adobe Workfront, na mesma ordem das tabelas |
 
 ### Etapa 6: atualizar o sumário
 
@@ -133,9 +137,9 @@ Onde adicioná-lo:
 
 - O índice tem uma seção por trimestre sob um cabeçalho como `* 2026 Q3 Release {#release-26-q3}`. Se o cabeçalho do trimestre ainda não existir (primeira página de um novo trimestre), adicione-o acima do trimestre anterior para que o trimestre mais recente fique na parte superior.
 - Sob esse cabeçalho de trimestre, liste as páginas nesta ordem:
-   1. **Visão geral** primeiro (`Third Quarter 2026 release overview`).
-   2. **Páginas de área de produto** em ordem alfabética por nome de área (Administrador, Documentos, Operações Empresariais, Projetos, Relatórios, Solicitações).
-   3. **Outras melhorias** por último (sempre após as áreas de produto alfabéticas).
+  1. **Visão geral** primeiro (`Third Quarter 2026 release overview`).
+  2. **Páginas de área de produto** em ordem alfabética por nome de área (Administrador, Documentos, Operações Empresariais, Projetos, Relatórios, Solicitações).
+  3. **Outras melhorias** por último (sempre após as áreas de produto alfabéticas).
 
 Cada entrada do índice é um link de marcação que usa o título da página e o caminho absoluto do repositório:
 
@@ -184,6 +188,8 @@ Ao revisar um arquivo de notas de versão, verifique:
 - [ ] As linhas da tabela de recursos na visão geral correspondem ao conteúdo da página da área de produto
 - [ ] Não há links internos corrompidos
 - [ ] Links de âncora na visão geral correspondem às IDs de seção H3
+- [ ] Todas as tabelas de aprimoramento na visão geral que não foram comentadas têm um link correspondente no mini sumário, portanto, as seções adicionadas novamente quando não foram comentadas não serão perdidas
+- [ ] Visão geral: o mini índice não tem links para seções comentadas e os selos ficam diretamente no link do recurso
 - [ Os recursos do ] são ordenados mais recentemente (tanto páginas de área de produtos quanto tabelas de visão geral)
 - [ ] As novas páginas de notas de versão estão listadas em `help/quicksilver/TOC.md` no trimestre correto, com a primeira visão geral e as áreas de produtos em ordem alfabética (Outras por último)
 
