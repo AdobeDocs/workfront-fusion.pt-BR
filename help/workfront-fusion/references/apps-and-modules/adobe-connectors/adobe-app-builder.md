@@ -4,13 +4,11 @@ description: O conector App Builder do Adobe permite usar funções personalizad
 author: Becky
 feature: Workfront Fusion
 exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
-source-git-commit: e24fc726107fcfa34e9288e9a35af445fc0cc765
+source-git-commit: 02c396f33b6398635462bac8741f446eb82bf5a9
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 19%
-
+source-wordcount: '754'
+ht-degree: 16%
 ---
-
 # Módulo App Builder do Adobe
 
 É possível criar funções personalizadas na área Funções do Fusion. Em seguida, adicione essas funções aos seus cenários na forma de um módulo do Adobe App Builder.
@@ -45,6 +43,62 @@ Como as funções personalizadas funcionam por meio do Adobe App Builder, sua or
 Para obter mais detalhes sobre as informações contidas nesta tabela, consulte [Requisitos de acesso na documentação](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
+
+## Criar uma conexão com o Adobe App Builder
+
+A conexão usa as credenciais do Adobe I/O Runtime de um espaço de trabalho de projeto do App Builder. Antes de criar a conexão, obtenha essas credenciais na Adobe Developer Console.
+
+### Obter suas credenciais de Tempo de Execução
+
+1. Entre no [Adobe Developer Console](https://developer.adobe.com/console) com a organização que tem sua licença de App Builder.
+1. Abra o projeto do App Builder que contém suas funções e selecione o espaço de trabalho ao qual deseja se conectar (por exemplo, **Produção**).
+1. Clique em **Baixar tudo** no canto superior direito para baixar o arquivo JSON de configuração de espaço de trabalho.
+1. Abra o arquivo e localize a seção `runtime`. Ele contém:
+
+   * `namespace`: o valor a ser inserido no campo **Namespace**
+   * `auth`: um valor no formato `username:password`. A parte antes dos dois pontos é o **Nome de Usuário**, e a parte depois dos dois pontos é a **Senha**.
+
+   >[!NOTE]
+   >
+   >Você também pode encontrar o namespace e os valores de autenticação executando `aio runtime namespace get` ou `aio app use` na CLI do Adobe I/O.
+
+### Criar a conexão
+
+1. No módulo, clique em **Adicionar** ao lado do campo **Conexão**.
+1. Preencha os seguintes campos:
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Connection name]</td> 
+      <td>Insira um nome para essa conexão.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Environment]</td> 
+      <td>Selecione se você está se conectando a um ambiente de produção ou não produção.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Type]</td> 
+      <td>Selecione <b>Conta de serviço</b>.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Nome de Usuário]</td> 
+      <td>Insira o nome de usuário do valor <code>auth</code> do seu espaço de trabalho (a parte antes dos dois pontos).</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Password]</td> 
+      <td>Digite a senha com base no valor <code>auth</code> do seu espaço de trabalho (a parte após os dois pontos).</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Namespace]</td> 
+      <td>Insira o valor <code>namespace</code> da seção <code>runtime</code> do arquivo de configuração de espaço de trabalho.</td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+1. Clique em **Continuar** para salvar a conexão.
 
 ## Módulos do Adobe App Builder
 
