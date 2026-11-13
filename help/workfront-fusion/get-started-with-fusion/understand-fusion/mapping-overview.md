@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 9396113bb466ef309e8fcdb06e423a100b6fb271
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 75%
+source-wordcount: '522'
+ht-degree: 70%
 ---
 # Visão geral do mapeamento
 
@@ -68,6 +68,9 @@ Ao clicar em um campo no qual você pode mapear dados, o painel de mapeamento é
 A primeira guia exibe os itens que podem ser mapeados de outros módulos.
 
 As outras guias incluem funções, operadores e palavras-chave que podem ser usadas para criar fórmulas. Elas são classificadas em guias diferentes, com base no tipo de dados que manipulam.
+
+A guia **[!UICONTROL Preencher por IA]** permite descrever em linguagem simples o que você deseja que um campo contenha, e a IA gera uma expressão para você. Para obter mais informações, consulte [Gerar uma expressão com IA](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md#generate-an-expression-with-ai).
+
 
 ![Painel de mapeamento](assets/new-mapping-panel-blank.png)
 
