@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 9396113bb466ef309e8fcdb06e423a100b6fb271
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 23%
+source-wordcount: '1137'
+ht-degree: 15%
 ---
 # Mapear um item usando funções integradas
 
@@ -126,6 +126,64 @@ Para aninhar uma função:
 1. No painel de mapeamento, clique na função aninhada. Neste exemplo, esta é a função `trim`.
 1. Continue a configurar a função conforme desejado.
 1. Continue a configurar o módulo ou clique em **OK**.
+
+### Gerar uma expressão com IA
+
+Em vez de escrever a sintaxe de uma expressão você mesmo, pode descrever o que deseja em linguagem simples, e a IA gera a expressão para você. Por exemplo, você pode solicitar o seguinte:
+
+* Una esses nomes com uma vírgula.
+* Adicione três dias à data de vencimento.
+
+A IA transforma sua solicitação em uma expressão que usa as funções integradas do Workfront Fusion, para que o resultado seja legível e fácil de revisar antes de usá-lo.
+
+Para gerar uma expressão:
+
+1. Clique na guia **[!UICONTROL Cenários]** no painel esquerdo.
+1. Selecione o cenário em que deseja mapear dados.
+1. Clique em qualquer lugar no cenário para entrar no editor de cenários.
+1. Clique no módulo em que deseja adicionar uma expressão e clique no campo.
+
+   O painel de mapeamento é aberto.
+
+1. Clique na guia **[!UICONTROL Preencher por IA]** (o ícone de varinha mágica) no painel de mapeamento.
+
+   ![Preencher pela guia IA](assets/fill-by-ai-tab.png)
+
+1. Na caixa **[!UICONTROL Descrever o que este campo deve conter]**, descreva o resultado desejado em linguagem simples.
+
+   Para adicionar um campo de um módulo anterior ao seu prompt, clique nele na lista **[!UICONTROL Campos disponíveis]**. Para iniciar uma nova linha no prompt, pressione Shift+Enter.
+
+   Por exemplo, para obter somente o domínio de um endereço de email, você pode inserir o seguinte prompt:
+
+   `Show only the domain of {{1.data.json.email}} like "user@acme.com" -> "acme.com"`
+
+1. Clique em **[!UICONTROL Gerar]**.
+
+   A expressão gerada pela IA aparece em **[!UICONTROL Expressão sugerida]**.
+
+   ![Expressão sugerida](assets/fill-by-ai-suggested-expression.png)
+
+1. Revise a expressão e siga um destes procedimentos:
+
+   * Clique em **[!UICONTROL Aplicar]** para inserir a expressão no campo.
+   * Clique em **[!UICONTROL Regenerar]** para que a IA gere uma expressão diferente.
+
+1. (Opcional) Edite a expressão no campo, se desejar.
+
+1. Continue a configurar o módulo ou clique em **[!UICONTROL OK]**.
+
+#### Como a IA gera expressões
+
+Quando a IA gera uma expressão, ela faz o seguinte:
+
+* **Usa o contexto do seu cenário.** A IA considera os campos disponíveis para mapeamento, seus tipos, o campo de destino e suas configurações de local e fuso horário.
+* **Valida a expressão.** Antes de o AI retornar uma expressão como bem-sucedida, ele verifica se há funções não compatíveis, argumentos ausentes, referências de campos desconhecidas e erros comuns em matrizes e datas.
+* **Corrige e simplifica a expressão.** A IA corrige erros comuns de sintaxe e substitui soluções alternativas reconhecidas por funções integradas.
+* **Tente novamente se a validação falhar.** A IA usa o feedback específico da validação para regenerar a expressão. Se ainda não for possível criar uma expressão válida, retornará um erro claro em vez de um resultado inválido.
+
+>[!NOTE]
+>
+>As expressões geradas por IA podem estar incompletas ou imprecisas. Revise cada expressão e teste seu cenário antes de confiar no resultado.
 
 ### Usar funções [!DNL Google Sheets]
 
