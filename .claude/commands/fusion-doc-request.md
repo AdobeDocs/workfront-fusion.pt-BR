@@ -1,9 +1,9 @@
 ---
 name: fusion-doc-request
 description: Lidar com uma solicitação de documentação do Fusion do #fusion-documentation Slack template - update the relevant Fusion docs article(s) in this repo, then create a matching task in the Product Documentation Workfront project with the feature description and a formatted release note filled in on the custom form. Use when the user shares a Slack documentation-request thread/message for a Fusion feature, or says something like "please update and create a task" for one.
-source-git-commit: 535a10407766d054b00d31869e511753bf07a9b7
+source-git-commit: 17a2d521197e676e41b4b899f7be142430a18c2f
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1704'
 ht-degree: 0%
 ---
 
@@ -36,6 +36,8 @@ Se, em vez disso, a solicitação for vinculada a uma fonte secundária de não 
 ## Etapa 2: criar uma ramificação para a solicitação
 
 Antes de tocar em qualquer arquivo, crie uma nova ramificação Git para essa solicitação e faça o check-out dela. Ramificação da ramificação padrão atual (`main`), não de qualquer ramificação cujo check-out seja feito.
+
+Se o usuário já tiver criado e nomeado a ramificação, use-a em vez de criar uma nova e registre esse nome no campo `Documentation Branch` da tarefa na Etapa 4.
 
 Nomeie a ramificação `becky-{short-kebab-case-description}`, derivada do **Título do Recurso** - a primeira palavra deve ser `becky`, correspondendo à convenção de ramificação existente do repositório (por exemplo, `becky-webhook-update`, `becky-storage-beta-sos`). Mantenha-o curto - algumas palavras, não o título completo textual.
 
@@ -74,9 +76,12 @@ Campos de tarefa:
 | `DE:Preview Date` | a data citada na mensagem original do Slack (a **data de lançamento esperada** da solicitação), por padrão |
 | `taskConstraint` + `constraintDate` | Defina `taskConstraint` como `MFO` (Deve terminar em) com `constraintDate` = a data citada na mensagem original do Slack (a **data de lançamento esperada** da solicitação), de modo que a data planejada de conclusão da tarefa também corresponda a ela. |
 | `DE:Articles to update` | a lista de artigos que você criou ou atualizou para esta solicitação (veja abaixo) |
+| `DE:Documentation Branch` | o nome da ramificação git na qual as alterações do documento estão (veja abaixo) |
 | Produto/Área | selecionar `Fusion` (um campo de enumeração no formulário Documentação do produto; confirme o nome exato do campo com `insights_search_fields` se ele nunca estiver claro) |
 
 `DE:Articles to update` (um campo de texto no formulário Documentação do produto) lista cada arquivo de artigo criado ou alterado na Etapa 3, um caminho relativo de repositório por linha (por exemplo `help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md`). Inclua novos artigos (adicione `(new)` após o caminho) e qualquer arquivo de índice ou índice editado. Como as edições de doc ocorrem na Etapa 3, a lista é conhecida pelo momento em que a tarefa é criada, portanto, defina-a na mesma chamada de criação. Se o usuário solicitar que você crie a tarefa sem fazer edições de documento, deixe o campo vazio e atualize-o posteriormente, se forem feitas edições de documento.
+
+`DE:Documentation Branch` (um campo de texto no formulário Documentação do produto) contém o nome exato da ramificação Git em que as edições de documento estão, por exemplo `becky-explain-errors-with-ai`. Use a ramificação de nome do usuário ou a que está com check-out no repositório editado; não invente um nome. Defina-o na mesma chamada de criação dos outros campos. Se o usuário solicitar que você crie a tarefa sem fazer edições no documento e ainda não existir nenhuma ramificação, deixe o campo vazio e atualize-o posteriormente.
 
 Defina os campos de data de visualização e a data de conclusão planejada como parte dessa mesma chamada de criação - não os deixe para depois ou aguarde para ser perguntado. Se o usuário fornecer uma data diferente posteriormente ou se disser que a data ainda não é realmente conhecida, atualize de acordo, mas use o padrão para preenchê-las sempre.
 
@@ -108,6 +113,7 @@ Relatar claramente:
 * A ramificação criada (confirmada localmente, não enviada e nenhuma solicitação de recepção aberta - de acordo com a Etapa 2).
 * Quais arquivos de documento você alterou e o que adicionou.
 * Que os artigos alterados estão listados no campo `Articles to update` da tarefa.
+* O nome da ramificação inserido no campo `Documentation Branch` da tarefa.
 * Que as alterações não foram confirmadas na ramificação, aguardando a revisão do usuário.
 * O nome da tarefa e o URL.
 * Os valores exatos do campo definidos, incluindo os campos de data de visualização.
@@ -120,4 +126,4 @@ Confirme se eles ainda estão resolvidos, em vez de supor que sejam permanentes:
 * O projeto &quot;Tarefas de documentação do produto - para problemas de desenvolvimento que exigem mensagens&quot; mapeia para a ID `5e69583f00236b9f767c3e3944100ee4`
 * A tarefa pai &quot;Becky - Tarefas do canal Fusion-Documentation&quot; mapeia para a ID `6a9b065100003a7554832780c2015e93` (no mesmo projeto) - resolver com `insights_find_id_by_name` (entidade `task`) em vez de codificar, caso seja alterada
 * O formulário personalizado (`categoryID`) da Documentação do produto é `5d7275b9000514604bd969d418725843`
-* Campos personalizados usados: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
+* Campos personalizados usados: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`, `DE:Articles to update`, `DE:Documentation Branch`
