@@ -22,10 +22,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 231f1c67031a396b8752fb84a5ff6d017df94267
 workflow-type: tm+mt
-source-wordcount: '1415'
-ht-degree: 27%
+source-wordcount: '1542'
+ht-degree: 25%
 ---
 # Módulos do Adobe Storage
 
@@ -366,4 +366,35 @@ Esse módulo de ação faz uma solicitação HTTP personalizada para a API de ar
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
   </tbody>
+</table>
+
+#### Fazer upload de um arquivo
+
+Esse módulo de ação faz o upload de um arquivo no Adobe Storage em uma única etapa. Ele cria o arquivo de destino, inicializa o upload, transfere o conteúdo do arquivo por meio de um URL pré-assinado e finaliza o upload. Não é necessário configurar etapas separadas de transferência e finalização.
+
+O módulo é compatível com arquivos grandes.
+
+<!-- BECKY CHECK ME: Add the module's output (the screenshot shows only the setup fields). Confirm what the Project and Folder fields list, whether Folder is required, what the File Content field accepts (the hint says binary or text data), and whether the Limit field applies to this module, since the module uploads one file. Also confirm whether the Show advanced settings option contains any fields, and whether the request's comparison to "Generate Presigned Upload URL" should be mentioned here. That module is not documented in this article. -->
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Conexão</td> 
+   <td>Para obter instruções sobre como criar uma conexão com o Adobe Storage, consulte <a href="#create-a-connection-to-adobe-storage" class="MCXref xref" >Criar uma conexão com o Adobe Storage</a> neste artigo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Projeto</td> 
+   <td>Selecione o projeto que contém a pasta na qual você deseja fazer upload do arquivo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Pasta</td> 
+   <td>Selecione a pasta na qual deseja fazer upload do arquivo. Para carregar o arquivo para a raiz do projeto, selecione <code>/</code>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Arquivo de origem</td> 
+   <td>Selecione um arquivo de um módulo anterior ou mapeie o nome, o conteúdo e o tipo de conteúdo do arquivo.</td> 
+  </tr> 
+ </tbody> 
 </table>
