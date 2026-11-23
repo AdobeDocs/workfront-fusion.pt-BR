@@ -9,10 +9,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: d50909b128b469ef3e25b93c7dbdede5d4226064
+source-git-commit: 06b6c3b3a37d2b66eae61951ffc0aaf558d1b180
 workflow-type: tm+mt
-source-wordcount: '1550'
-ht-degree: 19%
+source-wordcount: '1806'
+ht-degree: 17%
 ---
 # Módulos do Workfront Fusion
 
@@ -97,9 +97,53 @@ Se você vir o botão de mapa acima de um campo ou função, poderá usá-lo par
 
 ![Botão de alternância Mapear](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
+* [Acionadores](#triggers)
 * [Ações](#actions)
 * [Exportar](#export)
 * [Diversos](#misc)
+
+### Acionadores
+
+* [Observar registros](#watch-records)
+
+#### Observar registros
+
+Esse módulo de acionamento inicia um cenário quando os registros do Workfront Fusion são criados, atualizados ou ambos. É possível usar filtros para se concentrar nas alterações que são importantes para sua equipe, de modo que não é necessário verificar o Workfront Fusion manualmente.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Para obter instruções sobre como conectar o Workfront Fusion ao Workfront Fusion, consulte <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Conectar o Workfront Fusion ao Workfront Fusion</a> neste artigo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Observar</td> 
+   <td>Selecione o tipo de alteração que você deseja que o módulo observe.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Tipo de registro</td> 
+   <td>Selecione o tipo de registro que deseja observar: <b>Cenário</b> ou <b>Execução</b>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID do cenário</td> 
+   <td><p>Se estiver assistindo a execuções, selecione ou mapeie o cenário pelo qual deseja assistir às execuções.</p><p>Este campo é opcional. Se você deixá-lo vazio, o módulo pesquisará execuções na organização.</p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Mostrar execuções de verificação</td> 
+   <td><p>Se você estiver assistindo à execução, selecione se os resultados incluem execuções de verificação:</p><ul><li><b>Sim</b>: Incluir execuções de verificação.</li><li><b>Não</b>: não incluir execuções de verificação.</li><li><b>Não definido</b>: não filtre resultados por execuções de verificação.</li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filtragem</td> 
+   <td>Em <b>Propriedade</b>, para cada filtro de propriedade que você deseja usar, clique em <b>Adicionar item</b>, selecione o campo e o operador e insira ou mapeie o valor que você deseja filtrar. Um campo de valor é exibido somente para operadores que precisam de um. Por exemplo, um operador como <b>Existe</b> não requer um valor. Os filtros de propriedade são os mesmos para os tipos de registro Cenário e Execução.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Limite</td> 
+   <td>Insira ou mapeie o número máximo de resultados com os quais o Workfront Fusion funciona durante um ciclo de execução. O padrão é 200.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 ### Ações
 
@@ -471,8 +515,3 @@ Esse módulo retorna a ID de região e organização para cada organização do 
   </tr> 
  </tbody> 
 </table>
-
-
-
-
-
