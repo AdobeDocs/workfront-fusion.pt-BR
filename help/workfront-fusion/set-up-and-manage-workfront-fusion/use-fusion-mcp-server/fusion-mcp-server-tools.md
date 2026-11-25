@@ -1,9 +1,9 @@
 ---
 title: Ferramentas de servidor do Adobe Workfront Fusion MCP
 description: Lista de referência das ferramentas que o servidor MCP do Adobe Workfront Fusion expõe às plataformas de agente de IA e ao Colaborador.
-source-git-commit: 1bfcdb6abe42eca27d2f3ae5a1a1d2cfd3901d33
+source-git-commit: daed5498e4830c7eb66e295081dfd486d3ef610b
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1632'
 ht-degree: 7%
 ---
 
@@ -22,6 +22,8 @@ Cada ferramenta é classificada como:
 
 * **Leitura**: recupera informações sem alterar nada, como listar cenários ou obter uma execução.
 * **Gravação**: cria, altera, executa ou exclui dados do Fusion, como clonar um cenário ou limpar uma fila de webhook.
+
+Os proprietários e administradores da organização podem permitir ou desativar ferramentas somente leitura e ferramentas de gravação para toda a organização. As ferramentas desativadas não aparecem na lista de ferramentas e o Fusion as rejeita se um agente as chamar. Essa configuração limita apenas as chamadas de ferramenta feitas por meio do servidor oficial do Fusion MCP. As ações que os usuários executam na interface do usuário do Fusion, por meio da API ou por meio de qualquer outra integração ainda são controladas pelas próprias permissões de cada usuário no Fusion. Para obter mais informações, consulte [Gerenciar preferências de MCP para sua organização](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-fusion-mcp-server/configure-fusion-mcp-server.md#manage-mcp-preferences-for-your-organization).
 
 ## Ferramentas da organização
 
@@ -204,7 +206,7 @@ Exemplo de prompts:
 | --- | --- | --- | --- |
 | Enviar feedback | `fusion_feedback_submit` | Gravar | Envia seu feedback (erro, resultado incorreto, solicitação de recurso, elogio ou outro) para a equipe do Fusion. |
 
-## Colaborador
+## Coworker
 
 Todas as ferramentas deste artigo estão disponíveis no Co-worker, independente e no painel direito do Fusion, sujeitas às mesmas configurações de Leitura/Gravação e suas permissões.
 
