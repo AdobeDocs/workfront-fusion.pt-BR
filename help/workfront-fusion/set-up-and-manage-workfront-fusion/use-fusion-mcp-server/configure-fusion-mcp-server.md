@@ -1,10 +1,10 @@
 ---
 title: Configurar o servidor MCP do Adobe Workfront Fusion
 description: Conecte o Adobe Workfront Fusion a uma plataforma de agente de IA compatível com MCP ou ao Co-worker (independente ou no painel direito do Fusion).
-source-git-commit: d5861015b3bb0e9c176fcf4fd71db426671764dd
+source-git-commit: 6c1e5e8848003797c100a93086b615863ceb7244
 workflow-type: tm+mt
-source-wordcount: '1343'
-ht-degree: 7%
+source-wordcount: '1623'
+ht-degree: 6%
 ---
 
 # Configurar o servidor MCP do Adobe Workfront Fusion
@@ -112,7 +112,7 @@ O colega é o agente de IA da Adobe. O Fusion é integrado ao Coworker, de modo 
 * Colaborador (independente): trabalhe com o Fusion junto com seus outros aplicativos da Adobe.
 * Colaborador no painel direito do Fusion: abra o Colaborador em um painel dentro da interface do Fusion.
 
-Ambos usam as mesmas ferramentas do Fusion MCP, seu Adobe ID e suas permissões do Fusion. As configurações das ferramentas de Leitura ou Gravação de MCP se aplicam em ambos. Ações destrutivas, como excluir, limpar fila ou substituir, sempre pedem confirmação.
+Ambos usam as mesmas ferramentas do Fusion MCP, seu Adobe ID e suas permissões do Fusion. As preferências de MCP da organização para ferramentas somente leitura e gravação se aplicam em ambos. Para obter mais informações, consulte [Gerenciar preferências de MCP para sua organização](#manage-mcp-preferences-for-your-organization). Ações destrutivas, como excluir, limpar fila ou substituir, sempre pedem confirmação.
 
 ### Usar Fusão no Colaborador
 
@@ -196,6 +196,48 @@ Adicione o Fusion como um servidor MCP personalizado.
 1. Leia a mensagem de risco e marque a caixa de seleção.
 1. Clique em **Criar** e entre com.
 
+## Gerenciar preferências de MCP para sua organização
+
+Os proprietários e administradores da organização podem escolher quais ferramentas do Fusion MCP estão disponíveis para a organização. Outros usuários não podem alterar esta configuração.
+
+Você pode permitir ou desativar os seguintes tipos de ferramentas:
+
+<table style="table-layout:auto">
+ <col>
+ <col>
+ <tbody>
+  <tr>
+   <td role="rowheader">[!UICONTROL Ferramentas MCP somente leitura]</td>
+   <td>Ferramentas que leem apenas dados, como listagem e obtenção de cenários, execuções, conexões e armazenamentos de dados.</td>
+  </tr>
+  <tr>
+   <td role="rowheader">[!UICONTROL Gravar ferramentas MCP]</td>
+   <td><p>Ferramentas que criam, atualizam, excluem ou executam itens, como criar ou atualizar cenários, executar um cenário ou excluir uma conexão.</p><p>Você não pode habilitar <b>[!UICONTROL Gravar ferramentas MCP]</b> a menos que <b>[!UICONTROL Ferramentas MCP somente leitura]</b> também esteja habilitado.</p></td>
+  </tr>
+ </tbody>
+</table>
+
+A configuração se aplica a toda a organização. Depois de salvá-lo, cada usuário que se conecta ao servidor Fusion MCP para essa organização recebe apenas as ferramentas permitidas. As ferramentas desativadas não aparecem na lista de ferramentas e o Fusion as rejeita se um agente as chamar.
+
+>[!IMPORTANT]
+>
+>Essa configuração limita apenas chamadas de ferramenta feitas por meio do servidor oficial do Fusion MCP, usando o URL do servidor MCP neste artigo. As ações que os usuários executam na interface do usuário do Fusion, por meio da API ou por meio de qualquer outra integração ainda são controladas pelas próprias permissões de cada usuário no Fusion.
+
+Para gerenciar preferências de MCP:
+
+1. No Fusion, clique em **[!UICONTROL Organização]** na navegação à esquerda.
+
+1. Clique em **[!UICONTROL Alterar detalhes]**.
+
+   A janela **[!UICONTROL Detalhes da alteração]** é aberta.
+
+1. Em **[!UICONTROL Preferências de MCP]**, selecione ou limpe as **[!UICONTROL Ferramentas de MCP somente leitura]** e **[!UICONTROL Ferramentas de gravação de MCP]**.
+1. Clique em **[!UICONTROL Salvar]**.
+
+>[!NOTE]
+>
+>Se os recursos de IA estiverem desativados para a organização, não será possível editar as preferências do MCP.
+
 ## Alternar para uma organização diferente do Fusion
 
 Você não precisa se desconectar para alterar organizações. O servidor Fusion MCP pode alternar a organização ativa em uma sessão:
@@ -213,8 +255,8 @@ O agente usa `fusion_orgs_list` e `fusion_orgs_set`. O switch se aplica somente 
 | Você não pode adicionar um conector personalizado no Claude ou no ChatGPT. | Seu plano restringe conectores personalizados a proprietários ou administradores. | Peça ao seu administrador do Claude ou do ChatGPT para adicionar o conector ou permitir servidores MCP personalizados. |
 | Você conectou o, mas não vê dados ou os dados errados. | A organização incorreta do Fusion está ativa. | Solicite ao agente que liste suas organizações e alterne para a correta. |
 | A autenticação falhou ou a conexão parou de funcionar. | Sessão expirada ou erro de conexão. | Desconecte e reconecte o servidor. |
-| Você verá uma mensagem informando que o acesso ao MCP está desativado. | O acesso ao MCP está desativado para sua organização Fusion. | Peça ao administrador do Fusion para habilitá-lo. |
-| O agente pode ler os cenários, mas não pode criá-los, executá-los, atualizá-los ou excluí-los. | As ferramentas Gravar MCP estão desabilitadas ou a função da equipe não permite. | Peça ao administrador do Fusion para habilitar as ferramentas de gravação ou para conceder a função de equipe necessária. |
+| Você verá uma mensagem informando que o acesso ao MCP está desativado. | O acesso ao MCP está desativado para sua organização Fusion. | Peça ao administrador do Fusion para habilitá-lo. Para obter mais informações, consulte [Gerenciar preferências de MCP para sua organização](#manage-mcp-preferences-for-your-organization). |
+| O agente pode ler os cenários, mas não pode criá-los, executá-los, atualizá-los ou excluí-los. | As ferramentas Gravar MCP estão desabilitadas ou a função da equipe não permite. | Peça ao administrador do Fusion para habilitar as ferramentas de gravação nas preferências do MCP da organização ou para conceder a função de equipe necessária. Para obter mais informações, consulte [Gerenciar preferências de MCP para sua organização](#manage-mcp-preferences-for-your-organization). |
 | A autenticação personalizada do aplicativo foi rejeitada. | A URL de retorno não está na lista autorizada. | Peça ao administrador para adicionar o URL de retorno de chamada exato. |
 | O Fusion não está listado no Co-worker ou o Co-worker está ausente no painel direito do Fusion. | Recurso não habilitado para sua organização. | Entre em contato com o administrador do Fusion. |
 
