@@ -4,10 +4,10 @@ description: O conector App Builder do Adobe permite usar funções personalizad
 author: Becky
 feature: Workfront Fusion
 exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
-source-git-commit: 02c396f33b6398635462bac8741f446eb82bf5a9
+source-git-commit: c716296d771974ffdb59e916f9865c9efb2ad5a9
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 16%
+source-wordcount: '787'
+ht-degree: 15%
 ---
 # Módulo App Builder do Adobe
 
@@ -63,6 +63,8 @@ A conexão usa as credenciais do Adobe I/O Runtime de um espaço de trabalho de 
    >Você também pode encontrar o namespace e os valores de autenticação executando `aio runtime namespace get` ou `aio app use` na CLI do Adobe I/O.
 
 ### Criar a conexão
+
+Use essas etapas para conectar um projeto do App Builder que já existe. Para obter as etapas para usar essa conexão para configurar funções personalizadas no Fusion, consulte [Conectar um projeto existente do App Builder](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md#connect-an-existing-app-builder-project).
 
 1. No módulo, clique em **Adicionar** ao lado do campo **Conexão**.
 1. Preencha os seguintes campos:

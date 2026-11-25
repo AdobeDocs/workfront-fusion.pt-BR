@@ -9,9 +9,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: c716296d771974ffdb59e916f9865c9efb2ad5a9
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2064'
 ht-degree: 5%
 ---
 
@@ -79,6 +79,8 @@ Na primeira vez que sua equipe usar esse recurso, você deve configurar o ambien
    * Para selecionar um projeto existente, comece digitando o nome do projeto e, em seguida, selecione-o quando ele for exibido.
    * Para criar um novo projeto, insira um nome que ainda não existe e clique em **Criar novo**.
    * Se você deixar isso vazio, o Fusion usará um projeto padrão.
+
+   Se um projeto existente não funcionar com **Inicializar tempo de execução**, conecte-o manualmente. Para obter instruções, consulte [Conectar um projeto App Builder existente](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md#connect-an-existing-app-builder-project).
 
 1. Selecione **Continuar**.
 
